@@ -13,7 +13,9 @@ import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.neoforged.neoforge.common.Tags;
+import openblocks.OpenBlocks;
 import openblocks.registry.OBBlocks;
+import openblocks.registry.OBItems;
 
 public class OBRecipeProvider extends RecipeProvider {
 
@@ -80,6 +82,34 @@ public class OBRecipeProvider extends RecipeProvider {
 				.define('i', Tags.Items.INGOTS_IRON)
 				.define('b', Items.GLASS_BOTTLE)
 				.unlockedBy("has_glass_bottle", has(Items.GLASS_BOTTLE))
+				.save(output);
+
+		// two mirrored wing recipes, like legacy
+		ShapedRecipeBuilder.shaped(RecipeCategory.MISC, OBItems.GLIDER_WING.get())
+				.group("openblocks:glider_wing")
+				.pattern(" sl")
+				.pattern("sll")
+				.pattern("lll")
+				.define('s', Tags.Items.RODS_WOODEN)
+				.define('l', Tags.Items.LEATHERS)
+				.unlockedBy("has_leather", has(Tags.Items.LEATHERS))
+				.save(output, OpenBlocks.location("glider_wing_right"));
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.MISC, OBItems.GLIDER_WING.get())
+				.group("openblocks:glider_wing")
+				.pattern("ls ")
+				.pattern("lls")
+				.pattern("lll")
+				.define('s', Tags.Items.RODS_WOODEN)
+				.define('l', Tags.Items.LEATHERS)
+				.unlockedBy("has_leather", has(Tags.Items.LEATHERS))
+				.save(output, OpenBlocks.location("glider_wing_left"));
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.TRANSPORTATION, OBItems.HANG_GLIDER.get())
+				.pattern("wsw")
+				.define('w', OBItems.GLIDER_WING.get())
+				.define('s', Tags.Items.RODS_WOODEN)
+				.unlockedBy("has_glider_wing", has(OBItems.GLIDER_WING.get()))
 				.save(output);
 	}
 }

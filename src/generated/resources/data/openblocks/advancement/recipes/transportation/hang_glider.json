@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_glider_wing": {
+      "conditions": {
+        "items": [
+          {
+            "items": "openblocks:glider_wing"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "openblocks:hang_glider"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_glider_wing"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "openblocks:hang_glider"
+    ]
+  }
+}

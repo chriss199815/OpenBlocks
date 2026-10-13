@@ -43,6 +43,8 @@ public class OBBlockStateProvider extends BlockStateProvider {
 		// fluid blocks are drawn by the fluid renderer, the model only provides break particles
 		simpleBlock(OBBlocks.XP_JUICE.get(), models().getBuilder("xp_juice").texture("particle", modLoc("block/xp_juice_still")));
 		itemModels().basicItem(OBItems.XP_BUCKET.get());
+		itemModels().basicItem(OBItems.GLIDER_WING.get());
+		itemModels().basicItem(OBItems.HANG_GLIDER.get());
 
 		tank();
 

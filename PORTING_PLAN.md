@@ -79,7 +79,7 @@ Fortschritt:
 - Tank (Fluid-Capability, verbundene Tanks, BER fürs Füllbild, Tankinhalt bleibt beim Abbauen über eine Data Component erhalten).
 - XP Drain, XP Shower, XP Bottler (erstes Menü + Screen → Vorlage für alle weiteren GUIs).
 - Grave (Inventar beim Tod sichern über `LivingDropsEvent`, BER).
-- Hang Glider: als Item und Player-Attachment statt Entity; Rendering über `RenderPlayerEvent`, Physik im Player-Tick.
+- [x] Hang Glider + Glider Wing: synchronisiertes Player-Attachment `hang_glider` (Hand) statt Entity, Physik inkl. Thermik im Player-Tick (beide Seiten), Rendering über `RenderPlayerEvent` (Körper gekippt, Gleiter über dem Spieler) und `RenderLevelStageEvent` (First Person), Item in der Hand ausgeblendet per `BakedModelWrapper`, Config `hangglider.enableThermal`, GameTests. **Offen:** akustisches Variometer (`Vario`/`BeepGenerator`, Tasten V/lauter/leiser).
 - Sleeping Bag.
 - Advancements und Trigger.
 

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "s": {
+      "tag": "c:rods/wooden"
+    },
+    "w": {
+      "item": "openblocks:glider_wing"
+    }
+  },
+  "pattern": [
+    "wsw"
+  ],
+  "result": {
+    "count": 1,
+    "id": "openblocks:hang_glider"
+  }
+}

@@ -9,9 +9,11 @@ import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.config.ModConfig;
 import net.neoforged.neoforge.common.NeoForge;
 import openblocks.data.OBDataGenerators;
+import openblocks.common.HangGliderHandler;
 import openblocks.common.PlayerDeathHandler;
 import openblocks.entity.NoFlyXpOrb;
 import openblocks.network.OBNetwork;
+import openblocks.registry.OBAttachments;
 import openblocks.registry.OBBlockEntities;
 import openblocks.registry.OBBlocks;
 import openblocks.registry.OBCapabilities;
@@ -42,6 +44,7 @@ public class OpenBlocks {
 		OBEntities.ENTITIES.register(modBus);
 		OBParticleTypes.PARTICLE_TYPES.register(modBus);
 		OBMenus.MENUS.register(modBus);
+		OBAttachments.ATTACHMENT_TYPES.register(modBus);
 		OBGameRules.init();
 		OBCreativeTabs.TABS.register(modBus);
 		OBSounds.SOUNDS.register(modBus);
@@ -53,6 +56,8 @@ public class OpenBlocks {
 		NeoForge.EVENT_BUS.addListener(NoFlyXpOrb::onTargeting);
 		// low priority and receiving cancelled events, like legacy, so other mods can claim drops first
 		NeoForge.EVENT_BUS.addListener(EventPriority.LOW, true, PlayerDeathHandler::onLivingDrops);
+		NeoForge.EVENT_BUS.addListener(HangGliderHandler::onPlayerTick);
+		NeoForge.EVENT_BUS.addListener(HangGliderHandler::onChangedDimension);
 
 		container.registerConfig(ModConfig.Type.COMMON, OBConfig.SPEC);
 	}

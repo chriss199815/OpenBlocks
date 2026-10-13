@@ -14,8 +14,21 @@ public class OBConfig {
 	public static final Xp XP = new Xp(BUILDER);
 	public static final Tanks TANKS = new Tanks(BUILDER);
 	public static final Graves GRAVES = new Graves(BUILDER);
+	public static final HangGlider HANG_GLIDER = new HangGlider(BUILDER);
 
 	public static final ModConfigSpec SPEC = BUILDER.build();
+
+	public static class HangGlider {
+		public final ModConfigSpec.BooleanValue enableThermal;
+
+		private HangGlider(ModConfigSpec.Builder builder) {
+			builder.push("hangglider");
+			enableThermal = builder
+					.comment("Enable a whole new level of hanggliding experience through thermal lift")
+					.define("enableThermal", true);
+			builder.pop();
+		}
+	}
 
 	public static class Graves {
 		public final ModConfigSpec.BooleanValue destructiveGraves;

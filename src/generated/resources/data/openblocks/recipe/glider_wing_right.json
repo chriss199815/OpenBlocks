@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "openblocks:glider_wing",
+  "key": {
+    "l": {
+      "tag": "c:leathers"
+    },
+    "s": {
+      "tag": "c:rods/wooden"
+    }
+  },
+  "pattern": [
+    " sl",
+    "sll",
+    "lll"
+  ],
+  "result": {
+    "count": 1,
+    "id": "openblocks:glider_wing"
+  }
+}

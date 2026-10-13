@@ -30,11 +30,15 @@ public class OpenBlocksClient {
 		modBus.addListener(TankItemRenderer::registerClientExtensions);
 		modBus.addListener(TankModel::registerAdditional);
 		modBus.addListener(TankModel::modifyBakingResult);
+		modBus.addListener(HangGliderRenderer::modifyBakingResult);
 		modBus.addListener(OpenBlocksClient::registerRenderers);
 		modBus.addListener(LiquidSprayParticle::register);
 		modBus.addListener(OpenBlocksClient::registerScreens);
 
 		NeoForge.EVENT_BUS.addListener(ElevatorInputHandler::onMovementInput);
+		NeoForge.EVENT_BUS.addListener(HangGliderRenderer::onRenderPlayerPre);
+		NeoForge.EVENT_BUS.addListener(HangGliderRenderer::onRenderPlayerPost);
+		NeoForge.EVENT_BUS.addListener(HangGliderRenderer::onRenderLevelStage);
 	}
 
 	private static void registerScreens(RegisterMenuScreensEvent event) {

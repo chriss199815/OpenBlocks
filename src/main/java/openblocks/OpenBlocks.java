@@ -18,6 +18,7 @@ import openblocks.registry.OBEntities;
 import openblocks.registry.OBCreativeTabs;
 import openblocks.registry.OBFluids;
 import openblocks.registry.OBItems;
+import openblocks.registry.OBMenus;
 import openblocks.registry.OBParticleTypes;
 import openblocks.registry.OBSounds;
 import org.slf4j.Logger;
@@ -37,6 +38,7 @@ public class OpenBlocks {
 		OBBlockEntities.BLOCK_ENTITIES.register(modBus);
 		OBEntities.ENTITIES.register(modBus);
 		OBParticleTypes.PARTICLE_TYPES.register(modBus);
+		OBMenus.MENUS.register(modBus);
 		OBCreativeTabs.TABS.register(modBus);
 		OBSounds.SOUNDS.register(modBus);
 

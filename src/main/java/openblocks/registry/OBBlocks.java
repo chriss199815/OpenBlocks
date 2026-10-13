@@ -18,6 +18,7 @@ import openblocks.OpenBlocks;
 import openblocks.block.ElevatorBlock;
 import openblocks.block.RotatingElevatorBlock;
 import openblocks.block.TankBlock;
+import openblocks.block.XpBottlerBlock;
 import openblocks.block.XpDrainBlock;
 import openblocks.block.XpShowerBlock;
 
@@ -55,6 +56,12 @@ public class OBBlocks {
 			.mapColor(MapColor.STONE)
 			.strength(1.0f)
 			.noOcclusion()
+			.sound(SoundType.STONE)));
+
+	public static final DeferredBlock<XpBottlerBlock> XP_BOTTLER = registerWithItem("xp_bottler", () -> new XpBottlerBlock(BlockBehaviour.Properties.of()
+			.mapColor(MapColor.STONE)
+			.strength(1.0f)
+			.requiresCorrectToolForDrops()
 			.sound(SoundType.STONE)));
 
 	private static <T extends Block> DeferredBlock<T> registerWithItem(String id, Supplier<T> factory) {

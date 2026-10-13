@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "openblocks:block/xp_bottler_bottom",
+    "east": "openblocks:block/xp_bottler_sides",
+    "north": "openblocks:block/xp_bottler_front",
+    "particle": "openblocks:block/xp_bottler_front",
+    "south": "openblocks:block/xp_bottler_back",
+    "up": "openblocks:block/xp_bottler_top",
+    "west": "openblocks:block/xp_bottler_sides"
+  }
+}

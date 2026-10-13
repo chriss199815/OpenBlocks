@@ -73,6 +73,7 @@ Fortschritt:
 - [x] Tank: `TankBlockEntity` (Säule füllen/leeren, Ausgleich mit Nachbarn), Data Component `tank_contents`, Fluid-Capability für Block und Item, verbundener Rahmen über `TankModel` (`ModelData`), Fluid per BER, Item per BEWLR, Licht über Blockstate `light`, Config `tanks.*`, GameTests.
 - [x] XP Drain: zieht XP von Spielern (max. 4/Tick) und Orbs in jede Fluid-Capability darunter, GameTests.
 - [x] XP Shower: mit Redstone aktiv, gibt XP aus dem Block dahinter als `NoFlyXpOrb` aus (folgt Spielern nicht, über `XpOrbTargetingEvent`), Partikel `liquid_spray` (später auch für den Sprinkler), GameTests.
+- [x] XP Bottler: erstes Menü + Screen. Vorlage für weitere GUIs: `MachineMenu` (Spielerinventar + Shift-Klick), `TankWidget`, GUI-Hintergrund im Vanilla-Stil (per Skript erzeugt), Fortschrittspfeil aus Vanilla-Sprites, Fortschritt über `ContainerData`, Tank über BE-Update-Paket. Zieht XP-Fluid immer von allen Seiten (ersetzt „Auto drink“), Item-/Fluid-Capabilities auf allen Seiten offen. **Offen:** Seitenkonfiguration (Tabs Auto-Extract/Auto-Eject/Auto-Drink + Seitenauswahl) → zusammen mit dem Vacuum Hopper in Welle 3 als wiederverwendbares Widget.
 - **XP Juice** als `FluidType` + Source/Flowing + Bucket, dazu `FluidXpUtils` portieren.
 - Tank (Fluid-Capability, verbundene Tanks, BER fürs Füllbild, Tankinhalt bleibt beim Abbauen über eine Data Component erhalten).
 - XP Drain, XP Shower, XP Bottler (erstes Menü + Screen → Vorlage für alle weiteren GUIs).

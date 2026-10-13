@@ -14,6 +14,7 @@ public class OBSounds {
 	public static final DeferredRegister<SoundEvent> SOUNDS = DeferredRegister.create(Registries.SOUND_EVENT, OpenBlocks.MODID);
 
 	public static final DeferredHolder<SoundEvent, SoundEvent> ELEVATOR_ACTIVATE = register("elevator.activate");
+	public static final DeferredHolder<SoundEvent, SoundEvent> BOTTLER_SIGNAL = register("bottler.signal");
 
 	private static DeferredHolder<SoundEvent, SoundEvent> register(String id) {
 		return SOUNDS.register(id, () -> SoundEvent.createVariableRangeEvent(OpenBlocks.location(id)));

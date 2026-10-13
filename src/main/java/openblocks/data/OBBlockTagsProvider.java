@@ -23,5 +23,6 @@ public class OBBlockTagsProvider extends BlockTagsProvider {
 		pickaxe.add(OBBlocks.TANK.get());
 		pickaxe.add(OBBlocks.XP_DRAIN.get());
 		pickaxe.add(OBBlocks.XP_SHOWER.get());
+		pickaxe.add(OBBlocks.XP_BOTTLER.get());
 	}
 }

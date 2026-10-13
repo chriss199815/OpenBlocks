@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "b": {
+      "item": "minecraft:glass_bottle"
+    },
+    "i": {
+      "tag": "c:ingots/iron"
+    }
+  },
+  "pattern": [
+    "iii",
+    "ibi",
+    "iii"
+  ],
+  "result": {
+    "count": 1,
+    "id": "openblocks:xp_bottler"
+  }
+}

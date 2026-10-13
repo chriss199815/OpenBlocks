@@ -91,6 +91,14 @@ public class OBBlockStateProvider extends BlockStateProvider {
 				.transform(ItemDisplayContext.FIRST_PERSON_LEFT_HAND).rotation(0, 225, 0).scale(0.7f).end()
 				.end();
 
+		final ModelFile xpBottler = models().cube("xp_bottler",
+				modLoc("block/xp_bottler_bottom"), modLoc("block/xp_bottler_top"),
+				modLoc("block/xp_bottler_front"), modLoc("block/xp_bottler_back"),
+				modLoc("block/xp_bottler_sides"), modLoc("block/xp_bottler_sides"))
+				.texture("particle", modLoc("block/xp_bottler_front"));
+		horizontalBlock(OBBlocks.XP_BOTTLER.get(), xpBottler);
+		simpleBlockItem(OBBlocks.XP_BOTTLER.get(), xpBottler);
+
 		// flat icon like vanilla iron bars, the 1px block model is barely visible from the side
 		itemModels().withExistingParent("xp_drain", mcLoc("item/generated")).texture("layer0", modLoc("block/xp_drain"));
 	}

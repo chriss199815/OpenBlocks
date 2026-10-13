@@ -72,5 +72,14 @@ public class OBRecipeProvider extends RecipeProvider {
 				.define('o', Items.OBSIDIAN)
 				.unlockedBy("has_obsidian", has(Items.OBSIDIAN))
 				.save(output);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.MISC, OBBlocks.XP_BOTTLER.get())
+				.pattern("iii")
+				.pattern("ibi")
+				.pattern("iii")
+				.define('i', Tags.Items.INGOTS_IRON)
+				.define('b', Items.GLASS_BOTTLE)
+				.unlockedBy("has_glass_bottle", has(Items.GLASS_BOTTLE))
+				.save(output);
 	}
 }

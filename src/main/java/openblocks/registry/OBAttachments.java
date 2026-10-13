@@ -2,6 +2,7 @@ package openblocks.registry;
 
 import java.util.function.Supplier;
 import net.minecraft.world.InteractionHand;
+import net.minecraft.network.codec.ByteBufCodecs;
 import net.neoforged.neoforge.attachment.AttachmentType;
 import net.neoforged.neoforge.network.codec.NeoForgeStreamCodecs;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -19,5 +20,14 @@ public class OBAttachments {
 	public static final Supplier<AttachmentType<InteractionHand>> HANG_GLIDER = ATTACHMENT_TYPES.register("hang_glider",
 			() -> AttachmentType.builder(() -> InteractionHand.MAIN_HAND)
 					.sync(NeoForgeStreamCodecs.enumCodec(InteractionHand.class))
+					.build());
+
+	/**
+	 * Present while the player sleeps in a sleeping bag instead of a bed; the value is the player's yaw when lying down, which replaces
+	 * the bed's facing for body and camera. Synced, so other clients draw the bag.
+	 */
+	public static final Supplier<AttachmentType<Float>> SLEEPING_BAG = ATTACHMENT_TYPES.register("sleeping_bag",
+			() -> AttachmentType.builder(() -> 0.0f)
+					.sync(ByteBufCodecs.FLOAT)
 					.build());
 }

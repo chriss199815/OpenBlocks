@@ -252,7 +252,7 @@
   "item.openblocks.hang_glider.description": "Der Hängegleiter ist selbsterklärend. Halte ihn in deiner Hand und klicke, um ihn auf deinem Rücken zu platzieren. Jetzt spring!\nDrücke Shift um während des Gleitens deine Geschwindigkeit zu erhöhen, doch pass auf, du wirst schneller sinken!\n\nDein Hängegleiter ist außerdem mit einem Variometer zur akustischen Indikation vertikaler Luftbewegungen ausgerüstet. Drücke V und bleibe für immer oben (oder bis die Sonne untergeht)!",
   "item.openblocks.glider_wing": "Gleiterflügel",
   "item.openblocks.sleeping_bag": "Schlafsack",
-  "item.openblocks.sleeping_bag.description": "Mit dem Schlafsack kannst du in der Wildnis schlafen, ohne deine Spawn-Position zurückzusetzen. Um zu schlafen, trage ihn einfach auf dem Rücken.",
+  "item.openblocks.sleeping_bag.description": "Mit dem Schlafsack kannst du in der Wildnis schlafen, ohne deine Spawn-Position zurückzusetzen. Um zu schlafen, klicke nachts einfach mit ihm rechts.",
   "item.openblocks.luggage": "Reisegepäck",
   "item.openblocks.luggage.description": "Das Reisegepäck ist dein neuer Freund. Es folgt dir überall hin und sammelt alle Gegenstände, die es am Boden findet, ein. Nom nom nom!\nUm es aufzuheben, Shift-klicke einfach auf es und es verwandelt sich zurück in ein Gegenstand, das du umhertragen kannst.\nWenn es jemals von einem Blitz getroffen werden sollte, wird es noch mehr Gegenstände tragen können!",
   "item.openblocks.sonic_glasses": "Schallbrille",

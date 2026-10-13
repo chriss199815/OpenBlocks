@@ -45,6 +45,7 @@ public class OBBlockStateProvider extends BlockStateProvider {
 		itemModels().basicItem(OBItems.XP_BUCKET.get());
 		itemModels().basicItem(OBItems.GLIDER_WING.get());
 		itemModels().basicItem(OBItems.HANG_GLIDER.get());
+		itemModels().basicItem(OBItems.SLEEPING_BAG.get());
 
 		tank();
 

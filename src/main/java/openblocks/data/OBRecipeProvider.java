@@ -111,5 +111,14 @@ public class OBRecipeProvider extends RecipeProvider {
 				.define('s', Tags.Items.RODS_WOODEN)
 				.unlockedBy("has_glider_wing", has(OBItems.GLIDER_WING.get()))
 				.save(output);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.MISC, OBItems.SLEEPING_BAG.get())
+				.pattern("cc ")
+				.pattern("www")
+				.pattern("ccw")
+				.define('c', Items.BLUE_CARPET)
+				.define('w', Items.WHITE_WOOL)
+				.unlockedBy("has_white_wool", has(Items.WHITE_WOOL))
+				.save(output);
 	}
 }

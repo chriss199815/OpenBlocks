@@ -1,6 +1,7 @@
-// 1.21.1	2026-10-13T21:34:39.872375	Recipes
+// 1.21.1	2026-10-13T21:43:51.679771	Recipes
 4703126fbd22d6defaf693cfd1899aa9725e2cbe data/openblocks/advancement/recipes/misc/glider_wing_left.json
 c40b99032ad81579611396658ce2ae35f1814bb9 data/openblocks/advancement/recipes/misc/glider_wing_right.json
+22c667d4bb09ff4494a0c22c9d82e6ec61b1a559 data/openblocks/advancement/recipes/misc/sleeping_bag.json
 a79972e5807a48dec69c932db335e409de7649d2 data/openblocks/advancement/recipes/misc/tank.json
 05689bf5f2a510b8fb48fb038827dbac22309f85 data/openblocks/advancement/recipes/misc/xp_bottler.json
 7c75738a9424853e3b6aac5d41229ebf3173a356 data/openblocks/advancement/recipes/misc/xp_drain.json
@@ -69,6 +70,7 @@ ef13181744618d54aa2445f3112edd54c70cc305 data/openblocks/recipe/pink_elevator_ro
 e8141f2b10c0d7cdca5861f797bed88f4b1866bb data/openblocks/recipe/purple_elevator_rotating.json
 fa8e66804c8144f8e543cc41a58ecce7b39bf7a0 data/openblocks/recipe/red_elevator.json
 28219adfa77731cdd95c2b5d771559a603b956d1 data/openblocks/recipe/red_elevator_rotating.json
+f19f94e01a138278627c26547d4a9780af62ca45 data/openblocks/recipe/sleeping_bag.json
 85e77e95cfd534f9e3db5f2a3185c1db82b4bc27 data/openblocks/recipe/tank.json
 f0ad4f5779decdf242bb4891f50addde723743f5 data/openblocks/recipe/white_elevator.json
 ec6ac9697bd441d0e0c412cb708479c4fc43d098 data/openblocks/recipe/white_elevator_rotating.json

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "c": {
+      "item": "minecraft:blue_carpet"
+    },
+    "w": {
+      "item": "minecraft:white_wool"
+    }
+  },
+  "pattern": [
+    "cc ",
+    "www",
+    "ccw"
+  ],
+  "result": {
+    "count": 1,
+    "id": "openblocks:sleeping_bag"
+  }
+}

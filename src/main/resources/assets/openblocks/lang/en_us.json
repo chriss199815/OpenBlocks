@@ -252,7 +252,7 @@
   "item.openblocks.hang_glider.description": "The hang glider is self explanatory. Hold it in your hand and click to place it on your back. Now jump!\nTo increase your speed you can press shift while gliding, but watch out, you'll lose altitude faster!\n\nYour hang glider now also includes an acoustic variometer indicating vertical air movement. Press V to activate it and stay up forever (or until the sun goes down)!",
   "item.openblocks.glider_wing": "Glider Wing",
   "item.openblocks.sleeping_bag": "Sleeping Bag",
-  "item.openblocks.sleeping_bag.description": "The sleeping bag lets you sleep out in the wilderness without having to reset your spawn location. To sleep, simply wear it on your back.",
+  "item.openblocks.sleeping_bag.description": "The sleeping bag lets you sleep out in the wilderness without having to reset your spawn location. To sleep, simply right-click with it at night.",
   "item.openblocks.luggage": "Luggage",
   "item.openblocks.luggage.description": "Luggage is your new friend. He'll follow you around anywhere you go collecting any items he finds on the floor. Nom nom nom!\nTo dismantle him just shift-click on him and he'll turn into an item that you can carry around.\nIf he ever gets struck by lightning he'll be able to carry even more items!",
   "item.openblocks.sonic_glasses": "Sonic Glasses",

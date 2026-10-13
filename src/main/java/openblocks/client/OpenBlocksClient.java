@@ -34,11 +34,16 @@ public class OpenBlocksClient {
 		modBus.addListener(OpenBlocksClient::registerRenderers);
 		modBus.addListener(LiquidSprayParticle::register);
 		modBus.addListener(OpenBlocksClient::registerScreens);
+		modBus.addListener(SleepingBagLayer::registerLayerDefinitions);
+		modBus.addListener(SleepingBagLayer::addLayers);
 
 		NeoForge.EVENT_BUS.addListener(ElevatorInputHandler::onMovementInput);
 		NeoForge.EVENT_BUS.addListener(HangGliderRenderer::onRenderPlayerPre);
 		NeoForge.EVENT_BUS.addListener(HangGliderRenderer::onRenderPlayerPost);
 		NeoForge.EVENT_BUS.addListener(HangGliderRenderer::onRenderLevelStage);
+		NeoForge.EVENT_BUS.addListener(SleepingBagLayer::onRenderPlayerPre);
+		NeoForge.EVENT_BUS.addListener(SleepingBagLayer::onRenderPlayerPost);
+		NeoForge.EVENT_BUS.addListener(SleepingBagLayer::onComputeCameraAngles);
 	}
 
 	private static void registerScreens(RegisterMenuScreensEvent event) {

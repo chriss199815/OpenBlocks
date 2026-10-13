@@ -79,8 +79,8 @@ Fortschritt:
 - Tank (Fluid-Capability, verbundene Tanks, BER fürs Füllbild, Tankinhalt bleibt beim Abbauen über eine Data Component erhalten).
 - XP Drain, XP Shower, XP Bottler (erstes Menü + Screen → Vorlage für alle weiteren GUIs).
 - Grave (Inventar beim Tod sichern über `LivingDropsEvent`, BER).
-- [x] Hang Glider + Glider Wing: synchronisiertes Player-Attachment `hang_glider` (Hand) statt Entity, Physik inkl. Thermik im Player-Tick (beide Seiten), Rendering über `RenderPlayerEvent` (Körper gekippt, Gleiter über dem Spieler) und `RenderLevelStageEvent` (First Person), Item in der Hand ausgeblendet per `BakedModelWrapper`, Config `hangglider.enableThermal`, GameTests. **Offen:** akustisches Variometer (`Vario`/`BeepGenerator`, Tasten V/lauter/leiser).
-- Sleeping Bag.
+- [x] Hang Glider + Glider Wing: synchronisiertes Player-Attachment `hang_glider` (Hand) statt Entity, Physik inkl. Thermik im Player-Tick (beide Seiten), Rendering über `RenderPlayerEvent` (Körper gekippt, Gleiter über dem Spieler) und `RenderLevelStageEvent` (First Person), Item in der Hand ausgeblendet per `BakedModelWrapper`, Config `hangglider.enableThermal`, GameTests.  Akustisches Variometer → Welle 5.
+- [x] Sleeping Bag: Rechtsklick schläft am aktuellen Ort (Vanilla-Prüfungen für Nacht/Monster/Dimension nachgebaut), Spawnpunkt bleibt, `CanContinueSleepingEvent` erlaubt Schlafen ohne Bett, synchronisiertes Attachment `sleeping_bag` für das Schlafsack-Modell (`RenderLayer`). Anders als im Original wird er nicht im Brust-Slot getragen, die Rüstung bleibt an. GameTests.
 - Advancements und Trigger.
 
 ## Welle 3 – Maschinen und Inventare
@@ -92,7 +92,7 @@ Vacuum Hopper (Seitenkonfiguration), Auto Anvil, Auto Enchantment Table, Block B
 Trophy (+15 Verhaltensweisen), Cannon, Projector + Cartographer + Height Map, Guide/Builder Guide (+ `shapes/`), Imaginary-Blöcke + Glasses, Crane Backpack + Magnet, Golden Egg, Golden Eye (Vanilla-Locate-API), Sky Block, Glyph, Sonic Glasses, Village Highlighter, Enchantments + FlimFlams, Befehle (Brigadier: flimflam, luck, inventory), Brick Drops.
 
 ## Welle 5 (optional)
-Handbuch über Patchouli, eventuell Integrationen (CC: Tweaked Peripherals), Übersetzungen nachpflegen.
+Handbuch über Patchouli, akustisches Variometer für den Hang Glider, eventuell Integrationen (CC: Tweaked Peripherals), Übersetzungen nachpflegen.
 
 ## Vorgehen je Feature (wiederholbares Muster)
 1. Alte Klassen in `legacy/` lesen (Block, BE, Renderer, GUI, Config-Werte, Rezept).

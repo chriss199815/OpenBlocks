@@ -1,4 +1,4 @@
-// 1.21.1	2026-10-13T21:34:39.871314	Block States: openblocks
+// 1.21.1	2026-10-13T21:43:51.678583	Block States: openblocks
 c45d5d2e71c34dc43588a6063c8f1025e64a8816 assets/openblocks/blockstates/black_elevator.json
 d13702d1e489422f027636fd4f3a4f64b33332e9 assets/openblocks/blockstates/black_elevator_rotating.json
 c45d5d2e71c34dc43588a6063c8f1025e64a8816 assets/openblocks/blockstates/blue_elevator.json
@@ -90,6 +90,7 @@ d2b8f805473f5db4bc4402f5b4f1864704363649 assets/openblocks/models/item/purple_el
 dd180aef5747a9afe34022df0f8fd345d081cd6c assets/openblocks/models/item/purple_elevator_rotating.json
 d2b8f805473f5db4bc4402f5b4f1864704363649 assets/openblocks/models/item/red_elevator.json
 dd180aef5747a9afe34022df0f8fd345d081cd6c assets/openblocks/models/item/red_elevator_rotating.json
+93fe12716900287b328fc50ce493ef5f588177bf assets/openblocks/models/item/sleeping_bag.json
 6fff0ef906f182357faec183b041dc191339ab28 assets/openblocks/models/item/tank.json
 d2b8f805473f5db4bc4402f5b4f1864704363649 assets/openblocks/models/item/white_elevator.json
 dd180aef5747a9afe34022df0f8fd345d081cd6c assets/openblocks/models/item/white_elevator_rotating.json

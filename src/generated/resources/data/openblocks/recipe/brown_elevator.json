@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "openblocks:elevator",
+  "key": {
+    "e": {
+      "tag": "c:ender_pearls"
+    },
+    "w": {
+      "item": "minecraft:brown_wool"
+    }
+  },
+  "pattern": [
+    "www",
+    "wew",
+    "www"
+  ],
+  "result": {
+    "count": 1,
+    "id": "openblocks:brown_elevator"
+  }
+}

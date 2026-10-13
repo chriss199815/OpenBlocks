@@ -28,6 +28,10 @@ Vollständiger Plan: [PORTING_PLAN.md](PORTING_PLAN.md)
 - `openblocks.client.*` – nur Client-Code (Renderer, Screens, Input)
 - `openblocks.integration.jei` – JEI-Plugin (Nachfolger des alten NEI-Plugins)
 - `openblocks.util` – bei Bedarf aus OpenModsLib übernommene Helfer
+- `openblocks.block` – Blockklassen · `openblocks.common` – serverseitige Feature-Logik (z. B. `ElevatorActionHandler`)
+- `openblocks.api` – öffentliche API für andere Mods (`IElevatorBlock`, `ElevatorCheckEvent`)
+- `openblocks.client.OpenBlocksClient` – Client-Einstieg (`@Mod(dist = CLIENT)`), registriert Client-Listener
+- `openblocks.gametest` – GameTests; leere Test-Strukturen erzeugt `OBGameTestStructureProvider` per Datagen
 
 ## Konventionen
 - Registrierung nur über `DeferredRegister` in `openblocks.registry`.

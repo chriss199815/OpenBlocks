@@ -1,0 +1,11 @@
+{
+  "parent": "openblocks:block/tinted_cube",
+  "textures": {
+    "down": "openblocks:block/elevator",
+    "east": "openblocks:block/elevator",
+    "north": "openblocks:block/elevator",
+    "south": "openblocks:block/elevator",
+    "up": "openblocks:block/elevator_rot",
+    "west": "openblocks:block/elevator"
+  }
+}

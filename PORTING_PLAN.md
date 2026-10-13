@@ -60,7 +60,9 @@ Verschoben in Welle 1 (erst bei Bedarf anlegen):
 
 Hinweis: Der Creative-Tab bleibt unsichtbar, solange er leer ist (Vanilla blendet leere Tabs aus).
 
-## Welle 1 – einfache Blöcke und Items (erster spielbarer Release) — ⏭ als Nächstes, Start mit dem Elevator
+## Welle 1 – einfache Blöcke und Items (erster spielbarer Release) — 🚧 in Arbeit
+Fortschritt:
+- [x] Elevator + Rotating Elevator: je 16 Blöcke pro Farbe (`<farbe>_elevator`, `<farbe>_elevator_rotating`) statt Metadaten/TileEntity, Färben per Rechtsklick mit Farbstoff, Config `elevator.*`, `ElevatorCheckEvent`-API, Payload statt `ElevatorActionEvent`, GameTests. Dazu Grundgerüst: Datagen (Blockstates/Modelle, Loot, Rezepte, Block-Tags, GameTest-Strukturen), `OBSounds`, Client-Einstieg `OpenBlocksClient`.
 Ladder, Rope Ladder, Sponge, Scaffolding, Heal, Big Button (Stein/Holz), Target, Path, Elevator + Rotating Elevator, Wrench, Pedometer, Slimalyzer, Sponge-on-a-Stick, Tasty Clay, generische Items (`MetasGeneric` → einzelne Items statt Metadaten).
 - Metadaten-Items werden in einzelne Items aufgeteilt (es gibt keine Item-Metadaten mehr).
 - Für jeden Block: Blockstate, Modell und Loot-Table per Datagen, Rezept mit Tags.

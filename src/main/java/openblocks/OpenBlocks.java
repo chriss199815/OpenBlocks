@@ -12,6 +12,7 @@ import openblocks.registry.OBBlockEntities;
 import openblocks.registry.OBBlocks;
 import openblocks.registry.OBCreativeTabs;
 import openblocks.registry.OBItems;
+import openblocks.registry.OBSounds;
 import org.slf4j.Logger;
 
 @Mod(OpenBlocks.MODID)
@@ -25,6 +26,7 @@ public class OpenBlocks {
 		OBItems.ITEMS.register(modBus);
 		OBBlockEntities.BLOCK_ENTITIES.register(modBus);
 		OBCreativeTabs.TABS.register(modBus);
+		OBSounds.SOUNDS.register(modBus);
 
 		modBus.addListener(OBNetwork::register);
 		modBus.addListener(OBDataGenerators::gatherData);

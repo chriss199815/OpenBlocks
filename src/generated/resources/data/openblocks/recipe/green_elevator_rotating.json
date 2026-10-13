@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "openblocks:elevator_rotating",
+  "key": {
+    "e": {
+      "tag": "c:ender_pearls"
+    },
+    "i": {
+      "tag": "c:ingots/iron"
+    },
+    "w": {
+      "item": "minecraft:green_wool"
+    }
+  },
+  "pattern": [
+    "wiw",
+    "wew",
+    "wiw"
+  ],
+  "result": {
+    "count": 1,
+    "id": "openblocks:green_elevator_rotating"
+  }
+}

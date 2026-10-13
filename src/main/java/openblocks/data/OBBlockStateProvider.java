@@ -6,10 +6,12 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.ItemDisplayContext;
 import net.neoforged.neoforge.client.model.generators.BlockModelBuilder;
 import net.neoforged.neoforge.client.model.generators.BlockStateProvider;
+import net.neoforged.neoforge.client.model.generators.ConfiguredModel;
 import net.neoforged.neoforge.client.model.generators.ModelBuilder;
 import net.neoforged.neoforge.client.model.generators.ModelFile;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import openblocks.OpenBlocks;
+import openblocks.block.GraveBlock;
 import openblocks.registry.OBBlocks;
 import openblocks.common.TankEdge;
 import openblocks.registry.OBItems;
@@ -99,6 +101,8 @@ public class OBBlockStateProvider extends BlockStateProvider {
 		horizontalBlock(OBBlocks.XP_BOTTLER.get(), xpBottler);
 		simpleBlockItem(OBBlocks.XP_BOTTLER.get(), xpBottler);
 
+		grave();
+
 		// flat icon like vanilla iron bars, the 1px block model is barely visible from the side
 		itemModels().withExistingParent("xp_drain", mcLoc("item/generated")).texture("layer0", modLoc("block/xp_drain"));
 	}
@@ -127,6 +131,43 @@ public class OBBlockStateProvider extends BlockStateProvider {
 				.transform(ItemDisplayContext.FIRST_PERSON_RIGHT_HAND).rotation(0, 45, 0).scale(0.4f).end()
 				.transform(ItemDisplayContext.FIRST_PERSON_LEFT_HAND).rotation(0, 225, 0).scale(0.4f).end()
 				.end();
+	}
+
+	/**
+	 * Port of legacy grave_ground/grave_free: a gravestone at the south edge, with an optional dirt mound. The inscription faces north at 0°.
+	 */
+	private void grave() {
+		final BlockModelBuilder ground = models().withExistingParent("grave_ground", mcLoc("block/block"))
+				.texture("base", modLoc("block/grave_base"))
+				.texture("front", modLoc("block/grave_front"))
+				.texture("back", modLoc("block/grave_back"))
+				.texture("particle", modLoc("block/grave_base"))
+				.element().from(0, 0, 0).to(16, 1, 16)
+				.allFaces((dir, face) -> face.texture("#base").uvs(0, 0, 16, dir.getAxis().isHorizontal()? 1 : 16))
+				.end();
+		graveStone(ground, 1);
+
+		final BlockModelBuilder free = models().withExistingParent("grave_free", mcLoc("block/block"))
+				.texture("front", modLoc("block/grave_front"))
+				.texture("back", modLoc("block/grave_back"))
+				.texture("particle", modLoc("block/grave_front"));
+		graveStone(free, 0)
+				.face(Direction.DOWN).uvs(2, 14, 14, 16).texture("#back").end();
+
+		getVariantBuilder(OBBlocks.GRAVE.get()).forAllStates(state -> ConfiguredModel.builder()
+				.modelFile(state.getValue(GraveBlock.HAS_BASE)? ground : free)
+				.rotationY(((int)state.getValue(GraveBlock.FACING).toYRot() + 180) % 360)
+				.build());
+		simpleBlockItem(OBBlocks.GRAVE.get(), ground);
+	}
+
+	private static ModelBuilder<BlockModelBuilder>.ElementBuilder graveStone(BlockModelBuilder model, int bottom) {
+		return model.element().from(2, bottom, 14).to(14, bottom + 15, 16)
+				.face(Direction.NORTH).uvs(2, 1, 14, 16).texture("#front").end()
+				.face(Direction.EAST).uvs(14, 1, 16, 16).texture("#back").end()
+				.face(Direction.SOUTH).uvs(2, 1, 14, 16).texture("#back").end()
+				.face(Direction.WEST).uvs(0, 1, 2, 16).texture("#back").end()
+				.face(Direction.UP).uvs(2, 0, 14, 2).texture("#back").end();
 	}
 
 	private BlockModelBuilder tankFrame(String name) {

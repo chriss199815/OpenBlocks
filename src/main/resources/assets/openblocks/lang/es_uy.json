@@ -77,7 +77,7 @@
   "openblocks.misc.oh_no_ceiling": "No puedes dormirte aquí, el techo te inquieta demasiado.",
   "openblocks.misc.oh_no_ground": "¿¡Quieres dormir encima de ESO!?",
   "openblocks.misc.sleeping_bag_broken": "Objeto inactivo debido a una fallo en la inicialización.",
-  "openblocks.misc.grave_msg": "%s (día: %.1f)",
+  "openblocks.misc.grave_msg": "%s (día: %s)",
   "openblocks.misc.cant_restore_player": "No se puede restaurar el inventario de %s",
   "openblocks.misc.cant_restore_inventory": "No se puede restaurar el inventario",
   "openblocks.misc.cant_store": "No se puede guardar el inventario de  %s",

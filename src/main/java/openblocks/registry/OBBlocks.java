@@ -16,6 +16,7 @@ import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import openblocks.OpenBlocks;
 import openblocks.block.ElevatorBlock;
+import openblocks.block.GraveBlock;
 import openblocks.block.RotatingElevatorBlock;
 import openblocks.block.TankBlock;
 import openblocks.block.XpBottlerBlock;
@@ -63,6 +64,12 @@ public class OBBlocks {
 			.strength(1.0f)
 			.requiresCorrectToolForDrops()
 			.sound(SoundType.STONE)));
+
+	public static final DeferredBlock<GraveBlock> GRAVE = registerWithItem("grave", () -> new GraveBlock(BlockBehaviour.Properties.of()
+			.mapColor(MapColor.DIRT)
+			.strength(1.0f, 2000.0f)
+			.noOcclusion()
+			.sound(SoundType.GRAVEL)));
 
 	private static <T extends Block> DeferredBlock<T> registerWithItem(String id, Supplier<T> factory) {
 		final DeferredBlock<T> block = BLOCKS.register(id, factory);

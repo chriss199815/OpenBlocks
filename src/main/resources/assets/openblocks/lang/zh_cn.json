@@ -87,7 +87,7 @@
   "openblocks.misc.structure_not_locked": "没有锁定任何结构！",
   "openblocks.misc.locked_on_structure": "锁定最近的 %s",
   "openblocks.misc.no_nearby_structures": "无法找到最近的结构",
-  "openblocks.misc.grave_msg": "%s (天数: %.1f)",
+  "openblocks.misc.grave_msg": "%s (天数: %s)",
   "openblocks.misc.cant_restore_player": "无法恢复玩家 %s 的物品栏",
   "openblocks.misc.cant_restore_inventory": "无法恢复物品栏",
   "openblocks.misc.cant_store": "无法储存玩家 %s 的物品栏",

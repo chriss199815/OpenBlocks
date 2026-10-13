@@ -5,6 +5,7 @@ import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import openblocks.OpenBlocks;
+import openblocks.block.entity.GraveBlockEntity;
 import openblocks.block.entity.TankBlockEntity;
 import openblocks.block.entity.XpBottlerBlockEntity;
 import openblocks.block.entity.XpDrainBlockEntity;
@@ -25,6 +26,10 @@ public class OBBlockEntities {
 	@SuppressWarnings("DataFlowIssue")
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<XpShowerBlockEntity>> XP_SHOWER = BLOCK_ENTITIES.register("xp_shower",
 			() -> BlockEntityType.Builder.of(XpShowerBlockEntity::new, OBBlocks.XP_SHOWER.get()).build(null));
+
+	@SuppressWarnings("DataFlowIssue")
+	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<GraveBlockEntity>> GRAVE = BLOCK_ENTITIES.register("grave",
+			() -> BlockEntityType.Builder.of(GraveBlockEntity::new, OBBlocks.GRAVE.get()).build(null));
 
 	@SuppressWarnings("DataFlowIssue")
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<XpBottlerBlockEntity>> XP_BOTTLER = BLOCK_ENTITIES.register("xp_bottler",

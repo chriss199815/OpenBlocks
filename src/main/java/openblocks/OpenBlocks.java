@@ -2,12 +2,14 @@ package openblocks;
 
 import com.mojang.logging.LogUtils;
 import net.minecraft.resources.ResourceLocation;
+import net.neoforged.bus.api.EventPriority;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.config.ModConfig;
 import net.neoforged.neoforge.common.NeoForge;
 import openblocks.data.OBDataGenerators;
+import openblocks.common.PlayerDeathHandler;
 import openblocks.entity.NoFlyXpOrb;
 import openblocks.network.OBNetwork;
 import openblocks.registry.OBBlockEntities;
@@ -17,6 +19,7 @@ import openblocks.registry.OBComponents;
 import openblocks.registry.OBEntities;
 import openblocks.registry.OBCreativeTabs;
 import openblocks.registry.OBFluids;
+import openblocks.registry.OBGameRules;
 import openblocks.registry.OBItems;
 import openblocks.registry.OBMenus;
 import openblocks.registry.OBParticleTypes;
@@ -39,6 +42,7 @@ public class OpenBlocks {
 		OBEntities.ENTITIES.register(modBus);
 		OBParticleTypes.PARTICLE_TYPES.register(modBus);
 		OBMenus.MENUS.register(modBus);
+		OBGameRules.init();
 		OBCreativeTabs.TABS.register(modBus);
 		OBSounds.SOUNDS.register(modBus);
 
@@ -47,6 +51,8 @@ public class OpenBlocks {
 		modBus.addListener(OBDataGenerators::gatherData);
 
 		NeoForge.EVENT_BUS.addListener(NoFlyXpOrb::onTargeting);
+		// low priority and receiving cancelled events, like legacy, so other mods can claim drops first
+		NeoForge.EVENT_BUS.addListener(EventPriority.LOW, true, PlayerDeathHandler::onLivingDrops);
 
 		container.registerConfig(ModConfig.Type.COMMON, OBConfig.SPEC);
 	}

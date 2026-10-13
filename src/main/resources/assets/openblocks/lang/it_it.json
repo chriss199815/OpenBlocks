@@ -78,7 +78,7 @@
   "openblocks.misc.oh_no_ceiling": "Non ti puoi addormentare lì. Il soffitto ti disturba troppo...",
   "openblocks.misc.oh_no_ground": "Vuoi dormire su QUEL COSO!?",
   "openblocks.misc.sleeping_bag_broken": "Oggetto disattivato in quanto l'inizializzazione è fallita",
-  "openblocks.misc.grave_msg": "%s (Giorno: %.1f)",
+  "openblocks.misc.grave_msg": "%s (Giorno: %s)",
   "openblocks.misc.cant_restore_player": "Impossibile ripristinare l'inventario del giocatore %s",
   "openblocks.misc.cant_restore_inventory": "Impossibile ripristinare l'inventario",
   "openblocks.misc.cant_store": "Impossibile memorizzare l'inventario del giocatore %s",

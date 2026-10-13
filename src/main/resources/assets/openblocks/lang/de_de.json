@@ -91,7 +91,7 @@
   "openblocks.misc.locked_on_nearest_structure": "Verbunden mit %d in der Nähe",
   "openblocks.misc.locked_on_structure": "Verbunden mit %s",
   "openblocks.misc.no_nearby_structures": "Kann keine nahen Strukturen finden",
-  "openblocks.misc.grave_msg": "%s (Tag: %.1f)",
+  "openblocks.misc.grave_msg": "%s (Tag: %s)",
   "openblocks.misc.cant_restore_player": "Kann Inventar für %s nicht wiederherstellen",
   "openblocks.misc.cant_restore_inventory": "Kann Inventar nicht wiederherstellen",
   "openblocks.misc.cant_store": "Das Inventar für %s kann nicht gespeichert werden",
@@ -308,5 +308,6 @@
   "entity.Villager.audiophile": "Audiophil",
   "openblocks.misc.tank.contents": "%s: %s / %s mB (%s%%)",
   "entity.openblocks.xp_orb_no_fly": "Erfahrungskugel",
+  "gamerule.openblocks:spawn_graves": "Gräber beim Tod eines Spielers erzeugen",
   "openblocks.misc.tank.empty": "Leer (0 / %s mB)"
 }

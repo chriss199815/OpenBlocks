@@ -43,6 +43,7 @@ public class OpenBlocksClient {
 
 	private static void registerRenderers(EntityRenderersEvent.RegisterRenderers event) {
 		event.registerBlockEntityRenderer(OBBlockEntities.TANK.get(), TankBlockEntityRenderer::new);
+		event.registerBlockEntityRenderer(OBBlockEntities.GRAVE.get(), GraveBlockEntityRenderer::new);
 		event.registerEntityRenderer(OBEntities.NO_FLY_XP_ORB.get(), ExperienceOrbRenderer::new);
 	}
 }

@@ -91,7 +91,7 @@
   "openblocks.misc.locked_on_nearest_structure": "Locked on nearest %s",
   "openblocks.misc.locked_on_structure": "Locked on %s",
   "openblocks.misc.no_nearby_structures": "Can't find any nearby structures",
-  "openblocks.misc.grave_msg": "%s (day: %.1f)",
+  "openblocks.misc.grave_msg": "%s (day: %s)",
   "openblocks.misc.cant_restore_player": "Can't restore inventory for player %s",
   "openblocks.misc.cant_restore_inventory": "Can't restore inventory",
   "openblocks.misc.cant_store": "Can't store player %s inventory",
@@ -309,5 +309,6 @@
   "itemGroup.openblocks": "OpenBlocks",
   "openblocks.misc.tank.contents": "%s: %s / %s mB (%s%%)",
   "entity.openblocks.xp_orb_no_fly": "Experience Orb",
+  "gamerule.openblocks:spawn_graves": "Spawn graves on player death",
   "openblocks.misc.tank.empty": "Empty (0 / %s mB)"
 }

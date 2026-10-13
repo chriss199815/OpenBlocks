@@ -88,7 +88,7 @@
   "openblocks.misc.locked_on_nearest_structure": "Фиксировано на ближайшем %s",
   "openblocks.misc.locked_on_structure": "Фиксировано на %s",
   "openblocks.misc.no_nearby_structures": "Не обнаружено ближайших структур",
-  "openblocks.misc.grave_msg": "%s (день: %.1f)",
+  "openblocks.misc.grave_msg": "%s (день: %s)",
   "openblocks.misc.cant_restore_player": "Не удалось восстановить инвентарь для игрока %s",
   "openblocks.misc.cant_restore_inventory": "Не удалось восстановить инвентарь",
   "openblocks.misc.cant_store": "Не удалось сохранить инвентарь игрока %s",

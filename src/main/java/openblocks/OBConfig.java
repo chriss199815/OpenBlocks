@@ -13,8 +13,45 @@ public class OBConfig {
 	public static final Elevator ELEVATOR = new Elevator(BUILDER);
 	public static final Xp XP = new Xp(BUILDER);
 	public static final Tanks TANKS = new Tanks(BUILDER);
+	public static final Graves GRAVES = new Graves(BUILDER);
 
 	public static final ModConfigSpec SPEC = BUILDER.build();
+
+	public static class Graves {
+		public final ModConfigSpec.BooleanValue destructiveGraves;
+		public final ModConfigSpec.IntValue spawnRange;
+		public final ModConfigSpec.BooleanValue spawnSkeletons;
+		public final ModConfigSpec.DoubleValue skeletonSpawnRate;
+		public final ModConfigSpec.BooleanValue requiresGraveInInv;
+		public final ModConfigSpec.DoubleValue specialActionFrequency;
+		public final ModConfigSpec.BooleanValue canSpawnBase;
+
+		private Graves(ModConfigSpec.Builder builder) {
+			builder.push("graves");
+			destructiveGraves = builder
+					.comment("Try to overwrite blocks with graves if no suitable place is found on first try")
+					.define("destructiveGraves", false);
+			spawnRange = builder
+					.comment("Size of cube searched for spaces suitable for grave spawning")
+					.defineInRange("spawnRange", 10, 0, 64);
+			spawnSkeletons = builder
+					.comment("Should grave randomly spawn skeletons")
+					.define("spawnSkeletons", true);
+			skeletonSpawnRate = builder
+					.comment("Spawn rate, range: 0..1, default: about 1 per 50s")
+					.defineInRange("skeletonSpawnRate", 0.002, 0.0, 1.0);
+			requiresGraveInInv = builder
+					.comment("Require gravestone to be in a player's inventory (it is consumed)")
+					.define("requiresGraveInInv", false);
+			specialActionFrequency = builder
+					.comment("Frequency of special action on grave digging, 0..1")
+					.defineInRange("specialActionFrequency", 0.03, 0.0, 1.0);
+			canSpawnBase = builder
+					.comment("Can grave spawn single block of dirt when it has no block under?")
+					.define("canSpawnBase", true);
+			builder.pop();
+		}
+	}
 
 	public static class Tanks {
 		public final ModConfigSpec.IntValue bucketsPerTank;

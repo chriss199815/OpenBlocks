@@ -91,7 +91,7 @@
   "openblocks.misc.locked_on_nearest_structure": "Travou na(o) %s mais próxima",
   "openblocks.misc.locked_on_structure": "Travou na(o) %s",
   "openblocks.misc.no_nearby_structures": "Não encontramos nenhuma estrutura próxima",
-  "openblocks.misc.grave_msg": "%s (dia: %.1f)",
+  "openblocks.misc.grave_msg": "%s (dia: %s)",
   "openblocks.misc.cant_restore_player": "Não é possível restaurar o inventário de %s",
   "openblocks.misc.cant_restore_inventory": "Não é possível restaurar o inventário",
   "openblocks.misc.cant_store": "Não é possível armazenar o inventário de %s",

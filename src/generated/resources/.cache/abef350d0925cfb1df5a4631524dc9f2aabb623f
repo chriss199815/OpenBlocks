@@ -1,2 +1,5 @@
-// 1.21.1	2026-10-13T20:03:18.389888	Tags for minecraft:block mod id openblocks
+// 1.21.1	2026-10-13T20:17:44.341401	Tags for minecraft:block mod id openblocks
+9696dcd7778b16ec87ea56cb519dd003d7008343 data/minecraft/tags/block/dragon_immune.json
 64b7fe6c2aabfd13fb38a1e62edfb17174df0788 data/minecraft/tags/block/mineable/pickaxe.json
+9696dcd7778b16ec87ea56cb519dd003d7008343 data/minecraft/tags/block/mineable/shovel.json
+9696dcd7778b16ec87ea56cb519dd003d7008343 data/minecraft/tags/block/wither_immune.json

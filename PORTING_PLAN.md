@@ -71,6 +71,7 @@ Ladder, Rope Ladder, Sponge, Scaffolding, Heal, Big Button (Stein/Holz), Target,
 Fortschritt:
 - [x] XP Juice + XP Bucket, `FluidXpUtils`.
 - [x] Tank: `TankBlockEntity` (Säule füllen/leeren, Ausgleich mit Nachbarn), Data Component `tank_contents`, Fluid-Capability für Block und Item, verbundener Rahmen über `TankModel` (`ModelData`), Fluid per BER, Item per BEWLR, Licht über Blockstate `light`, Config `tanks.*`, GameTests.
+- [x] XP Drain: zieht XP von Spielern (max. 4/Tick) und Orbs in jede Fluid-Capability darunter, GameTests.
 - **XP Juice** als `FluidType` + Source/Flowing + Bucket, dazu `FluidXpUtils` portieren.
 - Tank (Fluid-Capability, verbundene Tanks, BER fürs Füllbild, Tankinhalt bleibt beim Abbauen über eine Data Component erhalten).
 - XP Drain, XP Shower, XP Bottler (erstes Menü + Screen → Vorlage für alle weiteren GUIs).

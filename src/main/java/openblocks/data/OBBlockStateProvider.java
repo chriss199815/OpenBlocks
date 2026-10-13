@@ -43,6 +43,23 @@ public class OBBlockStateProvider extends BlockStateProvider {
 		itemModels().basicItem(OBItems.XP_BUCKET.get());
 
 		tank();
+
+		final ModelFile xpDrain = models().getBuilder("xp_drain")
+				.renderType("cutout")
+				.texture("all", modLoc("block/xp_drain"))
+				.texture("particle", modLoc("block/xp_drain"))
+				.element()
+				.from(0, 0, 0)
+				.to(16, 1, 16)
+				.allFaces((dir, face) -> {
+					face.texture("#all");
+					if (dir.getAxis().isHorizontal()) face.uvs(0, 0, 16, 1);
+					if (dir != Direction.UP) face.cullface(dir);
+				})
+				.end();
+		horizontalBlock(OBBlocks.XP_DRAIN.get(), xpDrain, 0);
+		// flat icon like vanilla iron bars, the 1px block model is barely visible from the side
+		itemModels().withExistingParent("xp_drain", mcLoc("item/generated")).texture("layer0", modLoc("block/xp_drain"));
 	}
 
 	/**

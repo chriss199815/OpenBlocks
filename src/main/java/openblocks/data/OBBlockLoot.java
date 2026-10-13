@@ -20,6 +20,7 @@ public class OBBlockLoot extends BlockLootSubProvider {
 	protected void generate() {
 		OBBlocks.ELEVATORS.values().forEach(block -> dropSelf(block.get()));
 		OBBlocks.ROTATING_ELEVATORS.values().forEach(block -> dropSelf(block.get()));
+		dropSelf(OBBlocks.XP_DRAIN.get());
 		add(OBBlocks.TANK.get(), createSingleItemTable(OBBlocks.TANK.get())
 				.apply(CopyComponentsFunction.copyComponents(CopyComponentsFunction.Source.BLOCK_ENTITY).include(OBComponents.TANK_CONTENTS.get())));
 	}

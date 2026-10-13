@@ -6,6 +6,7 @@ import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import openblocks.OpenBlocks;
 import openblocks.block.entity.TankBlockEntity;
+import openblocks.block.entity.XpDrainBlockEntity;
 
 public class OBBlockEntities {
 
@@ -14,4 +15,8 @@ public class OBBlockEntities {
 	@SuppressWarnings("DataFlowIssue")
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<TankBlockEntity>> TANK = BLOCK_ENTITIES.register("tank",
 			() -> BlockEntityType.Builder.of(TankBlockEntity::new, OBBlocks.TANK.get()).build(null));
+
+	@SuppressWarnings("DataFlowIssue")
+	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<XpDrainBlockEntity>> XP_DRAIN = BLOCK_ENTITIES.register("xp_drain",
+			() -> BlockEntityType.Builder.of(XpDrainBlockEntity::new, OBBlocks.XP_DRAIN.get()).build(null));
 }

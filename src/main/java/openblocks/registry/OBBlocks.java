@@ -18,6 +18,7 @@ import openblocks.OpenBlocks;
 import openblocks.block.ElevatorBlock;
 import openblocks.block.RotatingElevatorBlock;
 import openblocks.block.TankBlock;
+import openblocks.block.XpDrainBlock;
 
 public class OBBlocks {
 
@@ -42,6 +43,12 @@ public class OBBlocks {
 			.isRedstoneConductor((state, level, pos) -> false)
 			.lightLevel(state -> state.getValue(TankBlock.LIGHT))
 			.sound(SoundType.STONE)));
+
+	public static final DeferredBlock<XpDrainBlock> XP_DRAIN = registerWithItem("xp_drain", () -> new XpDrainBlock(BlockBehaviour.Properties.of()
+			.mapColor(MapColor.METAL)
+			.strength(1.0f)
+			.noOcclusion()
+			.sound(SoundType.METAL)));
 
 	private static <T extends Block> DeferredBlock<T> registerWithItem(String id, Supplier<T> factory) {
 		final DeferredBlock<T> block = BLOCKS.register(id, factory);

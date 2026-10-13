@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "openblocks:block/xp_drain",
+      "y": 270
+    },
+    "facing=north": {
+      "model": "openblocks:block/xp_drain",
+      "y": 180
+    },
+    "facing=south": {
+      "model": "openblocks:block/xp_drain"
+    },
+    "facing=west": {
+      "model": "openblocks:block/xp_drain",
+      "y": 90
+    }
+  }
+}

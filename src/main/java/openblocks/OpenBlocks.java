@@ -10,7 +10,9 @@ import openblocks.data.OBDataGenerators;
 import openblocks.network.OBNetwork;
 import openblocks.registry.OBBlockEntities;
 import openblocks.registry.OBBlocks;
+import openblocks.registry.OBCapabilities;
 import openblocks.registry.OBCreativeTabs;
+import openblocks.registry.OBFluids;
 import openblocks.registry.OBItems;
 import openblocks.registry.OBSounds;
 import org.slf4j.Logger;
@@ -22,6 +24,8 @@ public class OpenBlocks {
 	public static final Logger LOG = LogUtils.getLogger();
 
 	public OpenBlocks(IEventBus modBus, ModContainer container) {
+		OBFluids.FLUID_TYPES.register(modBus);
+		OBFluids.FLUIDS.register(modBus);
 		OBBlocks.BLOCKS.register(modBus);
 		OBItems.ITEMS.register(modBus);
 		OBBlockEntities.BLOCK_ENTITIES.register(modBus);
@@ -29,6 +33,7 @@ public class OpenBlocks {
 		OBSounds.SOUNDS.register(modBus);
 
 		modBus.addListener(OBNetwork::register);
+		modBus.addListener(OBCapabilities::register);
 		modBus.addListener(OBDataGenerators::gatherData);
 
 		container.registerConfig(ModConfig.Type.COMMON, OBConfig.SPEC);

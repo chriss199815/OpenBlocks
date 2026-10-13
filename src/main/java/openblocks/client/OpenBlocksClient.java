@@ -15,6 +15,7 @@ public class OpenBlocksClient {
 	public OpenBlocksClient(IEventBus modBus) {
 		modBus.addListener(OBColorHandlers::registerBlockColors);
 		modBus.addListener(OBColorHandlers::registerItemColors);
+		modBus.addListener(OBFluidRendering::registerClientExtensions);
 
 		NeoForge.EVENT_BUS.addListener(ElevatorInputHandler::onMovementInput);
 	}

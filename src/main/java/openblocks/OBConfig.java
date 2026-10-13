@@ -11,8 +11,22 @@ public class OBConfig {
 	private static final ModConfigSpec.Builder BUILDER = new ModConfigSpec.Builder();
 
 	public static final Elevator ELEVATOR = new Elevator(BUILDER);
+	public static final Xp XP = new Xp(BUILDER);
 
 	public static final ModConfigSpec SPEC = BUILDER.build();
+
+	public static class Xp {
+		public final ModConfigSpec.IntValue liquidRatio;
+
+		private Xp(ModConfigSpec.Builder builder) {
+			builder.push("xp");
+			liquidRatio = builder
+					.comment("Storage in mB needed to store single XP point. Applies to all fluids in the 'c:experience' tag (replaces legacy 'additionalXpFluids').",
+							"Other mods using 'c:experience' expect 20, so only change this if you know what you're doing")
+					.defineInRange("xpToLiquidRatio", 20, 1, 1000);
+			builder.pop();
+		}
+	}
 
 	public static class Elevator {
 		public final ModConfigSpec.IntValue travelDistance;

@@ -11,7 +11,8 @@ public class XpUtils {
 	 * Minecraft doesn't keep {@code totalExperience} accurate, so it is calculated from level and progress.
 	 */
 	public static int getPlayerXp(Player player) {
-		return getExperienceForLevel(player.experienceLevel) + (int)(player.experienceProgress * player.getXpNeededForNextLevel());
+		// rounded, since experienceProgress is a float and truncating would lose a point (e.g. 10/15 -> 9.9999)
+		return getExperienceForLevel(player.experienceLevel) + Math.round(player.experienceProgress * player.getXpNeededForNextLevel());
 	}
 
 	public static int getExperienceForLevel(int level) {

@@ -9,6 +9,7 @@ import net.neoforged.neoforge.client.model.generators.ModelFile;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import openblocks.OpenBlocks;
 import openblocks.registry.OBBlocks;
+import openblocks.registry.OBItems;
 
 public class OBBlockStateProvider extends BlockStateProvider {
 
@@ -33,6 +34,10 @@ public class OBBlockStateProvider extends BlockStateProvider {
 			horizontalBlock(block.get(), rotatingElevator, 0);
 			simpleBlockItem(block.get(), rotatingElevator);
 		});
+
+		// fluid blocks are drawn by the fluid renderer, the model only provides break particles
+		simpleBlock(OBBlocks.XP_JUICE.get(), models().getBuilder("xp_juice").texture("particle", modLoc("block/xp_juice_still")));
+		itemModels().basicItem(OBItems.XP_BUCKET.get());
 	}
 
 	/**

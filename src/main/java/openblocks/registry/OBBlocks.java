@@ -7,8 +7,11 @@ import java.util.function.BiFunction;
 import java.util.function.Supplier;
 import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.LiquidBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.material.MapColor;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import openblocks.OpenBlocks;
@@ -21,6 +24,11 @@ public class OBBlocks {
 
 	public static final Map<DyeColor, DeferredBlock<ElevatorBlock>> ELEVATORS = registerColored("elevator", ElevatorBlock::new);
 	public static final Map<DyeColor, DeferredBlock<RotatingElevatorBlock>> ROTATING_ELEVATORS = registerColored("elevator_rotating", RotatingElevatorBlock::new);
+
+	// fluids are registered before blocks, so the fluid instance is already available here
+	public static final DeferredBlock<LiquidBlock> XP_JUICE = BLOCKS.register("xp_juice", () -> new LiquidBlock(OBFluids.XP_JUICE.get(), BlockBehaviour.Properties.ofFullCopy(Blocks.WATER)
+			.mapColor(MapColor.COLOR_LIGHT_GREEN)
+			.lightLevel(state -> 10)));
 
 	private static <T extends Block> DeferredBlock<T> registerWithItem(String id, Supplier<T> factory) {
 		final DeferredBlock<T> block = BLOCKS.register(id, factory);

@@ -1,0 +1,19 @@
+{
+  "openblocks.gui.luggage": "Bagage",
+  "openblocks.gui.sprinkler": "Sproeier",
+  "block.openblocks.elevator": "Lift",
+  "block.openblocks.heal": "Verbanddoos",
+  "block.openblocks.guide": "Bouwplanner",
+  "block.openblocks.ladder": "Jaded Ladder",
+  "block.openblocks.tank": "Tank",
+  "block.openblocks.flag": "Vlag",
+  "block.openblocks.beartrap": "Berenval",
+  "block.openblocks.sprinkler": "Sproeier",
+  "block.openblocks.target": "Doel",
+  "block.openblocks.grave": "Graf",
+  "block.openblocks.trophy": "Troffee",
+  "item.openblocks.hang_glider": "Deltavlieger",
+  "item.openblocks.glider_wing": "Vleugel",
+  "item.openblocks.luggage": "Bagage",
+  "itemGroup.tabOpenBlocks": "OpenBlocks"
+}

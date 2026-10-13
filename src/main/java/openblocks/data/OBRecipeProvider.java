@@ -64,5 +64,13 @@ public class OBRecipeProvider extends RecipeProvider {
 				.define('i', Items.IRON_BARS)
 				.unlockedBy("has_iron_bars", has(Items.IRON_BARS))
 				.save(output);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.MISC, OBBlocks.XP_SHOWER.get())
+				.pattern("iii")
+				.pattern("  o")
+				.define('i', Tags.Items.INGOTS_IRON)
+				.define('o', Items.OBSIDIAN)
+				.unlockedBy("has_obsidian", has(Items.OBSIDIAN))
+				.save(output);
 	}
 }

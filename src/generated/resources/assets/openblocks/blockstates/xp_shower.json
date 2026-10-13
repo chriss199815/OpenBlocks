@@ -1,0 +1,34 @@
+{
+  "variants": {
+    "facing=east,powered=false": {
+      "model": "openblocks:block/xp_shower",
+      "y": 270
+    },
+    "facing=east,powered=true": {
+      "model": "openblocks:block/xp_shower",
+      "y": 270
+    },
+    "facing=north,powered=false": {
+      "model": "openblocks:block/xp_shower",
+      "y": 180
+    },
+    "facing=north,powered=true": {
+      "model": "openblocks:block/xp_shower",
+      "y": 180
+    },
+    "facing=south,powered=false": {
+      "model": "openblocks:block/xp_shower"
+    },
+    "facing=south,powered=true": {
+      "model": "openblocks:block/xp_shower"
+    },
+    "facing=west,powered=false": {
+      "model": "openblocks:block/xp_shower",
+      "y": 90
+    },
+    "facing=west,powered=true": {
+      "model": "openblocks:block/xp_shower",
+      "y": 90
+    }
+  }
+}

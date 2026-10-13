@@ -7,6 +7,7 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 import openblocks.OpenBlocks;
 import openblocks.block.entity.TankBlockEntity;
 import openblocks.block.entity.XpDrainBlockEntity;
+import openblocks.block.entity.XpShowerBlockEntity;
 
 public class OBBlockEntities {
 
@@ -19,4 +20,8 @@ public class OBBlockEntities {
 	@SuppressWarnings("DataFlowIssue")
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<XpDrainBlockEntity>> XP_DRAIN = BLOCK_ENTITIES.register("xp_drain",
 			() -> BlockEntityType.Builder.of(XpDrainBlockEntity::new, OBBlocks.XP_DRAIN.get()).build(null));
+
+	@SuppressWarnings("DataFlowIssue")
+	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<XpShowerBlockEntity>> XP_SHOWER = BLOCK_ENTITIES.register("xp_shower",
+			() -> BlockEntityType.Builder.of(XpShowerBlockEntity::new, OBBlocks.XP_SHOWER.get()).build(null));
 }

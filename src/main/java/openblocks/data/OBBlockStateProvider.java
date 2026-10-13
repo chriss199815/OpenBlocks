@@ -58,6 +58,39 @@ public class OBBlockStateProvider extends BlockStateProvider {
 				})
 				.end();
 		horizontalBlock(OBBlocks.XP_DRAIN.get(), xpDrain, 0);
+		final ModelFile xpShower = models().getBuilder("xp_shower")
+				.texture("all", modLoc("block/xp_shower"))
+				.texture("particle", modLoc("block/xp_shower"))
+				// nozzle
+				.element().from(7, 7, 7).to(9, 8, 9)
+				.face(Direction.NORTH).uvs(0, 12, 2, 13).texture("#all").end()
+				.face(Direction.EAST).uvs(6, 12, 8, 13).texture("#all").end()
+				.face(Direction.SOUTH).uvs(4, 12, 6, 13).texture("#all").end()
+				.face(Direction.WEST).uvs(2, 12, 4, 13).texture("#all").end()
+				.face(Direction.DOWN).uvs(4, 13, 6, 15).texture("#all").end()
+				.end()
+				// pipe, attached to the block on the north side
+				.element().from(7, 8, 0).to(9, 9, 9)
+				.face(Direction.NORTH).uvs(0, 0, 2, 1).texture("#all").cullface(Direction.NORTH).end()
+				.face(Direction.EAST).uvs(2, 1, 11, 2).texture("#all").end()
+				.face(Direction.SOUTH).uvs(0, 1, 2, 2).texture("#all").end()
+				.face(Direction.WEST).uvs(2, 0, 11, 1).texture("#all").end()
+				.face(Direction.UP).uvs(0, 2, 2, 11).texture("#all").end()
+				.face(Direction.DOWN).uvs(2, 2, 4, 11).texture("#all").end()
+				.end();
+		horizontalBlock(OBBlocks.XP_SHOWER.get(), xpShower, 0);
+		// the pipe only fills a small part of the block, so it is enlarged and centered (the pipe's middle is at z = 4.5)
+		itemModels().getBuilder("xp_shower")
+				.parent(xpShower)
+				.transforms()
+				.transform(ItemDisplayContext.GUI).rotation(30, 225, 0).translation(-3, 1.5f, 0).scale(1.2f).end()
+				.transform(ItemDisplayContext.GROUND).translation(0, 3, 0).scale(0.5f).end()
+				.transform(ItemDisplayContext.FIXED).rotation(0, 90, 0).scale(1.0f).end()
+				.transform(ItemDisplayContext.THIRD_PERSON_RIGHT_HAND).rotation(75, 45, 0).translation(0, 2.5f, 0).scale(0.6f).end()
+				.transform(ItemDisplayContext.FIRST_PERSON_RIGHT_HAND).rotation(0, 45, 0).scale(0.7f).end()
+				.transform(ItemDisplayContext.FIRST_PERSON_LEFT_HAND).rotation(0, 225, 0).scale(0.7f).end()
+				.end();
+
 		// flat icon like vanilla iron bars, the 1px block model is barely visible from the side
 		itemModels().withExistingParent("xp_drain", mcLoc("item/generated")).texture("layer0", modLoc("block/xp_drain"));
 	}

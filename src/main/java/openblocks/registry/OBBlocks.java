@@ -19,6 +19,7 @@ import openblocks.block.ElevatorBlock;
 import openblocks.block.RotatingElevatorBlock;
 import openblocks.block.TankBlock;
 import openblocks.block.XpDrainBlock;
+import openblocks.block.XpShowerBlock;
 
 public class OBBlocks {
 
@@ -49,6 +50,12 @@ public class OBBlocks {
 			.strength(1.0f)
 			.noOcclusion()
 			.sound(SoundType.METAL)));
+
+	public static final DeferredBlock<XpShowerBlock> XP_SHOWER = registerWithItem("xp_shower", () -> new XpShowerBlock(BlockBehaviour.Properties.of()
+			.mapColor(MapColor.STONE)
+			.strength(1.0f)
+			.noOcclusion()
+			.sound(SoundType.STONE)));
 
 	private static <T extends Block> DeferredBlock<T> registerWithItem(String id, Supplier<T> factory) {
 		final DeferredBlock<T> block = BLOCKS.register(id, factory);

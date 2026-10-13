@@ -22,5 +22,6 @@ public class OBBlockTagsProvider extends BlockTagsProvider {
 		OBBlocks.ROTATING_ELEVATORS.values().forEach(block -> pickaxe.add(block.get()));
 		pickaxe.add(OBBlocks.TANK.get());
 		pickaxe.add(OBBlocks.XP_DRAIN.get());
+		pickaxe.add(OBBlocks.XP_SHOWER.get());
 	}
 }

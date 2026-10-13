@@ -307,5 +307,6 @@
   "block.openblocks.xp_juice": "Flüssige EP",
   "entity.Villager.audiophile": "Audiophil",
   "openblocks.misc.tank.contents": "%s: %s / %s mB (%s%%)",
+  "entity.openblocks.xp_orb_no_fly": "Erfahrungskugel",
   "openblocks.misc.tank.empty": "Leer (0 / %s mB)"
 }

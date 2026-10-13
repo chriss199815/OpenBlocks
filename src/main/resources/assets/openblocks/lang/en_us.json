@@ -308,5 +308,6 @@
   "entity.Villager.audiophile": "Audiophile",
   "itemGroup.openblocks": "OpenBlocks",
   "openblocks.misc.tank.contents": "%s: %s / %s mB (%s%%)",
+  "entity.openblocks.xp_orb_no_fly": "Experience Orb",
   "openblocks.misc.tank.empty": "Empty (0 / %s mB)"
 }

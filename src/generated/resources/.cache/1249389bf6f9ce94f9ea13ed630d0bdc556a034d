@@ -1,4 +1,4 @@
-// 1.21.1	2026-10-13T19:44:22.358886	Block States: openblocks
+// 1.21.1	2026-10-13T19:56:07.017023	Block States: openblocks
 c45d5d2e71c34dc43588a6063c8f1025e64a8816 assets/openblocks/blockstates/black_elevator.json
 d13702d1e489422f027636fd4f3a4f64b33332e9 assets/openblocks/blockstates/black_elevator_rotating.json
 c45d5d2e71c34dc43588a6063c8f1025e64a8816 assets/openblocks/blockstates/blue_elevator.json
@@ -32,6 +32,7 @@ c45d5d2e71c34dc43588a6063c8f1025e64a8816 assets/openblocks/blockstates/white_ele
 d13702d1e489422f027636fd4f3a4f64b33332e9 assets/openblocks/blockstates/white_elevator_rotating.json
 180d7bb5d0f1648e27b86ad63f91435ab5b2e01e assets/openblocks/blockstates/xp_drain.json
 3428d34a7deb1678fe8223e497c47773a759cf7f assets/openblocks/blockstates/xp_juice.json
+b87e1b2d73c9aeefc84b60b8f06c7529d1de2215 assets/openblocks/blockstates/xp_shower.json
 c45d5d2e71c34dc43588a6063c8f1025e64a8816 assets/openblocks/blockstates/yellow_elevator.json
 d13702d1e489422f027636fd4f3a4f64b33332e9 assets/openblocks/blockstates/yellow_elevator_rotating.json
 d3d21200c82f54f0fe0701831311e9ea2ec3af35 assets/openblocks/models/block/elevator.json
@@ -52,6 +53,7 @@ a5fcd65b5f66145680b700620b7c9a3da6179be0 assets/openblocks/models/block/tank_edg
 38111d9139837524dfbe6adccf7069c1aae00578 assets/openblocks/models/block/tinted_cube.json
 ef720a5c055c15af9c5a978d521be9b1bec3e19e assets/openblocks/models/block/xp_drain.json
 eedf4d0bee41aa34e8093f792bf9e2551c8fc4ef assets/openblocks/models/block/xp_juice.json
+2b6447cbc485c3aedfc83801d9ec9b0e82914900 assets/openblocks/models/block/xp_shower.json
 d2b8f805473f5db4bc4402f5b4f1864704363649 assets/openblocks/models/item/black_elevator.json
 dd180aef5747a9afe34022df0f8fd345d081cd6c assets/openblocks/models/item/black_elevator_rotating.json
 d2b8f805473f5db4bc4402f5b4f1864704363649 assets/openblocks/models/item/blue_elevator.json
@@ -85,5 +87,6 @@ d2b8f805473f5db4bc4402f5b4f1864704363649 assets/openblocks/models/item/white_ele
 dd180aef5747a9afe34022df0f8fd345d081cd6c assets/openblocks/models/item/white_elevator_rotating.json
 b2472d0f6b3f54b1a17e5ced3bfa2e8563c61598 assets/openblocks/models/item/xp_bucket.json
 fce9fd2d7fb2d6813b842fc1e94d4e0d0a2be730 assets/openblocks/models/item/xp_drain.json
+03701b3b1335dd2c259addcf73a10283e22a1a63 assets/openblocks/models/item/xp_shower.json
 d2b8f805473f5db4bc4402f5b4f1864704363649 assets/openblocks/models/item/yellow_elevator.json
 dd180aef5747a9afe34022df0f8fd345d081cd6c assets/openblocks/models/item/yellow_elevator_rotating.json

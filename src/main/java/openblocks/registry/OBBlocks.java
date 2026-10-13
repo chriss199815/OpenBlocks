@@ -17,6 +17,7 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 import openblocks.OpenBlocks;
 import openblocks.block.ElevatorBlock;
 import openblocks.block.RotatingElevatorBlock;
+import openblocks.block.TankBlock;
 
 public class OBBlocks {
 
@@ -29,6 +30,18 @@ public class OBBlocks {
 	public static final DeferredBlock<LiquidBlock> XP_JUICE = BLOCKS.register("xp_juice", () -> new LiquidBlock(OBFluids.XP_JUICE.get(), BlockBehaviour.Properties.ofFullCopy(Blocks.WATER)
 			.mapColor(MapColor.COLOR_LIGHT_GREEN)
 			.lightLevel(state -> 10)));
+
+	// item is registered in OBItems, since it needs a custom class
+	public static final DeferredBlock<TankBlock> TANK = BLOCKS.register("tank", () -> new TankBlock(BlockBehaviour.Properties.of()
+			.mapColor(MapColor.STONE)
+			.strength(1.0f)
+			.requiresCorrectToolForDrops()
+			.noOcclusion()
+			.isViewBlocking((state, level, pos) -> false)
+			.isSuffocating((state, level, pos) -> false)
+			.isRedstoneConductor((state, level, pos) -> false)
+			.lightLevel(state -> state.getValue(TankBlock.LIGHT))
+			.sound(SoundType.STONE)));
 
 	private static <T extends Block> DeferredBlock<T> registerWithItem(String id, Supplier<T> factory) {
 		final DeferredBlock<T> block = BLOCKS.register(id, factory);

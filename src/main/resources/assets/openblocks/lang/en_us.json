@@ -306,5 +306,7 @@
   "fluid.openblocks.xp_juice": "Liquid XP",
   "block.openblocks.xp_juice": "Liquid XP",
   "entity.Villager.audiophile": "Audiophile",
-  "itemGroup.openblocks": "OpenBlocks"
+  "itemGroup.openblocks": "OpenBlocks",
+  "openblocks.misc.tank.contents": "%s: %s / %s mB (%s%%)",
+  "openblocks.misc.tank.empty": "Empty (0 / %s mB)"
 }

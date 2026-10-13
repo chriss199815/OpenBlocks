@@ -11,6 +11,7 @@ import openblocks.network.OBNetwork;
 import openblocks.registry.OBBlockEntities;
 import openblocks.registry.OBBlocks;
 import openblocks.registry.OBCapabilities;
+import openblocks.registry.OBComponents;
 import openblocks.registry.OBCreativeTabs;
 import openblocks.registry.OBFluids;
 import openblocks.registry.OBItems;
@@ -28,6 +29,7 @@ public class OpenBlocks {
 		OBFluids.FLUIDS.register(modBus);
 		OBBlocks.BLOCKS.register(modBus);
 		OBItems.ITEMS.register(modBus);
+		OBComponents.COMPONENTS.register(modBus);
 		OBBlockEntities.BLOCK_ENTITIES.register(modBus);
 		OBCreativeTabs.TABS.register(modBus);
 		OBSounds.SOUNDS.register(modBus);

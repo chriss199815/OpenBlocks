@@ -11,6 +11,7 @@ import net.minecraft.data.recipes.ShapedRecipeBuilder;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Items;
 import net.neoforged.neoforge.common.Tags;
 import openblocks.registry.OBBlocks;
 
@@ -46,5 +47,14 @@ public class OBRecipeProvider extends RecipeProvider {
 				.define('e', Tags.Items.ENDER_PEARLS)
 				.unlockedBy("has_ender_pearl", has(Tags.Items.ENDER_PEARLS))
 				.save(output));
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.MISC, OBBlocks.TANK.get(), 2)
+				.pattern("ogo")
+				.pattern("ggg")
+				.pattern("ogo")
+				.define('o', Items.OBSIDIAN)
+				.define('g', Tags.Items.GLASS_PANES)
+				.unlockedBy("has_obsidian", has(Items.OBSIDIAN))
+				.save(output);
 	}
 }

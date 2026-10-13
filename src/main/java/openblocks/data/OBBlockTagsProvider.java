@@ -20,5 +20,6 @@ public class OBBlockTagsProvider extends BlockTagsProvider {
 		final var pickaxe = tag(BlockTags.MINEABLE_WITH_PICKAXE);
 		OBBlocks.ELEVATORS.values().forEach(block -> pickaxe.add(block.get()));
 		OBBlocks.ROTATING_ELEVATORS.values().forEach(block -> pickaxe.add(block.get()));
+		pickaxe.add(OBBlocks.TANK.get());
 	}
 }

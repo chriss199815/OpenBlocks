@@ -1,4 +1,5 @@
-// 1.21.1	2026-10-13T18:34:24.657117	Recipes
+// 1.21.1	2026-10-13T19:24:48.98293	Recipes
+a79972e5807a48dec69c932db335e409de7649d2 data/openblocks/advancement/recipes/misc/tank.json
 1aa07932d4a24474e354fba261588f5853a1a8f4 data/openblocks/advancement/recipes/transportation/black_elevator.json
 43ff9eb8138aa2a0c9f8982a2d681fe2833ea34d data/openblocks/advancement/recipes/transportation/black_elevator_rotating.json
 d6295f221dbff50d39f3a8af5b5b63c49a7520ee data/openblocks/advancement/recipes/transportation/blue_elevator.json
@@ -59,6 +60,7 @@ ef13181744618d54aa2445f3112edd54c70cc305 data/openblocks/recipe/pink_elevator_ro
 e8141f2b10c0d7cdca5861f797bed88f4b1866bb data/openblocks/recipe/purple_elevator_rotating.json
 fa8e66804c8144f8e543cc41a58ecce7b39bf7a0 data/openblocks/recipe/red_elevator.json
 28219adfa77731cdd95c2b5d771559a603b956d1 data/openblocks/recipe/red_elevator_rotating.json
+85e77e95cfd534f9e3db5f2a3185c1db82b4bc27 data/openblocks/recipe/tank.json
 f0ad4f5779decdf242bb4891f50addde723743f5 data/openblocks/recipe/white_elevator.json
 ec6ac9697bd441d0e0c412cb708479c4fc43d098 data/openblocks/recipe/white_elevator_rotating.json
 fc419542a165a2f17e506feaa284cce6a5fc9c9e data/openblocks/recipe/yellow_elevator.json

@@ -12,8 +12,37 @@ public class OBConfig {
 
 	public static final Elevator ELEVATOR = new Elevator(BUILDER);
 	public static final Xp XP = new Xp(BUILDER);
+	public static final Tanks TANKS = new Tanks(BUILDER);
 
 	public static final ModConfigSpec SPEC = BUILDER.build();
+
+	public static class Tanks {
+		public final ModConfigSpec.IntValue bucketsPerTank;
+		public final ModConfigSpec.BooleanValue shouldTanksUpdate;
+		public final ModConfigSpec.BooleanValue displayAllFilledTanks;
+		public final ModConfigSpec.IntValue fluidDifferenceUpdateThreshold;
+		public final ModConfigSpec.BooleanValue emitLight;
+
+		private Tanks(ModConfigSpec.Builder builder) {
+			builder.push("tanks");
+			bucketsPerTank = builder
+					.comment("The amount of buckets each tank can hold")
+					.defineInRange("bucketsPerTank", 16, 1, 1024);
+			shouldTanksUpdate = builder
+					.comment("Should tanks try to balance liquid amounts with neighbours")
+					.define("tankTicks", true);
+			displayAllFilledTanks = builder
+					.comment("Should filled tanks be searchable with creative menu")
+					.define("displayAllFluids", true);
+			fluidDifferenceUpdateThreshold = builder
+					.comment("Minimal difference in fluid level between neighbors required for tank update (can be used for performance finetuning)")
+					.defineInRange("fluidDifferenceUpdateThreshold", 0, 0, Integer.MAX_VALUE);
+			emitLight = builder
+					.comment("Tanks will emit light when they contain a liquid that glows (eg. lava)")
+					.define("emitLight", true);
+			builder.pop();
+		}
+	}
 
 	public static class Xp {
 		public final ModConfigSpec.IntValue liquidRatio;

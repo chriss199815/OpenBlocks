@@ -305,5 +305,7 @@
   "entity.openblocks.mini_me.name": "Mini-Me",
   "fluid.openblocks.xp_juice": "Flüssige EP",
   "block.openblocks.xp_juice": "Flüssige EP",
-  "entity.Villager.audiophile": "Audiophil"
+  "entity.Villager.audiophile": "Audiophil",
+  "openblocks.misc.tank.contents": "%s: %s / %s mB (%s%%)",
+  "openblocks.misc.tank.empty": "Leer (0 / %s mB)"
 }

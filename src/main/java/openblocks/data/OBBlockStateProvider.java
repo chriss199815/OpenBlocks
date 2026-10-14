@@ -194,6 +194,10 @@ public class OBBlockStateProvider extends BlockStateProvider {
 
 		// flat icon like vanilla iron bars, the 1px block model is barely visible from the side
 		itemModels().withExistingParent("xp_drain", mcLoc("item/generated")).texture("layer0", modLoc("block/xp_drain"));
+
+		// like the legacy blockstate: vanilla trapdoor models, texture not rotated with the facing
+		trapdoorBlockWithRenderType(OBBlocks.LADDER.get(), modLoc("block/ladder"), false, "cutout");
+		itemModels().getBuilder("ladder").parent(new ModelFile.UncheckedModelFile(modLoc("block/ladder_bottom")));
 	}
 
 	/**

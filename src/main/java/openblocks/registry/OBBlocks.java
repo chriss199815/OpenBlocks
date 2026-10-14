@@ -32,6 +32,7 @@ import openblocks.block.FanBlock;
 import openblocks.block.FlagBlock;
 import openblocks.block.GraveBlock;
 import openblocks.block.ItemDropperBlock;
+import openblocks.block.JadedLadderBlock;
 import openblocks.block.RotatingElevatorBlock;
 import openblocks.block.SprinklerBlock;
 import openblocks.block.TankBlock;
@@ -187,6 +188,9 @@ public class OBBlocks {
 			.noOcclusion()
 			.isRedstoneConductor((state, level, pos) -> false)
 			.sound(SoundType.METAL)));
+
+	// legacy "ladder", the jaded ladder
+	public static final DeferredBlock<JadedLadderBlock> LADDER = registerWithItem("ladder", () -> new JadedLadderBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_TRAPDOOR)));
 
 	private static BlockBehaviour.Properties canvasProperties() {
 		return BlockBehaviour.Properties.of()

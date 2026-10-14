@@ -36,6 +36,7 @@ public class OBBlockLoot extends BlockLootSubProvider {
 		OBBlocks.FLAGS.values().forEach(flag -> dropSelf(flag.get()));
 		dropSelf(OBBlocks.BEAR_TRAP.get());
 		dropSelf(OBBlocks.SPRINKLER.get());
+		dropSelf(OBBlocks.LADDER.get());
 		// a canvas that replaced a block drops that block instead, see CanvasBlock.getDrops
 		dropSelf(OBBlocks.CANVAS.get());
 		dropOther(OBBlocks.CANVAS_GLASS.get(), OBBlocks.CANVAS.get());

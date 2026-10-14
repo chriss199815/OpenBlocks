@@ -338,5 +338,11 @@ public class OBRecipeProvider extends RecipeProvider {
 				.define('w', Items.WHITE_WOOL)
 				.unlockedBy("has_white_wool", has(Items.WHITE_WOOL))
 				.save(output);
+
+		ShapelessRecipeBuilder.shapeless(RecipeCategory.TRANSPORTATION, OBBlocks.LADDER.get())
+				.requires(Items.LADDER)
+				.requires(ItemTags.WOODEN_TRAPDOORS)
+				.unlockedBy("has_ladder", has(Items.LADDER))
+				.save(output);
 	}
 }

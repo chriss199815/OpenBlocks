@@ -63,7 +63,9 @@ Hinweis: Der Creative-Tab bleibt unsichtbar, solange er leer ist (Vanilla blende
 ## Welle 1 – einfache Blöcke und Items (erster spielbarer Release) — 🚧 in Arbeit
 Fortschritt:
 - [x] Elevator + Rotating Elevator: je 16 Blöcke pro Farbe (`<farbe>_elevator`, `<farbe>_elevator_rotating`) statt Metadaten/TileEntity, Färben per Rechtsklick mit Farbstoff, Config `elevator.*`, `ElevatorCheckEvent`-API, Payload statt `ElevatorActionEvent`, GameTests. Dazu Grundgerüst: Datagen (Blockstates/Modelle, Loot, Rezepte, Block-Tags, GameTest-Strukturen), `OBSounds`, Client-Einstieg `OpenBlocksClient`.
-Ladder, Rope Ladder, Sponge, Scaffolding, Heal, Big Button (Stein/Holz), Target, Path, Elevator + Rotating Elevator, Wrench, Pedometer, Slimalyzer, Sponge-on-a-Stick, Tasty Clay, generische Items (`MetasGeneric` → einzelne Items statt Metadaten).
+- [x] Jaded Ladder (ID `ladder`): Falltür (`TrapDoorBlock`, Eiche-Werte), die geöffnet als Leiter zählt (`isLadder`). Vanilla-Falltürmodelle mit eigener Textur per Datagen, Rezept Leiter + beliebige Holzfalltür (`minecraft:wooden_trapdoors`). GameTest.
+
+Offen: Rope Ladder, Sponge, Scaffolding, Heal, Big Button (Stein/Holz), Target, Path, Elevator + Rotating Elevator, Wrench, Pedometer, Slimalyzer, Sponge-on-a-Stick, Tasty Clay, generische Items (`MetasGeneric` → einzelne Items statt Metadaten).
 - Metadaten-Items werden in einzelne Items aufgeteilt (es gibt keine Item-Metadaten mehr).
 - Für jeden Block: Blockstate, Modell und Loot-Table per Datagen, Rezept mit Tags.
 

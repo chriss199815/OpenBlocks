@@ -60,7 +60,7 @@ Verschoben in Welle 1 (erst bei Bedarf anlegen):
 
 Hinweis: Der Creative-Tab bleibt unsichtbar, solange er leer ist (Vanilla blendet leere Tabs aus).
 
-## Welle 1 – einfache Blöcke und Items (erster spielbarer Release) — 🚧 in Arbeit
+## Welle 1 – einfache Blöcke und Items (erster spielbarer Release) — ✅ erledigt (2026-10-14)
 Fortschritt:
 - [x] Elevator + Rotating Elevator: je 16 Blöcke pro Farbe (`<farbe>_elevator`, `<farbe>_elevator_rotating`) statt Metadaten/TileEntity, Färben per Rechtsklick mit Farbstoff, Config `elevator.*`, `ElevatorCheckEvent`-API, Payload statt `ElevatorActionEvent`, GameTests. Dazu Grundgerüst: Datagen (Blockstates/Modelle, Loot, Rezepte, Block-Tags, GameTest-Strukturen), `OBSounds`, Client-Einstieg `OpenBlocksClient`.
 - [x] Jaded Ladder (ID `ladder`): Falltür (`TrapDoorBlock`, Eiche-Werte), die geöffnet als Leiter zählt (`isLadder`). Vanilla-Falltürmodelle mit eigener Textur per Datagen, Rezept Leiter + beliebige Holzfalltür (`minecraft:wooden_trapdoors`). GameTest.

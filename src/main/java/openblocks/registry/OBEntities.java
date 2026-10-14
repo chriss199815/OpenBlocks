@@ -6,6 +6,8 @@ import net.minecraft.world.entity.MobCategory;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import openblocks.OpenBlocks;
+import net.neoforged.neoforge.event.entity.EntityAttributeCreationEvent;
+import openblocks.entity.Luggage;
 import openblocks.entity.NoFlyXpOrb;
 
 public class OBEntities {
@@ -18,4 +20,13 @@ public class OBEntities {
 					.clientTrackingRange(6)
 					.updateInterval(20)
 					.build("xp_orb_no_fly"));
+
+	public static final DeferredHolder<EntityType<?>, EntityType<Luggage>> LUGGAGE = ENTITIES.register("luggage",
+			() -> EntityType.Builder.of(Luggage::new, MobCategory.MISC)
+					.sized(0.5f, 0.5f)
+					.build("luggage"));
+
+	public static void registerAttributes(EntityAttributeCreationEvent event) {
+		event.put(LUGGAGE.get(), Luggage.createAttributes().build());
+	}
 }

@@ -1,4 +1,4 @@
-// 1.21.1	2026-10-14T14:08:52.420886	Block States: openblocks
+// 1.21.1	2026-10-14T18:27:28.861087	Block States: openblocks
 909bae1340933de5e494ee6692d1d88aeabf4f33 assets/openblocks/blockstates/auto_anvil.json
 aca132b5918ec066ede0f817145d0ac0649c84a9 assets/openblocks/blockstates/auto_enchantment_table.json
 9be1c7ce94b3232fe19c46a8965abe89ae2d898a assets/openblocks/blockstates/bear_trap.json
@@ -224,6 +224,8 @@ fcc439f163500f4a2657f61a09c9762b2151a0ed assets/openblocks/models/item/light_gra
 d2b8f805473f5db4bc4402f5b4f1864704363649 assets/openblocks/models/item/lime_elevator.json
 dd180aef5747a9afe34022df0f8fd345d081cd6c assets/openblocks/models/item/lime_elevator_rotating.json
 fcc439f163500f4a2657f61a09c9762b2151a0ed assets/openblocks/models/item/lime_flag.json
+19fa7b9d465ee223425e4d22d122b8e939971b72 assets/openblocks/models/item/luggage.json
+aa338c72a2dd16db0aa398b2ad9417ecf0a347fa assets/openblocks/models/item/luggage_special.json
 d2b8f805473f5db4bc4402f5b4f1864704363649 assets/openblocks/models/item/magenta_elevator.json
 dd180aef5747a9afe34022df0f8fd345d081cd6c assets/openblocks/models/item/magenta_elevator_rotating.json
 fcc439f163500f4a2657f61a09c9762b2151a0ed assets/openblocks/models/item/magenta_flag.json

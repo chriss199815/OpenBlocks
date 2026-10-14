@@ -2,6 +2,8 @@ package openblocks.registry;
 
 import net.minecraft.core.component.DataComponentType;
 import net.minecraft.core.registries.Registries;
+import net.minecraft.network.codec.StreamCodec;
+import net.minecraft.util.Unit;
 import net.neoforged.neoforge.fluids.SimpleFluidContent;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -23,4 +25,10 @@ public class OBComponents {
 	 */
 	public static final DeferredHolder<DataComponentType<?>, DataComponentType<Paint>> PAINT = COMPONENTS.registerComponentType("paint",
 			builder -> builder.persistent(Paint.CODEC).networkSynchronized(Paint.STREAM_CODEC));
+
+	/**
+	 * Marks luggage struck by lightning, which carries 54 instead of 27 stacks; replaces the legacy inventory size tag.
+	 */
+	public static final DeferredHolder<DataComponentType<?>, DataComponentType<Unit>> LUGGAGE_SPECIAL = COMPONENTS.registerComponentType("luggage_special",
+			builder -> builder.persistent(Unit.CODEC).networkSynchronized(StreamCodec.unit(Unit.INSTANCE)));
 }

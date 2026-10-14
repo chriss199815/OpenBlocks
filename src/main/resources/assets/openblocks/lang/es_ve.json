@@ -265,7 +265,7 @@
   "item.openblocks.pedometer": "Pedometro",
   "item.openblocks.wallpaper": "Papel Pintado",
   "itemGroup.tabOpenBlocks": "OpenBlocks",
-  "entity.openblocks.luggage.name": "Equipaje",
+  "entity.openblocks.luggage": "Equipaje",
   "entity.openblocks.cartographer.name": "Cartógrafo",
   "entity.openblocks.block.name": "Bloque Flotante",
   "entity.openblocks.mini_me.name": "Mini Yo",

@@ -10,6 +10,7 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 import openblocks.OpenBlocks;
 import openblocks.common.StencilPattern;
 import openblocks.item.HangGliderItem;
+import openblocks.item.LuggageItem;
 import openblocks.item.PaintBrushItem;
 import openblocks.item.PaintCanItem;
 import openblocks.item.SleepingBagItem;
@@ -35,6 +36,8 @@ public class OBItems {
 
 	public static final DeferredItem<PaintCanItem> PAINT_CAN = ITEMS.register("paint_can", () -> new PaintCanItem(OBBlocks.PAINT_CAN.get(), new Item.Properties().stacksTo(1)));
 	public static final DeferredItem<PaintBrushItem> PAINT_BRUSH = ITEMS.register("paintbrush", () -> new PaintBrushItem(new Item.Properties().stacksTo(1)));
+
+	public static final DeferredItem<LuggageItem> LUGGAGE = ITEMS.register("luggage", () -> new LuggageItem(new Item.Properties().stacksTo(1)));
 
 	public static final DeferredItem<SqueegeeItem> SQUEEGEE = ITEMS.register("squeegee", () -> new SqueegeeItem(new Item.Properties().stacksTo(1)));
 

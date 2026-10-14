@@ -7,6 +7,7 @@ import net.minecraft.world.item.ItemDisplayContext;
 import net.neoforged.neoforge.client.model.generators.BlockModelBuilder;
 import net.neoforged.neoforge.client.model.generators.BlockStateProvider;
 import net.neoforged.neoforge.client.model.generators.ConfiguredModel;
+import net.neoforged.neoforge.client.model.generators.ItemModelBuilder;
 import net.neoforged.neoforge.client.model.generators.ModelBuilder;
 import net.neoforged.neoforge.client.model.generators.ModelFile;
 import net.neoforged.neoforge.client.model.generators.loaders.ObjModelBuilder;
@@ -146,6 +147,7 @@ public class OBBlockStateProvider extends BlockStateProvider {
 		flag();
 		bearTrap();
 		sprinkler();
+		luggage();
 		// the blank canvas; CanvasModel shows the painted block instead
 		final ModelFile canvas = models().cubeAll("canvas", modLoc("block/canvas"));
 		simpleBlock(OBBlocks.CANVAS.get(), canvas);
@@ -462,6 +464,52 @@ public class OBBlockStateProvider extends BlockStateProvider {
 				.face(Direction.UP).uvs(14, 0, 15, 12).texture("#all").end()
 				.face(Direction.DOWN).uvs(15, 0, 16, 12).texture("#all").end()
 				.end();
+	}
+
+	/**
+	 * Legacy luggage item model (body, lid and 7x3 legs, in the back half of the block), the special variant is chosen by
+	 * the {@code openblocks:special} item property (see {@code LuggageRenderer}).
+	 */
+	private void luggage() {
+		final ModelFile special = luggageModel("luggage_special", "special");
+		luggageModel("luggage", "normal")
+				.override().predicate(modLoc("special"), 1).model(special).end();
+	}
+
+	private ItemModelBuilder luggageModel(String name, String variant) {
+		final ItemModelBuilder builder = itemModels().withExistingParent(name, mcLoc("block/block"))
+				.texture("body", modLoc("item/luggage_" + variant + "_body"))
+				.texture("leg", modLoc("item/luggage_" + variant + "_leg"))
+				.texture("particle", modLoc("item/luggage_" + variant + "_body"))
+				// lid
+				.element().from(0, 11, 8).to(16, 13, 16)
+				.face(Direction.NORTH).uvs(2, 6, 6, 6.5f).texture("#body").end()
+				.face(Direction.EAST).uvs(10, 6, 12, 6.5f).texture("#body").end()
+				.face(Direction.SOUTH).uvs(6, 6, 10, 6.5f).texture("#body").end()
+				.face(Direction.WEST).uvs(0, 6, 2, 6.5f).texture("#body").end()
+				.face(Direction.UP).uvs(2, 4, 6, 6).texture("#body").end()
+				.face(Direction.DOWN).uvs(6, 4, 10, 6).texture("#body").end()
+				.end()
+				// body
+				.element().from(0, 4, 8).to(16, 11, 16)
+				.face(Direction.NORTH).uvs(2, 2, 6, 3.75f).texture("#body").end()
+				.face(Direction.EAST).uvs(6, 2, 8, 3.75f).texture("#body").end()
+				.face(Direction.SOUTH).uvs(8, 2, 12, 3.75f).texture("#body").end()
+				.face(Direction.WEST).uvs(0, 2, 2, 3.75f).texture("#body").end()
+				.face(Direction.UP).uvs(2, 0, 6, 2).texture("#body").end()
+				.face(Direction.DOWN).uvs(6, 0, 10, 2).texture("#body").end()
+				.end();
+		for (int x = 0; x < 7; x++)
+			for (int z = 0; z < 3; z++)
+				builder.element().from(1.5f + 2 * x, 0, 9.5f + 2 * z).to(2.5f + 2 * x, 4, 10.5f + 2 * z)
+						.face(Direction.NORTH).uvs(0, 1, 1, 5).texture("#leg").end()
+						.face(Direction.EAST).uvs(1, 1, 2, 5).texture("#leg").end()
+						.face(Direction.SOUTH).uvs(2, 1, 3, 5).texture("#leg").end()
+						.face(Direction.WEST).uvs(3, 1, 4, 5).texture("#leg").end()
+						.face(Direction.UP).uvs(1, 0, 2, 1).texture("#leg").end()
+						.face(Direction.DOWN).uvs(2, 0, 3, 1).texture("#leg").end()
+						.end();
+		return builder;
 	}
 
 	/**

@@ -116,7 +116,7 @@
   "item.openblocks.pointer": "Osutaja",
   "item.openblocks.wallpaper": "Tapeet",
   "itemGroup.tabOpenBlocks": "OpenBlocks",
-  "entity.openblocks.luggage.name": "Kohver",
+  "entity.openblocks.luggage": "Kohver",
   "entity.openblocks.cartographer.name": "Kartograaf",
   "entity.openblocks.mini_me.name": "Mini Mina",
   "fluid.openblocks.xp_juice": "Vedel XP"

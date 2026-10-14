@@ -202,6 +202,16 @@ public class OBRecipeProvider extends RecipeProvider {
 				.unlockedBy("has_iron_bars", has(Items.IRON_BARS))
 				.save(output);
 
+		ShapedRecipeBuilder.shaped(RecipeCategory.MISC, OBItems.LUGGAGE.get())
+				.pattern("sds")
+				.pattern("scs")
+				.pattern("sss")
+				.define('s', Tags.Items.RODS_WOODEN)
+				.define('c', Tags.Items.CHESTS_WOODEN)
+				.define('d', Tags.Items.GEMS_DIAMOND)
+				.unlockedBy("has_diamond", has(Tags.Items.GEMS_DIAMOND))
+				.save(output);
+
 		ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, OBItems.PAINT_BRUSH.get())
 				.pattern("w  ")
 				.pattern(" s ")

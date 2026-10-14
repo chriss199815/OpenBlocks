@@ -299,7 +299,7 @@
   "item.openblocks.pedometer": "Pedômetro",
   "item.openblocks.wallpaper": "Papel de Parede",
   "itemGroup.tabOpenBlocks": "OpenBlocks",
-  "entity.openblocks.luggage.name": "Bagagem",
+  "entity.openblocks.luggage": "Bagagem",
   "entity.openblocks.cartographer.name": "Cartógrafo",
   "entity.openblocks.block.name": "Bloco Flutuante",
   "entity.openblocks.mini_me.name": "Mini Me",

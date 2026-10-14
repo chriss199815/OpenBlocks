@@ -180,7 +180,7 @@
   "item.openblocks.pointer": "포인터",
   "item.openblocks.wallpaper": "달력",
   "itemGroup.tabOpenBlocks": "오픈블럭[OpenBlocks]",
-  "entity.openblocks.luggage.name": "여행용 가방",
+  "entity.openblocks.luggage": "여행용 가방",
   "entity.openblocks.cartographer.name": "제작자",
   "entity.openblocks.block.name": "떨어지는 블럭",
   "entity.openblocks.mini_me.name": "미니미",

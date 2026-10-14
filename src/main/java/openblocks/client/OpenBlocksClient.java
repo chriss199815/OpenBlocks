@@ -58,6 +58,8 @@ public class OpenBlocksClient {
 		modBus.addListener(OpenBlocksClient::registerScreens);
 		modBus.addListener(SleepingBagLayer::registerLayerDefinitions);
 		modBus.addListener(SleepingBagLayer::addLayers);
+		modBus.addListener(LuggageRenderer::registerLayerDefinitions);
+		modBus.addListener(LuggageRenderer::registerItemProperties);
 
 		NeoForge.EVENT_BUS.addListener(ElevatorInputHandler::onMovementInput);
 		NeoForge.EVENT_BUS.addListener(HangGliderRenderer::onRenderPlayerPre);
@@ -91,5 +93,6 @@ public class OpenBlocksClient {
 		event.registerBlockEntityRenderer(OBBlockEntities.BEAR_TRAP.get(), BearTrapRenderer::new);
 		event.registerBlockEntityRenderer(OBBlockEntities.SPRINKLER.get(), SprinklerRenderer::new);
 		event.registerEntityRenderer(OBEntities.NO_FLY_XP_ORB.get(), ExperienceOrbRenderer::new);
+		event.registerEntityRenderer(OBEntities.LUGGAGE.get(), LuggageRenderer::new);
 	}
 }

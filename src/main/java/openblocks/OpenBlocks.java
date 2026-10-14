@@ -15,6 +15,7 @@ import openblocks.common.HangGliderHandler;
 import openblocks.common.PlayerDeathHandler;
 import openblocks.common.SleepingBagHandler;
 import openblocks.entity.NoFlyXpOrb;
+import openblocks.item.LuggageItem;
 import openblocks.network.OBNetwork;
 import openblocks.registry.OBAttachments;
 import openblocks.registry.OBBlockEntities;
@@ -54,6 +55,7 @@ public class OpenBlocks {
 
 		modBus.addListener(OBNetwork::register);
 		modBus.addListener(OBCapabilities::register);
+		modBus.addListener(OBEntities::registerAttributes);
 		modBus.addListener(OBDataGenerators::gatherData);
 		modBus.addListener(DonationInfo::onInterModProcess);
 
@@ -66,6 +68,7 @@ public class OpenBlocks {
 		NeoForge.EVENT_BUS.addListener(HangGliderHandler::onChangedDimension);
 		NeoForge.EVENT_BUS.addListener(SleepingBagHandler::onCanContinueSleeping);
 		NeoForge.EVENT_BUS.addListener(SleepingBagHandler::onWakeUp);
+		NeoForge.EVENT_BUS.addListener(LuggageItem::onEntityJoinLevel);
 
 		container.registerConfig(ModConfig.Type.COMMON, OBConfig.SPEC);
 	}

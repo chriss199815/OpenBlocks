@@ -294,7 +294,7 @@
   "item.openblocks.pedometer": "Шагомер",
   "item.openblocks.wallpaper": "Обои",
   "itemGroup.tabOpenBlocks": "OpenBlocks",
-  "entity.openblocks.luggage.name": "Багаж",
+  "entity.openblocks.luggage": "Багаж",
   "entity.openblocks.cartographer.name": "Картограф",
   "entity.openblocks.block.name": "Парящий блок",
   "entity.openblocks.mini_me.name": "Мини-Ми",

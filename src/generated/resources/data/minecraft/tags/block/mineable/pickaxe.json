@@ -35,6 +35,7 @@
     "openblocks:tank",
     "openblocks:xp_drain",
     "openblocks:xp_shower",
-    "openblocks:xp_bottler"
+    "openblocks:xp_bottler",
+    "openblocks:vacuum_hopper"
   ]
 }

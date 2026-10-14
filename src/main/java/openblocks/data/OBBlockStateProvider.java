@@ -12,6 +12,7 @@ import net.neoforged.neoforge.client.model.generators.ModelFile;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import openblocks.OpenBlocks;
 import openblocks.block.GraveBlock;
+import openblocks.block.entity.VacuumHopperBlockEntity;
 import openblocks.registry.OBBlocks;
 import openblocks.common.TankEdge;
 import openblocks.registry.OBItems;
@@ -105,6 +106,7 @@ public class OBBlockStateProvider extends BlockStateProvider {
 		simpleBlockItem(OBBlocks.XP_BOTTLER.get(), xpBottler);
 
 		grave();
+		vacuumHopper();
 
 		// flat icon like vanilla iron bars, the 1px block model is barely visible from the side
 		itemModels().withExistingParent("xp_drain", mcLoc("item/generated")).texture("layer0", modLoc("block/xp_drain"));
@@ -162,6 +164,129 @@ public class OBBlockStateProvider extends BlockStateProvider {
 				.rotationY(((int)state.getValue(GraveBlock.FACING).toYRot() + 180) % 360)
 				.build());
 		simpleBlockItem(OBBlocks.GRAVE.get(), ground);
+	}
+
+	/**
+	 * Body, plus one model per side and output kind for {@code VacuumHopperModel}, which adds the nozzles of the configured outputs.
+	 */
+	private void vacuumHopper() {
+		final BlockModelBuilder body = models().withExistingParent("vacuum_hopper", mcLoc("block/block"))
+				.renderType("cutout")
+				.texture("body", modLoc("block/vacuum_hopper_body"))
+				.texture("particle", modLoc("block/vacuum_hopper_body"))
+				.element().from(4, 4, 4).to(12, 12, 12)
+				.allFaces((dir, face) -> face.texture("#body").uvs(4, 4, 12, 12))
+				.end();
+		simpleBlock(OBBlocks.VACUUM_HOPPER.get(), body);
+		simpleBlockItem(OBBlocks.VACUUM_HOPPER.get(), body);
+
+		for (Direction side : Direction.values()) {
+			final BlockModelBuilder template = models().getBuilder("vacuum_hopper_" + side.getSerializedName());
+			vacuumHopperNozzle(template, side);
+			for (String variant : VacuumHopperBlockEntity.NOZZLES)
+				models().getBuilder("vacuum_hopper_" + side.getSerializedName() + "_" + variant)
+						.parent(template)
+						.texture("texture", modLoc("block/vacuum_hopper_" + variant));
+		}
+	}
+
+	/**
+	 * Elements of the legacy vacuum_hopper_&lt;side&gt; models.
+	 */
+	private static void vacuumHopperNozzle(BlockModelBuilder model, Direction side) {
+		switch (side) {
+			case DOWN -> model
+					.element().from(5.5f, 3, 5.5f).to(10.5f, 4, 10.5f)
+					.face(Direction.NORTH).uvs(12, 0, 13, 5).texture("#texture").rotation(ModelBuilder.FaceRotation.CLOCKWISE_90).end()
+					.face(Direction.EAST).uvs(14, 0, 13, 5).texture("#texture").rotation(ModelBuilder.FaceRotation.CLOCKWISE_90).end()
+					.face(Direction.SOUTH).uvs(14, 0, 15, 5).texture("#texture").rotation(ModelBuilder.FaceRotation.CLOCKWISE_90).end()
+					.face(Direction.WEST).uvs(15, 0, 16, 5).texture("#texture").rotation(ModelBuilder.FaceRotation.CLOCKWISE_90).end()
+					.face(Direction.DOWN).uvs(5, 0, 10, 5).texture("#texture").end()
+					.end()
+					.element().from(6.5f, 0, 6.5f).to(9.5f, 3, 9.5f)
+					.face(Direction.NORTH).uvs(0, 0, 3, 3).texture("#texture").rotation(ModelBuilder.FaceRotation.COUNTERCLOCKWISE_90).end()
+					.face(Direction.EAST).uvs(0, 3, 3, 6).texture("#texture").rotation(ModelBuilder.FaceRotation.COUNTERCLOCKWISE_90).end()
+					.face(Direction.SOUTH).uvs(0, 6, 3, 9).texture("#texture").rotation(ModelBuilder.FaceRotation.COUNTERCLOCKWISE_90).end()
+					.face(Direction.WEST).uvs(0, 9, 3, 12).texture("#texture").rotation(ModelBuilder.FaceRotation.COUNTERCLOCKWISE_90).end()
+					.face(Direction.DOWN).uvs(6, 6, 9, 9).texture("#texture").cullface(Direction.DOWN).end()
+					.end();
+			case UP -> model
+					.element().from(5.5f, 12, 5.5f).to(10.5f, 13, 10.5f)
+					.face(Direction.NORTH).uvs(12, 0, 13, 5).texture("#texture").rotation(ModelBuilder.FaceRotation.CLOCKWISE_90).end()
+					.face(Direction.EAST).uvs(14, 0, 13, 5).texture("#texture").rotation(ModelBuilder.FaceRotation.CLOCKWISE_90).end()
+					.face(Direction.SOUTH).uvs(14, 0, 15, 5).texture("#texture").rotation(ModelBuilder.FaceRotation.CLOCKWISE_90).end()
+					.face(Direction.WEST).uvs(15, 0, 16, 5).texture("#texture").rotation(ModelBuilder.FaceRotation.CLOCKWISE_90).end()
+					.face(Direction.UP).uvs(5, 0, 10, 5).texture("#texture").end()
+					.end()
+					.element().from(6.5f, 13, 6.5f).to(9.5f, 16, 9.5f)
+					.face(Direction.NORTH).uvs(0, 0, 3, 3).texture("#texture").rotation(ModelBuilder.FaceRotation.CLOCKWISE_90).end()
+					.face(Direction.EAST).uvs(0, 3, 3, 6).texture("#texture").rotation(ModelBuilder.FaceRotation.CLOCKWISE_90).end()
+					.face(Direction.SOUTH).uvs(0, 6, 3, 9).texture("#texture").rotation(ModelBuilder.FaceRotation.CLOCKWISE_90).end()
+					.face(Direction.WEST).uvs(0, 9, 3, 12).texture("#texture").rotation(ModelBuilder.FaceRotation.CLOCKWISE_90).end()
+					.face(Direction.UP).uvs(6, 6, 9, 9).texture("#texture").cullface(Direction.UP).end()
+					.end();
+			case NORTH -> model
+					.element().from(5.5f, 5.5f, 3).to(10.5f, 10.5f, 4)
+					.face(Direction.NORTH).uvs(5, 0, 10, 5).texture("#texture").end()
+					.face(Direction.EAST).uvs(12, 0, 13, 5).texture("#texture").end()
+					.face(Direction.WEST).uvs(14, 0, 15, 5).texture("#texture").end()
+					.face(Direction.UP).uvs(13, 0, 14, 5).texture("#texture").rotation(ModelBuilder.FaceRotation.CLOCKWISE_90).end()
+					.face(Direction.DOWN).uvs(15, 0, 16, 5).texture("#texture").rotation(ModelBuilder.FaceRotation.CLOCKWISE_90).end()
+					.end()
+					.element().from(6.5f, 6.5f, 0).to(9.5f, 9.5f, 3)
+					.face(Direction.NORTH).uvs(6, 6, 9, 9).texture("#texture").cullface(Direction.NORTH).end()
+					.face(Direction.EAST).uvs(0, 6, 3, 9).texture("#texture").rotation(ModelBuilder.FaceRotation.UPSIDE_DOWN).end()
+					.face(Direction.WEST).uvs(0, 0, 3, 3).texture("#texture").end()
+					.face(Direction.UP).uvs(0, 3, 3, 6).texture("#texture").rotation(ModelBuilder.FaceRotation.CLOCKWISE_90).end()
+					.face(Direction.DOWN).uvs(0, 9, 3, 12).texture("#texture").rotation(ModelBuilder.FaceRotation.COUNTERCLOCKWISE_90).end()
+					.end();
+			case SOUTH -> model
+					.element().from(5.5f, 5.5f, 12).to(10.5f, 10.5f, 13)
+					.face(Direction.EAST).uvs(12, 0, 13, 5).texture("#texture").end()
+					.face(Direction.SOUTH).uvs(5, 0, 10, 5).texture("#texture").end()
+					.face(Direction.WEST).uvs(14, 0, 15, 5).texture("#texture").end()
+					.face(Direction.UP).uvs(13, 0, 14, 5).texture("#texture").rotation(ModelBuilder.FaceRotation.CLOCKWISE_90).end()
+					.face(Direction.DOWN).uvs(15, 0, 16, 5).texture("#texture").rotation(ModelBuilder.FaceRotation.CLOCKWISE_90).end()
+					.end()
+					.element().from(6.5f, 6.5f, 13).to(9.5f, 9.5f, 16)
+					.face(Direction.EAST).uvs(0, 6, 3, 9).texture("#texture").end()
+					.face(Direction.SOUTH).uvs(6, 6, 9, 9).texture("#texture").cullface(Direction.SOUTH).end()
+					.face(Direction.WEST).uvs(0, 0, 3, 3).texture("#texture").rotation(ModelBuilder.FaceRotation.UPSIDE_DOWN).end()
+					.face(Direction.UP).uvs(0, 3, 3, 6).texture("#texture").rotation(ModelBuilder.FaceRotation.COUNTERCLOCKWISE_90).end()
+					.face(Direction.DOWN).uvs(0, 9, 3, 12).texture("#texture").rotation(ModelBuilder.FaceRotation.CLOCKWISE_90).end()
+					.end();
+			case WEST -> model
+					.element().from(3, 5.5f, 5.5f).to(4, 10.5f, 10.5f)
+					.face(Direction.NORTH).uvs(12, 0, 13, 5).texture("#texture").end()
+					.face(Direction.SOUTH).uvs(14, 0, 15, 5).texture("#texture").end()
+					.face(Direction.WEST).uvs(5, 0, 10, 5).texture("#texture").end()
+					.face(Direction.UP).uvs(13, 0, 14, 5).texture("#texture").end()
+					.face(Direction.DOWN).uvs(15, 0, 16, 5).texture("#texture").end()
+					.end()
+					.element().from(0, 6.5f, 6.5f).to(3, 9.5f, 9.5f)
+					.face(Direction.NORTH).uvs(0, 0, 3, 3).texture("#texture").rotation(ModelBuilder.FaceRotation.UPSIDE_DOWN).end()
+					.face(Direction.SOUTH).uvs(0, 6, 3, 9).texture("#texture").end()
+					.face(Direction.WEST).uvs(6, 6, 9, 9).texture("#texture").cullface(Direction.WEST).end()
+					.face(Direction.UP).uvs(0, 3, 3, 6).texture("#texture").end()
+					.face(Direction.DOWN).uvs(0, 9, 3, 12).texture("#texture").end()
+					.end();
+			case EAST -> model
+					.element().from(12, 5.5f, 5.5f).to(13, 10.5f, 10.5f)
+					.face(Direction.NORTH).uvs(12, 0, 13, 5).texture("#texture").end()
+					.face(Direction.EAST).uvs(5, 0, 10, 5).texture("#texture").end()
+					.face(Direction.SOUTH).uvs(14, 0, 15, 5).texture("#texture").end()
+					.face(Direction.UP).uvs(13, 0, 14, 5).texture("#texture").end()
+					.face(Direction.DOWN).uvs(15, 0, 16, 5).texture("#texture").end()
+					.end()
+					.element().from(13, 6.5f, 6.5f).to(16, 9.5f, 9.5f)
+					.face(Direction.NORTH).uvs(0, 0, 3, 3).texture("#texture").end()
+					.face(Direction.EAST).uvs(6, 6, 9, 9).texture("#texture").cullface(Direction.EAST).end()
+					.face(Direction.SOUTH).uvs(0, 6, 3, 9).texture("#texture").rotation(ModelBuilder.FaceRotation.UPSIDE_DOWN).end()
+					.face(Direction.UP).uvs(0, 3, 3, 6).texture("#texture").rotation(ModelBuilder.FaceRotation.UPSIDE_DOWN).end()
+					.face(Direction.DOWN).uvs(0, 9, 3, 12).texture("#texture").rotation(ModelBuilder.FaceRotation.UPSIDE_DOWN).end()
+					.end();
+	
+		}
 	}
 
 	private static ModelBuilder<BlockModelBuilder>.ElementBuilder graveStone(BlockModelBuilder model, int bottom) {

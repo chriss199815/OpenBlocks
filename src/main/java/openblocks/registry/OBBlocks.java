@@ -19,6 +19,7 @@ import openblocks.block.ElevatorBlock;
 import openblocks.block.GraveBlock;
 import openblocks.block.RotatingElevatorBlock;
 import openblocks.block.TankBlock;
+import openblocks.block.VacuumHopperBlock;
 import openblocks.block.XpBottlerBlock;
 import openblocks.block.XpDrainBlock;
 import openblocks.block.XpShowerBlock;
@@ -70,6 +71,14 @@ public class OBBlocks {
 			.strength(1.0f, 2000.0f)
 			.noOcclusion()
 			.sound(SoundType.GRAVEL)));
+
+	public static final DeferredBlock<VacuumHopperBlock> VACUUM_HOPPER = registerWithItem("vacuum_hopper", () -> new VacuumHopperBlock(BlockBehaviour.Properties.of()
+			.mapColor(MapColor.STONE)
+			.strength(1.0f)
+			.requiresCorrectToolForDrops()
+			.noOcclusion()
+			.isRedstoneConductor((state, level, pos) -> false)
+			.sound(SoundType.STONE)));
 
 	private static <T extends Block> DeferredBlock<T> registerWithItem(String id, Supplier<T> factory) {
 		final DeferredBlock<T> block = BLOCKS.register(id, factory);

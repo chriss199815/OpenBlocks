@@ -1,4 +1,4 @@
-// 1.21.1	2026-10-13T20:17:44.340938	Loot Tables
+// 1.21.1	2026-10-13T22:09:53.500912	Loot Tables
 e56438400b883176c092cf868516713c206e662e data/openblocks/loot_table/blocks/black_elevator.json
 729a4def80970d503e3b4b44b25d932de17130b5 data/openblocks/loot_table/blocks/black_elevator_rotating.json
 edf562b7977d1cf4838d223b334e5241e4e2be47 data/openblocks/loot_table/blocks/blue_elevator.json
@@ -29,6 +29,7 @@ db430573fd55bb976a2479fc383007c2830f4d73 data/openblocks/loot_table/blocks/orang
 13a92422a8f1d244396577ae4a0e9a4a2c757be5 data/openblocks/loot_table/blocks/red_elevator.json
 8d90480fd11ad43b43a84ed5d9d15fe2791b7644 data/openblocks/loot_table/blocks/red_elevator_rotating.json
 271b39dc7a92c13e9131a84a3872650efc11cf58 data/openblocks/loot_table/blocks/tank.json
+d6c49894b9eb7ec36d493d2cd860f80d34856243 data/openblocks/loot_table/blocks/vacuum_hopper.json
 b05fca5e5ae355dd78d3347ad400124c01c0724e data/openblocks/loot_table/blocks/white_elevator.json
 c9311b73bf681bf85157100d4105db9b24364b14 data/openblocks/loot_table/blocks/white_elevator_rotating.json
 4a8088fa027969bca52bcc645901e03e801579ff data/openblocks/loot_table/blocks/xp_bottler.json

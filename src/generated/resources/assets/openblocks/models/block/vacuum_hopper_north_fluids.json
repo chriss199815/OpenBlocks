@@ -1,0 +1,6 @@
+{
+  "parent": "openblocks:block/vacuum_hopper_north",
+  "textures": {
+    "texture": "openblocks:block/vacuum_hopper_fluids"
+  }
+}

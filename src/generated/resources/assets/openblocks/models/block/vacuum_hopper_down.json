@@ -1,0 +1,131 @@
+{
+  "elements": [
+    {
+      "faces": {
+        "down": {
+          "texture": "#texture",
+          "uv": [
+            5.0,
+            0.0,
+            10.0,
+            5.0
+          ]
+        },
+        "east": {
+          "rotation": 90,
+          "texture": "#texture",
+          "uv": [
+            14.0,
+            0.0,
+            13.0,
+            5.0
+          ]
+        },
+        "north": {
+          "rotation": 90,
+          "texture": "#texture",
+          "uv": [
+            12.0,
+            0.0,
+            13.0,
+            5.0
+          ]
+        },
+        "south": {
+          "rotation": 90,
+          "texture": "#texture",
+          "uv": [
+            14.0,
+            0.0,
+            15.0,
+            5.0
+          ]
+        },
+        "west": {
+          "rotation": 90,
+          "texture": "#texture",
+          "uv": [
+            15.0,
+            0.0,
+            16.0,
+            5.0
+          ]
+        }
+      },
+      "from": [
+        5.5,
+        3,
+        5.5
+      ],
+      "to": [
+        10.5,
+        4,
+        10.5
+      ]
+    },
+    {
+      "faces": {
+        "down": {
+          "cullface": "down",
+          "texture": "#texture",
+          "uv": [
+            6.0,
+            6.0,
+            9.0,
+            9.0
+          ]
+        },
+        "east": {
+          "rotation": 270,
+          "texture": "#texture",
+          "uv": [
+            0.0,
+            3.0,
+            3.0,
+            6.0
+          ]
+        },
+        "north": {
+          "rotation": 270,
+          "texture": "#texture",
+          "uv": [
+            0.0,
+            0.0,
+            3.0,
+            3.0
+          ]
+        },
+        "south": {
+          "rotation": 270,
+          "texture": "#texture",
+          "uv": [
+            0.0,
+            6.0,
+            3.0,
+            9.0
+          ]
+        },
+        "west": {
+          "rotation": 270,
+          "texture": "#texture",
+          "uv": [
+            0.0,
+            9.0,
+            3.0,
+            12.0
+          ]
+        }
+      },
+      "from": [
+        6.5,
+        0,
+        6.5
+      ],
+      "to": [
+        9.5,
+        3,
+        9.5
+      ]
+    }
+  ]
+}

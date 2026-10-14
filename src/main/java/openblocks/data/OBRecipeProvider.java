@@ -8,6 +8,7 @@ import net.minecraft.data.recipes.RecipeCategory;
 import net.minecraft.data.recipes.RecipeOutput;
 import net.minecraft.data.recipes.RecipeProvider;
 import net.minecraft.data.recipes.ShapedRecipeBuilder;
+import net.minecraft.data.recipes.ShapelessRecipeBuilder;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.item.Item;
@@ -82,6 +83,13 @@ public class OBRecipeProvider extends RecipeProvider {
 				.define('i', Tags.Items.INGOTS_IRON)
 				.define('b', Items.GLASS_BOTTLE)
 				.unlockedBy("has_glass_bottle", has(Items.GLASS_BOTTLE))
+				.save(output);
+
+		ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, OBBlocks.VACUUM_HOPPER.get())
+				.requires(Items.HOPPER)
+				.requires(Tags.Items.OBSIDIANS)
+				.requires(Items.ENDER_EYE)
+				.unlockedBy("has_ender_eye", has(Items.ENDER_EYE))
 				.save(output);
 
 		// two mirrored wing recipes, like legacy

@@ -1,0 +1,6 @@
+{
+  "parent": "openblocks:block/vacuum_hopper_south",
+  "textures": {
+    "texture": "openblocks:block/vacuum_hopper_items"
+  }
+}

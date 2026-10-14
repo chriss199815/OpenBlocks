@@ -67,7 +67,7 @@ Ladder, Rope Ladder, Sponge, Scaffolding, Heal, Big Button (Stein/Holz), Target,
 - Metadaten-Items werden in einzelne Items aufgeteilt (es gibt keine Item-Metadaten mehr).
 - Für jeden Block: Blockstate, Modell und Loot-Table per Datagen, Rezept mit Tags.
 
-## Welle 2 – Fluid und XP sowie die bekanntesten Features — 🚧 in Arbeit
+## Welle 2 – Fluid und XP sowie die bekanntesten Features — ✅ erledigt (2026-10-13)
 Fortschritt:
 - [x] XP Juice + XP Bucket, `FluidXpUtils`.
 - [x] Tank: `TankBlockEntity` (Säule füllen/leeren, Ausgleich mit Nachbarn), Data Component `tank_contents`, Fluid-Capability für Block und Item, verbundener Rahmen über `TankModel` (`ModelData`), Fluid per BER, Item per BEWLR, Licht über Blockstate `light`, Config `tanks.*`, GameTests.
@@ -81,15 +81,18 @@ Fortschritt:
 - Grave (Inventar beim Tod sichern über `LivingDropsEvent`, BER).
 - [x] Hang Glider + Glider Wing: synchronisiertes Player-Attachment `hang_glider` (Hand) statt Entity, Physik inkl. Thermik im Player-Tick (beide Seiten), Rendering über `RenderPlayerEvent` (Körper gekippt, Gleiter über dem Spieler) und `RenderLevelStageEvent` (First Person), Item in der Hand ausgeblendet per `BakedModelWrapper`, Config `hangglider.enableThermal`, GameTests.  Akustisches Variometer → Welle 5.
 - [x] Sleeping Bag: Rechtsklick schläft am aktuellen Ort (Vanilla-Prüfungen für Nacht/Monster/Dimension nachgebaut), Spawnpunkt bleibt, `CanContinueSleepingEvent` erlaubt Schlafen ohne Bett, synchronisiertes Attachment `sleeping_bag` für das Schlafsack-Modell (`RenderLayer`). Anders als im Original wird er nicht im Brust-Slot getragen, die Rüstung bleibt an. GameTests.
-- Advancements und Trigger.
+- [x] Advancements und Trigger → verschoben zu ihren Features: „Stack Overflow“ (`dev_null_stacked`) mit Dev Null in Welle 3, „Zoinks!“ (`brick_dropped`) mit Brick Drops in Welle 4. Andere eigene Advancements hatte das Original nicht.
 
 ## Welle 3 – Maschinen und Inventare
-Vacuum Hopper (Seitenkonfiguration), Auto Anvil, Auto Enchantment Table, Block Breaker/Placer, Item Dropper, Donation Station, Drawing Table + Stencil, Fan, Flag, Bear Trap, Sprinkler, Paint Mixer, Paint Can, Paint Brush, Canvas/Canvas Glass, Luggage, Dev Null, Cursor, XP Bucket.
+Vacuum Hopper (Seitenkonfiguration), Auto Anvil, Auto Enchantment Table, Block Breaker/Placer, Item Dropper, Donation Station, Drawing Table + Stencil, Fan, Flag, Bear Trap, Sprinkler, Paint Mixer, Paint Can, Paint Brush, Canvas/Canvas Glass, Luggage, Dev Null (+ Advancement „Stack Overflow“), Cursor. (XP Bucket bereits in Welle 2 erledigt.)
 - Hier werden die Code-animierten BERs gebaut, die die Armatures ersetzen.
 - Canvas: Farbdaten pro Seite in der BE, Rendering über ein eigenes `BakedModel` mit `ModelData`.
 
+Fortschritt:
+- [x] Vacuum Hopper: saugt Items und XP-Kugeln im Umkreis von 3 Blöcken an (nur serverseitig, Bewegung per `hasImpulse` synchronisiert), 10 Slots + XP-Tank (5 Level), gibt alle 10 Ticks an die konfigurierten Seiten aus. Schleichen mit leeren Händen schaltet das Ansaugen ab. Seitenkonfiguration als wiederverwendbare Bausteine: `SideConfigTabs` (aufklappbare Tabs, JEI-Exclusion-Areas) + `SideSelectorWidget` (drehbarer 3D-Block, Klick schaltet Seite), Umschalten über das Vanilla-Paket für Menü-Buttons (`clickMenuButton`). Stutzen per `VacuumHopperModel` (`ModelData`). Capabilities wie im Original nur auf Ausgabeseiten (nur Entnahme). Anders als im Original werden XP-Kugeln nur genommen, wenn sie komplett in den Tank passen, und zusammengelegte Kugeln zählen voll (Access Transformer für `ExperienceOrb.count`). GameTests. **Offen:** Seitenkonfiguration für den XP Bottler mit denselben Bausteinen nachrüsten.
+
 ## Welle 4 – komplexe Features
-Trophy (+15 Verhaltensweisen), Cannon, Projector + Cartographer + Height Map, Guide/Builder Guide (+ `shapes/`), Imaginary-Blöcke + Glasses, Crane Backpack + Magnet, Golden Egg, Golden Eye (Vanilla-Locate-API), Sky Block, Glyph, Sonic Glasses, Village Highlighter, Enchantments + FlimFlams, Befehle (Brigadier: flimflam, luck, inventory), Brick Drops.
+Trophy (+15 Verhaltensweisen), Cannon, Projector + Cartographer + Height Map, Guide/Builder Guide (+ `shapes/`), Imaginary-Blöcke + Glasses, Crane Backpack + Magnet, Golden Egg, Golden Eye (Vanilla-Locate-API), Sky Block, Glyph, Sonic Glasses, Village Highlighter, Enchantments + FlimFlams, Befehle (Brigadier: flimflam, luck, inventory; `inventory` inkl. Grab-Backups), Brick Drops (+ Advancement „Zoinks!“).
 
 ## Welle 5 (optional)
 Handbuch über Patchouli, akustisches Variometer für den Hang Glider, eventuell Integrationen (CC: Tweaked Peripherals), Übersetzungen nachpflegen.

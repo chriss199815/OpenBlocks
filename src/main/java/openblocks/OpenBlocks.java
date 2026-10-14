@@ -10,6 +10,7 @@ import net.neoforged.fml.config.ModConfig;
 import net.neoforged.neoforge.common.NeoForge;
 import openblocks.block.entity.BlockBreakerBlockEntity;
 import openblocks.data.OBDataGenerators;
+import openblocks.common.BrickDrops;
 import openblocks.common.DonationInfo;
 import openblocks.common.HangGliderHandler;
 import openblocks.common.PlayerDeathHandler;
@@ -34,6 +35,7 @@ import openblocks.registry.OBMenus;
 import openblocks.registry.OBParticleTypes;
 import openblocks.registry.OBRecipeSerializers;
 import openblocks.registry.OBSounds;
+import openblocks.registry.OBStats;
 import openblocks.registry.OBTriggers;
 import org.slf4j.Logger;
 
@@ -60,6 +62,7 @@ public class OpenBlocks {
 		OBSounds.SOUNDS.register(modBus);
 		OBTriggers.TRIGGERS.register(modBus);
 		OBRecipeSerializers.RECIPE_SERIALIZERS.register(modBus);
+		OBStats.STATS.register(modBus);
 
 		modBus.addListener(OBNetwork::register);
 		modBus.addListener(OBCapabilities::register);
@@ -67,6 +70,7 @@ public class OpenBlocks {
 		modBus.addListener(OBDataGenerators::gatherData);
 		modBus.addListener(DonationInfo::onInterModProcess);
 		modBus.addListener(SpongeOnAStickItem::setDurability);
+		modBus.addListener(BrickDrops::registerStat);
 
 		NeoForge.EVENT_BUS.addListener(NoFlyXpOrb::onTargeting);
 		// after other mods changed the drops
@@ -80,6 +84,7 @@ public class OpenBlocks {
 		NeoForge.EVENT_BUS.addListener(LuggageItem::onEntityJoinLevel);
 		NeoForge.EVENT_BUS.addListener(DevNullItem::onItemPickup);
 		NeoForge.EVENT_BUS.addListener(TrophyDropHandler::onLivingDrops);
+		NeoForge.EVENT_BUS.addListener(BrickDrops::onLivingDrops);
 
 		container.registerConfig(ModConfig.Type.COMMON, OBConfig.SPEC);
 	}

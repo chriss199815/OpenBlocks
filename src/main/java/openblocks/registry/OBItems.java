@@ -24,6 +24,7 @@ import openblocks.item.SpongeOnAStickItem;
 import openblocks.item.SqueegeeItem;
 import openblocks.item.StencilItem;
 import openblocks.item.TankBlockItem;
+import openblocks.item.TastyClayItem;
 import openblocks.item.TrophyItem;
 import openblocks.item.WrenchItem;
 import openblocks.item.XpBucketItem;
@@ -68,9 +69,8 @@ public class OBItems {
 	public static final DeferredItem<SpongeOnAStickItem> SPONGE_ON_A_STICK = ITEMS.register("sponge_on_a_stick",
 			() -> new SpongeOnAStickItem(new Item.Properties().durability(SpongeOnAStickItem.DEFAULT_DURABILITY)));
 
-	// legacy filled the "bowels" for brick drops; that comes with the brick drops
-	public static final DeferredItem<Item> TASTY_CLAY = ITEMS.registerSimpleItem("tasty_clay", new Item.Properties()
-			.food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).alwaysEdible().build()));
+	public static final DeferredItem<TastyClayItem> TASTY_CLAY = ITEMS.register("tasty_clay", () -> new TastyClayItem(new Item.Properties()
+			.food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).alwaysEdible().build())));
 
 	// legacy MetasGeneric
 	public static final DeferredItem<Item> UNPREPARED_STENCIL = ITEMS.registerSimpleItem("unprepared_stencil");

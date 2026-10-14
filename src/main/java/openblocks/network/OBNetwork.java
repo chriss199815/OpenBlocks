@@ -13,5 +13,6 @@ public class OBNetwork {
 	public static void register(RegisterPayloadHandlersEvent event) {
 		PayloadRegistrar registrar = event.registrar(PROTOCOL_VERSION);
 		registrar.playToServer(ElevatorActionPayload.TYPE, ElevatorActionPayload.STREAM_CODEC, ElevatorActionPayload::handle);
+		registrar.playToServer(BrickDropPayload.TYPE, BrickDropPayload.STREAM_CODEC, BrickDropPayload::handle);
 	}
 }

@@ -1,7 +1,7 @@
 {
   "achievement.openblocks.droppedBrick": "Zoinks!",
   "achievement.openblocks.droppedBrick.desc": "Desculpe, apenas aconteceu...",
-  "stat.openblocks.bricksDropped": "Tijolos dropados",
+  "stat.openblocks.bricks_dropped": "Tijolos dropados",
   "achievement.openblocks.stackOverflow": "Excesso de Stacks",
   "achievement.openblocks.stackOverflow.desc": "É cheio de estrelas!",
   "openblocks.keybind.category": "OpenBlocks",

@@ -1,7 +1,7 @@
 {
   "achievement.openblocks.droppedBrick": "Zoinks!",
   "achievement.openblocks.droppedBrick.desc": "Désolé, il vient de se passer...",
-  "stat.openblocks.bricksDropped": "Briques abandonnées",
+  "stat.openblocks.bricks_dropped": "Briques abandonnées",
   "achievement.openblocks.stackOverflow": "Débordement de piles",
   "achievement.openblocks.stackOverflow.desc": "C'est plein d'étoiles !",
   "openblocks.keybind.category": "OpenBlocks",

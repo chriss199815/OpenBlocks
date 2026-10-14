@@ -14,6 +14,7 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Items;
 import openblocks.OpenBlocks;
+import openblocks.advancements.BrickDroppedTrigger;
 import openblocks.advancements.DevNullStackedTrigger;
 import openblocks.item.DevNullItem;
 
@@ -41,6 +42,16 @@ public class OBAdvancementProvider extends AdvancementProvider {
 							null, AdvancementType.TASK, true, true, false)
 					.addCriterion("reached_the_limit", DevNullStackedTrigger.TriggerInstance.stacked(DevNullItem.STACK_LIMIT))
 					.save(output, OpenBlocks.location("tma2").toString());
+
+			// legacy oops: "Zoinks!"
+			Advancement.Builder.advancement()
+					.parent(ADVENTURE_ROOT)
+					.display(Items.BRICK,
+							Component.translatable("achievement.openblocks.droppedBrick"),
+							Component.translatable("achievement.openblocks.droppedBrick.desc"),
+							null, AdvancementType.TASK, true, true, true)
+					.addCriterion("literally", BrickDroppedTrigger.TriggerInstance.dropped())
+					.save(output, OpenBlocks.location("oops").toString());
 		}
 	}
 }

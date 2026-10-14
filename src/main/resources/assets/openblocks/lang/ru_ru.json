@@ -1,7 +1,7 @@
 {
   "achievement.openblocks.droppedBrick": "Упс!",
   "achievement.openblocks.droppedBrick.desc": "К сожалению, это только что произошло...",
-  "stat.openblocks.bricksDropped": "Кирпичи сброшены",
+  "stat.openblocks.bricks_dropped": "Кирпичи сброшены",
   "achievement.openblocks.stackOverflow": "Переполнение стека",
   "achievement.openblocks.stackOverflow.desc": "Оно забито звёздами!",
   "openblocks.keybind.category": "OpenBlocks",

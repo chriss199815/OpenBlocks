@@ -1,7 +1,7 @@
 {
   "achievement.openblocks.droppedBrick": "Zoinks!",
   "achievement.openblocks.droppedBrick.desc": "Lo siento, simplemente ocurrió.",
-  "stat.openblocks.bricksDropped": "Se han caído los ladrillos",
+  "stat.openblocks.bricks_dropped": "Se han caído los ladrillos",
   "achievement.openblocks.stackOverflow": "Desbordamientos de montones",
   "achievement.openblocks.stackOverflow.desc": "¡Está lleno de estrellas!",
   "openblocks.keybind.category": "OpenBlocks",

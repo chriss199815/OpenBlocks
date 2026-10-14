@@ -57,31 +57,48 @@ public class GoldenEyeGameTests {
 	}
 
 	@SuppressWarnings("removal")
-	@GameTest(template = OBGameTestStructureProvider.EMPTY_3X8X3, timeoutTicks = 200)
-	public static void thrownEyeFliesTowardsStructureAndDropsBack(GameTestHelper helper) {
+	private static ServerPlayer throwEye(GameTestHelper helper, BlockPos structureOffset) {
 		final ServerPlayer player = helper.makeMockServerPlayerInLevel();
 		player.setGameMode(GameType.SURVIVAL);
 		final Vec3 playerPos = helper.absoluteVec(new Vec3(1.5, 2, 1.5));
 		player.teleportTo(playerPos.x, playerPos.y, playerPos.z);
 
 		final ItemStack stack = eye(0);
-		final BlockPos structure = BlockPos.containing(playerPos).east(500);
+		final BlockPos structure = BlockPos.containing(playerPos).offset(structureOffset);
 		stack.set(OBComponents.GOLDEN_EYE_TARGET.get(), new GoldenEyeTarget(BuiltinStructures.STRONGHOLD, GlobalPos.of(helper.getLevel().dimension(), structure)));
 		player.setItemInHand(InteractionHand.MAIN_HAND, stack);
 		stack.use(helper.getLevel(), player, InteractionHand.MAIN_HAND);
-
 		helper.assertTrue(player.getMainHandItem().isEmpty(), "The thrown eye should leave the hand");
-		final GoldenEye eye = helper.findOneEntity(OBEntities.GOLDEN_EYE.get());
-		helper.assertTrue(eye.getTarget().x > playerPos.x + 5, "The eye should fly towards the structure (east)");
+		return player;
+	}
 
-		// it flies out of the test area, so look where it was heading
-		final AABB landing = new AABB(BlockPos.containing(eye.getTarget())).inflate(2);
+	@GameTest(template = OBGameTestStructureProvider.EMPTY_3X8X3)
+	public static void thrownEyeFliesTowardsFarStructure(GameTestHelper helper) {
+		final ServerPlayer player = throwEye(helper, new BlockPos(500, 0, 0));
+		final GoldenEye eye = helper.findOneEntity(OBEntities.GOLDEN_EYE.get());
+		helper.assertTrue(eye.getTarget().x > player.getX() + 5, "The eye should fly towards the structure (east)");
+		eye.discard();
+		player.getServer().getPlayerList().remove(player);
+		helper.succeed();
+	}
+
+	// a near structure makes the eye fly down, so it stays in the test area
+	@GameTest(template = OBGameTestStructureProvider.EMPTY_3X8X3, timeoutTicks = 200)
+	public static void thrownEyeDropsBackWithOneChargeLess(GameTestHelper helper) {
+		final ServerPlayer player = throwEye(helper, new BlockPos(5, 0, 0));
+		final GoldenEye eye = helper.findOneEntity(OBEntities.GOLDEN_EYE.get());
+		helper.assertTrue(eye.getTarget().y < player.getEyeY() - 3, "The eye should fly down next to a structure");
+
+		// otherwise the player would pick the eye up right away
+		player.getServer().getPlayerList().remove(player);
+
+		// the empty test structure has no floor, the eye lands on the world floor just below it
+		final AABB area = helper.getBounds().expandTowards(0, -2, 0);
 		helper.succeedWhen(() -> {
-			final List<ItemEntity> dropped = helper.getLevel().getEntitiesOfClass(ItemEntity.class, landing, item -> item.getItem().is(OBItems.GOLDEN_EYE.get()));
+			final List<ItemEntity> dropped = helper.getLevel().getEntitiesOfClass(ItemEntity.class, area, item -> item.getItem().is(OBItems.GOLDEN_EYE.get()));
 			helper.assertFalse(dropped.isEmpty(), "Expected the golden eye to drop");
 			helper.assertValueEqual(dropped.getFirst().getItem().getDamageValue(), 1, "damage after one throw");
 			dropped.forEach(ItemEntity::discard);
-			player.getServer().getPlayerList().remove(player);
 		});
 	}
 

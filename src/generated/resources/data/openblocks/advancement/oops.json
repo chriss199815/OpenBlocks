@@ -1,0 +1,27 @@
+{
+  "parent": "minecraft:adventure/root",
+  "criteria": {
+    "literally": {
+      "trigger": "openblocks:brick_dropped"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "achievement.openblocks.droppedBrick.desc"
+    },
+    "hidden": true,
+    "icon": {
+      "count": 1,
+      "id": "minecraft:brick"
+    },
+    "title": {
+      "translate": "achievement.openblocks.droppedBrick"
+    }
+  },
+  "requirements": [
+    [
+      "literally"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

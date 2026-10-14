@@ -28,8 +28,22 @@ public class OBConfig {
 	public static final Scaffolding SCAFFOLDING = new Scaffolding(BUILDER);
 	public static final Trophy TROPHY = new Trophy(BUILDER);
 	public static final Egg EGG = new Egg(BUILDER);
+	public static final Tomfoolery TOMFOOLERY = new Tomfoolery(BUILDER);
 
 	public static final ModConfigSpec SPEC = BUILDER.build();
+
+	public static class Tomfoolery {
+		public final ModConfigSpec.BooleanValue weAreSeriousPeople;
+
+		private Tomfoolery(ModConfigSpec.Builder builder) {
+			builder.push("tomfoolery");
+			// brick drops; legacy also needed it in the client config, here the server decides
+			weAreSeriousPeople = builder
+					.comment("Are you serious too?")
+					.define("weAreSeriousPeople", true);
+			builder.pop();
+		}
+	}
 
 	public static class Egg {
 		public final ModConfigSpec.BooleanValue canPickBlocks;

@@ -1,7 +1,7 @@
 {
   "achievement.openblocks.droppedBrick": "Shaggy的口头禅:Zoinks!",
   "achievement.openblocks.droppedBrick.desc": "抱歉,但事已至此...",
-  "stat.openblocks.bricksDropped": "砖块已掉落",
+  "stat.openblocks.bricks_dropped": "砖块已掉落",
   "achievement.openblocks.stackOverflow": "栈溢出",
   "achievement.openblocks.stackOverflow.desc": "漫天都是小星星",
   "openblocks.keybind.category": "开放式方块",

@@ -71,6 +71,7 @@ public class OpenBlocksClient {
 		modBus.addListener(DevNullItemRenderer::registerClientExtensions);
 		modBus.addListener(DevNullItemRenderer::registerItemDecorations);
 		modBus.addListener(SkyBlockRenderer::registerShaders);
+		modBus.addListener(BrickDropInputHandler::registerKeyMappings);
 
 		NeoForge.EVENT_BUS.addListener(ElevatorInputHandler::onMovementInput);
 		NeoForge.EVENT_BUS.addListener(HangGliderRenderer::onRenderPlayerPre);
@@ -81,6 +82,7 @@ public class OpenBlocksClient {
 		NeoForge.EVENT_BUS.addListener(SleepingBagLayer::onComputeCameraAngles);
 		NeoForge.EVENT_BUS.addListener(CursorHighlightRenderer::onRenderLevelStage);
 		NeoForge.EVENT_BUS.addListener(SkyBlockRenderer::onRenderLevelStage);
+		NeoForge.EVENT_BUS.addListener(BrickDropInputHandler::onKey);
 
 		container.registerConfig(ModConfig.Type.CLIENT, OBClientConfig.SPEC);
 	}

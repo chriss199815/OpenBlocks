@@ -1,7 +1,7 @@
 {
   "achievement.openblocks.droppedBrick": "Zonk!",
   "achievement.openblocks.droppedBrick.desc": "Przykro mi, tak się zdarza...",
-  "stat.openblocks.bricksDropped": "Rzucone cegły",
+  "stat.openblocks.bricks_dropped": "Rzucone cegły",
   "openblocks.keybind.drop_brick": "Bądź głupi",
   "enchantment.openblocks.explosive": "Niestabilny",
   "openblocks.gui.luggage": "Bagaż",

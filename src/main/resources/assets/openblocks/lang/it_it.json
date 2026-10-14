@@ -1,7 +1,7 @@
 {
   "achievement.openblocks.droppedBrick": "Zoinks!",
   "achievement.openblocks.droppedBrick.desc": "Mi spiace, è appena accaduto...",
-  "stat.openblocks.bricksDropped": "Mattoni gettati",
+  "stat.openblocks.bricks_dropped": "Mattoni gettati",
   "achievement.openblocks.stackOverflow": "Memoria stack esaurita!",
   "achievement.openblocks.stackOverflow.desc": "È pieno di stelle!",
   "openblocks.keybind.category": "OpenBlocks",

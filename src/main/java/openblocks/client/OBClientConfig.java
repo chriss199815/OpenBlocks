@@ -10,8 +10,21 @@ public class OBClientConfig {
 	private static final ModConfigSpec.Builder BUILDER = new ModConfigSpec.Builder();
 
 	public static final SkyBlock SKY_BLOCK = new SkyBlock(BUILDER);
+	public static final Tomfoolery TOMFOOLERY = new Tomfoolery(BUILDER);
 
 	public static final ModConfigSpec SPEC = BUILDER.build();
+
+	public static class Tomfoolery {
+		public final ModConfigSpec.BooleanValue doItWhileTyping;
+
+		private Tomfoolery(ModConfigSpec.Builder builder) {
+			builder.push("tomfoolery");
+			doItWhileTyping = builder
+					.comment("You know, THAT thing! That you shouldn't do in public!")
+					.define("doItWhileTyping", false);
+			builder.pop();
+		}
+	}
 
 	public static class SkyBlock {
 		public final ModConfigSpec.BooleanValue renderingEnabled;

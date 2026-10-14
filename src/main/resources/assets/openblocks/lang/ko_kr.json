@@ -1,7 +1,7 @@
 {
   "achievement.openblocks.droppedBrick": "Zoinks!",
   "achievement.openblocks.droppedBrick.desc": "Sorry, it just happened...",
-  "stat.openblocks.bricksDropped": "Bricks dropped",
+  "stat.openblocks.bricks_dropped": "Bricks dropped",
   "openblocks.keybind.category": "오픈블럭",
   "openblocks.keybind.drop_brick": "바보",
   "enchantment.openblocks.explosive": "불안정",

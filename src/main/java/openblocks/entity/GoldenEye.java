@@ -31,6 +31,7 @@ public class GoldenEye extends Entity implements ItemSupplier {
 	private static final int TTL = 60;
 	private static final double DAMP = 0.25;
 	private static final double MAX_STEP = 1.0;
+	private static final int MAX_DROP_RISE = 8;
 
 	private static final String TAG_SPAWNING_ITEM = "SpawningItem";
 	private static final String TAG_TARGET_X = "TargetX";
@@ -96,7 +97,10 @@ public class GoldenEye extends Entity implements ItemSupplier {
 		super.tick();
 
 		if (!level().isClientSide && timeToLive-- < 0) {
-			if (!spawningStack.isEmpty()) level().addFreshEntity(new ItemEntity(level(), getX(), getY(), getZ(), spawningStack));
+			if (!spawningStack.isEmpty()) {
+				final Vec3 drop = findDropPos();
+				level().addFreshEntity(new ItemEntity(level(), drop.x, drop.y, drop.z, spawningStack));
+			}
 			discard();
 			return;
 		}
@@ -109,6 +113,17 @@ public class GoldenEye extends Entity implements ItemSupplier {
 			level().addParticle(ParticleTypes.PORTAL,
 					getX() + random.nextGaussian() * 0.3 - 0.15, getY() - 0.5 + random.nextGaussian() * 0.3 - 0.15, getZ() - random.nextGaussian() * 0.3 - 0.15,
 					step.x, step.y, step.z);
+	}
+
+	/**
+	 * Next to a structure the eye flies four blocks below the player's eyes, which is usually in the ground; unlike legacy,
+	 * the eye then drops on top of it instead of inside, where it could get lost.
+	 */
+	private Vec3 findDropPos() {
+		BlockPos pos = blockPosition();
+		for (int i = 0; i < MAX_DROP_RISE && !level().getBlockState(pos).getCollisionShape(level(), pos).isEmpty(); i++)
+			pos = pos.above();
+		return pos.equals(blockPosition())? position() : new Vec3(getX(), pos.getY(), getZ());
 	}
 
 	@Override

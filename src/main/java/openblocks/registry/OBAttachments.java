@@ -3,6 +3,7 @@ package openblocks.registry;
 import java.util.function.Supplier;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.network.codec.ByteBufCodecs;
+import net.minecraft.util.ExtraCodecs;
 import net.neoforged.neoforge.attachment.AttachmentType;
 import net.neoforged.neoforge.network.codec.NeoForgeStreamCodecs;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -37,4 +38,13 @@ public class OBAttachments {
 	 */
 	public static final Supplier<AttachmentType<PedometerState>> PEDOMETER = ATTACHMENT_TYPES.register("pedometer",
 			() -> AttachmentType.builder(PedometerState::new).build());
+
+	/**
+	 * Bricks the player can drop, filled by eating tasty clay; replaces the legacy {@code bowels} capability. Saved, but
+	 * emptied on death (the bricks drop).
+	 */
+	public static final Supplier<AttachmentType<Integer>> BOWELS = ATTACHMENT_TYPES.register("bowels",
+			() -> AttachmentType.builder(() -> 0)
+					.serialize(ExtraCodecs.NON_NEGATIVE_INT)
+					.build());
 }

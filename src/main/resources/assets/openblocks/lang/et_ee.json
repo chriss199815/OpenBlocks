@@ -1,7 +1,7 @@
 {
   "achievement.openblocks.droppedBrick": "Zoinks!",
   "achievement.openblocks.droppedBrick.desc": "Vabandust, see just juhtus...",
-  "stat.openblocks.bricksDropped": "Telliseid maha visatud",
+  "stat.openblocks.bricks_dropped": "Telliseid maha visatud",
   "openblocks.keybind.drop_brick": "Ole rumal",
   "enchantment.openblocks.explosive": "Ebastabiilne",
   "enchantment.openblocks.laststand": "Last Stand",

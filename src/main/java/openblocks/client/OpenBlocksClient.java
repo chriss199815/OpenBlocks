@@ -10,6 +10,7 @@ import net.minecraft.client.renderer.entity.ExperienceOrbRenderer;
 import net.neoforged.neoforge.client.event.RegisterMenuScreensEvent;
 import openblocks.client.gui.AutoAnvilScreen;
 import openblocks.client.gui.AutoEnchantmentTableScreen;
+import openblocks.client.gui.DonationStationScreen;
 import openblocks.client.gui.BlockPlacerScreen;
 import openblocks.client.gui.ItemDropperScreen;
 import openblocks.client.gui.VacuumHopperScreen;
@@ -60,6 +61,7 @@ public class OpenBlocksClient {
 		event.register(OBMenus.BLOCK_PLACER.get(), BlockPlacerScreen::new);
 		event.register(OBMenus.AUTO_ANVIL.get(), AutoAnvilScreen::new);
 		event.register(OBMenus.AUTO_ENCHANTMENT_TABLE.get(), AutoEnchantmentTableScreen::new);
+		event.register(OBMenus.DONATION_STATION.get(), DonationStationScreen::new);
 	}
 
 	private static void registerRenderers(EntityRenderersEvent.RegisterRenderers event) {

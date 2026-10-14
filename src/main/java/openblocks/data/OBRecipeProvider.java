@@ -145,6 +145,15 @@ public class OBRecipeProvider extends RecipeProvider {
 				.unlockedBy("has_enchanting_table", has(Items.ENCHANTING_TABLE))
 				.save(output);
 
+		ShapedRecipeBuilder.shaped(RecipeCategory.MISC, OBBlocks.DONATION_STATION.get())
+				.pattern("ppp")
+				.pattern("pcp")
+				.pattern("ppp")
+				.define('p', Items.PORKCHOP)
+				.define('c', Tags.Items.CHESTS_WOODEN)
+				.unlockedBy("has_porkchop", has(Items.PORKCHOP))
+				.save(output);
+
 		// two mirrored wing recipes, like legacy
 		ShapedRecipeBuilder.shaped(RecipeCategory.MISC, OBItems.GLIDER_WING.get())
 				.group("openblocks:glider_wing")

@@ -8,6 +8,7 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 import openblocks.OpenBlocks;
 import openblocks.menu.AutoAnvilMenu;
 import openblocks.menu.AutoEnchantmentTableMenu;
+import openblocks.menu.DonationStationMenu;
 import openblocks.menu.BlockPlacerMenu;
 import openblocks.menu.ItemDropperMenu;
 import openblocks.menu.VacuumHopperMenu;
@@ -23,4 +24,5 @@ public class OBMenus {
 	public static final DeferredHolder<MenuType<?>, MenuType<BlockPlacerMenu>> BLOCK_PLACER = MENUS.register("block_placer", () -> IMenuTypeExtension.create(BlockPlacerMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<AutoAnvilMenu>> AUTO_ANVIL = MENUS.register("auto_anvil", () -> IMenuTypeExtension.create(AutoAnvilMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<AutoEnchantmentTableMenu>> AUTO_ENCHANTMENT_TABLE = MENUS.register("auto_enchantment_table", () -> IMenuTypeExtension.create(AutoEnchantmentTableMenu::new));
+	public static final DeferredHolder<MenuType<?>, MenuType<DonationStationMenu>> DONATION_STATION = MENUS.register("donation_station", () -> IMenuTypeExtension.create(DonationStationMenu::new));
 }

@@ -7,6 +7,7 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 import openblocks.OpenBlocks;
 import openblocks.block.entity.AutoAnvilBlockEntity;
 import openblocks.block.entity.AutoEnchantmentTableBlockEntity;
+import openblocks.block.entity.DonationStationBlockEntity;
 import openblocks.block.entity.BlockBreakerBlockEntity;
 import openblocks.block.entity.BlockPlacerBlockEntity;
 import openblocks.block.entity.GraveBlockEntity;
@@ -64,4 +65,7 @@ public class OBBlockEntities {
 	@SuppressWarnings("DataFlowIssue")
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<AutoEnchantmentTableBlockEntity>> AUTO_ENCHANTMENT_TABLE = BLOCK_ENTITIES.register("auto_enchantment_table",
 			() -> BlockEntityType.Builder.of(AutoEnchantmentTableBlockEntity::new, OBBlocks.AUTO_ENCHANTMENT_TABLE.get()).build(null));
+
+	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<DonationStationBlockEntity>> DONATION_STATION = BLOCK_ENTITIES.register("donation_station",
+			() -> BlockEntityType.Builder.of(DonationStationBlockEntity::new, OBBlocks.DONATION_STATION.get()).build(null));
 }

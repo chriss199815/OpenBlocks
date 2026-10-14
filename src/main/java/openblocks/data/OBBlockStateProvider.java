@@ -9,6 +9,7 @@ import net.neoforged.neoforge.client.model.generators.BlockStateProvider;
 import net.neoforged.neoforge.client.model.generators.ConfiguredModel;
 import net.neoforged.neoforge.client.model.generators.ModelBuilder;
 import net.neoforged.neoforge.client.model.generators.ModelFile;
+import net.neoforged.neoforge.client.model.generators.loaders.ObjModelBuilder;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import openblocks.OpenBlocks;
 import openblocks.block.BlockManipulatorBlock;
@@ -144,6 +145,18 @@ public class OBBlockStateProvider extends BlockStateProvider {
 				.end();
 		simpleBlock(OBBlocks.AUTO_ENCHANTMENT_TABLE.get(), autoEnchantmentTable);
 		simpleBlockItem(OBBlocks.AUTO_ENCHANTMENT_TABLE.get(), autoEnchantmentTable);
+
+		// legacy piggy.obj, snout towards north, so the default offset makes it face the player
+		final BlockModelBuilder donationStation = models().withExistingParent("donation_station", mcLoc("block/block"))
+				.customLoader(ObjModelBuilder::begin)
+				.modelLocation(modLoc("models/block/piggy.obj"))
+				.flipV(true)
+				.end()
+				.texture("piggy1", modLoc("block/piggy1"))
+				.texture("piggy2", modLoc("block/piggy2"))
+				.texture("particle", modLoc("block/donation_station"));
+		horizontalBlock(OBBlocks.DONATION_STATION.get(), donationStation);
+		simpleBlockItem(OBBlocks.DONATION_STATION.get(), donationStation);
 
 		// flat icon like vanilla iron bars, the 1px block model is barely visible from the side
 		itemModels().withExistingParent("xp_drain", mcLoc("item/generated")).texture("layer0", modLoc("block/xp_drain"));

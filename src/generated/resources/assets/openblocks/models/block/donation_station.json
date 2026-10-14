@@ -1,0 +1,11 @@
+{
+  "parent": "minecraft:block/block",
+  "flip_v": true,
+  "loader": "neoforge:obj",
+  "model": "openblocks:models/block/piggy.obj",
+  "textures": {
+    "particle": "openblocks:block/donation_station",
+    "piggy1": "openblocks:block/piggy1",
+    "piggy2": "openblocks:block/piggy2"
+  }
+}

@@ -29,6 +29,7 @@ public class OBBlockLoot extends BlockLootSubProvider {
 		dropSelf(OBBlocks.BLOCK_PLACER.get());
 		dropSelf(OBBlocks.AUTO_ANVIL.get());
 		dropSelf(OBBlocks.AUTO_ENCHANTMENT_TABLE.get());
+		dropSelf(OBBlocks.DONATION_STATION.get());
 		// graves release their items when broken, but never drop themselves
 		add(OBBlocks.GRAVE.get(), noDrop());
 		add(OBBlocks.TANK.get(), createSingleItemTable(OBBlocks.TANK.get())

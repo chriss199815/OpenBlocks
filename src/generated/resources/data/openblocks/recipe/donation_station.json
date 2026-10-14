@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "c": {
+      "tag": "c:chests/wooden"
+    },
+    "p": {
+      "item": "minecraft:porkchop"
+    }
+  },
+  "pattern": [
+    "ppp",
+    "pcp",
+    "ppp"
+  ],
+  "result": {
+    "count": 1,
+    "id": "openblocks:donation_station"
+  }
+}

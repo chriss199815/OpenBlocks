@@ -10,6 +10,7 @@ import net.neoforged.fml.config.ModConfig;
 import net.neoforged.neoforge.common.NeoForge;
 import openblocks.block.entity.BlockBreakerBlockEntity;
 import openblocks.data.OBDataGenerators;
+import openblocks.common.DonationInfo;
 import openblocks.common.HangGliderHandler;
 import openblocks.common.PlayerDeathHandler;
 import openblocks.common.SleepingBagHandler;
@@ -54,6 +55,7 @@ public class OpenBlocks {
 		modBus.addListener(OBNetwork::register);
 		modBus.addListener(OBCapabilities::register);
 		modBus.addListener(OBDataGenerators::gatherData);
+		modBus.addListener(DonationInfo::onInterModProcess);
 
 		NeoForge.EVENT_BUS.addListener(NoFlyXpOrb::onTargeting);
 		// after other mods changed the drops

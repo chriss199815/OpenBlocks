@@ -1,4 +1,4 @@
-// 1.21.1	2026-10-14T10:02:51.332934	Loot Tables
+// 1.21.1	2026-10-14T10:29:46.54965	Loot Tables
 91d0a832c50aab793e108321331f69e01d35cf6b data/openblocks/loot_table/blocks/auto_anvil.json
 76f4eafc1ea0961e4b2199bec14732fba136b0e3 data/openblocks/loot_table/blocks/auto_enchantment_table.json
 e56438400b883176c092cf868516713c206e662e data/openblocks/loot_table/blocks/black_elevator.json
@@ -11,6 +11,7 @@ c7235d916029e8bfc6cee15f5e9947b1b9d875e8 data/openblocks/loot_table/blocks/brown
 a104c24ecef8132da45b7ebb315d5a3515a21bb7 data/openblocks/loot_table/blocks/brown_elevator_rotating.json
 edca71a215b60c02c1f24b866ca0f175d96b749d data/openblocks/loot_table/blocks/cyan_elevator.json
 13c164d7ca0a11a41c8c00453f3179fcc702b729 data/openblocks/loot_table/blocks/cyan_elevator_rotating.json
+99b7b1f7a40290664b8ca855b6738fdc69b3b84d data/openblocks/loot_table/blocks/donation_station.json
 deea7c2ff4bb1dd95aa25b852ffc6ad2bf2fff40 data/openblocks/loot_table/blocks/grave.json
 fce05366add91cf075565ad57fe00363aaa6b72d data/openblocks/loot_table/blocks/gray_elevator.json
 2a8296ba2c5a8ada61d89ef53ac7c64472c4e227 data/openblocks/loot_table/blocks/gray_elevator_rotating.json

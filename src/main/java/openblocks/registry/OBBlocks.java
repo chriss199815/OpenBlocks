@@ -17,6 +17,7 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 import openblocks.OpenBlocks;
 import openblocks.block.AutoAnvilBlock;
 import openblocks.block.AutoEnchantmentTableBlock;
+import openblocks.block.DonationStationBlock;
 import openblocks.block.BlockBreakerBlock;
 import openblocks.block.BlockPlacerBlock;
 import openblocks.block.ElevatorBlock;
@@ -107,6 +108,8 @@ public class OBBlocks {
 			.requiresCorrectToolForDrops()
 			.lightLevel(state -> 7)
 			.sound(SoundType.STONE)));
+
+	public static final DeferredBlock<DonationStationBlock> DONATION_STATION = registerWithItem("donation_station", () -> new DonationStationBlock(machineProperties().noOcclusion()));
 
 	private static BlockBehaviour.Properties machineProperties() {
 		return BlockBehaviour.Properties.of()

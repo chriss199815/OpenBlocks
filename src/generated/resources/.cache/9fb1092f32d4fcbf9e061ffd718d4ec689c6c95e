@@ -1,6 +1,7 @@
-// 1.21.1	2026-10-14T10:02:51.333266	Recipes
+// 1.21.1	2026-10-14T10:29:46.550216	Recipes
 c6a3ea74daedb67da82f8e7c85c4d0f040726c89 data/openblocks/advancement/recipes/misc/auto_anvil.json
 606e1bfbd969e9b729041ba17a52622dbd63e2c9 data/openblocks/advancement/recipes/misc/auto_enchantment_table.json
+66e9042c9325e7c0d5d23ce2e9939a81642a0dc9 data/openblocks/advancement/recipes/misc/donation_station.json
 4703126fbd22d6defaf693cfd1899aa9725e2cbe data/openblocks/advancement/recipes/misc/glider_wing_left.json
 c40b99032ad81579611396658ce2ae35f1814bb9 data/openblocks/advancement/recipes/misc/glider_wing_right.json
 22c667d4bb09ff4494a0c22c9d82e6ec61b1a559 data/openblocks/advancement/recipes/misc/sleeping_bag.json
@@ -57,6 +58,7 @@ d3553e478c6392d0fdfd3ee59a3ea77ed5dc9dd7 data/openblocks/recipe/brown_elevator.j
 d8cd3743598d7a892129c6ba72cc679bda432f87 data/openblocks/recipe/brown_elevator_rotating.json
 4cf828cd1d92cf198a6265eb23583f2c52138a25 data/openblocks/recipe/cyan_elevator.json
 035d0b7aa57a55e9d1849248fe9470faf5920668 data/openblocks/recipe/cyan_elevator_rotating.json
+cd8f111bebd14ea9b7c31f57a91defba81737180 data/openblocks/recipe/donation_station.json
 d137edeb8d0e951a2c9d325fcda583959f10fd1f data/openblocks/recipe/glider_wing_left.json
 c7a651711c5f2f893019881628eea763d68db28e data/openblocks/recipe/glider_wing_right.json
 4cf56d7344761ca3d51b0646d264e584485e85af data/openblocks/recipe/gray_elevator.json

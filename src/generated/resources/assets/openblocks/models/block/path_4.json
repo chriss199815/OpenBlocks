@@ -1,0 +1,60 @@
+{
+  "parent": "minecraft:block/block",
+  "elements": [
+    {
+      "faces": {
+        "down": {
+          "cullface": "down",
+          "texture": "#stone",
+          "uv": [
+            10.006455,
+            6.788893,
+            15.113381,
+            12.79872
+          ]
+        },
+        "east": {
+          "texture": "#stone",
+          "uv": [
+            6.788893,
+            15.0,
+            12.79872,
+            16.0
+          ]
+        },
+        "north": {
+          "texture": "#stone",
+          "uv": [
+            10.006455,
+            15.0,
+            15.113381,
+            16.0
+          ]
+        },
+        "south": {
+          "texture": "#stone"
+        },
+        "up": {
+          "texture": "#stone"
+        },
+        "west": {
+          "texture": "#stone"
+        }
+      },
+      "from": [
+        10.006455,
+        0,
+        6.788893
+      ],
+      "to": [
+        15.113381,
+        1,
+        12.79872
+      ]
+    }
+  ],
+  "textures": {
+    "particle": "openblocks:block/path",
+    "stone": "openblocks:block/path"
+  }
+}

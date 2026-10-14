@@ -1,5 +1,8 @@
 package openblocks.data;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
 import net.minecraft.client.renderer.block.model.BlockModel;
 import net.minecraft.core.Direction;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -8,6 +11,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.ItemDisplayContext;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.properties.AttachFace;
+import net.minecraft.world.phys.AABB;
 import net.neoforged.neoforge.client.model.generators.BlockModelBuilder;
 import net.neoforged.neoforge.client.model.generators.BlockStateProvider;
 import net.neoforged.neoforge.client.model.generators.ConfiguredModel;
@@ -212,6 +216,7 @@ public class OBBlockStateProvider extends BlockStateProvider {
 		bigButton(OBBlocks.BIG_BUTTON.get(), mcLoc("block/stone"));
 		bigButton(OBBlocks.BIG_BUTTON_WOOD.get(), mcLoc("block/oak_planks"));
 		target();
+		path();
 	}
 
 	/**
@@ -300,6 +305,53 @@ public class OBBlockStateProvider extends BlockStateProvider {
 					.face(Direction.UP).uvs(0, 2, 16, 3).rotation(ModelBuilder.FaceRotation.CLOCKWISE_90).texture("#leg").end()
 					.face(Direction.DOWN).uvs(0, 3, 16, 4).rotation(ModelBuilder.FaceRotation.CLOCKWISE_90).texture("#leg").cullface(Direction.DOWN).end()
 					.end();
+		return builder;
+	}
+
+	/**
+	 * Replaces the legacy magic-path model, which laid out up to 10 random stones per position: a few such layouts as
+	 * block state variants, picked by position like vanilla random variants. Layouts use legacy's algorithm and random generator.
+	 */
+	private void path() {
+		final ConfiguredModel[] variants = new ConfiguredModel[PATH_VARIANTS];
+		for (int i = 0; i < PATH_VARIANTS; i++)
+			variants[i] = new ConfiguredModel(pathStones(models().withExistingParent("path_" + i, mcLoc("block/block")), i));
+		getVariantBuilder(OBBlocks.PATH.get()).partialState().setModels(variants);
+		// like legacy: the stones of its inventory seed, with the transforms of thin blocks (carpets)
+		pathStones(itemModels().withExistingParent("path", mcLoc("block/thin_block")), -5077139222181326242L);
+	}
+
+	private static final int PATH_VARIANTS = 16;
+	private static final int PATH_MAX_STONES = 10;
+
+	private <T extends ModelBuilder<T>> T pathStones(T builder, long seed) {
+		builder.texture("stone", modLoc("block/path")).texture("particle", modLoc("block/path"));
+		final Random random = new Random(seed);
+		final List<AABB> stones = new ArrayList<>();
+		for (int i = 0; i < PATH_MAX_STONES; i++) {
+			final double width = random.nextDouble() * 0.3 + 0.1;
+			final double length = random.nextDouble() * 0.3 + 0.1;
+			final double x = random.nextDouble() * (1.0 - width);
+			final double z = random.nextDouble() * (1.0 - length);
+			final AABB stone = new AABB(x, 0, z, x + width, 1.0 / 16.0, z + length);
+			if (stones.stream().anyMatch(stone::intersects)) break;
+			stones.add(stone);
+		}
+
+		for (AABB stone : stones) {
+			final float x1 = (float)(stone.minX * 16), z1 = (float)(stone.minZ * 16), x2 = (float)(stone.maxX * 16), z2 = (float)(stone.maxZ * 16);
+			builder.element().from(x1, 0, z1).to(x2, 1, z2)
+					.allFaces((dir, face) -> {
+						face.texture("#stone");
+						switch (dir.getAxis()) {
+							case Y -> face.uvs(x1, z1, x2, z2);
+							case X -> face.uvs(z1, 15, z2, 16);
+							case Z -> face.uvs(x1, 15, x2, 16);
+						}
+						if (dir == Direction.DOWN) face.cullface(Direction.DOWN);
+					})
+					.end();
+		}
 		return builder;
 	}
 

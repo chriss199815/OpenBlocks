@@ -27,6 +27,7 @@ import openblocks.block.DonationStationBlock;
 import openblocks.block.DrawingTableBlock;
 import openblocks.block.PaintCanBlock;
 import openblocks.block.PaintMixerBlock;
+import openblocks.block.PathBlock;
 import openblocks.block.BlockBreakerBlock;
 import openblocks.block.BlockPlacerBlock;
 import openblocks.block.ElevatorBlock;
@@ -240,6 +241,14 @@ public class OBBlocks {
 			.noOcclusion()
 			.lightLevel(state -> 4)
 			.isRedstoneConductor((state, level, pos) -> false)
+			.sound(SoundType.STONE)));
+
+	public static final DeferredBlock<PathBlock> PATH = registerWithItem("path", () -> new PathBlock(BlockBehaviour.Properties.of()
+			.mapColor(MapColor.STONE)
+			.strength(1.0f)
+			.noCollission()
+			.noOcclusion()
+			.pushReaction(PushReaction.DESTROY)
 			.sound(SoundType.STONE)));
 
 	private static BlockBehaviour.Properties bigButtonProperties() {

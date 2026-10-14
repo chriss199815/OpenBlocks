@@ -1,0 +1,162 @@
+{
+  "parent": "minecraft:block/block",
+  "elements": [
+    {
+      "faces": {
+        "down": {
+          "cullface": "down",
+          "texture": "#stone",
+          "uv": [
+            0.55883807,
+            8.832366,
+            5.6618934,
+            12.566511
+          ]
+        },
+        "east": {
+          "texture": "#stone",
+          "uv": [
+            8.832366,
+            15.0,
+            12.566511,
+            16.0
+          ]
+        },
+        "north": {
+          "texture": "#stone",
+          "uv": [
+            0.55883807,
+            15.0,
+            5.6618934,
+            16.0
+          ]
+        },
+        "south": {
+          "texture": "#stone"
+        },
+        "up": {
+          "texture": "#stone"
+        },
+        "west": {
+          "texture": "#stone"
+        }
+      },
+      "from": [
+        0.55883807,
+        0,
+        8.832366
+      ],
+      "to": [
+        5.6618934,
+        1,
+        12.566511
+      ]
+    },
+    {
+      "faces": {
+        "down": {
+          "cullface": "down",
+          "texture": "#stone",
+          "uv": [
+            11.260821,
+            5.606792,
+            14.830181,
+            7.5951247
+          ]
+        },
+        "east": {
+          "texture": "#stone",
+          "uv": [
+            5.606792,
+            15.0,
+            7.5951247,
+            16.0
+          ]
+        },
+        "north": {
+          "texture": "#stone",
+          "uv": [
+            11.260821,
+            15.0,
+            14.830181,
+            16.0
+          ]
+        },
+        "south": {
+          "texture": "#stone"
+        },
+        "up": {
+          "texture": "#stone"
+        },
+        "west": {
+          "texture": "#stone"
+        }
+      },
+      "from": [
+        11.260821,
+        0,
+        5.606792
+      ],
+      "to": [
+        14.830181,
+        1,
+        7.5951247
+      ]
+    },
+    {
+      "faces": {
+        "down": {
+          "cullface": "down",
+          "texture": "#stone",
+          "uv": [
+            9.273914,
+            9.847591,
+            14.537964,
+            15.705564
+          ]
+        },
+        "east": {
+          "texture": "#stone",
+          "uv": [
+            9.847591,
+            15.0,
+            15.705564,
+            16.0
+          ]
+        },
+        "north": {
+          "texture": "#stone",
+          "uv": [
+            9.273914,
+            15.0,
+            14.537964,
+            16.0
+          ]
+        },
+        "south": {
+          "texture": "#stone"
+        },
+        "up": {
+          "texture": "#stone"
+        },
+        "west": {
+          "texture": "#stone"
+        }
+      },
+      "from": [
+        9.273914,
+        0,
+        9.847591
+      ],
+      "to": [
+        14.537964,
+        1,
+        15.705564
+      ]
+    }
+  ],
+  "textures": {
+    "particle": "openblocks:block/path",
+    "stone": "openblocks:block/path"
+  }
+}

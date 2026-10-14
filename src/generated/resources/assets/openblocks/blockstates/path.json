@@ -1,0 +1,54 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "openblocks:block/path_0"
+      },
+      {
+        "model": "openblocks:block/path_1"
+      },
+      {
+        "model": "openblocks:block/path_2"
+      },
+      {
+        "model": "openblocks:block/path_3"
+      },
+      {
+        "model": "openblocks:block/path_4"
+      },
+      {
+        "model": "openblocks:block/path_5"
+      },
+      {
+        "model": "openblocks:block/path_6"
+      },
+      {
+        "model": "openblocks:block/path_7"
+      },
+      {
+        "model": "openblocks:block/path_8"
+      },
+      {
+        "model": "openblocks:block/path_9"
+      },
+      {
+        "model": "openblocks:block/path_10"
+      },
+      {
+        "model": "openblocks:block/path_11"
+      },
+      {
+        "model": "openblocks:block/path_12"
+      },
+      {
+        "model": "openblocks:block/path_13"
+      },
+      {
+        "model": "openblocks:block/path_14"
+      },
+      {
+        "model": "openblocks:block/path_15"
+      }
+    ]
+  }
+}

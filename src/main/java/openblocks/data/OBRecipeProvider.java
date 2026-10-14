@@ -390,5 +390,11 @@ public class OBRecipeProvider extends RecipeProvider {
 				.define('s', Tags.Items.RODS_WOODEN)
 				.unlockedBy("has_wool", has(Items.WHITE_WOOL))
 				.save(output);
+
+		ShapelessRecipeBuilder.shapeless(RecipeCategory.DECORATIONS, OBBlocks.PATH.get(), 2)
+				.requires(Tags.Items.STONES)
+				.requires(Tags.Items.COBBLESTONES)
+				.unlockedBy("has_cobblestone", has(Tags.Items.COBBLESTONES))
+				.save(output);
 	}
 }

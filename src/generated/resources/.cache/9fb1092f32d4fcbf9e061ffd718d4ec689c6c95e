@@ -1,4 +1,4 @@
-// 1.21.1	2026-10-14T19:24:49.342501	Recipes
+// 1.21.1	2026-10-14T19:25:11.555499	Recipes
 f37f622f6aa43ff8c3b05fe0ccd813d9be730420 data/openblocks/advancement/recipes/building_blocks/canvas.json
 4da75c2ec825111de4abddbd9d4caefbb2b578ce data/openblocks/advancement/recipes/building_blocks/scaffolding.json
 3e9f0cd162609d6b5b1d8d296b490afc26cbae21 data/openblocks/advancement/recipes/decorations/black_flag.json
@@ -12,6 +12,7 @@ af4eb611bd1760a9d0da8ccca9bccb89d0150580 data/openblocks/advancement/recipes/dec
 1b320317006628cf33147594d48da669feb396f1 data/openblocks/advancement/recipes/decorations/lime_flag.json
 cf8bea9579c17f61d8107299f6a11ebccd878a56 data/openblocks/advancement/recipes/decorations/magenta_flag.json
 1fd568266b27f56ec3089fafc87d692a7d13f933 data/openblocks/advancement/recipes/decorations/orange_flag.json
+b8f8a91e4d6e626d3536f1ec1c2db54e1eaa63d6 data/openblocks/advancement/recipes/decorations/path.json
 6ca389413b848e84e7d666b2b12feefb28ab6bc4 data/openblocks/advancement/recipes/decorations/pink_flag.json
 f5a36c8ec77734aafc9afd3babc103e6f99ceb82 data/openblocks/advancement/recipes/decorations/purple_flag.json
 88a2f03a24580b12474546ec781ea2d569aa5f73 data/openblocks/advancement/recipes/decorations/red_flag.json
@@ -168,6 +169,7 @@ a6dbad482c691764e60ad92a6ec4c51167f4ffdf data/openblocks/recipe/paintbrush_purpl
 53f7ad2786d032b8582a3d408842d93adaf5f231 data/openblocks/recipe/paintbrush_red.json
 b4ca79138b1aa1c1f7b2ffe59a539dcf67f1c828 data/openblocks/recipe/paintbrush_white.json
 742b3b520f51e86aaeb42d79ff71417eac99143c data/openblocks/recipe/paintbrush_yellow.json
+c94a426e7c592e90cbd0aa47634e962cd8f42e61 data/openblocks/recipe/path.json
 9cf0ac55230a22c8260679ed7f08bad9d9c8d23d data/openblocks/recipe/pink_elevator.json
 ef13181744618d54aa2445f3112edd54c70cc305 data/openblocks/recipe/pink_elevator_rotating.json
 3028b6c27635fe233b266362aab92e1a27a7f15e data/openblocks/recipe/pink_flag.json

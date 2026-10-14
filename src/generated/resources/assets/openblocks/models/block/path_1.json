@@ -1,0 +1,111 @@
+{
+  "parent": "minecraft:block/block",
+  "elements": [
+    {
+      "faces": {
+        "down": {
+          "cullface": "down",
+          "texture": "#stone",
+          "uv": [
+            2.2623854,
+            4.1362095,
+            7.3706007,
+            7.7045975
+          ]
+        },
+        "east": {
+          "texture": "#stone",
+          "uv": [
+            4.1362095,
+            15.0,
+            7.7045975,
+            16.0
+          ]
+        },
+        "north": {
+          "texture": "#stone",
+          "uv": [
+            2.2623854,
+            15.0,
+            7.3706007,
+            16.0
+          ]
+        },
+        "south": {
+          "texture": "#stone"
+        },
+        "up": {
+          "texture": "#stone"
+        },
+        "west": {
+          "texture": "#stone"
+        }
+      },
+      "from": [
+        2.2623854,
+        0,
+        4.1362095
+      ],
+      "to": [
+        7.3706007,
+        1,
+        7.7045975
+      ]
+    },
+    {
+      "faces": {
+        "down": {
+          "cullface": "down",
+          "texture": "#stone",
+          "uv": [
+            9.400721,
+            13.506465,
+            15.645948,
+            15.135827
+          ]
+        },
+        "east": {
+          "texture": "#stone",
+          "uv": [
+            13.506465,
+            15.0,
+            15.135827,
+            16.0
+          ]
+        },
+        "north": {
+          "texture": "#stone",
+          "uv": [
+            9.400721,
+            15.0,
+            15.645948,
+            16.0
+          ]
+        },
+        "south": {
+          "texture": "#stone"
+        },
+        "up": {
+          "texture": "#stone"
+        },
+        "west": {
+          "texture": "#stone"
+        }
+      },
+      "from": [
+        9.400721,
+        0,
+        13.506465
+      ],
+      "to": [
+        15.645948,
+        1,
+        15.135827
+      ]
+    }
+  ],
+  "textures": {
+    "particle": "openblocks:block/path",
+    "stone": "openblocks:block/path"
+  }
+}

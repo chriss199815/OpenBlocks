@@ -1,4 +1,4 @@
-// 1.21.1	2026-10-14T19:24:49.339804	Block States: openblocks
+// 1.21.1	2026-10-14T19:25:11.545882	Block States: openblocks
 909bae1340933de5e494ee6692d1d88aeabf4f33 assets/openblocks/blockstates/auto_anvil.json
 aca132b5918ec066ede0f817145d0ac0649c84a9 assets/openblocks/blockstates/auto_enchantment_table.json
 9be1c7ce94b3232fe19c46a8965abe89ae2d898a assets/openblocks/blockstates/bear_trap.json
@@ -50,6 +50,7 @@ d13702d1e489422f027636fd4f3a4f64b33332e9 assets/openblocks/blockstates/orange_el
 6a60ac85a83f62e9071a3664237075d98888182e assets/openblocks/blockstates/orange_flag.json
 3388d16368f3a491325041e74a0147c82fa386c6 assets/openblocks/blockstates/paint_can.json
 64aa834f501f92b68ea6dbff26178516f5e376c8 assets/openblocks/blockstates/paint_mixer.json
+1dd778b50b8ff8cc6acf5b348d8f5c8b2e42f87d assets/openblocks/blockstates/path.json
 c45d5d2e71c34dc43588a6063c8f1025e64a8816 assets/openblocks/blockstates/pink_elevator.json
 d13702d1e489422f027636fd4f3a4f64b33332e9 assets/openblocks/blockstates/pink_elevator_rotating.json
 6a60ac85a83f62e9071a3664237075d98888182e assets/openblocks/blockstates/pink_flag.json
@@ -147,6 +148,22 @@ fb4c37f8447e99be4684687e0abf0c04c0a7e204 assets/openblocks/models/block/ladder_t
 0cd372dc5c9c3526cf78ccef5abde74ccb835010 assets/openblocks/models/block/paint_can.json
 cdd9f651203af18a3a3f9e85991260bfcbb53d2c assets/openblocks/models/block/paint_mixer.json
 096e912c6869497117a2b114cf617a1cf39f4fd1 assets/openblocks/models/block/paint_mixer_can.json
+316108b81f4c74edfeb669fcacc30b8de06dc747 assets/openblocks/models/block/path_0.json
+0861f9f8ad75be84ca35ac6786c522b266df717a assets/openblocks/models/block/path_1.json
+89b2b82aff4be5a09c259b80544f67d5c1a2bf0c assets/openblocks/models/block/path_10.json
+9df5b42ce348a58c6554fed41a315151dce7ad31 assets/openblocks/models/block/path_11.json
+e34bb9eb0be277e516d918901243b1f5067e87c4 assets/openblocks/models/block/path_12.json
+198ae67a8043bbd1efb27ccef8eefd1bce925046 assets/openblocks/models/block/path_13.json
+b8963233b0ee4194c3cb5d4b1f7567c5c282a241 assets/openblocks/models/block/path_14.json
+4bc60859dafa6ac78bc0805b2aa0b469a3966de4 assets/openblocks/models/block/path_15.json
+3b4ffef438b8ef515e2ccdf99624795e7f5dbb10 assets/openblocks/models/block/path_2.json
+6f76a2663b3708ff0c72e10355acfe47a189d646 assets/openblocks/models/block/path_3.json
+df8b2054cdaf47ac519008dc99a75e90ce993155 assets/openblocks/models/block/path_4.json
+12fb9b2a603065834a820503c5634b741a468e99 assets/openblocks/models/block/path_5.json
+592c55f3d0957672e08b5eff25b604ee69595376 assets/openblocks/models/block/path_6.json
+fef84dcb476474baf9d29316d82cd3b69da6bc44 assets/openblocks/models/block/path_7.json
+fd3178623542777eb800a9473337ef61e709e1ba assets/openblocks/models/block/path_8.json
+e3fc4dbb7fa5fa877de6cdce8f0f9f6f4dee9439 assets/openblocks/models/block/path_9.json
 67c2fe56fbe4a3c5b82e6d0e1c5722eed9263393 assets/openblocks/models/block/rope_ladder.json
 9deaa4ad20bfeed7b24ff3faf799a38ae7a1dacd assets/openblocks/models/block/scaffolding.json
 1f4b1f1c98000f82181d533834fe4f279783c901 assets/openblocks/models/block/sponge.json
@@ -267,6 +284,7 @@ fcc439f163500f4a2657f61a09c9762b2151a0ed assets/openblocks/models/item/orange_fl
 3aeece79755d84c841b01a50f0da4e5c65f35843 assets/openblocks/models/item/paint_can.json
 9b869e70c5c7be53daa8904e210c87503852977c assets/openblocks/models/item/paint_mixer.json
 8a8d3063fb04e3a693b9d4cfedf24c2fd4d011fb assets/openblocks/models/item/paintbrush.json
+c56b858eebca3fa890c840c69590cd211ffdfa12 assets/openblocks/models/item/path.json
 d2b8f805473f5db4bc4402f5b4f1864704363649 assets/openblocks/models/item/pink_elevator.json
 dd180aef5747a9afe34022df0f8fd345d081cd6c assets/openblocks/models/item/pink_elevator_rotating.json
 fcc439f163500f4a2657f61a09c9762b2151a0ed assets/openblocks/models/item/pink_flag.json

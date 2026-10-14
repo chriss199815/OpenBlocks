@@ -11,6 +11,7 @@ import net.neoforged.neoforge.client.model.generators.ModelBuilder;
 import net.neoforged.neoforge.client.model.generators.ModelFile;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import openblocks.OpenBlocks;
+import openblocks.block.BlockManipulatorBlock;
 import openblocks.block.GraveBlock;
 import openblocks.block.entity.VacuumHopperBlockEntity;
 import openblocks.registry.OBBlocks;
@@ -114,6 +115,16 @@ public class OBBlockStateProvider extends BlockStateProvider {
 				.texture("side", modLoc("block/item_dropper"));
 		directionalBlock(OBBlocks.ITEM_DROPPER.get(), itemDropper);
 		simpleBlockItem(OBBlocks.ITEM_DROPPER.get(), itemDropper);
+
+		// front on top, like the legacy cube_bottom_top models
+		final ModelFile breakerInactive = models().cubeBottomTop("block_breaker", modLoc("block/block_breaker_side"), modLoc("block/block_breaker_back"), modLoc("block/block_breaker_inactive"));
+		final ModelFile breakerActive = models().cubeBottomTop("block_breaker_active", modLoc("block/block_breaker_side"), modLoc("block/block_breaker_back"), modLoc("block/block_breaker_active"));
+		directionalBlock(OBBlocks.BLOCK_BREAKER.get(), state -> state.getValue(BlockManipulatorBlock.POWERED)? breakerActive : breakerInactive);
+		simpleBlockItem(OBBlocks.BLOCK_BREAKER.get(), breakerInactive);
+
+		final ModelFile placer = models().cubeBottomTop("block_placer", modLoc("block/block_placer_side"), modLoc("block/block_placer_back"), modLoc("block/block_placer_front"));
+		directionalBlock(OBBlocks.BLOCK_PLACER.get(), placer);
+		simpleBlockItem(OBBlocks.BLOCK_PLACER.get(), placer);
 
 		// flat icon like vanilla iron bars, the 1px block model is barely visible from the side
 		itemModels().withExistingParent("xp_drain", mcLoc("item/generated")).texture("layer0", modLoc("block/xp_drain"));

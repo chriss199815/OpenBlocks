@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "bottom": "openblocks:block/block_placer_back",
+    "side": "openblocks:block/block_placer_side",
+    "top": "openblocks:block/block_placer_front"
+  }
+}

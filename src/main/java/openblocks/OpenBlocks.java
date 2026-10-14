@@ -8,6 +8,7 @@ import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.config.ModConfig;
 import net.neoforged.neoforge.common.NeoForge;
+import openblocks.block.entity.BlockBreakerBlockEntity;
 import openblocks.data.OBDataGenerators;
 import openblocks.common.HangGliderHandler;
 import openblocks.common.PlayerDeathHandler;
@@ -55,6 +56,8 @@ public class OpenBlocks {
 		modBus.addListener(OBDataGenerators::gatherData);
 
 		NeoForge.EVENT_BUS.addListener(NoFlyXpOrb::onTargeting);
+		// after other mods changed the drops
+		NeoForge.EVENT_BUS.addListener(EventPriority.LOWEST, true, BlockBreakerBlockEntity::onBlockDrops);
 		// low priority and receiving cancelled events, like legacy, so other mods can claim drops first
 		NeoForge.EVENT_BUS.addListener(EventPriority.LOW, true, PlayerDeathHandler::onLivingDrops);
 		NeoForge.EVENT_BUS.addListener(HangGliderHandler::onPlayerTick);

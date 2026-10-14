@@ -103,6 +103,28 @@ public class OBRecipeProvider extends RecipeProvider {
 				.unlockedBy("has_hopper", has(Items.HOPPER))
 				.save(output);
 
+		ShapedRecipeBuilder.shaped(RecipeCategory.REDSTONE, OBBlocks.BLOCK_BREAKER.get())
+				.pattern("icc")
+				.pattern("src")
+				.pattern("icc")
+				.define('i', Tags.Items.INGOTS_IRON)
+				.define('c', Tags.Items.COBBLESTONES)
+				.define('s', Items.DIAMOND_PICKAXE)
+				.define('r', Tags.Items.DUSTS_REDSTONE)
+				.unlockedBy("has_diamond_pickaxe", has(Items.DIAMOND_PICKAXE))
+				.save(output);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.REDSTONE, OBBlocks.BLOCK_PLACER.get())
+				.pattern("icc")
+				.pattern("src")
+				.pattern("icc")
+				.define('i', Tags.Items.INGOTS_IRON)
+				.define('c', Tags.Items.COBBLESTONES)
+				.define('s', Items.PISTON)
+				.define('r', Tags.Items.DUSTS_REDSTONE)
+				.unlockedBy("has_piston", has(Items.PISTON))
+				.save(output);
+
 		// two mirrored wing recipes, like legacy
 		ShapedRecipeBuilder.shaped(RecipeCategory.MISC, OBItems.GLIDER_WING.get())
 				.group("openblocks:glider_wing")

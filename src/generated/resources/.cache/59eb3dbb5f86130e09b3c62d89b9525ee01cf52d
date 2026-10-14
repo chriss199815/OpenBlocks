@@ -1,6 +1,8 @@
-// 1.21.1	2026-10-14T09:22:51.023111	Loot Tables
+// 1.21.1	2026-10-14T09:36:56.995511	Loot Tables
 e56438400b883176c092cf868516713c206e662e data/openblocks/loot_table/blocks/black_elevator.json
 729a4def80970d503e3b4b44b25d932de17130b5 data/openblocks/loot_table/blocks/black_elevator_rotating.json
+b1e34bc54b3cee5527140bb5796da564c4be835f data/openblocks/loot_table/blocks/block_breaker.json
+63a3a12385aefd998fda3b6ff3ef3b1601f83dad data/openblocks/loot_table/blocks/block_placer.json
 edf562b7977d1cf4838d223b334e5241e4e2be47 data/openblocks/loot_table/blocks/blue_elevator.json
 84a347ada4893b93d67d9659fdf14afd9716d7dc data/openblocks/loot_table/blocks/blue_elevator_rotating.json
 c7235d916029e8bfc6cee15f5e9947b1b9d875e8 data/openblocks/loot_table/blocks/brown_elevator.json

@@ -1,4 +1,4 @@
-// 1.21.1	2026-10-14T09:22:51.023677	Recipes
+// 1.21.1	2026-10-14T09:36:56.995963	Recipes
 4703126fbd22d6defaf693cfd1899aa9725e2cbe data/openblocks/advancement/recipes/misc/glider_wing_left.json
 c40b99032ad81579611396658ce2ae35f1814bb9 data/openblocks/advancement/recipes/misc/glider_wing_right.json
 22c667d4bb09ff4494a0c22c9d82e6ec61b1a559 data/openblocks/advancement/recipes/misc/sleeping_bag.json
@@ -7,6 +7,8 @@ a79972e5807a48dec69c932db335e409de7649d2 data/openblocks/advancement/recipes/mis
 05689bf5f2a510b8fb48fb038827dbac22309f85 data/openblocks/advancement/recipes/misc/xp_bottler.json
 7c75738a9424853e3b6aac5d41229ebf3173a356 data/openblocks/advancement/recipes/misc/xp_drain.json
 19111007ee2834df54ab73fbedcb302afd6112eb data/openblocks/advancement/recipes/misc/xp_shower.json
+44bd7e7461c663966db9367e0786856b203800c7 data/openblocks/advancement/recipes/redstone/block_breaker.json
+9558308e3f3ef4a2e984b08a5f87d5eebfcbcd74 data/openblocks/advancement/recipes/redstone/block_placer.json
 cb17206668799abdf63be661df9bb38c4f0eb645 data/openblocks/advancement/recipes/redstone/item_dropper.json
 1aa07932d4a24474e354fba261588f5853a1a8f4 data/openblocks/advancement/recipes/transportation/black_elevator.json
 43ff9eb8138aa2a0c9f8982a2d681fe2833ea34d data/openblocks/advancement/recipes/transportation/black_elevator_rotating.json
@@ -43,6 +45,8 @@ e969b99eb50286f33d1826bb703a1d6b4bb957a3 data/openblocks/advancement/recipes/tra
 f54012d6c2e8f5be5cb1d7299ea7fda057f00191 data/openblocks/advancement/recipes/transportation/yellow_elevator_rotating.json
 5b7d3c7046d4970e80a5d4c3d05a0dccd6f2f9c2 data/openblocks/recipe/black_elevator.json
 641d15c2f44adced366149139a73f05d57402f43 data/openblocks/recipe/black_elevator_rotating.json
+60d1519b76705bdf6d623bede7f61f4021470213 data/openblocks/recipe/block_breaker.json
+d677ed0c702450b668fb0a5187326272e9c21819 data/openblocks/recipe/block_placer.json
 ae023272a12af43454915c61306e7705b99be889 data/openblocks/recipe/blue_elevator.json
 35c76193a6f6b90497ec41a6e32e73dd8c922ddc data/openblocks/recipe/blue_elevator_rotating.json
 d3553e478c6392d0fdfd3ee59a3ea77ed5dc9dd7 data/openblocks/recipe/brown_elevator.json

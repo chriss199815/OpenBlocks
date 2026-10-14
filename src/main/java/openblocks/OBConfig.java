@@ -16,8 +16,23 @@ public class OBConfig {
 	public static final Graves GRAVES = new Graves(BUILDER);
 	public static final HangGlider HANG_GLIDER = new HangGlider(BUILDER);
 	public static final ItemDropper ITEM_DROPPER = new ItemDropper(BUILDER);
+	public static final BlockManipulator BLOCK_BREAKER = new BlockManipulator(BUILDER, "breaker", "block breaker");
+	public static final BlockManipulator BLOCK_PLACER = new BlockManipulator(BUILDER, "placer", "block placer");
 
 	public static final ModConfigSpec SPEC = BUILDER.build();
+
+	public static class BlockManipulator {
+		public final ModConfigSpec.IntValue cooldown;
+
+		private BlockManipulator(ModConfigSpec.Builder builder, String category, String name) {
+			builder.push(category);
+			// replaces legacy "actionLimit" (actions per tick), which let it work every tick
+			cooldown = builder
+					.comment("Ticks the " + name + " waits after each action; while powered, it keeps working at this rate")
+					.defineInRange("cooldown", 10, 1, 1200);
+			builder.pop();
+		}
+	}
 
 	public static class ItemDropper {
 		public final ModConfigSpec.DoubleValue maxItemDropSpeed;

@@ -37,6 +37,8 @@
     "openblocks:xp_shower",
     "openblocks:xp_bottler",
     "openblocks:vacuum_hopper",
-    "openblocks:item_dropper"
+    "openblocks:item_dropper",
+    "openblocks:block_breaker",
+    "openblocks:block_placer"
   ]
 }

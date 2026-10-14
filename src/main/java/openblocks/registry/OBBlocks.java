@@ -15,6 +15,8 @@ import net.minecraft.world.level.material.MapColor;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import openblocks.OpenBlocks;
+import openblocks.block.BlockBreakerBlock;
+import openblocks.block.BlockPlacerBlock;
 import openblocks.block.ElevatorBlock;
 import openblocks.block.GraveBlock;
 import openblocks.block.ItemDropperBlock;
@@ -86,6 +88,17 @@ public class OBBlocks {
 			.strength(1.0f)
 			.requiresCorrectToolForDrops()
 			.sound(SoundType.STONE)));
+
+	public static final DeferredBlock<BlockBreakerBlock> BLOCK_BREAKER = registerWithItem("block_breaker", () -> new BlockBreakerBlock(machineProperties()));
+	public static final DeferredBlock<BlockPlacerBlock> BLOCK_PLACER = registerWithItem("block_placer", () -> new BlockPlacerBlock(machineProperties()));
+
+	private static BlockBehaviour.Properties machineProperties() {
+		return BlockBehaviour.Properties.of()
+				.mapColor(MapColor.STONE)
+				.strength(1.0f)
+				.requiresCorrectToolForDrops()
+				.sound(SoundType.STONE);
+	}
 
 	private static <T extends Block> DeferredBlock<T> registerWithItem(String id, Supplier<T> factory) {
 		final DeferredBlock<T> block = BLOCKS.register(id, factory);

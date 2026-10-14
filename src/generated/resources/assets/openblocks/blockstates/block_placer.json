@@ -1,0 +1,56 @@
+{
+  "variants": {
+    "facing=down,powered=false": {
+      "model": "openblocks:block/block_placer",
+      "x": 180
+    },
+    "facing=down,powered=true": {
+      "model": "openblocks:block/block_placer",
+      "x": 180
+    },
+    "facing=east,powered=false": {
+      "model": "openblocks:block/block_placer",
+      "x": 90,
+      "y": 90
+    },
+    "facing=east,powered=true": {
+      "model": "openblocks:block/block_placer",
+      "x": 90,
+      "y": 90
+    },
+    "facing=north,powered=false": {
+      "model": "openblocks:block/block_placer",
+      "x": 90
+    },
+    "facing=north,powered=true": {
+      "model": "openblocks:block/block_placer",
+      "x": 90
+    },
+    "facing=south,powered=false": {
+      "model": "openblocks:block/block_placer",
+      "x": 90,
+      "y": 180
+    },
+    "facing=south,powered=true": {
+      "model": "openblocks:block/block_placer",
+      "x": 90,
+      "y": 180
+    },
+    "facing=up,powered=false": {
+      "model": "openblocks:block/block_placer"
+    },
+    "facing=up,powered=true": {
+      "model": "openblocks:block/block_placer"
+    },
+    "facing=west,powered=false": {
+      "model": "openblocks:block/block_placer",
+      "x": 90,
+      "y": 270
+    },
+    "facing=west,powered=true": {
+      "model": "openblocks:block/block_placer",
+      "x": 90,
+      "y": 270
+    }
+  }
+}

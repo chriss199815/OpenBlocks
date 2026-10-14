@@ -3,6 +3,7 @@ package openblocks.registry;
 import java.util.Collections;
 import java.util.EnumMap;
 import java.util.Map;
+import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.neoforged.neoforge.registries.DeferredItem;
@@ -60,6 +61,10 @@ public class OBItems {
 	// durability from the config, see SpongeOnAStickItem.setDurability
 	public static final DeferredItem<SpongeOnAStickItem> SPONGE_ON_A_STICK = ITEMS.register("sponge_on_a_stick",
 			() -> new SpongeOnAStickItem(new Item.Properties().durability(SpongeOnAStickItem.DEFAULT_DURABILITY)));
+
+	// legacy filled the "bowels" for brick drops; that comes with the brick drops
+	public static final DeferredItem<Item> TASTY_CLAY = ITEMS.registerSimpleItem("tasty_clay", new Item.Properties()
+			.food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).alwaysEdible().build()));
 
 	// legacy MetasGeneric
 	public static final DeferredItem<Item> UNPREPARED_STENCIL = ITEMS.registerSimpleItem("unprepared_stencil");

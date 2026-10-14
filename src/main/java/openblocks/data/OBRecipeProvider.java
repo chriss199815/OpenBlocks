@@ -434,5 +434,13 @@ public class OBRecipeProvider extends RecipeProvider {
 				.define('w', Tags.Items.RODS_WOODEN)
 				.unlockedBy("has_sponge", has(OBBlocks.SPONGE.get()))
 				.save(output);
+
+		// the milk bucket gives back its bucket
+		ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, OBItems.TASTY_CLAY.get(), 2)
+				.requires(Items.CLAY_BALL)
+				.requires(Items.MILK_BUCKET)
+				.requires(Items.COCOA_BEANS)
+				.unlockedBy("has_clay_ball", has(Items.CLAY_BALL))
+				.save(output);
 	}
 }

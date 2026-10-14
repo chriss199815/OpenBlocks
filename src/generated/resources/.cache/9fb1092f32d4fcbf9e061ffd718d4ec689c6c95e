@@ -1,4 +1,4 @@
-// 1.21.1	2026-10-14T19:57:32.759789	Recipes
+// 1.21.1	2026-10-14T19:57:54.259178	Recipes
 f37f622f6aa43ff8c3b05fe0ccd813d9be730420 data/openblocks/advancement/recipes/building_blocks/canvas.json
 4da75c2ec825111de4abddbd9d4caefbb2b578ce data/openblocks/advancement/recipes/building_blocks/scaffolding.json
 3e9f0cd162609d6b5b1d8d296b490afc26cbae21 data/openblocks/advancement/recipes/decorations/black_flag.json
@@ -18,6 +18,7 @@ f5a36c8ec77734aafc9afd3babc103e6f99ceb82 data/openblocks/advancement/recipes/dec
 88a2f03a24580b12474546ec781ea2d569aa5f73 data/openblocks/advancement/recipes/decorations/red_flag.json
 be36cbdf537273e6f35578ab4fc92b21c1e8dffc data/openblocks/advancement/recipes/decorations/white_flag.json
 564336bea1679fe92be41dad09a6d7c0ae859cfe data/openblocks/advancement/recipes/decorations/yellow_flag.json
+f19e6a63f7c9877e753f5ee4d8a48dba76c149df data/openblocks/advancement/recipes/food/tasty_clay.json
 c6a3ea74daedb67da82f8e7c85c4d0f040726c89 data/openblocks/advancement/recipes/misc/auto_anvil.json
 606e1bfbd969e9b729041ba17a52622dbd63e2c9 data/openblocks/advancement/recipes/misc/auto_enchantment_table.json
 cde3ae94d62603bad06a3d672fdd097650aa2028 data/openblocks/advancement/recipes/misc/bear_trap.json
@@ -195,6 +196,7 @@ f19f94e01a138278627c26547d4a9780af62ca45 data/openblocks/recipe/sleeping_bag.jso
 5596082794770926385e969fc5cc1e35d648b709 data/openblocks/recipe/squeegee.json
 85e77e95cfd534f9e3db5f2a3185c1db82b4bc27 data/openblocks/recipe/tank.json
 c0fc811c99d3c7e05bc583bbe10615e9ec0e2d3e data/openblocks/recipe/target.json
+4d21558bdc5247563af6f8909d873059bf6fedc7 data/openblocks/recipe/tasty_clay.json
 6d6f5e9214be50cb69d5951037ea3460d384e1c8 data/openblocks/recipe/unprepared_stencil.json
 1358b25df1799e007bdcc1a585e4926e5218a84e data/openblocks/recipe/vacuum_hopper.json
 f0ad4f5779decdf242bb4891f50addde723743f5 data/openblocks/recipe/white_elevator.json

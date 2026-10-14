@@ -1,4 +1,4 @@
-// 1.21.1	2026-10-14T19:57:32.757666	Block States: openblocks
+// 1.21.1	2026-10-14T19:57:54.25711	Block States: openblocks
 909bae1340933de5e494ee6692d1d88aeabf4f33 assets/openblocks/blockstates/auto_anvil.json
 aca132b5918ec066ede0f817145d0ac0649c84a9 assets/openblocks/blockstates/auto_enchantment_table.json
 9be1c7ce94b3232fe19c46a8965abe89ae2d898a assets/openblocks/blockstates/bear_trap.json
@@ -312,6 +312,7 @@ a110083407af5307aae4c5df8be59254dfad1f81 assets/openblocks/models/item/sponge.js
 ce8b5f75a49bb175b10c1e6072c9ad0d87cb980d assets/openblocks/models/item/stripes_stencil.json
 6fff0ef906f182357faec183b041dc191339ab28 assets/openblocks/models/item/tank.json
 1e3d2f77e62b74ced79f82e149191eb1e697314e assets/openblocks/models/item/target.json
+d3a847e88609eb33d719048b617ff00ea9976eac assets/openblocks/models/item/tasty_clay.json
 9467a78721e257d7bddfb639f1ef72dbd3850da8 assets/openblocks/models/item/thickstripes_stencil.json
 4f3d6dcdf12373059c042eb03b24e635845881fa assets/openblocks/models/item/unprepared_stencil.json
 5ab88dd463af6d511a8370edc60ca1a38bd99471 assets/openblocks/models/item/vacuum_hopper.json

@@ -70,6 +70,7 @@ public class OBBlockStateProvider extends BlockStateProvider {
 		itemModels().handheldItem(OBItems.SQUEEGEE.get());
 		itemModels().basicItem(OBItems.WRENCH.get());
 		itemModels().basicItem(OBItems.SPONGE_ON_A_STICK.get());
+		itemModels().withExistingParent("tasty_clay", mcLoc("item/generated")).texture("layer0", modLoc("item/yum_yum"));
 		final ModelFile pedometerMoving = itemModels().withExistingParent("pedometer_moving", mcLoc("item/generated")).texture("layer0", modLoc("item/pedometer_moving"));
 		itemModels().withExistingParent("pedometer", mcLoc("item/generated")).texture("layer0", modLoc("item/pedometer_still"))
 				.override().predicate(modLoc("speed"), 0.1f).model(pedometerMoving).end();

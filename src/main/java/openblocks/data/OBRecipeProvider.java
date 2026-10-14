@@ -381,5 +381,14 @@ public class OBRecipeProvider extends RecipeProvider {
 				.define('b', ItemTags.WOODEN_BUTTONS)
 				.unlockedBy("has_wooden_button", has(ItemTags.WOODEN_BUTTONS))
 				.save(output);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.REDSTONE, OBBlocks.TARGET.get())
+				.pattern("www")
+				.pattern("www")
+				.pattern("s s")
+				.define('w', Items.WHITE_WOOL)
+				.define('s', Tags.Items.RODS_WOODEN)
+				.unlockedBy("has_wool", has(Items.WHITE_WOOL))
+				.save(output);
 	}
 }

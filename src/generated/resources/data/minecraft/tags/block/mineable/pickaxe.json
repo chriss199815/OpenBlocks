@@ -47,6 +47,7 @@
     "openblocks:fan",
     "openblocks:bear_trap",
     "openblocks:sprinkler",
-    "openblocks:heal"
+    "openblocks:heal",
+    "openblocks:target"
   ]
 }

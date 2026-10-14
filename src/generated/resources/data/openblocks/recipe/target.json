@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "key": {
+    "s": {
+      "tag": "c:rods/wooden"
+    },
+    "w": {
+      "item": "minecraft:white_wool"
+    }
+  },
+  "pattern": [
+    "www",
+    "www",
+    "s s"
+  ],
+  "result": {
+    "count": 1,
+    "id": "openblocks:target"
+  }
+}

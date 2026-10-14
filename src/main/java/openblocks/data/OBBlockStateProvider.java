@@ -23,6 +23,7 @@ import openblocks.block.BlockManipulatorBlock;
 import openblocks.block.FlagBlock;
 import openblocks.block.GraveBlock;
 import openblocks.block.SprinklerBlock;
+import openblocks.block.TargetBlock;
 import openblocks.block.entity.VacuumHopperBlockEntity;
 import openblocks.common.TankEdge;
 import openblocks.registry.OBBlocks;
@@ -210,6 +211,7 @@ public class OBBlockStateProvider extends BlockStateProvider {
 
 		bigButton(OBBlocks.BIG_BUTTON.get(), mcLoc("block/stone"));
 		bigButton(OBBlocks.BIG_BUTTON_WOOD.get(), mcLoc("block/oak_planks"));
+		target();
 	}
 
 	/**
@@ -249,6 +251,56 @@ public class OBBlockStateProvider extends BlockStateProvider {
 					if (dir == Direction.DOWN) face.cullface(Direction.DOWN);
 				})
 				.end();
+	}
+
+	/**
+	 * Legacy target_active/target_inactive models: legs and a plate, standing at the north edge or folded flat.
+	 * Rotated so the bullseye faces the {@code facing} direction.
+	 */
+	private void target() {
+		final BlockModelBuilder active = targetLegs(targetModel("target"))
+				// plate
+				.element().from(0, 1, 0).to(16, 16, 1)
+				.face(Direction.NORTH).uvs(0, 0, 16, 15).texture("#front").end()
+				.face(Direction.EAST).uvs(0, 0, 1, 15).texture("#back").cullface(Direction.EAST).end()
+				.face(Direction.SOUTH).uvs(0, 0, 16, 15).rotation(ModelBuilder.FaceRotation.UPSIDE_DOWN).texture("#back").end()
+				.face(Direction.WEST).uvs(15, 0, 16, 15).texture("#back").cullface(Direction.WEST).end()
+				.face(Direction.UP).uvs(0, 15, 16, 16).texture("#back").end()
+				.face(Direction.DOWN).uvs(0, 15, 16, 16).texture("#front").end()
+				.end();
+		final BlockModelBuilder folded = targetLegs(targetModel("target_folded"))
+				// plate
+				.element().from(0, 1, 0).to(16, 2, 15)
+				.face(Direction.NORTH).uvs(0, 15, 16, 16).texture("#front").cullface(Direction.NORTH).end()
+				.face(Direction.EAST).uvs(0, 15, 15, 16).texture("#back").cullface(Direction.EAST).end()
+				.face(Direction.SOUTH).uvs(0, 15, 16, 16).texture("#back").end()
+				.face(Direction.WEST).uvs(0, 15, 15, 16).texture("#back").cullface(Direction.WEST).end()
+				.face(Direction.UP).uvs(0, 0, 16, 15).texture("#front").end()
+				.face(Direction.DOWN).uvs(0, 0, 16, 15).texture("#back").end()
+				.end();
+		horizontalBlock(OBBlocks.TARGET.get(), state -> state.getValue(TargetBlock.POWERED)? active : folded, 180);
+		simpleBlockItem(OBBlocks.TARGET.get(), active);
+	}
+
+	private BlockModelBuilder targetModel(String name) {
+		return models().withExistingParent(name, mcLoc("block/block"))
+				.texture("leg", modLoc("block/target_leg"))
+				.texture("front", modLoc("block/target_front"))
+				.texture("back", modLoc("block/target_back"))
+				.texture("particle", modLoc("block/target_front"));
+	}
+
+	private static BlockModelBuilder targetLegs(BlockModelBuilder builder) {
+		for (int x : new int[] { 0, 15 })
+			builder.element().from(x, 0, 0).to(x + 1, 1, 16)
+					.face(Direction.NORTH).uvs(0, 5, 1, 4).texture("#leg").cullface(Direction.NORTH).end()
+					.face(Direction.EAST).uvs(0, 0, 16, 1).texture("#leg").end()
+					.face(Direction.SOUTH).uvs(15, 4, 16, 5).texture("#leg").cullface(Direction.SOUTH).end()
+					.face(Direction.WEST).uvs(0, 1, 16, 2).texture("#leg").end()
+					.face(Direction.UP).uvs(0, 2, 16, 3).rotation(ModelBuilder.FaceRotation.CLOCKWISE_90).texture("#leg").end()
+					.face(Direction.DOWN).uvs(0, 3, 16, 4).rotation(ModelBuilder.FaceRotation.CLOCKWISE_90).texture("#leg").cullface(Direction.DOWN).end()
+					.end();
+		return builder;
 	}
 
 	/**

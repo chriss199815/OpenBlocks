@@ -1,4 +1,4 @@
-// 1.21.1	2026-10-14T19:24:26.258758	Block States: openblocks
+// 1.21.1	2026-10-14T19:24:49.339804	Block States: openblocks
 909bae1340933de5e494ee6692d1d88aeabf4f33 assets/openblocks/blockstates/auto_anvil.json
 aca132b5918ec066ede0f817145d0ac0649c84a9 assets/openblocks/blockstates/auto_enchantment_table.json
 9be1c7ce94b3232fe19c46a8965abe89ae2d898a assets/openblocks/blockstates/bear_trap.json
@@ -64,6 +64,7 @@ e2f98d876093e19c1f80d312e21b885150a588d7 assets/openblocks/blockstates/scaffoldi
 b082cffcbd8ae50a39ecbe3a2520b82ff26a1ecb assets/openblocks/blockstates/sponge.json
 a5fd6018d2eca7b2ba34f08d9babe797f726dcfc assets/openblocks/blockstates/sprinkler.json
 97a9d238d7f937d3ad8167f336d1e68f242fd43e assets/openblocks/blockstates/tank.json
+ad1688bc736cad303db2ca214f49d691f2342d43 assets/openblocks/blockstates/target.json
 9927a88f12911f158a561f0291cb946f9573dd32 assets/openblocks/blockstates/vacuum_hopper.json
 c45d5d2e71c34dc43588a6063c8f1025e64a8816 assets/openblocks/blockstates/white_elevator.json
 d13702d1e489422f027636fd4f3a4f64b33332e9 assets/openblocks/blockstates/white_elevator_rotating.json
@@ -165,6 +166,8 @@ c8e5bfb0967b0b3846c641c9cfe674dc4e114e46 assets/openblocks/models/block/tank_edg
 54b00f36ec275c67d1e7286345dfe26287e9ac08 assets/openblocks/models/block/tank_edge_tn.json
 992dcba8feb9c85cb05e9c88f8cb94760d466efe assets/openblocks/models/block/tank_edge_ts.json
 a5fcd65b5f66145680b700620b7c9a3da6179be0 assets/openblocks/models/block/tank_edge_tw.json
+97ebd10d0a024388f0f5467cc54eda99d6afe9aa assets/openblocks/models/block/target.json
+1c6cbd1fe85c32f63c40b61baab490a891dc352e assets/openblocks/models/block/target_folded.json
 38111d9139837524dfbe6adccf7069c1aae00578 assets/openblocks/models/block/tinted_cube.json
 7531adbf8c4f98358aa2a0363340b689eff5eca9 assets/openblocks/models/block/vacuum_hopper.json
 792cb794070cb270ab35ab519aed4adde4e83499 assets/openblocks/models/block/vacuum_hopper_down.json
@@ -285,6 +288,7 @@ a110083407af5307aae4c5df8be59254dfad1f81 assets/openblocks/models/item/sponge.js
 232df2d19c582d4d9f4ab564c520999319d871c6 assets/openblocks/models/item/storage_stencil.json
 ce8b5f75a49bb175b10c1e6072c9ad0d87cb980d assets/openblocks/models/item/stripes_stencil.json
 6fff0ef906f182357faec183b041dc191339ab28 assets/openblocks/models/item/tank.json
+1e3d2f77e62b74ced79f82e149191eb1e697314e assets/openblocks/models/item/target.json
 9467a78721e257d7bddfb639f1ef72dbd3850da8 assets/openblocks/models/item/thickstripes_stencil.json
 4f3d6dcdf12373059c042eb03b24e635845881fa assets/openblocks/models/item/unprepared_stencil.json
 5ab88dd463af6d511a8370edc60ca1a38bd99471 assets/openblocks/models/item/vacuum_hopper.json

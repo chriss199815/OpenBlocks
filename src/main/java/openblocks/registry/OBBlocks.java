@@ -42,6 +42,7 @@ import openblocks.block.ScaffoldingBlock;
 import openblocks.block.SpongeBlock;
 import openblocks.block.SprinklerBlock;
 import openblocks.block.TankBlock;
+import openblocks.block.TargetBlock;
 import openblocks.block.VacuumHopperBlock;
 import openblocks.block.XpBottlerBlock;
 import openblocks.block.XpDrainBlock;
@@ -231,6 +232,15 @@ public class OBBlocks {
 
 	public static final DeferredBlock<BigButtonBlock> BIG_BUTTON = registerWithItem("big_button", () -> new BigButtonBlock(BlockSetType.STONE, bigButtonProperties()));
 	public static final DeferredBlock<BigButtonBlock> BIG_BUTTON_WOOD = registerWithItem("big_button_wood", () -> new BigButtonBlock(BlockSetType.OAK, bigButtonProperties()));
+
+	public static final DeferredBlock<TargetBlock> TARGET = registerWithItem("target", () -> new TargetBlock(BlockBehaviour.Properties.of()
+			.mapColor(MapColor.SNOW)
+			.strength(1.0f)
+			.requiresCorrectToolForDrops()
+			.noOcclusion()
+			.lightLevel(state -> 4)
+			.isRedstoneConductor((state, level, pos) -> false)
+			.sound(SoundType.STONE)));
 
 	private static BlockBehaviour.Properties bigButtonProperties() {
 		return BlockBehaviour.Properties.of()

@@ -83,7 +83,7 @@ Fortschritt:
 - [x] Sleeping Bag: Rechtsklick schläft am aktuellen Ort (Vanilla-Prüfungen für Nacht/Monster/Dimension nachgebaut), Spawnpunkt bleibt, `CanContinueSleepingEvent` erlaubt Schlafen ohne Bett, synchronisiertes Attachment `sleeping_bag` für das Schlafsack-Modell (`RenderLayer`). Anders als im Original wird er nicht im Brust-Slot getragen, die Rüstung bleibt an. GameTests.
 - [x] Advancements und Trigger → verschoben zu ihren Features: „Stack Overflow“ (`dev_null_stacked`) mit Dev Null in Welle 3, „Zoinks!“ (`brick_dropped`) mit Brick Drops in Welle 4. Andere eigene Advancements hatte das Original nicht.
 
-## Welle 3 – Maschinen und Inventare
+## Welle 3 – Maschinen und Inventare — ✅ erledigt (2026-10-14)
 Vacuum Hopper (Seitenkonfiguration), Auto Anvil, Auto Enchantment Table, Block Breaker/Placer, Item Dropper, Donation Station, Drawing Table + Stencil, Fan, Flag, Bear Trap, Sprinkler, Paint Mixer, Paint Can, Paint Brush, Canvas/Canvas Glass, Luggage, Dev Null (+ Advancement „Stack Overflow“), Cursor. (XP Bucket bereits in Welle 2 erledigt.)
 - Hier werden die Code-animierten BERs gebaut, die die Armatures ersetzen.
 - Canvas: Farbdaten pro Seite in der BE, Rendering über ein eigenes `BakedModel` mit `ModelData`.

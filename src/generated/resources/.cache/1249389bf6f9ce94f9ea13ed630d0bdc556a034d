@@ -1,6 +1,7 @@
-// 1.21.1	2026-10-14T16:12:31.433048	Block States: openblocks
+// 1.21.1	2026-10-14T16:13:01.049736	Block States: openblocks
 909bae1340933de5e494ee6692d1d88aeabf4f33 assets/openblocks/blockstates/auto_anvil.json
 aca132b5918ec066ede0f817145d0ac0649c84a9 assets/openblocks/blockstates/auto_enchantment_table.json
+9be1c7ce94b3232fe19c46a8965abe89ae2d898a assets/openblocks/blockstates/bear_trap.json
 c45d5d2e71c34dc43588a6063c8f1025e64a8816 assets/openblocks/blockstates/black_elevator.json
 d13702d1e489422f027636fd4f3a4f64b33332e9 assets/openblocks/blockstates/black_elevator_rotating.json
 6a60ac85a83f62e9071a3664237075d98888182e assets/openblocks/blockstates/black_flag.json
@@ -68,6 +69,10 @@ d13702d1e489422f027636fd4f3a4f64b33332e9 assets/openblocks/blockstates/yellow_el
 6a60ac85a83f62e9071a3664237075d98888182e assets/openblocks/blockstates/yellow_flag.json
 c06129c1e72510373a96258c5633a7abb0ff8a9a assets/openblocks/models/block/auto_anvil.json
 4d042a4b52850f8bdd1a21194d432999b5f52699 assets/openblocks/models/block/auto_enchantment_table.json
+b0bb1c488d3b7193c7a74ae86f2d91758bc9621b assets/openblocks/models/block/bear_trap.json
+2140862847c71233762c615ffbd7e1967ec26681 assets/openblocks/models/block/bear_trap_base.json
+65a877585c134a2ce4a28d293edc9fac61eccbc2 assets/openblocks/models/block/bear_trap_jaw_east.json
+5dd5fa00dfbf2976cb54fb174c31da7a0fc2799c assets/openblocks/models/block/bear_trap_jaw_west.json
 046ad3454fb84c89cbba9376ebc51de1ffee114c assets/openblocks/models/block/block_breaker.json
 17ac3725dc3dd85d746255bbfbf73c70bd467692 assets/openblocks/models/block/block_breaker_active.json
 2a16c00b888ee851a06772cbd2e206663a7b49e1 assets/openblocks/models/block/block_placer.json
@@ -169,6 +174,7 @@ eedf4d0bee41aa34e8093f792bf9e2551c8fc4ef assets/openblocks/models/block/xp_juice
 c9e93d3d060e044edf98a858d66c32d835313b63 assets/openblocks/models/item/auto_anvil.json
 5c35b1b56e78ae48c18a637b0812bfad447805d5 assets/openblocks/models/item/auto_enchantment_table.json
 9c852e3ac2269f59527f6997235d51f9e3a2bd03 assets/openblocks/models/item/balloon_stencil.json
+36a953cbca4a83f2d07d63d2eb92cc11fd700cfe assets/openblocks/models/item/bear_trap.json
 d2b8f805473f5db4bc4402f5b4f1864704363649 assets/openblocks/models/item/black_elevator.json
 dd180aef5747a9afe34022df0f8fd345d081cd6c assets/openblocks/models/item/black_elevator_rotating.json
 fcc439f163500f4a2657f61a09c9762b2151a0ed assets/openblocks/models/item/black_flag.json

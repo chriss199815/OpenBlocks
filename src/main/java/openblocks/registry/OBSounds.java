@@ -17,6 +17,8 @@ public class OBSounds {
 	public static final DeferredHolder<SoundEvent, SoundEvent> BOTTLER_SIGNAL = register("bottler.signal");
 	public static final DeferredHolder<SoundEvent, SoundEvent> GRAVE_ROB = register("grave.rob");
 	public static final DeferredHolder<SoundEvent, SoundEvent> SQUEEGEE_USE = register("squeegee.use");
+	public static final DeferredHolder<SoundEvent, SoundEvent> BEARTRAP_OPEN = register("beartrap.open");
+	public static final DeferredHolder<SoundEvent, SoundEvent> BEARTRAP_CLOSE = register("beartrap.close");
 
 	private static DeferredHolder<SoundEvent, SoundEvent> register(String id) {
 		return SOUNDS.register(id, () -> SoundEvent.createVariableRangeEvent(OpenBlocks.location(id)));

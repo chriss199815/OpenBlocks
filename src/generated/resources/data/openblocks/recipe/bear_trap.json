@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "f": {
+      "item": "minecraft:iron_bars"
+    },
+    "i": {
+      "tag": "c:ingots/iron"
+    }
+  },
+  "pattern": [
+    "fif",
+    "fif",
+    "fif"
+  ],
+  "result": {
+    "count": 1,
+    "id": "openblocks:bear_trap"
+  }
+}

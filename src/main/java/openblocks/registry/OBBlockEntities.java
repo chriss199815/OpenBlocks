@@ -7,6 +7,7 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 import openblocks.OpenBlocks;
 import openblocks.block.entity.AutoAnvilBlockEntity;
 import openblocks.block.entity.AutoEnchantmentTableBlockEntity;
+import openblocks.block.entity.BearTrapBlockEntity;
 import openblocks.block.entity.CanvasBlockEntity;
 import openblocks.block.entity.DonationStationBlockEntity;
 import openblocks.block.entity.DrawingTableBlockEntity;
@@ -88,4 +89,7 @@ public class OBBlockEntities {
 
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<FanBlockEntity>> FAN = BLOCK_ENTITIES.register("fan",
 			() -> BlockEntityType.Builder.of(FanBlockEntity::new, OBBlocks.FAN.get()).build(null));
+
+	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<BearTrapBlockEntity>> BEAR_TRAP = BLOCK_ENTITIES.register("bear_trap",
+			() -> BlockEntityType.Builder.of(BearTrapBlockEntity::new, OBBlocks.BEAR_TRAP.get()).build(null));
 }

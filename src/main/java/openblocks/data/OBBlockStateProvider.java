@@ -143,6 +143,7 @@ public class OBBlockStateProvider extends BlockStateProvider {
 		paintMixer();
 		fan();
 		flag();
+		bearTrap();
 		// the blank canvas; CanvasModel shows the painted block instead
 		final ModelFile canvas = models().cubeAll("canvas", modLoc("block/canvas"));
 		simpleBlock(OBBlocks.CANVAS.get(), canvas);
@@ -386,6 +387,210 @@ public class OBBlockStateProvider extends BlockStateProvider {
 				.element().from(5, 2, 7).to(11, 10, 13)
 				.face(Direction.NORTH).uvs(4, 5, 12, 16).texture("#spill").tintindex(0).end()
 				.face(Direction.UP).uvs(4, 4, 12, 12).texture("#top").tintindex(0).end()
+				.end();
+	}
+
+	/**
+	 * Legacy beartrap model, moved down to the ground like the armature did, split into the base and the two jaws, which
+	 * {@code BearTrapRenderer} turns around the hinge (x = 8, y = 0.5). The item model shows the jaws half raised.
+	 */
+	private void bearTrap() {
+		final BlockModelBuilder item = bearTrapJawEast(bearTrapJawWest(bearTrapBase(bearTrapModel("bear_trap")), -22.5f), 22.5f);
+		bearTrapBase(bearTrapModel("bear_trap_base"));
+		bearTrapJawWest(bearTrapModel("bear_trap_jaw_west"), 0);
+		bearTrapJawEast(bearTrapModel("bear_trap_jaw_east"), 0);
+		simpleBlock(OBBlocks.BEAR_TRAP.get(), item);
+		simpleBlockItem(OBBlocks.BEAR_TRAP.get(), item);
+	}
+
+	private BlockModelBuilder bearTrapModel(String name) {
+		return models().withExistingParent(name, mcLoc("block/block"))
+				.texture("all", modLoc("block/beartrap"))
+				.texture("particle", modLoc("block/beartrap"));
+	}
+
+	private static BlockModelBuilder bearTrapBase(BlockModelBuilder builder) {
+		return builder
+				// middle
+				.element().from(7.5f, 0, 0).to(8.5f, 1, 16)
+				.face(Direction.NORTH).uvs(12, 10, 13, 11).texture("#all").end()
+				.face(Direction.EAST).uvs(0, 13, 16, 14).texture("#all").end()
+				.face(Direction.SOUTH).uvs(5, 12, 6, 13).texture("#all").end()
+				.face(Direction.WEST).uvs(0, 8, 16, 9).texture("#all").end()
+				.face(Direction.UP).uvs(5, 0, 6, 16).texture("#all").end()
+				.face(Direction.DOWN).uvs(12, 0, 13, 16).texture("#all").cullface(Direction.DOWN).end()
+				.end()
+				// trigger
+				.element().from(6.5f, 1, 6.5f).to(9.5f, 2, 9.5f)
+				.face(Direction.NORTH).uvs(4, 7, 7, 8).texture("#all").end()
+				.face(Direction.EAST).uvs(9, 9, 12, 10).texture("#all").end()
+				.face(Direction.SOUTH).uvs(10, 4, 13, 5).texture("#all").end()
+				.face(Direction.WEST).uvs(3, 12, 6, 13).texture("#all").end()
+				.face(Direction.UP).uvs(4, 5, 7, 8).texture("#all").end()
+				.face(Direction.DOWN).uvs(11, 11, 14, 14).texture("#all").end()
+				.end();
+	}
+
+	private static BlockModelBuilder bearTrapJawWest(BlockModelBuilder builder, float angle) {
+		return builder
+				// right_front
+				.element().from(1.5f, 0, 0).to(7.5f, 1, 1)
+				.rotation().origin(8, 0.5f, 8).axis(Direction.Axis.Z).angle(angle).end()
+				.face(Direction.NORTH).uvs(3, 11, 9, 12).texture("#all").end()
+				.face(Direction.EAST).uvs(13, 14, 14, 15).texture("#all").end()
+				.face(Direction.SOUTH).uvs(8, 0, 14, 1).texture("#all").end()
+				.face(Direction.UP).uvs(7, 15, 13, 16).texture("#all").end()
+				.face(Direction.DOWN).uvs(5, 7, 11, 8).texture("#all").end()
+				.end()
+				// right_back
+				.element().from(1.5f, 0, 15).to(7.5f, 1, 16)
+				.rotation().origin(8, 0.5f, 8).axis(Direction.Axis.Z).angle(angle).end()
+				.face(Direction.NORTH).uvs(3, 8, 9, 9).texture("#all").end()
+				.face(Direction.EAST).uvs(13, 7, 14, 8).texture("#all").end()
+				.face(Direction.SOUTH).uvs(10, 1, 16, 2).texture("#all").end()
+				.face(Direction.UP).uvs(8, 9, 14, 10).texture("#all").end()
+				.face(Direction.DOWN).uvs(3, 9, 9, 10).texture("#all").end()
+				.end()
+				// right_top
+				.element().from(0.5f, 0, 0).to(1.5f, 1, 16)
+				.rotation().origin(8, 0.5f, 8).axis(Direction.Axis.Z).angle(angle).end()
+				.face(Direction.NORTH).uvs(0, 0, 1, 1).texture("#all").end()
+				.face(Direction.EAST).uvs(0, 0, 16, 1).texture("#all").end()
+				.face(Direction.SOUTH).uvs(0, 0, 1, 1).texture("#all").end()
+				.face(Direction.WEST).uvs(0, 0, 16, 1).texture("#all").end()
+				.face(Direction.UP).uvs(0, 0, 1, 16).texture("#all").end()
+				.face(Direction.DOWN).uvs(0, 0, 1, 16).texture("#all").end()
+				.end()
+				// spike_right
+				.element().from(0.5f, 1, 15).to(1.5f, 3, 16)
+				.rotation().origin(8, 0.5f, 8).axis(Direction.Axis.Z).angle(angle).end()
+				.face(Direction.NORTH).uvs(5, 8, 6, 10).texture("#all").end()
+				.face(Direction.EAST).uvs(2, 12, 3, 14).texture("#all").end()
+				.face(Direction.SOUTH).uvs(11, 6, 12, 8).texture("#all").end()
+				.face(Direction.WEST).uvs(11, 8, 12, 10).texture("#all").end()
+				.face(Direction.UP).uvs(10, 7, 11, 8).texture("#all").end()
+				.end()
+				// spike_right
+				.element().from(0.5f, 1, 6).to(1.5f, 3, 7)
+				.rotation().origin(8, 0.5f, 8).axis(Direction.Axis.Z).angle(angle).end()
+				.face(Direction.NORTH).uvs(10, 7, 11, 9).texture("#all").end()
+				.face(Direction.EAST).uvs(11, 1, 12, 3).texture("#all").end()
+				.face(Direction.SOUTH).uvs(13, 2, 14, 4).texture("#all").end()
+				.face(Direction.WEST).uvs(3, 9, 4, 11).texture("#all").end()
+				.face(Direction.UP).uvs(2, 12, 3, 13).texture("#all").end()
+				.end()
+				// spike_right
+				.element().from(0.5f, 1, 0).to(1.5f, 3, 1)
+				.rotation().origin(8, 0.5f, 8).axis(Direction.Axis.Z).angle(angle).end()
+				.face(Direction.NORTH).uvs(0, 0, 1, 2).texture("#all").end()
+				.face(Direction.EAST).uvs(13, 4, 14, 6).texture("#all").end()
+				.face(Direction.SOUTH).uvs(6, 14, 7, 16).texture("#all").end()
+				.face(Direction.WEST).uvs(2, 12, 3, 14).texture("#all").end()
+				.face(Direction.UP).uvs(7, 9, 8, 10).texture("#all").end()
+				.end()
+				// spike_right
+				.element().from(0.5f, 1, 9).to(1.5f, 3, 10)
+				.rotation().origin(8, 0.5f, 8).axis(Direction.Axis.Z).angle(angle).end()
+				.face(Direction.NORTH).uvs(14, 7, 15, 9).texture("#all").end()
+				.face(Direction.EAST).uvs(9, 9, 10, 11).texture("#all").end()
+				.face(Direction.SOUTH).uvs(1, 8, 2, 10).texture("#all").end()
+				.face(Direction.WEST).uvs(13, 3, 14, 5).texture("#all").end()
+				.face(Direction.UP).uvs(9, 10, 10, 11).texture("#all").end()
+				.end()
+				// spike_right
+				.element().from(0.5f, 1, 3).to(1.5f, 3, 4)
+				.rotation().origin(8, 0.5f, 8).axis(Direction.Axis.Z).angle(angle).end()
+				.face(Direction.NORTH).uvs(5, 10, 6, 12).texture("#all").end()
+				.face(Direction.EAST).uvs(10, 8, 11, 10).texture("#all").end()
+				.face(Direction.SOUTH).uvs(15, 10, 16, 12).texture("#all").end()
+				.face(Direction.WEST).uvs(15, 3, 16, 5).texture("#all").end()
+				.face(Direction.UP).uvs(11, 2, 12, 3).texture("#all").end()
+				.end()
+				// spike_right
+				.element().from(0.5f, 1, 12).to(1.5f, 3, 13)
+				.rotation().origin(8, 0.5f, 8).axis(Direction.Axis.Z).angle(angle).end()
+				.face(Direction.NORTH).uvs(0, 12, 1, 14).texture("#all").end()
+				.face(Direction.EAST).uvs(15, 8, 16, 10).texture("#all").end()
+				.face(Direction.SOUTH).uvs(9, 3, 10, 5).texture("#all").end()
+				.face(Direction.WEST).uvs(5, 8, 6, 10).texture("#all").end()
+				.face(Direction.UP).uvs(4, 8, 5, 9).texture("#all").end()
+				.end();
+	}
+
+	private static BlockModelBuilder bearTrapJawEast(BlockModelBuilder builder, float angle) {
+		return builder
+				// left_front
+				.element().from(8.5f, 0, 0).to(14.5f, 1, 1)
+				.rotation().origin(8, 0.5f, 8).axis(Direction.Axis.Z).angle(angle).end()
+				.face(Direction.NORTH).uvs(4, 9, 10, 10).texture("#all").end()
+				.face(Direction.SOUTH).uvs(10, 6, 16, 7).texture("#all").end()
+				.face(Direction.WEST).uvs(3, 12, 4, 13).texture("#all").end()
+				.face(Direction.UP).uvs(7, 9, 13, 10).texture("#all").end()
+				.face(Direction.DOWN).uvs(6, 9, 12, 10).texture("#all").end()
+				.end()
+				// left_back
+				.element().from(8.5f, 0, 15).to(14.5f, 1, 16)
+				.rotation().origin(8, 0.5f, 8).axis(Direction.Axis.Z).angle(angle).end()
+				.face(Direction.NORTH).uvs(2, 10, 8, 11).texture("#all").end()
+				.face(Direction.SOUTH).uvs(9, 7, 15, 8).texture("#all").end()
+				.face(Direction.WEST).uvs(9, 12, 10, 13).texture("#all").end()
+				.face(Direction.UP).uvs(6, 3, 12, 4).texture("#all").end()
+				.face(Direction.DOWN).uvs(3, 14, 9, 15).texture("#all").end()
+				.end()
+				// left_top
+				.element().from(14.5f, 0, 0).to(15.5f, 1, 16)
+				.rotation().origin(8, 0.5f, 8).axis(Direction.Axis.Z).angle(angle).end()
+				.face(Direction.NORTH).uvs(10, 7, 11, 8).texture("#all").end()
+				.face(Direction.EAST).uvs(0, 10, 16, 11).texture("#all").end()
+				.face(Direction.SOUTH).uvs(4, 5, 5, 6).texture("#all").end()
+				.face(Direction.WEST).uvs(0, 4, 16, 5).texture("#all").end()
+				.face(Direction.UP).uvs(9, 0, 10, 16).texture("#all").end()
+				.face(Direction.DOWN).uvs(5, 0, 6, 16).texture("#all").end()
+				.end()
+				// spike_left
+				.element().from(14.5f, 1, 7.5f).to(15.5f, 3, 8.5f)
+				.rotation().origin(8, 0.5f, 8).axis(Direction.Axis.Z).angle(angle).end()
+				.face(Direction.NORTH).uvs(13, 9, 14, 11).texture("#all").end()
+				.face(Direction.EAST).uvs(7, 9, 8, 11).texture("#all").end()
+				.face(Direction.SOUTH).uvs(7, 9, 8, 11).texture("#all").end()
+				.face(Direction.WEST).uvs(14, 4, 15, 6).texture("#all").end()
+				.face(Direction.UP).uvs(7, 9, 8, 10).texture("#all").end()
+				.end()
+				// spike_left
+				.element().from(14.5f, 1, 10.5f).to(15.5f, 3, 11.5f)
+				.rotation().origin(8, 0.5f, 8).axis(Direction.Axis.Z).angle(angle).end()
+				.face(Direction.NORTH).uvs(13, 1, 14, 3).texture("#all").end()
+				.face(Direction.EAST).uvs(2, 12, 3, 14).texture("#all").end()
+				.face(Direction.SOUTH).uvs(3, 8, 4, 10).texture("#all").end()
+				.face(Direction.WEST).uvs(12, 2, 13, 4).texture("#all").end()
+				.face(Direction.UP).uvs(3, 10, 4, 11).texture("#all").end()
+				.end()
+				// spike_left
+				.element().from(14.5f, 1, 13.5f).to(15.5f, 3, 14.5f)
+				.rotation().origin(8, 0.5f, 8).axis(Direction.Axis.Z).angle(angle).end()
+				.face(Direction.NORTH).uvs(12, 12, 13, 14).texture("#all").end()
+				.face(Direction.EAST).uvs(6, 5, 7, 7).texture("#all").end()
+				.face(Direction.SOUTH).uvs(13, 3, 14, 5).texture("#all").end()
+				.face(Direction.WEST).uvs(2, 9, 3, 11).texture("#all").end()
+				.face(Direction.UP).uvs(4, 11, 5, 12).texture("#all").end()
+				.end()
+				// spike_left
+				.element().from(14.5f, 1, 1.5f).to(15.5f, 3, 2.5f)
+				.rotation().origin(8, 0.5f, 8).axis(Direction.Axis.Z).angle(angle).end()
+				.face(Direction.NORTH).uvs(0, 9, 1, 11).texture("#all").end()
+				.face(Direction.EAST).uvs(14, 3, 15, 5).texture("#all").end()
+				.face(Direction.SOUTH).uvs(15, 14, 16, 16).texture("#all").end()
+				.face(Direction.WEST).uvs(5, 11, 6, 13).texture("#all").end()
+				.face(Direction.UP).uvs(4, 7, 5, 8).texture("#all").end()
+				.end()
+				// spike_left
+				.element().from(14.5f, 1, 4.5f).to(15.5f, 3, 5.5f)
+				.rotation().origin(8, 0.5f, 8).axis(Direction.Axis.Z).angle(angle).end()
+				.face(Direction.NORTH).uvs(2, 8, 3, 10).texture("#all").end()
+				.face(Direction.EAST).uvs(8, 3, 9, 5).texture("#all").end()
+				.face(Direction.SOUTH).uvs(9, 3, 10, 5).texture("#all").end()
+				.face(Direction.WEST).uvs(0, 0, 1, 2).texture("#all").end()
+				.face(Direction.UP).uvs(7, 8, 8, 9).texture("#all").end()
 				.end();
 	}
 

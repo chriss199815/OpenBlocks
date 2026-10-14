@@ -183,6 +183,15 @@ public class OBRecipeProvider extends RecipeProvider {
 					.save(output);
 		});
 
+		ShapedRecipeBuilder.shaped(RecipeCategory.MISC, OBBlocks.BEAR_TRAP.get())
+				.pattern("fif")
+				.pattern("fif")
+				.pattern("fif")
+				.define('f', Items.IRON_BARS)
+				.define('i', Tags.Items.INGOTS_IRON)
+				.unlockedBy("has_iron_bars", has(Items.IRON_BARS))
+				.save(output);
+
 		ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, OBItems.PAINT_BRUSH.get())
 				.pattern("w  ")
 				.pattern(" s ")

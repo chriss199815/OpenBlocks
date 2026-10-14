@@ -1,6 +1,7 @@
-// 1.21.1	2026-10-14T16:12:31.434936	Loot Tables
+// 1.21.1	2026-10-14T16:13:01.051444	Loot Tables
 91d0a832c50aab793e108321331f69e01d35cf6b data/openblocks/loot_table/blocks/auto_anvil.json
 76f4eafc1ea0961e4b2199bec14732fba136b0e3 data/openblocks/loot_table/blocks/auto_enchantment_table.json
+f4440d2112f720e00c0f9a7d9381caabbeafe916 data/openblocks/loot_table/blocks/bear_trap.json
 e56438400b883176c092cf868516713c206e662e data/openblocks/loot_table/blocks/black_elevator.json
 729a4def80970d503e3b4b44b25d932de17130b5 data/openblocks/loot_table/blocks/black_elevator_rotating.json
 bd5063a5c0b736aee7da9db2052e93fbf6f2fe9f data/openblocks/loot_table/blocks/black_flag.json

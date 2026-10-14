@@ -47,6 +47,7 @@ public class OpenBlocksClient {
 		modBus.addListener(HangGliderRenderer::modifyBakingResult);
 		modBus.addListener(PaintMixerRenderer::registerAdditional);
 		modBus.addListener(FanRenderer::registerAdditional);
+		modBus.addListener(BearTrapRenderer::registerAdditional);
 		modBus.addListener(CanvasModel::modifyBakingResult);
 		modBus.addListener((ModelEvent.BakingCompleted event) -> CanvasTextures.clear());
 		modBus.addListener(OpenBlocksClient::registerRenderers);
@@ -83,6 +84,7 @@ public class OpenBlocksClient {
 		event.registerBlockEntityRenderer(OBBlockEntities.PAINT_MIXER.get(), PaintMixerRenderer::new);
 		event.registerBlockEntityRenderer(OBBlockEntities.CANVAS.get(), CanvasRenderer::new);
 		event.registerBlockEntityRenderer(OBBlockEntities.FAN.get(), FanRenderer::new);
+		event.registerBlockEntityRenderer(OBBlockEntities.BEAR_TRAP.get(), BearTrapRenderer::new);
 		event.registerEntityRenderer(OBEntities.NO_FLY_XP_ORB.get(), ExperienceOrbRenderer::new);
 	}
 }

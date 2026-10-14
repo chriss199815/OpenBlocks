@@ -19,6 +19,7 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 import openblocks.OpenBlocks;
 import openblocks.block.AutoAnvilBlock;
 import openblocks.block.AutoEnchantmentTableBlock;
+import openblocks.block.BearTrapBlock;
 import openblocks.block.CanvasBlock;
 import openblocks.block.DonationStationBlock;
 import openblocks.block.DrawingTableBlock;
@@ -152,6 +153,15 @@ public class OBBlocks {
 			.sound(SoundType.METAL)));
 
 	public static final Map<DyeColor, DeferredBlock<FlagBlock>> FLAGS = registerFlags();
+
+	// no collision, so mobs walk into the trap
+	public static final DeferredBlock<BearTrapBlock> BEAR_TRAP = registerWithItem("bear_trap", () -> new BearTrapBlock(BlockBehaviour.Properties.of()
+			.mapColor(MapColor.METAL)
+			.strength(1.0f)
+			.requiresCorrectToolForDrops()
+			.noCollission()
+			.noOcclusion()
+			.sound(SoundType.METAL)));
 
 	private static Map<DyeColor, DeferredBlock<FlagBlock>> registerFlags() {
 		final Map<DyeColor, DeferredBlock<FlagBlock>> result = new EnumMap<>(DyeColor.class);

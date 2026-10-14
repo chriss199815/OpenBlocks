@@ -396,5 +396,13 @@ public class OBRecipeProvider extends RecipeProvider {
 				.requires(Tags.Items.COBBLESTONES)
 				.unlockedBy("has_cobblestone", has(Tags.Items.COBBLESTONES))
 				.save(output);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, OBItems.WRENCH.get())
+				.pattern(" ii")
+				.pattern("iii")
+				.pattern("ii ")
+				.define('i', Tags.Items.INGOTS_IRON)
+				.unlockedBy("has_iron_ingot", has(Tags.Items.INGOTS_IRON))
+				.save(output);
 	}
 }

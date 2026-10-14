@@ -68,6 +68,7 @@ public class OBBlockStateProvider extends BlockStateProvider {
 		itemModels().withExistingParent("unprepared_stencil", mcLoc("item/generated")).texture("layer0", modLoc("item/stencil"));
 		itemModels().basicItem(OBItems.SKETCHING_PENCIL.get());
 		itemModels().handheldItem(OBItems.SQUEEGEE.get());
+		itemModels().basicItem(OBItems.WRENCH.get());
 		// legacy paintbrush model: handle, plus the paint tinted by OBColorHandlers
 		itemModels().withExistingParent("paintbrush", mcLoc("item/handheld_rod"))
 				.texture("layer0", modLoc("item/paintbrush_handle"))

@@ -19,6 +19,7 @@ import openblocks.item.SleepingBagItem;
 import openblocks.item.SqueegeeItem;
 import openblocks.item.StencilItem;
 import openblocks.item.TankBlockItem;
+import openblocks.item.WrenchItem;
 import openblocks.item.XpBucketItem;
 
 public class OBItems {
@@ -46,6 +47,8 @@ public class OBItems {
 	public static final DeferredItem<CursorItem> CURSOR = ITEMS.register("cursor", () -> new CursorItem(new Item.Properties().durability(CursorItem.DURABILITY)));
 
 	public static final DeferredItem<SqueegeeItem> SQUEEGEE = ITEMS.register("squeegee", () -> new SqueegeeItem(new Item.Properties().stacksTo(1)));
+
+	public static final DeferredItem<WrenchItem> WRENCH = ITEMS.register("wrench", () -> new WrenchItem(new Item.Properties().stacksTo(1)));
 
 	// legacy MetasGeneric
 	public static final DeferredItem<Item> UNPREPARED_STENCIL = ITEMS.registerSimpleItem("unprepared_stencil");

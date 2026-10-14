@@ -1,4 +1,4 @@
-// 1.21.1	2026-10-14T19:25:11.545882	Block States: openblocks
+// 1.21.1	2026-10-14T19:56:24.56638	Block States: openblocks
 909bae1340933de5e494ee6692d1d88aeabf4f33 assets/openblocks/blockstates/auto_anvil.json
 aca132b5918ec066ede0f817145d0ac0649c84a9 assets/openblocks/blockstates/auto_enchantment_table.json
 9be1c7ce94b3232fe19c46a8965abe89ae2d898a assets/openblocks/blockstates/bear_trap.json
@@ -313,6 +313,7 @@ ce8b5f75a49bb175b10c1e6072c9ad0d87cb980d assets/openblocks/models/item/stripes_s
 d2b8f805473f5db4bc4402f5b4f1864704363649 assets/openblocks/models/item/white_elevator.json
 dd180aef5747a9afe34022df0f8fd345d081cd6c assets/openblocks/models/item/white_elevator_rotating.json
 fcc439f163500f4a2657f61a09c9762b2151a0ed assets/openblocks/models/item/white_flag.json
+678ab1c4de2a9d3bef644d0599109b5648b8131b assets/openblocks/models/item/wrench.json
 2e7e7c0b39acf9e3f58bad52af6bdace2a93ff90 assets/openblocks/models/item/xp_bottler.json
 b2472d0f6b3f54b1a17e5ced3bfa2e8563c61598 assets/openblocks/models/item/xp_bucket.json
 fce9fd2d7fb2d6813b842fc1e94d4e0d0a2be730 assets/openblocks/models/item/xp_drain.json

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "i": {
+      "tag": "c:ingots/iron"
+    }
+  },
+  "pattern": [
+    " ii",
+    "iii",
+    "ii "
+  ],
+  "result": {
+    "count": 1,
+    "id": "openblocks:wrench"
+  }
+}

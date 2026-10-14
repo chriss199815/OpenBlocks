@@ -1,5 +1,6 @@
 package openblocks.data;
 
+import net.minecraft.client.renderer.block.model.BlockModel;
 import net.minecraft.core.Direction;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
@@ -148,6 +149,7 @@ public class OBBlockStateProvider extends BlockStateProvider {
 		bearTrap();
 		sprinkler();
 		luggage();
+		devNull();
 		// the blank canvas; CanvasModel shows the painted block instead
 		final ModelFile canvas = models().cubeAll("canvas", modLoc("block/canvas"));
 		simpleBlock(OBBlocks.CANVAS.get(), canvas);
@@ -463,6 +465,31 @@ public class OBBlockStateProvider extends BlockStateProvider {
 				.face(Direction.WEST).uvs(2, 8, 14, 9).texture("#all").end()
 				.face(Direction.UP).uvs(14, 0, 15, 12).texture("#all").end()
 				.face(Direction.DOWN).uvs(15, 0, 16, 12).texture("#all").end()
+				.end();
+	}
+
+	/**
+	 * Legacy dev_null models: {@code DevNullItemRenderer} draws the flat frames in the GUI and the inside-out cubes elsewhere,
+	 * the overflow variants once /dev/nulls are nested too deep.
+	 */
+	private void devNull() {
+		itemModels().getBuilder("dev_null")
+				.parent(new ModelFile.UncheckedModelFile("builtin/entity"))
+				.guiLight(BlockModel.GuiLight.FRONT)
+				.texture("particle", modLoc("item/dev_null"));
+		itemModels().withExistingParent("dev_null_frame", mcLoc("item/generated")).texture("layer0", modLoc("item/dev_null"));
+		itemModels().withExistingParent("dev_null_overflow", mcLoc("item/generated")).texture("layer0", modLoc("item/dev_zero_over_zero"));
+		devNullCube("dev_null_3d", modLoc("item/dev_full"));
+		devNullCube("dev_null_3d_overflow", modLoc("item/dev_zero_over_zero"));
+	}
+
+	private void devNullCube(String name, ResourceLocation texture) {
+		models().withExistingParent(name, mcLoc("block/block"))
+				.texture("all", texture)
+				.texture("particle", texture)
+				// inverted on purpose, so only the inside is visible
+				.element().from(16, 16, 16).to(0, 0, 0)
+				.allFaces((dir, face) -> face.texture("#all").cullface(dir))
 				.end();
 	}
 

@@ -15,6 +15,7 @@ import openblocks.common.HangGliderHandler;
 import openblocks.common.PlayerDeathHandler;
 import openblocks.common.SleepingBagHandler;
 import openblocks.entity.NoFlyXpOrb;
+import openblocks.item.DevNullItem;
 import openblocks.item.LuggageItem;
 import openblocks.network.OBNetwork;
 import openblocks.registry.OBAttachments;
@@ -30,6 +31,7 @@ import openblocks.registry.OBItems;
 import openblocks.registry.OBMenus;
 import openblocks.registry.OBParticleTypes;
 import openblocks.registry.OBSounds;
+import openblocks.registry.OBTriggers;
 import org.slf4j.Logger;
 
 @Mod(OpenBlocks.MODID)
@@ -52,6 +54,7 @@ public class OpenBlocks {
 		OBGameRules.init();
 		OBCreativeTabs.TABS.register(modBus);
 		OBSounds.SOUNDS.register(modBus);
+		OBTriggers.TRIGGERS.register(modBus);
 
 		modBus.addListener(OBNetwork::register);
 		modBus.addListener(OBCapabilities::register);
@@ -69,6 +72,7 @@ public class OpenBlocks {
 		NeoForge.EVENT_BUS.addListener(SleepingBagHandler::onCanContinueSleeping);
 		NeoForge.EVENT_BUS.addListener(SleepingBagHandler::onWakeUp);
 		NeoForge.EVENT_BUS.addListener(LuggageItem::onEntityJoinLevel);
+		NeoForge.EVENT_BUS.addListener(DevNullItem::onItemPickup);
 
 		container.registerConfig(ModConfig.Type.COMMON, OBConfig.SPEC);
 	}

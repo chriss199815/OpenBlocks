@@ -30,10 +30,14 @@ public abstract class MachineMenu extends AbstractContainerMenu {
 
 		for (int row = 0; row < 3; row++)
 			for (int column = 0; column < 9; column++)
-				addSlot(new Slot(inventory, column + row * 9 + 9, x + column * 18, y + row * 18));
+				addSlot(createPlayerSlot(inventory, column + row * 9 + 9, x + column * 18, y + row * 18));
 
 		for (int column = 0; column < 9; column++)
-			addSlot(new Slot(inventory, column, x + column * 18, y + 58));
+			addSlot(createPlayerSlot(inventory, column, x + column * 18, y + 58));
+	}
+
+	protected Slot createPlayerSlot(Inventory inventory, int index, int x, int y) {
+		return new Slot(inventory, index, x, y);
 	}
 
 	/**

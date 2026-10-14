@@ -1,4 +1,4 @@
-// 1.21.1	2026-10-14T18:27:28.861087	Block States: openblocks
+// 1.21.1	2026-10-14T18:27:59.364487	Block States: openblocks
 909bae1340933de5e494ee6692d1d88aeabf4f33 assets/openblocks/blockstates/auto_anvil.json
 aca132b5918ec066ede0f817145d0ac0649c84a9 assets/openblocks/blockstates/auto_enchantment_table.json
 9be1c7ce94b3232fe19c46a8965abe89ae2d898a assets/openblocks/blockstates/bear_trap.json
@@ -78,6 +78,8 @@ b0bb1c488d3b7193c7a74ae86f2d91758bc9621b assets/openblocks/models/block/bear_tra
 17ac3725dc3dd85d746255bbfbf73c70bd467692 assets/openblocks/models/block/block_breaker_active.json
 2a16c00b888ee851a06772cbd2e206663a7b49e1 assets/openblocks/models/block/block_placer.json
 87370c060759f644299e1fda40c7157069617502 assets/openblocks/models/block/canvas.json
+cb20b5fd6169b586c69dfd98299b757391f6362c assets/openblocks/models/block/dev_null_3d.json
+2e4255286050e4d6d2624d60e78bec5b643393e9 assets/openblocks/models/block/dev_null_3d_overflow.json
 35d6ceb457b18dc42f422ecaca93a6f4662c5256 assets/openblocks/models/block/donation_station.json
 f87beb9b687aa72914e14f930da65dac8b2deb3e assets/openblocks/models/block/drawing_table.json
 d3d21200c82f54f0fe0701831311e9ea2ec3af35 assets/openblocks/models/block/elevator.json
@@ -199,6 +201,9 @@ f5a29f80fcdc9f49712c9d26585b68a764401cde assets/openblocks/models/item/creeper_f
 d2b8f805473f5db4bc4402f5b4f1864704363649 assets/openblocks/models/item/cyan_elevator.json
 dd180aef5747a9afe34022df0f8fd345d081cd6c assets/openblocks/models/item/cyan_elevator_rotating.json
 fcc439f163500f4a2657f61a09c9762b2151a0ed assets/openblocks/models/item/cyan_flag.json
+56905a83fa57e5cbbd075d8919b53e2cd140f958 assets/openblocks/models/item/dev_null.json
+be110f3777565ff6aa2e39e4a808bf504764fc19 assets/openblocks/models/item/dev_null_frame.json
+5f1eb3b1b837a0efa62a2458972e6c58b080cb50 assets/openblocks/models/item/dev_null_overflow.json
 4cd4f93630a1165a9fc59487a05253a56871204e assets/openblocks/models/item/donation_station.json
 ab8c50816283874de69dd2bd6568d691b35414b4 assets/openblocks/models/item/drawing_table.json
 b3a5d2f6748f8537e15bb3d900bce4b0e3e427a7 assets/openblocks/models/item/fan.json

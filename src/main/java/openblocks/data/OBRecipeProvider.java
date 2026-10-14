@@ -212,6 +212,12 @@ public class OBRecipeProvider extends RecipeProvider {
 				.unlockedBy("has_diamond", has(Tags.Items.GEMS_DIAMOND))
 				.save(output);
 
+		ShapelessRecipeBuilder.shapeless(RecipeCategory.TOOLS, OBItems.DEV_NULL.get())
+				.requires(Tags.Items.COBBLESTONES)
+				.requires(Items.APPLE)
+				.unlockedBy("has_apple", has(Items.APPLE))
+				.save(output);
+
 		ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, OBItems.PAINT_BRUSH.get())
 				.pattern("w  ")
 				.pattern(" s ")

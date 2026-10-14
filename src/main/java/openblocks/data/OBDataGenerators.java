@@ -25,6 +25,7 @@ public class OBDataGenerators {
 		generator.addProvider(event.includeServer(), new LootTableProvider(output, Set.of(),
 				List.of(new LootTableProvider.SubProviderEntry(OBBlockLoot::new, LootContextParamSets.BLOCK)), lookupProvider));
 		generator.addProvider(event.includeServer(), new OBRecipeProvider(output, lookupProvider));
+		generator.addProvider(event.includeServer(), new OBAdvancementProvider(output, lookupProvider));
 		generator.addProvider(event.includeServer(), new OBBlockTagsProvider(output, lookupProvider, existingFileHelper));
 		generator.addProvider(event.includeServer(), new OBFluidTagsProvider(output, lookupProvider, existingFileHelper));
 		generator.addProvider(event.includeServer(), new OBGameTestStructureProvider(output));

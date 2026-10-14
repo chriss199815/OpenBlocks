@@ -14,6 +14,7 @@ import openblocks.client.canvas.CanvasRenderer;
 import openblocks.client.canvas.CanvasTextures;
 import openblocks.client.gui.AutoAnvilScreen;
 import openblocks.client.gui.AutoEnchantmentTableScreen;
+import openblocks.client.gui.DevNullScreen;
 import openblocks.client.gui.DispenserLayoutScreen;
 import openblocks.client.gui.DonationStationScreen;
 import openblocks.client.gui.DrawingTableScreen;
@@ -60,6 +61,9 @@ public class OpenBlocksClient {
 		modBus.addListener(SleepingBagLayer::addLayers);
 		modBus.addListener(LuggageRenderer::registerLayerDefinitions);
 		modBus.addListener(LuggageRenderer::registerItemProperties);
+		modBus.addListener(DevNullItemRenderer::registerAdditional);
+		modBus.addListener(DevNullItemRenderer::registerClientExtensions);
+		modBus.addListener(DevNullItemRenderer::registerItemDecorations);
 
 		NeoForge.EVENT_BUS.addListener(ElevatorInputHandler::onMovementInput);
 		NeoForge.EVENT_BUS.addListener(HangGliderRenderer::onRenderPlayerPre);
@@ -81,6 +85,7 @@ public class OpenBlocksClient {
 		event.register(OBMenus.DONATION_STATION.get(), DonationStationScreen::new);
 		event.register(OBMenus.DRAWING_TABLE.get(), DrawingTableScreen::new);
 		event.register(OBMenus.PAINT_MIXER.get(), PaintMixerScreen::new);
+		event.register(OBMenus.DEV_NULL.get(), DevNullScreen::new);
 	}
 
 	private static void registerRenderers(EntityRenderersEvent.RegisterRenderers event) {

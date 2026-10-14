@@ -1,0 +1,29 @@
+{
+  "parent": "minecraft:adventure/root",
+  "criteria": {
+    "reached_the_limit": {
+      "conditions": {
+        "depth": 5
+      },
+      "trigger": "openblocks:dev_null_stacked"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "achievement.openblocks.stackOverflow.desc"
+    },
+    "icon": {
+      "count": 1,
+      "id": "minecraft:nether_star"
+    },
+    "title": {
+      "translate": "achievement.openblocks.stackOverflow"
+    }
+  },
+  "requirements": [
+    [
+      "reached_the_limit"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

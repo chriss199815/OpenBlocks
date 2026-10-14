@@ -21,8 +21,25 @@ public class OBConfig {
 	public static final Canvas CANVAS = new Canvas(BUILDER);
 	public static final Fan FAN = new Fan(BUILDER);
 	public static final Sprinkler SPRINKLER = new Sprinkler(BUILDER);
+	public static final DevNull DEV_NULL = new DevNull(BUILDER);
 
 	public static final ModConfigSpec SPEC = BUILDER.build();
+
+	public static class DevNull {
+		public final ModConfigSpec.BooleanValue sneakClickToGui;
+		public final ModConfigSpec.IntValue countColor;
+
+		private DevNull(ModConfigSpec.Builder builder) {
+			builder.push("devnull");
+			sneakClickToGui = builder
+					.comment("If true, /dev/null will require sneaking in addition to clicking air to open gui")
+					.define("sneakClickToGui", true);
+			countColor = builder
+					.comment("Color of contained stack size in GUI")
+					.defineInRange("countColor", 0xFFFF00, 0, 0xFFFFFF);
+			builder.pop();
+		}
+	}
 
 	public static class Sprinkler {
 		public final ModConfigSpec.IntValue fertilizeChance;

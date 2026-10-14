@@ -30,6 +30,10 @@ public class OBRecipeProvider extends RecipeProvider {
 		return BuiltInRegistries.ITEM.get(ResourceLocation.withDefaultNamespace(color.getSerializedName() + "_wool"));
 	}
 
+	private static Item carpet(DyeColor color) {
+		return BuiltInRegistries.ITEM.get(ResourceLocation.withDefaultNamespace(color.getSerializedName() + "_carpet"));
+	}
+
 	@Override
 	protected void buildRecipes(RecipeOutput output) {
 		OBBlocks.ELEVATORS.forEach((color, block) -> ShapedRecipeBuilder.shaped(RecipeCategory.TRANSPORTATION, block.get())
@@ -165,6 +169,19 @@ public class OBRecipeProvider extends RecipeProvider {
 				.define('s', Items.SMOOTH_STONE_SLAB)
 				.unlockedBy("has_iron_bars", has(Items.IRON_BARS))
 				.save(output);
+
+		OBBlocks.FLAGS.forEach((color, flag) -> {
+			final Item carpet = carpet(color);
+			ShapedRecipeBuilder.shaped(RecipeCategory.DECORATIONS, flag.get())
+					.group("openblocks:flag")
+					.pattern("scc")
+					.pattern("sc ")
+					.pattern("s  ")
+					.define('c', carpet)
+					.define('s', Tags.Items.RODS_WOODEN)
+					.unlockedBy("has_carpet", has(carpet))
+					.save(output);
+		});
 
 		ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, OBItems.PAINT_BRUSH.get())
 				.pattern("w  ")

@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "openblocks:flag",
+  "key": {
+    "c": {
+      "item": "minecraft:blue_carpet"
+    },
+    "s": {
+      "tag": "c:rods/wooden"
+    }
+  },
+  "pattern": [
+    "scc",
+    "sc ",
+    "s  "
+  ],
+  "result": {
+    "count": 1,
+    "id": "openblocks:blue_flag"
+  }
+}

@@ -6,6 +6,7 @@ import java.util.Map;
 import java.util.function.BiFunction;
 import java.util.function.Supplier;
 import net.minecraft.world.item.DyeColor;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.LiquidBlock;
@@ -27,6 +28,7 @@ import openblocks.block.BlockBreakerBlock;
 import openblocks.block.BlockPlacerBlock;
 import openblocks.block.ElevatorBlock;
 import openblocks.block.FanBlock;
+import openblocks.block.FlagBlock;
 import openblocks.block.GraveBlock;
 import openblocks.block.ItemDropperBlock;
 import openblocks.block.RotatingElevatorBlock;
@@ -35,6 +37,7 @@ import openblocks.block.VacuumHopperBlock;
 import openblocks.block.XpBottlerBlock;
 import openblocks.block.XpDrainBlock;
 import openblocks.block.XpShowerBlock;
+import openblocks.item.FlagItem;
 
 public class OBBlocks {
 
@@ -147,6 +150,24 @@ public class OBBlocks {
 			.isRedstoneConductor((state, level, pos) -> false)
 			.pushReaction(PushReaction.DESTROY)
 			.sound(SoundType.METAL)));
+
+	public static final Map<DyeColor, DeferredBlock<FlagBlock>> FLAGS = registerFlags();
+
+	private static Map<DyeColor, DeferredBlock<FlagBlock>> registerFlags() {
+		final Map<DyeColor, DeferredBlock<FlagBlock>> result = new EnumMap<>(DyeColor.class);
+		for (DyeColor color : DyeColor.values()) {
+			final DeferredBlock<FlagBlock> block = BLOCKS.register(color.getSerializedName() + "_flag", () -> new FlagBlock(color, BlockBehaviour.Properties.of()
+					.mapColor(color)
+					.instabreak()
+					.noCollission()
+					.noOcclusion()
+					.pushReaction(PushReaction.DESTROY)
+					.sound(SoundType.WOOL)));
+			OBItems.ITEMS.register(block.getId().getPath(), () -> new FlagItem(block.get(), new Item.Properties()));
+			result.put(color, block);
+		}
+		return Collections.unmodifiableMap(result);
+	}
 
 	private static BlockBehaviour.Properties canvasProperties() {
 		return BlockBehaviour.Properties.of()

@@ -1,0 +1,652 @@
+{
+  "variants": {
+    "facing=east,rotation=0": {
+      "model": "openblocks:block/flag_wall",
+      "y": 90
+    },
+    "facing=east,rotation=1": {
+      "model": "openblocks:block/flag_wall",
+      "y": 90
+    },
+    "facing=east,rotation=10": {
+      "model": "openblocks:block/flag_wall",
+      "y": 90
+    },
+    "facing=east,rotation=11": {
+      "model": "openblocks:block/flag_wall",
+      "y": 90
+    },
+    "facing=east,rotation=12": {
+      "model": "openblocks:block/flag_wall",
+      "y": 90
+    },
+    "facing=east,rotation=13": {
+      "model": "openblocks:block/flag_wall",
+      "y": 90
+    },
+    "facing=east,rotation=14": {
+      "model": "openblocks:block/flag_wall",
+      "y": 90
+    },
+    "facing=east,rotation=15": {
+      "model": "openblocks:block/flag_wall",
+      "y": 90
+    },
+    "facing=east,rotation=16": {
+      "model": "openblocks:block/flag_wall",
+      "y": 90
+    },
+    "facing=east,rotation=17": {
+      "model": "openblocks:block/flag_wall",
+      "y": 90
+    },
+    "facing=east,rotation=18": {
+      "model": "openblocks:block/flag_wall",
+      "y": 90
+    },
+    "facing=east,rotation=19": {
+      "model": "openblocks:block/flag_wall",
+      "y": 90
+    },
+    "facing=east,rotation=2": {
+      "model": "openblocks:block/flag_wall",
+      "y": 90
+    },
+    "facing=east,rotation=20": {
+      "model": "openblocks:block/flag_wall",
+      "y": 90
+    },
+    "facing=east,rotation=21": {
+      "model": "openblocks:block/flag_wall",
+      "y": 90
+    },
+    "facing=east,rotation=22": {
+      "model": "openblocks:block/flag_wall",
+      "y": 90
+    },
+    "facing=east,rotation=23": {
+      "model": "openblocks:block/flag_wall",
+      "y": 90
+    },
+    "facing=east,rotation=24": {
+      "model": "openblocks:block/flag_wall",
+      "y": 90
+    },
+    "facing=east,rotation=25": {
+      "model": "openblocks:block/flag_wall",
+      "y": 90
+    },
+    "facing=east,rotation=26": {
+      "model": "openblocks:block/flag_wall",
+      "y": 90
+    },
+    "facing=east,rotation=27": {
+      "model": "openblocks:block/flag_wall",
+      "y": 90
+    },
+    "facing=east,rotation=28": {
+      "model": "openblocks:block/flag_wall",
+      "y": 90
+    },
+    "facing=east,rotation=29": {
+      "model": "openblocks:block/flag_wall",
+      "y": 90
+    },
+    "facing=east,rotation=3": {
+      "model": "openblocks:block/flag_wall",
+      "y": 90
+    },
+    "facing=east,rotation=30": {
+      "model": "openblocks:block/flag_wall",
+      "y": 90
+    },
+    "facing=east,rotation=31": {
+      "model": "openblocks:block/flag_wall",
+      "y": 90
+    },
+    "facing=east,rotation=32": {
+      "model": "openblocks:block/flag_wall",
+      "y": 90
+    },
+    "facing=east,rotation=33": {
+      "model": "openblocks:block/flag_wall",
+      "y": 90
+    },
+    "facing=east,rotation=34": {
+      "model": "openblocks:block/flag_wall",
+      "y": 90
+    },
+    "facing=east,rotation=35": {
+      "model": "openblocks:block/flag_wall",
+      "y": 90
+    },
+    "facing=east,rotation=4": {
+      "model": "openblocks:block/flag_wall",
+      "y": 90
+    },
+    "facing=east,rotation=5": {
+      "model": "openblocks:block/flag_wall",
+      "y": 90
+    },
+    "facing=east,rotation=6": {
+      "model": "openblocks:block/flag_wall",
+      "y": 90
+    },
+    "facing=east,rotation=7": {
+      "model": "openblocks:block/flag_wall",
+      "y": 90
+    },
+    "facing=east,rotation=8": {
+      "model": "openblocks:block/flag_wall",
+      "y": 90
+    },
+    "facing=east,rotation=9": {
+      "model": "openblocks:block/flag_wall",
+      "y": 90
+    },
+    "facing=north,rotation=0": {
+      "model": "openblocks:block/flag_wall"
+    },
+    "facing=north,rotation=1": {
+      "model": "openblocks:block/flag_wall"
+    },
+    "facing=north,rotation=10": {
+      "model": "openblocks:block/flag_wall"
+    },
+    "facing=north,rotation=11": {
+      "model": "openblocks:block/flag_wall"
+    },
+    "facing=north,rotation=12": {
+      "model": "openblocks:block/flag_wall"
+    },
+    "facing=north,rotation=13": {
+      "model": "openblocks:block/flag_wall"
+    },
+    "facing=north,rotation=14": {
+      "model": "openblocks:block/flag_wall"
+    },
+    "facing=north,rotation=15": {
+      "model": "openblocks:block/flag_wall"
+    },
+    "facing=north,rotation=16": {
+      "model": "openblocks:block/flag_wall"
+    },
+    "facing=north,rotation=17": {
+      "model": "openblocks:block/flag_wall"
+    },
+    "facing=north,rotation=18": {
+      "model": "openblocks:block/flag_wall"
+    },
+    "facing=north,rotation=19": {
+      "model": "openblocks:block/flag_wall"
+    },
+    "facing=north,rotation=2": {
+      "model": "openblocks:block/flag_wall"
+    },
+    "facing=north,rotation=20": {
+      "model": "openblocks:block/flag_wall"
+    },
+    "facing=north,rotation=21": {
+      "model": "openblocks:block/flag_wall"
+    },
+    "facing=north,rotation=22": {
+      "model": "openblocks:block/flag_wall"
+    },
+    "facing=north,rotation=23": {
+      "model": "openblocks:block/flag_wall"
+    },
+    "facing=north,rotation=24": {
+      "model": "openblocks:block/flag_wall"
+    },
+    "facing=north,rotation=25": {
+      "model": "openblocks:block/flag_wall"
+    },
+    "facing=north,rotation=26": {
+      "model": "openblocks:block/flag_wall"
+    },
+    "facing=north,rotation=27": {
+      "model": "openblocks:block/flag_wall"
+    },
+    "facing=north,rotation=28": {
+      "model": "openblocks:block/flag_wall"
+    },
+    "facing=north,rotation=29": {
+      "model": "openblocks:block/flag_wall"
+    },
+    "facing=north,rotation=3": {
+      "model": "openblocks:block/flag_wall"
+    },
+    "facing=north,rotation=30": {
+      "model": "openblocks:block/flag_wall"
+    },
+    "facing=north,rotation=31": {
+      "model": "openblocks:block/flag_wall"
+    },
+    "facing=north,rotation=32": {
+      "model": "openblocks:block/flag_wall"
+    },
+    "facing=north,rotation=33": {
+      "model": "openblocks:block/flag_wall"
+    },
+    "facing=north,rotation=34": {
+      "model": "openblocks:block/flag_wall"
+    },
+    "facing=north,rotation=35": {
+      "model": "openblocks:block/flag_wall"
+    },
+    "facing=north,rotation=4": {
+      "model": "openblocks:block/flag_wall"
+    },
+    "facing=north,rotation=5": {
+      "model": "openblocks:block/flag_wall"
+    },
+    "facing=north,rotation=6": {
+      "model": "openblocks:block/flag_wall"
+    },
+    "facing=north,rotation=7": {
+      "model": "openblocks:block/flag_wall"
+    },
+    "facing=north,rotation=8": {
+      "model": "openblocks:block/flag_wall"
+    },
+    "facing=north,rotation=9": {
+      "model": "openblocks:block/flag_wall"
+    },
+    "facing=south,rotation=0": {
+      "model": "openblocks:block/flag_wall",
+      "y": 180
+    },
+    "facing=south,rotation=1": {
+      "model": "openblocks:block/flag_wall",
+      "y": 180
+    },
+    "facing=south,rotation=10": {
+      "model": "openblocks:block/flag_wall",
+      "y": 180
+    },
+    "facing=south,rotation=11": {
+      "model": "openblocks:block/flag_wall",
+      "y": 180
+    },
+    "facing=south,rotation=12": {
+      "model": "openblocks:block/flag_wall",
+      "y": 180
+    },
+    "facing=south,rotation=13": {
+      "model": "openblocks:block/flag_wall",
+      "y": 180
+    },
+    "facing=south,rotation=14": {
+      "model": "openblocks:block/flag_wall",
+      "y": 180
+    },
+    "facing=south,rotation=15": {
+      "model": "openblocks:block/flag_wall",
+      "y": 180
+    },
+    "facing=south,rotation=16": {
+      "model": "openblocks:block/flag_wall",
+      "y": 180
+    },
+    "facing=south,rotation=17": {
+      "model": "openblocks:block/flag_wall",
+      "y": 180
+    },
+    "facing=south,rotation=18": {
+      "model": "openblocks:block/flag_wall",
+      "y": 180
+    },
+    "facing=south,rotation=19": {
+      "model": "openblocks:block/flag_wall",
+      "y": 180
+    },
+    "facing=south,rotation=2": {
+      "model": "openblocks:block/flag_wall",
+      "y": 180
+    },
+    "facing=south,rotation=20": {
+      "model": "openblocks:block/flag_wall",
+      "y": 180
+    },
+    "facing=south,rotation=21": {
+      "model": "openblocks:block/flag_wall",
+      "y": 180
+    },
+    "facing=south,rotation=22": {
+      "model": "openblocks:block/flag_wall",
+      "y": 180
+    },
+    "facing=south,rotation=23": {
+      "model": "openblocks:block/flag_wall",
+      "y": 180
+    },
+    "facing=south,rotation=24": {
+      "model": "openblocks:block/flag_wall",
+      "y": 180
+    },
+    "facing=south,rotation=25": {
+      "model": "openblocks:block/flag_wall",
+      "y": 180
+    },
+    "facing=south,rotation=26": {
+      "model": "openblocks:block/flag_wall",
+      "y": 180
+    },
+    "facing=south,rotation=27": {
+      "model": "openblocks:block/flag_wall",
+      "y": 180
+    },
+    "facing=south,rotation=28": {
+      "model": "openblocks:block/flag_wall",
+      "y": 180
+    },
+    "facing=south,rotation=29": {
+      "model": "openblocks:block/flag_wall",
+      "y": 180
+    },
+    "facing=south,rotation=3": {
+      "model": "openblocks:block/flag_wall",
+      "y": 180
+    },
+    "facing=south,rotation=30": {
+      "model": "openblocks:block/flag_wall",
+      "y": 180
+    },
+    "facing=south,rotation=31": {
+      "model": "openblocks:block/flag_wall",
+      "y": 180
+    },
+    "facing=south,rotation=32": {
+      "model": "openblocks:block/flag_wall",
+      "y": 180
+    },
+    "facing=south,rotation=33": {
+      "model": "openblocks:block/flag_wall",
+      "y": 180
+    },
+    "facing=south,rotation=34": {
+      "model": "openblocks:block/flag_wall",
+      "y": 180
+    },
+    "facing=south,rotation=35": {
+      "model": "openblocks:block/flag_wall",
+      "y": 180
+    },
+    "facing=south,rotation=4": {
+      "model": "openblocks:block/flag_wall",
+      "y": 180
+    },
+    "facing=south,rotation=5": {
+      "model": "openblocks:block/flag_wall",
+      "y": 180
+    },
+    "facing=south,rotation=6": {
+      "model": "openblocks:block/flag_wall",
+      "y": 180
+    },
+    "facing=south,rotation=7": {
+      "model": "openblocks:block/flag_wall",
+      "y": 180
+    },
+    "facing=south,rotation=8": {
+      "model": "openblocks:block/flag_wall",
+      "y": 180
+    },
+    "facing=south,rotation=9": {
+      "model": "openblocks:block/flag_wall",
+      "y": 180
+    },
+    "facing=up,rotation=0": {
+      "model": "openblocks:block/flag_ground_0"
+    },
+    "facing=up,rotation=1": {
+      "model": "openblocks:block/flag_ground_10"
+    },
+    "facing=up,rotation=10": {
+      "model": "openblocks:block/flag_ground_100"
+    },
+    "facing=up,rotation=11": {
+      "model": "openblocks:block/flag_ground_110"
+    },
+    "facing=up,rotation=12": {
+      "model": "openblocks:block/flag_ground_120"
+    },
+    "facing=up,rotation=13": {
+      "model": "openblocks:block/flag_ground_130"
+    },
+    "facing=up,rotation=14": {
+      "model": "openblocks:block/flag_ground_140"
+    },
+    "facing=up,rotation=15": {
+      "model": "openblocks:block/flag_ground_150"
+    },
+    "facing=up,rotation=16": {
+      "model": "openblocks:block/flag_ground_160"
+    },
+    "facing=up,rotation=17": {
+      "model": "openblocks:block/flag_ground_170"
+    },
+    "facing=up,rotation=18": {
+      "model": "openblocks:block/flag_ground_180"
+    },
+    "facing=up,rotation=19": {
+      "model": "openblocks:block/flag_ground_190"
+    },
+    "facing=up,rotation=2": {
+      "model": "openblocks:block/flag_ground_20"
+    },
+    "facing=up,rotation=20": {
+      "model": "openblocks:block/flag_ground_200"
+    },
+    "facing=up,rotation=21": {
+      "model": "openblocks:block/flag_ground_210"
+    },
+    "facing=up,rotation=22": {
+      "model": "openblocks:block/flag_ground_220"
+    },
+    "facing=up,rotation=23": {
+      "model": "openblocks:block/flag_ground_230"
+    },
+    "facing=up,rotation=24": {
+      "model": "openblocks:block/flag_ground_240"
+    },
+    "facing=up,rotation=25": {
+      "model": "openblocks:block/flag_ground_250"
+    },
+    "facing=up,rotation=26": {
+      "model": "openblocks:block/flag_ground_260"
+    },
+    "facing=up,rotation=27": {
+      "model": "openblocks:block/flag_ground_270"
+    },
+    "facing=up,rotation=28": {
+      "model": "openblocks:block/flag_ground_280"
+    },
+    "facing=up,rotation=29": {
+      "model": "openblocks:block/flag_ground_290"
+    },
+    "facing=up,rotation=3": {
+      "model": "openblocks:block/flag_ground_30"
+    },
+    "facing=up,rotation=30": {
+      "model": "openblocks:block/flag_ground_300"
+    },
+    "facing=up,rotation=31": {
+      "model": "openblocks:block/flag_ground_310"
+    },
+    "facing=up,rotation=32": {
+      "model": "openblocks:block/flag_ground_320"
+    },
+    "facing=up,rotation=33": {
+      "model": "openblocks:block/flag_ground_330"
+    },
+    "facing=up,rotation=34": {
+      "model": "openblocks:block/flag_ground_340"
+    },
+    "facing=up,rotation=35": {
+      "model": "openblocks:block/flag_ground_350"
+    },
+    "facing=up,rotation=4": {
+      "model": "openblocks:block/flag_ground_40"
+    },
+    "facing=up,rotation=5": {
+      "model": "openblocks:block/flag_ground_50"
+    },
+    "facing=up,rotation=6": {
+      "model": "openblocks:block/flag_ground_60"
+    },
+    "facing=up,rotation=7": {
+      "model": "openblocks:block/flag_ground_70"
+    },
+    "facing=up,rotation=8": {
+      "model": "openblocks:block/flag_ground_80"
+    },
+    "facing=up,rotation=9": {
+      "model": "openblocks:block/flag_ground_90"
+    },
+    "facing=west,rotation=0": {
+      "model": "openblocks:block/flag_wall",
+      "y": 270
+    },
+    "facing=west,rotation=1": {
+      "model": "openblocks:block/flag_wall",
+      "y": 270
+    },
+    "facing=west,rotation=10": {
+      "model": "openblocks:block/flag_wall",
+      "y": 270
+    },
+    "facing=west,rotation=11": {
+      "model": "openblocks:block/flag_wall",
+      "y": 270
+    },
+    "facing=west,rotation=12": {
+      "model": "openblocks:block/flag_wall",
+      "y": 270
+    },
+    "facing=west,rotation=13": {
+      "model": "openblocks:block/flag_wall",
+      "y": 270
+    },
+    "facing=west,rotation=14": {
+      "model": "openblocks:block/flag_wall",
+      "y": 270
+    },
+    "facing=west,rotation=15": {
+      "model": "openblocks:block/flag_wall",
+      "y": 270
+    },
+    "facing=west,rotation=16": {
+      "model": "openblocks:block/flag_wall",
+      "y": 270
+    },
+    "facing=west,rotation=17": {
+      "model": "openblocks:block/flag_wall",
+      "y": 270
+    },
+    "facing=west,rotation=18": {
+      "model": "openblocks:block/flag_wall",
+      "y": 270
+    },
+    "facing=west,rotation=19": {
+      "model": "openblocks:block/flag_wall",
+      "y": 270
+    },
+    "facing=west,rotation=2": {
+      "model": "openblocks:block/flag_wall",
+      "y": 270
+    },
+    "facing=west,rotation=20": {
+      "model": "openblocks:block/flag_wall",
+      "y": 270
+    },
+    "facing=west,rotation=21": {
+      "model": "openblocks:block/flag_wall",
+      "y": 270
+    },
+    "facing=west,rotation=22": {
+      "model": "openblocks:block/flag_wall",
+      "y": 270
+    },
+    "facing=west,rotation=23": {
+      "model": "openblocks:block/flag_wall",
+      "y": 270
+    },
+    "facing=west,rotation=24": {
+      "model": "openblocks:block/flag_wall",
+      "y": 270
+    },
+    "facing=west,rotation=25": {
+      "model": "openblocks:block/flag_wall",
+      "y": 270
+    },
+    "facing=west,rotation=26": {
+      "model": "openblocks:block/flag_wall",
+      "y": 270
+    },
+    "facing=west,rotation=27": {
+      "model": "openblocks:block/flag_wall",
+      "y": 270
+    },
+    "facing=west,rotation=28": {
+      "model": "openblocks:block/flag_wall",
+      "y": 270
+    },
+    "facing=west,rotation=29": {
+      "model": "openblocks:block/flag_wall",
+      "y": 270
+    },
+    "facing=west,rotation=3": {
+      "model": "openblocks:block/flag_wall",
+      "y": 270
+    },
+    "facing=west,rotation=30": {
+      "model": "openblocks:block/flag_wall",
+      "y": 270
+    },
+    "facing=west,rotation=31": {
+      "model": "openblocks:block/flag_wall",
+      "y": 270
+    },
+    "facing=west,rotation=32": {
+      "model": "openblocks:block/flag_wall",
+      "y": 270
+    },
+    "facing=west,rotation=33": {
+      "model": "openblocks:block/flag_wall",
+      "y": 270
+    },
+    "facing=west,rotation=34": {
+      "model": "openblocks:block/flag_wall",
+      "y": 270
+    },
+    "facing=west,rotation=35": {
+      "model": "openblocks:block/flag_wall",
+      "y": 270
+    },
+    "facing=west,rotation=4": {
+      "model": "openblocks:block/flag_wall",
+      "y": 270
+    },
+    "facing=west,rotation=5": {
+      "model": "openblocks:block/flag_wall",
+      "y": 270
+    },
+    "facing=west,rotation=6": {
+      "model": "openblocks:block/flag_wall",
+      "y": 270
+    },
+    "facing=west,rotation=7": {
+      "model": "openblocks:block/flag_wall",
+      "y": 270
+    },
+    "facing=west,rotation=8": {
+      "model": "openblocks:block/flag_wall",
+      "y": 270
+    },
+    "facing=west,rotation=9": {
+      "model": "openblocks:block/flag_wall",
+      "y": 270
+    }
+  }
+}

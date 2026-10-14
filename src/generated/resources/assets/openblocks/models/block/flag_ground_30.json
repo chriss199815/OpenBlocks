@@ -1,0 +1,12 @@
+{
+  "parent": "openblocks:block/flag_ground",
+  "transform": {
+    "origin": "center",
+    "rotation": [
+      0.0,
+      0.9659258,
+      0.0,
+      0.2588191
+    ]
+  }
+}

@@ -11,8 +11,10 @@ import net.neoforged.neoforge.client.model.generators.ModelBuilder;
 import net.neoforged.neoforge.client.model.generators.ModelFile;
 import net.neoforged.neoforge.client.model.generators.loaders.ObjModelBuilder;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
+import net.neoforged.neoforge.common.util.TransformationHelper;
 import openblocks.OpenBlocks;
 import openblocks.block.BlockManipulatorBlock;
+import openblocks.block.FlagBlock;
 import openblocks.block.GraveBlock;
 import openblocks.block.entity.VacuumHopperBlockEntity;
 import openblocks.registry.OBBlocks;
@@ -140,6 +142,7 @@ public class OBBlockStateProvider extends BlockStateProvider {
 		autoAnvil();
 		paintMixer();
 		fan();
+		flag();
 		// the blank canvas; CanvasModel shows the painted block instead
 		final ModelFile canvas = models().cubeAll("canvas", modLoc("block/canvas"));
 		simpleBlock(OBBlocks.CANVAS.get(), canvas);
@@ -384,6 +387,74 @@ public class OBBlockStateProvider extends BlockStateProvider {
 				.face(Direction.NORTH).uvs(4, 5, 12, 16).texture("#spill").tintindex(0).end()
 				.face(Direction.UP).uvs(4, 4, 12, 12).texture("#top").tintindex(0).end()
 				.end();
+	}
+
+	/**
+	 * Legacy flag_ground and flag_wall models, shared by all colors (tint index 0). Ground flags turn in 10° steps through one model
+	 * per angle with a root transform; at rotation 0 they point south, like legacy flags placed facing south.
+	 */
+	private void flag() {
+		final BlockModelBuilder ground = models().withExistingParent("flag_ground", mcLoc("block/block"))
+				.renderType("cutout")
+				.texture("flag", modLoc("block/flag"))
+				.texture("pole", modLoc("block/flagpole"))
+				.texture("particle", modLoc("block/flag"));
+		flagPole(ground.element().from(7.5f, 0, 7.5f).to(8.5f, 16, 8.5f), true).end();
+		flagCloth(ground.element().from(8, 6, -5).to(8, 15, 8)).end();
+
+		final ModelFile[] rotated = new ModelFile[FlagBlock.ROTATIONS];
+		for (int rotation = 0; rotation < FlagBlock.ROTATIONS; rotation++) {
+			final int angle = rotation * FlagBlock.ROTATION_STEP;
+			rotated[rotation] = models().getBuilder("flag_ground_" + angle)
+					.parent(ground)
+					.rootTransforms()
+					.rotation(0, 180 - angle, 0, true)
+					.origin(TransformationHelper.TransformOrigin.CENTER)
+					.end();
+		}
+
+		// leaning away from a wall on the south side
+		final BlockModelBuilder wall = models().withExistingParent("flag_wall", mcLoc("block/block"))
+				.renderType("cutout")
+				.texture("flag", modLoc("block/flag"))
+				.texture("pole", modLoc("block/flagpole"))
+				.texture("particle", modLoc("block/flag"));
+		flagPole(wall.element().from(7.5f, 3, 12.5f).to(8.5f, 19, 13.5f), false)
+				.rotation().origin(8, 11, 13).axis(Direction.Axis.X).angle(-45).end()
+				.end();
+		flagCloth(wall.element().from(8, 9, 0).to(8, 18, 13))
+				.rotation().origin(8, 11, 13).axis(Direction.Axis.X).angle(-45).end()
+				.end();
+
+		OBBlocks.FLAGS.values().forEach(flag -> {
+			getVariantBuilder(flag.get()).forAllStates(state -> {
+				final Direction facing = state.getValue(FlagBlock.FACING);
+				return facing == Direction.UP
+						? ConfiguredModel.builder().modelFile(rotated[state.getValue(FlagBlock.ROTATION)]).build()
+						: ConfiguredModel.builder().modelFile(wall).rotationY(((int)facing.toYRot() + 180) % 360).build();
+			});
+			simpleBlockItem(flag.get(), ground);
+		});
+	}
+
+	private static BlockModelBuilder.ElementBuilder flagPole(BlockModelBuilder.ElementBuilder element, boolean cull) {
+		element.face(Direction.NORTH).uvs(0, 0, 1, 16).texture("#pole").end()
+				.face(Direction.EAST).uvs(3, 0, 4, 16).texture("#pole").end()
+				.face(Direction.SOUTH).uvs(2, 0, 3, 16).texture("#pole").end()
+				.face(Direction.WEST).uvs(1, 0, 2, 16).texture("#pole").end();
+		final var up = element.face(Direction.UP).uvs(4, 0, 5, 1).texture("#pole");
+		final var down = element.face(Direction.DOWN).uvs(5, 0, 6, 1).texture("#pole");
+		if (cull) {
+			up.cullface(Direction.UP);
+			down.cullface(Direction.DOWN);
+		}
+		return element;
+	}
+
+	private static BlockModelBuilder.ElementBuilder flagCloth(BlockModelBuilder.ElementBuilder element) {
+		return element
+				.face(Direction.EAST).uvs(0, 1, 13, 10).texture("#flag").tintindex(0).end()
+				.face(Direction.WEST).uvs(0, 1, 13, 10).texture("#flag").tintindex(0).rotation(ModelBuilder.FaceRotation.UPSIDE_DOWN).end();
 	}
 
 	/**

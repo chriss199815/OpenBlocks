@@ -22,6 +22,16 @@ public class XpUtils {
 		return 1395 + sum(level - 30, 112, 9);
 	}
 
+	/**
+	 * The highest level that {@code xp} points are enough for.
+	 */
+	public static int getLevelForExperience(int xp) {
+		int level = 0;
+		while (getExperienceForLevel(level + 1) <= xp)
+			level++;
+		return level;
+	}
+
 	private static int sum(int n, int a0, int d) {
 		return n * (2 * a0 + (n - 1) * d) / 2;
 	}

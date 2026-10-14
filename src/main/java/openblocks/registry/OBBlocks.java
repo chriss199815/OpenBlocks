@@ -16,6 +16,7 @@ import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import openblocks.OpenBlocks;
 import openblocks.block.AutoAnvilBlock;
+import openblocks.block.AutoEnchantmentTableBlock;
 import openblocks.block.BlockBreakerBlock;
 import openblocks.block.BlockPlacerBlock;
 import openblocks.block.ElevatorBlock;
@@ -99,6 +100,13 @@ public class OBBlocks {
 			.requiresCorrectToolForDrops()
 			.noOcclusion()
 			.sound(SoundType.ANVIL)));
+
+	public static final DeferredBlock<AutoEnchantmentTableBlock> AUTO_ENCHANTMENT_TABLE = registerWithItem("auto_enchantment_table", () -> new AutoEnchantmentTableBlock(BlockBehaviour.Properties.of()
+			.mapColor(MapColor.COLOR_RED)
+			.strength(5.0f, 1200.0f)
+			.requiresCorrectToolForDrops()
+			.lightLevel(state -> 7)
+			.sound(SoundType.STONE)));
 
 	private static BlockBehaviour.Properties machineProperties() {
 		return BlockBehaviour.Properties.of()

@@ -38,6 +38,7 @@
   "openblocks.gui.xp_outputs": "XP Outputs",
   "openblocks.gui.item_outputs": "Item Outputs",
   "openblocks.gui.limit": "Limit",
+  "openblocks.gui.enchantment_option": "Enchantment option (like the three options of the enchanting table)",
   "openblocks.gui.available_power": "Available power: %d",
   "openblocks.gui.save_folder": "Save folder",
   "openblocks.gui.drawingtable.stencils": "Stencils",

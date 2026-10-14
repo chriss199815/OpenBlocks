@@ -38,6 +38,7 @@
   "openblocks.gui.xp_outputs": "EP-Abgabe",
   "openblocks.gui.item_outputs": "Item-Abgabe",
   "openblocks.gui.limit": "Grenze",
+  "openblocks.gui.enchantment_option": "Verzauberungsoption (wie die drei Optionen des Zaubertischs)",
   "openblocks.gui.available_power": "Verfügbare Energie: %d",
   "openblocks.gui.save_folder": "Ordner sichern",
   "openblocks.gui.drawingtable.stencils": "Schablonen",

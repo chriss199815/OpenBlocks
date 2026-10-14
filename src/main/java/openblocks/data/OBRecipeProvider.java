@@ -135,6 +135,16 @@ public class OBRecipeProvider extends RecipeProvider {
 				.unlockedBy("has_anvil", has(Items.ANVIL))
 				.save(output);
 
+		ShapedRecipeBuilder.shaped(RecipeCategory.MISC, OBBlocks.AUTO_ENCHANTMENT_TABLE.get())
+				.pattern("iii")
+				.pattern("iei")
+				.pattern("rrr")
+				.define('i', Tags.Items.INGOTS_IRON)
+				.define('e', Items.ENCHANTING_TABLE)
+				.define('r', Tags.Items.DUSTS_REDSTONE)
+				.unlockedBy("has_enchanting_table", has(Items.ENCHANTING_TABLE))
+				.save(output);
+
 		// two mirrored wing recipes, like legacy
 		ShapedRecipeBuilder.shaped(RecipeCategory.MISC, OBItems.GLIDER_WING.get())
 				.group("openblocks:glider_wing")

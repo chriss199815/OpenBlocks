@@ -128,6 +128,23 @@ public class OBBlockStateProvider extends BlockStateProvider {
 
 		autoAnvil();
 
+		// like the legacy model: a 12 pixel high slab, the book is drawn by AutoEnchantmentTableRenderer
+		final BlockModelBuilder autoEnchantmentTable = models().withExistingParent("auto_enchantment_table", mcLoc("block/block"))
+				.texture("bottom", modLoc("block/auto_enchantment_table_bottom"))
+				.texture("top", modLoc("block/auto_enchantment_table_top"))
+				.texture("side", modLoc("block/auto_enchantment_table"))
+				.texture("particle", modLoc("block/auto_enchantment_table_top"))
+				.element().from(0, 0, 0).to(16, 12, 16)
+				.face(Direction.DOWN).uvs(0, 0, 16, 16).texture("#bottom").cullface(Direction.DOWN).end()
+				.face(Direction.UP).uvs(0, 0, 16, 16).texture("#top").end()
+				.face(Direction.NORTH).uvs(0, 4, 16, 16).texture("#side").cullface(Direction.NORTH).end()
+				.face(Direction.SOUTH).uvs(0, 4, 16, 16).texture("#side").cullface(Direction.SOUTH).end()
+				.face(Direction.WEST).uvs(0, 4, 16, 16).texture("#side").cullface(Direction.WEST).end()
+				.face(Direction.EAST).uvs(0, 4, 16, 16).texture("#side").cullface(Direction.EAST).end()
+				.end();
+		simpleBlock(OBBlocks.AUTO_ENCHANTMENT_TABLE.get(), autoEnchantmentTable);
+		simpleBlockItem(OBBlocks.AUTO_ENCHANTMENT_TABLE.get(), autoEnchantmentTable);
+
 		// flat icon like vanilla iron bars, the 1px block model is barely visible from the side
 		itemModels().withExistingParent("xp_drain", mcLoc("item/generated")).texture("layer0", modLoc("block/xp_drain"));
 	}

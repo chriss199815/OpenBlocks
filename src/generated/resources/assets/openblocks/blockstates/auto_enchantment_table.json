@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "openblocks:block/auto_enchantment_table"
+    }
+  }
+}

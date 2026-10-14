@@ -44,6 +44,9 @@ public class OBConfig {
 	public static class Sponge {
 		public final ModConfigSpec.IntValue range;
 		public final ModConfigSpec.BooleanValue blockUpdate;
+		public final ModConfigSpec.IntValue stickUseCount;
+		public final ModConfigSpec.IntValue stickRange;
+		public final ModConfigSpec.BooleanValue stickBlockUpdate;
 
 		private Sponge(ModConfigSpec.Builder builder) {
 			builder.push("sponge");
@@ -53,6 +56,16 @@ public class OBConfig {
 			blockUpdate = builder
 					.comment("Should sponge block update neighbours after liquid removal?")
 					.define("blockUpdate", false);
+			stickUseCount = builder
+					.comment("SpongeOnAStick use count (applied at game start)")
+					.defineInRange("spongeStickUseCount", 256, 1, Integer.MAX_VALUE);
+			// legacy registered this under the same name as spongeRange, so both always had the same value
+			stickRange = builder
+					.comment("SpongeOnAStick range (distance from center)")
+					.defineInRange("spongeStickRange", 3, 0, 16);
+			stickBlockUpdate = builder
+					.comment("Should sponge-on-a-stick update neighbours after liquid removal?")
+					.define("stickBlockUpdate", false);
 			builder.pop();
 		}
 	}

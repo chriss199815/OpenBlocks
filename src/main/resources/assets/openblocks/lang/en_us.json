@@ -184,7 +184,7 @@
   "block.openblocks.bear_trap.description": "Place a bear trap and click on it to open it up. When a mob walks over the trap they'll be unable to move!",
   "block.openblocks.sponge": "Sponge",
   "block.openblocks.sponge.description": "The sponge is a replacement for the vanilla sponge. Perfect for removing small pockets of lava or water. Be careful when using it on large areas of liquid though as it'll start to get quite messy.",
-  "item.openblocks.sponge_on_a_stick": "Sponge",
+  "item.openblocks.sponge_on_a_stick": "Sponge on a Stick",
   "item.openblocks.sponge_on_a_stick.description": "The sponge on a stick is a tool for cleaning up liquids. Works just like the sponge, but is more mobile at the expense of wearing out.",
   "item.openblocks.epic_eraser": "Epic Eraser",
   "item.openblocks.epic_eraser.description": "Every item has its own history...\n\nDon't you hate it?\nWith this item you can scrub all traces of epic lore your loot has collected over the years and then sell it on black market without worrying about evidence.",

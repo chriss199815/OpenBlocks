@@ -18,6 +18,7 @@ import openblocks.item.PaintCanItem;
 import openblocks.item.PedometerItem;
 import openblocks.item.SleepingBagItem;
 import openblocks.item.SlimalyzerItem;
+import openblocks.item.SpongeOnAStickItem;
 import openblocks.item.SqueegeeItem;
 import openblocks.item.StencilItem;
 import openblocks.item.TankBlockItem;
@@ -55,6 +56,10 @@ public class OBItems {
 	public static final DeferredItem<PedometerItem> PEDOMETER = ITEMS.register("pedometer", () -> new PedometerItem(new Item.Properties().stacksTo(1)));
 
 	public static final DeferredItem<SlimalyzerItem> SLIMALYZER = ITEMS.register("slimalyzer", () -> new SlimalyzerItem(new Item.Properties().stacksTo(1)));
+
+	// durability from the config, see SpongeOnAStickItem.setDurability
+	public static final DeferredItem<SpongeOnAStickItem> SPONGE_ON_A_STICK = ITEMS.register("sponge_on_a_stick",
+			() -> new SpongeOnAStickItem(new Item.Properties().durability(SpongeOnAStickItem.DEFAULT_DURABILITY)));
 
 	// legacy MetasGeneric
 	public static final DeferredItem<Item> UNPREPARED_STENCIL = ITEMS.registerSimpleItem("unprepared_stencil");

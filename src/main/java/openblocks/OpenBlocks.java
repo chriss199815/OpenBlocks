@@ -17,6 +17,7 @@ import openblocks.common.SleepingBagHandler;
 import openblocks.entity.NoFlyXpOrb;
 import openblocks.item.DevNullItem;
 import openblocks.item.LuggageItem;
+import openblocks.item.SpongeOnAStickItem;
 import openblocks.network.OBNetwork;
 import openblocks.registry.OBAttachments;
 import openblocks.registry.OBBlockEntities;
@@ -61,6 +62,7 @@ public class OpenBlocks {
 		modBus.addListener(OBEntities::registerAttributes);
 		modBus.addListener(OBDataGenerators::gatherData);
 		modBus.addListener(DonationInfo::onInterModProcess);
+		modBus.addListener(SpongeOnAStickItem::setDurability);
 
 		NeoForge.EVENT_BUS.addListener(NoFlyXpOrb::onTargeting);
 		// after other mods changed the drops

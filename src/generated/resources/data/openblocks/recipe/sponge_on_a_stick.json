@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "s": {
+      "item": "openblocks:sponge"
+    },
+    "w": {
+      "tag": "c:rods/wooden"
+    }
+  },
+  "pattern": [
+    "s",
+    "w",
+    "w"
+  ],
+  "result": {
+    "count": 1,
+    "id": "openblocks:sponge_on_a_stick"
+  }
+}

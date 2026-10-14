@@ -1,4 +1,4 @@
-// 1.21.1	2026-10-14T19:57:11.218739	Block States: openblocks
+// 1.21.1	2026-10-14T19:57:32.757666	Block States: openblocks
 909bae1340933de5e494ee6692d1d88aeabf4f33 assets/openblocks/blockstates/auto_anvil.json
 aca132b5918ec066ede0f817145d0ac0649c84a9 assets/openblocks/blockstates/auto_enchantment_table.json
 9be1c7ce94b3232fe19c46a8965abe89ae2d898a assets/openblocks/blockstates/bear_trap.json
@@ -305,6 +305,7 @@ ec2ddb9bb9dd0d3206db8ff271fe831f6dc9bea0 assets/openblocks/models/item/sketching
 661539d80619cf66bdd482bff51f3323363abdbf assets/openblocks/models/item/spiral_stencil.json
 8a5fa231e8458561f18dbd2536e014f0b962fbfb assets/openblocks/models/item/splat_stencil.json
 a110083407af5307aae4c5df8be59254dfad1f81 assets/openblocks/models/item/sponge.json
+3a0c9c91ecc8322f82e3c7a84bbcf715d6e77bd0 assets/openblocks/models/item/sponge_on_a_stick.json
 04099b9abc36b25d23e32a2eebce6d5f87473802 assets/openblocks/models/item/sprinkler.json
 97cdab4dbb14020e1936e017511c70b5234f2ffb assets/openblocks/models/item/squeegee.json
 232df2d19c582d4d9f4ab564c520999319d871c6 assets/openblocks/models/item/storage_stencil.json

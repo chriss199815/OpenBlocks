@@ -425,5 +425,14 @@ public class OBRecipeProvider extends RecipeProvider {
 				.define('r', Tags.Items.DUSTS_REDSTONE)
 				.unlockedBy("has_slime_ball", has(Tags.Items.SLIME_BALLS))
 				.save(output);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, OBItems.SPONGE_ON_A_STICK.get())
+				.pattern("s")
+				.pattern("w")
+				.pattern("w")
+				.define('s', OBBlocks.SPONGE.get())
+				.define('w', Tags.Items.RODS_WOODEN)
+				.unlockedBy("has_sponge", has(OBBlocks.SPONGE.get()))
+				.save(output);
 	}
 }

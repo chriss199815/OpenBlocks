@@ -1,13 +1,8 @@
 package openblocks.block.entity;
 
-import java.util.EnumMap;
 import java.util.EnumSet;
-import java.util.List;
-import java.util.Locale;
 import java.util.Map;
-import java.util.Set;
 import javax.annotation.Nullable;
-import net.minecraft.Util;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.core.HolderLookup;
@@ -28,23 +23,21 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
-import net.neoforged.neoforge.capabilities.Capabilities;
 import net.neoforged.neoforge.fluids.FluidStack;
-import net.neoforged.neoforge.fluids.FluidUtil;
 import net.neoforged.neoforge.fluids.capability.IFluidHandler;
 import net.neoforged.neoforge.fluids.capability.templates.FluidTank;
 import net.neoforged.neoforge.items.IItemHandler;
-import net.neoforged.neoforge.items.ItemHandlerHelper;
 import net.neoforged.neoforge.items.ItemStackHandler;
+import openblocks.common.AutoSlotConfig;
 import openblocks.common.FluidXpUtils;
+import openblocks.common.MachineTransfer;
+import openblocks.common.SidedItemHandler;
 import openblocks.menu.XpBottlerMenu;
 import openblocks.registry.OBBlockEntities;
 import openblocks.registry.OBSounds;
-import openblocks.util.SideBits;
 
 /**
  * Port of legacy {@code TileEntityXPBottler}: fills glass bottles with XP from its tank.
- * Each of its {@link AutoSlot}s has a set of sides it is accessible from and an "auto" flag that makes the bottler move things itself.
  */
 public class XpBottlerBlockEntity extends BlockEntity implements MenuProvider {
 
@@ -85,8 +78,8 @@ public class XpBottlerBlockEntity extends BlockEntity implements MenuProvider {
 		}
 	};
 
-	private final Map<AutoSlot, Set<Direction>> sides = new EnumMap<>(AutoSlot.class);
-	private final Set<AutoSlot> autoSlots = EnumSet.noneOf(AutoSlot.class);
+	// like legacy, auto drink is on by default
+	private final AutoSlotConfig<AutoSlot> config = new AutoSlotConfig<>(AutoSlot.class, EnumSet.of(AutoSlot.XP), this::onConfigChanged);
 
 	/**
 	 * Automation may only insert bottles from input sides and take XP bottles from output sides; index 6 is for the null side.
@@ -154,14 +147,11 @@ public class XpBottlerBlockEntity extends BlockEntity implements MenuProvider {
 
 	public XpBottlerBlockEntity(BlockPos pos, BlockState state) {
 		super(OBBlockEntities.XP_BOTTLER.get(), pos, state);
-		// unlike legacy (no access until configured), new bottlers are open on all sides and drink XP like vanilla machines
-		for (AutoSlot slot : AutoSlot.values())
-			sides.put(slot, EnumSet.allOf(Direction.class));
-		autoSlots.add(AutoSlot.XP);
-
+		final Map<Integer, AutoSlot> inputs = Map.of(SLOT_INPUT, AutoSlot.INPUT);
+		final Map<Integer, AutoSlot> outputs = Map.of(SLOT_OUTPUT, AutoSlot.OUTPUT);
 		for (Direction side : Direction.values())
-			itemHandlers[side.get3DDataValue()] = new AutomationHandler(side);
-		itemHandlers[6] = new AutomationHandler(null);
+			itemHandlers[side.get3DDataValue()] = new SidedItemHandler<>(inventory, config, inputs, outputs, side);
+		itemHandlers[6] = new SidedItemHandler<>(inventory, config, inputs, outputs, null);
 	}
 
 	public static int getTankCapacity() {
@@ -176,36 +166,24 @@ public class XpBottlerBlockEntity extends BlockEntity implements MenuProvider {
 		return tank.getFluid();
 	}
 
-	public Set<Direction> getSides(AutoSlot slot) {
-		return sides.get(slot);
-	}
-
-	public boolean isAuto(AutoSlot slot) {
-		return autoSlots.contains(slot);
+	public AutoSlotConfig<AutoSlot> getConfig() {
+		return config;
 	}
 
 	@Nullable
 	public IItemHandler getItemHandler(@Nullable Direction side) {
 		if (side == null) return itemHandlers[6];
-		return getSides(AutoSlot.INPUT).contains(side) || getSides(AutoSlot.OUTPUT).contains(side)? itemHandlers[side.get3DDataValue()] : null;
+		return config.isOpen(AutoSlot.INPUT, side) || config.isOpen(AutoSlot.OUTPUT, side)? itemHandlers[side.get3DDataValue()] : null;
 	}
 
 	@Nullable
 	public IFluidHandler getFluidHandler(@Nullable Direction side) {
-		return side == null || getSides(AutoSlot.XP).contains(side)? fluidHandler : null;
+		return side == null || config.isOpen(AutoSlot.XP, side)? fluidHandler : null;
 	}
 
-	public void toggleSide(AutoSlot slot, Direction side) {
-		final Set<Direction> slotSides = getSides(slot);
-		if (!slotSides.remove(side)) slotSides.add(side);
+	private void onConfigChanged() {
 		setChanged();
 		if (level != null) level.invalidateCapabilities(worldPosition);
-		sendUpdate();
-	}
-
-	public void toggleAuto(AutoSlot slot) {
-		if (!autoSlots.remove(slot)) autoSlots.add(slot);
-		setChanged();
 		sendUpdate();
 	}
 
@@ -214,9 +192,14 @@ public class XpBottlerBlockEntity extends BlockEntity implements MenuProvider {
 	}
 
 	public static void serverTick(Level level, BlockPos pos, BlockState state, XpBottlerBlockEntity bottler) {
-		if (bottler.isAuto(AutoSlot.XP)) bottler.pullFluid(level, pos);
-		if (bottler.isAuto(AutoSlot.OUTPUT)) bottler.pushOutput(level, pos);
-		if (bottler.isAuto(AutoSlot.INPUT)) bottler.pullInput(level, pos);
+		final AutoSlotConfig<AutoSlot> config = bottler.config;
+		if (config.isAuto(AutoSlot.XP) && bottler.tank.getSpace() > 0)
+			MachineTransfer.pullFluid(level, pos, config.getSides(AutoSlot.XP), bottler.tank, PULL_PER_TICK);
+		if (config.isAuto(AutoSlot.OUTPUT))
+			MachineTransfer.pushItem(level, pos, config.getSides(AutoSlot.OUTPUT), bottler.inventory, SLOT_OUTPUT);
+		// like legacy, only when the input slot is empty
+		if (config.isAuto(AutoSlot.INPUT) && bottler.inventory.getStackInSlot(SLOT_INPUT).isEmpty())
+			MachineTransfer.pullItem(level, pos, config.getSides(AutoSlot.INPUT), bottler.inventory, SLOT_INPUT);
 
 		if (!bottler.canWork()) {
 			bottler.progress = 0;
@@ -232,49 +215,6 @@ public class XpBottlerBlockEntity extends BlockEntity implements MenuProvider {
 		final ItemStack output = bottler.inventory.getStackInSlot(SLOT_OUTPUT);
 		bottler.inventory.setStackInSlot(SLOT_OUTPUT, output.isEmpty()? new ItemStack(Items.EXPERIENCE_BOTTLE) : output.copyWithCount(output.getCount() + 1));
 		level.playSound(null, pos, OBSounds.BOTTLER_SIGNAL.get(), SoundSource.BLOCKS, 0.5f, 0.8f);
-	}
-
-	private void pullFluid(Level level, BlockPos pos) {
-		if (tank.getSpace() <= 0) return;
-		for (Direction side : getSides(AutoSlot.XP)) {
-			final IFluidHandler source = level.getCapability(Capabilities.FluidHandler.BLOCK, pos.relative(side), side.getOpposite());
-			if (source != null && !FluidUtil.tryFluidTransfer(tank, source, PULL_PER_TICK, true).isEmpty()) return;
-		}
-	}
-
-	/**
-	 * Like legacy: one XP bottle per tick into the first output side (in random order) that takes it.
-	 */
-	private void pushOutput(Level level, BlockPos pos) {
-		final ItemStack output = inventory.extractItem(SLOT_OUTPUT, 1, true);
-		if (output.isEmpty()) return;
-		for (Direction side : shuffledSides(level, AutoSlot.OUTPUT)) {
-			final IItemHandler target = level.getCapability(Capabilities.ItemHandler.BLOCK, pos.relative(side), side.getOpposite());
-			if (target != null && ItemHandlerHelper.insertItem(target, output, false).isEmpty()) {
-				inventory.extractItem(SLOT_OUTPUT, 1, false);
-				return;
-			}
-		}
-	}
-
-	/**
-	 * Like legacy: one glass bottle, only when the input slot is empty, from the first input side (in random order) that has one.
-	 */
-	private void pullInput(Level level, BlockPos pos) {
-		if (!inventory.getStackInSlot(SLOT_INPUT).isEmpty()) return;
-		for (Direction side : shuffledSides(level, AutoSlot.INPUT)) {
-			final IItemHandler source = level.getCapability(Capabilities.ItemHandler.BLOCK, pos.relative(side), side.getOpposite());
-			if (source == null) continue;
-			for (int slot = 0; slot < source.getSlots(); slot++) {
-				if (!source.extractItem(slot, 1, true).is(Items.GLASS_BOTTLE)) continue;
-				inventory.insertItem(SLOT_INPUT, source.extractItem(slot, 1, false), false);
-				return;
-			}
-		}
-	}
-
-	private List<Direction> shuffledSides(Level level, AutoSlot slot) {
-		return Util.shuffledCopy(getSides(slot).toArray(Direction[]::new), level.random);
 	}
 
 	private boolean canWork() {
@@ -302,14 +242,7 @@ public class XpBottlerBlockEntity extends BlockEntity implements MenuProvider {
 		// update packets don't carry the inventory; the open menu uses it on the client, so it must not be cleared
 		if (tag.contains("inventory")) inventory.deserializeNBT(registries, tag.getCompound("inventory"));
 		progress = tag.getInt("progress");
-		for (AutoSlot slot : AutoSlot.values()) {
-			final String key = slot.name().toLowerCase(Locale.ROOT);
-			if (tag.contains(key + "_sides")) SideBits.read(getSides(slot), tag.getByte(key + "_sides"));
-			if (tag.contains(key + "_auto")) {
-				if (tag.getBoolean(key + "_auto")) autoSlots.add(slot);
-				else autoSlots.remove(slot);
-			}
-		}
+		config.load(tag);
 	}
 
 	@Override
@@ -322,11 +255,7 @@ public class XpBottlerBlockEntity extends BlockEntity implements MenuProvider {
 
 	private void writeUpdateData(CompoundTag tag, HolderLookup.Provider registries) {
 		tag.put("tank", tank.writeToNBT(registries, new CompoundTag()));
-		for (AutoSlot slot : AutoSlot.values()) {
-			final String key = slot.name().toLowerCase(Locale.ROOT);
-			tag.putByte(key + "_sides", SideBits.write(getSides(slot)));
-			tag.putBoolean(key + "_auto", isAuto(slot));
-		}
+		config.save(tag);
 	}
 
 	@Override
@@ -340,49 +269,5 @@ public class XpBottlerBlockEntity extends BlockEntity implements MenuProvider {
 	@Override
 	public Packet<ClientGamePacketListener> getUpdatePacket() {
 		return ClientboundBlockEntityDataPacket.create(this);
-	}
-
-	private class AutomationHandler implements IItemHandler {
-
-		@Nullable
-		private final Direction side;
-
-		private AutomationHandler(@Nullable Direction side) {
-			this.side = side;
-		}
-
-		private boolean isOpen(AutoSlot slot) {
-			return side == null || getSides(slot).contains(side);
-		}
-
-		@Override
-		public int getSlots() {
-			return inventory.getSlots();
-		}
-
-		@Override
-		public ItemStack getStackInSlot(int slot) {
-			return inventory.getStackInSlot(slot);
-		}
-
-		@Override
-		public ItemStack insertItem(int slot, ItemStack stack, boolean simulate) {
-			return slot == SLOT_INPUT && isOpen(AutoSlot.INPUT)? inventory.insertItem(slot, stack, simulate) : stack;
-		}
-
-		@Override
-		public ItemStack extractItem(int slot, int amount, boolean simulate) {
-			return slot == SLOT_OUTPUT && isOpen(AutoSlot.OUTPUT)? inventory.extractItem(slot, amount, simulate) : ItemStack.EMPTY;
-		}
-
-		@Override
-		public int getSlotLimit(int slot) {
-			return inventory.getSlotLimit(slot);
-		}
-
-		@Override
-		public boolean isItemValid(int slot, ItemStack stack) {
-			return slot == SLOT_INPUT && isOpen(AutoSlot.INPUT) && inventory.isItemValid(slot, stack);
-		}
 	}
 }

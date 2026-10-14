@@ -11,6 +11,7 @@ import net.minecraft.client.renderer.Rect2i;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.ItemStack;
 import openblocks.OpenBlocks;
+import openblocks.client.gui.AutoAnvilScreen;
 import openblocks.client.gui.VacuumHopperScreen;
 import openblocks.client.gui.XpBottlerScreen;
 
@@ -33,6 +34,12 @@ public class OpenBlocksJeiPlugin implements IModPlugin {
 		registration.addGuiContainerHandler(VacuumHopperScreen.class, new IGuiContainerHandler<>() {
 			@Override
 			public List<Rect2i> getGuiExtraAreas(VacuumHopperScreen screen) {
+				return screen.getExtraAreas();
+			}
+		});
+		registration.addGuiContainerHandler(AutoAnvilScreen.class, new IGuiContainerHandler<>() {
+			@Override
+			public List<Rect2i> getGuiExtraAreas(AutoAnvilScreen screen) {
 				return screen.getExtraAreas();
 			}
 		});

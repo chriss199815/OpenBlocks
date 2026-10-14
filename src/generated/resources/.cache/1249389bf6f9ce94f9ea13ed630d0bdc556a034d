@@ -1,4 +1,5 @@
-// 1.21.1	2026-10-14T09:36:56.994097	Block States: openblocks
+// 1.21.1	2026-10-14T09:52:50.902004	Block States: openblocks
+909bae1340933de5e494ee6692d1d88aeabf4f33 assets/openblocks/blockstates/auto_anvil.json
 c45d5d2e71c34dc43588a6063c8f1025e64a8816 assets/openblocks/blockstates/black_elevator.json
 d13702d1e489422f027636fd4f3a4f64b33332e9 assets/openblocks/blockstates/black_elevator_rotating.json
 45581d192cd459c4e15278fb4f0c6e4959569911 assets/openblocks/blockstates/block_breaker.json
@@ -41,6 +42,7 @@ d13702d1e489422f027636fd4f3a4f64b33332e9 assets/openblocks/blockstates/white_ele
 b87e1b2d73c9aeefc84b60b8f06c7529d1de2215 assets/openblocks/blockstates/xp_shower.json
 c45d5d2e71c34dc43588a6063c8f1025e64a8816 assets/openblocks/blockstates/yellow_elevator.json
 d13702d1e489422f027636fd4f3a4f64b33332e9 assets/openblocks/blockstates/yellow_elevator_rotating.json
+c06129c1e72510373a96258c5633a7abb0ff8a9a assets/openblocks/models/block/auto_anvil.json
 046ad3454fb84c89cbba9376ebc51de1ffee114c assets/openblocks/models/block/block_breaker.json
 17ac3725dc3dd85d746255bbfbf73c70bd467692 assets/openblocks/models/block/block_breaker_active.json
 2a16c00b888ee851a06772cbd2e206663a7b49e1 assets/openblocks/models/block/block_placer.json
@@ -92,6 +94,7 @@ f536767e84b68041c0ddd41796f6835d8c809159 assets/openblocks/models/block/vacuum_h
 ef720a5c055c15af9c5a978d521be9b1bec3e19e assets/openblocks/models/block/xp_drain.json
 eedf4d0bee41aa34e8093f792bf9e2551c8fc4ef assets/openblocks/models/block/xp_juice.json
 2b6447cbc485c3aedfc83801d9ec9b0e82914900 assets/openblocks/models/block/xp_shower.json
+c9e93d3d060e044edf98a858d66c32d835313b63 assets/openblocks/models/item/auto_anvil.json
 d2b8f805473f5db4bc4402f5b4f1864704363649 assets/openblocks/models/item/black_elevator.json
 dd180aef5747a9afe34022df0f8fd345d081cd6c assets/openblocks/models/item/black_elevator_rotating.json
 1d3bd5d2ba3d076f3900a60d6a80cb0d3323ffa6 assets/openblocks/models/item/block_breaker.json

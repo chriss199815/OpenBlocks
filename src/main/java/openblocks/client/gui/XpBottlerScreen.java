@@ -11,6 +11,7 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import openblocks.OpenBlocks;
 import openblocks.block.entity.XpBottlerBlockEntity;
+import openblocks.common.AutoSlotConfig;
 import openblocks.menu.XpBottlerMenu;
 
 /**
@@ -47,10 +48,11 @@ public class XpBottlerScreen extends AbstractContainerScreen<XpBottlerMenu> {
 
 	private SideConfigTabs.Tab slotTab(XpBottlerBlockEntity.AutoSlot slot, int color, ItemStack icon, String label) {
 		final XpBottlerBlockEntity bottler = menu.getBottler();
-		final SideSelectorWidget selector = new SideSelectorWidget(15, 22, 40, bottler, () -> bottler.getSides(slot), true,
-				side -> clickButton(XpBottlerMenu.toggleSideButtonId(slot, side)));
+		final AutoSlotConfig<XpBottlerBlockEntity.AutoSlot> config = bottler.getConfig();
+		final SideSelectorWidget selector = new SideSelectorWidget(15, 22, 40, bottler, () -> config.getSides(slot), true,
+				side -> clickButton(config.toggleSideButtonId(slot, side)));
 		return new SideConfigTabs.Tab(color, icon, Component.translatable(label), selector)
-				.withCheckbox(() -> bottler.isAuto(slot), () -> clickButton(XpBottlerMenu.toggleAutoButtonId(slot)));
+				.withCheckbox(() -> config.isAuto(slot), () -> clickButton(config.toggleAutoButtonId(slot)));
 	}
 
 	private void clickButton(int id) {

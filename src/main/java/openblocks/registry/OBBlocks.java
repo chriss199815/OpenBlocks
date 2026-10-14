@@ -15,6 +15,7 @@ import net.minecraft.world.level.material.MapColor;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import openblocks.OpenBlocks;
+import openblocks.block.AutoAnvilBlock;
 import openblocks.block.BlockBreakerBlock;
 import openblocks.block.BlockPlacerBlock;
 import openblocks.block.ElevatorBlock;
@@ -91,6 +92,13 @@ public class OBBlocks {
 
 	public static final DeferredBlock<BlockBreakerBlock> BLOCK_BREAKER = registerWithItem("block_breaker", () -> new BlockBreakerBlock(machineProperties()));
 	public static final DeferredBlock<BlockPlacerBlock> BLOCK_PLACER = registerWithItem("block_placer", () -> new BlockPlacerBlock(machineProperties()));
+
+	public static final DeferredBlock<AutoAnvilBlock> AUTO_ANVIL = registerWithItem("auto_anvil", () -> new AutoAnvilBlock(BlockBehaviour.Properties.of()
+			.mapColor(MapColor.METAL)
+			.strength(5.0f, 1200.0f)
+			.requiresCorrectToolForDrops()
+			.noOcclusion()
+			.sound(SoundType.ANVIL)));
 
 	private static BlockBehaviour.Properties machineProperties() {
 		return BlockBehaviour.Properties.of()

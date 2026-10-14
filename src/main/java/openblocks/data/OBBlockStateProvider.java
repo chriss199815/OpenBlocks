@@ -126,6 +126,8 @@ public class OBBlockStateProvider extends BlockStateProvider {
 		directionalBlock(OBBlocks.BLOCK_PLACER.get(), placer);
 		simpleBlockItem(OBBlocks.BLOCK_PLACER.get(), placer);
 
+		autoAnvil();
+
 		// flat icon like vanilla iron bars, the 1px block model is barely visible from the side
 		itemModels().withExistingParent("xp_drain", mcLoc("item/generated")).texture("layer0", modLoc("block/xp_drain"));
 	}
@@ -182,6 +184,55 @@ public class OBBlockStateProvider extends BlockStateProvider {
 				.rotationY(((int)state.getValue(GraveBlock.FACING).toYRot() + 180) % 360)
 				.build());
 		simpleBlockItem(OBBlocks.GRAVE.get(), ground);
+	}
+
+	/**
+	 * Elements of the legacy auto_anvil model, top along the z axis; rotated so the long side faces the player, like the vanilla anvil.
+	 */
+	private void autoAnvil() {
+		final BlockModelBuilder model = models().withExistingParent("auto_anvil", mcLoc("block/block"))
+				.texture("long_side", modLoc("block/auto_anvil_long_side"))
+				.texture("short_side", modLoc("block/auto_anvil_short_side"))
+				.texture("bottom", modLoc("block/auto_anvil_bottom"))
+				.texture("top", modLoc("block/auto_anvil_top"))
+				.texture("top_under", modLoc("block/auto_anvil_up"))
+				.texture("base_top", modLoc("block/auto_anvil_down"))
+				.texture("particle", modLoc("block/auto_anvil_long_side"))
+				// base
+				.element().from(2, 0, 2).to(14, 4, 14)
+				.face(Direction.NORTH).uvs(2, 12, 14, 16).texture("#short_side").end()
+				.face(Direction.EAST).uvs(2, 12, 14, 16).texture("#long_side").end()
+				.face(Direction.SOUTH).uvs(2, 12, 14, 16).texture("#short_side").end()
+				.face(Direction.WEST).uvs(2, 12, 14, 16).texture("#long_side").end()
+				.face(Direction.UP).uvs(2, 2, 14, 14).texture("#base_top").end()
+				.face(Direction.DOWN).uvs(2, 2, 14, 14).texture("#bottom").cullface(Direction.DOWN).end()
+				.end()
+				// lower narrow part
+				.element().from(4, 4, 3).to(12, 5, 13)
+				.face(Direction.NORTH).uvs(4, 11, 12, 12).texture("#short_side").end()
+				.face(Direction.EAST).uvs(3, 11, 13, 12).texture("#long_side").end()
+				.face(Direction.SOUTH).uvs(4, 11, 12, 12).texture("#short_side").end()
+				.face(Direction.WEST).uvs(3, 11, 13, 12).texture("#long_side").end()
+				.face(Direction.UP).uvs(4, 3, 12, 13).texture("#base_top").end()
+				.end()
+				// waist
+				.element().from(6, 5, 4).to(10, 10, 12)
+				.face(Direction.NORTH).uvs(6, 6, 10, 11).texture("#short_side").end()
+				.face(Direction.EAST).uvs(4, 6, 12, 11).texture("#long_side").end()
+				.face(Direction.SOUTH).uvs(6, 6, 10, 11).texture("#short_side").end()
+				.face(Direction.WEST).uvs(4, 6, 12, 11).texture("#long_side").end()
+				.end()
+				// top
+				.element().from(3, 10, 0).to(13, 16, 16)
+				.face(Direction.NORTH).uvs(3, 0, 13, 6).texture("#short_side").end()
+				.face(Direction.EAST).uvs(0, 0, 16, 6).texture("#long_side").end()
+				.face(Direction.SOUTH).uvs(3, 0, 13, 6).texture("#short_side").end()
+				.face(Direction.WEST).uvs(0, 0, 16, 6).texture("#long_side").end()
+				.face(Direction.UP).uvs(3, 0, 13, 16).texture("#top").end()
+				.face(Direction.DOWN).uvs(3, 0, 13, 16).texture("#top_under").end()
+				.end();
+		horizontalBlock(OBBlocks.AUTO_ANVIL.get(), model, 90);
+		simpleBlockItem(OBBlocks.AUTO_ANVIL.get(), model);
 	}
 
 	/**

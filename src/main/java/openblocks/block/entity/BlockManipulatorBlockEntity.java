@@ -1,7 +1,5 @@
 package openblocks.block.entity;
 
-import com.mojang.authlib.GameProfile;
-import java.util.UUID;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.server.level.ServerLevel;
@@ -12,8 +10,8 @@ import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockState;
 import net.neoforged.neoforge.common.util.FakePlayer;
-import net.neoforged.neoforge.common.util.FakePlayerFactory;
 import openblocks.block.BlockManipulatorBlock;
+import openblocks.common.OBFakePlayer;
 
 /**
  * Port of legacy {@code TileEntityBlockManipulator}. On a redstone signal it schedules a block event, which does the work at the end of the tick,
@@ -23,8 +21,6 @@ import openblocks.block.BlockManipulatorBlock;
 public abstract class BlockManipulatorBlockEntity extends BlockEntity {
 
 	public static final int EVENT_ACTIVATE = 3;
-
-	private static final GameProfile FAKE_PLAYER_PROFILE = new GameProfile(UUID.fromString("2c2d0e5e-1a0b-4c9b-9a47-0b1f5e3b7a10"), "[OpenBlocks]");
 
 	private int cooldown;
 
@@ -39,7 +35,7 @@ public abstract class BlockManipulatorBlockEntity extends BlockEntity {
 	protected abstract void doWork(BlockState targetState, BlockPos target, Direction direction);
 
 	protected static FakePlayer getFakePlayer(ServerLevel level) {
-		return FakePlayerFactory.get(level, FAKE_PLAYER_PROFILE);
+		return OBFakePlayer.get(level);
 	}
 
 	protected Direction getFacing() {

@@ -1,6 +1,5 @@
 package openblocks.menu;
 
-import net.minecraft.core.Direction;
 import net.minecraft.network.RegistryFriendlyByteBuf;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
@@ -47,24 +46,9 @@ public class XpBottlerMenu extends MachineMenu {
 		return data.get(0);
 	}
 
-	/**
-	 * Button id for toggling a side through the vanilla container button packet; replaces the legacy RPC.
-	 */
-	public static int toggleSideButtonId(XpBottlerBlockEntity.AutoSlot slot, Direction side) {
-		return slot.ordinal() * 6 + side.get3DDataValue();
-	}
-
-	public static int toggleAutoButtonId(XpBottlerBlockEntity.AutoSlot slot) {
-		return XpBottlerBlockEntity.AutoSlot.values().length * 6 + slot.ordinal();
-	}
-
 	@Override
 	public boolean clickMenuButton(Player player, int id) {
-		final XpBottlerBlockEntity.AutoSlot[] slots = XpBottlerBlockEntity.AutoSlot.values();
-		if (id < 0 || id >= slots.length * 7) return false;
-		if (id < slots.length * 6) bottler.toggleSide(slots[id / 6], Direction.from3DDataValue(id % 6));
-		else bottler.toggleAuto(slots[id - slots.length * 6]);
-		return true;
+		return bottler.getConfig().handleButton(id);
 	}
 
 	@Override

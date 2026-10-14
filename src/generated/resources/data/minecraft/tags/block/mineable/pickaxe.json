@@ -39,6 +39,7 @@
     "openblocks:vacuum_hopper",
     "openblocks:item_dropper",
     "openblocks:block_breaker",
-    "openblocks:block_placer"
+    "openblocks:block_placer",
+    "openblocks:auto_anvil"
   ]
 }

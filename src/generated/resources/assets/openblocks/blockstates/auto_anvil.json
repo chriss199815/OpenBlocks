@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "openblocks:block/auto_anvil"
+    },
+    "facing=north": {
+      "model": "openblocks:block/auto_anvil",
+      "y": 270
+    },
+    "facing=south": {
+      "model": "openblocks:block/auto_anvil",
+      "y": 90
+    },
+    "facing=west": {
+      "model": "openblocks:block/auto_anvil",
+      "y": 180
+    }
+  }
+}

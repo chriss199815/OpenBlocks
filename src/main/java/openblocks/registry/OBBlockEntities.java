@@ -5,6 +5,7 @@ import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import openblocks.OpenBlocks;
+import openblocks.block.entity.AutoAnvilBlockEntity;
 import openblocks.block.entity.BlockBreakerBlockEntity;
 import openblocks.block.entity.BlockPlacerBlockEntity;
 import openblocks.block.entity.GraveBlockEntity;
@@ -54,4 +55,8 @@ public class OBBlockEntities {
 	@SuppressWarnings("DataFlowIssue")
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<BlockPlacerBlockEntity>> BLOCK_PLACER = BLOCK_ENTITIES.register("block_placer",
 			() -> BlockEntityType.Builder.of(BlockPlacerBlockEntity::new, OBBlocks.BLOCK_PLACER.get()).build(null));
+
+	@SuppressWarnings("DataFlowIssue")
+	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<AutoAnvilBlockEntity>> AUTO_ANVIL = BLOCK_ENTITIES.register("auto_anvil",
+			() -> BlockEntityType.Builder.of(AutoAnvilBlockEntity::new, OBBlocks.AUTO_ANVIL.get()).build(null));
 }

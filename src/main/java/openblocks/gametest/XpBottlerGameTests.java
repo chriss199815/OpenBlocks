@@ -104,8 +104,8 @@ public class XpBottlerGameTests {
 		final XpBottlerBlockEntity bottler = helper.getBlockEntity(BOTTLER);
 		onlySide(bottler, XpBottlerBlockEntity.AutoSlot.INPUT, Direction.WEST);
 		onlySide(bottler, XpBottlerBlockEntity.AutoSlot.OUTPUT, Direction.EAST);
-		bottler.toggleAuto(XpBottlerBlockEntity.AutoSlot.INPUT);
-		bottler.toggleAuto(XpBottlerBlockEntity.AutoSlot.OUTPUT);
+		bottler.getConfig().toggleAuto(XpBottlerBlockEntity.AutoSlot.INPUT);
+		bottler.getConfig().toggleAuto(XpBottlerBlockEntity.AutoSlot.OUTPUT);
 
 		helper.succeedWhen(() -> {
 			// not assertContainerContains, which expects exactly one item
@@ -119,6 +119,6 @@ public class XpBottlerGameTests {
 
 	private static void onlySide(XpBottlerBlockEntity bottler, XpBottlerBlockEntity.AutoSlot slot, Direction keep) {
 		for (Direction side : Direction.values())
-			if (side != keep) bottler.toggleSide(slot, side);
+			if (side != keep) bottler.getConfig().toggleSide(slot, side);
 	}
 }

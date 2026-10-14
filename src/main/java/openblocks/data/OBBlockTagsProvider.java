@@ -28,6 +28,7 @@ public class OBBlockTagsProvider extends BlockTagsProvider {
 		pickaxe.add(OBBlocks.ITEM_DROPPER.get());
 		pickaxe.add(OBBlocks.BLOCK_BREAKER.get());
 		pickaxe.add(OBBlocks.BLOCK_PLACER.get());
+		pickaxe.add(OBBlocks.AUTO_ANVIL.get());
 
 		tag(BlockTags.MINEABLE_WITH_SHOVEL).add(OBBlocks.GRAVE.get());
 		// replaces legacy canEntityDestroy

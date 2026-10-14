@@ -1,4 +1,4 @@
-// 1.21.1	2026-10-14T22:04:13.62702	Recipes
+// 1.21.1	2026-10-14T22:17:17.929415	Recipes
 f37f622f6aa43ff8c3b05fe0ccd813d9be730420 data/openblocks/advancement/recipes/building_blocks/canvas.json
 4da75c2ec825111de4abddbd9d4caefbb2b578ce data/openblocks/advancement/recipes/building_blocks/scaffolding.json
 930782d897e53db76e7b954eb746d395706bf1bd data/openblocks/advancement/recipes/building_blocks/sky.json
@@ -60,6 +60,7 @@ cb17206668799abdf63be661df9bb38c4f0eb645 data/openblocks/advancement/recipes/red
 f15d155564efdd7b90149180048e39ebb3dc916b data/openblocks/advancement/recipes/redstone/target.json
 60df6432d9b6aacaf9c081cc61c0ac54947808c0 data/openblocks/advancement/recipes/tools/cursor.json
 e37963641de2db174e53a0e2d5238530674c4dba data/openblocks/advancement/recipes/tools/dev_null.json
+10099848fe3e3ce083181d5e4ee803c686752984 data/openblocks/advancement/recipes/tools/golden_eye.json
 da1316e1e210d2aa7fbbf2d625f48257472f7eb7 data/openblocks/advancement/recipes/tools/paintbrush.json
 e6d0b5f50673c6a9cb4cd76f8981da6261fa4807 data/openblocks/advancement/recipes/tools/paintbrush_black.json
 4115bd63049c7d64b2ed6414298e05ac1ef11941 data/openblocks/advancement/recipes/tools/paintbrush_blue.json
@@ -151,6 +152,8 @@ cd8f111bebd14ea9b7c31f57a91defba81737180 data/openblocks/recipe/donation_station
 d137edeb8d0e951a2c9d325fcda583959f10fd1f data/openblocks/recipe/glider_wing_left.json
 c7a651711c5f2f893019881628eea763d68db28e data/openblocks/recipe/glider_wing_right.json
 c7f13236c1b78ae867a23332ea928ffcb286a575 data/openblocks/recipe/golden_egg.json
+68858e0e7cf7d4b0abbbfdbd7186f8f941e9fcb5 data/openblocks/recipe/golden_eye.json
+c44a4a39c9c1940fb8acf3b8d1c1fa9da2ffa416 data/openblocks/recipe/golden_eye_recharge.json
 4cf56d7344761ca3d51b0646d264e584485e85af data/openblocks/recipe/gray_elevator.json
 6e6380d16edf4aed135a15dfe24fccda40d9945b data/openblocks/recipe/gray_elevator_rotating.json
 e7ab1b8bad826eedc88da370aa20685c5f1a9229 data/openblocks/recipe/gray_flag.json

@@ -12,6 +12,7 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 import openblocks.OpenBlocks;
 import openblocks.common.TrophyType;
 import openblocks.item.CursorTarget;
+import openblocks.item.GoldenEyeTarget;
 import openblocks.item.Paint;
 
 public class OBComponents {
@@ -59,4 +60,10 @@ public class OBComponents {
 	 */
 	public static final DeferredHolder<DataComponentType<?>, DataComponentType<Integer>> TROPHY_COOLDOWN = COMPONENTS.registerComponentType("trophy_cooldown",
 			builder -> builder.persistent(ExtraCodecs.NON_NEGATIVE_INT).networkSynchronized(ByteBufCodecs.VAR_INT));
+
+	/**
+	 * Structure a golden eye is locked on; replaces the legacy {@code Structure}/coordinate tags.
+	 */
+	public static final DeferredHolder<DataComponentType<?>, DataComponentType<GoldenEyeTarget>> GOLDEN_EYE_TARGET = COMPONENTS.registerComponentType("golden_eye_target",
+			builder -> builder.persistent(GoldenEyeTarget.CODEC).networkSynchronized(GoldenEyeTarget.STREAM_CODEC));
 }

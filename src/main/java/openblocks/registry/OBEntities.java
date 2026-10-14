@@ -12,6 +12,7 @@ import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.neoforged.neoforge.registries.NeoForgeRegistries;
 import openblocks.OpenBlocks;
+import openblocks.entity.GoldenEye;
 import openblocks.entity.Luggage;
 import openblocks.entity.MiniMe;
 import openblocks.entity.NoFlyXpOrb;
@@ -36,6 +37,13 @@ public class OBEntities {
 			() -> EntityType.Builder.of(MiniMe::new, MobCategory.MISC)
 					.sized(0.6f, 0.95f)
 					.build("mini_me"));
+
+	public static final DeferredHolder<EntityType<?>, EntityType<GoldenEye>> GOLDEN_EYE = ENTITIES.register("golden_eye",
+			() -> EntityType.Builder.<GoldenEye>of(GoldenEye::new, MobCategory.MISC)
+					.sized(0.25f, 0.25f)
+					.clientTrackingRange(4)
+					.updateInterval(4)
+					.build("golden_eye"));
 
 	public static final DeferredRegister<EntityDataSerializer<?>> DATA_SERIALIZERS = DeferredRegister.create(NeoForgeRegistries.Keys.ENTITY_DATA_SERIALIZERS, OpenBlocks.MODID);
 

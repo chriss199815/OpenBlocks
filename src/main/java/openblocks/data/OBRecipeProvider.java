@@ -9,6 +9,7 @@ import net.minecraft.data.recipes.RecipeOutput;
 import net.minecraft.data.recipes.RecipeProvider;
 import net.minecraft.data.recipes.ShapedRecipeBuilder;
 import net.minecraft.data.recipes.ShapelessRecipeBuilder;
+import net.minecraft.data.recipes.SpecialRecipeBuilder;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.DyeColor;
@@ -16,7 +17,9 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.neoforged.neoforge.common.Tags;
 import openblocks.OpenBlocks;
+import openblocks.item.GoldenEyeItem;
 import openblocks.item.PaintBrushItem;
+import openblocks.recipe.GoldenEyeRechargeRecipe;
 import openblocks.registry.OBBlocks;
 import openblocks.registry.OBItems;
 
@@ -474,6 +477,17 @@ public class OBRecipeProvider extends RecipeProvider {
 				.define('e', Tags.Items.EGGS)
 				.unlockedBy("has_egg", has(Tags.Items.EGGS))
 				.save(output);
+
+		// starts empty, like legacy; ender pearls charge it
+		ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, GoldenEyeItem.createEmpty(OBItems.GOLDEN_EYE.get()))
+				.pattern("ggg")
+				.pattern("geg")
+				.pattern("ggg")
+				.define('g', Tags.Items.NUGGETS_GOLD)
+				.define('e', Items.ENDER_EYE)
+				.unlockedBy("has_ender_eye", has(Items.ENDER_EYE))
+				.save(output);
+		SpecialRecipeBuilder.special(GoldenEyeRechargeRecipe::new).save(output, OpenBlocks.location("golden_eye_recharge"));
 
 		genericItems(output);
 	}

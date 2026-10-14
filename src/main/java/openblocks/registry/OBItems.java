@@ -12,6 +12,7 @@ import openblocks.OpenBlocks;
 import openblocks.common.StencilPattern;
 import openblocks.item.CursorItem;
 import openblocks.item.DevNullItem;
+import openblocks.item.GoldenEyeItem;
 import openblocks.item.HangGliderItem;
 import openblocks.item.LuggageItem;
 import openblocks.item.PaintBrushItem;
@@ -48,6 +49,8 @@ public class OBItems {
 	public static final DeferredItem<LuggageItem> LUGGAGE = ITEMS.register("luggage", () -> new LuggageItem(new Item.Properties().stacksTo(1)));
 
 	public static final DeferredItem<DevNullItem> DEV_NULL = ITEMS.register("dev_null", () -> new DevNullItem(new Item.Properties().stacksTo(1)));
+
+	public static final DeferredItem<GoldenEyeItem> GOLDEN_EYE = ITEMS.register("golden_eye", () -> new GoldenEyeItem(new Item.Properties().durability(GoldenEyeItem.MAX_DAMAGE)));
 
 	public static final DeferredItem<CursorItem> CURSOR = ITEMS.register("cursor", () -> new CursorItem(new Item.Properties().durability(CursorItem.DURABILITY)));
 

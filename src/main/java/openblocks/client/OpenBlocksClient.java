@@ -10,6 +10,7 @@ import net.neoforged.neoforge.client.event.ModelEvent;
 import net.neoforged.neoforge.common.NeoForge;
 import openblocks.OpenBlocks;
 import net.minecraft.client.renderer.entity.ExperienceOrbRenderer;
+import net.minecraft.client.renderer.entity.ThrownItemRenderer;
 import net.neoforged.neoforge.client.event.RegisterMenuScreensEvent;
 import openblocks.client.canvas.CanvasModel;
 import openblocks.client.canvas.CanvasRenderer;
@@ -114,5 +115,7 @@ public class OpenBlocksClient {
 		event.registerEntityRenderer(OBEntities.NO_FLY_XP_ORB.get(), ExperienceOrbRenderer::new);
 		event.registerEntityRenderer(OBEntities.LUGGAGE.get(), LuggageRenderer::new);
 		event.registerEntityRenderer(OBEntities.MINI_ME.get(), MiniMeRenderer::new);
+		// like legacy, drawn like a snowball
+		event.registerEntityRenderer(OBEntities.GOLDEN_EYE.get(), ThrownItemRenderer::new);
 	}
 }

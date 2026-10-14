@@ -1,0 +1,15 @@
+{
+  "values": [
+    "minecraft:stronghold",
+    "minecraft:mansion",
+    "minecraft:monument",
+    "minecraft:desert_pyramid",
+    "minecraft:jungle_pyramid",
+    "minecraft:swamp_hut",
+    "minecraft:igloo",
+    "minecraft:fortress",
+    "minecraft:end_city",
+    "#minecraft:village",
+    "#minecraft:mineshaft"
+  ]
+}

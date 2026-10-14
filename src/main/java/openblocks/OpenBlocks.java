@@ -32,6 +32,7 @@ import openblocks.registry.OBGameRules;
 import openblocks.registry.OBItems;
 import openblocks.registry.OBMenus;
 import openblocks.registry.OBParticleTypes;
+import openblocks.registry.OBRecipeSerializers;
 import openblocks.registry.OBSounds;
 import openblocks.registry.OBTriggers;
 import org.slf4j.Logger;
@@ -58,6 +59,7 @@ public class OpenBlocks {
 		OBCreativeTabs.TABS.register(modBus);
 		OBSounds.SOUNDS.register(modBus);
 		OBTriggers.TRIGGERS.register(modBus);
+		OBRecipeSerializers.RECIPE_SERIALIZERS.register(modBus);
 
 		modBus.addListener(OBNetwork::register);
 		modBus.addListener(OBCapabilities::register);

@@ -28,6 +28,7 @@ public class OBDataGenerators {
 		generator.addProvider(event.includeServer(), new OBAdvancementProvider(output, lookupProvider));
 		generator.addProvider(event.includeServer(), new OBBlockTagsProvider(output, lookupProvider, existingFileHelper));
 		generator.addProvider(event.includeServer(), new OBFluidTagsProvider(output, lookupProvider, existingFileHelper));
+		generator.addProvider(event.includeServer(), new OBStructureTagsProvider(output, lookupProvider, existingFileHelper));
 		generator.addProvider(event.includeServer(), new OBDataMapProvider(output, lookupProvider));
 		generator.addProvider(event.includeServer(), new OBGameTestStructureProvider(output));
 	}

@@ -1,4 +1,4 @@
-// 1.21.1	2026-10-14T21:49:26.485963	Block States: openblocks
+// 1.21.1	2026-10-14T22:04:13.624652	Block States: openblocks
 909bae1340933de5e494ee6692d1d88aeabf4f33 assets/openblocks/blockstates/auto_anvil.json
 aca132b5918ec066ede0f817145d0ac0649c84a9 assets/openblocks/blockstates/auto_enchantment_table.json
 9be1c7ce94b3232fe19c46a8965abe89ae2d898a assets/openblocks/blockstates/bear_trap.json
@@ -23,6 +23,7 @@ d13702d1e489422f027636fd4f3a4f64b33332e9 assets/openblocks/blockstates/cyan_elev
 cad13d502502915168c4dfafacde9cd972df58f2 assets/openblocks/blockstates/donation_station.json
 84db62ccd156d648e7a7c3abc559c8259852e966 assets/openblocks/blockstates/drawing_table.json
 ba46e543b1afc5d3fe7fbde2ce69262890989d7f assets/openblocks/blockstates/fan.json
+c98e58131059cf5671f41855685d746bc595b68e assets/openblocks/blockstates/golden_egg.json
 7442b36f172fe05431acbf7d29843b48b5b99c23 assets/openblocks/blockstates/grave.json
 c45d5d2e71c34dc43588a6063c8f1025e64a8816 assets/openblocks/blockstates/gray_elevator.json
 d13702d1e489422f027636fd4f3a4f64b33332e9 assets/openblocks/blockstates/gray_elevator_rotating.json
@@ -141,6 +142,7 @@ fac0c3286e72b4331d444ac90f0386d2626961fb assets/openblocks/models/block/flag_gro
 e2c363fe7efade78c27fd0ee89db0b6e55c5e4d5 assets/openblocks/models/block/flag_ground_80.json
 2a333aa5bf7a5ad64e1affd9138a97c1811acd49 assets/openblocks/models/block/flag_ground_90.json
 0adf37e2fc667404483540fbf9033e02a0b35642 assets/openblocks/models/block/flag_wall.json
+fa1f737023387a86d78ebed767b18810dbc4e9fa assets/openblocks/models/block/golden_egg.json
 9f3a8f7f3192e48338258695e52de2902577b76d assets/openblocks/models/block/grave_free.json
 e97351a6d611f8069d1e29d33f25af56f3247c28 assets/openblocks/models/block/grave_ground.json
 f32d73f3802004f923f5994cfaa1f904e6c97c70 assets/openblocks/models/block/heal.json
@@ -258,6 +260,7 @@ be110f3777565ff6aa2e39e4a808bf504764fc19 assets/openblocks/models/item/dev_null_
 ab8c50816283874de69dd2bd6568d691b35414b4 assets/openblocks/models/item/drawing_table.json
 b3a5d2f6748f8537e15bb3d900bce4b0e3e427a7 assets/openblocks/models/item/fan.json
 3e04276af1bc9e7fb3ca4d2dea117e5aaec179ce assets/openblocks/models/item/glider_wing.json
+36c3e3241d33bef912f0e89c42f1aafc9dce1e64 assets/openblocks/models/item/golden_egg.json
 53cca251fbe8ed16083255b0ed115f4b96256440 assets/openblocks/models/item/grave.json
 d2b8f805473f5db4bc4402f5b4f1864704363649 assets/openblocks/models/item/gray_elevator.json
 dd180aef5747a9afe34022df0f8fd345d081cd6c assets/openblocks/models/item/gray_elevator_rotating.json

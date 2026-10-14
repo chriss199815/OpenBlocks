@@ -1,13 +1,19 @@
 package openblocks.registry;
 
+import java.util.Optional;
 import net.minecraft.core.registries.Registries;
+import net.minecraft.network.codec.ByteBufCodecs;
+import net.minecraft.network.syncher.EntityDataSerializer;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.MobCategory;
+import net.minecraft.world.item.component.ResolvableProfile;
+import net.neoforged.neoforge.event.entity.EntityAttributeCreationEvent;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
+import net.neoforged.neoforge.registries.NeoForgeRegistries;
 import openblocks.OpenBlocks;
-import net.neoforged.neoforge.event.entity.EntityAttributeCreationEvent;
 import openblocks.entity.Luggage;
+import openblocks.entity.MiniMe;
 import openblocks.entity.NoFlyXpOrb;
 
 public class OBEntities {
@@ -26,7 +32,19 @@ public class OBEntities {
 					.sized(0.5f, 0.5f)
 					.build("luggage"));
 
+	public static final DeferredHolder<EntityType<?>, EntityType<MiniMe>> MINI_ME = ENTITIES.register("mini_me",
+			() -> EntityType.Builder.of(MiniMe::new, MobCategory.MISC)
+					.sized(0.6f, 0.95f)
+					.build("mini_me"));
+
+	public static final DeferredRegister<EntityDataSerializer<?>> DATA_SERIALIZERS = DeferredRegister.create(NeoForgeRegistries.Keys.ENTITY_DATA_SERIALIZERS, OpenBlocks.MODID);
+
+	// the Mini Me owner, with its skin
+	public static final DeferredHolder<EntityDataSerializer<?>, EntityDataSerializer<Optional<ResolvableProfile>>> OPTIONAL_PROFILE = DATA_SERIALIZERS.register("optional_profile",
+			() -> EntityDataSerializer.forValueType(ByteBufCodecs.optional(ResolvableProfile.STREAM_CODEC)));
+
 	public static void registerAttributes(EntityAttributeCreationEvent event) {
 		event.put(LUGGAGE.get(), Luggage.createAttributes().build());
+		event.put(MINI_ME.get(), MiniMe.createAttributes().build());
 	}
 }

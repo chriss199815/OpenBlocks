@@ -27,8 +27,21 @@ public class OBConfig {
 	public static final Sponge SPONGE = new Sponge(BUILDER);
 	public static final Scaffolding SCAFFOLDING = new Scaffolding(BUILDER);
 	public static final Trophy TROPHY = new Trophy(BUILDER);
+	public static final Egg EGG = new Egg(BUILDER);
 
 	public static final ModConfigSpec SPEC = BUILDER.build();
+
+	public static class Egg {
+		public final ModConfigSpec.BooleanValue canPickBlocks;
+
+		private Egg(ModConfigSpec.Builder builder) {
+			builder.push("egg");
+			canPickBlocks = builder
+					.comment("Can golden egg pick blocks while hatching (may lead to glitches)")
+					.define("pickBlocks", true);
+			builder.pop();
+		}
+	}
 
 	public static class Trophy {
 		public final ModConfigSpec.DoubleValue dropChance;

@@ -297,7 +297,7 @@
   "entity.openblocks.luggage": "Багаж",
   "entity.openblocks.cartographer.name": "Картограф",
   "entity.openblocks.block.name": "Парящий блок",
-  "entity.openblocks.mini_me.name": "Мини-Ми",
+  "entity.openblocks.mini_me": "Мини-Ми",
   "fluid.openblocks.xp_juice": "Жидкий опыт",
   "entity.Villager.audiophile": "Меломан"
 }

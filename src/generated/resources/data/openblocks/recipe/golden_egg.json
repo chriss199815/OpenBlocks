@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "e": {
+      "tag": "c:eggs"
+    },
+    "g": {
+      "tag": "c:ingots/gold"
+    }
+  },
+  "pattern": [
+    "ggg",
+    "geg",
+    "ggg"
+  ],
+  "result": {
+    "count": 1,
+    "id": "openblocks:golden_egg"
+  }
+}

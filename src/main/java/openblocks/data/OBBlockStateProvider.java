@@ -234,6 +234,44 @@ public class OBBlockStateProvider extends BlockStateProvider {
 		final ModelFile sky = models().cubeAll("sky", modLoc("block/sky_inactive"));
 		simpleBlockWithItem(OBBlocks.SKY.get(), sky);
 		simpleBlockWithItem(OBBlocks.SKY_INVERTED.get(), sky);
+
+		goldenEgg();
+	}
+
+	/**
+	 * Legacy egg model; drawn by {@code GoldenEggRenderer}, the blockstate model is used for the item and particles.
+	 */
+	private void goldenEgg() {
+		final BlockModelBuilder egg = models().withExistingParent("golden_egg", mcLoc("block/block"))
+				.texture("all", modLoc("block/egg"))
+				.texture("particle", modLoc("block/egg"));
+		eggLayer(egg, 6, 15, 10, 16, 0, false);
+		eggLayer(egg, 5, 0, 11, 15, 1, true);
+		eggLayer(egg, 4, 13, 12, 14, 2, false);
+		eggLayer(egg, 3, 11, 13, 13, 3, false);
+		eggLayer(egg, 2, 1, 14, 11, 5, true);
+		eggLayer(egg, 1, 3, 15, 8, 9, true);
+		simpleBlock(OBBlocks.GOLDEN_EGG.get(), egg);
+		simpleBlockItem(OBBlocks.GOLDEN_EGG.get(), egg);
+	}
+
+	/**
+	 * One square layer of the egg from {@code min} to {@code 16 - min} horizontally; the sides use the texture rows from
+	 * {@code sideV}, top and bottom the matching square of the texture.
+	 */
+	private static void eggLayer(BlockModelBuilder builder, int min, int fromY, int max, int toY, int sideV, boolean withBottom) {
+		final var element = builder.element().from(min, fromY, min).to(max, toY, max);
+		for (Direction side : Direction.Plane.HORIZONTAL)
+			element.face(side).uvs(min, sideV, max, sideV + toY - fromY).texture("#all").end();
+		final var up = element.face(Direction.UP).uvs(min, min, max, max).texture("#all");
+		if (toY == 16) up.cullface(Direction.UP);
+		up.end();
+		if (withBottom) {
+			final var down = element.face(Direction.DOWN).uvs(min, min, max, max).texture("#all");
+			if (fromY == 0) down.cullface(Direction.DOWN);
+			down.end();
+		}
+		element.end();
 	}
 
 	/**

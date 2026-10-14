@@ -50,6 +50,7 @@ public class OpenBlocks {
 		OBComponents.COMPONENTS.register(modBus);
 		OBBlockEntities.BLOCK_ENTITIES.register(modBus);
 		OBEntities.ENTITIES.register(modBus);
+		OBEntities.DATA_SERIALIZERS.register(modBus);
 		OBParticleTypes.PARTICLE_TYPES.register(modBus);
 		OBMenus.MENUS.register(modBus);
 		OBAttachments.ATTACHMENT_TYPES.register(modBus);

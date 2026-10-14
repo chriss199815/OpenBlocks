@@ -18,6 +18,7 @@ import openblocks.block.entity.PaintMixerBlockEntity;
 import openblocks.block.entity.SprinklerBlockEntity;
 import openblocks.block.entity.BlockBreakerBlockEntity;
 import openblocks.block.entity.BlockPlacerBlockEntity;
+import openblocks.block.entity.GoldenEggBlockEntity;
 import openblocks.block.entity.GraveBlockEntity;
 import openblocks.block.entity.HealBlockEntity;
 import openblocks.block.entity.SkyBlockEntity;
@@ -112,4 +113,7 @@ public class OBBlockEntities {
 
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<SkyBlockEntity>> SKY = BLOCK_ENTITIES.register("sky",
 			() -> BlockEntityType.Builder.of(SkyBlockEntity::new, OBBlocks.SKY.get(), OBBlocks.SKY_INVERTED.get()).build(null));
+
+	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<GoldenEggBlockEntity>> GOLDEN_EGG = BLOCK_ENTITIES.register("golden_egg",
+			() -> BlockEntityType.Builder.of(GoldenEggBlockEntity::new, OBBlocks.GOLDEN_EGG.get()).build(null));
 }

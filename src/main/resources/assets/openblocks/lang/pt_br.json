@@ -302,7 +302,7 @@
   "entity.openblocks.luggage": "Bagagem",
   "entity.openblocks.cartographer.name": "Cartógrafo",
   "entity.openblocks.block.name": "Bloco Flutuante",
-  "entity.openblocks.mini_me.name": "Mini Me",
+  "entity.openblocks.mini_me": "Mini Me",
   "fluid.openblocks.xp_juice": "Mini-Eu",
   "entity.Villager.audiophile": "Audiófilo"
 }

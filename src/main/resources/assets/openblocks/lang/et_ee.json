@@ -118,6 +118,6 @@
   "itemGroup.tabOpenBlocks": "OpenBlocks",
   "entity.openblocks.luggage": "Kohver",
   "entity.openblocks.cartographer.name": "Kartograaf",
-  "entity.openblocks.mini_me.name": "Mini Mina",
+  "entity.openblocks.mini_me": "Mini Mina",
   "fluid.openblocks.xp_juice": "Vedel XP"
 }

@@ -466,6 +466,15 @@ public class OBRecipeProvider extends RecipeProvider {
 				.unlockedBy("has_sky_inverted", has(OBBlocks.SKY_INVERTED.get()))
 				.save(output, OpenBlocks.location("sky_from_inverted"));
 
+		ShapedRecipeBuilder.shaped(RecipeCategory.MISC, OBBlocks.GOLDEN_EGG.get())
+				.pattern("ggg")
+				.pattern("geg")
+				.pattern("ggg")
+				.define('g', Tags.Items.INGOTS_GOLD)
+				.define('e', Tags.Items.EGGS)
+				.unlockedBy("has_egg", has(Tags.Items.EGGS))
+				.save(output);
+
 		genericItems(output);
 	}
 

@@ -33,6 +33,7 @@ import openblocks.block.BlockPlacerBlock;
 import openblocks.block.ElevatorBlock;
 import openblocks.block.FanBlock;
 import openblocks.block.FlagBlock;
+import openblocks.block.GoldenEggBlock;
 import openblocks.block.GraveBlock;
 import openblocks.block.HealBlock;
 import openblocks.block.ItemDropperBlock;
@@ -263,6 +264,13 @@ public class OBBlocks {
 
 	public static final DeferredBlock<SkyBlock> SKY = registerWithItem("sky", () -> new SkyBlock(false, skyProperties()));
 	public static final DeferredBlock<SkyBlock> SKY_INVERTED = registerWithItem("sky_inverted", () -> new SkyBlock(true, skyProperties()));
+
+	public static final DeferredBlock<GoldenEggBlock> GOLDEN_EGG = registerWithItem("golden_egg", () -> new GoldenEggBlock(BlockBehaviour.Properties.of()
+			.mapColor(MapColor.GOLD)
+			.strength(1.0f)
+			.noOcclusion()
+			.pushReaction(PushReaction.BLOCK)
+			.sound(SoundType.METAL)));
 
 	private static BlockBehaviour.Properties skyProperties() {
 		return BlockBehaviour.Properties.of()

@@ -110,7 +110,9 @@ public class OpenBlocksClient {
 		event.registerBlockEntityRenderer(OBBlockEntities.BEAR_TRAP.get(), BearTrapRenderer::new);
 		event.registerBlockEntityRenderer(OBBlockEntities.SPRINKLER.get(), SprinklerRenderer::new);
 		event.registerBlockEntityRenderer(OBBlockEntities.SKY.get(), SkyBlockRenderer::new);
+		event.registerBlockEntityRenderer(OBBlockEntities.GOLDEN_EGG.get(), GoldenEggRenderer::new);
 		event.registerEntityRenderer(OBEntities.NO_FLY_XP_ORB.get(), ExperienceOrbRenderer::new);
 		event.registerEntityRenderer(OBEntities.LUGGAGE.get(), LuggageRenderer::new);
+		event.registerEntityRenderer(OBEntities.MINI_ME.get(), MiniMeRenderer::new);
 	}
 }

@@ -49,6 +49,8 @@
     "openblocks:sprinkler",
     "openblocks:heal",
     "openblocks:target",
-    "openblocks:trophy"
+    "openblocks:trophy",
+    "openblocks:sky",
+    "openblocks:sky_inverted"
   ]
 }

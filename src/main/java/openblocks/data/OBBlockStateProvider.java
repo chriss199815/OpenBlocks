@@ -229,6 +229,11 @@ public class OBBlockStateProvider extends BlockStateProvider {
 		bigButton(OBBlocks.BIG_BUTTON_WOOD.get(), mcLoc("block/oak_planks"));
 		target();
 		path();
+
+		// all states share the inactive look, active sky blocks are drawn by SkyBlockRenderer
+		final ModelFile sky = models().cubeAll("sky", modLoc("block/sky_inactive"));
+		simpleBlockWithItem(OBBlocks.SKY.get(), sky);
+		simpleBlockWithItem(OBBlocks.SKY_INVERTED.get(), sky);
 	}
 
 	/**

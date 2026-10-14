@@ -20,6 +20,7 @@ import openblocks.block.entity.BlockBreakerBlockEntity;
 import openblocks.block.entity.BlockPlacerBlockEntity;
 import openblocks.block.entity.GraveBlockEntity;
 import openblocks.block.entity.HealBlockEntity;
+import openblocks.block.entity.SkyBlockEntity;
 import openblocks.block.entity.ItemDropperBlockEntity;
 import openblocks.block.entity.TankBlockEntity;
 import openblocks.block.entity.TrophyBlockEntity;
@@ -108,4 +109,7 @@ public class OBBlockEntities {
 
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<TrophyBlockEntity>> TROPHY = BLOCK_ENTITIES.register("trophy",
 			() -> BlockEntityType.Builder.of(TrophyBlockEntity::new, OBBlocks.TROPHY.get()).build(null));
+
+	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<SkyBlockEntity>> SKY = BLOCK_ENTITIES.register("sky",
+			() -> BlockEntityType.Builder.of(SkyBlockEntity::new, OBBlocks.SKY.get(), OBBlocks.SKY_INVERTED.get()).build(null));
 }

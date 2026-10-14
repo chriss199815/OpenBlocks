@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "e": {
+      "item": "minecraft:ender_eye"
+    },
+    "g": {
+      "tag": "c:glass_blocks/colorless"
+    },
+    "s": {
+      "tag": "c:end_stones"
+    }
+  },
+  "pattern": [
+    "geg",
+    "gsg",
+    "geg"
+  ],
+  "result": {
+    "count": 6,
+    "id": "openblocks:sky"
+  }
+}

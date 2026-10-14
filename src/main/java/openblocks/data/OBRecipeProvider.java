@@ -443,6 +443,29 @@ public class OBRecipeProvider extends RecipeProvider {
 				.unlockedBy("has_clay_ball", has(Items.CLAY_BALL))
 				.save(output);
 
+		ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, OBBlocks.SKY.get(), 6)
+				.pattern("geg")
+				.pattern("gsg")
+				.pattern("geg")
+				.define('g', Tags.Items.GLASS_BLOCKS_COLORLESS)
+				.define('e', Items.ENDER_EYE)
+				.define('s', Tags.Items.END_STONES)
+				.unlockedBy("has_ender_eye", has(Items.ENDER_EYE))
+				.save(output);
+
+		// a redstone torch switches between normal and inverted, like legacy
+		ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, OBBlocks.SKY_INVERTED.get())
+				.requires(OBBlocks.SKY.get())
+				.requires(Items.REDSTONE_TORCH)
+				.unlockedBy("has_sky", has(OBBlocks.SKY.get()))
+				.save(output);
+
+		ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, OBBlocks.SKY.get())
+				.requires(OBBlocks.SKY_INVERTED.get())
+				.requires(Items.REDSTONE_TORCH)
+				.unlockedBy("has_sky_inverted", has(OBBlocks.SKY_INVERTED.get()))
+				.save(output, OpenBlocks.location("sky_from_inverted"));
+
 		genericItems(output);
 	}
 

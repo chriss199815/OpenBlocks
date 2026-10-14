@@ -40,6 +40,7 @@ import openblocks.block.JadedLadderBlock;
 import openblocks.block.RopeLadderBlock;
 import openblocks.block.RotatingElevatorBlock;
 import openblocks.block.ScaffoldingBlock;
+import openblocks.block.SkyBlock;
 import openblocks.block.SpongeBlock;
 import openblocks.block.SprinklerBlock;
 import openblocks.block.TankBlock;
@@ -259,6 +260,17 @@ public class OBBlocks {
 			.strength(1.0f)
 			.noOcclusion()
 			.sound(SoundType.STONE)));
+
+	public static final DeferredBlock<SkyBlock> SKY = registerWithItem("sky", () -> new SkyBlock(false, skyProperties()));
+	public static final DeferredBlock<SkyBlock> SKY_INVERTED = registerWithItem("sky_inverted", () -> new SkyBlock(true, skyProperties()));
+
+	private static BlockBehaviour.Properties skyProperties() {
+		return BlockBehaviour.Properties.of()
+				.mapColor(MapColor.COLOR_LIGHT_BLUE)
+				.strength(1.0f)
+				.requiresCorrectToolForDrops()
+				.sound(SoundType.STONE);
+	}
 
 	private static BlockBehaviour.Properties bigButtonProperties() {
 		return BlockBehaviour.Properties.of()

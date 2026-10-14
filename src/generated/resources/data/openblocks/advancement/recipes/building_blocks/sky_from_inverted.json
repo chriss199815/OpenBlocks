@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_sky_inverted": {
+      "conditions": {
+        "items": [
+          {
+            "items": "openblocks:sky_inverted"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "openblocks:sky_from_inverted"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_sky_inverted"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "openblocks:sky_from_inverted"
+    ]
+  }
+}

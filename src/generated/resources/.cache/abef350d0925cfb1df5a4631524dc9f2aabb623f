@@ -1,8 +1,8 @@
-// 1.21.1	2026-10-14T21:32:56.807108	Tags for minecraft:block mod id openblocks
+// 1.21.1	2026-10-14T21:49:26.489088	Tags for minecraft:block mod id openblocks
 ea3b8e52ebb7659619873decbce6099bbd4626a0 data/minecraft/tags/block/climbable.json
 9696dcd7778b16ec87ea56cb519dd003d7008343 data/minecraft/tags/block/dragon_immune.json
 f74a6900bab81e3aca4509f88a398a9ffccac8b3 data/minecraft/tags/block/mineable/axe.json
-0599ef99dff41d46f4be47377caed4eff4dae0e2 data/minecraft/tags/block/mineable/pickaxe.json
+a9b43bdf61e2702a72d1dea182a510ca21376a66 data/minecraft/tags/block/mineable/pickaxe.json
 fc704d62a3236bd1dcb774d9d0bb588343572b5b data/minecraft/tags/block/mineable/shovel.json
 11f293130d6f083cf2d03990dcb5a336de4f9fe1 data/minecraft/tags/block/stone_buttons.json
 eb1a1505d3c085660f9c97ba8c123886d5da802f data/minecraft/tags/block/trapdoors.json

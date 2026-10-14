@@ -38,6 +38,8 @@ public class OBBlockTagsProvider extends BlockTagsProvider {
 		pickaxe.add(OBBlocks.HEAL.get());
 		pickaxe.add(OBBlocks.TARGET.get());
 		pickaxe.add(OBBlocks.TROPHY.get());
+		pickaxe.add(OBBlocks.SKY.get());
+		pickaxe.add(OBBlocks.SKY_INVERTED.get());
 
 		tag(BlockTags.MINEABLE_WITH_AXE).add(OBBlocks.DRAWING_TABLE.get(), OBBlocks.LADDER.get(), OBBlocks.SPONGE.get());
 		tag(BlockTags.TRAPDOORS).add(OBBlocks.LADDER.get());

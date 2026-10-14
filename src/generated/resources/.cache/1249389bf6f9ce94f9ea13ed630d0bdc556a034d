@@ -1,4 +1,4 @@
-// 1.21.1	2026-10-14T21:32:56.804231	Block States: openblocks
+// 1.21.1	2026-10-14T21:49:26.485963	Block States: openblocks
 909bae1340933de5e494ee6692d1d88aeabf4f33 assets/openblocks/blockstates/auto_anvil.json
 aca132b5918ec066ede0f817145d0ac0649c84a9 assets/openblocks/blockstates/auto_enchantment_table.json
 9be1c7ce94b3232fe19c46a8965abe89ae2d898a assets/openblocks/blockstates/bear_trap.json
@@ -62,6 +62,8 @@ d13702d1e489422f027636fd4f3a4f64b33332e9 assets/openblocks/blockstates/red_eleva
 6a60ac85a83f62e9071a3664237075d98888182e assets/openblocks/blockstates/red_flag.json
 a06e0a4f3161a34ee08a79336082bc25177f5f7a assets/openblocks/blockstates/rope_ladder.json
 e2f98d876093e19c1f80d312e21b885150a588d7 assets/openblocks/blockstates/scaffolding.json
+4e2e3a71dbac3655b46ab61879bb690c33f995d0 assets/openblocks/blockstates/sky.json
+4e2e3a71dbac3655b46ab61879bb690c33f995d0 assets/openblocks/blockstates/sky_inverted.json
 b082cffcbd8ae50a39ecbe3a2520b82ff26a1ecb assets/openblocks/blockstates/sponge.json
 a5fd6018d2eca7b2ba34f08d9babe797f726dcfc assets/openblocks/blockstates/sprinkler.json
 97a9d238d7f937d3ad8167f336d1e68f242fd43e assets/openblocks/blockstates/tank.json
@@ -167,6 +169,7 @@ fd3178623542777eb800a9473337ef61e709e1ba assets/openblocks/models/block/path_8.j
 e3fc4dbb7fa5fa877de6cdce8f0f9f6f4dee9439 assets/openblocks/models/block/path_9.json
 67c2fe56fbe4a3c5b82e6d0e1c5722eed9263393 assets/openblocks/models/block/rope_ladder.json
 9deaa4ad20bfeed7b24ff3faf799a38ae7a1dacd assets/openblocks/models/block/scaffolding.json
+64a90f2cd6b21b142b5b5713105cc4ffd489d46c assets/openblocks/models/block/sky.json
 1f4b1f1c98000f82181d533834fe4f279783c901 assets/openblocks/models/block/sponge.json
 e6e362f6a9a1a489460bddea76589c4cbeff90f7 assets/openblocks/models/block/sprinkler.json
 38f40ff59eca5cddf74119da1652f2edde1776f0 assets/openblocks/models/block/sprinkler_item.json
@@ -308,6 +311,8 @@ fcc439f163500f4a2657f61a09c9762b2151a0ed assets/openblocks/models/item/red_flag.
 3dfd739b2ca846c7ce6e3ac7a2dabff33876e139 assets/openblocks/models/item/rope_ladder.json
 ea18fe8ff7f353a0ed3fca484c59a5f1de960359 assets/openblocks/models/item/scaffolding.json
 ec2ddb9bb9dd0d3206db8ff271fe831f6dc9bea0 assets/openblocks/models/item/sketching_pencil.json
+8f5eee20c37ad27e98286db37c9c4b7e98162eff assets/openblocks/models/item/sky.json
+8f5eee20c37ad27e98286db37c9c4b7e98162eff assets/openblocks/models/item/sky_inverted.json
 93fe12716900287b328fc50ce493ef5f588177bf assets/openblocks/models/item/sleeping_bag.json
 88bca139cd02032efa5aba19f364a763b6d935ce assets/openblocks/models/item/slimalyzer.json
 6bd6fa41fc4b0f571fcc7165c8df49ef4610d5e0 assets/openblocks/models/item/slimalyzer_active.json

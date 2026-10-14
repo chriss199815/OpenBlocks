@@ -2,7 +2,9 @@ package openblocks.client;
 
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.IEventBus;
+import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.common.Mod;
+import net.neoforged.fml.config.ModConfig;
 import net.neoforged.neoforge.client.event.EntityRenderersEvent;
 import net.neoforged.neoforge.client.event.ModelEvent;
 import net.neoforged.neoforge.common.NeoForge;
@@ -39,7 +41,7 @@ import openblocks.registry.OBMenus;
 @Mod(value = OpenBlocks.MODID, dist = Dist.CLIENT)
 public class OpenBlocksClient {
 
-	public OpenBlocksClient(IEventBus modBus) {
+	public OpenBlocksClient(IEventBus modBus, ModContainer container) {
 		modBus.addListener(OBColorHandlers::registerBlockColors);
 		modBus.addListener(OBColorHandlers::registerItemColors);
 		modBus.addListener(OBFluidRendering::registerClientExtensions);
@@ -67,6 +69,7 @@ public class OpenBlocksClient {
 		modBus.addListener(DevNullItemRenderer::registerAdditional);
 		modBus.addListener(DevNullItemRenderer::registerClientExtensions);
 		modBus.addListener(DevNullItemRenderer::registerItemDecorations);
+		modBus.addListener(SkyBlockRenderer::registerShaders);
 
 		NeoForge.EVENT_BUS.addListener(ElevatorInputHandler::onMovementInput);
 		NeoForge.EVENT_BUS.addListener(HangGliderRenderer::onRenderPlayerPre);
@@ -76,6 +79,9 @@ public class OpenBlocksClient {
 		NeoForge.EVENT_BUS.addListener(SleepingBagLayer::onRenderPlayerPost);
 		NeoForge.EVENT_BUS.addListener(SleepingBagLayer::onComputeCameraAngles);
 		NeoForge.EVENT_BUS.addListener(CursorHighlightRenderer::onRenderLevelStage);
+		NeoForge.EVENT_BUS.addListener(SkyBlockRenderer::onRenderLevelStage);
+
+		container.registerConfig(ModConfig.Type.CLIENT, OBClientConfig.SPEC);
 	}
 
 	private static void registerScreens(RegisterMenuScreensEvent event) {
@@ -103,6 +109,7 @@ public class OpenBlocksClient {
 		event.registerBlockEntityRenderer(OBBlockEntities.FAN.get(), FanRenderer::new);
 		event.registerBlockEntityRenderer(OBBlockEntities.BEAR_TRAP.get(), BearTrapRenderer::new);
 		event.registerBlockEntityRenderer(OBBlockEntities.SPRINKLER.get(), SprinklerRenderer::new);
+		event.registerBlockEntityRenderer(OBBlockEntities.SKY.get(), SkyBlockRenderer::new);
 		event.registerEntityRenderer(OBEntities.NO_FLY_XP_ORB.get(), ExperienceOrbRenderer::new);
 		event.registerEntityRenderer(OBEntities.LUGGAGE.get(), LuggageRenderer::new);
 	}

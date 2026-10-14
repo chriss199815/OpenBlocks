@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "openblocks:crane_magnet",
+  "key": {
+    "b": {
+      "tag": "c:dyes/black"
+    },
+    "i": {
+      "tag": "c:ingots/iron"
+    },
+    "r": {
+      "tag": "c:dusts/redstone"
+    },
+    "y": {
+      "tag": "c:dyes/yellow"
+    }
+  },
+  "pattern": [
+    "yib",
+    "iri"
+  ],
+  "result": {
+    "count": 1,
+    "id": "openblocks:crane_magnet"
+  }
+}

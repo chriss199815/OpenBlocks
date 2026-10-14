@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "openblocks:beam",
+  "key": {
+    "b": {
+      "tag": "c:dyes/black"
+    },
+    "i": {
+      "tag": "c:ingots/iron"
+    },
+    "y": {
+      "tag": "c:dyes/yellow"
+    }
+  },
+  "pattern": [
+    "iii",
+    "b y",
+    "iii"
+  ],
+  "result": {
+    "count": 2,
+    "id": "openblocks:beam"
+  }
+}

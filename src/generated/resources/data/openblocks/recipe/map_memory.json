@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "g": {
+      "tag": "c:nuggets/gold"
+    },
+    "r": {
+      "tag": "c:dusts/redstone"
+    }
+  },
+  "pattern": [
+    "rg",
+    "rg",
+    "rg"
+  ],
+  "result": {
+    "count": 1,
+    "id": "openblocks:map_memory"
+  }
+}

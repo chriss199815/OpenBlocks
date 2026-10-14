@@ -69,6 +69,14 @@ public class OBItems {
 	// legacy MetasGeneric
 	public static final DeferredItem<Item> UNPREPARED_STENCIL = ITEMS.registerSimpleItem("unprepared_stencil");
 	public static final DeferredItem<Item> SKETCHING_PENCIL = ITEMS.registerSimpleItem("sketching_pencil");
+	// crafting parts of features that are not ported yet (crane backpack, cartographer, projector)
+	public static final DeferredItem<Item> BEAM = ITEMS.registerSimpleItem("beam");
+	public static final DeferredItem<Item> CRANE_ENGINE = ITEMS.registerSimpleItem("crane_engine");
+	public static final DeferredItem<Item> CRANE_MAGNET = ITEMS.registerSimpleItem("crane_magnet");
+	public static final DeferredItem<Item> LINE = ITEMS.registerSimpleItem("line");
+	public static final DeferredItem<Item> MAP_CONTROLLER = ITEMS.registerSimpleItem("map_controller");
+	public static final DeferredItem<Item> MAP_MEMORY = ITEMS.registerSimpleItem("map_memory");
+	public static final DeferredItem<Item> ASSISTANT_BASE = ITEMS.registerSimpleItem("assistant_base");
 
 	public static final Map<StencilPattern, DeferredItem<StencilItem>> STENCILS = registerStencils();
 

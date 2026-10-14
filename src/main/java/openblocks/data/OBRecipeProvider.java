@@ -442,5 +442,82 @@ public class OBRecipeProvider extends RecipeProvider {
 				.requires(Items.COCOA_BEANS)
 				.unlockedBy("has_clay_ball", has(Items.CLAY_BALL))
 				.save(output);
+
+		genericItems(output);
+	}
+
+	/**
+	 * Legacy {@code MetasGeneric} crafting parts; the mirrored recipes of beam and crane magnet become their own recipes, like legacy.
+	 */
+	private static void genericItems(RecipeOutput output) {
+		for (String pattern : new String[] { "b y", "y b" })
+			ShapedRecipeBuilder.shaped(RecipeCategory.MISC, OBItems.BEAM.get(), 2)
+					.group("openblocks:beam")
+					.pattern("iii")
+					.pattern(pattern)
+					.pattern("iii")
+					.define('i', Tags.Items.INGOTS_IRON)
+					.define('b', Tags.Items.DYES_BLACK)
+					.define('y', Tags.Items.DYES_YELLOW)
+					.unlockedBy("has_iron_ingot", has(Tags.Items.INGOTS_IRON))
+					.save(output, OpenBlocks.location(pattern.startsWith("b")? "beam" : "beam_mirrored"));
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.MISC, OBItems.CRANE_ENGINE.get())
+				.pattern("iii")
+				.pattern("isi")
+				.pattern("iri")
+				.define('i', Tags.Items.INGOTS_IRON)
+				.define('s', Tags.Items.RODS_WOODEN)
+				.define('r', Tags.Items.DUSTS_REDSTONE)
+				.unlockedBy("has_iron_ingot", has(Tags.Items.INGOTS_IRON))
+				.save(output);
+
+		for (String pattern : new String[] { "biy", "yib" })
+			ShapedRecipeBuilder.shaped(RecipeCategory.MISC, OBItems.CRANE_MAGNET.get())
+					.group("openblocks:crane_magnet")
+					.pattern(pattern)
+					.pattern("iri")
+					.define('i', Tags.Items.INGOTS_IRON)
+					.define('b', Tags.Items.DYES_BLACK)
+					.define('y', Tags.Items.DYES_YELLOW)
+					.define('r', Tags.Items.DUSTS_REDSTONE)
+					.unlockedBy("has_iron_ingot", has(Tags.Items.INGOTS_IRON))
+					.save(output, OpenBlocks.location(pattern.startsWith("b")? "crane_magnet" : "crane_magnet_mirrored"));
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.MISC, OBItems.LINE.get(), 2)
+				.pattern("sss")
+				.pattern("bbb")
+				.pattern("sss")
+				.define('s', Tags.Items.STRINGS)
+				.define('b', Tags.Items.SLIME_BALLS)
+				.unlockedBy("has_slime_ball", has(Tags.Items.SLIME_BALLS))
+				.save(output);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.MISC, OBItems.MAP_CONTROLLER.get())
+				.pattern(" r ")
+				.pattern("rgr")
+				.pattern(" r ")
+				.define('r', Tags.Items.DUSTS_REDSTONE)
+				.define('g', Tags.Items.INGOTS_GOLD)
+				.unlockedBy("has_gold_ingot", has(Tags.Items.INGOTS_GOLD))
+				.save(output);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.MISC, OBItems.MAP_MEMORY.get())
+				.pattern("rg")
+				.pattern("rg")
+				.pattern("rg")
+				.define('r', Tags.Items.DUSTS_REDSTONE)
+				.define('g', Tags.Items.NUGGETS_GOLD)
+				.unlockedBy("has_gold_nugget", has(Tags.Items.NUGGETS_GOLD))
+				.save(output);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.MISC, OBItems.ASSISTANT_BASE.get())
+				.pattern("iei")
+				.pattern("iri")
+				.define('i', Tags.Items.INGOTS_IRON)
+				.define('e', Tags.Items.ENDER_PEARLS)
+				.define('r', Tags.Items.DUSTS_REDSTONE)
+				.unlockedBy("has_ender_pearl", has(Tags.Items.ENDER_PEARLS))
+				.save(output);
 	}
 }

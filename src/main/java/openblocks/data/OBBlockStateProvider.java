@@ -77,6 +77,8 @@ public class OBBlockStateProvider extends BlockStateProvider {
 		final ModelFile slimalyzerActive = itemModels().withExistingParent("slimalyzer_active", mcLoc("item/generated")).texture("layer0", modLoc("item/slimeon"));
 		itemModels().withExistingParent("slimalyzer", mcLoc("item/generated")).texture("layer0", modLoc("item/slimeoff"))
 				.override().predicate(modLoc("active"), 1).model(slimalyzerActive).end();
+		List.of(OBItems.BEAM, OBItems.CRANE_ENGINE, OBItems.CRANE_MAGNET, OBItems.LINE, OBItems.MAP_CONTROLLER, OBItems.MAP_MEMORY, OBItems.ASSISTANT_BASE)
+				.forEach(item -> itemModels().basicItem(item.get()));
 		// legacy paintbrush model: handle, plus the paint tinted by OBColorHandlers
 		itemModels().withExistingParent("paintbrush", mcLoc("item/handheld_rod"))
 				.texture("layer0", modLoc("item/paintbrush_handle"))

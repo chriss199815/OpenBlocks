@@ -26,6 +26,8 @@ public class OBCapabilities {
 		event.registerBlockEntity(Capabilities.FluidHandler.BLOCK, OBBlockEntities.AUTO_ENCHANTMENT_TABLE.get(), AutoEnchantmentTableBlockEntity::getFluidHandler);
 		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, OBBlockEntities.AUTO_ENCHANTMENT_TABLE.get(), AutoEnchantmentTableBlockEntity::getItemHandler);
 		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, OBBlockEntities.DONATION_STATION.get(), (station, side) -> station.getInventory());
+		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, OBBlockEntities.DRAWING_TABLE.get(), (table, side) -> table.getInventory());
+		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, OBBlockEntities.PAINT_MIXER.get(), (mixer, side) -> mixer.getInventory());
 		// like legacy, only output sides are accessible (extract/drain only); null (no side) gets the same handlers
 		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, OBBlockEntities.VACUUM_HOPPER.get(), VacuumHopperBlockEntity::getItemHandler);
 		event.registerBlockEntity(Capabilities.FluidHandler.BLOCK, OBBlockEntities.VACUUM_HOPPER.get(), VacuumHopperBlockEntity::getFluidHandler);

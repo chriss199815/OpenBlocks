@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "f": {
+      "tag": "c:fences/wooden"
+    },
+    "p": {
+      "item": "minecraft:paper"
+    }
+  },
+  "pattern": [
+    "ppp",
+    "pfp",
+    "ppp"
+  ],
+  "result": {
+    "count": 9,
+    "id": "openblocks:canvas"
+  }
+}

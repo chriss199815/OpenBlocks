@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "i": {
+      "tag": "c:ingots/iron"
+    },
+    "o": {
+      "tag": "c:obsidians"
+    }
+  },
+  "pattern": [
+    "ooo",
+    "i i",
+    "iii"
+  ],
+  "result": {
+    "count": 1,
+    "id": "openblocks:paint_mixer"
+  }
+}

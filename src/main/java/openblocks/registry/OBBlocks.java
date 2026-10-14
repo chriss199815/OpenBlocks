@@ -12,12 +12,17 @@ import net.minecraft.world.level.block.LiquidBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.MapColor;
+import net.minecraft.world.level.material.PushReaction;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import openblocks.OpenBlocks;
 import openblocks.block.AutoAnvilBlock;
 import openblocks.block.AutoEnchantmentTableBlock;
+import openblocks.block.CanvasBlock;
 import openblocks.block.DonationStationBlock;
+import openblocks.block.DrawingTableBlock;
+import openblocks.block.PaintCanBlock;
+import openblocks.block.PaintMixerBlock;
 import openblocks.block.BlockBreakerBlock;
 import openblocks.block.BlockPlacerBlock;
 import openblocks.block.ElevatorBlock;
@@ -110,6 +115,38 @@ public class OBBlocks {
 			.sound(SoundType.STONE)));
 
 	public static final DeferredBlock<DonationStationBlock> DONATION_STATION = registerWithItem("donation_station", () -> new DonationStationBlock(machineProperties().noOcclusion()));
+
+	public static final DeferredBlock<DrawingTableBlock> DRAWING_TABLE = registerWithItem("drawing_table", () -> new DrawingTableBlock(BlockBehaviour.Properties.of()
+			.mapColor(MapColor.WOOD)
+			.strength(2.5f)
+			.ignitedByLava()
+			.sound(SoundType.WOOD)));
+
+	public static final DeferredBlock<PaintMixerBlock> PAINT_MIXER = registerWithItem("paint_mixer", () -> new PaintMixerBlock(machineProperties().noOcclusion()));
+
+	// item registered in OBItems, it keeps the paint
+	public static final DeferredBlock<PaintCanBlock> PAINT_CAN = BLOCKS.register("paint_can", () -> new PaintCanBlock(BlockBehaviour.Properties.of()
+			.mapColor(MapColor.METAL)
+			.instabreak()
+			.noOcclusion()
+			.pushReaction(PushReaction.DESTROY)
+			.sound(SoundType.LANTERN)));
+
+	public static final DeferredBlock<CanvasBlock> CANVAS = registerWithItem("canvas", () -> new CanvasBlock(canvasProperties()));
+	// only made by painting blocks that do not fill their space, so no item, like legacy
+	public static final DeferredBlock<CanvasBlock> CANVAS_GLASS = BLOCKS.register("canvas_glass", () -> new CanvasBlock(canvasProperties()
+			.noOcclusion()
+			.isViewBlocking((state, level, pos) -> false)
+			.isSuffocating((state, level, pos) -> false)));
+
+	private static BlockBehaviour.Properties canvasProperties() {
+		return BlockBehaviour.Properties.of()
+				.mapColor(MapColor.WOOL)
+				.strength(1.0f)
+				.ignitedByLava()
+				.isRedstoneConductor(CanvasBlock::isRedstoneConductor)
+				.sound(SoundType.WOOL);
+	}
 
 	private static BlockBehaviour.Properties machineProperties() {
 		return BlockBehaviour.Properties.of()

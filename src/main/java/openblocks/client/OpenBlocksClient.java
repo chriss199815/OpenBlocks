@@ -4,13 +4,19 @@ import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.neoforge.client.event.EntityRenderersEvent;
+import net.neoforged.neoforge.client.event.ModelEvent;
 import net.neoforged.neoforge.common.NeoForge;
 import openblocks.OpenBlocks;
 import net.minecraft.client.renderer.entity.ExperienceOrbRenderer;
 import net.neoforged.neoforge.client.event.RegisterMenuScreensEvent;
+import openblocks.client.canvas.CanvasModel;
+import openblocks.client.canvas.CanvasRenderer;
+import openblocks.client.canvas.CanvasTextures;
 import openblocks.client.gui.AutoAnvilScreen;
 import openblocks.client.gui.AutoEnchantmentTableScreen;
 import openblocks.client.gui.DonationStationScreen;
+import openblocks.client.gui.DrawingTableScreen;
+import openblocks.client.gui.PaintMixerScreen;
 import openblocks.client.gui.BlockPlacerScreen;
 import openblocks.client.gui.ItemDropperScreen;
 import openblocks.client.gui.VacuumHopperScreen;
@@ -39,6 +45,9 @@ public class OpenBlocksClient {
 		modBus.addListener(VacuumHopperModel::registerAdditional);
 		modBus.addListener(VacuumHopperModel::modifyBakingResult);
 		modBus.addListener(HangGliderRenderer::modifyBakingResult);
+		modBus.addListener(PaintMixerRenderer::registerAdditional);
+		modBus.addListener(CanvasModel::modifyBakingResult);
+		modBus.addListener((ModelEvent.BakingCompleted event) -> CanvasTextures.clear());
 		modBus.addListener(OpenBlocksClient::registerRenderers);
 		modBus.addListener(LiquidSprayParticle::register);
 		modBus.addListener(OpenBlocksClient::registerScreens);
@@ -62,12 +71,16 @@ public class OpenBlocksClient {
 		event.register(OBMenus.AUTO_ANVIL.get(), AutoAnvilScreen::new);
 		event.register(OBMenus.AUTO_ENCHANTMENT_TABLE.get(), AutoEnchantmentTableScreen::new);
 		event.register(OBMenus.DONATION_STATION.get(), DonationStationScreen::new);
+		event.register(OBMenus.DRAWING_TABLE.get(), DrawingTableScreen::new);
+		event.register(OBMenus.PAINT_MIXER.get(), PaintMixerScreen::new);
 	}
 
 	private static void registerRenderers(EntityRenderersEvent.RegisterRenderers event) {
 		event.registerBlockEntityRenderer(OBBlockEntities.TANK.get(), TankBlockEntityRenderer::new);
 		event.registerBlockEntityRenderer(OBBlockEntities.GRAVE.get(), GraveBlockEntityRenderer::new);
 		event.registerBlockEntityRenderer(OBBlockEntities.AUTO_ENCHANTMENT_TABLE.get(), AutoEnchantmentTableRenderer::new);
+		event.registerBlockEntityRenderer(OBBlockEntities.PAINT_MIXER.get(), PaintMixerRenderer::new);
+		event.registerBlockEntityRenderer(OBBlockEntities.CANVAS.get(), CanvasRenderer::new);
 		event.registerEntityRenderer(OBEntities.NO_FLY_XP_ORB.get(), ExperienceOrbRenderer::new);
 	}
 }

@@ -19,6 +19,7 @@ public class OBDataGenerators {
 		final ExistingFileHelper existingFileHelper = event.getExistingFileHelper();
 		final CompletableFuture<HolderLookup.Provider> lookupProvider = event.getLookupProvider();
 
+		generator.addProvider(event.includeClient(), new OBStencilTextureProvider(output, existingFileHelper));
 		generator.addProvider(event.includeClient(), new OBBlockStateProvider(output, existingFileHelper));
 
 		generator.addProvider(event.includeServer(), new LootTableProvider(output, Set.of(),

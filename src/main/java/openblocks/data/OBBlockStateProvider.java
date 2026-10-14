@@ -49,6 +49,16 @@ public class OBBlockStateProvider extends BlockStateProvider {
 		itemModels().basicItem(OBItems.GLIDER_WING.get());
 		itemModels().basicItem(OBItems.HANG_GLIDER.get());
 		itemModels().basicItem(OBItems.SLEEPING_BAG.get());
+		// like legacy, the plain stencil texture
+		itemModels().withExistingParent("unprepared_stencil", mcLoc("item/generated")).texture("layer0", modLoc("item/stencil"));
+		itemModels().basicItem(OBItems.SKETCHING_PENCIL.get());
+		itemModels().handheldItem(OBItems.SQUEEGEE.get());
+		// legacy paintbrush model: handle, plus the paint tinted by OBColorHandlers
+		itemModels().withExistingParent("paintbrush", mcLoc("item/handheld_rod"))
+				.texture("layer0", modLoc("item/paintbrush_handle"))
+				.texture("layer1", modLoc("item/paintbrush_paint"));
+		// textures from OBStencilTextureProvider
+		OBItems.STENCILS.values().forEach(stencil -> itemModels().basicItem(stencil.get()));
 
 		tank();
 
@@ -128,6 +138,13 @@ public class OBBlockStateProvider extends BlockStateProvider {
 		simpleBlockItem(OBBlocks.BLOCK_PLACER.get(), placer);
 
 		autoAnvil();
+		paintMixer();
+		// the blank canvas; CanvasModel shows the painted block instead
+		final ModelFile canvas = models().cubeAll("canvas", modLoc("block/canvas"));
+		simpleBlock(OBBlocks.CANVAS.get(), canvas);
+		simpleBlockItem(OBBlocks.CANVAS.get(), canvas);
+		simpleBlock(OBBlocks.CANVAS_GLASS.get(), canvas);
+		paintCan();
 
 		// like the legacy model: a 12 pixel high slab, the book is drawn by AutoEnchantmentTableRenderer
 		final BlockModelBuilder autoEnchantmentTable = models().withExistingParent("auto_enchantment_table", mcLoc("block/block"))
@@ -157,6 +174,11 @@ public class OBBlockStateProvider extends BlockStateProvider {
 				.texture("particle", modLoc("block/donation_station"));
 		horizontalBlock(OBBlocks.DONATION_STATION.get(), donationStation);
 		simpleBlockItem(OBBlocks.DONATION_STATION.get(), donationStation);
+
+		final ModelFile drawingTable = models().orientableWithBottom("drawing_table",
+				modLoc("block/drawing_table"), modLoc("block/drawing_table_front"), modLoc("block/drawing_table"), modLoc("block/drawing_table_top"));
+		horizontalBlock(OBBlocks.DRAWING_TABLE.get(), drawingTable);
+		simpleBlockItem(OBBlocks.DRAWING_TABLE.get(), drawingTable);
 
 		// flat icon like vanilla iron bars, the 1px block model is barely visible from the side
 		itemModels().withExistingParent("xp_drain", mcLoc("item/generated")).texture("layer0", modLoc("block/xp_drain"));
@@ -263,6 +285,135 @@ public class OBBlockStateProvider extends BlockStateProvider {
 				.end();
 		horizontalBlock(OBBlocks.AUTO_ANVIL.get(), model, 90);
 		simpleBlockItem(OBBlocks.AUTO_ANVIL.get(), model);
+	}
+
+	/**
+	 * Elements of the legacy paint_mixer model, plus the can, which {@code PaintMixerRenderer} draws tinted and shaking while mixing.
+	 */
+	private void paintMixer() {
+		final BlockModelBuilder model = models().withExistingParent("paint_mixer", mcLoc("block/block"))
+				.texture("model", modLoc("block/paint_mixer_model"))
+				.texture("particle", modLoc("block/paint_mixer"))
+				// bottom
+				.element().from(3, 1, 2).to(13, 2, 14)
+				.face(Direction.NORTH).uvs(3, 3, 5.5f, 3.25f).texture("#model").end()
+				.face(Direction.EAST).uvs(0, 3, 3, 3.25f).texture("#model").end()
+				.face(Direction.SOUTH).uvs(5.5f, 3, 8, 3.25f).texture("#model").end()
+				.face(Direction.WEST).uvs(8, 3, 11, 3.25f).texture("#model").end()
+				.face(Direction.UP).uvs(3, 0, 5.5f, 3).texture("#model").end()
+				.face(Direction.DOWN).uvs(5.5f, 0, 8, 3).texture("#model").end()
+				.end()
+				// bottom2
+				.element().from(3, 2, 3).to(13, 6, 4)
+				.face(Direction.NORTH).uvs(6.75f, 9.25f, 9.25f, 10.25f).texture("#model").end()
+				.face(Direction.EAST).uvs(11.75f, 9.25f, 12, 10.25f).texture("#model").end()
+				.face(Direction.SOUTH).uvs(9.25f, 9.25f, 11.75f, 10.25f).texture("#model").end()
+				.face(Direction.WEST).uvs(6.5f, 9.25f, 6.75f, 10.25f).texture("#model").end()
+				.face(Direction.UP).uvs(8, 8.75f, 10.5f, 9).texture("#model").end()
+				.face(Direction.DOWN).uvs(9.25f, 9, 11.75f, 9.25f).texture("#model").end()
+				.end()
+				// back
+				.element().from(3, 0, 14).to(13, 16, 15)
+				.face(Direction.NORTH).uvs(0.25f, 5, 2.75f, 9).texture("#model").end()
+				.face(Direction.EAST).uvs(0, 5, 0.25f, 9).texture("#model").end()
+				.face(Direction.SOUTH).uvs(3, 5, 5.5f, 9).texture("#model").end()
+				.face(Direction.WEST).uvs(2.75f, 5, 3, 9).texture("#model").end()
+				.face(Direction.UP).uvs(0.25f, 4.75f, 2.75f, 5).texture("#model").cullface(Direction.UP).end()
+				.face(Direction.DOWN).uvs(3, 5, 5.5f, 5.25f).texture("#model").cullface(Direction.DOWN).end()
+				.end()
+				// top
+				.element().from(3, 14, 5).to(13, 15, 14)
+				.face(Direction.NORTH).uvs(7.75f, 8.75f, 10.25f, 9).texture("#model").end()
+				.face(Direction.EAST).uvs(12.75f, 8.75f, 15, 9).texture("#model").end()
+				.face(Direction.SOUTH).uvs(10.25f, 8.75f, 12.75f, 9).texture("#model").end()
+				.face(Direction.WEST).uvs(5.5f, 8.75f, 7.75f, 9).texture("#model").end()
+				.face(Direction.UP).uvs(7.75f, 6.5f, 10.25f, 8.75f).texture("#model").end()
+				.face(Direction.DOWN).uvs(10.25f, 6.5f, 12.75f, 8.75f).texture("#model").end()
+				.end()
+				// controls
+				.element().from(3, 10, 2).to(13, 14, 3)
+				.rotation().origin(8, 8, 6).axis(Direction.Axis.X).angle(22.5f).end()
+				.face(Direction.NORTH).uvs(5.75f, 5.25f, 8.25f, 6.25f).texture("#model").end()
+				.face(Direction.EAST).uvs(5.5f, 5.25f, 5.75f, 6.25f).texture("#model").end()
+				.face(Direction.SOUTH).uvs(8.25f, 5.25f, 10.75f, 6.25f).texture("#model").end()
+				.face(Direction.WEST).uvs(10.75f, 5.25f, 11, 6.25f).texture("#model").end()
+				.face(Direction.UP).uvs(5.75f, 5, 8.25f, 5.25f).texture("#model").end()
+				.face(Direction.DOWN).uvs(8.25f, 5, 10.75f, 5.25f).texture("#model").end()
+				.end()
+				// left
+				.element().from(2, 0, 3).to(3, 16, 15)
+				.face(Direction.NORTH).uvs(3, 12, 3.25f, 16).texture("#model").end()
+				.face(Direction.EAST).uvs(3.25f, 12, 6.25f, 16).texture("#model").end()
+				.face(Direction.SOUTH).uvs(6.25f, 12, 6.5f, 16).texture("#model").end()
+				.face(Direction.WEST).uvs(0, 12, 3, 16).texture("#model").end()
+				.face(Direction.UP).uvs(3, 9, 3.25f, 12).texture("#model").cullface(Direction.UP).end()
+				.face(Direction.DOWN).uvs(3.25f, 9, 3.5f, 12).texture("#model").cullface(Direction.DOWN).end()
+				.end()
+				// right
+				.element().from(13, 0, 3).to(14, 16, 15)
+				.face(Direction.NORTH).uvs(3, 12, 3.25f, 16).texture("#model").end()
+				.face(Direction.EAST).uvs(0, 12, 3, 16).texture("#model").end()
+				.face(Direction.SOUTH).uvs(6.25f, 12, 6.5f, 16).texture("#model").end()
+				.face(Direction.WEST).uvs(3.25f, 12, 6.25f, 16).texture("#model").end()
+				.face(Direction.UP).uvs(3, 9, 3.25f, 12).texture("#model").cullface(Direction.UP).end()
+				.face(Direction.DOWN).uvs(3.25f, 9, 3.5f, 12).texture("#model").cullface(Direction.DOWN).end()
+				.end();
+		horizontalBlock(OBBlocks.PAINT_MIXER.get(), model);
+		simpleBlockItem(OBBlocks.PAINT_MIXER.get(), model);
+
+		models().withExistingParent("paint_mixer_can", mcLoc("block/block"))
+				.texture("bottom", modLoc("block/paint_can_bottom"))
+				.texture("front", modLoc("block/paint_can_front"))
+				.texture("left", modLoc("block/paint_can_left"))
+				.texture("side", modLoc("block/paint_can_side"))
+				.texture("right", modLoc("block/paint_can_right"))
+				.texture("spill", modLoc("block/paint_can_side2"))
+				.texture("top", modLoc("block/paint_can_top"))
+				.texture("particle", modLoc("block/paint_can_side"))
+				// body
+				.element().from(5, 2, 7).to(11, 10, 13)
+				.face(Direction.NORTH).uvs(4, 5, 12, 16).texture("#side").end()
+				.face(Direction.EAST).uvs(4, 5, 12, 16).texture("#right").end()
+				.face(Direction.SOUTH).uvs(4, 5, 12, 16).texture("#front").end()
+				.face(Direction.WEST).uvs(4, 5, 12, 16).texture("#left").end()
+				.face(Direction.DOWN).uvs(4, 4, 12, 12).texture("#bottom").end()
+				.end()
+				// overlay
+				.element().from(5, 2, 7).to(11, 10, 13)
+				.face(Direction.NORTH).uvs(4, 5, 12, 16).texture("#spill").tintindex(0).end()
+				.face(Direction.UP).uvs(4, 4, 12, 12).texture("#top").tintindex(0).end()
+				.end();
+	}
+
+	/**
+	 * Elements of the legacy paint_can model; tint index 1 is the paint, see {@code OBColorHandlers}.
+	 */
+	private void paintCan() {
+		final BlockModelBuilder model = models().withExistingParent("paint_can", mcLoc("block/block"))
+				.renderType("cutout")
+				.texture("north", modLoc("block/paint_can_front"))
+				.texture("east", modLoc("block/paint_can_left"))
+				.texture("south", modLoc("block/paint_can_side"))
+				.texture("west", modLoc("block/paint_can_right"))
+				.texture("bottom", modLoc("block/paint_can_bottom"))
+				.texture("top", modLoc("block/paint_can_top"))
+				.texture("spill", modLoc("block/paint_can_side2"))
+				.texture("particle", modLoc("block/paint_can_side"))
+				// can
+				.element().from(4, 0, 4).to(12, 11, 12)
+				.face(Direction.NORTH).uvs(4, 5, 12, 16).texture("#north").end()
+				.face(Direction.EAST).uvs(4, 5, 12, 16).texture("#east").end()
+				.face(Direction.SOUTH).uvs(4, 5, 12, 16).texture("#south").end()
+				.face(Direction.WEST).uvs(4, 5, 12, 16).texture("#west").end()
+				.face(Direction.DOWN).uvs(4, 4, 12, 12).texture("#bottom").end()
+				.end()
+				// paint
+				.element().from(4, 0, 4).to(12, 11, 12)
+				.face(Direction.SOUTH).uvs(4, 5, 12, 16).texture("#spill").tintindex(1).end()
+				.face(Direction.UP).uvs(4, 4, 12, 12).texture("#top").tintindex(1).end()
+				.end();
+		horizontalBlock(OBBlocks.PAINT_CAN.get(), model);
+		simpleBlockItem(OBBlocks.PAINT_CAN.get(), model);
 	}
 
 	/**

@@ -7,7 +7,11 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 import openblocks.OpenBlocks;
 import openblocks.block.entity.AutoAnvilBlockEntity;
 import openblocks.block.entity.AutoEnchantmentTableBlockEntity;
+import openblocks.block.entity.CanvasBlockEntity;
 import openblocks.block.entity.DonationStationBlockEntity;
+import openblocks.block.entity.DrawingTableBlockEntity;
+import openblocks.block.entity.PaintCanBlockEntity;
+import openblocks.block.entity.PaintMixerBlockEntity;
 import openblocks.block.entity.BlockBreakerBlockEntity;
 import openblocks.block.entity.BlockPlacerBlockEntity;
 import openblocks.block.entity.GraveBlockEntity;
@@ -68,4 +72,16 @@ public class OBBlockEntities {
 
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<DonationStationBlockEntity>> DONATION_STATION = BLOCK_ENTITIES.register("donation_station",
 			() -> BlockEntityType.Builder.of(DonationStationBlockEntity::new, OBBlocks.DONATION_STATION.get()).build(null));
+
+	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<DrawingTableBlockEntity>> DRAWING_TABLE = BLOCK_ENTITIES.register("drawing_table",
+			() -> BlockEntityType.Builder.of(DrawingTableBlockEntity::new, OBBlocks.DRAWING_TABLE.get()).build(null));
+
+	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<PaintMixerBlockEntity>> PAINT_MIXER = BLOCK_ENTITIES.register("paint_mixer",
+			() -> BlockEntityType.Builder.of(PaintMixerBlockEntity::new, OBBlocks.PAINT_MIXER.get()).build(null));
+
+	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<PaintCanBlockEntity>> PAINT_CAN = BLOCK_ENTITIES.register("paint_can",
+			() -> BlockEntityType.Builder.of(PaintCanBlockEntity::new, OBBlocks.PAINT_CAN.get()).build(null));
+
+	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<CanvasBlockEntity>> CANVAS = BLOCK_ENTITIES.register("canvas",
+			() -> BlockEntityType.Builder.of(CanvasBlockEntity::new, OBBlocks.CANVAS.get(), OBBlocks.CANVAS_GLASS.get()).build(null));
 }

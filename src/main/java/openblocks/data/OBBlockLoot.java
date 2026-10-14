@@ -30,6 +30,13 @@ public class OBBlockLoot extends BlockLootSubProvider {
 		dropSelf(OBBlocks.AUTO_ANVIL.get());
 		dropSelf(OBBlocks.AUTO_ENCHANTMENT_TABLE.get());
 		dropSelf(OBBlocks.DONATION_STATION.get());
+		dropSelf(OBBlocks.DRAWING_TABLE.get());
+		dropSelf(OBBlocks.PAINT_MIXER.get());
+		// a canvas that replaced a block drops that block instead, see CanvasBlock.getDrops
+		dropSelf(OBBlocks.CANVAS.get());
+		dropOther(OBBlocks.CANVAS_GLASS.get(), OBBlocks.CANVAS.get());
+		add(OBBlocks.PAINT_CAN.get(), createSingleItemTable(OBBlocks.PAINT_CAN.get())
+				.apply(CopyComponentsFunction.copyComponents(CopyComponentsFunction.Source.BLOCK_ENTITY).include(OBComponents.PAINT.get())));
 		// graves release their items when broken, but never drop themselves
 		add(OBBlocks.GRAVE.get(), noDrop());
 		add(OBBlocks.TANK.get(), createSingleItemTable(OBBlocks.TANK.get())

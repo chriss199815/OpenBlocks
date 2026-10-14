@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "equipment",
+  "group": "openblocks:paintbrush",
+  "ingredients": [
+    {
+      "item": "openblocks:paintbrush"
+    },
+    {
+      "tag": "c:dyes/purple"
+    }
+  ],
+  "result": {
+    "components": {
+      "openblocks:paint": {
+        "amount": 24,
+        "color": 8073150
+      }
+    },
+    "count": 1,
+    "id": "openblocks:paintbrush"
+  }
+}

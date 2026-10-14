@@ -18,8 +18,25 @@ public class OBConfig {
 	public static final ItemDropper ITEM_DROPPER = new ItemDropper(BUILDER);
 	public static final BlockManipulator BLOCK_BREAKER = new BlockManipulator(BUILDER, "breaker", "block breaker");
 	public static final BlockManipulator BLOCK_PLACER = new BlockManipulator(BUILDER, "placer", "block placer");
+	public static final Canvas CANVAS = new Canvas(BUILDER);
 
 	public static final ModConfigSpec SPEC = BUILDER.build();
+
+	public static class Canvas {
+		public final ModConfigSpec.BooleanValue paintbrushReplacesBlocks;
+		public final ModConfigSpec.ConfigValue<List<? extends String>> replaceBlacklist;
+
+		private Canvas(ModConfigSpec.Builder builder) {
+			builder.push("canvas");
+			paintbrushReplacesBlocks = builder
+					.comment("If true, paintbrush will replace suitable blocks with canvas. Otherwise, it will only try to paint blocks")
+					.define("paintbrushReplacesBlocks", true);
+			replaceBlacklist = builder
+					.comment("List of block ids that should not be replaceable by canvas (by using brush, stencil, etc)")
+					.defineListAllowEmpty("replaceBlacklist", List.of(), () -> "minecraft:stone", e -> e instanceof String);
+			builder.pop();
+		}
+	}
 
 	public static class BlockManipulator {
 		public final ModConfigSpec.IntValue cooldown;

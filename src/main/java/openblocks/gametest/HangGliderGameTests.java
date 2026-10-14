@@ -25,6 +25,8 @@ import openblocks.registry.OBItems;
 public class HangGliderGameTests {
 
 	private static FakePlayer playerWithGlider(GameTestHelper helper, double y) {
+		// rain turns thermals into sink everywhere
+		helper.getLevel().setWeatherParameters(6000, 0, false, false);
 		final FakePlayer player = FakePlayerFactory.get(helper.getLevel(), new GameProfile(UUID.randomUUID(), "glider-test"));
 		final Vec3 pos = helper.absoluteVec(new Vec3(1.5, y, 1.5));
 		player.moveTo(pos.x, pos.y, pos.z);

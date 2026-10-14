@@ -37,6 +37,8 @@ public class SleepingBagGameTests {
 	private static void atTime(GameTestHelper helper, long time, Consumer<FakePlayer> test) {
 		final long previousTime = helper.getLevel().getDayTime();
 		helper.getLevel().setDayTime(time);
+		// thunderstorms allow sleeping during the day
+		helper.getLevel().setWeatherParameters(6000, 0, false, false);
 
 		final FakePlayer player = FakePlayerFactory.get(helper.getLevel(), new GameProfile(UUID.randomUUID(), "sleeping-bag-test"));
 		player.setItemInHand(InteractionHand.MAIN_HAND, new ItemStack(OBItems.SLEEPING_BAG.get()));

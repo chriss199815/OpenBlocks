@@ -1,0 +1,67 @@
+{
+  "parent": "minecraft:block/block",
+  "elements": [
+    {
+      "faces": {
+        "down": {
+          "texture": "#bottom"
+        },
+        "east": {
+          "texture": "#east"
+        },
+        "north": {
+          "texture": "#north"
+        },
+        "south": {
+          "texture": "#south"
+        },
+        "west": {
+          "texture": "#west"
+        }
+      },
+      "from": [
+        4,
+        0,
+        4
+      ],
+      "to": [
+        12,
+        11,
+        12
+      ]
+    },
+    {
+      "faces": {
+        "south": {
+          "texture": "#spill",
+          "tintindex": 1
+        },
+        "up": {
+          "texture": "#top",
+          "tintindex": 1
+        }
+      },
+      "from": [
+        4,
+        0,
+        4
+      ],
+      "to": [
+        12,
+        11,
+        12
+      ]
+    }
+  ],
+  "render_type": "minecraft:cutout",
+  "textures": {
+    "bottom": "openblocks:block/paint_can_bottom",
+    "east": "openblocks:block/paint_can_left",
+    "north": "openblocks:block/paint_can_front",
+    "particle": "openblocks:block/paint_can_side",
+    "south": "openblocks:block/paint_can_side",
+    "spill": "openblocks:block/paint_can_side2",
+    "top": "openblocks:block/paint_can_top",
+    "west": "openblocks:block/paint_can_right"
+  }
+}

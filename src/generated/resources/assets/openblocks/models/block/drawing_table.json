@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/orientable_with_bottom",
+  "textures": {
+    "bottom": "openblocks:block/drawing_table",
+    "front": "openblocks:block/drawing_table_front",
+    "side": "openblocks:block/drawing_table",
+    "top": "openblocks:block/drawing_table_top"
+  }
+}

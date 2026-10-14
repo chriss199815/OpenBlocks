@@ -1,4 +1,4 @@
-// 1.21.1	2026-10-14T10:29:46.54965	Loot Tables
+// 1.21.1	2026-10-14T13:17:42.430196	Loot Tables
 91d0a832c50aab793e108321331f69e01d35cf6b data/openblocks/loot_table/blocks/auto_anvil.json
 76f4eafc1ea0961e4b2199bec14732fba136b0e3 data/openblocks/loot_table/blocks/auto_enchantment_table.json
 e56438400b883176c092cf868516713c206e662e data/openblocks/loot_table/blocks/black_elevator.json
@@ -9,9 +9,12 @@ edf562b7977d1cf4838d223b334e5241e4e2be47 data/openblocks/loot_table/blocks/blue_
 84a347ada4893b93d67d9659fdf14afd9716d7dc data/openblocks/loot_table/blocks/blue_elevator_rotating.json
 c7235d916029e8bfc6cee15f5e9947b1b9d875e8 data/openblocks/loot_table/blocks/brown_elevator.json
 a104c24ecef8132da45b7ebb315d5a3515a21bb7 data/openblocks/loot_table/blocks/brown_elevator_rotating.json
+20602bafd06da7640fd84ebe14e43920abc67669 data/openblocks/loot_table/blocks/canvas.json
+c314caf43dfc2a137ae96996c5ce1dcf78cf52de data/openblocks/loot_table/blocks/canvas_glass.json
 edca71a215b60c02c1f24b866ca0f175d96b749d data/openblocks/loot_table/blocks/cyan_elevator.json
 13c164d7ca0a11a41c8c00453f3179fcc702b729 data/openblocks/loot_table/blocks/cyan_elevator_rotating.json
 99b7b1f7a40290664b8ca855b6738fdc69b3b84d data/openblocks/loot_table/blocks/donation_station.json
+4d09f50ed76806b3904a81c79c6d89d5a0186962 data/openblocks/loot_table/blocks/drawing_table.json
 deea7c2ff4bb1dd95aa25b852ffc6ad2bf2fff40 data/openblocks/loot_table/blocks/grave.json
 fce05366add91cf075565ad57fe00363aaa6b72d data/openblocks/loot_table/blocks/gray_elevator.json
 2a8296ba2c5a8ada61d89ef53ac7c64472c4e227 data/openblocks/loot_table/blocks/gray_elevator_rotating.json
@@ -28,6 +31,8 @@ b87405129f5a210cf3d3c2ca2e1f8748434f7665 data/openblocks/loot_table/blocks/magen
 f8167dd320dc0902ffc8cdef4f9ec3b491d59121 data/openblocks/loot_table/blocks/magenta_elevator_rotating.json
 db430573fd55bb976a2479fc383007c2830f4d73 data/openblocks/loot_table/blocks/orange_elevator.json
 0da3298afb552558bd72ce59ce9c96a7d389a1b0 data/openblocks/loot_table/blocks/orange_elevator_rotating.json
+9d8baa2e6dbf28d82e329c20aafeab8d289b138b data/openblocks/loot_table/blocks/paint_can.json
+fb3ad3d06cf6bf09b9e638e533d1acc93231e83e data/openblocks/loot_table/blocks/paint_mixer.json
 8d904e3f19e43fda68562978667fbd25a138143d data/openblocks/loot_table/blocks/pink_elevator.json
 5b3975d850b468688119e4a0b422bd397e026dc7 data/openblocks/loot_table/blocks/pink_elevator_rotating.json
 365072ff942b1fbea4957756a6932cb27f0d0d7b data/openblocks/loot_table/blocks/purple_elevator.json

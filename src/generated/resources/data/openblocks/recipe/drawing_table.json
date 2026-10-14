@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "c": {
+      "tag": "c:player_workstations/crafting_tables"
+    },
+    "k": {
+      "item": "openblocks:sketching_pencil"
+    },
+    "p": {
+      "tag": "minecraft:planks"
+    },
+    "s": {
+      "item": "openblocks:unprepared_stencil"
+    }
+  },
+  "pattern": [
+    "sks",
+    "pcp",
+    "ppp"
+  ],
+  "result": {
+    "count": 1,
+    "id": "openblocks:drawing_table"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "i": {
+      "tag": "c:ingots/iron"
+    },
+    "p": {
+      "item": "minecraft:paper"
+    }
+  },
+  "pattern": [
+    " p ",
+    "pip",
+    " p "
+  ],
+  "result": {
+    "count": 1,
+    "id": "openblocks:unprepared_stencil"
+  }
+}

@@ -10,11 +10,13 @@ import net.minecraft.data.recipes.RecipeProvider;
 import net.minecraft.data.recipes.ShapedRecipeBuilder;
 import net.minecraft.data.recipes.ShapelessRecipeBuilder;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.neoforged.neoforge.common.Tags;
 import openblocks.OpenBlocks;
+import openblocks.item.PaintBrushItem;
 import openblocks.registry.OBBlocks;
 import openblocks.registry.OBItems;
 
@@ -143,6 +145,82 @@ public class OBRecipeProvider extends RecipeProvider {
 				.define('e', Items.ENCHANTING_TABLE)
 				.define('r', Tags.Items.DUSTS_REDSTONE)
 				.unlockedBy("has_enchanting_table", has(Items.ENCHANTING_TABLE))
+				.save(output);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.MISC, OBBlocks.PAINT_MIXER.get())
+				.pattern("ooo")
+				.pattern("i i")
+				.pattern("iii")
+				.define('o', Tags.Items.OBSIDIANS)
+				.define('i', Tags.Items.INGOTS_IRON)
+				.unlockedBy("has_obsidian", has(Tags.Items.OBSIDIANS))
+				.save(output);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, OBItems.PAINT_BRUSH.get())
+				.pattern("w  ")
+				.pattern(" s ")
+				.pattern("  s")
+				.define('w', Items.WHITE_WOOL)
+				.define('s', Tags.Items.RODS_WOODEN)
+				.unlockedBy("has_wool", has(Items.WHITE_WOOL))
+				.save(output);
+
+		// dipping a brush into dye, like legacy
+		for (DyeColor color : DyeColor.values()) {
+			ShapelessRecipeBuilder.shapeless(RecipeCategory.TOOLS, PaintBrushItem.create(color))
+					.group("openblocks:paintbrush")
+					.requires(OBItems.PAINT_BRUSH.get())
+					.requires(color.getTag())
+					.unlockedBy("has_paintbrush", has(OBItems.PAINT_BRUSH.get()))
+					.save(output, OpenBlocks.location("paintbrush_" + color.getSerializedName()));
+		}
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, OBBlocks.CANVAS.get(), 9)
+				.pattern("ppp")
+				.pattern("pfp")
+				.pattern("ppp")
+				.define('p', Items.PAPER)
+				.define('f', Tags.Items.FENCES_WOODEN)
+				.unlockedBy("has_paper", has(Items.PAPER))
+				.save(output);
+
+		// the legacy recipe used the OpenBlocks sponge, which is not ported yet
+		ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, OBItems.SQUEEGEE.get())
+				.pattern("sss")
+				.pattern(" w ")
+				.pattern(" w ")
+				.define('s', Items.SPONGE)
+				.define('w', Tags.Items.RODS_WOODEN)
+				.unlockedBy("has_sponge", has(Items.SPONGE))
+				.save(output);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.MISC, OBItems.UNPREPARED_STENCIL.get())
+				.pattern(" p ")
+				.pattern("pip")
+				.pattern(" p ")
+				.define('p', Items.PAPER)
+				.define('i', Tags.Items.INGOTS_IRON)
+				.unlockedBy("has_paper", has(Items.PAPER))
+				.save(output);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.MISC, OBItems.SKETCHING_PENCIL.get())
+				.pattern("c  ")
+				.pattern(" s ")
+				.pattern("  s")
+				.define('c', ItemTags.COALS)
+				.define('s', Tags.Items.RODS_WOODEN)
+				.unlockedBy("has_coal", has(ItemTags.COALS))
+				.save(output);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.MISC, OBBlocks.DRAWING_TABLE.get())
+				.pattern("sks")
+				.pattern("pcp")
+				.pattern("ppp")
+				.define('s', OBItems.UNPREPARED_STENCIL.get())
+				.define('k', OBItems.SKETCHING_PENCIL.get())
+				.define('p', ItemTags.PLANKS)
+				.define('c', Tags.Items.PLAYER_WORKSTATIONS_CRAFTING_TABLES)
+				.unlockedBy("has_unprepared_stencil", has(OBItems.UNPREPARED_STENCIL.get()))
 				.save(output);
 
 		ShapedRecipeBuilder.shaped(RecipeCategory.MISC, OBBlocks.DONATION_STATION.get())

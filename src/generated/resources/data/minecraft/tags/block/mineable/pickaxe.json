@@ -42,6 +42,7 @@
     "openblocks:block_placer",
     "openblocks:auto_anvil",
     "openblocks:auto_enchantment_table",
-    "openblocks:donation_station"
+    "openblocks:donation_station",
+    "openblocks:paint_mixer"
   ]
 }

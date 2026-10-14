@@ -69,7 +69,9 @@ Fortschritt:
 - [x] Scaffolding: durchsichtiger Block (Flächen zu Nachbar-Gerüsten ausgeblendet wie bei Glas), zerfällt bei Random Ticks mit Drop (Config `scaffolding.despawnRate`), Brennstoff für 100 Ticks über die Data Map `neoforge:furnace_fuels` (`OBDataMapProvider`). Anders als im Original mit Holz- statt Steinklang. GameTest.
 - [x] Heal: Kreativ-Block ohne Rezept, gibt Spielern im Block oder darauf einmal pro Sekunde einen Tick Regeneration und Sättigung (1 Herz-Hälfte, 1 Hungerpunkt), nicht im Kreativmodus. GameTests.
 
-Offen: Big Button (Stein/Holz), Target, Path, Elevator + Rotating Elevator, Wrench, Pedometer, Slimalyzer, Sponge-on-a-Stick, Tasty Clay, generische Items (`MetasGeneric` → einzelne Items statt Metadaten).
+- [x] Big Button (Stein: `big_button`, Holz: `big_button_wood`): 14×14-Knopf an jeder Seite eines Blocks (`FaceAttachedHorizontalDirectionalBlock`, Blockstates wie Vanilla-Knöpfe), gibt wie Vanilla-Knöpfe ein Signal in alle Richtungen und ein starkes in den Block dahinter. Bleibt so viele Ticks gedrückt, wie Items in seinen 8 Slots liegen (mindestens 1 Tick wie im Original); Schleichen + Rechtsklick mit leerer Hand öffnet das Inventar (`BigButtonMenu`, Gesamtzeit per `ContainerData`, GUI per Skript aus dem Vanilla-Dispenser erzeugt). Item-Capability auf allen Seiten. Der Holzknopf wird auch von Pfeilen gedrückt und bleibt gedrückt, solange Pfeile darin stecken. Modelle per Datagen aus den alten JSONs (Stein/Eichenbretter). Anders als im Original klickt der Holzknopf mit Vanilla-Holzknopf-Sounds (vorher Steinknopf-Sounds für beide). Rezepte 2×2 Steinknopf bzw. beliebige Holzknöpfe. GameTests.
+
+Offen: Target, Path, Wrench, Pedometer, Slimalyzer, Sponge-on-a-Stick, Tasty Clay, generische Items (`MetasGeneric` → einzelne Items statt Metadaten).
 - Metadaten-Items werden in einzelne Items aufgeteilt (es gibt keine Item-Metadaten mehr).
 - Für jeden Block: Blockstate, Modell und Loot-Table per Datagen, Rezept mit Tags.
 

@@ -13,6 +13,7 @@ import openblocks.client.canvas.CanvasModel;
 import openblocks.client.canvas.CanvasRenderer;
 import openblocks.client.canvas.CanvasTextures;
 import openblocks.client.gui.AutoAnvilScreen;
+import openblocks.client.gui.BigButtonScreen;
 import openblocks.client.gui.AutoEnchantmentTableScreen;
 import openblocks.client.gui.DevNullScreen;
 import openblocks.client.gui.DispenserLayoutScreen;
@@ -81,6 +82,7 @@ public class OpenBlocksClient {
 		event.register(OBMenus.ITEM_DROPPER.get(), ItemDropperScreen::new);
 		event.register(OBMenus.BLOCK_PLACER.get(), DispenserLayoutScreen<BlockPlacerMenu>::new);
 		event.register(OBMenus.SPRINKLER.get(), DispenserLayoutScreen<SprinklerMenu>::new);
+		event.register(OBMenus.BIG_BUTTON.get(), BigButtonScreen::new);
 		event.register(OBMenus.AUTO_ANVIL.get(), AutoAnvilScreen::new);
 		event.register(OBMenus.AUTO_ENCHANTMENT_TABLE.get(), AutoEnchantmentTableScreen::new);
 		event.register(OBMenus.DONATION_STATION.get(), DonationStationScreen::new);

@@ -15,7 +15,7 @@ public class OBDataMapProvider extends DataMapProvider {
 	}
 
 	@Override
-	protected void gather() {
+	protected void gather(HolderLookup.Provider provider) {
 		builder(NeoForgeDataMaps.FURNACE_FUELS)
 				.add(OBBlocks.SCAFFOLDING.getId(), new FurnaceFuel(100), false);
 	}

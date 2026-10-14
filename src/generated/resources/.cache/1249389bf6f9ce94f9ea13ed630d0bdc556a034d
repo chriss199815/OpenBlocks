@@ -1,7 +1,9 @@
-// 1.21.1	2026-10-14T19:00:19.909155	Block States: openblocks
+// 1.21.1	2026-10-14T19:24:26.258758	Block States: openblocks
 909bae1340933de5e494ee6692d1d88aeabf4f33 assets/openblocks/blockstates/auto_anvil.json
 aca132b5918ec066ede0f817145d0ac0649c84a9 assets/openblocks/blockstates/auto_enchantment_table.json
 9be1c7ce94b3232fe19c46a8965abe89ae2d898a assets/openblocks/blockstates/bear_trap.json
+53568851c62b99cb70b7954ce2934bfdd4507ca0 assets/openblocks/blockstates/big_button.json
+69ae3f82b5934a3e5c43cf4dc486ee6c9f9067c2 assets/openblocks/blockstates/big_button_wood.json
 c45d5d2e71c34dc43588a6063c8f1025e64a8816 assets/openblocks/blockstates/black_elevator.json
 d13702d1e489422f027636fd4f3a4f64b33332e9 assets/openblocks/blockstates/black_elevator_rotating.json
 6a60ac85a83f62e9071a3664237075d98888182e assets/openblocks/blockstates/black_flag.json
@@ -79,6 +81,10 @@ b0bb1c488d3b7193c7a74ae86f2d91758bc9621b assets/openblocks/models/block/bear_tra
 2140862847c71233762c615ffbd7e1967ec26681 assets/openblocks/models/block/bear_trap_base.json
 65a877585c134a2ce4a28d293edc9fac61eccbc2 assets/openblocks/models/block/bear_trap_jaw_east.json
 5dd5fa00dfbf2976cb54fb174c31da7a0fc2799c assets/openblocks/models/block/bear_trap_jaw_west.json
+ac47f9758c99187d1cdd57162975218d775c2fad assets/openblocks/models/block/big_button.json
+731c1170bede968e4f4bd9caed1cc93711720802 assets/openblocks/models/block/big_button_pressed.json
+bf7b56deb3dde32f0c27a28c1a4cc4b6be2ed75a assets/openblocks/models/block/big_button_wood.json
+b68b4570141148e3b69bce1308598e06a913c6a6 assets/openblocks/models/block/big_button_wood_pressed.json
 046ad3454fb84c89cbba9376ebc51de1ffee114c assets/openblocks/models/block/block_breaker.json
 17ac3725dc3dd85d746255bbfbf73c70bd467692 assets/openblocks/models/block/block_breaker_active.json
 2a16c00b888ee851a06772cbd2e206663a7b49e1 assets/openblocks/models/block/block_placer.json
@@ -193,6 +199,8 @@ c9e93d3d060e044edf98a858d66c32d835313b63 assets/openblocks/models/item/auto_anvi
 5c35b1b56e78ae48c18a637b0812bfad447805d5 assets/openblocks/models/item/auto_enchantment_table.json
 9c852e3ac2269f59527f6997235d51f9e3a2bd03 assets/openblocks/models/item/balloon_stencil.json
 36a953cbca4a83f2d07d63d2eb92cc11fd700cfe assets/openblocks/models/item/bear_trap.json
+92f90434b0e2141f6c6f8329f14981e7bbe988e6 assets/openblocks/models/item/big_button.json
+508748f897cdffeb6972101264d47769cf5169d2 assets/openblocks/models/item/big_button_wood.json
 d2b8f805473f5db4bc4402f5b4f1864704363649 assets/openblocks/models/item/black_elevator.json
 dd180aef5747a9afe34022df0f8fd345d081cd6c assets/openblocks/models/item/black_elevator_rotating.json
 fcc439f163500f4a2657f61a09c9762b2151a0ed assets/openblocks/models/item/black_flag.json

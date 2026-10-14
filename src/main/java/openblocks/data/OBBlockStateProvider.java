@@ -2,9 +2,12 @@ package openblocks.data;
 
 import net.minecraft.client.renderer.block.model.BlockModel;
 import net.minecraft.core.Direction;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.ItemDisplayContext;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.state.properties.AttachFace;
 import net.neoforged.neoforge.client.model.generators.BlockModelBuilder;
 import net.neoforged.neoforge.client.model.generators.BlockStateProvider;
 import net.neoforged.neoforge.client.model.generators.ConfiguredModel;
@@ -15,13 +18,14 @@ import net.neoforged.neoforge.client.model.generators.loaders.ObjModelBuilder;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.neoforged.neoforge.common.util.TransformationHelper;
 import openblocks.OpenBlocks;
+import openblocks.block.BigButtonBlock;
 import openblocks.block.BlockManipulatorBlock;
 import openblocks.block.FlagBlock;
 import openblocks.block.GraveBlock;
 import openblocks.block.SprinklerBlock;
 import openblocks.block.entity.VacuumHopperBlockEntity;
-import openblocks.registry.OBBlocks;
 import openblocks.common.TankEdge;
+import openblocks.registry.OBBlocks;
 import openblocks.registry.OBItems;
 
 public class OBBlockStateProvider extends BlockStateProvider {
@@ -203,6 +207,48 @@ public class OBBlockStateProvider extends BlockStateProvider {
 		simpleBlockWithItem(OBBlocks.SPONGE.get(), cubeAll(OBBlocks.SPONGE.get()));
 		simpleBlockWithItem(OBBlocks.SCAFFOLDING.get(), models().cubeAll("scaffolding", modLoc("block/scaffolding")).renderType("cutout_mipped"));
 		simpleBlockWithItem(OBBlocks.HEAL.get(), cubeAll(OBBlocks.HEAL.get()));
+
+		bigButton(OBBlocks.BIG_BUTTON.get(), mcLoc("block/stone"));
+		bigButton(OBBlocks.BIG_BUTTON_WOOD.get(), mcLoc("block/oak_planks"));
+	}
+
+	/**
+	 * Legacy big_button models (14x14 plate on the floor, flat plate for the item), placed like the vanilla buttons.
+	 */
+	private void bigButton(Block block, ResourceLocation texture) {
+		final String name = BuiltInRegistries.BLOCK.getKey(block).getPath();
+		final ModelFile inactive = bigButtonModel(name, texture, 2);
+		final ModelFile active = bigButtonModel(name + "_pressed", texture, 1);
+		getVariantBuilder(block).forAllStates(state -> {
+			final AttachFace face = state.getValue(BigButtonBlock.FACE);
+			int rotationY = (int)state.getValue(BigButtonBlock.FACING).toYRot() + 180;
+			if (face == AttachFace.CEILING) rotationY += 180;
+			return ConfiguredModel.builder()
+					.modelFile(state.getValue(BigButtonBlock.POWERED)? active : inactive)
+					.rotationX(face == AttachFace.FLOOR? 0 : (face == AttachFace.WALL? 90 : 180))
+					.rotationY(rotationY % 360)
+					.uvLock(face == AttachFace.WALL)
+					.build();
+		});
+
+		itemModels().withExistingParent(name, mcLoc("block/block"))
+				.texture("all", texture)
+				.texture("particle", texture)
+				.element().from(1, 1, 9).to(15, 15, 11)
+				.allFaces((dir, face) -> face.texture("#all").uvs(0, 0, dir.getAxis() == Direction.Axis.Z? 14 : 2, dir.getAxis() == Direction.Axis.Y? 2 : 14))
+				.end();
+	}
+
+	private ModelFile bigButtonModel(String name, ResourceLocation texture, int height) {
+		return models().withExistingParent(name, mcLoc("block/block"))
+				.texture("all", texture)
+				.texture("particle", texture)
+				.element().from(1, 0, 1).to(15, height, 15)
+				.allFaces((dir, face) -> {
+					face.texture("#all").uvs(0, 0, 14, dir.getAxis().isHorizontal()? height : 14);
+					if (dir == Direction.DOWN) face.cullface(Direction.DOWN);
+				})
+				.end();
 	}
 
 	/**

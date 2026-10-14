@@ -8,6 +8,7 @@ import openblocks.OpenBlocks;
 import openblocks.block.entity.AutoAnvilBlockEntity;
 import openblocks.block.entity.AutoEnchantmentTableBlockEntity;
 import openblocks.block.entity.BearTrapBlockEntity;
+import openblocks.block.entity.BigButtonBlockEntity;
 import openblocks.block.entity.CanvasBlockEntity;
 import openblocks.block.entity.DonationStationBlockEntity;
 import openblocks.block.entity.DrawingTableBlockEntity;
@@ -100,4 +101,7 @@ public class OBBlockEntities {
 
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<HealBlockEntity>> HEAL = BLOCK_ENTITIES.register("heal",
 			() -> BlockEntityType.Builder.of(HealBlockEntity::new, OBBlocks.HEAL.get()).build(null));
+
+	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<BigButtonBlockEntity>> BIG_BUTTON = BLOCK_ENTITIES.register("big_button",
+			() -> BlockEntityType.Builder.of(BigButtonBlockEntity::new, OBBlocks.BIG_BUTTON.get(), OBBlocks.BIG_BUTTON_WOOD.get()).build(null));
 }

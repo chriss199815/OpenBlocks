@@ -41,6 +41,8 @@ public class OBBlockTagsProvider extends BlockTagsProvider {
 		tag(BlockTags.TRAPDOORS).add(OBBlocks.LADDER.get());
 		tag(BlockTags.CLIMBABLE).add(OBBlocks.ROPE_LADDER.get());
 		tag(BlockTags.MINEABLE_WITH_SHOVEL).add(OBBlocks.GRAVE.get());
+		tag(BlockTags.STONE_BUTTONS).add(OBBlocks.BIG_BUTTON.get());
+		tag(BlockTags.WOODEN_BUTTONS).add(OBBlocks.BIG_BUTTON_WOOD.get());
 		// replaces legacy canEntityDestroy
 		tag(BlockTags.WITHER_IMMUNE).add(OBBlocks.GRAVE.get());
 		tag(BlockTags.DRAGON_IMMUNE).add(OBBlocks.GRAVE.get());

@@ -367,5 +367,19 @@ public class OBRecipeProvider extends RecipeProvider {
 				.define('s', Tags.Items.RODS_WOODEN)
 				.unlockedBy("has_stick", has(Tags.Items.RODS_WOODEN))
 				.save(output);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.REDSTONE, OBBlocks.BIG_BUTTON.get())
+				.pattern("bb")
+				.pattern("bb")
+				.define('b', Items.STONE_BUTTON)
+				.unlockedBy("has_stone_button", has(Items.STONE_BUTTON))
+				.save(output);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.REDSTONE, OBBlocks.BIG_BUTTON_WOOD.get())
+				.pattern("bb")
+				.pattern("bb")
+				.define('b', ItemTags.WOODEN_BUTTONS)
+				.unlockedBy("has_wooden_button", has(ItemTags.WOODEN_BUTTONS))
+				.save(output);
 	}
 }

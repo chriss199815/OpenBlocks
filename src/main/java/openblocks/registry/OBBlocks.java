@@ -12,6 +12,7 @@ import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.LiquidBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.material.PushReaction;
 import net.neoforged.neoforge.registries.DeferredBlock;
@@ -20,6 +21,7 @@ import openblocks.OpenBlocks;
 import openblocks.block.AutoAnvilBlock;
 import openblocks.block.AutoEnchantmentTableBlock;
 import openblocks.block.BearTrapBlock;
+import openblocks.block.BigButtonBlock;
 import openblocks.block.CanvasBlock;
 import openblocks.block.DonationStationBlock;
 import openblocks.block.DrawingTableBlock;
@@ -226,6 +228,16 @@ public class OBBlocks {
 			.strength(1.0f)
 			.requiresCorrectToolForDrops()
 			.sound(SoundType.STONE)));
+
+	public static final DeferredBlock<BigButtonBlock> BIG_BUTTON = registerWithItem("big_button", () -> new BigButtonBlock(BlockSetType.STONE, bigButtonProperties()));
+	public static final DeferredBlock<BigButtonBlock> BIG_BUTTON_WOOD = registerWithItem("big_button_wood", () -> new BigButtonBlock(BlockSetType.OAK, bigButtonProperties()));
+
+	private static BlockBehaviour.Properties bigButtonProperties() {
+		return BlockBehaviour.Properties.of()
+				.strength(1.0f)
+				.noOcclusion()
+				.pushReaction(PushReaction.DESTROY);
+	}
 
 	private static BlockBehaviour.Properties canvasProperties() {
 		return BlockBehaviour.Properties.of()

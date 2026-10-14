@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "key": {
+    "b": {
+      "tag": "minecraft:wooden_buttons"
+    }
+  },
+  "pattern": [
+    "bb",
+    "bb"
+  ],
+  "result": {
+    "count": 1,
+    "id": "openblocks:big_button_wood"
+  }
+}

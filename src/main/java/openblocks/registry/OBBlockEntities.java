@@ -6,6 +6,7 @@ import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import openblocks.OpenBlocks;
 import openblocks.block.entity.GraveBlockEntity;
+import openblocks.block.entity.ItemDropperBlockEntity;
 import openblocks.block.entity.TankBlockEntity;
 import openblocks.block.entity.VacuumHopperBlockEntity;
 import openblocks.block.entity.XpBottlerBlockEntity;
@@ -39,4 +40,8 @@ public class OBBlockEntities {
 	@SuppressWarnings("DataFlowIssue")
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<VacuumHopperBlockEntity>> VACUUM_HOPPER = BLOCK_ENTITIES.register("vacuum_hopper",
 			() -> BlockEntityType.Builder.of(VacuumHopperBlockEntity::new, OBBlocks.VACUUM_HOPPER.get()).build(null));
+
+	@SuppressWarnings("DataFlowIssue")
+	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<ItemDropperBlockEntity>> ITEM_DROPPER = BLOCK_ENTITIES.register("item_dropper",
+			() -> BlockEntityType.Builder.of(ItemDropperBlockEntity::new, OBBlocks.ITEM_DROPPER.get()).build(null));
 }

@@ -1,4 +1,4 @@
-// 1.21.1	2026-10-13T22:09:53.500912	Loot Tables
+// 1.21.1	2026-10-14T09:22:51.023111	Loot Tables
 e56438400b883176c092cf868516713c206e662e data/openblocks/loot_table/blocks/black_elevator.json
 729a4def80970d503e3b4b44b25d932de17130b5 data/openblocks/loot_table/blocks/black_elevator_rotating.json
 edf562b7977d1cf4838d223b334e5241e4e2be47 data/openblocks/loot_table/blocks/blue_elevator.json
@@ -12,6 +12,7 @@ fce05366add91cf075565ad57fe00363aaa6b72d data/openblocks/loot_table/blocks/gray_
 2a8296ba2c5a8ada61d89ef53ac7c64472c4e227 data/openblocks/loot_table/blocks/gray_elevator_rotating.json
 7370eea99293c079c16b6c9eec16f6e7869d7987 data/openblocks/loot_table/blocks/green_elevator.json
 51eb4c8798991b3239560d98a9750bd17d5be45a data/openblocks/loot_table/blocks/green_elevator_rotating.json
+3690b04c1229c5a4d7573e5021c7a10173699341 data/openblocks/loot_table/blocks/item_dropper.json
 17b081cba2cadbe6daa41c0a74357fd44bfe91a5 data/openblocks/loot_table/blocks/light_blue_elevator.json
 99dbe9af786113848faea7f6314f96e9141a34ab data/openblocks/loot_table/blocks/light_blue_elevator_rotating.json
 6af66ebae98e6e8a7359feda1dae6437c9df350e data/openblocks/loot_table/blocks/light_gray_elevator.json

@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/orientable_vertical",
+  "textures": {
+    "front": "openblocks:block/item_dropper_front",
+    "side": "openblocks:block/item_dropper"
+  }
+}

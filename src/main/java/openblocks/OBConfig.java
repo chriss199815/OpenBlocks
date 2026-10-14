@@ -15,8 +15,21 @@ public class OBConfig {
 	public static final Tanks TANKS = new Tanks(BUILDER);
 	public static final Graves GRAVES = new Graves(BUILDER);
 	public static final HangGlider HANG_GLIDER = new HangGlider(BUILDER);
+	public static final ItemDropper ITEM_DROPPER = new ItemDropper(BUILDER);
 
 	public static final ModConfigSpec SPEC = BUILDER.build();
+
+	public static class ItemDropper {
+		public final ModConfigSpec.DoubleValue maxItemDropSpeed;
+
+		private ItemDropper(ModConfigSpec.Builder builder) {
+			builder.push("itemdropper");
+			maxItemDropSpeed = builder
+					.comment("Maximum speed that can be set in item dropper GUI")
+					.defineInRange("maxItemDropSpeed", 4.0, 0.0, 10.0);
+			builder.pop();
+		}
+	}
 
 	public static class HangGlider {
 		public final ModConfigSpec.BooleanValue enableThermal;

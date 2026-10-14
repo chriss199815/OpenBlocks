@@ -1,4 +1,4 @@
-// 1.21.1	2026-10-13T22:09:53.499595	Block States: openblocks
+// 1.21.1	2026-10-14T09:26:46.132451	Block States: openblocks
 c45d5d2e71c34dc43588a6063c8f1025e64a8816 assets/openblocks/blockstates/black_elevator.json
 d13702d1e489422f027636fd4f3a4f64b33332e9 assets/openblocks/blockstates/black_elevator_rotating.json
 c45d5d2e71c34dc43588a6063c8f1025e64a8816 assets/openblocks/blockstates/blue_elevator.json
@@ -12,6 +12,7 @@ c45d5d2e71c34dc43588a6063c8f1025e64a8816 assets/openblocks/blockstates/gray_elev
 d13702d1e489422f027636fd4f3a4f64b33332e9 assets/openblocks/blockstates/gray_elevator_rotating.json
 c45d5d2e71c34dc43588a6063c8f1025e64a8816 assets/openblocks/blockstates/green_elevator.json
 d13702d1e489422f027636fd4f3a4f64b33332e9 assets/openblocks/blockstates/green_elevator_rotating.json
+a904cf2ba3b4dda97dcefb2ff9ceed71670608ff assets/openblocks/blockstates/item_dropper.json
 c45d5d2e71c34dc43588a6063c8f1025e64a8816 assets/openblocks/blockstates/light_blue_elevator.json
 d13702d1e489422f027636fd4f3a4f64b33332e9 assets/openblocks/blockstates/light_blue_elevator_rotating.json
 c45d5d2e71c34dc43588a6063c8f1025e64a8816 assets/openblocks/blockstates/light_gray_elevator.json
@@ -42,6 +43,7 @@ d3d21200c82f54f0fe0701831311e9ea2ec3af35 assets/openblocks/models/block/elevator
 0a7295117b6c3a96e26f6cec9a39a565a8a3280f assets/openblocks/models/block/elevator_rotating.json
 9f3a8f7f3192e48338258695e52de2902577b76d assets/openblocks/models/block/grave_free.json
 e97351a6d611f8069d1e29d33f25af56f3247c28 assets/openblocks/models/block/grave_ground.json
+4dd0dce8ad6ed5e1708f6a97ae40cfdfda5b3bd2 assets/openblocks/models/block/item_dropper.json
 58e02f5b5a81a69aca53d71b7c6f49d9a39f068c assets/openblocks/models/block/tank.json
 fd5928cf93bfb8617d1cfdb957893d42442be7b1 assets/openblocks/models/block/tank_edge_be.json
 2214ec18a8661b89f96b1ef260f8ee020cbb610e assets/openblocks/models/block/tank_edge_bn.json
@@ -100,6 +102,7 @@ dd180aef5747a9afe34022df0f8fd345d081cd6c assets/openblocks/models/item/gray_elev
 d2b8f805473f5db4bc4402f5b4f1864704363649 assets/openblocks/models/item/green_elevator.json
 dd180aef5747a9afe34022df0f8fd345d081cd6c assets/openblocks/models/item/green_elevator_rotating.json
 c798f0ebf2a7cf12178d2614c8aba9015959d1ce assets/openblocks/models/item/hang_glider.json
+d9b1441095c027bac43ac47b3b19b25871b87b16 assets/openblocks/models/item/item_dropper.json
 d2b8f805473f5db4bc4402f5b4f1864704363649 assets/openblocks/models/item/light_blue_elevator.json
 dd180aef5747a9afe34022df0f8fd345d081cd6c assets/openblocks/models/item/light_blue_elevator_rotating.json
 d2b8f805473f5db4bc4402f5b4f1864704363649 assets/openblocks/models/item/light_gray_elevator.json

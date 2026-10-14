@@ -8,6 +8,7 @@ import net.neoforged.neoforge.common.NeoForge;
 import openblocks.OpenBlocks;
 import net.minecraft.client.renderer.entity.ExperienceOrbRenderer;
 import net.neoforged.neoforge.client.event.RegisterMenuScreensEvent;
+import openblocks.client.gui.ItemDropperScreen;
 import openblocks.client.gui.VacuumHopperScreen;
 import openblocks.client.gui.XpBottlerScreen;
 import openblocks.client.particle.LiquidSprayParticle;
@@ -52,6 +53,7 @@ public class OpenBlocksClient {
 	private static void registerScreens(RegisterMenuScreensEvent event) {
 		event.register(OBMenus.XP_BOTTLER.get(), XpBottlerScreen::new);
 		event.register(OBMenus.VACUUM_HOPPER.get(), VacuumHopperScreen::new);
+		event.register(OBMenus.ITEM_DROPPER.get(), ItemDropperScreen::new);
 	}
 
 	private static void registerRenderers(EntityRenderersEvent.RegisterRenderers event) {

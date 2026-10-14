@@ -17,6 +17,7 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 import openblocks.OpenBlocks;
 import openblocks.block.ElevatorBlock;
 import openblocks.block.GraveBlock;
+import openblocks.block.ItemDropperBlock;
 import openblocks.block.RotatingElevatorBlock;
 import openblocks.block.TankBlock;
 import openblocks.block.VacuumHopperBlock;
@@ -78,6 +79,12 @@ public class OBBlocks {
 			.requiresCorrectToolForDrops()
 			.noOcclusion()
 			.isRedstoneConductor((state, level, pos) -> false)
+			.sound(SoundType.STONE)));
+
+	public static final DeferredBlock<ItemDropperBlock> ITEM_DROPPER = registerWithItem("item_dropper", () -> new ItemDropperBlock(BlockBehaviour.Properties.of()
+			.mapColor(MapColor.STONE)
+			.strength(1.0f)
+			.requiresCorrectToolForDrops()
 			.sound(SoundType.STONE)));
 
 	private static <T extends Block> DeferredBlock<T> registerWithItem(String id, Supplier<T> factory) {

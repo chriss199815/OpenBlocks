@@ -108,6 +108,13 @@ public class OBBlockStateProvider extends BlockStateProvider {
 		grave();
 		vacuumHopper();
 
+		// front on top: directionalBlock rotates the up face to the facing, like the vanilla dropper_vertical model
+		final ModelFile itemDropper = models().withExistingParent("item_dropper", mcLoc("block/orientable_vertical"))
+				.texture("front", modLoc("block/item_dropper_front"))
+				.texture("side", modLoc("block/item_dropper"));
+		directionalBlock(OBBlocks.ITEM_DROPPER.get(), itemDropper);
+		simpleBlockItem(OBBlocks.ITEM_DROPPER.get(), itemDropper);
+
 		// flat icon like vanilla iron bars, the 1px block model is barely visible from the side
 		itemModels().withExistingParent("xp_drain", mcLoc("item/generated")).texture("layer0", modLoc("block/xp_drain"));
 	}

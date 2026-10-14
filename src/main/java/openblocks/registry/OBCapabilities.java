@@ -21,6 +21,8 @@ public class OBCapabilities {
 		// like legacy, only output sides are accessible (extract/drain only); null (no side) gets the same handlers
 		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, OBBlockEntities.VACUUM_HOPPER.get(), VacuumHopperBlockEntity::getItemHandler);
 		event.registerBlockEntity(Capabilities.FluidHandler.BLOCK, OBBlockEntities.VACUUM_HOPPER.get(), VacuumHopperBlockEntity::getFluidHandler);
+		// like legacy, the whole inventory on all sides
+		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, OBBlockEntities.ITEM_DROPPER.get(), (dropper, side) -> dropper.getInventory());
 		// unlike legacy, only single (unstacked) tank items can be filled or drained
 		event.registerItem(Capabilities.FluidHandler.ITEM, (stack, ctx) -> new FluidHandlerItemStack(OBComponents.TANK_CONTENTS, stack, TankBlockEntity.getTankCapacity()), OBItems.TANK.get());
 	}

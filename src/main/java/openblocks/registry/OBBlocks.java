@@ -33,6 +33,7 @@ import openblocks.block.FlagBlock;
 import openblocks.block.GraveBlock;
 import openblocks.block.ItemDropperBlock;
 import openblocks.block.JadedLadderBlock;
+import openblocks.block.RopeLadderBlock;
 import openblocks.block.RotatingElevatorBlock;
 import openblocks.block.SprinklerBlock;
 import openblocks.block.TankBlock;
@@ -191,6 +192,13 @@ public class OBBlocks {
 
 	// legacy "ladder", the jaded ladder
 	public static final DeferredBlock<JadedLadderBlock> LADDER = registerWithItem("ladder", () -> new JadedLadderBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_TRAPDOOR)));
+
+	public static final DeferredBlock<RopeLadderBlock> ROPE_LADDER = registerWithItem("rope_ladder", () -> new RopeLadderBlock(BlockBehaviour.Properties.of()
+			.forceSolidOff()
+			.strength(0.4f)
+			.noOcclusion()
+			.pushReaction(PushReaction.DESTROY)
+			.sound(SoundType.LADDER)));
 
 	private static BlockBehaviour.Properties canvasProperties() {
 		return BlockBehaviour.Properties.of()

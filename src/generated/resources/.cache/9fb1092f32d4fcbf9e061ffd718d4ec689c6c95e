@@ -1,4 +1,4 @@
-// 1.21.1	2026-10-14T18:58:57.229089	Recipes
+// 1.21.1	2026-10-14T18:59:19.701583	Recipes
 f37f622f6aa43ff8c3b05fe0ccd813d9be730420 data/openblocks/advancement/recipes/building_blocks/canvas.json
 3e9f0cd162609d6b5b1d8d296b490afc26cbae21 data/openblocks/advancement/recipes/decorations/black_flag.json
 e3eed01d1a50e61eb43cad392e059a644388bf60 data/openblocks/advancement/recipes/decorations/blue_flag.json
@@ -88,6 +88,7 @@ bf754e5300b615f1d3755c95f1b2ca96fed50e1b data/openblocks/advancement/recipes/tra
 1ab15b24ebdf6ba3995a75fd973332f744efa3f5 data/openblocks/advancement/recipes/transportation/purple_elevator_rotating.json
 e969b99eb50286f33d1826bb703a1d6b4bb957a3 data/openblocks/advancement/recipes/transportation/red_elevator.json
 0cad09e50ac99c3b4a9db973ea1d04204d890d66 data/openblocks/advancement/recipes/transportation/red_elevator_rotating.json
+2b6c0be5618ec594caaf72af9734a3487496e6a4 data/openblocks/advancement/recipes/transportation/rope_ladder.json
 610f75d0b54e33bba333a4db4dc030f737e6a157 data/openblocks/advancement/recipes/transportation/white_elevator.json
 9b3bc8399c650851d5487932d6939c3f930c228b data/openblocks/advancement/recipes/transportation/white_elevator_rotating.json
 8ee5710d6f3e1b96dbbcdddd7e41cdc35c2de866 data/openblocks/advancement/recipes/transportation/yellow_elevator.json
@@ -169,6 +170,7 @@ ca74b6fc203a90eb89165d680908659a0c592b0f data/openblocks/recipe/purple_flag.json
 fa8e66804c8144f8e543cc41a58ecce7b39bf7a0 data/openblocks/recipe/red_elevator.json
 28219adfa77731cdd95c2b5d771559a603b956d1 data/openblocks/recipe/red_elevator_rotating.json
 3d99bab1bc02974c5d754d794ace2b1c84db0a59 data/openblocks/recipe/red_flag.json
+595fb785cc7d6247c46db38a88b2cb2deffa173e data/openblocks/recipe/rope_ladder.json
 871b52e67f485592a6616f4111fbe19b3035b602 data/openblocks/recipe/sketching_pencil.json
 f19f94e01a138278627c26547d4a9780af62ca45 data/openblocks/recipe/sleeping_bag.json
 6b64ad36e3d7a9ad79a201e8fb71e2130012162d data/openblocks/recipe/sprinkler.json

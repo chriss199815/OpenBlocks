@@ -198,6 +198,23 @@ public class OBBlockStateProvider extends BlockStateProvider {
 		// like the legacy blockstate: vanilla trapdoor models, texture not rotated with the facing
 		trapdoorBlockWithRenderType(OBBlocks.LADDER.get(), modLoc("block/ladder"), false, "cutout");
 		itemModels().getBuilder("ladder").parent(new ModelFile.UncheckedModelFile(modLoc("block/ladder_bottom")));
+		ropeLadder();
+	}
+
+	/**
+	 * Legacy rope_ladder model: a flat panel on the side of the supporting block (south when facing north), flat item icon.
+	 */
+	private void ropeLadder() {
+		final ModelFile model = models().withExistingParent("rope_ladder", mcLoc("block/block"))
+				.renderType("cutout")
+				.texture("front", modLoc("block/rope_ladder"))
+				.texture("particle", modLoc("block/rope_ladder"))
+				.element().from(0, 0, 15.75f).to(16, 16, 16)
+				.face(Direction.NORTH).uvs(0, 0, 16, 16).texture("#front").end()
+				.face(Direction.SOUTH).uvs(0, 0, 16, 16).texture("#front").cullface(Direction.SOUTH).end()
+				.end();
+		horizontalBlock(OBBlocks.ROPE_LADDER.get(), model);
+		itemModels().withExistingParent("rope_ladder", mcLoc("item/generated")).texture("layer0", modLoc("block/rope_ladder"));
 	}
 
 	/**

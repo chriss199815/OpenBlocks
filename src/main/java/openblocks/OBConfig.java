@@ -23,8 +23,21 @@ public class OBConfig {
 	public static final Sprinkler SPRINKLER = new Sprinkler(BUILDER);
 	public static final DevNull DEV_NULL = new DevNull(BUILDER);
 	public static final Cursor CURSOR = new Cursor(BUILDER);
+	public static final Ladder LADDER = new Ladder(BUILDER);
 
 	public static final ModConfigSpec SPEC = BUILDER.build();
+
+	public static class Ladder {
+		public final ModConfigSpec.BooleanValue infiniteMode;
+
+		private Ladder(ModConfigSpec.Builder builder) {
+			builder.push("ladder");
+			infiniteMode = builder
+					.comment("If true, ladders will behave in old way: single item will place ladder all the way down, but it will not drop when broken")
+					.define("infiniteMode", false);
+			builder.pop();
+		}
+	}
 
 	public static class DevNull {
 		public final ModConfigSpec.BooleanValue sneakClickToGui;

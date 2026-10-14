@@ -1,4 +1,5 @@
-// 1.21.1	2026-10-14T18:58:57.22971	Tags for minecraft:block mod id openblocks
+// 1.21.1	2026-10-14T18:59:19.702287	Tags for minecraft:block mod id openblocks
+ea3b8e52ebb7659619873decbce6099bbd4626a0 data/minecraft/tags/block/climbable.json
 9696dcd7778b16ec87ea56cb519dd003d7008343 data/minecraft/tags/block/dragon_immune.json
 185e737ac59cebdaed11e70118d78895d6341e3b data/minecraft/tags/block/mineable/axe.json
 abbec813b46723400f38e2fccf6a676153e9eee4 data/minecraft/tags/block/mineable/pickaxe.json

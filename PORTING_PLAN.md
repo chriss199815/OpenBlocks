@@ -64,8 +64,9 @@ Hinweis: Der Creative-Tab bleibt unsichtbar, solange er leer ist (Vanilla blende
 Fortschritt:
 - [x] Elevator + Rotating Elevator: je 16 Blöcke pro Farbe (`<farbe>_elevator`, `<farbe>_elevator_rotating`) statt Metadaten/TileEntity, Färben per Rechtsklick mit Farbstoff, Config `elevator.*`, `ElevatorCheckEvent`-API, Payload statt `ElevatorActionEvent`, GameTests. Dazu Grundgerüst: Datagen (Blockstates/Modelle, Loot, Rezepte, Block-Tags, GameTest-Strukturen), `OBSounds`, Client-Einstieg `OpenBlocksClient`.
 - [x] Jaded Ladder (ID `ladder`): Falltür (`TrapDoorBlock`, Eiche-Werte), die geöffnet als Leiter zählt (`isLadder`). Vanilla-Falltürmodelle mit eigener Textur per Datagen, Rezept Leiter + beliebige Holzfalltür (`minecraft:wooden_trapdoors`). GameTest.
+- [x] Rope Ladder: hängt an jedem Block dahinter oder an der Strickleiter darüber, rollt sich beim Platzieren bis zum Boden ab (ein Item pro Block, Platzieren feuert `BlockEvent.EntityPlaceEvent`) und beim Abbauen wieder ein (alle Leitern darunter droppen). Kletterbar über den Tag `minecraft:climbable`. Wie im Original kollidieren Mobs nur, wenn sie auf die Leiter schauen (von der Seite kann man hindurchgehen). Config `ladder.infiniteMode` (ein Item rollt bis ganz unten ab, Abbauen droppt nichts). Anders als im Original rollt sie im Kreativmodus immer bis zum Boden ab (vorher nur mit mehr als einem Item im Stapel). GameTests.
 
-Offen: Rope Ladder, Sponge, Scaffolding, Heal, Big Button (Stein/Holz), Target, Path, Elevator + Rotating Elevator, Wrench, Pedometer, Slimalyzer, Sponge-on-a-Stick, Tasty Clay, generische Items (`MetasGeneric` → einzelne Items statt Metadaten).
+Offen: Sponge, Scaffolding, Heal, Big Button (Stein/Holz), Target, Path, Elevator + Rotating Elevator, Wrench, Pedometer, Slimalyzer, Sponge-on-a-Stick, Tasty Clay, generische Items (`MetasGeneric` → einzelne Items statt Metadaten).
 - Metadaten-Items werden in einzelne Items aufgeteilt (es gibt keine Item-Metadaten mehr).
 - Für jeden Block: Blockstate, Modell und Loot-Table per Datagen, Rezept mit Tags.
 

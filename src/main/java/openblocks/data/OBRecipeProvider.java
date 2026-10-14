@@ -344,5 +344,14 @@ public class OBRecipeProvider extends RecipeProvider {
 				.requires(ItemTags.WOODEN_TRAPDOORS)
 				.unlockedBy("has_ladder", has(Items.LADDER))
 				.save(output);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.TRANSPORTATION, OBBlocks.ROPE_LADDER.get(), 8)
+				.pattern("sts")
+				.pattern("sts")
+				.pattern("sts")
+				.define('s', Tags.Items.STRINGS)
+				.define('t', Tags.Items.RODS_WOODEN)
+				.unlockedBy("has_string", has(Tags.Items.STRINGS))
+				.save(output);
 	}
 }

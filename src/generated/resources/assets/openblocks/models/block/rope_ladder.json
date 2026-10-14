@@ -1,0 +1,31 @@
+{
+  "parent": "minecraft:block/block",
+  "elements": [
+    {
+      "faces": {
+        "north": {
+          "texture": "#front"
+        },
+        "south": {
+          "cullface": "south",
+          "texture": "#front"
+        }
+      },
+      "from": [
+        0,
+        0,
+        15.75
+      ],
+      "to": [
+        16,
+        16,
+        16
+      ]
+    }
+  ],
+  "render_type": "minecraft:cutout",
+  "textures": {
+    "front": "openblocks:block/rope_ladder",
+    "particle": "openblocks:block/rope_ladder"
+  }
+}

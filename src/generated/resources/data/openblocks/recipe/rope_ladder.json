@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "s": {
+      "tag": "c:strings"
+    },
+    "t": {
+      "tag": "c:rods/wooden"
+    }
+  },
+  "pattern": [
+    "sts",
+    "sts",
+    "sts"
+  ],
+  "result": {
+    "count": 8,
+    "id": "openblocks:rope_ladder"
+  }
+}

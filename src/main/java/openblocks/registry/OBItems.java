@@ -23,6 +23,7 @@ import openblocks.item.SpongeOnAStickItem;
 import openblocks.item.SqueegeeItem;
 import openblocks.item.StencilItem;
 import openblocks.item.TankBlockItem;
+import openblocks.item.TrophyItem;
 import openblocks.item.WrenchItem;
 import openblocks.item.XpBucketItem;
 
@@ -51,6 +52,8 @@ public class OBItems {
 	public static final DeferredItem<CursorItem> CURSOR = ITEMS.register("cursor", () -> new CursorItem(new Item.Properties().durability(CursorItem.DURABILITY)));
 
 	public static final DeferredItem<SqueegeeItem> SQUEEGEE = ITEMS.register("squeegee", () -> new SqueegeeItem(new Item.Properties().stacksTo(1)));
+
+	public static final DeferredItem<TrophyItem> TROPHY = ITEMS.register("trophy", () -> new TrophyItem(OBBlocks.TROPHY.get(), new Item.Properties()));
 
 	public static final DeferredItem<WrenchItem> WRENCH = ITEMS.register("wrench", () -> new WrenchItem(new Item.Properties().stacksTo(1)));
 

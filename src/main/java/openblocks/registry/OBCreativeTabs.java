@@ -13,8 +13,10 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 import openblocks.OBConfig;
 import openblocks.OpenBlocks;
 import openblocks.block.TankBlock;
+import openblocks.common.TrophyType;
 import openblocks.item.PaintBrushItem;
 import openblocks.item.PaintCanItem;
+import openblocks.item.TrophyItem;
 
 public class OBCreativeTabs {
 
@@ -24,7 +26,11 @@ public class OBCreativeTabs {
 			.title(Component.translatable("itemGroup.openblocks"))
 			.icon(() -> new ItemStack(OBItems.HANG_GLIDER.get()))
 			.displayItems((params, output) -> {
-				OBItems.ITEMS.getEntries().forEach(item -> output.accept(item.get()));
+				OBItems.ITEMS.getEntries().forEach(item -> {
+					if (item != OBItems.TROPHY) output.accept(item.get());
+				});
+				for (TrophyType type : TrophyType.values())
+					output.accept(TrophyItem.create(OBItems.TROPHY.get(), type));
 				for (DyeColor color : DyeColor.values()) {
 					output.accept(PaintBrushItem.create(color));
 					output.accept(PaintCanItem.create(color));

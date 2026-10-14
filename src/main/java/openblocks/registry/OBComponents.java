@@ -2,12 +2,15 @@ package openblocks.registry;
 
 import net.minecraft.core.component.DataComponentType;
 import net.minecraft.core.registries.Registries;
+import net.minecraft.network.codec.ByteBufCodecs;
 import net.minecraft.network.codec.StreamCodec;
+import net.minecraft.util.ExtraCodecs;
 import net.minecraft.util.Unit;
 import net.neoforged.neoforge.fluids.SimpleFluidContent;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import openblocks.OpenBlocks;
+import openblocks.common.TrophyType;
 import openblocks.item.CursorTarget;
 import openblocks.item.Paint;
 
@@ -44,4 +47,16 @@ public class OBComponents {
 	 */
 	public static final DeferredHolder<DataComponentType<?>, DataComponentType<Unit>> SLIMALYZER_ACTIVE = COMPONENTS.registerComponentType("slimalyzer_active",
 			builder -> builder.persistent(Unit.CODEC).networkSynchronized(StreamCodec.unit(Unit.INSTANCE)));
+
+	/**
+	 * Mob on a trophy; replaces the legacy {@code entity_id} tag.
+	 */
+	public static final DeferredHolder<DataComponentType<?>, DataComponentType<TrophyType>> TROPHY = COMPONENTS.registerComponentType("trophy",
+			builder -> builder.persistent(TrophyType.CODEC).networkSynchronized(TrophyType.STREAM_CODEC));
+
+	/**
+	 * Ticks until a trophy can run its behaviour again, kept when it is broken; replaces the legacy {@code cooldown} tag.
+	 */
+	public static final DeferredHolder<DataComponentType<?>, DataComponentType<Integer>> TROPHY_COOLDOWN = COMPONENTS.registerComponentType("trophy_cooldown",
+			builder -> builder.persistent(ExtraCodecs.NON_NEGATIVE_INT).networkSynchronized(ByteBufCodecs.VAR_INT));
 }

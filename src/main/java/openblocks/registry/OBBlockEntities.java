@@ -22,6 +22,7 @@ import openblocks.block.entity.GraveBlockEntity;
 import openblocks.block.entity.HealBlockEntity;
 import openblocks.block.entity.ItemDropperBlockEntity;
 import openblocks.block.entity.TankBlockEntity;
+import openblocks.block.entity.TrophyBlockEntity;
 import openblocks.block.entity.VacuumHopperBlockEntity;
 import openblocks.block.entity.XpBottlerBlockEntity;
 import openblocks.block.entity.XpDrainBlockEntity;
@@ -104,4 +105,7 @@ public class OBBlockEntities {
 
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<BigButtonBlockEntity>> BIG_BUTTON = BLOCK_ENTITIES.register("big_button",
 			() -> BlockEntityType.Builder.of(BigButtonBlockEntity::new, OBBlocks.BIG_BUTTON.get(), OBBlocks.BIG_BUTTON_WOOD.get()).build(null));
+
+	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<TrophyBlockEntity>> TROPHY = BLOCK_ENTITIES.register("trophy",
+			() -> BlockEntityType.Builder.of(TrophyBlockEntity::new, OBBlocks.TROPHY.get()).build(null));
 }

@@ -14,6 +14,7 @@ import openblocks.common.DonationInfo;
 import openblocks.common.HangGliderHandler;
 import openblocks.common.PlayerDeathHandler;
 import openblocks.common.SleepingBagHandler;
+import openblocks.common.TrophyDropHandler;
 import openblocks.entity.NoFlyXpOrb;
 import openblocks.item.DevNullItem;
 import openblocks.item.LuggageItem;
@@ -75,6 +76,7 @@ public class OpenBlocks {
 		NeoForge.EVENT_BUS.addListener(SleepingBagHandler::onWakeUp);
 		NeoForge.EVENT_BUS.addListener(LuggageItem::onEntityJoinLevel);
 		NeoForge.EVENT_BUS.addListener(DevNullItem::onItemPickup);
+		NeoForge.EVENT_BUS.addListener(TrophyDropHandler::onLivingDrops);
 
 		container.registerConfig(ModConfig.Type.COMMON, OBConfig.SPEC);
 	}

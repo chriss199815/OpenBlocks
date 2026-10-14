@@ -44,6 +44,7 @@ public class OpenBlocksClient {
 		modBus.addListener(OBColorHandlers::registerItemColors);
 		modBus.addListener(OBFluidRendering::registerClientExtensions);
 		modBus.addListener(TankItemRenderer::registerClientExtensions);
+		modBus.addListener(TrophyRenderer::registerClientExtensions);
 		modBus.addListener(TankModel::registerAdditional);
 		modBus.addListener(TankModel::modifyBakingResult);
 		modBus.addListener(VacuumHopperModel::registerAdditional);
@@ -94,6 +95,7 @@ public class OpenBlocksClient {
 
 	private static void registerRenderers(EntityRenderersEvent.RegisterRenderers event) {
 		event.registerBlockEntityRenderer(OBBlockEntities.TANK.get(), TankBlockEntityRenderer::new);
+		event.registerBlockEntityRenderer(OBBlockEntities.TROPHY.get(), TrophyRenderer::new);
 		event.registerBlockEntityRenderer(OBBlockEntities.GRAVE.get(), GraveBlockEntityRenderer::new);
 		event.registerBlockEntityRenderer(OBBlockEntities.AUTO_ENCHANTMENT_TABLE.get(), AutoEnchantmentTableRenderer::new);
 		event.registerBlockEntityRenderer(OBBlockEntities.PAINT_MIXER.get(), PaintMixerRenderer::new);

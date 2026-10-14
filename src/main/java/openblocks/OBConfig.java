@@ -26,8 +26,22 @@ public class OBConfig {
 	public static final Ladder LADDER = new Ladder(BUILDER);
 	public static final Sponge SPONGE = new Sponge(BUILDER);
 	public static final Scaffolding SCAFFOLDING = new Scaffolding(BUILDER);
+	public static final Trophy TROPHY = new Trophy(BUILDER);
 
 	public static final ModConfigSpec SPEC = BUILDER.build();
+
+	public static class Trophy {
+		public final ModConfigSpec.DoubleValue dropChance;
+
+		// legacy trophyDropChanceFormula (an expression) is gone, its default formula is built in
+		private Trophy(ModConfigSpec.Builder builder) {
+			builder.push("trophy");
+			dropChance = builder
+					.comment("Trophy drop chance: a trophy drops when (looting + random/4) * chance - random > 0, both random values in 0..1")
+					.defineInRange("trophyDropChance", 0.001, 0.0, 1000.0);
+			builder.pop();
+		}
+	}
 
 	public static class Ladder {
 		public final ModConfigSpec.BooleanValue infiniteMode;

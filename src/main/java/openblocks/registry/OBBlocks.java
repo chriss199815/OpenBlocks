@@ -43,6 +43,7 @@ import openblocks.block.ScaffoldingBlock;
 import openblocks.block.SpongeBlock;
 import openblocks.block.SprinklerBlock;
 import openblocks.block.TankBlock;
+import openblocks.block.TrophyBlock;
 import openblocks.block.TargetBlock;
 import openblocks.block.VacuumHopperBlock;
 import openblocks.block.XpBottlerBlock;
@@ -249,6 +250,14 @@ public class OBBlocks {
 			.noCollission()
 			.noOcclusion()
 			.pushReaction(PushReaction.DESTROY)
+			.sound(SoundType.STONE)));
+
+	// item registered in OBItems, it keeps the mob
+	// unlike legacy, drops without a pickaxe; a pickaxe is still faster
+	public static final DeferredBlock<TrophyBlock> TROPHY = BLOCKS.register("trophy", () -> new TrophyBlock(BlockBehaviour.Properties.of()
+			.mapColor(MapColor.STONE)
+			.strength(1.0f)
+			.noOcclusion()
 			.sound(SoundType.STONE)));
 
 	private static BlockBehaviour.Properties bigButtonProperties() {

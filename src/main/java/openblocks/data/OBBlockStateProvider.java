@@ -224,10 +224,41 @@ public class OBBlockStateProvider extends BlockStateProvider {
 		simpleBlockWithItem(OBBlocks.SCAFFOLDING.get(), models().cubeAll("scaffolding", modLoc("block/scaffolding")).renderType("cutout_mipped"));
 		simpleBlockWithItem(OBBlocks.HEAL.get(), cubeAll(OBBlocks.HEAL.get()));
 
+		trophy();
 		bigButton(OBBlocks.BIG_BUTTON.get(), mcLoc("block/stone"));
 		bigButton(OBBlocks.BIG_BUTTON_WOOD.get(), mcLoc("block/oak_planks"));
 		target();
 		path();
+	}
+
+	/**
+	 * Legacy trophy_base model: the pedestal, the mob is drawn by {@code TrophyRenderer}, which also draws the item.
+	 */
+	private void trophy() {
+		final ModelFile base = models().withExistingParent("trophy", mcLoc("block/block"))
+				.texture("texture", modLoc("block/trophy"))
+				.texture("particle", modLoc("block/trophy"))
+				.element().from(3, 0, 3).to(13, 4, 13)
+				.face(Direction.NORTH).uvs(6, 0, 16, 4).texture("#texture").end()
+				.face(Direction.EAST).uvs(6, 12, 16, 16).texture("#texture").end()
+				.face(Direction.SOUTH).uvs(0, 0, 10, 4).texture("#texture").end()
+				.face(Direction.WEST).uvs(0, 12, 10, 16).texture("#texture").end()
+				.face(Direction.UP).uvs(3, 3, 13, 13).texture("#texture").end()
+				.face(Direction.DOWN).uvs(3, 3, 13, 13).texture("#texture").cullface(Direction.DOWN).end()
+				.end();
+		horizontalBlock(OBBlocks.TROPHY.get(), base, 180);
+		itemModels().getBuilder("trophy")
+				.parent(new ModelFile.UncheckedModelFile("builtin/entity"))
+				.texture("particle", modLoc("block/trophy"))
+				// same as minecraft:block/block, which can't be the parent of a builtin/entity model
+				.transforms()
+				.transform(ItemDisplayContext.GUI).rotation(30, 225, 0).scale(0.625f).end()
+				.transform(ItemDisplayContext.GROUND).translation(0, 3, 0).scale(0.25f).end()
+				.transform(ItemDisplayContext.FIXED).scale(0.5f).end()
+				.transform(ItemDisplayContext.THIRD_PERSON_RIGHT_HAND).rotation(75, 45, 0).translation(0, 2.5f, 0).scale(0.375f).end()
+				.transform(ItemDisplayContext.FIRST_PERSON_RIGHT_HAND).rotation(0, 45, 0).scale(0.4f).end()
+				.transform(ItemDisplayContext.FIRST_PERSON_LEFT_HAND).rotation(0, 225, 0).scale(0.4f).end()
+				.end();
 	}
 
 	/**

@@ -15,9 +15,9 @@ public class OBCapabilities {
 		event.registerItem(Capabilities.FluidHandler.ITEM, (stack, ctx) -> new FluidBucketWrapper(stack), OBItems.XP_BUCKET.get());
 
 		event.registerBlockEntity(Capabilities.FluidHandler.BLOCK, OBBlockEntities.TANK.get(), (tank, side) -> tank.getFluidHandler());
-		// unlike legacy (no access until sides are configured in the GUI), all sides are open, like vanilla machines
-		event.registerBlockEntity(Capabilities.FluidHandler.BLOCK, OBBlockEntities.XP_BOTTLER.get(), (bottler, side) -> bottler.getFluidHandler());
-		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, OBBlockEntities.XP_BOTTLER.get(), (bottler, side) -> bottler.getAutomationHandler());
+		// only on the sides configured in the GUI; null (no side) gets full automation access
+		event.registerBlockEntity(Capabilities.FluidHandler.BLOCK, OBBlockEntities.XP_BOTTLER.get(), XpBottlerBlockEntity::getFluidHandler);
+		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, OBBlockEntities.XP_BOTTLER.get(), XpBottlerBlockEntity::getItemHandler);
 		// like legacy, only output sides are accessible (extract/drain only); null (no side) gets the same handlers
 		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, OBBlockEntities.VACUUM_HOPPER.get(), VacuumHopperBlockEntity::getItemHandler);
 		event.registerBlockEntity(Capabilities.FluidHandler.BLOCK, OBBlockEntities.VACUUM_HOPPER.get(), VacuumHopperBlockEntity::getFluidHandler);

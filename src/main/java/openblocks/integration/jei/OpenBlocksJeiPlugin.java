@@ -12,6 +12,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.ItemStack;
 import openblocks.OpenBlocks;
 import openblocks.client.gui.VacuumHopperScreen;
+import openblocks.client.gui.XpBottlerScreen;
 
 /**
  * Replaces the legacy NEI plugin ({@code NEIOpenBlocksConfig}), which hid internal items from the item list.
@@ -32,6 +33,12 @@ public class OpenBlocksJeiPlugin implements IModPlugin {
 		registration.addGuiContainerHandler(VacuumHopperScreen.class, new IGuiContainerHandler<>() {
 			@Override
 			public List<Rect2i> getGuiExtraAreas(VacuumHopperScreen screen) {
+				return screen.getExtraAreas();
+			}
+		});
+		registration.addGuiContainerHandler(XpBottlerScreen.class, new IGuiContainerHandler<>() {
+			@Override
+			public List<Rect2i> getGuiExtraAreas(XpBottlerScreen screen) {
 				return screen.getExtraAreas();
 			}
 		});

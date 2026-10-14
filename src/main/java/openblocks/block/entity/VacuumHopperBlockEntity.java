@@ -41,6 +41,7 @@ import net.neoforged.neoforge.items.ItemStackHandler;
 import openblocks.common.FluidXpUtils;
 import openblocks.menu.VacuumHopperMenu;
 import openblocks.registry.OBBlockEntities;
+import openblocks.util.SideBits;
 import openblocks.util.XpUtils;
 
 /**
@@ -329,8 +330,8 @@ public class VacuumHopperBlockEntity extends BlockEntity implements MenuProvider
 		tank.readFromNBT(registries, tag.getCompound("tank"));
 		// update packets don't carry the inventory; the open menu uses it on the client, so it must not be cleared
 		if (tag.contains("inventory")) inventory.deserializeNBT(registries, tag.getCompound("inventory"));
-		readSides(itemOutputs, tag.getByte("item_outputs"));
-		readSides(xpOutputs, tag.getByte("xp_outputs"));
+		SideBits.read(itemOutputs, tag.getByte("item_outputs"));
+		SideBits.read(xpOutputs, tag.getByte("xp_outputs"));
 		vacuumDisabled = tag.getBoolean("vacuum_disabled");
 	}
 
@@ -343,22 +344,9 @@ public class VacuumHopperBlockEntity extends BlockEntity implements MenuProvider
 
 	private void writeUpdateData(CompoundTag tag, HolderLookup.Provider registries) {
 		tag.put("tank", tank.writeToNBT(registries, new CompoundTag()));
-		tag.putByte("item_outputs", writeSides(itemOutputs));
-		tag.putByte("xp_outputs", writeSides(xpOutputs));
+		tag.putByte("item_outputs", SideBits.write(itemOutputs));
+		tag.putByte("xp_outputs", SideBits.write(xpOutputs));
 		tag.putBoolean("vacuum_disabled", vacuumDisabled);
-	}
-
-	private static void readSides(Set<Direction> sides, byte bits) {
-		sides.clear();
-		for (Direction side : Direction.values())
-			if ((bits & (1 << side.get3DDataValue())) != 0) sides.add(side);
-	}
-
-	private static byte writeSides(Set<Direction> sides) {
-		int bits = 0;
-		for (Direction side : sides)
-			bits |= 1 << side.get3DDataValue();
-		return (byte)bits;
 	}
 
 	@Override

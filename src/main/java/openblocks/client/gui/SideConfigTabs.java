@@ -2,16 +2,19 @@ package openblocks.client.gui;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.function.BooleanSupplier;
 import javax.annotation.Nullable;
 import net.minecraft.client.gui.Font;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.renderer.Rect2i;
 import net.minecraft.network.chat.Component;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.ItemStack;
 
 /**
  * Folding tabs on the right edge of a screen, each holding a side selector; replaces OpenModsLib {@code GuiComponentTab(Wrapper)}.
  * At most one tab is open. Coordinates passed in are absolute screen coordinates.
+ * A tab may have a checkbox in its header (legacy {@code GuiConfigurableSlots}), then the label belongs to the checkbox.
  */
 public class SideConfigTabs {
 
@@ -21,6 +24,14 @@ public class SideConfigTabs {
 	// tabs overlap the screen border, which has no edge on the tab side
 	private static final int OVERLAP = 5;
 	private static final int TOP_OFFSET = 4;
+	private static final int LABEL_X = 24;
+	private static final int CHECKBOX_SIZE = 10;
+	private static final int CHECKBOX_LABEL_X = LABEL_X + CHECKBOX_SIZE + 3;
+
+	private static final ResourceLocation CHECKBOX = ResourceLocation.withDefaultNamespace("widget/checkbox");
+	private static final ResourceLocation CHECKBOX_HIGHLIGHTED = ResourceLocation.withDefaultNamespace("widget/checkbox_highlighted");
+	private static final ResourceLocation CHECKBOX_SELECTED = ResourceLocation.withDefaultNamespace("widget/checkbox_selected");
+	private static final ResourceLocation CHECKBOX_SELECTED_HIGHLIGHTED = ResourceLocation.withDefaultNamespace("widget/checkbox_selected_highlighted");
 
 	private final List<Tab> tabs = new ArrayList<>();
 
@@ -36,6 +47,12 @@ public class SideConfigTabs {
 		private final Component label;
 		private final SideSelectorWidget selector;
 
+		@Nullable
+		private BooleanSupplier checked;
+		private Runnable onCheck = () -> {};
+
+		// grows with the label, which may not fit into the default width
+		private int expandedWidth = EXPANDED_WIDTH;
 		private float width = FOLDED_SIZE;
 		private float height = FOLDED_SIZE;
 		private int x;
@@ -52,12 +69,28 @@ public class SideConfigTabs {
 			this.selector = selector;
 		}
 
+		/**
+		 * Adds a checkbox in front of the label.
+		 */
+		public Tab withCheckbox(BooleanSupplier checked, Runnable onCheck) {
+			this.checked = checked;
+			this.onCheck = onCheck;
+			return this;
+		}
+
 		private boolean contains(double mouseX, double mouseY) {
 			return mouseX >= x && mouseX < x + Math.round(width) && mouseY >= y && mouseY < y + Math.round(height);
 		}
 
 		private boolean isHeader(double mouseX, double mouseY) {
 			return mouseX >= x && mouseX < x + FOLDED_SIZE && mouseY >= y && mouseY < y + FOLDED_SIZE;
+		}
+
+		/**
+		 * The checkbox and its label, so clicking the label toggles it too.
+		 */
+		private boolean isCheckbox(double mouseX, double mouseY) {
+			return checked != null && mouseX >= x + LABEL_X && mouseX < x + expandedWidth && mouseY >= y + 4 && mouseY < y + 4 + FOLDED_SIZE - 8;
 		}
 	}
 
@@ -84,12 +117,13 @@ public class SideConfigTabs {
 	}
 
 	private boolean isOpen(Tab tab) {
-		return tab == activeTab && Math.round(tab.width) == EXPANDED_WIDTH && Math.round(tab.height) == EXPANDED_HEIGHT;
+		return tab == activeTab && Math.round(tab.width) == tab.expandedWidth && Math.round(tab.height) == EXPANDED_HEIGHT;
 	}
 
 	public void render(GuiGraphics graphics, Font font, int mouseX, int mouseY) {
 		for (Tab tab : tabs) {
-			final int targetWidth = tab == activeTab? EXPANDED_WIDTH : FOLDED_SIZE;
+			tab.expandedWidth = Math.max(EXPANDED_WIDTH, (tab.checked != null? CHECKBOX_LABEL_X : LABEL_X) + font.width(tab.label) + 6);
+			final int targetWidth = tab == activeTab? tab.expandedWidth : FOLDED_SIZE;
 			final int targetHeight = tab == activeTab? EXPANDED_HEIGHT : FOLDED_SIZE;
 			tab.width += (targetWidth - tab.width) / 4;
 			tab.height += (targetHeight - tab.height) / 4;
@@ -102,7 +136,14 @@ public class SideConfigTabs {
 			drawBox(graphics, tab.x, tab.y, Math.round(tab.width), Math.round(tab.height), tab.color);
 			graphics.renderItem(tab.icon, tab.x + 3, tab.y + 3);
 			if (isOpen(tab)) {
-				graphics.drawString(font, tab.label, tab.x + 24, tab.y + 8, 0x404040, false);
+				if (tab.checked != null) {
+					final boolean hovered = tab.isCheckbox(mouseX, mouseY);
+					final ResourceLocation sprite = tab.checked.getAsBoolean()? (hovered? CHECKBOX_SELECTED_HIGHLIGHTED : CHECKBOX_SELECTED) : (hovered? CHECKBOX_HIGHLIGHTED : CHECKBOX);
+					graphics.blitSprite(sprite, tab.x + LABEL_X, tab.y + 7, CHECKBOX_SIZE, CHECKBOX_SIZE);
+					graphics.drawString(font, tab.label, tab.x + CHECKBOX_LABEL_X, tab.y + 8, 0x404040, false);
+				} else {
+					graphics.drawString(font, tab.label, tab.x + LABEL_X, tab.y + 8, 0x404040, false);
+				}
 				tab.selector.render(graphics, tab.x, tab.y, mouseX, mouseY);
 			}
 		}
@@ -146,6 +187,7 @@ public class SideConfigTabs {
 		for (Tab tab : tabs) {
 			if (!tab.contains(mouseX, mouseY)) continue;
 			if (tab.isHeader(mouseX, mouseY)) activeTab = tab == activeTab? null : tab;
+			else if (isOpen(tab) && tab.isCheckbox(mouseX, mouseY)) tab.onCheck.run();
 			else if (isOpen(tab)) tab.selector.mouseClicked(mouseX, mouseY, button);
 			// clicks on a tab never reach the screen, which would drop the carried item
 			return true;

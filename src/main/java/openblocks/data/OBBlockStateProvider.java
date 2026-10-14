@@ -16,6 +16,7 @@ import openblocks.OpenBlocks;
 import openblocks.block.BlockManipulatorBlock;
 import openblocks.block.FlagBlock;
 import openblocks.block.GraveBlock;
+import openblocks.block.SprinklerBlock;
 import openblocks.block.entity.VacuumHopperBlockEntity;
 import openblocks.registry.OBBlocks;
 import openblocks.common.TankEdge;
@@ -144,6 +145,7 @@ public class OBBlockStateProvider extends BlockStateProvider {
 		fan();
 		flag();
 		bearTrap();
+		sprinkler();
 		// the blank canvas; CanvasModel shows the painted block instead
 		final ModelFile canvas = models().cubeAll("canvas", modLoc("block/canvas"));
 		simpleBlock(OBBlocks.CANVAS.get(), canvas);
@@ -387,6 +389,78 @@ public class OBBlockStateProvider extends BlockStateProvider {
 				.element().from(5, 2, 7).to(11, 10, 13)
 				.face(Direction.NORTH).uvs(4, 5, 12, 16).texture("#spill").tintindex(0).end()
 				.face(Direction.UP).uvs(4, 4, 12, 12).texture("#top").tintindex(0).end()
+				.end();
+	}
+
+	/**
+	 * Legacy sprinkler_static and sprinkler_moving models; the nozzle is moved down like the armature did and drawn by {@code SprinklerRenderer}.
+	 */
+	private void sprinkler() {
+		final BlockModelBuilder base = sprinklerBase(sprinklerModel("sprinkler"));
+		sprinklerNozzle(sprinklerModel("sprinkler_nozzle"));
+		getVariantBuilder(OBBlocks.SPRINKLER.get()).forAllStates(state -> ConfiguredModel.builder()
+				.modelFile(base)
+				.rotationY(state.getValue(SprinklerBlock.AXIS) == Direction.Axis.X? 90 : 0)
+				.build());
+		itemModels().getBuilder("sprinkler").parent(sprinklerNozzle(sprinklerBase(sprinklerModel("sprinkler_item"))));
+	}
+
+	private BlockModelBuilder sprinklerModel(String name) {
+		return models().withExistingParent(name, mcLoc("block/block"))
+				.texture("all", modLoc("block/sprinkler"))
+				.texture("particle", modLoc("block/sprinkler"));
+	}
+
+	private static BlockModelBuilder sprinklerBase(BlockModelBuilder builder) {
+		return builder
+				// side1
+				.element().from(5.5f, 1, 2).to(6.5f, 2, 14)
+				.face(Direction.NORTH).uvs(0, 12, 1, 13).texture("#all").end()
+				.face(Direction.EAST).uvs(2, 11, 14, 12).texture("#all").end()
+				.face(Direction.SOUTH).uvs(1, 12, 2, 13).texture("#all").end()
+				.face(Direction.WEST).uvs(2, 10, 14, 11).texture("#all").end()
+				.face(Direction.UP).uvs(0, 0, 1, 12).texture("#all").end()
+				.face(Direction.DOWN).uvs(1, 0, 2, 12).texture("#all").end()
+				.end()
+				// end2
+				.element().from(5, 0, 14).to(11, 3, 15)
+				.face(Direction.NORTH).uvs(2, 13, 8, 16).texture("#all").end()
+				.face(Direction.EAST).uvs(1, 13, 2, 16).texture("#all").end()
+				.face(Direction.SOUTH).uvs(8, 13, 14, 16).texture("#all").end()
+				.face(Direction.WEST).uvs(14, 13, 15, 16).texture("#all").end()
+				.face(Direction.UP).uvs(2, 12, 8, 13).texture("#all").end()
+				.face(Direction.DOWN).uvs(8, 12, 14, 13).texture("#all").end()
+				.end()
+				// end1
+				.element().from(5, 0, 1).to(11, 3, 2)
+				.face(Direction.NORTH).uvs(2, 13, 8, 16).texture("#all").end()
+				.face(Direction.EAST).uvs(1, 13, 2, 16).texture("#all").end()
+				.face(Direction.SOUTH).uvs(8, 13, 14, 16).texture("#all").end()
+				.face(Direction.WEST).uvs(14, 13, 15, 16).texture("#all").end()
+				.face(Direction.UP).uvs(2, 12, 8, 13).texture("#all").end()
+				.face(Direction.DOWN).uvs(8, 12, 14, 13).texture("#all").end()
+				.end()
+				// side2
+				.element().from(9.5f, 1, 2).to(10.5f, 2, 14)
+				.face(Direction.NORTH).uvs(0, 12, 1, 13).texture("#all").end()
+				.face(Direction.EAST).uvs(2, 11, 14, 12).texture("#all").end()
+				.face(Direction.SOUTH).uvs(1, 12, 2, 13).texture("#all").end()
+				.face(Direction.WEST).uvs(2, 10, 14, 11).texture("#all").end()
+				.face(Direction.UP).uvs(0, 0, 1, 12).texture("#all").end()
+				.face(Direction.DOWN).uvs(1, 0, 2, 12).texture("#all").end()
+				.end();
+	}
+
+	private static BlockModelBuilder sprinklerNozzle(BlockModelBuilder builder) {
+		return builder
+				// sprayer
+				.element().from(7.5f, 2.5f, 2).to(8.5f, 3.5f, 14)
+				.face(Direction.NORTH).uvs(14, 12, 15, 13).texture("#all").end()
+				.face(Direction.EAST).uvs(2, 9, 14, 10).texture("#all").end()
+				.face(Direction.SOUTH).uvs(15, 12, 16, 13).texture("#all").end()
+				.face(Direction.WEST).uvs(2, 8, 14, 9).texture("#all").end()
+				.face(Direction.UP).uvs(14, 0, 15, 12).texture("#all").end()
+				.face(Direction.DOWN).uvs(15, 0, 16, 12).texture("#all").end()
 				.end();
 	}
 

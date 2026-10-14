@@ -20,8 +20,41 @@ public class OBConfig {
 	public static final BlockManipulator BLOCK_PLACER = new BlockManipulator(BUILDER, "placer", "block placer");
 	public static final Canvas CANVAS = new Canvas(BUILDER);
 	public static final Fan FAN = new Fan(BUILDER);
+	public static final Sprinkler SPRINKLER = new Sprinkler(BUILDER);
 
 	public static final ModConfigSpec SPEC = BUILDER.build();
+
+	public static class Sprinkler {
+		public final ModConfigSpec.IntValue fertilizeChance;
+		public final ModConfigSpec.IntValue bonemealFertilizeChance;
+		public final ModConfigSpec.IntValue effectiveRange;
+		public final ModConfigSpec.IntValue internalTankCapacity;
+		public final ModConfigSpec.IntValue bonemealConsumeRate;
+		public final ModConfigSpec.IntValue waterConsumeRate;
+
+		private Sprinkler(ModConfigSpec.Builder builder) {
+			builder.push("sprinkler");
+			fertilizeChance = builder
+					.comment("1/chance crops will be fertilized without bonemeal")
+					.defineInRange("fertilizeChance", 500, 1, Integer.MAX_VALUE);
+			bonemealFertilizeChance = builder
+					.comment("1/chance crops will be fertilized with bonemeal")
+					.defineInRange("bonemealFertilizeChance", 200, 1, Integer.MAX_VALUE);
+			effectiveRange = builder
+					.comment("The range in each cardinal direction crops will be affected.")
+					.defineInRange("effectiveRange", 4, 0, 16);
+			internalTankCapacity = builder
+					.comment("Capacity (in mB) of internal tank.")
+					.defineInRange("internalTankCapacity", 50, 1, Integer.MAX_VALUE);
+			bonemealConsumeRate = builder
+					.comment("Consume rate bonemeal (ticks/item).")
+					.defineInRange("bonemealConsumeRate", 600, 1, Integer.MAX_VALUE);
+			waterConsumeRate = builder
+					.comment("Consume rate of sprinkler (ticks/mB).")
+					.defineInRange("waterConsumeRate", 20, 1, Integer.MAX_VALUE);
+			builder.pop();
+		}
+	}
 
 	public static class Fan {
 		public final ModConfigSpec.DoubleValue force;

@@ -34,6 +34,9 @@ public class OBCapabilities {
 		// like legacy, the whole inventory on all sides
 		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, OBBlockEntities.ITEM_DROPPER.get(), (dropper, side) -> dropper.getInventory());
 		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, OBBlockEntities.BLOCK_PLACER.get(), (placer, side) -> placer.getInventory());
+		// like legacy, bone meal and water on all sides
+		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, OBBlockEntities.SPRINKLER.get(), (sprinkler, side) -> sprinkler.getInventory());
+		event.registerBlockEntity(Capabilities.FluidHandler.BLOCK, OBBlockEntities.SPRINKLER.get(), (sprinkler, side) -> sprinkler.getTank());
 		// unlike legacy, only single (unstacked) tank items can be filled or drained
 		event.registerItem(Capabilities.FluidHandler.ITEM, (stack, ctx) -> new FluidHandlerItemStack(OBComponents.TANK_CONTENTS, stack, TankBlockEntity.getTankCapacity()), OBItems.TANK.get());
 	}

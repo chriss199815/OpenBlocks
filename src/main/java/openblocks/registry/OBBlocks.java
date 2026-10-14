@@ -33,6 +33,7 @@ import openblocks.block.FlagBlock;
 import openblocks.block.GraveBlock;
 import openblocks.block.ItemDropperBlock;
 import openblocks.block.RotatingElevatorBlock;
+import openblocks.block.SprinklerBlock;
 import openblocks.block.TankBlock;
 import openblocks.block.VacuumHopperBlock;
 import openblocks.block.XpBottlerBlock;
@@ -178,6 +179,14 @@ public class OBBlocks {
 		}
 		return Collections.unmodifiableMap(result);
 	}
+
+	public static final DeferredBlock<SprinklerBlock> SPRINKLER = registerWithItem("sprinkler", () -> new SprinklerBlock(BlockBehaviour.Properties.of()
+			.mapColor(MapColor.METAL)
+			.strength(1.0f)
+			.requiresCorrectToolForDrops()
+			.noOcclusion()
+			.isRedstoneConductor((state, level, pos) -> false)
+			.sound(SoundType.METAL)));
 
 	private static BlockBehaviour.Properties canvasProperties() {
 		return BlockBehaviour.Properties.of()

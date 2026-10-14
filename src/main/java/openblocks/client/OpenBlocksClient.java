@@ -14,10 +14,10 @@ import openblocks.client.canvas.CanvasRenderer;
 import openblocks.client.canvas.CanvasTextures;
 import openblocks.client.gui.AutoAnvilScreen;
 import openblocks.client.gui.AutoEnchantmentTableScreen;
+import openblocks.client.gui.DispenserLayoutScreen;
 import openblocks.client.gui.DonationStationScreen;
 import openblocks.client.gui.DrawingTableScreen;
 import openblocks.client.gui.PaintMixerScreen;
-import openblocks.client.gui.BlockPlacerScreen;
 import openblocks.client.gui.ItemDropperScreen;
 import openblocks.client.gui.VacuumHopperScreen;
 import openblocks.client.gui.XpBottlerScreen;
@@ -27,6 +27,8 @@ import openblocks.client.tank.TankItemRenderer;
 import openblocks.client.tank.TankModel;
 import openblocks.registry.OBBlockEntities;
 import openblocks.registry.OBEntities;
+import openblocks.menu.BlockPlacerMenu;
+import openblocks.menu.SprinklerMenu;
 import openblocks.registry.OBMenus;
 
 /**
@@ -48,6 +50,7 @@ public class OpenBlocksClient {
 		modBus.addListener(PaintMixerRenderer::registerAdditional);
 		modBus.addListener(FanRenderer::registerAdditional);
 		modBus.addListener(BearTrapRenderer::registerAdditional);
+		modBus.addListener(SprinklerRenderer::registerAdditional);
 		modBus.addListener(CanvasModel::modifyBakingResult);
 		modBus.addListener((ModelEvent.BakingCompleted event) -> CanvasTextures.clear());
 		modBus.addListener(OpenBlocksClient::registerRenderers);
@@ -69,7 +72,8 @@ public class OpenBlocksClient {
 		event.register(OBMenus.XP_BOTTLER.get(), XpBottlerScreen::new);
 		event.register(OBMenus.VACUUM_HOPPER.get(), VacuumHopperScreen::new);
 		event.register(OBMenus.ITEM_DROPPER.get(), ItemDropperScreen::new);
-		event.register(OBMenus.BLOCK_PLACER.get(), BlockPlacerScreen::new);
+		event.register(OBMenus.BLOCK_PLACER.get(), DispenserLayoutScreen<BlockPlacerMenu>::new);
+		event.register(OBMenus.SPRINKLER.get(), DispenserLayoutScreen<SprinklerMenu>::new);
 		event.register(OBMenus.AUTO_ANVIL.get(), AutoAnvilScreen::new);
 		event.register(OBMenus.AUTO_ENCHANTMENT_TABLE.get(), AutoEnchantmentTableScreen::new);
 		event.register(OBMenus.DONATION_STATION.get(), DonationStationScreen::new);
@@ -85,6 +89,7 @@ public class OpenBlocksClient {
 		event.registerBlockEntityRenderer(OBBlockEntities.CANVAS.get(), CanvasRenderer::new);
 		event.registerBlockEntityRenderer(OBBlockEntities.FAN.get(), FanRenderer::new);
 		event.registerBlockEntityRenderer(OBBlockEntities.BEAR_TRAP.get(), BearTrapRenderer::new);
+		event.registerBlockEntityRenderer(OBBlockEntities.SPRINKLER.get(), SprinklerRenderer::new);
 		event.registerEntityRenderer(OBEntities.NO_FLY_XP_ORB.get(), ExperienceOrbRenderer::new);
 	}
 }

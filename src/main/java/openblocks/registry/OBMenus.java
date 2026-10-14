@@ -13,6 +13,7 @@ import openblocks.menu.DrawingTableMenu;
 import openblocks.menu.PaintMixerMenu;
 import openblocks.menu.BlockPlacerMenu;
 import openblocks.menu.ItemDropperMenu;
+import openblocks.menu.SprinklerMenu;
 import openblocks.menu.VacuumHopperMenu;
 import openblocks.menu.XpBottlerMenu;
 
@@ -24,6 +25,7 @@ public class OBMenus {
 	public static final DeferredHolder<MenuType<?>, MenuType<VacuumHopperMenu>> VACUUM_HOPPER = MENUS.register("vacuum_hopper", () -> IMenuTypeExtension.create(VacuumHopperMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<ItemDropperMenu>> ITEM_DROPPER = MENUS.register("item_dropper", () -> IMenuTypeExtension.create(ItemDropperMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<BlockPlacerMenu>> BLOCK_PLACER = MENUS.register("block_placer", () -> IMenuTypeExtension.create(BlockPlacerMenu::new));
+	public static final DeferredHolder<MenuType<?>, MenuType<SprinklerMenu>> SPRINKLER = MENUS.register("sprinkler", () -> IMenuTypeExtension.create(SprinklerMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<AutoAnvilMenu>> AUTO_ANVIL = MENUS.register("auto_anvil", () -> IMenuTypeExtension.create(AutoAnvilMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<AutoEnchantmentTableMenu>> AUTO_ENCHANTMENT_TABLE = MENUS.register("auto_enchantment_table", () -> IMenuTypeExtension.create(AutoEnchantmentTableMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<DonationStationMenu>> DONATION_STATION = MENUS.register("donation_station", () -> IMenuTypeExtension.create(DonationStationMenu::new));

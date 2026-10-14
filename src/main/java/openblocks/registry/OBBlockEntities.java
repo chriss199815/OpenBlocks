@@ -14,6 +14,7 @@ import openblocks.block.entity.DrawingTableBlockEntity;
 import openblocks.block.entity.FanBlockEntity;
 import openblocks.block.entity.PaintCanBlockEntity;
 import openblocks.block.entity.PaintMixerBlockEntity;
+import openblocks.block.entity.SprinklerBlockEntity;
 import openblocks.block.entity.BlockBreakerBlockEntity;
 import openblocks.block.entity.BlockPlacerBlockEntity;
 import openblocks.block.entity.GraveBlockEntity;
@@ -92,4 +93,7 @@ public class OBBlockEntities {
 
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<BearTrapBlockEntity>> BEAR_TRAP = BLOCK_ENTITIES.register("bear_trap",
 			() -> BlockEntityType.Builder.of(BearTrapBlockEntity::new, OBBlocks.BEAR_TRAP.get()).build(null));
+
+	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<SprinklerBlockEntity>> SPRINKLER = BLOCK_ENTITIES.register("sprinkler",
+			() -> BlockEntityType.Builder.of(SprinklerBlockEntity::new, OBBlocks.SPRINKLER.get()).build(null));
 }

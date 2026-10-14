@@ -192,6 +192,16 @@ public class OBRecipeProvider extends RecipeProvider {
 				.unlockedBy("has_iron_bars", has(Items.IRON_BARS))
 				.save(output);
 
+		ShapedRecipeBuilder.shaped(RecipeCategory.MISC, OBBlocks.SPRINKLER.get())
+				.pattern("ifi")
+				.pattern("iri")
+				.pattern("ifi")
+				.define('i', Tags.Items.INGOTS_IRON)
+				.define('f', Items.IRON_BARS)
+				.define('r', Items.REDSTONE_TORCH)
+				.unlockedBy("has_iron_bars", has(Items.IRON_BARS))
+				.save(output);
+
 		ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, OBItems.PAINT_BRUSH.get())
 				.pattern("w  ")
 				.pattern(" s ")

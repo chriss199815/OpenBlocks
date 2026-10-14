@@ -5,16 +5,16 @@ import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.player.Inventory;
-import openblocks.menu.BlockPlacerMenu;
+import net.minecraft.world.inventory.AbstractContainerMenu;
 
 /**
- * Port of legacy {@code GuiBlockPlacer}; uses the vanilla dispenser background, which has the same layout.
+ * Port of legacy {@code GuiBlockPlacer} and {@code GuiSprinkler}: a 3x3 grid, drawn with the vanilla dispenser background, which has the same layout.
  */
-public class BlockPlacerScreen extends AbstractContainerScreen<BlockPlacerMenu> {
+public class DispenserLayoutScreen<M extends AbstractContainerMenu> extends AbstractContainerScreen<M> {
 
 	private static final ResourceLocation BACKGROUND = ResourceLocation.withDefaultNamespace("textures/gui/container/dispenser.png");
 
-	public BlockPlacerScreen(BlockPlacerMenu menu, Inventory playerInventory, Component title) {
+	public DispenserLayoutScreen(M menu, Inventory playerInventory, Component title) {
 		super(menu, playerInventory, title);
 		this.imageWidth = 176;
 		this.imageHeight = 166;

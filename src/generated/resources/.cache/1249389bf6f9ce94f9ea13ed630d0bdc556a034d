@@ -1,4 +1,4 @@
-// 1.21.1	2026-10-14T16:13:01.049736	Block States: openblocks
+// 1.21.1	2026-10-14T14:08:52.420886	Block States: openblocks
 909bae1340933de5e494ee6692d1d88aeabf4f33 assets/openblocks/blockstates/auto_anvil.json
 aca132b5918ec066ede0f817145d0ac0649c84a9 assets/openblocks/blockstates/auto_enchantment_table.json
 9be1c7ce94b3232fe19c46a8965abe89ae2d898a assets/openblocks/blockstates/bear_trap.json
@@ -55,6 +55,7 @@ d13702d1e489422f027636fd4f3a4f64b33332e9 assets/openblocks/blockstates/purple_el
 c45d5d2e71c34dc43588a6063c8f1025e64a8816 assets/openblocks/blockstates/red_elevator.json
 d13702d1e489422f027636fd4f3a4f64b33332e9 assets/openblocks/blockstates/red_elevator_rotating.json
 6a60ac85a83f62e9071a3664237075d98888182e assets/openblocks/blockstates/red_flag.json
+a5fd6018d2eca7b2ba34f08d9babe797f726dcfc assets/openblocks/blockstates/sprinkler.json
 97a9d238d7f937d3ad8167f336d1e68f242fd43e assets/openblocks/blockstates/tank.json
 9927a88f12911f158a561f0291cb946f9573dd32 assets/openblocks/blockstates/vacuum_hopper.json
 c45d5d2e71c34dc43588a6063c8f1025e64a8816 assets/openblocks/blockstates/white_elevator.json
@@ -128,6 +129,9 @@ e97351a6d611f8069d1e29d33f25af56f3247c28 assets/openblocks/models/block/grave_gr
 0cd372dc5c9c3526cf78ccef5abde74ccb835010 assets/openblocks/models/block/paint_can.json
 cdd9f651203af18a3a3f9e85991260bfcbb53d2c assets/openblocks/models/block/paint_mixer.json
 096e912c6869497117a2b114cf617a1cf39f4fd1 assets/openblocks/models/block/paint_mixer_can.json
+e6e362f6a9a1a489460bddea76589c4cbeff90f7 assets/openblocks/models/block/sprinkler.json
+38f40ff59eca5cddf74119da1652f2edde1776f0 assets/openblocks/models/block/sprinkler_item.json
+e406781d4f31b9f4d5a2536906539c84a8082b0b assets/openblocks/models/block/sprinkler_nozzle.json
 58e02f5b5a81a69aca53d71b7c6f49d9a39f068c assets/openblocks/models/block/tank.json
 fd5928cf93bfb8617d1cfdb957893d42442be7b1 assets/openblocks/models/block/tank_edge_be.json
 2214ec18a8661b89f96b1ef260f8ee020cbb610e assets/openblocks/models/block/tank_edge_bn.json
@@ -243,6 +247,7 @@ ec2ddb9bb9dd0d3206db8ff271fe831f6dc9bea0 assets/openblocks/models/item/sketching
 93fe12716900287b328fc50ce493ef5f588177bf assets/openblocks/models/item/sleeping_bag.json
 661539d80619cf66bdd482bff51f3323363abdbf assets/openblocks/models/item/spiral_stencil.json
 8a5fa231e8458561f18dbd2536e014f0b962fbfb assets/openblocks/models/item/splat_stencil.json
+04099b9abc36b25d23e32a2eebce6d5f87473802 assets/openblocks/models/item/sprinkler.json
 97cdab4dbb14020e1936e017511c70b5234f2ffb assets/openblocks/models/item/squeegee.json
 232df2d19c582d4d9f4ab564c520999319d871c6 assets/openblocks/models/item/storage_stencil.json
 ce8b5f75a49bb175b10c1e6072c9ad0d87cb980d assets/openblocks/models/item/stripes_stencil.json

@@ -26,6 +26,7 @@ import openblocks.block.PaintMixerBlock;
 import openblocks.block.BlockBreakerBlock;
 import openblocks.block.BlockPlacerBlock;
 import openblocks.block.ElevatorBlock;
+import openblocks.block.FanBlock;
 import openblocks.block.GraveBlock;
 import openblocks.block.ItemDropperBlock;
 import openblocks.block.RotatingElevatorBlock;
@@ -138,6 +139,14 @@ public class OBBlocks {
 			.noOcclusion()
 			.isViewBlocking((state, level, pos) -> false)
 			.isSuffocating((state, level, pos) -> false)));
+
+	public static final DeferredBlock<FanBlock> FAN = registerWithItem("fan", () -> new FanBlock(BlockBehaviour.Properties.of()
+			.mapColor(MapColor.METAL)
+			.strength(1.0f)
+			.noOcclusion()
+			.isRedstoneConductor((state, level, pos) -> false)
+			.pushReaction(PushReaction.DESTROY)
+			.sound(SoundType.METAL)));
 
 	private static BlockBehaviour.Properties canvasProperties() {
 		return BlockBehaviour.Properties.of()

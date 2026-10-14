@@ -32,6 +32,7 @@ public class OBBlockTagsProvider extends BlockTagsProvider {
 		pickaxe.add(OBBlocks.AUTO_ENCHANTMENT_TABLE.get());
 		pickaxe.add(OBBlocks.DONATION_STATION.get());
 		pickaxe.add(OBBlocks.PAINT_MIXER.get());
+		pickaxe.add(OBBlocks.FAN.get());
 
 		tag(BlockTags.MINEABLE_WITH_AXE).add(OBBlocks.DRAWING_TABLE.get());
 		tag(BlockTags.MINEABLE_WITH_SHOVEL).add(OBBlocks.GRAVE.get());

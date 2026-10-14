@@ -139,6 +139,7 @@ public class OBBlockStateProvider extends BlockStateProvider {
 
 		autoAnvil();
 		paintMixer();
+		fan();
 		// the blank canvas; CanvasModel shows the painted block instead
 		final ModelFile canvas = models().cubeAll("canvas", modLoc("block/canvas"));
 		simpleBlock(OBBlocks.CANVAS.get(), canvas);
@@ -382,6 +383,90 @@ public class OBBlockStateProvider extends BlockStateProvider {
 				.element().from(5, 2, 7).to(11, 10, 13)
 				.face(Direction.NORTH).uvs(4, 5, 12, 16).texture("#spill").tintindex(0).end()
 				.face(Direction.UP).uvs(4, 4, 12, 12).texture("#top").tintindex(0).end()
+				.end();
+	}
+
+	/**
+	 * Legacy fan_frame and fan_blades models, drawn by {@code FanRenderer}. The blades sit at the hub of the frame (legacy armature offset),
+	 * the item and the particles use both in one model.
+	 */
+	private void fan() {
+		final ModelFile model = fanBlades(fanFrame(models().withExistingParent("fan", mcLoc("block/block")).renderType("cutout")))
+				.texture("particle", modLoc("block/fan_frame"));
+		fanFrame(models().withExistingParent("fan_frame", mcLoc("block/block")))
+				.texture("particle", modLoc("block/fan_frame"));
+		fanBlades(models().withExistingParent("fan_blades", mcLoc("block/block")).renderType("cutout"))
+				.texture("particle", modLoc("block/fan_blades"));
+
+		simpleBlock(OBBlocks.FAN.get(), model);
+		simpleBlockItem(OBBlocks.FAN.get(), model);
+	}
+
+	private BlockModelBuilder fanFrame(BlockModelBuilder builder) {
+		builder.texture("frame", modLoc("block/fan_frame"))
+				// base
+				.element().from(5, 0, 5).to(11, 1, 11)
+				.face(Direction.NORTH).uvs(10, 1, 16, 2).texture("#frame").end()
+				.face(Direction.EAST).uvs(10, 2, 16, 3).texture("#frame").end()
+				.face(Direction.SOUTH).uvs(10, 3, 16, 4).texture("#frame").end()
+				.face(Direction.WEST).uvs(10, 0, 16, 1).texture("#frame").end()
+				.face(Direction.UP).uvs(0, 0, 6, 6).texture("#frame").end()
+				.face(Direction.DOWN).uvs(6, 0, 12, 6).texture("#frame").cullface(Direction.DOWN).end()
+				.end()
+				// stand
+				.element().from(7.5f, 1, 7.5f).to(8.5f, 11, 8.5f)
+				.face(Direction.NORTH).uvs(15, 6, 16, 16).texture("#frame").end()
+				.face(Direction.EAST).uvs(12, 6, 13, 16).texture("#frame").end()
+				.face(Direction.SOUTH).uvs(14, 6, 15, 16).texture("#frame").end()
+				.face(Direction.WEST).uvs(13, 6, 14, 16).texture("#frame").end()
+				.face(Direction.UP).uvs(13, 5, 14, 6).texture("#frame").end()
+				.face(Direction.DOWN).uvs(14, 5, 15, 6).texture("#frame").end()
+				.end();
+		// the ring around the blades: upright bars, some tilted, and lying bars
+		fanUprightBar(builder, 11.75f, 8.75f, 0, 0);
+		fanUprightBar(builder, 3.25f, 8.75f, 0, 0);
+		fanUprightBar(builder, 4.5f, 5.75f, 7.75f, 45);
+		fanUprightBar(builder, 4.5f, 11.75f, 13.75f, -45);
+		fanUprightBar(builder, 10.5f, 5.75f, 7.75f, -45);
+		fanLyingBar(builder, 9, 13.25f, 11, 13.75f, -45, 8, 11);
+		fanLyingBar(builder, 6, 14.5f, 0, 0, 0, 11, 8);
+		fanLyingBar(builder, 6, 6, 0, 0, 0, 11, 8);
+		return builder;
+	}
+
+	/**
+	 * A 1×4 bar of the legacy fan frame, rotated around its center on the z axis.
+	 */
+	private static void fanUprightBar(BlockModelBuilder builder, float x, float y, float originY, float angle) {
+		final var element = builder.element().from(x, y, 6).to(x + 1, y + 4, 8)
+				.face(Direction.NORTH).uvs(7, 9, 8, 13).texture("#frame").end()
+				.face(Direction.EAST).uvs(11, 9, 13, 13).texture("#frame").end()
+				.face(Direction.SOUTH).uvs(10, 9, 11, 13).texture("#frame").end()
+				.face(Direction.WEST).uvs(8, 9, 10, 13).texture("#frame").end()
+				.face(Direction.UP).uvs(6, 11, 7, 13).texture("#frame").end()
+				.face(Direction.DOWN).uvs(6, 9, 7, 11).texture("#frame").end();
+		if (angle != 0) element.rotation().origin(x + 0.5f, originY, 7).axis(Direction.Axis.Z).angle(angle).end();
+	}
+
+	/**
+	 * A 4×1 bar of the legacy fan frame; up and down use the side textures of the upright bars ({@code upU}/{@code downU}: 8 or 11).
+	 */
+	private static void fanLyingBar(BlockModelBuilder builder, float x, float y, float originX, float originY, float angle, float upU, float downU) {
+		final var element = builder.element().from(x, y, 6).to(x + 4, y + 1, 8)
+				.face(Direction.NORTH).uvs(7, 9, 8, 13).rotation(ModelBuilder.FaceRotation.CLOCKWISE_90).texture("#frame").end()
+				.face(Direction.EAST).uvs(6, 9, 7, 11).rotation(ModelBuilder.FaceRotation.CLOCKWISE_90).texture("#frame").end()
+				.face(Direction.SOUTH).uvs(10, 9, 11, 13).rotation(ModelBuilder.FaceRotation.COUNTERCLOCKWISE_90).texture("#frame").end()
+				.face(Direction.WEST).uvs(6, 11, 7, 13).rotation(ModelBuilder.FaceRotation.COUNTERCLOCKWISE_90).texture("#frame").end()
+				.face(Direction.UP).uvs(upU, 9, upU + 2, 13).rotation(ModelBuilder.FaceRotation.COUNTERCLOCKWISE_90).texture("#frame").end()
+				.face(Direction.DOWN).uvs(downU, 9, downU + 2, 13).rotation(ModelBuilder.FaceRotation.CLOCKWISE_90).texture("#frame").end();
+		if (angle != 0) element.rotation().origin(originX, originY, 7).axis(Direction.Axis.Z).angle(angle).end();
+	}
+
+	private BlockModelBuilder fanBlades(BlockModelBuilder builder) {
+		return builder.texture("blades", modLoc("block/fan_blades"))
+				.element().from(3.5f, 6.25f, 6.5f).to(12.5f, 15.25f, 7.5f).shade(false)
+				.face(Direction.NORTH).uvs(0, 0, 16, 16).texture("#blades").end()
+				.face(Direction.SOUTH).uvs(0, 0, 16, 16).texture("#blades").end()
 				.end();
 	}
 

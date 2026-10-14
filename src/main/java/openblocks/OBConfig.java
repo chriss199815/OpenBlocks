@@ -19,8 +19,29 @@ public class OBConfig {
 	public static final BlockManipulator BLOCK_BREAKER = new BlockManipulator(BUILDER, "breaker", "block breaker");
 	public static final BlockManipulator BLOCK_PLACER = new BlockManipulator(BUILDER, "placer", "block placer");
 	public static final Canvas CANVAS = new Canvas(BUILDER);
+	public static final Fan FAN = new Fan(BUILDER);
 
 	public static final ModConfigSpec SPEC = BUILDER.build();
+
+	public static class Fan {
+		public final ModConfigSpec.DoubleValue force;
+		public final ModConfigSpec.DoubleValue range;
+		public final ModConfigSpec.BooleanValue isRedstoneActivated;
+
+		private Fan(ModConfigSpec.Builder builder) {
+			builder.push("fan");
+			force = builder
+					.comment("Maximum force applied every tick to entities nearby (linear decay)")
+					.defineInRange("fanForce", 0.05, 0.0, 1.0);
+			range = builder
+					.comment("Range of fan in blocks")
+					.defineInRange("fanRange", 10.0, 1.0, 64.0);
+			isRedstoneActivated = builder
+					.comment("Is fan force controlled by redstone current")
+					.define("isRedstoneActivated", true);
+			builder.pop();
+		}
+	}
 
 	public static class Canvas {
 		public final ModConfigSpec.BooleanValue paintbrushReplacesBlocks;

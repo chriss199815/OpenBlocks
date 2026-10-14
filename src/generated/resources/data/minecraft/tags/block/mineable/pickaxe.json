@@ -43,6 +43,7 @@
     "openblocks:auto_anvil",
     "openblocks:auto_enchantment_table",
     "openblocks:donation_station",
-    "openblocks:paint_mixer"
+    "openblocks:paint_mixer",
+    "openblocks:fan"
   ]
 }

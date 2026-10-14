@@ -1,4 +1,4 @@
-// 1.21.1	2026-10-14T13:17:42.430606	Recipes
+// 1.21.1	2026-10-14T13:35:20.371716	Recipes
 f37f622f6aa43ff8c3b05fe0ccd813d9be730420 data/openblocks/advancement/recipes/building_blocks/canvas.json
 c6a3ea74daedb67da82f8e7c85c4d0f040726c89 data/openblocks/advancement/recipes/misc/auto_anvil.json
 606e1bfbd969e9b729041ba17a52622dbd63e2c9 data/openblocks/advancement/recipes/misc/auto_enchantment_table.json
@@ -17,6 +17,7 @@ d37f746a3111352aeb76a52096cdd347eec1d40d data/openblocks/advancement/recipes/mis
 19111007ee2834df54ab73fbedcb302afd6112eb data/openblocks/advancement/recipes/misc/xp_shower.json
 44bd7e7461c663966db9367e0786856b203800c7 data/openblocks/advancement/recipes/redstone/block_breaker.json
 9558308e3f3ef4a2e984b08a5f87d5eebfcbcd74 data/openblocks/advancement/recipes/redstone/block_placer.json
+7c05198d76167a7193cd5bf1d712d924a4ecc021 data/openblocks/advancement/recipes/redstone/fan.json
 cb17206668799abdf63be661df9bb38c4f0eb645 data/openblocks/advancement/recipes/redstone/item_dropper.json
 da1316e1e210d2aa7fbbf2d625f48257472f7eb7 data/openblocks/advancement/recipes/tools/paintbrush.json
 e6d0b5f50673c6a9cb4cd76f8981da6261fa4807 data/openblocks/advancement/recipes/tools/paintbrush_black.json
@@ -84,6 +85,7 @@ d506570c1eb5afda4df0f57fe40a646176475a0e data/openblocks/recipe/canvas.json
 035d0b7aa57a55e9d1849248fe9470faf5920668 data/openblocks/recipe/cyan_elevator_rotating.json
 cd8f111bebd14ea9b7c31f57a91defba81737180 data/openblocks/recipe/donation_station.json
 8ebd8a120754b085193018bc6531a9211bd0614d data/openblocks/recipe/drawing_table.json
+00efa163f0c387abf8f7d141681b0ef539b2c07b data/openblocks/recipe/fan.json
 d137edeb8d0e951a2c9d325fcda583959f10fd1f data/openblocks/recipe/glider_wing_left.json
 c7a651711c5f2f893019881628eea763d68db28e data/openblocks/recipe/glider_wing_right.json
 4cf56d7344761ca3d51b0646d264e584485e85af data/openblocks/recipe/gray_elevator.json

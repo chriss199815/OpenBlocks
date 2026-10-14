@@ -156,6 +156,16 @@ public class OBRecipeProvider extends RecipeProvider {
 				.unlockedBy("has_obsidian", has(Tags.Items.OBSIDIANS))
 				.save(output);
 
+		ShapedRecipeBuilder.shaped(RecipeCategory.REDSTONE, OBBlocks.FAN.get())
+				.pattern("b")
+				.pattern("i")
+				.pattern("s")
+				.define('b', Items.IRON_BARS)
+				.define('i', Tags.Items.INGOTS_IRON)
+				.define('s', Items.SMOOTH_STONE_SLAB)
+				.unlockedBy("has_iron_bars", has(Items.IRON_BARS))
+				.save(output);
+
 		ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, OBItems.PAINT_BRUSH.get())
 				.pattern("w  ")
 				.pattern(" s ")

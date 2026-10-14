@@ -46,6 +46,7 @@ public class OpenBlocksClient {
 		modBus.addListener(VacuumHopperModel::modifyBakingResult);
 		modBus.addListener(HangGliderRenderer::modifyBakingResult);
 		modBus.addListener(PaintMixerRenderer::registerAdditional);
+		modBus.addListener(FanRenderer::registerAdditional);
 		modBus.addListener(CanvasModel::modifyBakingResult);
 		modBus.addListener((ModelEvent.BakingCompleted event) -> CanvasTextures.clear());
 		modBus.addListener(OpenBlocksClient::registerRenderers);
@@ -81,6 +82,7 @@ public class OpenBlocksClient {
 		event.registerBlockEntityRenderer(OBBlockEntities.AUTO_ENCHANTMENT_TABLE.get(), AutoEnchantmentTableRenderer::new);
 		event.registerBlockEntityRenderer(OBBlockEntities.PAINT_MIXER.get(), PaintMixerRenderer::new);
 		event.registerBlockEntityRenderer(OBBlockEntities.CANVAS.get(), CanvasRenderer::new);
+		event.registerBlockEntityRenderer(OBBlockEntities.FAN.get(), FanRenderer::new);
 		event.registerEntityRenderer(OBEntities.NO_FLY_XP_ORB.get(), ExperienceOrbRenderer::new);
 	}
 }

@@ -1,4 +1,4 @@
-// 1.21.1	2026-10-14T13:17:42.428687	Block States: openblocks
+// 1.21.1	2026-10-14T13:35:20.369304	Block States: openblocks
 909bae1340933de5e494ee6692d1d88aeabf4f33 assets/openblocks/blockstates/auto_anvil.json
 aca132b5918ec066ede0f817145d0ac0649c84a9 assets/openblocks/blockstates/auto_enchantment_table.json
 c45d5d2e71c34dc43588a6063c8f1025e64a8816 assets/openblocks/blockstates/black_elevator.json
@@ -15,6 +15,7 @@ c45d5d2e71c34dc43588a6063c8f1025e64a8816 assets/openblocks/blockstates/cyan_elev
 d13702d1e489422f027636fd4f3a4f64b33332e9 assets/openblocks/blockstates/cyan_elevator_rotating.json
 cad13d502502915168c4dfafacde9cd972df58f2 assets/openblocks/blockstates/donation_station.json
 84db62ccd156d648e7a7c3abc559c8259852e966 assets/openblocks/blockstates/drawing_table.json
+ba46e543b1afc5d3fe7fbde2ce69262890989d7f assets/openblocks/blockstates/fan.json
 7442b36f172fe05431acbf7d29843b48b5b99c23 assets/openblocks/blockstates/grave.json
 c45d5d2e71c34dc43588a6063c8f1025e64a8816 assets/openblocks/blockstates/gray_elevator.json
 d13702d1e489422f027636fd4f3a4f64b33332e9 assets/openblocks/blockstates/gray_elevator_rotating.json
@@ -59,6 +60,9 @@ c06129c1e72510373a96258c5633a7abb0ff8a9a assets/openblocks/models/block/auto_anv
 f87beb9b687aa72914e14f930da65dac8b2deb3e assets/openblocks/models/block/drawing_table.json
 d3d21200c82f54f0fe0701831311e9ea2ec3af35 assets/openblocks/models/block/elevator.json
 0a7295117b6c3a96e26f6cec9a39a565a8a3280f assets/openblocks/models/block/elevator_rotating.json
+0814f6d8c7d1e8cfebc1f92172b8b8d302d323a8 assets/openblocks/models/block/fan.json
+5cf2186f10ae88a85f52de4379802e3fc638c0aa assets/openblocks/models/block/fan_blades.json
+84b569a5b9c1bcb580916c99479faea47d6f62f5 assets/openblocks/models/block/fan_frame.json
 9f3a8f7f3192e48338258695e52de2902577b76d assets/openblocks/models/block/grave_free.json
 e97351a6d611f8069d1e29d33f25af56f3247c28 assets/openblocks/models/block/grave_ground.json
 4dd0dce8ad6ed5e1708f6a97ae40cfdfda5b3bd2 assets/openblocks/models/block/item_dropper.json
@@ -129,6 +133,7 @@ d2b8f805473f5db4bc4402f5b4f1864704363649 assets/openblocks/models/item/cyan_elev
 dd180aef5747a9afe34022df0f8fd345d081cd6c assets/openblocks/models/item/cyan_elevator_rotating.json
 4cd4f93630a1165a9fc59487a05253a56871204e assets/openblocks/models/item/donation_station.json
 ab8c50816283874de69dd2bd6568d691b35414b4 assets/openblocks/models/item/drawing_table.json
+b3a5d2f6748f8537e15bb3d900bce4b0e3e427a7 assets/openblocks/models/item/fan.json
 3e04276af1bc9e7fb3ca4d2dea117e5aaec179ce assets/openblocks/models/item/glider_wing.json
 53cca251fbe8ed16083255b0ed115f4b96256440 assets/openblocks/models/item/grave.json
 d2b8f805473f5db4bc4402f5b4f1864704363649 assets/openblocks/models/item/gray_elevator.json

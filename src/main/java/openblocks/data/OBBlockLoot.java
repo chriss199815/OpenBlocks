@@ -32,6 +32,7 @@ public class OBBlockLoot extends BlockLootSubProvider {
 		dropSelf(OBBlocks.DONATION_STATION.get());
 		dropSelf(OBBlocks.DRAWING_TABLE.get());
 		dropSelf(OBBlocks.PAINT_MIXER.get());
+		dropSelf(OBBlocks.FAN.get());
 		// a canvas that replaced a block drops that block instead, see CanvasBlock.getDrops
 		dropSelf(OBBlocks.CANVAS.get());
 		dropOther(OBBlocks.CANVAS_GLASS.get(), OBBlocks.CANVAS.get());

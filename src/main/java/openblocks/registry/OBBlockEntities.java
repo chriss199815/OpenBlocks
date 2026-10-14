@@ -10,6 +10,7 @@ import openblocks.block.entity.AutoEnchantmentTableBlockEntity;
 import openblocks.block.entity.CanvasBlockEntity;
 import openblocks.block.entity.DonationStationBlockEntity;
 import openblocks.block.entity.DrawingTableBlockEntity;
+import openblocks.block.entity.FanBlockEntity;
 import openblocks.block.entity.PaintCanBlockEntity;
 import openblocks.block.entity.PaintMixerBlockEntity;
 import openblocks.block.entity.BlockBreakerBlockEntity;
@@ -84,4 +85,7 @@ public class OBBlockEntities {
 
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<CanvasBlockEntity>> CANVAS = BLOCK_ENTITIES.register("canvas",
 			() -> BlockEntityType.Builder.of(CanvasBlockEntity::new, OBBlocks.CANVAS.get(), OBBlocks.CANVAS_GLASS.get()).build(null));
+
+	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<FanBlockEntity>> FAN = BLOCK_ENTITIES.register("fan",
+			() -> BlockEntityType.Builder.of(FanBlockEntity::new, OBBlocks.FAN.get()).build(null));
 }

@@ -199,6 +199,8 @@ public class OBBlockStateProvider extends BlockStateProvider {
 		trapdoorBlockWithRenderType(OBBlocks.LADDER.get(), modLoc("block/ladder"), false, "cutout");
 		itemModels().getBuilder("ladder").parent(new ModelFile.UncheckedModelFile(modLoc("block/ladder_bottom")));
 		ropeLadder();
+
+		simpleBlockWithItem(OBBlocks.SPONGE.get(), cubeAll(OBBlocks.SPONGE.get()));
 	}
 
 	/**

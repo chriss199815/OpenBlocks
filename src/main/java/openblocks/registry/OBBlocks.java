@@ -35,6 +35,7 @@ import openblocks.block.ItemDropperBlock;
 import openblocks.block.JadedLadderBlock;
 import openblocks.block.RopeLadderBlock;
 import openblocks.block.RotatingElevatorBlock;
+import openblocks.block.SpongeBlock;
 import openblocks.block.SprinklerBlock;
 import openblocks.block.TankBlock;
 import openblocks.block.VacuumHopperBlock;
@@ -199,6 +200,11 @@ public class OBBlocks {
 			.noOcclusion()
 			.pushReaction(PushReaction.DESTROY)
 			.sound(SoundType.LADDER)));
+
+	public static final DeferredBlock<SpongeBlock> SPONGE = registerWithItem("sponge", () -> new SpongeBlock(BlockBehaviour.Properties.of()
+			.mapColor(MapColor.COLOR_YELLOW)
+			.strength(1.0f)
+			.sound(SoundType.WOOL)));
 
 	private static BlockBehaviour.Properties canvasProperties() {
 		return BlockBehaviour.Properties.of()

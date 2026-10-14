@@ -1,4 +1,4 @@
-// 1.21.1	2026-10-14T18:59:19.701583	Recipes
+// 1.21.1	2026-10-14T18:59:39.889877	Recipes
 f37f622f6aa43ff8c3b05fe0ccd813d9be730420 data/openblocks/advancement/recipes/building_blocks/canvas.json
 3e9f0cd162609d6b5b1d8d296b490afc26cbae21 data/openblocks/advancement/recipes/decorations/black_flag.json
 e3eed01d1a50e61eb43cad392e059a644388bf60 data/openblocks/advancement/recipes/decorations/blue_flag.json
@@ -27,6 +27,7 @@ c40b99032ad81579611396658ce2ae35f1814bb9 data/openblocks/advancement/recipes/mis
 4e921cb1267e57f333649e6553bd168ff5923a1f data/openblocks/advancement/recipes/misc/paint_mixer.json
 9dd0615332ee16d0794d4bd6d9d6011310bd829f data/openblocks/advancement/recipes/misc/sketching_pencil.json
 22c667d4bb09ff4494a0c22c9d82e6ec61b1a559 data/openblocks/advancement/recipes/misc/sleeping_bag.json
+ae2ef486fe7f2b4963b048be10373751bcbdebbb data/openblocks/advancement/recipes/misc/sponge.json
 d650e93bb27cdb8e2b7f54b704e08cb6d75f760f data/openblocks/advancement/recipes/misc/sprinkler.json
 a79972e5807a48dec69c932db335e409de7649d2 data/openblocks/advancement/recipes/misc/tank.json
 d37f746a3111352aeb76a52096cdd347eec1d40d data/openblocks/advancement/recipes/misc/unprepared_stencil.json
@@ -57,7 +58,7 @@ e95c1cef4ff2c669340f8de3b632d606901d24d4 data/openblocks/advancement/recipes/too
 6b43e50b0f4b32dac15b2cb0557a3f3e20e2b834 data/openblocks/advancement/recipes/tools/paintbrush_red.json
 6fb8b14ebd31ecdf9e4c7fd5966e982eac5a319e data/openblocks/advancement/recipes/tools/paintbrush_white.json
 bdfc5ffaea2ec532f6c8029922686611601fc16f data/openblocks/advancement/recipes/tools/paintbrush_yellow.json
-b8b07694734180e58fcc107c3d541bbe4abb3418 data/openblocks/advancement/recipes/tools/squeegee.json
+41723e7981352052dd3842a29ecf0155d4a76826 data/openblocks/advancement/recipes/tools/squeegee.json
 1aa07932d4a24474e354fba261588f5853a1a8f4 data/openblocks/advancement/recipes/transportation/black_elevator.json
 43ff9eb8138aa2a0c9f8982a2d681fe2833ea34d data/openblocks/advancement/recipes/transportation/black_elevator_rotating.json
 d6295f221dbff50d39f3a8af5b5b63c49a7520ee data/openblocks/advancement/recipes/transportation/blue_elevator.json
@@ -173,8 +174,9 @@ fa8e66804c8144f8e543cc41a58ecce7b39bf7a0 data/openblocks/recipe/red_elevator.jso
 595fb785cc7d6247c46db38a88b2cb2deffa173e data/openblocks/recipe/rope_ladder.json
 871b52e67f485592a6616f4111fbe19b3035b602 data/openblocks/recipe/sketching_pencil.json
 f19f94e01a138278627c26547d4a9780af62ca45 data/openblocks/recipe/sleeping_bag.json
+1c13447030ab97793f15a5dd369bee8b3ab6e036 data/openblocks/recipe/sponge.json
 6b64ad36e3d7a9ad79a201e8fb71e2130012162d data/openblocks/recipe/sprinkler.json
-6fcfab9783d64ce4a6978dd4279ae421f2c3b4b7 data/openblocks/recipe/squeegee.json
+5596082794770926385e969fc5cc1e35d648b709 data/openblocks/recipe/squeegee.json
 85e77e95cfd534f9e3db5f2a3185c1db82b4bc27 data/openblocks/recipe/tank.json
 6d6f5e9214be50cb69d5951037ea3460d384e1c8 data/openblocks/recipe/unprepared_stencil.json
 1358b25df1799e007bdcc1a585e4926e5218a84e data/openblocks/recipe/vacuum_hopper.json

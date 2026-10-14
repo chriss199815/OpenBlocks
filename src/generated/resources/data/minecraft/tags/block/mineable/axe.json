@@ -1,6 +1,7 @@
 {
   "values": [
     "openblocks:drawing_table",
-    "openblocks:ladder"
+    "openblocks:ladder",
+    "openblocks:sponge"
   ]
 }

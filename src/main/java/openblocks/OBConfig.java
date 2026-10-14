@@ -24,6 +24,7 @@ public class OBConfig {
 	public static final DevNull DEV_NULL = new DevNull(BUILDER);
 	public static final Cursor CURSOR = new Cursor(BUILDER);
 	public static final Ladder LADDER = new Ladder(BUILDER);
+	public static final Sponge SPONGE = new Sponge(BUILDER);
 
 	public static final ModConfigSpec SPEC = BUILDER.build();
 
@@ -35,6 +36,22 @@ public class OBConfig {
 			infiniteMode = builder
 					.comment("If true, ladders will behave in old way: single item will place ladder all the way down, but it will not drop when broken")
 					.define("infiniteMode", false);
+			builder.pop();
+		}
+	}
+
+	public static class Sponge {
+		public final ModConfigSpec.IntValue range;
+		public final ModConfigSpec.BooleanValue blockUpdate;
+
+		private Sponge(ModConfigSpec.Builder builder) {
+			builder.push("sponge");
+			range = builder
+					.comment("Sponge block range (distance from center)")
+					.defineInRange("spongeRange", 3, 0, 16);
+			blockUpdate = builder
+					.comment("Should sponge block update neighbours after liquid removal?")
+					.define("blockUpdate", false);
 			builder.pop();
 		}
 	}

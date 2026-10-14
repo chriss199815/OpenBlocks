@@ -3,7 +3,7 @@
   "category": "equipment",
   "key": {
     "s": {
-      "item": "minecraft:sponge"
+      "item": "openblocks:sponge"
     },
     "w": {
       "tag": "c:rods/wooden"

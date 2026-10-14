@@ -254,14 +254,13 @@ public class OBRecipeProvider extends RecipeProvider {
 				.unlockedBy("has_paper", has(Items.PAPER))
 				.save(output);
 
-		// the legacy recipe used the OpenBlocks sponge, which is not ported yet
 		ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, OBItems.SQUEEGEE.get())
 				.pattern("sss")
 				.pattern(" w ")
 				.pattern(" w ")
-				.define('s', Items.SPONGE)
+				.define('s', OBBlocks.SPONGE.get())
 				.define('w', Tags.Items.RODS_WOODEN)
-				.unlockedBy("has_sponge", has(Items.SPONGE))
+				.unlockedBy("has_sponge", has(OBBlocks.SPONGE.get()))
 				.save(output);
 
 		ShapedRecipeBuilder.shaped(RecipeCategory.MISC, OBItems.UNPREPARED_STENCIL.get())
@@ -352,6 +351,13 @@ public class OBRecipeProvider extends RecipeProvider {
 				.define('s', Tags.Items.STRINGS)
 				.define('t', Tags.Items.RODS_WOODEN)
 				.unlockedBy("has_string", has(Tags.Items.STRINGS))
+				.save(output);
+
+		// any wool, like the legacy recipes for all 16 wool metadata values
+		ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, OBBlocks.SPONGE.get())
+				.requires(ItemTags.WOOL)
+				.requires(Tags.Items.SLIME_BALLS)
+				.unlockedBy("has_slime_ball", has(Tags.Items.SLIME_BALLS))
 				.save(output);
 	}
 }

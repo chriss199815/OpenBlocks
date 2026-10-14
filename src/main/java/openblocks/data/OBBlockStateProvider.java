@@ -54,6 +54,7 @@ public class OBBlockStateProvider extends BlockStateProvider {
 		itemModels().basicItem(OBItems.GLIDER_WING.get());
 		itemModels().basicItem(OBItems.HANG_GLIDER.get());
 		itemModels().basicItem(OBItems.SLEEPING_BAG.get());
+		itemModels().basicItem(OBItems.CURSOR.get());
 		// like legacy, the plain stencil texture
 		itemModels().withExistingParent("unprepared_stencil", mcLoc("item/generated")).texture("layer0", modLoc("item/stencil"));
 		itemModels().basicItem(OBItems.SKETCHING_PENCIL.get());

@@ -8,6 +8,7 @@ import net.neoforged.neoforge.fluids.SimpleFluidContent;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import openblocks.OpenBlocks;
+import openblocks.item.CursorTarget;
 import openblocks.item.Paint;
 
 public class OBComponents {
@@ -31,4 +32,10 @@ public class OBComponents {
 	 */
 	public static final DeferredHolder<DataComponentType<?>, DataComponentType<Unit>> LUGGAGE_SPECIAL = COMPONENTS.registerComponentType("luggage_special",
 			builder -> builder.persistent(Unit.CODEC).networkSynchronized(StreamCodec.unit(Unit.INSTANCE)));
+
+	/**
+	 * Block a cursor is linked to; replaces the legacy {@code dimension}/coordinates/{@code side} NBT tags.
+	 */
+	public static final DeferredHolder<DataComponentType<?>, DataComponentType<CursorTarget>> CURSOR_TARGET = COMPONENTS.registerComponentType("cursor_target",
+			builder -> builder.persistent(CursorTarget.CODEC).networkSynchronized(CursorTarget.STREAM_CODEC));
 }

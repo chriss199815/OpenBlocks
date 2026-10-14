@@ -72,6 +72,7 @@ public class OpenBlocksClient {
 		NeoForge.EVENT_BUS.addListener(SleepingBagLayer::onRenderPlayerPre);
 		NeoForge.EVENT_BUS.addListener(SleepingBagLayer::onRenderPlayerPost);
 		NeoForge.EVENT_BUS.addListener(SleepingBagLayer::onComputeCameraAngles);
+		NeoForge.EVENT_BUS.addListener(CursorHighlightRenderer::onRenderLevelStage);
 	}
 
 	private static void registerScreens(RegisterMenuScreensEvent event) {

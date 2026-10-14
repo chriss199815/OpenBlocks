@@ -1,4 +1,4 @@
-// 1.21.1	2026-10-14T18:27:59.364487	Block States: openblocks
+// 1.21.1	2026-10-14T17:43:24.361413	Block States: openblocks
 909bae1340933de5e494ee6692d1d88aeabf4f33 assets/openblocks/blockstates/auto_anvil.json
 aca132b5918ec066ede0f817145d0ac0649c84a9 assets/openblocks/blockstates/auto_enchantment_table.json
 9be1c7ce94b3232fe19c46a8965abe89ae2d898a assets/openblocks/blockstates/bear_trap.json
@@ -198,6 +198,7 @@ b4642da05af0fca1ea4993cfdfeb191793d44092 assets/openblocks/models/item/corner2_s
 ebd3f8520073b4dfac0c85da7cad62fdf50914e4 assets/openblocks/models/item/corner3_stencil.json
 d60848a3f9109b979e6a9edf5ab1f30196127e62 assets/openblocks/models/item/corner_stencil.json
 f5a29f80fcdc9f49712c9d26585b68a764401cde assets/openblocks/models/item/creeper_face_stencil.json
+1a75c48a8c68573e729010cdb40896cef7552bbd assets/openblocks/models/item/cursor.json
 d2b8f805473f5db4bc4402f5b4f1864704363649 assets/openblocks/models/item/cyan_elevator.json
 dd180aef5747a9afe34022df0f8fd345d081cd6c assets/openblocks/models/item/cyan_elevator_rotating.json
 fcc439f163500f4a2657f61a09c9762b2151a0ed assets/openblocks/models/item/cyan_flag.json

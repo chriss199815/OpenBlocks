@@ -22,6 +22,7 @@ public class OBConfig {
 	public static final Fan FAN = new Fan(BUILDER);
 	public static final Sprinkler SPRINKLER = new Sprinkler(BUILDER);
 	public static final DevNull DEV_NULL = new DevNull(BUILDER);
+	public static final Cursor CURSOR = new Cursor(BUILDER);
 
 	public static final ModConfigSpec SPEC = BUILDER.build();
 
@@ -37,6 +38,18 @@ public class OBConfig {
 			countColor = builder
 					.comment("Color of contained stack size in GUI")
 					.defineInRange("countColor", 0xFFFF00, 0, 0xFFFFFF);
+			builder.pop();
+		}
+	}
+
+	public static class Cursor {
+		public final ModConfigSpec.IntValue maxDistance;
+
+		private Cursor(ModConfigSpec.Builder builder) {
+			builder.push("cursor");
+			maxDistance = builder
+					.comment("Maximum distance cursor can reach (warning: increasing may cause crashes)")
+					.defineInRange("cursorMaxDistance", 64, 0, Integer.MAX_VALUE);
 			builder.pop();
 		}
 	}

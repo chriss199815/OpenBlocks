@@ -218,6 +218,14 @@ public class OBRecipeProvider extends RecipeProvider {
 				.unlockedBy("has_apple", has(Items.APPLE))
 				.save(output);
 
+		ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, OBItems.CURSOR.get())
+				.pattern("w  ")
+				.pattern("www")
+				.pattern("www")
+				.define('w', Items.WHITE_WOOL)
+				.unlockedBy("has_wool", has(Items.WHITE_WOOL))
+				.save(output);
+
 		ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, OBItems.PAINT_BRUSH.get())
 				.pattern("w  ")
 				.pattern(" s ")

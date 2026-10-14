@@ -35,6 +35,7 @@ import openblocks.block.ItemDropperBlock;
 import openblocks.block.JadedLadderBlock;
 import openblocks.block.RopeLadderBlock;
 import openblocks.block.RotatingElevatorBlock;
+import openblocks.block.ScaffoldingBlock;
 import openblocks.block.SpongeBlock;
 import openblocks.block.SprinklerBlock;
 import openblocks.block.TankBlock;
@@ -205,6 +206,19 @@ public class OBBlocks {
 			.mapColor(MapColor.COLOR_YELLOW)
 			.strength(1.0f)
 			.sound(SoundType.WOOL)));
+
+	// item burn time comes from the furnace_fuels data map
+	public static final DeferredBlock<ScaffoldingBlock> SCAFFOLDING = registerWithItem("scaffolding", () -> new ScaffoldingBlock(BlockBehaviour.Properties.of()
+			.mapColor(MapColor.WOOD)
+			.strength(0.1f)
+			.randomTicks()
+			.noOcclusion()
+			.ignitedByLava()
+			.isValidSpawn(Blocks::never)
+			.isRedstoneConductor((state, level, pos) -> false)
+			.isSuffocating((state, level, pos) -> false)
+			.isViewBlocking((state, level, pos) -> false)
+			.sound(SoundType.WOOD)));
 
 	private static BlockBehaviour.Properties canvasProperties() {
 		return BlockBehaviour.Properties.of()

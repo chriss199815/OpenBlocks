@@ -25,6 +25,7 @@ public class OBConfig {
 	public static final Cursor CURSOR = new Cursor(BUILDER);
 	public static final Ladder LADDER = new Ladder(BUILDER);
 	public static final Sponge SPONGE = new Sponge(BUILDER);
+	public static final Scaffolding SCAFFOLDING = new Scaffolding(BUILDER);
 
 	public static final ModConfigSpec SPEC = BUILDER.build();
 
@@ -52,6 +53,18 @@ public class OBConfig {
 			blockUpdate = builder
 					.comment("Should sponge block update neighbours after liquid removal?")
 					.define("blockUpdate", false);
+			builder.pop();
+		}
+	}
+
+	public static class Scaffolding {
+		public final ModConfigSpec.IntValue despawnRate;
+
+		private Scaffolding(ModConfigSpec.Builder builder) {
+			builder.push("scaffolding");
+			despawnRate = builder
+					.comment("The rate at which scaffolding should break. 0 - fastest")
+					.defineInRange("despawnRate", 4, 0, Integer.MAX_VALUE);
 			builder.pop();
 		}
 	}

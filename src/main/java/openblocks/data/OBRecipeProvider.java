@@ -359,5 +359,13 @@ public class OBRecipeProvider extends RecipeProvider {
 				.requires(Tags.Items.SLIME_BALLS)
 				.unlockedBy("has_slime_ball", has(Tags.Items.SLIME_BALLS))
 				.save(output);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, OBBlocks.SCAFFOLDING.get(), 8)
+				.pattern("sss")
+				.pattern("s s")
+				.pattern("sss")
+				.define('s', Tags.Items.RODS_WOODEN)
+				.unlockedBy("has_stick", has(Tags.Items.RODS_WOODEN))
+				.save(output);
 	}
 }

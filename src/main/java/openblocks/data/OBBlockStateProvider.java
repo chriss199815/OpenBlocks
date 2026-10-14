@@ -201,6 +201,7 @@ public class OBBlockStateProvider extends BlockStateProvider {
 		ropeLadder();
 
 		simpleBlockWithItem(OBBlocks.SPONGE.get(), cubeAll(OBBlocks.SPONGE.get()));
+		simpleBlockWithItem(OBBlocks.SCAFFOLDING.get(), models().cubeAll("scaffolding", modLoc("block/scaffolding")).renderType("cutout_mipped"));
 	}
 
 	/**

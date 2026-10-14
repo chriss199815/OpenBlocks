@@ -1,4 +1,4 @@
-// 1.21.1	2026-10-14T18:59:39.889482	Loot Tables
+// 1.21.1	2026-10-14T18:59:59.572351	Loot Tables
 91d0a832c50aab793e108321331f69e01d35cf6b data/openblocks/loot_table/blocks/auto_anvil.json
 76f4eafc1ea0961e4b2199bec14732fba136b0e3 data/openblocks/loot_table/blocks/auto_enchantment_table.json
 f4440d2112f720e00c0f9a7d9381caabbeafe916 data/openblocks/loot_table/blocks/bear_trap.json
@@ -57,6 +57,7 @@ fcce1b16d66452e7aefdd0dacb2bb2d189cb6e6f data/openblocks/loot_table/blocks/pink_
 8d90480fd11ad43b43a84ed5d9d15fe2791b7644 data/openblocks/loot_table/blocks/red_elevator_rotating.json
 3370148c9fcd3b23cd149444daf0b374236fb482 data/openblocks/loot_table/blocks/red_flag.json
 3d027849d356f16d6aa814e26dd6018918b44a89 data/openblocks/loot_table/blocks/rope_ladder.json
+e48973365881490a361e120eb179d5e592e67898 data/openblocks/loot_table/blocks/scaffolding.json
 3c107832c91da5faaa25ad5bfbd5f5a6d0035c0a data/openblocks/loot_table/blocks/sponge.json
 0d44d9d35f35ad4a71e2b09f1d46b4c3d8a4334c data/openblocks/loot_table/blocks/sprinkler.json
 271b39dc7a92c13e9131a84a3872650efc11cf58 data/openblocks/loot_table/blocks/tank.json

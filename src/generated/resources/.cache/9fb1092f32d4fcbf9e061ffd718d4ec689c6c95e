@@ -1,5 +1,6 @@
-// 1.21.1	2026-10-14T18:59:39.889877	Recipes
+// 1.21.1	2026-10-14T18:59:59.572839	Recipes
 f37f622f6aa43ff8c3b05fe0ccd813d9be730420 data/openblocks/advancement/recipes/building_blocks/canvas.json
+4da75c2ec825111de4abddbd9d4caefbb2b578ce data/openblocks/advancement/recipes/building_blocks/scaffolding.json
 3e9f0cd162609d6b5b1d8d296b490afc26cbae21 data/openblocks/advancement/recipes/decorations/black_flag.json
 e3eed01d1a50e61eb43cad392e059a644388bf60 data/openblocks/advancement/recipes/decorations/blue_flag.json
 a839ea5f19f3bb1bed4ea5b8b7fb517c4ca3a302 data/openblocks/advancement/recipes/decorations/brown_flag.json
@@ -172,6 +173,7 @@ fa8e66804c8144f8e543cc41a58ecce7b39bf7a0 data/openblocks/recipe/red_elevator.jso
 28219adfa77731cdd95c2b5d771559a603b956d1 data/openblocks/recipe/red_elevator_rotating.json
 3d99bab1bc02974c5d754d794ace2b1c84db0a59 data/openblocks/recipe/red_flag.json
 595fb785cc7d6247c46db38a88b2cb2deffa173e data/openblocks/recipe/rope_ladder.json
+caf80d8b5e97aba4eb7dba2046f246286e0608d1 data/openblocks/recipe/scaffolding.json
 871b52e67f485592a6616f4111fbe19b3035b602 data/openblocks/recipe/sketching_pencil.json
 f19f94e01a138278627c26547d4a9780af62ca45 data/openblocks/recipe/sleeping_bag.json
 1c13447030ab97793f15a5dd369bee8b3ab6e036 data/openblocks/recipe/sponge.json

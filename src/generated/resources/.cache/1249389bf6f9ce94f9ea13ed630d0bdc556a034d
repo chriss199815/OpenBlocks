@@ -1,4 +1,4 @@
-// 1.21.1	2026-10-14T18:59:39.887785	Block States: openblocks
+// 1.21.1	2026-10-14T18:59:59.570696	Block States: openblocks
 909bae1340933de5e494ee6692d1d88aeabf4f33 assets/openblocks/blockstates/auto_anvil.json
 aca132b5918ec066ede0f817145d0ac0649c84a9 assets/openblocks/blockstates/auto_enchantment_table.json
 9be1c7ce94b3232fe19c46a8965abe89ae2d898a assets/openblocks/blockstates/bear_trap.json
@@ -57,6 +57,7 @@ c45d5d2e71c34dc43588a6063c8f1025e64a8816 assets/openblocks/blockstates/red_eleva
 d13702d1e489422f027636fd4f3a4f64b33332e9 assets/openblocks/blockstates/red_elevator_rotating.json
 6a60ac85a83f62e9071a3664237075d98888182e assets/openblocks/blockstates/red_flag.json
 a06e0a4f3161a34ee08a79336082bc25177f5f7a assets/openblocks/blockstates/rope_ladder.json
+e2f98d876093e19c1f80d312e21b885150a588d7 assets/openblocks/blockstates/scaffolding.json
 b082cffcbd8ae50a39ecbe3a2520b82ff26a1ecb assets/openblocks/blockstates/sponge.json
 a5fd6018d2eca7b2ba34f08d9babe797f726dcfc assets/openblocks/blockstates/sprinkler.json
 97a9d238d7f937d3ad8167f336d1e68f242fd43e assets/openblocks/blockstates/tank.json
@@ -138,6 +139,7 @@ fb4c37f8447e99be4684687e0abf0c04c0a7e204 assets/openblocks/models/block/ladder_t
 cdd9f651203af18a3a3f9e85991260bfcbb53d2c assets/openblocks/models/block/paint_mixer.json
 096e912c6869497117a2b114cf617a1cf39f4fd1 assets/openblocks/models/block/paint_mixer_can.json
 67c2fe56fbe4a3c5b82e6d0e1c5722eed9263393 assets/openblocks/models/block/rope_ladder.json
+9deaa4ad20bfeed7b24ff3faf799a38ae7a1dacd assets/openblocks/models/block/scaffolding.json
 1f4b1f1c98000f82181d533834fe4f279783c901 assets/openblocks/models/block/sponge.json
 e6e362f6a9a1a489460bddea76589c4cbeff90f7 assets/openblocks/models/block/sprinkler.json
 38f40ff59eca5cddf74119da1652f2edde1776f0 assets/openblocks/models/block/sprinkler_item.json
@@ -261,6 +263,7 @@ d2b8f805473f5db4bc4402f5b4f1864704363649 assets/openblocks/models/item/red_eleva
 dd180aef5747a9afe34022df0f8fd345d081cd6c assets/openblocks/models/item/red_elevator_rotating.json
 fcc439f163500f4a2657f61a09c9762b2151a0ed assets/openblocks/models/item/red_flag.json
 3dfd739b2ca846c7ce6e3ac7a2dabff33876e139 assets/openblocks/models/item/rope_ladder.json
+ea18fe8ff7f353a0ed3fca484c59a5f1de960359 assets/openblocks/models/item/scaffolding.json
 ec2ddb9bb9dd0d3206db8ff271fe831f6dc9bea0 assets/openblocks/models/item/sketching_pencil.json
 93fe12716900287b328fc50ce493ef5f588177bf assets/openblocks/models/item/sleeping_bag.json
 661539d80619cf66bdd482bff51f3323363abdbf assets/openblocks/models/item/spiral_stencil.json

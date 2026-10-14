@@ -15,6 +15,7 @@ import openblocks.item.HangGliderItem;
 import openblocks.item.LuggageItem;
 import openblocks.item.PaintBrushItem;
 import openblocks.item.PaintCanItem;
+import openblocks.item.PedometerItem;
 import openblocks.item.SleepingBagItem;
 import openblocks.item.SqueegeeItem;
 import openblocks.item.StencilItem;
@@ -49,6 +50,8 @@ public class OBItems {
 	public static final DeferredItem<SqueegeeItem> SQUEEGEE = ITEMS.register("squeegee", () -> new SqueegeeItem(new Item.Properties().stacksTo(1)));
 
 	public static final DeferredItem<WrenchItem> WRENCH = ITEMS.register("wrench", () -> new WrenchItem(new Item.Properties().stacksTo(1)));
+
+	public static final DeferredItem<PedometerItem> PEDOMETER = ITEMS.register("pedometer", () -> new PedometerItem(new Item.Properties().stacksTo(1)));
 
 	// legacy MetasGeneric
 	public static final DeferredItem<Item> UNPREPARED_STENCIL = ITEMS.registerSimpleItem("unprepared_stencil");

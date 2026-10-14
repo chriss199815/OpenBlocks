@@ -1,0 +1,14 @@
+{
+  "parent": "minecraft:item/generated",
+  "overrides": [
+    {
+      "model": "openblocks:item/pedometer_moving",
+      "predicate": {
+        "openblocks:speed": 0.1
+      }
+    }
+  ],
+  "textures": {
+    "layer0": "openblocks:item/pedometer_still"
+  }
+}

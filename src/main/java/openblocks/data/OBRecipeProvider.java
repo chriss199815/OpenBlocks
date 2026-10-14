@@ -404,5 +404,15 @@ public class OBRecipeProvider extends RecipeProvider {
 				.define('i', Tags.Items.INGOTS_IRON)
 				.unlockedBy("has_iron_ingot", has(Tags.Items.INGOTS_IRON))
 				.save(output);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, OBItems.PEDOMETER.get())
+				.pattern("www")
+				.pattern("rcr")
+				.pattern("www")
+				.define('w', ItemTags.PLANKS)
+				.define('r', Tags.Items.DUSTS_REDSTONE)
+				.define('c', Items.CLOCK)
+				.unlockedBy("has_clock", has(Items.CLOCK))
+				.save(output);
 	}
 }

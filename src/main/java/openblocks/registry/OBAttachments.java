@@ -8,6 +8,7 @@ import net.neoforged.neoforge.network.codec.NeoForgeStreamCodecs;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.neoforged.neoforge.registries.NeoForgeRegistries;
 import openblocks.OpenBlocks;
+import openblocks.common.PedometerState;
 
 public class OBAttachments {
 
@@ -30,4 +31,10 @@ public class OBAttachments {
 			() -> AttachmentType.builder(() -> 0.0f)
 					.sync(ByteBufCodecs.FLOAT)
 					.build());
+
+	/**
+	 * Pedometer measurement of the player; only used on their own client, never saved or synced (like the legacy capability).
+	 */
+	public static final Supplier<AttachmentType<PedometerState>> PEDOMETER = ATTACHMENT_TYPES.register("pedometer",
+			() -> AttachmentType.builder(PedometerState::new).build());
 }

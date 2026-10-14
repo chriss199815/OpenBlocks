@@ -62,6 +62,7 @@ public class OpenBlocksClient {
 		modBus.addListener(SleepingBagLayer::addLayers);
 		modBus.addListener(LuggageRenderer::registerLayerDefinitions);
 		modBus.addListener(LuggageRenderer::registerItemProperties);
+		modBus.addListener(OBItemProperties::register);
 		modBus.addListener(DevNullItemRenderer::registerAdditional);
 		modBus.addListener(DevNullItemRenderer::registerClientExtensions);
 		modBus.addListener(DevNullItemRenderer::registerItemDecorations);

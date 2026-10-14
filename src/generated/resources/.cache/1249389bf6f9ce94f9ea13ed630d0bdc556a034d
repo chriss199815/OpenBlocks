@@ -1,4 +1,4 @@
-// 1.21.1	2026-10-14T19:56:24.56638	Block States: openblocks
+// 1.21.1	2026-10-14T19:56:46.811199	Block States: openblocks
 909bae1340933de5e494ee6692d1d88aeabf4f33 assets/openblocks/blockstates/auto_anvil.json
 aca132b5918ec066ede0f817145d0ac0649c84a9 assets/openblocks/blockstates/auto_enchantment_table.json
 9be1c7ce94b3232fe19c46a8965abe89ae2d898a assets/openblocks/blockstates/bear_trap.json
@@ -285,6 +285,8 @@ fcc439f163500f4a2657f61a09c9762b2151a0ed assets/openblocks/models/item/orange_fl
 9b869e70c5c7be53daa8904e210c87503852977c assets/openblocks/models/item/paint_mixer.json
 8a8d3063fb04e3a693b9d4cfedf24c2fd4d011fb assets/openblocks/models/item/paintbrush.json
 c56b858eebca3fa890c840c69590cd211ffdfa12 assets/openblocks/models/item/path.json
+e939b3cbc7ec72943504507940a3253088650bf7 assets/openblocks/models/item/pedometer.json
+8586b66983cc0641d9e90451eef50fd584fb6140 assets/openblocks/models/item/pedometer_moving.json
 d2b8f805473f5db4bc4402f5b4f1864704363649 assets/openblocks/models/item/pink_elevator.json
 dd180aef5747a9afe34022df0f8fd345d081cd6c assets/openblocks/models/item/pink_elevator_rotating.json
 fcc439f163500f4a2657f61a09c9762b2151a0ed assets/openblocks/models/item/pink_flag.json

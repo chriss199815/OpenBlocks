@@ -1,4 +1,4 @@
-// 1.21.1	2026-10-14T19:56:24.569248	Recipes
+// 1.21.1	2026-10-14T19:56:46.813175	Recipes
 f37f622f6aa43ff8c3b05fe0ccd813d9be730420 data/openblocks/advancement/recipes/building_blocks/canvas.json
 4da75c2ec825111de4abddbd9d4caefbb2b578ce data/openblocks/advancement/recipes/building_blocks/scaffolding.json
 3e9f0cd162609d6b5b1d8d296b490afc26cbae21 data/openblocks/advancement/recipes/decorations/black_flag.json
@@ -63,6 +63,7 @@ e95c1cef4ff2c669340f8de3b632d606901d24d4 data/openblocks/advancement/recipes/too
 6b43e50b0f4b32dac15b2cb0557a3f3e20e2b834 data/openblocks/advancement/recipes/tools/paintbrush_red.json
 6fb8b14ebd31ecdf9e4c7fd5966e982eac5a319e data/openblocks/advancement/recipes/tools/paintbrush_white.json
 bdfc5ffaea2ec532f6c8029922686611601fc16f data/openblocks/advancement/recipes/tools/paintbrush_yellow.json
+7d72260cedd48e7cde59aacb0859618d3b46bab2 data/openblocks/advancement/recipes/tools/pedometer.json
 41723e7981352052dd3842a29ecf0155d4a76826 data/openblocks/advancement/recipes/tools/squeegee.json
 140c42de6a859e8385bd5077a7d608be168981cb data/openblocks/advancement/recipes/tools/wrench.json
 1aa07932d4a24474e354fba261588f5853a1a8f4 data/openblocks/advancement/recipes/transportation/black_elevator.json
@@ -171,6 +172,7 @@ a6dbad482c691764e60ad92a6ec4c51167f4ffdf data/openblocks/recipe/paintbrush_purpl
 b4ca79138b1aa1c1f7b2ffe59a539dcf67f1c828 data/openblocks/recipe/paintbrush_white.json
 742b3b520f51e86aaeb42d79ff71417eac99143c data/openblocks/recipe/paintbrush_yellow.json
 c94a426e7c592e90cbd0aa47634e962cd8f42e61 data/openblocks/recipe/path.json
+e8520470beb7d5fb4b3353f6fb9d18bc05ad7e73 data/openblocks/recipe/pedometer.json
 9cf0ac55230a22c8260679ed7f08bad9d9c8d23d data/openblocks/recipe/pink_elevator.json
 ef13181744618d54aa2445f3112edd54c70cc305 data/openblocks/recipe/pink_elevator_rotating.json
 3028b6c27635fe233b266362aab92e1a27a7f15e data/openblocks/recipe/pink_flag.json

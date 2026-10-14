@@ -69,6 +69,9 @@ public class OBBlockStateProvider extends BlockStateProvider {
 		itemModels().basicItem(OBItems.SKETCHING_PENCIL.get());
 		itemModels().handheldItem(OBItems.SQUEEGEE.get());
 		itemModels().basicItem(OBItems.WRENCH.get());
+		final ModelFile pedometerMoving = itemModels().withExistingParent("pedometer_moving", mcLoc("item/generated")).texture("layer0", modLoc("item/pedometer_moving"));
+		itemModels().withExistingParent("pedometer", mcLoc("item/generated")).texture("layer0", modLoc("item/pedometer_still"))
+				.override().predicate(modLoc("speed"), 0.1f).model(pedometerMoving).end();
 		// legacy paintbrush model: handle, plus the paint tinted by OBColorHandlers
 		itemModels().withExistingParent("paintbrush", mcLoc("item/handheld_rod"))
 				.texture("layer0", modLoc("item/paintbrush_handle"))

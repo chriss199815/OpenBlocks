@@ -38,4 +38,10 @@ public class OBComponents {
 	 */
 	public static final DeferredHolder<DataComponentType<?>, DataComponentType<CursorTarget>> CURSOR_TARGET = COMPONENTS.registerComponentType("cursor_target",
 			builder -> builder.persistent(CursorTarget.CODEC).networkSynchronized(CursorTarget.STREAM_CODEC));
+
+	/**
+	 * Marks a slimalyzer that is in a slime chunk; replaces the legacy {@code Active} tag.
+	 */
+	public static final DeferredHolder<DataComponentType<?>, DataComponentType<Unit>> SLIMALYZER_ACTIVE = COMPONENTS.registerComponentType("slimalyzer_active",
+			builder -> builder.persistent(Unit.CODEC).networkSynchronized(StreamCodec.unit(Unit.INSTANCE)));
 }

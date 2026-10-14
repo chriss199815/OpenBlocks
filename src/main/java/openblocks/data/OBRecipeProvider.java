@@ -414,5 +414,16 @@ public class OBRecipeProvider extends RecipeProvider {
 				.define('c', Items.CLOCK)
 				.unlockedBy("has_clock", has(Items.CLOCK))
 				.save(output);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, OBItems.SLIMALYZER.get())
+				.pattern("igi")
+				.pattern("isi")
+				.pattern("iri")
+				.define('i', Tags.Items.INGOTS_IRON)
+				.define('g', Tags.Items.GLASS_PANES)
+				.define('s', Tags.Items.SLIME_BALLS)
+				.define('r', Tags.Items.DUSTS_REDSTONE)
+				.unlockedBy("has_slime_ball", has(Tags.Items.SLIME_BALLS))
+				.save(output);
 	}
 }

@@ -72,6 +72,9 @@ public class OBBlockStateProvider extends BlockStateProvider {
 		final ModelFile pedometerMoving = itemModels().withExistingParent("pedometer_moving", mcLoc("item/generated")).texture("layer0", modLoc("item/pedometer_moving"));
 		itemModels().withExistingParent("pedometer", mcLoc("item/generated")).texture("layer0", modLoc("item/pedometer_still"))
 				.override().predicate(modLoc("speed"), 0.1f).model(pedometerMoving).end();
+		final ModelFile slimalyzerActive = itemModels().withExistingParent("slimalyzer_active", mcLoc("item/generated")).texture("layer0", modLoc("item/slimeon"));
+		itemModels().withExistingParent("slimalyzer", mcLoc("item/generated")).texture("layer0", modLoc("item/slimeoff"))
+				.override().predicate(modLoc("active"), 1).model(slimalyzerActive).end();
 		// legacy paintbrush model: handle, plus the paint tinted by OBColorHandlers
 		itemModels().withExistingParent("paintbrush", mcLoc("item/handheld_rod"))
 				.texture("layer0", modLoc("item/paintbrush_handle"))

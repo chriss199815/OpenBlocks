@@ -28,10 +28,11 @@ import net.neoforged.neoforge.gametest.GameTestHolder;
 import net.neoforged.neoforge.gametest.PrefixGameTestTemplate;
 import openblocks.OpenBlocks;
 import openblocks.data.OBGameTestStructureProvider;
+import openblocks.item.SlimalyzerItem;
 import openblocks.registry.OBItems;
 
 /**
- * Wrench.
+ * Wrench and slimalyzer.
  */
 @GameTestHolder(OpenBlocks.MODID)
 @PrefixGameTestTemplate(false)
@@ -77,6 +78,33 @@ public class ToolItemGameTests {
 		player.setShiftKeyDown(true);
 		useWrench(helper, player, POS, Direction.UP);
 		helper.assertBlockProperty(POS, LeverBlock.FACING, Direction.EAST);
+		helper.succeed();
+	}
+
+	@GameTest(template = OBGameTestStructureProvider.EMPTY_3X8X3)
+	public static void slimalyzerLightsUpInSlimeChunks(GameTestHelper helper) {
+		final ServerLevel level = helper.getLevel();
+		final ChunkPos origin = new ChunkPos(helper.absolutePos(POS));
+		ChunkPos slime = null, other = null;
+		for (int dx = -10; dx <= 10 && (slime == null || other == null); dx++) {
+			for (int dz = -10; dz <= 10; dz++) {
+				final ChunkPos chunk = new ChunkPos(origin.x + dx, origin.z + dz);
+				final ItemEntity probe = new ItemEntity(EntityType.ITEM, level);
+				probe.setPos(chunk.getMiddleBlockX(), 100, chunk.getMiddleBlockZ());
+				if (SlimalyzerItem.isInSlimeChunk(level, probe)) slime = chunk;
+				else other = chunk;
+			}
+		}
+		helper.assertTrue(slime != null && other != null, "Expected slime and non-slime chunks nearby");
+
+		final ItemStack stack = new ItemStack(OBItems.SLIMALYZER.get());
+		final ItemEntity entity = new ItemEntity(level, slime.getMiddleBlockX(), 100, slime.getMiddleBlockZ(), stack);
+		stack.getItem().onEntityItemUpdate(stack, entity);
+		helper.assertTrue(SlimalyzerItem.isActive(stack), "Expected the slimalyzer to light up in a slime chunk");
+
+		entity.setPos(other.getMiddleBlockX(), 100, other.getMiddleBlockZ());
+		stack.getItem().onEntityItemUpdate(stack, entity);
+		helper.assertFalse(SlimalyzerItem.isActive(stack), "Expected the slimalyzer to turn off outside of slime chunks");
 		helper.succeed();
 	}
 }

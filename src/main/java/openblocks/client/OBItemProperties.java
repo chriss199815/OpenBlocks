@@ -3,6 +3,7 @@ package openblocks.client;
 import net.minecraft.client.renderer.item.ItemProperties;
 import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
 import openblocks.OpenBlocks;
+import openblocks.item.SlimalyzerItem;
 import openblocks.registry.OBItems;
 
 /**
@@ -15,6 +16,8 @@ public class OBItemProperties {
 			// legacy "speed": the model switches to the moving pedometer above 0.1 blocks per tick
 			ItemProperties.register(OBItems.PEDOMETER.get(), OpenBlocks.location("speed"),
 					(stack, level, entity, seed) -> entity != null? (float)entity.getDeltaMovement().length() : 0);
+			ItemProperties.register(OBItems.SLIMALYZER.get(), OpenBlocks.location("active"),
+					(stack, level, entity, seed) -> SlimalyzerItem.isActive(stack)? 1 : 0);
 		});
 	}
 }

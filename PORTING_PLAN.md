@@ -75,8 +75,9 @@ Fortschritt:
 
 - [x] Wrench („Big Metal Bar“): dreht den angeklickten Block um die Achse der angeklickten Seite, bevor der Block selbst reagiert (`onItemUseFirst`). Ersatz für das alte `rotateBlock`: Blöcke mit 6 Richtungen drehen um die geklickte Achse, horizontal ausgerichtete Blöcke beim Klick oben/unten (über `BlockState.rotate`), Säulen (Stämme) bekommen die geklickte Achse. Mehrblock-Teile (Betten, Türen, Doppeltruhen) und ausgefahrene Kolben bleiben unberührt, und der gedrehte Block muss halten können. Hebel, Knöpfe (auch Big Buttons) und Truhen nur mit Schleichen. Wie im Original reagiert ein Block, den der Wrench nicht drehen kann, gar nicht auf den Klick (Truhe öffnet sich nicht, Hebel schaltet nicht). GameTests.
 - [x] Pedometer: Rechtsklick startet die Messung, danach zeigt er Startpunkt, Geschwindigkeiten, Strecken und Zeiten im Chat (Einheiten wie im Original m/tick und m); Schleichen + Rechtsklick setzt zurück. Gemessen wird wie im Original nur auf dem eigenen Client, solange der Pedometer in der Hotbar ist (Player-Attachment `pedometer` statt Capability, nicht gespeichert). Das Modell zeigt ab 0,1 Blöcken pro Tick den animierten Zeiger (Item-Property `openblocks:speed`). Sound `pedometer.use`.
+- [x] Slimalyzer: leuchtet (und piept einmal), solange er in einem Schleimchunk ist – im Inventar oder auf dem Boden liegend; Prüfung wie Vanilla über `WorldgenRandom.seedSlimeChunk` auf dem Server, Zustand als Data Component `slimalyzer_active` statt NBT, Modell über die Item-Property `openblocks:active`. Wie im Original in jeder Dimension. Sound `slimalyzer.signal`. GameTest.
 
-Offen: Slimalyzer, Sponge-on-a-Stick, Tasty Clay, generische Items (`MetasGeneric` → einzelne Items statt Metadaten).
+Offen: Sponge-on-a-Stick, Tasty Clay, generische Items (`MetasGeneric` → einzelne Items statt Metadaten).
 - Metadaten-Items werden in einzelne Items aufgeteilt (es gibt keine Item-Metadaten mehr).
 - Für jeden Block: Blockstate, Modell und Loot-Table per Datagen, Rezept mit Tags.
 

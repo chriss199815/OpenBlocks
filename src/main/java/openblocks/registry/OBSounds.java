@@ -25,6 +25,7 @@ public class OBSounds {
 	public static final DeferredHolder<SoundEvent, SoundEvent> TARGET_OPEN = register("target.open");
 	public static final DeferredHolder<SoundEvent, SoundEvent> TARGET_CLOSE = register("target.close");
 	public static final DeferredHolder<SoundEvent, SoundEvent> PEDOMETER_USE = register("pedometer.use");
+	public static final DeferredHolder<SoundEvent, SoundEvent> SLIMALYZER_SIGNAL = register("slimalyzer.signal");
 
 	private static DeferredHolder<SoundEvent, SoundEvent> register(String id) {
 		return SOUNDS.register(id, () -> SoundEvent.createVariableRangeEvent(OpenBlocks.location(id)));

@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "g": {
+      "tag": "c:glass_panes"
+    },
+    "i": {
+      "tag": "c:ingots/iron"
+    },
+    "r": {
+      "tag": "c:dusts/redstone"
+    },
+    "s": {
+      "tag": "c:slime_balls"
+    }
+  },
+  "pattern": [
+    "igi",
+    "isi",
+    "iri"
+  ],
+  "result": {
+    "count": 1,
+    "id": "openblocks:slimalyzer"
+  }
+}

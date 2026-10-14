@@ -1,4 +1,4 @@
-// 1.21.1	2026-10-14T18:59:59.570696	Block States: openblocks
+// 1.21.1	2026-10-14T19:00:19.909155	Block States: openblocks
 909bae1340933de5e494ee6692d1d88aeabf4f33 assets/openblocks/blockstates/auto_anvil.json
 aca132b5918ec066ede0f817145d0ac0649c84a9 assets/openblocks/blockstates/auto_enchantment_table.json
 9be1c7ce94b3232fe19c46a8965abe89ae2d898a assets/openblocks/blockstates/bear_trap.json
@@ -28,6 +28,7 @@ d13702d1e489422f027636fd4f3a4f64b33332e9 assets/openblocks/blockstates/gray_elev
 c45d5d2e71c34dc43588a6063c8f1025e64a8816 assets/openblocks/blockstates/green_elevator.json
 d13702d1e489422f027636fd4f3a4f64b33332e9 assets/openblocks/blockstates/green_elevator_rotating.json
 6a60ac85a83f62e9071a3664237075d98888182e assets/openblocks/blockstates/green_flag.json
+1e1afd8c06298173dbb6003d3b484fab24e24871 assets/openblocks/blockstates/heal.json
 a904cf2ba3b4dda97dcefb2ff9ceed71670608ff assets/openblocks/blockstates/item_dropper.json
 2060ad1605a2eaf4a41c289db3fbac28a0fbc30f assets/openblocks/blockstates/ladder.json
 c45d5d2e71c34dc43588a6063c8f1025e64a8816 assets/openblocks/blockstates/light_blue_elevator.json
@@ -131,6 +132,7 @@ e2c363fe7efade78c27fd0ee89db0b6e55c5e4d5 assets/openblocks/models/block/flag_gro
 0adf37e2fc667404483540fbf9033e02a0b35642 assets/openblocks/models/block/flag_wall.json
 9f3a8f7f3192e48338258695e52de2902577b76d assets/openblocks/models/block/grave_free.json
 e97351a6d611f8069d1e29d33f25af56f3247c28 assets/openblocks/models/block/grave_ground.json
+f32d73f3802004f923f5994cfaa1f904e6c97c70 assets/openblocks/models/block/heal.json
 4dd0dce8ad6ed5e1708f6a97ae40cfdfda5b3bd2 assets/openblocks/models/block/item_dropper.json
 190dab6635c5706b74b6dd01932df582ad59cea9 assets/openblocks/models/block/ladder_bottom.json
 26c1a97be66f5d756044c3dade19f4ccdada45ab assets/openblocks/models/block/ladder_open.json
@@ -227,6 +229,7 @@ d2b8f805473f5db4bc4402f5b4f1864704363649 assets/openblocks/models/item/green_ele
 dd180aef5747a9afe34022df0f8fd345d081cd6c assets/openblocks/models/item/green_elevator_rotating.json
 fcc439f163500f4a2657f61a09c9762b2151a0ed assets/openblocks/models/item/green_flag.json
 c798f0ebf2a7cf12178d2614c8aba9015959d1ce assets/openblocks/models/item/hang_glider.json
+7ef691a614cb0f5fae2c0a8137706457771bd95e assets/openblocks/models/item/heal.json
 61191171106c3f8570c682336944d763b6e05122 assets/openblocks/models/item/heart2_stencil.json
 3d29866516f5e2300e2b6d017dc9828eb22c503d assets/openblocks/models/item/heart_stencil.json
 d690d0347ab26ea495737e45df1362e2e594451b assets/openblocks/models/item/hole_stencil.json

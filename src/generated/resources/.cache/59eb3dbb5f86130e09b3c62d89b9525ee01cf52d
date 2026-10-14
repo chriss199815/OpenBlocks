@@ -1,4 +1,4 @@
-// 1.21.1	2026-10-14T18:59:59.572351	Loot Tables
+// 1.21.1	2026-10-14T19:00:19.910798	Loot Tables
 91d0a832c50aab793e108321331f69e01d35cf6b data/openblocks/loot_table/blocks/auto_anvil.json
 76f4eafc1ea0961e4b2199bec14732fba136b0e3 data/openblocks/loot_table/blocks/auto_enchantment_table.json
 f4440d2112f720e00c0f9a7d9381caabbeafe916 data/openblocks/loot_table/blocks/bear_trap.json
@@ -28,6 +28,7 @@ fce05366add91cf075565ad57fe00363aaa6b72d data/openblocks/loot_table/blocks/gray_
 7370eea99293c079c16b6c9eec16f6e7869d7987 data/openblocks/loot_table/blocks/green_elevator.json
 51eb4c8798991b3239560d98a9750bd17d5be45a data/openblocks/loot_table/blocks/green_elevator_rotating.json
 67477fc7ef850ef9b1acb942cea26b34ba4a997b data/openblocks/loot_table/blocks/green_flag.json
+1c0a9146465b0403632b25c78a73fa9f939f405d data/openblocks/loot_table/blocks/heal.json
 3690b04c1229c5a4d7573e5021c7a10173699341 data/openblocks/loot_table/blocks/item_dropper.json
 391da9885b6242a81a766adf497ee57a1398ec01 data/openblocks/loot_table/blocks/ladder.json
 17b081cba2cadbe6daa41c0a74357fd44bfe91a5 data/openblocks/loot_table/blocks/light_blue_elevator.json

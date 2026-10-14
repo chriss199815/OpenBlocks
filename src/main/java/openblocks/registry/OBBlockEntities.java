@@ -18,6 +18,7 @@ import openblocks.block.entity.SprinklerBlockEntity;
 import openblocks.block.entity.BlockBreakerBlockEntity;
 import openblocks.block.entity.BlockPlacerBlockEntity;
 import openblocks.block.entity.GraveBlockEntity;
+import openblocks.block.entity.HealBlockEntity;
 import openblocks.block.entity.ItemDropperBlockEntity;
 import openblocks.block.entity.TankBlockEntity;
 import openblocks.block.entity.VacuumHopperBlockEntity;
@@ -96,4 +97,7 @@ public class OBBlockEntities {
 
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<SprinklerBlockEntity>> SPRINKLER = BLOCK_ENTITIES.register("sprinkler",
 			() -> BlockEntityType.Builder.of(SprinklerBlockEntity::new, OBBlocks.SPRINKLER.get()).build(null));
+
+	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<HealBlockEntity>> HEAL = BLOCK_ENTITIES.register("heal",
+			() -> BlockEntityType.Builder.of(HealBlockEntity::new, OBBlocks.HEAL.get()).build(null));
 }

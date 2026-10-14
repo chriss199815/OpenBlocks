@@ -46,6 +46,7 @@
     "openblocks:paint_mixer",
     "openblocks:fan",
     "openblocks:bear_trap",
-    "openblocks:sprinkler"
+    "openblocks:sprinkler",
+    "openblocks:heal"
   ]
 }

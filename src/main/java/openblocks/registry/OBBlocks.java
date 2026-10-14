@@ -31,6 +31,7 @@ import openblocks.block.ElevatorBlock;
 import openblocks.block.FanBlock;
 import openblocks.block.FlagBlock;
 import openblocks.block.GraveBlock;
+import openblocks.block.HealBlock;
 import openblocks.block.ItemDropperBlock;
 import openblocks.block.JadedLadderBlock;
 import openblocks.block.RopeLadderBlock;
@@ -219,6 +220,12 @@ public class OBBlocks {
 			.isSuffocating((state, level, pos) -> false)
 			.isViewBlocking((state, level, pos) -> false)
 			.sound(SoundType.WOOD)));
+
+	public static final DeferredBlock<HealBlock> HEAL = registerWithItem("heal", () -> new HealBlock(BlockBehaviour.Properties.of()
+			.mapColor(MapColor.COLOR_PINK)
+			.strength(1.0f)
+			.requiresCorrectToolForDrops()
+			.sound(SoundType.STONE)));
 
 	private static BlockBehaviour.Properties canvasProperties() {
 		return BlockBehaviour.Properties.of()

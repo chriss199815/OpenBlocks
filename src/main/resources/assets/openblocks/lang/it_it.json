@@ -279,7 +279,7 @@
   "item.openblocks.wallpaper": "Sfondo",
   "itemGroup.tabOpenBlocks": "OpenBlocks",
   "entity.openblocks.luggage": "Valigia",
-  "entity.openblocks.cartographer.name": "Cartografo",
+  "entity.openblocks.cartographer": "Cartografo",
   "entity.openblocks.block.name": "Blocco Ondeggiante",
   "entity.openblocks.mini_me": "Piccolo Me",
   "fluid.openblocks.xp_juice": "Esperienza Liquida"

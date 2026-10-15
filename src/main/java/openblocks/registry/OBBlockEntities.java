@@ -10,6 +10,7 @@ import openblocks.block.entity.AutoEnchantmentTableBlockEntity;
 import openblocks.block.entity.BearTrapBlockEntity;
 import openblocks.block.entity.BigButtonBlockEntity;
 import openblocks.block.entity.CannonBlockEntity;
+import openblocks.block.entity.ProjectorBlockEntity;
 import openblocks.block.entity.CanvasBlockEntity;
 import openblocks.block.entity.DonationStationBlockEntity;
 import openblocks.block.entity.DrawingTableBlockEntity;
@@ -120,4 +121,7 @@ public class OBBlockEntities {
 
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<CannonBlockEntity>> CANNON = BLOCK_ENTITIES.register("cannon",
 			() -> BlockEntityType.Builder.of(CannonBlockEntity::new, OBBlocks.CANNON.get()).build(null));
+
+	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<ProjectorBlockEntity>> PROJECTOR = BLOCK_ENTITIES.register("projector",
+			() -> BlockEntityType.Builder.of(ProjectorBlockEntity::new, OBBlocks.PROJECTOR.get()).build(null));
 }

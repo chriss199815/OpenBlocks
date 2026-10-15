@@ -300,7 +300,7 @@
   "item.openblocks.wallpaper": "Papel de Parede",
   "itemGroup.tabOpenBlocks": "OpenBlocks",
   "entity.openblocks.luggage": "Bagagem",
-  "entity.openblocks.cartographer.name": "Cartógrafo",
+  "entity.openblocks.cartographer": "Cartógrafo",
   "entity.openblocks.block.name": "Bloco Flutuante",
   "entity.openblocks.mini_me": "Mini Me",
   "fluid.openblocks.xp_juice": "Mini-Eu",

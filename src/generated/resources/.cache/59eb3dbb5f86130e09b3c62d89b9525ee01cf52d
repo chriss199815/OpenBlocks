@@ -1,4 +1,4 @@
-// 1.21.1	2026-10-14T22:40:19.7187	Loot Tables
+// 1.21.1	2026-10-15T08:32:43.732662	Loot Tables
 91d0a832c50aab793e108321331f69e01d35cf6b data/openblocks/loot_table/blocks/auto_anvil.json
 76f4eafc1ea0961e4b2199bec14732fba136b0e3 data/openblocks/loot_table/blocks/auto_enchantment_table.json
 f4440d2112f720e00c0f9a7d9381caabbeafe916 data/openblocks/loot_table/blocks/bear_trap.json
@@ -56,6 +56,7 @@ fb3ad3d06cf6bf09b9e638e533d1acc93231e83e data/openblocks/loot_table/blocks/paint
 8d904e3f19e43fda68562978667fbd25a138143d data/openblocks/loot_table/blocks/pink_elevator.json
 5b3975d850b468688119e4a0b422bd397e026dc7 data/openblocks/loot_table/blocks/pink_elevator_rotating.json
 fcce1b16d66452e7aefdd0dacb2bb2d189cb6e6f data/openblocks/loot_table/blocks/pink_flag.json
+c44e83ec7f1618f7da647e95f2220ad7d877da3f data/openblocks/loot_table/blocks/projector.json
 365072ff942b1fbea4957756a6932cb27f0d0d7b data/openblocks/loot_table/blocks/purple_elevator.json
 86b7aae2cf8ebca7c17ddd95095a19276ccf74ec data/openblocks/loot_table/blocks/purple_elevator_rotating.json
 0b26b5a88fcea20d76eb4b22991fcfd6477e9982 data/openblocks/loot_table/blocks/purple_flag.json

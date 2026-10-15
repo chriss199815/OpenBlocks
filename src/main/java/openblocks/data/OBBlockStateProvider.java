@@ -66,6 +66,9 @@ public class OBBlockStateProvider extends BlockStateProvider {
 		itemModels().basicItem(OBItems.CURSOR.get());
 		itemModels().basicItem(OBItems.GOLDEN_EYE.get());
 		itemModels().basicItem(OBItems.POINTER.get());
+		itemModels().basicItem(OBItems.EMPTY_MAP.get());
+		itemModels().basicItem(OBItems.HEIGHT_MAP.get());
+		itemModels().withExistingParent("cartographer", mcLoc("item/generated")).texture("layer0", modLoc("item/assistant_cartographer"));
 		// like legacy, the plain stencil texture
 		itemModels().withExistingParent("unprepared_stencil", mcLoc("item/generated")).texture("layer0", modLoc("item/stencil"));
 		itemModels().basicItem(OBItems.SKETCHING_PENCIL.get());
@@ -239,6 +242,157 @@ public class OBBlockStateProvider extends BlockStateProvider {
 
 		goldenEgg();
 		cannon();
+		projector();
+	}
+
+	/**
+	 * Legacy smooth stone slab with spinner. The spinner parts and the holographic cone are separate models for
+	 * {@code ProjectorRenderer}; the item shows slab and spinner.
+	 */
+	private void projector() {
+		simpleBlock(OBBlocks.PROJECTOR.get(), projectorSlab(models().withExistingParent("projector", mcLoc("block/block"))));
+		projectorSpinnerOuter(projectorSpinnerTextures(models().getBuilder("projector_spinner_outer")));
+		projectorSpinnerInner(projectorSpinnerTextures(models().getBuilder("projector_spinner_inner")));
+		projectorCone(models().getBuilder("projector_cone"));
+		projectorSpinnerInner(projectorSpinnerOuter(projectorSpinnerTextures(projectorSlab(itemModels().withExistingParent("projector", mcLoc("block/block"))))));
+	}
+
+	private <T extends ModelBuilder<T>> T projectorSlab(T builder) {
+		builder.texture("particle", mcLoc("block/smooth_stone"))
+				.texture("bottom", mcLoc("block/smooth_stone"))
+				.texture("top", mcLoc("block/smooth_stone"))
+				.texture("side", mcLoc("block/smooth_stone_slab_side"));
+		builder.element().from(0, 0, 0).to(16, 8, 16)
+				.face(Direction.DOWN).uvs(0, 0, 16, 16).texture("#bottom").cullface(Direction.DOWN).end()
+				.face(Direction.UP).uvs(0, 0, 16, 16).texture("#top").end()
+				.face(Direction.NORTH).uvs(0, 8, 16, 16).texture("#side").cullface(Direction.NORTH).end()
+				.face(Direction.SOUTH).uvs(0, 8, 16, 16).texture("#side").cullface(Direction.SOUTH).end()
+				.face(Direction.WEST).uvs(0, 8, 16, 16).texture("#side").cullface(Direction.WEST).end()
+				.face(Direction.EAST).uvs(0, 8, 16, 16).texture("#side").cullface(Direction.EAST).end()
+				.end();
+		return builder;
+	}
+
+	private <T extends ModelBuilder<T>> T projectorSpinnerTextures(T builder) {
+		return builder.texture("particle", modLoc("block/projector_spinner_1"))
+				.texture("base", modLoc("block/projector_spinner_2"))
+				.texture("parts", modLoc("block/projector_spinner_1"));
+	}
+
+	// legacy armature joint "outer": the plate with the four long arms
+	private <T extends ModelBuilder<T>> T projectorSpinnerOuter(T builder) {
+		builder.element().from(4, 8, 4).to(12, 9, 12)
+				.face(Direction.NORTH).uvs(0, 9, 8, 10).texture("#base").end()
+				.face(Direction.EAST).uvs(0, 11, 8, 12).texture("#base").end()
+				.face(Direction.SOUTH).uvs(0, 13, 8, 14).texture("#base").end()
+				.face(Direction.WEST).uvs(0, 15, 8, 16).texture("#base").end()
+				.face(Direction.UP).uvs(0, 0, 8, 8).texture("#base").end()
+				.face(Direction.DOWN).uvs(8, 0, 16, 8).texture("#base").end()
+				.end();
+		builder.element().from(10.5f, 9, 10.5f).to(11.5f, 14, 11.5f)
+				.face(Direction.NORTH).uvs(0, 6, 1, 11).texture("#parts").end()
+				.face(Direction.EAST).uvs(3, 6, 4, 11).texture("#parts").end()
+				.face(Direction.SOUTH).uvs(2, 6, 3, 11).texture("#parts").end()
+				.face(Direction.WEST).uvs(1, 6, 2, 11).texture("#parts").end()
+				.face(Direction.UP).uvs(1, 5, 2, 6).texture("#parts").end()
+				.face(Direction.DOWN).uvs(2, 5, 3, 6).texture("#parts").end()
+				.end();
+		builder.element().from(4.5f, 9, 10.5f).to(5.5f, 14, 11.5f)
+				.face(Direction.NORTH).uvs(5, 6, 6, 11).texture("#parts").end()
+				.face(Direction.EAST).uvs(4, 6, 5, 11).texture("#parts").end()
+				.face(Direction.SOUTH).uvs(7, 6, 8, 11).texture("#parts").end()
+				.face(Direction.WEST).uvs(6, 6, 7, 11).texture("#parts").end()
+				.face(Direction.UP).uvs(5, 5, 6, 6).texture("#parts").end()
+				.face(Direction.DOWN).uvs(6, 5, 7, 6).texture("#parts").end()
+				.end();
+		builder.element().from(4.5f, 9, 4.5f).to(5.5f, 14, 5.5f)
+				.face(Direction.NORTH).uvs(10, 6, 11, 11).texture("#parts").end()
+				.face(Direction.EAST).uvs(9, 6, 10, 11).texture("#parts").end()
+				.face(Direction.SOUTH).uvs(8, 6, 9, 11).texture("#parts").end()
+				.face(Direction.WEST).uvs(11, 6, 12, 11).texture("#parts").end()
+				.face(Direction.UP).uvs(9, 5, 10, 6).texture("#parts").end()
+				.face(Direction.DOWN).uvs(10, 5, 11, 6).texture("#parts").end()
+				.end();
+		builder.element().from(10.5f, 9, 4.5f).to(11.5f, 14, 5.5f)
+				.face(Direction.NORTH).uvs(15, 6, 16, 11).texture("#parts").end()
+				.face(Direction.EAST).uvs(14, 6, 15, 11).texture("#parts").end()
+				.face(Direction.SOUTH).uvs(13, 6, 14, 11).texture("#parts").end()
+				.face(Direction.WEST).uvs(12, 6, 13, 11).texture("#parts").end()
+				.face(Direction.UP).uvs(13, 5, 14, 6).texture("#parts").end()
+				.face(Direction.DOWN).uvs(14, 5, 15, 6).texture("#parts").end()
+				.end();
+		return builder;
+	}
+
+	// legacy armature joint "inner": the small plate with the four short arms
+	private <T extends ModelBuilder<T>> T projectorSpinnerInner(T builder) {
+		builder.element().from(6, 9, 6).to(10, 10, 10)
+				.face(Direction.NORTH).uvs(0, 4, 4, 5).texture("#parts").end()
+				.face(Direction.EAST).uvs(12, 4, 16, 5).texture("#parts").end()
+				.face(Direction.SOUTH).uvs(8, 4, 12, 5).texture("#parts").end()
+				.face(Direction.WEST).uvs(4, 4, 8, 5).texture("#parts").end()
+				.face(Direction.UP).uvs(4, 0, 8, 4).texture("#parts").end()
+				.face(Direction.DOWN).uvs(8, 0, 12, 4).texture("#parts").end()
+				.end();
+		builder.element().from(6, 10, 6).to(7, 12, 7)
+				.face(Direction.NORTH).uvs(0, 12, 1, 14).texture("#parts").end()
+				.face(Direction.EAST).uvs(3, 12, 4, 14).texture("#parts").end()
+				.face(Direction.SOUTH).uvs(2, 12, 3, 14).texture("#parts").end()
+				.face(Direction.WEST).uvs(1, 12, 2, 14).texture("#parts").end()
+				.face(Direction.UP).uvs(1, 11, 2, 12).texture("#parts").end()
+				.face(Direction.DOWN).uvs(2, 11, 3, 12).texture("#parts").end()
+				.end();
+		builder.element().from(6, 10, 9).to(7, 12, 10)
+				.face(Direction.NORTH).uvs(7, 12, 8, 14).texture("#parts").end()
+				.face(Direction.EAST).uvs(6, 12, 7, 14).texture("#parts").end()
+				.face(Direction.SOUTH).uvs(5, 12, 6, 14).texture("#parts").end()
+				.face(Direction.WEST).uvs(4, 12, 5, 14).texture("#parts").end()
+				.face(Direction.UP).uvs(5, 11, 6, 12).texture("#parts").end()
+				.face(Direction.DOWN).uvs(6, 11, 7, 12).texture("#parts").end()
+				.end();
+		builder.element().from(9, 10, 9).to(10, 12, 10)
+				.face(Direction.NORTH).uvs(10, 12, 11, 14).texture("#parts").end()
+				.face(Direction.EAST).uvs(9, 12, 10, 14).texture("#parts").end()
+				.face(Direction.SOUTH).uvs(8, 12, 9, 14).texture("#parts").end()
+				.face(Direction.WEST).uvs(11, 12, 12, 14).texture("#parts").end()
+				.face(Direction.UP).uvs(9, 11, 10, 12).texture("#parts").end()
+				.face(Direction.DOWN).uvs(10, 11, 11, 12).texture("#parts").end()
+				.end();
+		builder.element().from(9, 10, 6).to(10, 12, 7)
+				.face(Direction.NORTH).uvs(13, 12, 14, 14).texture("#parts").end()
+				.face(Direction.EAST).uvs(12, 12, 13, 14).texture("#parts").end()
+				.face(Direction.SOUTH).uvs(15, 12, 16, 14).texture("#parts").end()
+				.face(Direction.WEST).uvs(14, 12, 15, 14).texture("#parts").end()
+				.face(Direction.UP).uvs(13, 11, 14, 12).texture("#parts").end()
+				.face(Direction.DOWN).uvs(14, 11, 15, 12).texture("#parts").end()
+				.end();
+		return builder;
+	}
+
+	private void projectorCone(BlockModelBuilder builder) {
+		builder.renderType("translucent")
+				.texture("particle", modLoc("block/projector_cone"))
+				.texture("all", modLoc("block/projector_cone"));
+		builder.element().from(4, 8, 7).to(12, 24, 7)
+				.rotation().origin(8, 8, 8).axis(Direction.Axis.X).angle(-22.5f).end()
+				.face(Direction.NORTH).uvs(0, 2, 16, 8).texture("#all").end()
+				.face(Direction.SOUTH).uvs(0, 2, 16, 8).texture("#all").end()
+				.end();
+		builder.element().from(4, 8, 9).to(12, 24, 9)
+				.rotation().origin(8, 8, 8).axis(Direction.Axis.X).angle(22.5f).end()
+				.face(Direction.NORTH).uvs(0, 2, 16, 8).texture("#all").end()
+				.face(Direction.SOUTH).uvs(0, 2, 16, 8).texture("#all").end()
+				.end();
+		builder.element().from(9, 8, 4).to(9, 24, 12)
+				.rotation().origin(8, 8, 8).axis(Direction.Axis.Z).angle(-22.5f).end()
+				.face(Direction.EAST).uvs(0, 2, 16, 8).texture("#all").end()
+				.face(Direction.WEST).uvs(0, 2, 16, 8).texture("#all").end()
+				.end();
+		builder.element().from(7, 8, 4).to(7, 24, 12)
+				.rotation().origin(8, 8, 8).axis(Direction.Axis.Z).angle(22.5f).end()
+				.face(Direction.EAST).uvs(0, 2, 16, 8).texture("#all").end()
+				.face(Direction.WEST).uvs(0, 2, 16, 8).texture("#all").end()
+				.end();
 	}
 
 	/**

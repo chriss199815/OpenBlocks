@@ -1,4 +1,4 @@
-// 1.21.1	2026-10-14T22:40:19.719528	Recipes
+// 1.21.1	2026-10-15T08:32:43.7333	Recipes
 f37f622f6aa43ff8c3b05fe0ccd813d9be730420 data/openblocks/advancement/recipes/building_blocks/canvas.json
 4da75c2ec825111de4abddbd9d4caefbb2b578ce data/openblocks/advancement/recipes/building_blocks/scaffolding.json
 930782d897e53db76e7b954eb746d395706bf1bd data/openblocks/advancement/recipes/building_blocks/sky.json
@@ -33,6 +33,7 @@ f8f87026aef784beb1b45f0089c7820fe68ae252 data/openblocks/advancement/recipes/mis
 2b31bb3fdf442aec1a49dd0b38e864801e8a32c9 data/openblocks/advancement/recipes/misc/crane_magnet_mirrored.json
 66e9042c9325e7c0d5d23ce2e9939a81642a0dc9 data/openblocks/advancement/recipes/misc/donation_station.json
 3b46e746b8a346f4c018c4d2164a717b318eb4c6 data/openblocks/advancement/recipes/misc/drawing_table.json
+c20c97a1a5801d47e957154e19b1b782516e04f4 data/openblocks/advancement/recipes/misc/empty_map.json
 4703126fbd22d6defaf693cfd1899aa9725e2cbe data/openblocks/advancement/recipes/misc/glider_wing_left.json
 c40b99032ad81579611396658ce2ae35f1814bb9 data/openblocks/advancement/recipes/misc/glider_wing_right.json
 b82bcd3595c5a097f9937db5ce3c4e3f217920b6 data/openblocks/advancement/recipes/misc/golden_egg.json
@@ -41,6 +42,8 @@ b82bcd3595c5a097f9937db5ce3c4e3f217920b6 data/openblocks/advancement/recipes/mis
 b90a5a2d132740434e87271addb977de2d41a05d data/openblocks/advancement/recipes/misc/map_controller.json
 c2944890ba4bd63388a05d40fc537e05c8989494 data/openblocks/advancement/recipes/misc/map_memory.json
 4e921cb1267e57f333649e6553bd168ff5923a1f data/openblocks/advancement/recipes/misc/paint_mixer.json
+3361ae20a893a2dcefdaeebf6d5cfb7182b59009 data/openblocks/advancement/recipes/misc/projector.json
+30b2013f775d5711bc1207829a01a949063a8985 data/openblocks/advancement/recipes/misc/projector_mirrored.json
 9dd0615332ee16d0794d4bd6d9d6011310bd829f data/openblocks/advancement/recipes/misc/sketching_pencil.json
 22c667d4bb09ff4494a0c22c9d82e6ec61b1a559 data/openblocks/advancement/recipes/misc/sleeping_bag.json
 ae2ef486fe7f2b4963b048be10373751bcbdebbb data/openblocks/advancement/recipes/misc/sponge.json
@@ -59,6 +62,7 @@ d37f746a3111352aeb76a52096cdd347eec1d40d data/openblocks/advancement/recipes/mis
 7c05198d76167a7193cd5bf1d712d924a4ecc021 data/openblocks/advancement/recipes/redstone/fan.json
 cb17206668799abdf63be661df9bb38c4f0eb645 data/openblocks/advancement/recipes/redstone/item_dropper.json
 f15d155564efdd7b90149180048e39ebb3dc916b data/openblocks/advancement/recipes/redstone/target.json
+ebd21a4de5ea8aedc25c0f3d0c1333cb0c038b81 data/openblocks/advancement/recipes/tools/cartographer.json
 60df6432d9b6aacaf9c081cc61c0ac54947808c0 data/openblocks/advancement/recipes/tools/cursor.json
 e37963641de2db174e53a0e2d5238530674c4dba data/openblocks/advancement/recipes/tools/dev_null.json
 10099848fe3e3ce083181d5e4ee803c686752984 data/openblocks/advancement/recipes/tools/golden_eye.json
@@ -141,6 +145,7 @@ d8cd3743598d7a892129c6ba72cc679bda432f87 data/openblocks/recipe/brown_elevator_r
 ca031a06b231074220094d7301bb3719c799c609 data/openblocks/recipe/brown_flag.json
 ca7fbd8fadfacf30f4fd6aa39daa7c9aebed24bc data/openblocks/recipe/cannon.json
 d506570c1eb5afda4df0f57fe40a646176475a0e data/openblocks/recipe/canvas.json
+d49605bc03676285a0a268212cd72aeb7908a3d5 data/openblocks/recipe/cartographer.json
 f81fd75b617176acb0eb2d9801d095f32d7a23ff data/openblocks/recipe/crane_engine.json
 4e9bd0f3ba280b53eb076b864dbc3461d4a50b42 data/openblocks/recipe/crane_magnet.json
 8b149b2e4ae8e33b8b3aa03ca5b6b7720b141044 data/openblocks/recipe/crane_magnet_mirrored.json
@@ -151,6 +156,7 @@ d24d6e1b1ae58a48bbc304b3f769eea37d215de8 data/openblocks/recipe/cyan_flag.json
 c1d8a11c32ccb73e1a528eb24695125fdc27c226 data/openblocks/recipe/dev_null.json
 cd8f111bebd14ea9b7c31f57a91defba81737180 data/openblocks/recipe/donation_station.json
 8ebd8a120754b085193018bc6531a9211bd0614d data/openblocks/recipe/drawing_table.json
+fa2694761b1dba722177ae6f7751ba0db102d921 data/openblocks/recipe/empty_map.json
 00efa163f0c387abf8f7d141681b0ef539b2c07b data/openblocks/recipe/fan.json
 d137edeb8d0e951a2c9d325fcda583959f10fd1f data/openblocks/recipe/glider_wing_left.json
 c7a651711c5f2f893019881628eea763d68db28e data/openblocks/recipe/glider_wing_right.json
@@ -180,8 +186,10 @@ a01157467b54c2e16cbd8f14b020dc872f839b27 data/openblocks/recipe/line.json
 8de4fbe5410608d5c029c5b3f002c0e26a53b21f data/openblocks/recipe/magenta_elevator.json
 b47b5a6aef22520e3c333897837764c419d3aac0 data/openblocks/recipe/magenta_elevator_rotating.json
 37599efffec76c3417651edf2cdcf7c8226c37fc data/openblocks/recipe/magenta_flag.json
+ed8905c1738394273e9964c128d620eab3653b64 data/openblocks/recipe/map_clone.json
 014b592cca1cd4cc24c3106f91b689289a24f491 data/openblocks/recipe/map_controller.json
 03c687dbb14ab294ead48d005e4e09d83eaf4dfe data/openblocks/recipe/map_memory.json
+d025c0b735857c196000ccbb612a62fcdb097e34 data/openblocks/recipe/map_resize.json
 8bfcfea2e90d027a7be5d247b5e73447299647d5 data/openblocks/recipe/orange_elevator.json
 0691890d8d745cff9d812f48de4bd05661c7ef2d data/openblocks/recipe/orange_elevator_rotating.json
 b08ba1271923c35b212e066a7cf7533ba239bd26 data/openblocks/recipe/orange_flag.json
@@ -209,6 +217,8 @@ e8520470beb7d5fb4b3353f6fb9d18bc05ad7e73 data/openblocks/recipe/pedometer.json
 ef13181744618d54aa2445f3112edd54c70cc305 data/openblocks/recipe/pink_elevator_rotating.json
 3028b6c27635fe233b266362aab92e1a27a7f15e data/openblocks/recipe/pink_flag.json
 7387f858a79ee668607dff502a1075c8ceccdcb1 data/openblocks/recipe/pointer.json
+a280d028012dbf20f8c63f319820f1b28b1e2608 data/openblocks/recipe/projector.json
+a100231e13062f13122033cea2778f2837c85201 data/openblocks/recipe/projector_mirrored.json
 7efaee4d746e3a09168f30ed89bc1150dfcbcbad data/openblocks/recipe/purple_elevator.json
 e8141f2b10c0d7cdca5861f797bed88f4b1866bb data/openblocks/recipe/purple_elevator_rotating.json
 ca74b6fc203a90eb89165d680908659a0c592b0f data/openblocks/recipe/purple_flag.json

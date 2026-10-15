@@ -7,6 +7,7 @@ import net.minecraft.tags.BlockTags;
 import net.neoforged.neoforge.common.data.BlockTagsProvider;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import openblocks.OpenBlocks;
+import openblocks.common.HeightMapBuilder;
 import openblocks.registry.OBBlocks;
 
 public class OBBlockTagsProvider extends BlockTagsProvider {
@@ -42,6 +43,10 @@ public class OBBlockTagsProvider extends BlockTagsProvider {
 		pickaxe.add(OBBlocks.SKY_INVERTED.get());
 		pickaxe.add(OBBlocks.GOLDEN_EGG.get());
 		pickaxe.add(OBBlocks.CANNON.get());
+		pickaxe.add(OBBlocks.PROJECTOR.get());
+
+		// empty by default, for packs and other mods
+		tag(HeightMapBuilder.INVISIBLE);
 
 		tag(BlockTags.MINEABLE_WITH_AXE).add(OBBlocks.DRAWING_TABLE.get(), OBBlocks.LADDER.get(), OBBlocks.SPONGE.get());
 		tag(BlockTags.TRAPDOORS).add(OBBlocks.LADDER.get());

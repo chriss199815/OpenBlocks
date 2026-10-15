@@ -1,0 +1,173 @@
+{
+  "elements": [
+    {
+      "faces": {
+        "north": {
+          "texture": "#all",
+          "uv": [
+            0.0,
+            2.0,
+            16.0,
+            8.0
+          ]
+        },
+        "south": {
+          "texture": "#all",
+          "uv": [
+            0.0,
+            2.0,
+            16.0,
+            8.0
+          ]
+        }
+      },
+      "from": [
+        4,
+        8,
+        7
+      ],
+      "rotation": {
+        "angle": -22.5,
+        "axis": "x",
+        "origin": [
+          8,
+          8,
+          8
+        ]
+      },
+      "to": [
+        12,
+        24,
+        7
+      ]
+    },
+    {
+      "faces": {
+        "north": {
+          "texture": "#all",
+          "uv": [
+            0.0,
+            2.0,
+            16.0,
+            8.0
+          ]
+        },
+        "south": {
+          "texture": "#all",
+          "uv": [
+            0.0,
+            2.0,
+            16.0,
+            8.0
+          ]
+        }
+      },
+      "from": [
+        4,
+        8,
+        9
+      ],
+      "rotation": {
+        "angle": 22.5,
+        "axis": "x",
+        "origin": [
+          8,
+          8,
+          8
+        ]
+      },
+      "to": [
+        12,
+        24,
+        9
+      ]
+    },
+    {
+      "faces": {
+        "east": {
+          "texture": "#all",
+          "uv": [
+            0.0,
+            2.0,
+            16.0,
+            8.0
+          ]
+        },
+        "west": {
+          "texture": "#all",
+          "uv": [
+            0.0,
+            2.0,
+            16.0,
+            8.0
+          ]
+        }
+      },
+      "from": [
+        9,
+        8,
+        4
+      ],
+      "rotation": {
+        "angle": -22.5,
+        "axis": "z",
+        "origin": [
+          8,
+          8,
+          8
+        ]
+      },
+      "to": [
+        9,
+        24,
+        12
+      ]
+    },
+    {
+      "faces": {
+        "east": {
+          "texture": "#all",
+          "uv": [
+            0.0,
+            2.0,
+            16.0,
+            8.0
+          ]
+        },
+        "west": {
+          "texture": "#all",
+          "uv": [
+            0.0,
+            2.0,
+            16.0,
+            8.0
+          ]
+        }
+      },
+      "from": [
+        7,
+        8,
+        4
+      ],
+      "rotation": {
+        "angle": 22.5,
+        "axis": "z",
+        "origin": [
+          8,
+          8,
+          8
+        ]
+      },
+      "to": [
+        7,
+        24,
+        12
+      ]
+    }
+  ],
+  "render_type": "minecraft:translucent",
+  "textures": {
+    "all": "openblocks:block/projector_cone",
+    "particle": "openblocks:block/projector_cone"
+  }
+}

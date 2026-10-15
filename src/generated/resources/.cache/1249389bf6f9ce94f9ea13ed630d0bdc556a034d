@@ -1,4 +1,4 @@
-// 1.21.1	2026-10-14T22:40:19.716487	Block States: openblocks
+// 1.21.1	2026-10-15T08:32:43.730652	Block States: openblocks
 909bae1340933de5e494ee6692d1d88aeabf4f33 assets/openblocks/blockstates/auto_anvil.json
 aca132b5918ec066ede0f817145d0ac0649c84a9 assets/openblocks/blockstates/auto_enchantment_table.json
 9be1c7ce94b3232fe19c46a8965abe89ae2d898a assets/openblocks/blockstates/bear_trap.json
@@ -56,6 +56,7 @@ d13702d1e489422f027636fd4f3a4f64b33332e9 assets/openblocks/blockstates/orange_el
 c45d5d2e71c34dc43588a6063c8f1025e64a8816 assets/openblocks/blockstates/pink_elevator.json
 d13702d1e489422f027636fd4f3a4f64b33332e9 assets/openblocks/blockstates/pink_elevator_rotating.json
 6a60ac85a83f62e9071a3664237075d98888182e assets/openblocks/blockstates/pink_flag.json
+f165784c389014818f394ad638ec9d0ecf102406 assets/openblocks/blockstates/projector.json
 c45d5d2e71c34dc43588a6063c8f1025e64a8816 assets/openblocks/blockstates/purple_elevator.json
 d13702d1e489422f027636fd4f3a4f64b33332e9 assets/openblocks/blockstates/purple_elevator_rotating.json
 6a60ac85a83f62e9071a3664237075d98888182e assets/openblocks/blockstates/purple_flag.json
@@ -171,6 +172,10 @@ df8b2054cdaf47ac519008dc99a75e90ce993155 assets/openblocks/models/block/path_4.j
 fef84dcb476474baf9d29316d82cd3b69da6bc44 assets/openblocks/models/block/path_7.json
 fd3178623542777eb800a9473337ef61e709e1ba assets/openblocks/models/block/path_8.json
 e3fc4dbb7fa5fa877de6cdce8f0f9f6f4dee9439 assets/openblocks/models/block/path_9.json
+2dfbd5cdb3d2f47bd56016f009ced593d304c237 assets/openblocks/models/block/projector.json
+3c744e9796d6a29def3df8d2b4ac5d2c33b773e0 assets/openblocks/models/block/projector_cone.json
+9acd8eda370b7a1bb83d72e0432b1f7bf2730fbc assets/openblocks/models/block/projector_spinner_inner.json
+ab243a9c7ac43fba9e9577fd333aa80ae0c72deb assets/openblocks/models/block/projector_spinner_outer.json
 67c2fe56fbe4a3c5b82e6d0e1c5722eed9263393 assets/openblocks/models/block/rope_ladder.json
 9deaa4ad20bfeed7b24ff3faf799a38ae7a1dacd assets/openblocks/models/block/scaffolding.json
 64a90f2cd6b21b142b5b5713105cc4ffd489d46c assets/openblocks/models/block/sky.json
@@ -246,6 +251,7 @@ dd180aef5747a9afe34022df0f8fd345d081cd6c assets/openblocks/models/item/brown_ele
 fcc439f163500f4a2657f61a09c9762b2151a0ed assets/openblocks/models/item/brown_flag.json
 0cf7df1d19c1f4690f88a8d3d47ff4eb9562a134 assets/openblocks/models/item/cannon.json
 1d00cced72574499024d40fe46f3bac93d94902b assets/openblocks/models/item/canvas.json
+a02b9702555fb557c398b3a2d83dac35065759b9 assets/openblocks/models/item/cartographer.json
 b4642da05af0fca1ea4993cfdfeb191793d44092 assets/openblocks/models/item/corner2_stencil.json
 ebd3f8520073b4dfac0c85da7cad62fdf50914e4 assets/openblocks/models/item/corner3_stencil.json
 d60848a3f9109b979e6a9edf5ab1f30196127e62 assets/openblocks/models/item/corner_stencil.json
@@ -261,6 +267,7 @@ be110f3777565ff6aa2e39e4a808bf504764fc19 assets/openblocks/models/item/dev_null_
 5f1eb3b1b837a0efa62a2458972e6c58b080cb50 assets/openblocks/models/item/dev_null_overflow.json
 4cd4f93630a1165a9fc59487a05253a56871204e assets/openblocks/models/item/donation_station.json
 ab8c50816283874de69dd2bd6568d691b35414b4 assets/openblocks/models/item/drawing_table.json
+b804dd7c8d2d52483b8039ae6ffba2ee4f9468c3 assets/openblocks/models/item/empty_map.json
 b3a5d2f6748f8537e15bb3d900bce4b0e3e427a7 assets/openblocks/models/item/fan.json
 3e04276af1bc9e7fb3ca4d2dea117e5aaec179ce assets/openblocks/models/item/glider_wing.json
 36c3e3241d33bef912f0e89c42f1aafc9dce1e64 assets/openblocks/models/item/golden_egg.json
@@ -276,6 +283,7 @@ c798f0ebf2a7cf12178d2614c8aba9015959d1ce assets/openblocks/models/item/hang_glid
 7ef691a614cb0f5fae2c0a8137706457771bd95e assets/openblocks/models/item/heal.json
 61191171106c3f8570c682336944d763b6e05122 assets/openblocks/models/item/heart2_stencil.json
 3d29866516f5e2300e2b6d017dc9828eb22c503d assets/openblocks/models/item/heart_stencil.json
+eb90c2402adf6596c82d9db291dafecc40ea6b6b assets/openblocks/models/item/height_map.json
 d690d0347ab26ea495737e45df1362e2e594451b assets/openblocks/models/item/hole_stencil.json
 d9b1441095c027bac43ac47b3b19b25871b87b16 assets/openblocks/models/item/item_dropper.json
 4120bc28b0104ebe237b0f65052bfdd394db4af0 assets/openblocks/models/item/ladder.json
@@ -310,6 +318,7 @@ d2b8f805473f5db4bc4402f5b4f1864704363649 assets/openblocks/models/item/pink_elev
 dd180aef5747a9afe34022df0f8fd345d081cd6c assets/openblocks/models/item/pink_elevator_rotating.json
 fcc439f163500f4a2657f61a09c9762b2151a0ed assets/openblocks/models/item/pink_flag.json
 69496a4eb39ad962d1462fbd18cd4e9f920e1dac assets/openblocks/models/item/pointer.json
+b84e99f5972941beb9756e4a70fe59468a80a088 assets/openblocks/models/item/projector.json
 d2b8f805473f5db4bc4402f5b4f1864704363649 assets/openblocks/models/item/purple_elevator.json
 dd180aef5747a9afe34022df0f8fd345d081cd6c assets/openblocks/models/item/purple_elevator_rotating.json
 fcc439f163500f4a2657f61a09c9762b2151a0ed assets/openblocks/models/item/purple_flag.json

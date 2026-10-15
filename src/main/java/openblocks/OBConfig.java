@@ -29,8 +29,26 @@ public class OBConfig {
 	public static final Trophy TROPHY = new Trophy(BUILDER);
 	public static final Egg EGG = new Egg(BUILDER);
 	public static final Tomfoolery TOMFOOLERY = new Tomfoolery(BUILDER);
+	public static final Projector PROJECTOR = new Projector(BUILDER);
 
 	public static final ModConfigSpec SPEC = BUILDER.build();
+
+	public static class Projector {
+		public final ModConfigSpec.BooleanValue lightUpWhenWorking;
+		public final ModConfigSpec.IntValue lightLevel;
+
+		// renderHolographicCone and brightness are in the client config
+		private Projector(ModConfigSpec.Builder builder) {
+			builder.push("projector");
+			lightUpWhenWorking = builder
+					.comment("Projector will light up whenever it is displaying a map")
+					.define("lightUpWhenWorking", true);
+			lightLevel = builder
+					.comment("Level of light emitted by the active projector")
+					.defineInRange("lightLevel", 10, 0, 15);
+			builder.pop();
+		}
+	}
 
 	public static class Tomfoolery {
 		public final ModConfigSpec.BooleanValue weAreSeriousPeople;

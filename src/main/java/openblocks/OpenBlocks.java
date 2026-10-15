@@ -13,6 +13,7 @@ import openblocks.data.OBDataGenerators;
 import openblocks.common.BrickDrops;
 import openblocks.common.DonationInfo;
 import openblocks.common.HangGliderHandler;
+import openblocks.common.HeightMaps;
 import openblocks.common.PlayerDeathHandler;
 import openblocks.common.SleepingBagHandler;
 import openblocks.common.TrophyDropHandler;
@@ -85,6 +86,7 @@ public class OpenBlocks {
 		NeoForge.EVENT_BUS.addListener(DevNullItem::onItemPickup);
 		NeoForge.EVENT_BUS.addListener(TrophyDropHandler::onLivingDrops);
 		NeoForge.EVENT_BUS.addListener(BrickDrops::onLivingDrops);
+		NeoForge.EVENT_BUS.addListener(HeightMaps::onServerTick);
 
 		container.registerConfig(ModConfig.Type.COMMON, OBConfig.SPEC);
 	}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "c": {
+      "item": "openblocks:map_controller"
+    },
+    "m": {
+      "item": "openblocks:map_memory"
+    }
+  },
+  "pattern": [
+    " m ",
+    "mcm",
+    " m "
+  ],
+  "result": {
+    "count": 1,
+    "id": "openblocks:empty_map"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "g": {
+      "tag": "c:dusts/glowstone"
+    },
+    "i": {
+      "tag": "c:ingots/iron"
+    },
+    "l": {
+      "tag": "c:gems/lapis"
+    },
+    "r": {
+      "tag": "c:dusts/redstone"
+    },
+    "s": {
+      "item": "minecraft:smooth_stone_slab"
+    }
+  },
+  "pattern": [
+    "grl",
+    "iri",
+    "srs"
+  ],
+  "result": {
+    "count": 1,
+    "id": "openblocks:projector"
+  }
+}

@@ -11,7 +11,9 @@ import net.neoforged.neoforge.fluids.SimpleFluidContent;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import openblocks.OpenBlocks;
+import openblocks.common.HeightMapData;
 import openblocks.common.TrophyType;
+import openblocks.entity.CartographerData;
 import openblocks.item.CursorTarget;
 import openblocks.item.GoldenEyeTarget;
 import openblocks.item.Paint;
@@ -73,4 +75,23 @@ public class OBComponents {
 	 */
 	public static final DeferredHolder<DataComponentType<?>, DataComponentType<GlobalPos>> POINTER_TARGET = COMPONENTS.registerComponentType("pointer_target",
 			builder -> builder.persistent(GlobalPos.CODEC).networkSynchronized(GlobalPos.STREAM_CODEC));
+
+	/**
+	 * Scale of an empty or height map, 1 to 2^scale blocks per pixel; replaces the legacy {@code Scale} tag (on height maps
+	 * it was only in the map data).
+	 */
+	public static final DeferredHolder<DataComponentType<?>, DataComponentType<Integer>> MAP_SCALE = COMPONENTS.registerComponentType("map_scale",
+			builder -> builder.persistent(HeightMapData.SCALE_CODEC).networkSynchronized(ByteBufCodecs.VAR_INT));
+
+	/**
+	 * Height map shown by the item; replaces the legacy item damage.
+	 */
+	public static final DeferredHolder<DataComponentType<?>, DataComponentType<Integer>> HEIGHT_MAP_ID = COMPONENTS.registerComponentType("height_map_id",
+			builder -> builder.persistent(ExtraCodecs.NON_NEGATIVE_INT).networkSynchronized(ByteBufCodecs.VAR_INT));
+
+	/**
+	 * Map and mapping progress of a picked up cartographer; replaces the legacy tags written by {@code EntityCartographer}.
+	 */
+	public static final DeferredHolder<DataComponentType<?>, DataComponentType<CartographerData>> CARTOGRAPHER = COMPONENTS.registerComponentType("cartographer",
+			builder -> builder.persistent(CartographerData.CODEC).networkSynchronized(CartographerData.STREAM_CODEC));
 }

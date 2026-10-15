@@ -13,7 +13,9 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 import openblocks.OBConfig;
 import openblocks.OpenBlocks;
 import openblocks.block.TankBlock;
+import openblocks.common.HeightMapData;
 import openblocks.common.TrophyType;
+import openblocks.item.EmptyMapItem;
 import openblocks.item.PaintBrushItem;
 import openblocks.item.PaintCanItem;
 import openblocks.item.TrophyItem;
@@ -27,8 +29,11 @@ public class OBCreativeTabs {
 			.icon(() -> new ItemStack(OBItems.HANG_GLIDER.get()))
 			.displayItems((params, output) -> {
 				OBItems.ITEMS.getEntries().forEach(item -> {
-					if (item != OBItems.TROPHY) output.accept(item.get());
+					if (item != OBItems.TROPHY && item != OBItems.HEIGHT_MAP && item != OBItems.EMPTY_MAP) output.accept(item.get());
 				});
+				// like legacy, without the largest scale
+				for (int scale = 0; scale < HeightMapData.MAX_SCALE; scale++)
+					output.accept(EmptyMapItem.create(scale));
 				for (TrophyType type : TrophyType.values())
 					output.accept(TrophyItem.create(OBItems.TROPHY.get(), type));
 				for (DyeColor color : DyeColor.values()) {

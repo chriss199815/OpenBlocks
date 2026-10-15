@@ -5,6 +5,7 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.config.ModConfig;
+import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
 import net.neoforged.neoforge.client.event.EntityRenderersEvent;
 import net.neoforged.neoforge.client.event.ModelEvent;
 import net.neoforged.neoforge.common.NeoForge;
@@ -23,6 +24,7 @@ import openblocks.client.gui.DispenserLayoutScreen;
 import openblocks.client.gui.DonationStationScreen;
 import openblocks.client.gui.DrawingTableScreen;
 import openblocks.client.gui.PaintMixerScreen;
+import openblocks.client.gui.ProjectorScreen;
 import openblocks.client.gui.ItemDropperScreen;
 import openblocks.client.gui.VacuumHopperScreen;
 import openblocks.client.gui.XpBottlerScreen;
@@ -30,6 +32,7 @@ import openblocks.client.particle.LiquidSprayParticle;
 import openblocks.client.tank.TankBlockEntityRenderer;
 import openblocks.client.tank.TankItemRenderer;
 import openblocks.client.tank.TankModel;
+import openblocks.entity.Cartographer;
 import openblocks.registry.OBBlockEntities;
 import openblocks.registry.OBEntities;
 import openblocks.menu.BlockPlacerMenu;
@@ -74,6 +77,8 @@ public class OpenBlocksClient {
 		modBus.addListener(BrickDropInputHandler::registerKeyMappings);
 		modBus.addListener(CannonRenderer::registerLayerDefinitions);
 		modBus.addListener(CannonRenderer::registerClientExtensions);
+		modBus.addListener(ProjectorRenderer::registerAdditional);
+		modBus.addListener(CartographerRenderer::registerLayerDefinitions);
 
 		NeoForge.EVENT_BUS.addListener(ElevatorInputHandler::onMovementInput);
 		NeoForge.EVENT_BUS.addListener(HangGliderRenderer::onRenderPlayerPre);
@@ -85,6 +90,11 @@ public class OpenBlocksClient {
 		NeoForge.EVENT_BUS.addListener(CursorHighlightRenderer::onRenderLevelStage);
 		NeoForge.EVENT_BUS.addListener(SkyBlockRenderer::onRenderLevelStage);
 		NeoForge.EVENT_BUS.addListener(BrickDropInputHandler::onKey);
+		NeoForge.EVENT_BUS.addListener(HeightMapCache::onItemTooltip);
+		NeoForge.EVENT_BUS.addListener(HeightMapCache::onLoggingOut);
+
+		// not earlier: loading the entity class needs its registered data serializer
+		modBus.addListener((FMLClientSetupEvent event) -> Cartographer.clientHighlight = CartographerRenderer::isHighlighted);
 
 		container.registerConfig(ModConfig.Type.CLIENT, OBClientConfig.SPEC);
 	}
@@ -102,6 +112,7 @@ public class OpenBlocksClient {
 		event.register(OBMenus.DRAWING_TABLE.get(), DrawingTableScreen::new);
 		event.register(OBMenus.PAINT_MIXER.get(), PaintMixerScreen::new);
 		event.register(OBMenus.DEV_NULL.get(), DevNullScreen::new);
+		event.register(OBMenus.PROJECTOR.get(), ProjectorScreen::new);
 	}
 
 	private static void registerRenderers(EntityRenderersEvent.RegisterRenderers event) {
@@ -117,9 +128,11 @@ public class OpenBlocksClient {
 		event.registerBlockEntityRenderer(OBBlockEntities.SKY.get(), SkyBlockRenderer::new);
 		event.registerBlockEntityRenderer(OBBlockEntities.GOLDEN_EGG.get(), GoldenEggRenderer::new);
 		event.registerBlockEntityRenderer(OBBlockEntities.CANNON.get(), CannonRenderer::new);
+		event.registerBlockEntityRenderer(OBBlockEntities.PROJECTOR.get(), ProjectorRenderer::new);
 		event.registerEntityRenderer(OBEntities.NO_FLY_XP_ORB.get(), ExperienceOrbRenderer::new);
 		event.registerEntityRenderer(OBEntities.LUGGAGE.get(), LuggageRenderer::new);
 		event.registerEntityRenderer(OBEntities.MINI_ME.get(), MiniMeRenderer::new);
+		event.registerEntityRenderer(OBEntities.CARTOGRAPHER.get(), CartographerRenderer::new);
 		// like legacy, drawn like a snowball
 		event.registerEntityRenderer(OBEntities.GOLDEN_EYE.get(), ThrownItemRenderer::new);
 	}

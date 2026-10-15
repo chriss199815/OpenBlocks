@@ -29,6 +29,7 @@ import openblocks.block.DrawingTableBlock;
 import openblocks.block.PaintCanBlock;
 import openblocks.block.PaintMixerBlock;
 import openblocks.block.PathBlock;
+import openblocks.block.ProjectorBlock;
 import openblocks.block.BlockBreakerBlock;
 import openblocks.block.BlockPlacerBlock;
 import openblocks.block.ElevatorBlock;
@@ -281,6 +282,14 @@ public class OBBlocks {
 			.noCollission()
 			.noOcclusion()
 			.pushReaction(PushReaction.DESTROY)
+			.sound(SoundType.METAL)));
+
+	// spinner, cone and map drawn by ProjectorRenderer
+	public static final DeferredBlock<ProjectorBlock> PROJECTOR = registerWithItem("projector", () -> new ProjectorBlock(BlockBehaviour.Properties.of()
+			.mapColor(MapColor.METAL)
+			.strength(1.0f)
+			.requiresCorrectToolForDrops()
+			.noOcclusion()
 			.sound(SoundType.METAL)));
 
 	private static BlockBehaviour.Properties skyProperties() {

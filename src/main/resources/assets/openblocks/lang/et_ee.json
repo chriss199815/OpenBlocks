@@ -117,7 +117,7 @@
   "item.openblocks.wallpaper": "Tapeet",
   "itemGroup.tabOpenBlocks": "OpenBlocks",
   "entity.openblocks.luggage": "Kohver",
-  "entity.openblocks.cartographer.name": "Kartograaf",
+  "entity.openblocks.cartographer": "Kartograaf",
   "entity.openblocks.mini_me": "Mini Mina",
   "fluid.openblocks.xp_juice": "Vedel XP"
 }

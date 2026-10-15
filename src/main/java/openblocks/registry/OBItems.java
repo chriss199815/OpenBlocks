@@ -10,10 +10,13 @@ import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import openblocks.OpenBlocks;
 import openblocks.common.StencilPattern;
+import openblocks.item.CartographerItem;
 import openblocks.item.CursorItem;
 import openblocks.item.DevNullItem;
+import openblocks.item.EmptyMapItem;
 import openblocks.item.GoldenEyeItem;
 import openblocks.item.HangGliderItem;
+import openblocks.item.HeightMapItem;
 import openblocks.item.LuggageItem;
 import openblocks.item.PaintBrushItem;
 import openblocks.item.PaintCanItem;
@@ -57,6 +60,11 @@ public class OBItems {
 	// legacy MetasGenericUnstackable
 	public static final DeferredItem<PointerItem> POINTER = ITEMS.register("pointer", () -> new PointerItem(new Item.Properties().stacksTo(1)));
 
+	public static final DeferredItem<EmptyMapItem> EMPTY_MAP = ITEMS.register("empty_map", () -> new EmptyMapItem(new Item.Properties().component(OBComponents.MAP_SCALE, 0)));
+	// only made from empty maps, so not in the creative tab
+	public static final DeferredItem<HeightMapItem> HEIGHT_MAP = ITEMS.register("height_map", () -> new HeightMapItem(new Item.Properties()));
+	public static final DeferredItem<CartographerItem> CARTOGRAPHER = ITEMS.register("cartographer", () -> new CartographerItem(new Item.Properties().stacksTo(1)));
+
 	public static final DeferredItem<CursorItem> CURSOR = ITEMS.register("cursor", () -> new CursorItem(new Item.Properties().durability(CursorItem.DURABILITY)));
 
 	public static final DeferredItem<SqueegeeItem> SQUEEGEE = ITEMS.register("squeegee", () -> new SqueegeeItem(new Item.Properties().stacksTo(1)));
@@ -79,7 +87,7 @@ public class OBItems {
 	// legacy MetasGeneric
 	public static final DeferredItem<Item> UNPREPARED_STENCIL = ITEMS.registerSimpleItem("unprepared_stencil");
 	public static final DeferredItem<Item> SKETCHING_PENCIL = ITEMS.registerSimpleItem("sketching_pencil");
-	// crafting parts of features that are not ported yet (crane backpack, cartographer, projector)
+	// crafting parts of features that are not ported yet (crane backpack)
 	public static final DeferredItem<Item> BEAM = ITEMS.registerSimpleItem("beam");
 	public static final DeferredItem<Item> CRANE_ENGINE = ITEMS.registerSimpleItem("crane_engine");
 	public static final DeferredItem<Item> CRANE_MAGNET = ITEMS.registerSimpleItem("crane_magnet");

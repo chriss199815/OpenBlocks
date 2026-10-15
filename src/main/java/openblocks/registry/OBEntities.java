@@ -12,6 +12,7 @@ import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.neoforged.neoforge.registries.NeoForgeRegistries;
 import openblocks.OpenBlocks;
+import openblocks.entity.Cartographer;
 import openblocks.entity.GoldenEye;
 import openblocks.entity.Luggage;
 import openblocks.entity.MiniMe;
@@ -45,11 +46,22 @@ public class OBEntities {
 					.updateInterval(4)
 					.build("golden_eye"));
 
+	public static final DeferredHolder<EntityType<?>, EntityType<Cartographer>> CARTOGRAPHER = ENTITIES.register("cartographer",
+			() -> EntityType.Builder.<Cartographer>of(Cartographer::new, MobCategory.MISC)
+					.sized(0.4f, 0.4f)
+					.fireImmune()
+					.clientTrackingRange(4)
+					.updateInterval(5)
+					.build("cartographer"));
+
 	public static final DeferredRegister<EntityDataSerializer<?>> DATA_SERIALIZERS = DeferredRegister.create(NeoForgeRegistries.Keys.ENTITY_DATA_SERIALIZERS, OpenBlocks.MODID);
 
 	// the Mini Me owner, with its skin
 	public static final DeferredHolder<EntityDataSerializer<?>, EntityDataSerializer<Optional<ResolvableProfile>>> OPTIONAL_PROFILE = DATA_SERIALIZERS.register("optional_profile",
 			() -> EntityDataSerializer.forValueType(ByteBufCodecs.optional(ResolvableProfile.STREAM_CODEC)));
+
+	public static final DeferredHolder<EntityDataSerializer<?>, EntityDataSerializer<Cartographer.Progress>> CARTOGRAPHER_PROGRESS = DATA_SERIALIZERS.register("cartographer_progress",
+			() -> EntityDataSerializer.forValueType(Cartographer.Progress.STREAM_CODEC));
 
 	public static void registerAttributes(EntityAttributeCreationEvent event) {
 		event.put(LUGGAGE.get(), Luggage.createAttributes().build());

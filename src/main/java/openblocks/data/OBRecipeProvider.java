@@ -20,6 +20,8 @@ import openblocks.OpenBlocks;
 import openblocks.item.GoldenEyeItem;
 import openblocks.item.PaintBrushItem;
 import openblocks.recipe.GoldenEyeRechargeRecipe;
+import openblocks.recipe.MapCloneRecipe;
+import openblocks.recipe.MapResizeRecipe;
 import openblocks.registry.OBBlocks;
 import openblocks.registry.OBItems;
 
@@ -508,7 +510,57 @@ public class OBRecipeProvider extends RecipeProvider {
 				.unlockedBy("has_white_wool", has(Items.WHITE_WOOL))
 				.save(output);
 
+		projector(output);
+
 		genericItems(output);
+	}
+
+	/**
+	 * Projector (with the glowstone and lapis swapped as its own recipe, like legacy), cartographer, empty map and the
+	 * map clone and resize recipes.
+	 */
+	private void projector(RecipeOutput output) {
+		ShapedRecipeBuilder.shaped(RecipeCategory.MISC, OBBlocks.PROJECTOR.get())
+				.pattern("grl")
+				.pattern("iri")
+				.pattern("srs")
+				.define('r', Tags.Items.DUSTS_REDSTONE)
+				.define('s', Items.SMOOTH_STONE_SLAB)
+				.define('g', Tags.Items.DUSTS_GLOWSTONE)
+				.define('i', Tags.Items.INGOTS_IRON)
+				.define('l', Tags.Items.GEMS_LAPIS)
+				.unlockedBy("has_glowstone_dust", has(Tags.Items.DUSTS_GLOWSTONE))
+				.save(output);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.MISC, OBBlocks.PROJECTOR.get())
+				.pattern("lrg")
+				.pattern("iri")
+				.pattern("srs")
+				.define('r', Tags.Items.DUSTS_REDSTONE)
+				.define('s', Items.SMOOTH_STONE_SLAB)
+				.define('g', Tags.Items.DUSTS_GLOWSTONE)
+				.define('i', Tags.Items.INGOTS_IRON)
+				.define('l', Tags.Items.GEMS_LAPIS)
+				.unlockedBy("has_glowstone_dust", has(Tags.Items.DUSTS_GLOWSTONE))
+				.save(output, OpenBlocks.location("projector_mirrored"));
+
+		ShapelessRecipeBuilder.shapeless(RecipeCategory.TOOLS, OBItems.CARTOGRAPHER.get())
+				.requires(OBItems.ASSISTANT_BASE.get())
+				.requires(Items.ENDER_EYE)
+				.unlockedBy("has_assistant_base", has(OBItems.ASSISTANT_BASE.get()))
+				.save(output);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.MISC, OBItems.EMPTY_MAP.get())
+				.pattern(" m ")
+				.pattern("mcm")
+				.pattern(" m ")
+				.define('c', OBItems.MAP_CONTROLLER.get())
+				.define('m', OBItems.MAP_MEMORY.get())
+				.unlockedBy("has_map_controller", has(OBItems.MAP_CONTROLLER.get()))
+				.save(output);
+
+		SpecialRecipeBuilder.special(MapCloneRecipe::new).save(output, OpenBlocks.location("map_clone"));
+		SpecialRecipeBuilder.special(MapResizeRecipe::new).save(output, OpenBlocks.location("map_resize"));
 	}
 
 	/**

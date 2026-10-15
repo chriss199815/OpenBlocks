@@ -72,6 +72,8 @@ public class OpenBlocksClient {
 		modBus.addListener(DevNullItemRenderer::registerItemDecorations);
 		modBus.addListener(SkyBlockRenderer::registerShaders);
 		modBus.addListener(BrickDropInputHandler::registerKeyMappings);
+		modBus.addListener(CannonRenderer::registerLayerDefinitions);
+		modBus.addListener(CannonRenderer::registerClientExtensions);
 
 		NeoForge.EVENT_BUS.addListener(ElevatorInputHandler::onMovementInput);
 		NeoForge.EVENT_BUS.addListener(HangGliderRenderer::onRenderPlayerPre);
@@ -114,6 +116,7 @@ public class OpenBlocksClient {
 		event.registerBlockEntityRenderer(OBBlockEntities.SPRINKLER.get(), SprinklerRenderer::new);
 		event.registerBlockEntityRenderer(OBBlockEntities.SKY.get(), SkyBlockRenderer::new);
 		event.registerBlockEntityRenderer(OBBlockEntities.GOLDEN_EGG.get(), GoldenEggRenderer::new);
+		event.registerBlockEntityRenderer(OBBlockEntities.CANNON.get(), CannonRenderer::new);
 		event.registerEntityRenderer(OBEntities.NO_FLY_XP_ORB.get(), ExperienceOrbRenderer::new);
 		event.registerEntityRenderer(OBEntities.LUGGAGE.get(), LuggageRenderer::new);
 		event.registerEntityRenderer(OBEntities.MINI_ME.get(), MiniMeRenderer::new);

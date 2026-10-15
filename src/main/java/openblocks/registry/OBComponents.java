@@ -1,5 +1,6 @@
 package openblocks.registry;
 
+import net.minecraft.core.GlobalPos;
 import net.minecraft.core.component.DataComponentType;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.codec.ByteBufCodecs;
@@ -66,4 +67,10 @@ public class OBComponents {
 	 */
 	public static final DeferredHolder<DataComponentType<?>, DataComponentType<GoldenEyeTarget>> GOLDEN_EYE_TARGET = COMPONENTS.registerComponentType("golden_eye_target",
 			builder -> builder.persistent(GoldenEyeTarget.CODEC).networkSynchronized(GoldenEyeTarget.STREAM_CODEC));
+
+	/**
+	 * Cannon a pointer has selected; replaces the legacy {@code lastPoint} tag.
+	 */
+	public static final DeferredHolder<DataComponentType<?>, DataComponentType<GlobalPos>> POINTER_TARGET = COMPONENTS.registerComponentType("pointer_target",
+			builder -> builder.persistent(GlobalPos.CODEC).networkSynchronized(GlobalPos.STREAM_CODEC));
 }

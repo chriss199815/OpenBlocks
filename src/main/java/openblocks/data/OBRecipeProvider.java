@@ -489,6 +489,25 @@ public class OBRecipeProvider extends RecipeProvider {
 				.save(output);
 		SpecialRecipeBuilder.special(GoldenEyeRechargeRecipe::new).save(output, OpenBlocks.location("golden_eye_recharge"));
 
+		ShapedRecipeBuilder.shaped(RecipeCategory.REDSTONE, OBBlocks.CANNON.get())
+				.pattern(" d ")
+				.pattern(" f ")
+				.pattern("iri")
+				.define('d', Items.DISPENSER)
+				.define('f', Items.IRON_BARS)
+				.define('i', Tags.Items.INGOTS_IRON)
+				.define('r', Tags.Items.STORAGE_BLOCKS_REDSTONE)
+				.unlockedBy("has_dispenser", has(Items.DISPENSER))
+				.save(output);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, OBItems.POINTER.get())
+				.pattern("w ")
+				.pattern("ww")
+				.pattern("w ")
+				.define('w', Items.WHITE_WOOL)
+				.unlockedBy("has_white_wool", has(Items.WHITE_WOOL))
+				.save(output);
+
 		genericItems(output);
 	}
 

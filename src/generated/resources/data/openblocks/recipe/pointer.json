@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "w": {
+      "item": "minecraft:white_wool"
+    }
+  },
+  "pattern": [
+    "w ",
+    "ww",
+    "w "
+  ],
+  "result": {
+    "count": 1,
+    "id": "openblocks:pointer"
+  }
+}

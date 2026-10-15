@@ -24,11 +24,12 @@ import openblocks.registry.OBItems;
 public class BrickDropsGameTests {
 
 	/**
-	 * Runs the test with brick drops enabled; GameTests of a batch run one after another on the server thread.
+	 * Runs the test with brick drops enabled or disabled, whatever the config says (the GameTest server shares the config
+	 * of the dev client); GameTests of a batch run one after another on the server thread.
 	 */
-	private static void withBrickDrops(GameTestHelper helper, Runnable test) {
+	private static void withBrickDrops(boolean enabled, Runnable test) {
 		final boolean serious = OBConfig.TOMFOOLERY.weAreSeriousPeople.get();
-		OBConfig.TOMFOOLERY.weAreSeriousPeople.set(false);
+		OBConfig.TOMFOOLERY.weAreSeriousPeople.set(!enabled);
 		try {
 			test.run();
 		} finally {
@@ -48,7 +49,7 @@ public class BrickDropsGameTests {
 	@GameTest(template = OBGameTestStructureProvider.EMPTY_3X8X3)
 	public static void tastyClayLetsPlayerDropBrick(GameTestHelper helper) {
 		final ServerPlayer player = survivalPlayer(helper);
-		withBrickDrops(helper, () -> {
+		withBrickDrops(true, () -> {
 			final ItemStack clay = new ItemStack(OBItems.TASTY_CLAY.get());
 			player.setItemInHand(InteractionHand.MAIN_HAND, clay);
 			clay.finishUsingItem(helper.getLevel(), player);
@@ -68,8 +69,7 @@ public class BrickDropsGameTests {
 	public static void seriousPeopleDropNoBricks(GameTestHelper helper) {
 		final ServerPlayer player = survivalPlayer(helper);
 		player.setData(OBAttachments.BOWELS, 3);
-		// the default config
-		BrickDrops.dropBrick(player);
+		withBrickDrops(false, () -> BrickDrops.dropBrick(player));
 		helper.assertValueEqual(player.getData(OBAttachments.BOWELS), 3, "bricks with brick drops disabled");
 		helper.assertEntityNotPresent(EntityType.ITEM);
 		player.getServer().getPlayerList().remove(player);

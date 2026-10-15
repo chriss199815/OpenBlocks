@@ -65,6 +65,7 @@ public class OBBlockStateProvider extends BlockStateProvider {
 		itemModels().basicItem(OBItems.SLEEPING_BAG.get());
 		itemModels().basicItem(OBItems.CURSOR.get());
 		itemModels().basicItem(OBItems.GOLDEN_EYE.get());
+		itemModels().basicItem(OBItems.POINTER.get());
 		// like legacy, the plain stencil texture
 		itemModels().withExistingParent("unprepared_stencil", mcLoc("item/generated")).texture("layer0", modLoc("item/stencil"));
 		itemModels().basicItem(OBItems.SKETCHING_PENCIL.get());
@@ -237,6 +238,27 @@ public class OBBlockStateProvider extends BlockStateProvider {
 		simpleBlockWithItem(OBBlocks.SKY_INVERTED.get(), sky);
 
 		goldenEgg();
+		cannon();
+	}
+
+	/**
+	 * Drawn by {@code CannonRenderer}, also as item; the block model only gives the particles. Item transforms from the
+	 * legacy item model.
+	 */
+	private void cannon() {
+		simpleBlock(OBBlocks.CANNON.get(), models().getBuilder("cannon").texture("particle", modLoc("block/cannon")));
+		itemModels().getBuilder("cannon")
+				.parent(new ModelFile.UncheckedModelFile("builtin/entity"))
+				.texture("particle", modLoc("block/cannon"))
+				.transforms()
+				.transform(ItemDisplayContext.GUI).rotation(30, 45, 0).scale(0.625f).end()
+				.transform(ItemDisplayContext.GROUND).translation(0, 3, 0).scale(0.25f).end()
+				.transform(ItemDisplayContext.HEAD).rotation(0, 180, 0).end()
+				.transform(ItemDisplayContext.FIXED).rotation(0, 180, 0).scale(0.5f).end()
+				.transform(ItemDisplayContext.THIRD_PERSON_RIGHT_HAND).rotation(75, 315, 0).translation(0, 2.5f, 0).scale(0.375f).end()
+				.transform(ItemDisplayContext.FIRST_PERSON_RIGHT_HAND).rotation(0, 315, 0).scale(0.4f).end()
+				.transform(ItemDisplayContext.FIRST_PERSON_LEFT_HAND).rotation(0, 315, 0).scale(0.4f).end()
+				.end();
 	}
 
 	/**

@@ -10,7 +10,6 @@ import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.phys.AABB;
 import net.minecraft.world.phys.Vec3;
 import net.neoforged.neoforge.gametest.GameTestHolder;
 import net.neoforged.neoforge.gametest.PrefixGameTestTemplate;
@@ -32,7 +31,8 @@ public class ItemDropperGameTests {
 	}
 
 	private static List<ItemEntity> droppedItems(GameTestHelper helper) {
-		return helper.getLevel().getEntitiesOfClass(ItemEntity.class, new AABB(helper.absolutePos(DROPPER)).inflate(3));
+		// only this test's area, tests next to it may drop items too
+		return helper.getLevel().getEntitiesOfClass(ItemEntity.class, helper.getBounds());
 	}
 
 	@GameTest(template = OBGameTestStructureProvider.EMPTY_3X8X3)

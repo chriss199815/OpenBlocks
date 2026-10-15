@@ -26,6 +26,7 @@ public class OBSounds {
 	public static final DeferredHolder<SoundEvent, SoundEvent> TARGET_CLOSE = register("target.close");
 	public static final DeferredHolder<SoundEvent, SoundEvent> PEDOMETER_USE = register("pedometer.use");
 	public static final DeferredHolder<SoundEvent, SoundEvent> SLIMALYZER_SIGNAL = register("slimalyzer.signal");
+	public static final DeferredHolder<SoundEvent, SoundEvent> CANNON_ACTIVATE = register("cannon.activate");
 	public static final DeferredHolder<SoundEvent, SoundEvent> PLAYER_WHOOPS = register("best.feature.ever.fart");
 
 	private static DeferredHolder<SoundEvent, SoundEvent> register(String id) {

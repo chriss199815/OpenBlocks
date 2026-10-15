@@ -1,4 +1,4 @@
-// 1.21.1	2026-10-14T22:17:17.929415	Recipes
+// 1.21.1	2026-10-14T22:40:19.719528	Recipes
 f37f622f6aa43ff8c3b05fe0ccd813d9be730420 data/openblocks/advancement/recipes/building_blocks/canvas.json
 4da75c2ec825111de4abddbd9d4caefbb2b578ce data/openblocks/advancement/recipes/building_blocks/scaffolding.json
 930782d897e53db76e7b954eb746d395706bf1bd data/openblocks/advancement/recipes/building_blocks/sky.json
@@ -55,6 +55,7 @@ d37f746a3111352aeb76a52096cdd347eec1d40d data/openblocks/advancement/recipes/mis
 4be4a4b69634f132973d580dca1e110d4db09d37 data/openblocks/advancement/recipes/redstone/big_button_wood.json
 44bd7e7461c663966db9367e0786856b203800c7 data/openblocks/advancement/recipes/redstone/block_breaker.json
 9558308e3f3ef4a2e984b08a5f87d5eebfcbcd74 data/openblocks/advancement/recipes/redstone/block_placer.json
+8bf7259981610a079b4b715d69aa7df79fa25bc5 data/openblocks/advancement/recipes/redstone/cannon.json
 7c05198d76167a7193cd5bf1d712d924a4ecc021 data/openblocks/advancement/recipes/redstone/fan.json
 cb17206668799abdf63be661df9bb38c4f0eb645 data/openblocks/advancement/recipes/redstone/item_dropper.json
 f15d155564efdd7b90149180048e39ebb3dc916b data/openblocks/advancement/recipes/redstone/target.json
@@ -79,6 +80,7 @@ e95c1cef4ff2c669340f8de3b632d606901d24d4 data/openblocks/advancement/recipes/too
 6fb8b14ebd31ecdf9e4c7fd5966e982eac5a319e data/openblocks/advancement/recipes/tools/paintbrush_white.json
 bdfc5ffaea2ec532f6c8029922686611601fc16f data/openblocks/advancement/recipes/tools/paintbrush_yellow.json
 7d72260cedd48e7cde59aacb0859618d3b46bab2 data/openblocks/advancement/recipes/tools/pedometer.json
+ed280407a8dd15e38d0657b433ad49ce8b877c59 data/openblocks/advancement/recipes/tools/pointer.json
 ce5cf6807dc55b3f20e441bc785bb64eaa5fd43e data/openblocks/advancement/recipes/tools/slimalyzer.json
 eb8d18385afe76090e7939dfbee47c02af24f8c9 data/openblocks/advancement/recipes/tools/sponge_on_a_stick.json
 41723e7981352052dd3842a29ecf0155d4a76826 data/openblocks/advancement/recipes/tools/squeegee.json
@@ -137,6 +139,7 @@ ae023272a12af43454915c61306e7705b99be889 data/openblocks/recipe/blue_elevator.js
 d3553e478c6392d0fdfd3ee59a3ea77ed5dc9dd7 data/openblocks/recipe/brown_elevator.json
 d8cd3743598d7a892129c6ba72cc679bda432f87 data/openblocks/recipe/brown_elevator_rotating.json
 ca031a06b231074220094d7301bb3719c799c609 data/openblocks/recipe/brown_flag.json
+ca7fbd8fadfacf30f4fd6aa39daa7c9aebed24bc data/openblocks/recipe/cannon.json
 d506570c1eb5afda4df0f57fe40a646176475a0e data/openblocks/recipe/canvas.json
 f81fd75b617176acb0eb2d9801d095f32d7a23ff data/openblocks/recipe/crane_engine.json
 4e9bd0f3ba280b53eb076b864dbc3461d4a50b42 data/openblocks/recipe/crane_magnet.json
@@ -205,6 +208,7 @@ e8520470beb7d5fb4b3353f6fb9d18bc05ad7e73 data/openblocks/recipe/pedometer.json
 9cf0ac55230a22c8260679ed7f08bad9d9c8d23d data/openblocks/recipe/pink_elevator.json
 ef13181744618d54aa2445f3112edd54c70cc305 data/openblocks/recipe/pink_elevator_rotating.json
 3028b6c27635fe233b266362aab92e1a27a7f15e data/openblocks/recipe/pink_flag.json
+7387f858a79ee668607dff502a1075c8ceccdcb1 data/openblocks/recipe/pointer.json
 7efaee4d746e3a09168f30ed89bc1150dfcbcbad data/openblocks/recipe/purple_elevator.json
 e8141f2b10c0d7cdca5861f797bed88f4b1866bb data/openblocks/recipe/purple_elevator_rotating.json
 ca74b6fc203a90eb89165d680908659a0c592b0f data/openblocks/recipe/purple_flag.json

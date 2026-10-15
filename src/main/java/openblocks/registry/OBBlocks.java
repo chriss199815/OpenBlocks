@@ -22,6 +22,7 @@ import openblocks.block.AutoAnvilBlock;
 import openblocks.block.AutoEnchantmentTableBlock;
 import openblocks.block.BearTrapBlock;
 import openblocks.block.BigButtonBlock;
+import openblocks.block.CannonBlock;
 import openblocks.block.CanvasBlock;
 import openblocks.block.DonationStationBlock;
 import openblocks.block.DrawingTableBlock;
@@ -270,6 +271,16 @@ public class OBBlocks {
 			.strength(1.0f)
 			.noOcclusion()
 			.pushReaction(PushReaction.BLOCK)
+			.sound(SoundType.METAL)));
+
+	// drawn by CannonRenderer, also as item; no collision, like legacy
+	public static final DeferredBlock<CannonBlock> CANNON = registerWithItem("cannon", () -> new CannonBlock(BlockBehaviour.Properties.of()
+			.mapColor(MapColor.METAL)
+			.strength(1.0f)
+			.requiresCorrectToolForDrops()
+			.noCollission()
+			.noOcclusion()
+			.pushReaction(PushReaction.DESTROY)
 			.sound(SoundType.METAL)));
 
 	private static BlockBehaviour.Properties skyProperties() {

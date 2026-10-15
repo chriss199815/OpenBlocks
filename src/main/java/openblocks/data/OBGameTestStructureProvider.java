@@ -23,6 +23,7 @@ import openblocks.OpenBlocks;
 public class OBGameTestStructureProvider implements DataProvider {
 
 	public static final String EMPTY_3X8X3 = "empty_3x8x3";
+	public static final String EMPTY_16X8X16 = "empty_16x8x16";
 
 	private final PackOutput.PathProvider pathProvider;
 
@@ -32,7 +33,10 @@ public class OBGameTestStructureProvider implements DataProvider {
 
 	@Override
 	public CompletableFuture<?> run(CachedOutput cache) {
-		return CompletableFuture.runAsync(() -> writeEmpty(cache, EMPTY_3X8X3, 3, 8, 3), Util.backgroundExecutor());
+		return CompletableFuture.runAsync(() -> {
+			writeEmpty(cache, EMPTY_3X8X3, 3, 8, 3);
+			writeEmpty(cache, EMPTY_16X8X16, 16, 8, 16);
+		}, Util.backgroundExecutor());
 	}
 
 	private void writeEmpty(CachedOutput cache, String name, int x, int y, int z) {

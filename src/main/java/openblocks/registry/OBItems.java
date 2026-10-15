@@ -18,6 +18,7 @@ import openblocks.item.LuggageItem;
 import openblocks.item.PaintBrushItem;
 import openblocks.item.PaintCanItem;
 import openblocks.item.PedometerItem;
+import openblocks.item.PointerItem;
 import openblocks.item.SleepingBagItem;
 import openblocks.item.SlimalyzerItem;
 import openblocks.item.SpongeOnAStickItem;
@@ -52,6 +53,9 @@ public class OBItems {
 	public static final DeferredItem<DevNullItem> DEV_NULL = ITEMS.register("dev_null", () -> new DevNullItem(new Item.Properties().stacksTo(1)));
 
 	public static final DeferredItem<GoldenEyeItem> GOLDEN_EYE = ITEMS.register("golden_eye", () -> new GoldenEyeItem(new Item.Properties().durability(GoldenEyeItem.MAX_DAMAGE)));
+
+	// legacy MetasGenericUnstackable
+	public static final DeferredItem<PointerItem> POINTER = ITEMS.register("pointer", () -> new PointerItem(new Item.Properties().stacksTo(1)));
 
 	public static final DeferredItem<CursorItem> CURSOR = ITEMS.register("cursor", () -> new CursorItem(new Item.Properties().durability(CursorItem.DURABILITY)));
 

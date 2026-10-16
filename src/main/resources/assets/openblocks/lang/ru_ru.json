@@ -60,7 +60,7 @@
   "openblocks.misc.url": "Ссылка: %s",
   "openblocks.misc.type": "Тип: %s",
   "openblocks.misc.uses": "Использований: %.2f",
-  "openblocks.misc.color": "Цвет: %06X",
+  "openblocks.misc.color": "Цвет: #%s",
   "openblocks.misc.mode": "Режим размещения: %s",
   "openblocks.misc.mode.block": "Блок",
   "openblocks.misc.mode.panel": "Панель",

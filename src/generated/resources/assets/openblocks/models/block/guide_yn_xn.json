@@ -1,0 +1,24 @@
+{
+  "children": {
+    "guide": {
+      "parent": "openblocks:block/guide"
+    }
+  },
+  "item_render_order": [
+    "guide"
+  ],
+  "loader": "neoforge:composite",
+  "render_type": "minecraft:translucent",
+  "textures": {
+    "particle": "openblocks:block/guide_side_new"
+  },
+  "transform": {
+    "origin": "center",
+    "rotation": [
+      0.70710677,
+      -0.70710677,
+      0.0,
+      0.0
+    ]
+  }
+}

@@ -50,7 +50,7 @@
   "openblocks.misc.url": "URL: %s",
   "openblocks.misc.type": "방식: %s",
   "openblocks.misc.uses": "사용: %.2f",
-  "openblocks.misc.color": "색깔: %06X",
+  "openblocks.misc.color": "색깔: #%s",
   "openblocks.misc.mode": "설치 모드: %s",
   "openblocks.misc.mode.block": "블럭",
   "openblocks.misc.mode.panel": "패널",

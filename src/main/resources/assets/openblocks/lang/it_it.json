@@ -55,7 +55,7 @@
   "openblocks.misc.url": "URL: %s",
   "openblocks.misc.type": "Tipo: %s",
   "openblocks.misc.uses": "Usi: %.2f",
-  "openblocks.misc.color": "Colore: %06X",
+  "openblocks.misc.color": "Colore: #%s",
   "openblocks.misc.mode": "Modalità di piazzamento: %s",
   "openblocks.misc.mode.block": "Blocco",
   "openblocks.misc.mode.panel": "Pannello",

@@ -8,6 +8,7 @@ import net.minecraft.core.Direction;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.util.Mth;
 import net.minecraft.world.item.ItemDisplayContext;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.properties.AttachFace;
@@ -18,6 +19,7 @@ import net.neoforged.neoforge.client.model.generators.ConfiguredModel;
 import net.neoforged.neoforge.client.model.generators.ItemModelBuilder;
 import net.neoforged.neoforge.client.model.generators.ModelBuilder;
 import net.neoforged.neoforge.client.model.generators.ModelFile;
+import net.neoforged.neoforge.client.model.generators.loaders.CompositeModelBuilder;
 import net.neoforged.neoforge.client.model.generators.loaders.ObjModelBuilder;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.neoforged.neoforge.common.util.TransformationHelper;
@@ -26,12 +28,18 @@ import openblocks.block.BigButtonBlock;
 import openblocks.block.BlockManipulatorBlock;
 import openblocks.block.FlagBlock;
 import openblocks.block.GraveBlock;
+import openblocks.block.GuideBlock;
 import openblocks.block.SprinklerBlock;
 import openblocks.block.TargetBlock;
 import openblocks.block.entity.VacuumHopperBlockEntity;
+import openblocks.common.GuideOrientation;
 import openblocks.common.TankEdge;
 import openblocks.registry.OBBlocks;
 import openblocks.registry.OBItems;
+import org.joml.Matrix3f;
+import org.joml.Matrix4f;
+import org.joml.Quaternionf;
+import org.joml.Vector3f;
 
 public class OBBlockStateProvider extends BlockStateProvider {
 
@@ -243,6 +251,60 @@ public class OBBlockStateProvider extends BlockStateProvider {
 		goldenEgg();
 		cannon();
 		projector();
+		guide(OBBlocks.GUIDE.get(), "guide", "guide_center_normal");
+		guide(OBBlocks.BUILDER_GUIDE.get(), "builder_guide", "guide_center_ender");
+	}
+
+	/**
+	 * Legacy translucent column with buttons around a solid center cube (legacy drew them in two layers, here it is one
+	 * translucent model). The blockstate rotations are found by trying all of them, so the local axes of the model end
+	 * up where the {@link GuideOrientation} says, like the touch buttons. Four orientations cannot be reached with x and y
+	 * rotations; they get a composite model with a rotated root transform (legacy used Forge blockstate transforms).
+	 */
+	private void guide(Block block, String name, String center) {
+		final BlockModelBuilder model = models().withExistingParent(name, mcLoc("block/block"))
+				.renderType("translucent")
+				.texture("particle", modLoc("block/guide_side_new"))
+				.texture("end", modLoc("block/guide_top_new"))
+				.texture("side", modLoc("block/guide_side_new"))
+				.texture("center", modLoc("block/" + center));
+		model.element().from(0, 0, 0).to(16, 16, 16)
+				.face(Direction.DOWN).uvs(0, 0, 16, 16).texture("#end").cullface(Direction.DOWN).end()
+				.face(Direction.UP).uvs(0, 0, 16, 16).texture("#end").cullface(Direction.UP).end()
+				.face(Direction.NORTH).uvs(0, 0, 16, 16).texture("#side").cullface(Direction.NORTH).end()
+				.face(Direction.SOUTH).uvs(0, 0, 16, 16).texture("#side").cullface(Direction.SOUTH).end()
+				.face(Direction.WEST).uvs(0, 0, 16, 16).texture("#side").cullface(Direction.WEST).end()
+				.face(Direction.EAST).uvs(0, 0, 16, 16).texture("#side").cullface(Direction.EAST).end()
+				.end();
+		model.element().from(6, 6, 6).to(10, 10, 10)
+				.face(Direction.NORTH).uvs(6, 6, 10, 10).texture("#center").rotation(ModelBuilder.FaceRotation.UPSIDE_DOWN).end()
+				.face(Direction.EAST).uvs(6, 6, 10, 10).texture("#center").rotation(ModelBuilder.FaceRotation.CLOCKWISE_90).end()
+				.face(Direction.SOUTH).uvs(6, 6, 10, 10).texture("#center").rotation(ModelBuilder.FaceRotation.COUNTERCLOCKWISE_90).end()
+				.face(Direction.WEST).uvs(6, 6, 10, 10).texture("#center").end()
+				.face(Direction.UP).uvs(6, 6, 10, 10).texture("#center").rotation(ModelBuilder.FaceRotation.UPSIDE_DOWN).end()
+				.face(Direction.DOWN).uvs(6, 6, 10, 10).texture("#center").rotation(ModelBuilder.FaceRotation.CLOCKWISE_90).end()
+				.end();
+
+		getVariantBuilder(block).forAllStates(state -> {
+			final GuideOrientation orientation = state.getValue(GuideBlock.ORIENTATION);
+			for (int x = 0; x < 360; x += 90)
+				for (int y = 0; y < 360; y += 90) {
+					final Matrix4f rotation = new Matrix4f().rotation(new Quaternionf().rotateYXZ(-y * Mth.DEG_TO_RAD, -x * Mth.DEG_TO_RAD, 0));
+					if (Direction.rotate(rotation, Direction.EAST) == orientation.x && Direction.rotate(rotation, Direction.UP) == orientation.y)
+						return ConfiguredModel.builder().modelFile(model).rotationX(x).rotationY(y).build();
+				}
+			final Matrix3f rotation = new Matrix3f(
+					new Vector3f(orientation.x.step()), new Vector3f(orientation.y.step()), new Vector3f(orientation.z.step()));
+			final BlockModelBuilder rotated = models().getBuilder(name + "_" + orientation.getSerializedName())
+					.renderType("translucent")
+					.texture("particle", modLoc("block/guide_side_new"))
+					.customLoader(CompositeModelBuilder::begin)
+					.child("guide", models().nested().parent(model))
+					.end();
+			rotated.rootTransforms().rotation(rotation.getNormalizedRotation(new Quaternionf())).origin(TransformationHelper.TransformOrigin.CENTER);
+			return ConfiguredModel.builder().modelFile(rotated).build();
+		});
+		simpleBlockItem(block, model);
 	}
 
 	/**

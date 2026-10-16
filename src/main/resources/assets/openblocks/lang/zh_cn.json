@@ -60,7 +60,7 @@
   "openblocks.misc.url": "链接: %s",
   "openblocks.misc.type": "类型: %s",
   "openblocks.misc.uses": "剩余使用次数: %.2f",
-  "openblocks.misc.color": "颜色: %06X",
+  "openblocks.misc.color": "颜色: #%s",
   "openblocks.misc.mode": "涂鸦类型: %s",
   "openblocks.misc.mode.block": "方块",
   "openblocks.misc.mode.panel": "面板",

@@ -15,6 +15,7 @@ import openblocks.item.CursorItem;
 import openblocks.item.DevNullItem;
 import openblocks.item.EmptyMapItem;
 import openblocks.item.GoldenEyeItem;
+import openblocks.item.GuideItem;
 import openblocks.item.HangGliderItem;
 import openblocks.item.HeightMapItem;
 import openblocks.item.LuggageItem;
@@ -70,6 +71,9 @@ public class OBItems {
 	public static final DeferredItem<SqueegeeItem> SQUEEGEE = ITEMS.register("squeegee", () -> new SqueegeeItem(new Item.Properties().stacksTo(1)));
 
 	public static final DeferredItem<TrophyItem> TROPHY = ITEMS.register("trophy", () -> new TrophyItem(OBBlocks.TROPHY.get(), new Item.Properties()));
+
+	public static final DeferredItem<GuideItem> GUIDE = ITEMS.register("guide", () -> new GuideItem(OBBlocks.GUIDE.get(), new Item.Properties()));
+	public static final DeferredItem<GuideItem> BUILDER_GUIDE = ITEMS.register("builder_guide", () -> new GuideItem(OBBlocks.BUILDER_GUIDE.get(), new Item.Properties()));
 
 	public static final DeferredItem<WrenchItem> WRENCH = ITEMS.register("wrench", () -> new WrenchItem(new Item.Properties().stacksTo(1)));
 

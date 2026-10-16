@@ -1,0 +1,50 @@
+{
+  "variants": {
+    "orientation=xn_yp": {
+      "model": "openblocks:block/builder_guide",
+      "y": 180
+    },
+    "orientation=xn_zn": {
+      "model": "openblocks:block/builder_guide",
+      "x": 270,
+      "y": 180
+    },
+    "orientation=xp_yp": {
+      "model": "openblocks:block/builder_guide"
+    },
+    "orientation=xp_zn": {
+      "model": "openblocks:block/builder_guide",
+      "x": 90
+    },
+    "orientation=yn_xn": {
+      "model": "openblocks:block/builder_guide_yn_xn"
+    },
+    "orientation=yn_zn": {
+      "model": "openblocks:block/builder_guide_yn_zn"
+    },
+    "orientation=yp_xn": {
+      "model": "openblocks:block/builder_guide_yp_xn"
+    },
+    "orientation=yp_zn": {
+      "model": "openblocks:block/builder_guide_yp_zn"
+    },
+    "orientation=zn_xn": {
+      "model": "openblocks:block/builder_guide",
+      "x": 90,
+      "y": 270
+    },
+    "orientation=zn_yp": {
+      "model": "openblocks:block/builder_guide",
+      "y": 270
+    },
+    "orientation=zp_xn": {
+      "model": "openblocks:block/builder_guide",
+      "x": 270,
+      "y": 90
+    },
+    "orientation=zp_yp": {
+      "model": "openblocks:block/builder_guide",
+      "y": 90
+    }
+  }
+}

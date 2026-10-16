@@ -21,7 +21,7 @@
   "openblocks.gui.drawingtable": "Stół do rysowania",
   "openblocks.misc.type": "Typ: %s",
   "openblocks.misc.uses": "Uses: %.2f",
-  "openblocks.misc.color": "Kolor: %06X",
+  "openblocks.misc.color": "Kolor: #%s",
   "openblocks.misc.mode": "Tryb umieszczenia: %s",
   "openblocks.misc.mode.block": "Blok",
   "openblocks.misc.mode.panel": "Panel",

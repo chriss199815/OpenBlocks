@@ -1,4 +1,4 @@
-// 1.21.1	2026-10-15T08:32:43.730652	Block States: openblocks
+// 1.21.1	2026-10-15T09:23:41.352932	Block States: openblocks
 909bae1340933de5e494ee6692d1d88aeabf4f33 assets/openblocks/blockstates/auto_anvil.json
 aca132b5918ec066ede0f817145d0ac0649c84a9 assets/openblocks/blockstates/auto_enchantment_table.json
 9be1c7ce94b3232fe19c46a8965abe89ae2d898a assets/openblocks/blockstates/bear_trap.json
@@ -15,6 +15,7 @@ d13702d1e489422f027636fd4f3a4f64b33332e9 assets/openblocks/blockstates/blue_elev
 c45d5d2e71c34dc43588a6063c8f1025e64a8816 assets/openblocks/blockstates/brown_elevator.json
 d13702d1e489422f027636fd4f3a4f64b33332e9 assets/openblocks/blockstates/brown_elevator_rotating.json
 6a60ac85a83f62e9071a3664237075d98888182e assets/openblocks/blockstates/brown_flag.json
+253aa68953b424c077f2750f17bb35cc58c21f8c assets/openblocks/blockstates/builder_guide.json
 be0eb313131bba3c5f5837e4beb9e3c77b27ee3c assets/openblocks/blockstates/cannon.json
 41b646d6739d61c25eec4045fcdc12bbdd975473 assets/openblocks/blockstates/canvas.json
 41b646d6739d61c25eec4045fcdc12bbdd975473 assets/openblocks/blockstates/canvas_glass.json
@@ -32,6 +33,7 @@ d13702d1e489422f027636fd4f3a4f64b33332e9 assets/openblocks/blockstates/gray_elev
 c45d5d2e71c34dc43588a6063c8f1025e64a8816 assets/openblocks/blockstates/green_elevator.json
 d13702d1e489422f027636fd4f3a4f64b33332e9 assets/openblocks/blockstates/green_elevator_rotating.json
 6a60ac85a83f62e9071a3664237075d98888182e assets/openblocks/blockstates/green_flag.json
+78c135404de380f99776d70452d785cde5906ec4 assets/openblocks/blockstates/guide.json
 1e1afd8c06298173dbb6003d3b484fab24e24871 assets/openblocks/blockstates/heal.json
 a904cf2ba3b4dda97dcefb2ff9ceed71670608ff assets/openblocks/blockstates/item_dropper.json
 2060ad1605a2eaf4a41c289db3fbac28a0fbc30f assets/openblocks/blockstates/ladder.json
@@ -96,6 +98,11 @@ b68b4570141148e3b69bce1308598e06a913c6a6 assets/openblocks/models/block/big_butt
 046ad3454fb84c89cbba9376ebc51de1ffee114c assets/openblocks/models/block/block_breaker.json
 17ac3725dc3dd85d746255bbfbf73c70bd467692 assets/openblocks/models/block/block_breaker_active.json
 2a16c00b888ee851a06772cbd2e206663a7b49e1 assets/openblocks/models/block/block_placer.json
+e482c1c8362a4dbb89d9a4ee9c86b122430e9a06 assets/openblocks/models/block/builder_guide.json
+43476a53d00917c9ed7b914115543aeb0ccc2478 assets/openblocks/models/block/builder_guide_yn_xn.json
+b5f17d93dbd6d48a5020963dd094108a8e952558 assets/openblocks/models/block/builder_guide_yn_zn.json
+27fdb9573c2106388d67a831e79eca3077cdefc0 assets/openblocks/models/block/builder_guide_yp_xn.json
+8ffde53f2521e82074b8794c3ec75be4174d76d2 assets/openblocks/models/block/builder_guide_yp_zn.json
 89d9cccaecb7391043a2db99d2d0410b5622fb66 assets/openblocks/models/block/cannon.json
 87370c060759f644299e1fda40c7157069617502 assets/openblocks/models/block/canvas.json
 cb20b5fd6169b586c69dfd98299b757391f6362c assets/openblocks/models/block/dev_null_3d.json
@@ -148,6 +155,11 @@ e2c363fe7efade78c27fd0ee89db0b6e55c5e4d5 assets/openblocks/models/block/flag_gro
 fa1f737023387a86d78ebed767b18810dbc4e9fa assets/openblocks/models/block/golden_egg.json
 9f3a8f7f3192e48338258695e52de2902577b76d assets/openblocks/models/block/grave_free.json
 e97351a6d611f8069d1e29d33f25af56f3247c28 assets/openblocks/models/block/grave_ground.json
+f6ea57cf022196d74f86111617ff6c8e41fe05fe assets/openblocks/models/block/guide.json
+d25499afd189a52807936a62e7ae69b4b2c7e903 assets/openblocks/models/block/guide_yn_xn.json
+64f2318b3e384eadbf6c24dec956b5cf031abe0b assets/openblocks/models/block/guide_yn_zn.json
+d49c676680cdf9b87a929af339af10f390013a0b assets/openblocks/models/block/guide_yp_xn.json
+237a7cdcd7a9e98d24aadc73eba949c19bf592ee assets/openblocks/models/block/guide_yp_zn.json
 f32d73f3802004f923f5994cfaa1f904e6c97c70 assets/openblocks/models/block/heal.json
 4dd0dce8ad6ed5e1708f6a97ae40cfdfda5b3bd2 assets/openblocks/models/block/item_dropper.json
 190dab6635c5706b74b6dd01932df582ad59cea9 assets/openblocks/models/block/ladder_bottom.json
@@ -249,6 +261,7 @@ ae94f2fbee2e9a8360a64eaeca2d38363217f721 assets/openblocks/models/item/border_st
 d2b8f805473f5db4bc4402f5b4f1864704363649 assets/openblocks/models/item/brown_elevator.json
 dd180aef5747a9afe34022df0f8fd345d081cd6c assets/openblocks/models/item/brown_elevator_rotating.json
 fcc439f163500f4a2657f61a09c9762b2151a0ed assets/openblocks/models/item/brown_flag.json
+7d5f13f3897fd5d5d7908bb286cf302807cbd286 assets/openblocks/models/item/builder_guide.json
 0cf7df1d19c1f4690f88a8d3d47ff4eb9562a134 assets/openblocks/models/item/cannon.json
 1d00cced72574499024d40fe46f3bac93d94902b assets/openblocks/models/item/canvas.json
 a02b9702555fb557c398b3a2d83dac35065759b9 assets/openblocks/models/item/cartographer.json
@@ -279,6 +292,7 @@ fcc439f163500f4a2657f61a09c9762b2151a0ed assets/openblocks/models/item/gray_flag
 d2b8f805473f5db4bc4402f5b4f1864704363649 assets/openblocks/models/item/green_elevator.json
 dd180aef5747a9afe34022df0f8fd345d081cd6c assets/openblocks/models/item/green_elevator_rotating.json
 fcc439f163500f4a2657f61a09c9762b2151a0ed assets/openblocks/models/item/green_flag.json
+44d0df48e0f9e026bfe9cb4175ea5aa8e485169d assets/openblocks/models/item/guide.json
 c798f0ebf2a7cf12178d2614c8aba9015959d1ce assets/openblocks/models/item/hang_glider.json
 7ef691a614cb0f5fae2c0a8137706457771bd95e assets/openblocks/models/item/heal.json
 61191171106c3f8570c682336944d763b6e05122 assets/openblocks/models/item/heart2_stencil.json

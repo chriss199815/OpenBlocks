@@ -60,6 +60,10 @@ public class OBBlockLoot extends BlockLootSubProvider {
 		add(OBBlocks.GRAVE.get(), noDrop());
 		add(OBBlocks.TROPHY.get(), createSingleItemTable(OBBlocks.TROPHY.get())
 				.apply(CopyComponentsFunction.copyComponents(CopyComponentsFunction.Source.BLOCK_ENTITY).include(OBComponents.TROPHY.get()).include(OBComponents.TROPHY_COOLDOWN.get())));
+		add(OBBlocks.GUIDE.get(), createSingleItemTable(OBBlocks.GUIDE.get())
+				.apply(CopyComponentsFunction.copyComponents(CopyComponentsFunction.Source.BLOCK_ENTITY).include(OBComponents.GUIDE.get())));
+		add(OBBlocks.BUILDER_GUIDE.get(), createSingleItemTable(OBBlocks.BUILDER_GUIDE.get())
+				.apply(CopyComponentsFunction.copyComponents(CopyComponentsFunction.Source.BLOCK_ENTITY).include(OBComponents.GUIDE.get())));
 		add(OBBlocks.TANK.get(), createSingleItemTable(OBBlocks.TANK.get())
 				.apply(CopyComponentsFunction.copyComponents(CopyComponentsFunction.Source.BLOCK_ENTITY).include(OBComponents.TANK_CONTENTS.get())));
 	}

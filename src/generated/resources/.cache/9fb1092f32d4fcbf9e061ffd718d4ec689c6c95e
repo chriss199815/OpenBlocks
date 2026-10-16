@@ -1,4 +1,4 @@
-// 1.21.1	2026-10-15T08:32:43.7333	Recipes
+// 1.21.1	2026-10-15T09:23:41.35602	Recipes
 f37f622f6aa43ff8c3b05fe0ccd813d9be730420 data/openblocks/advancement/recipes/building_blocks/canvas.json
 4da75c2ec825111de4abddbd9d4caefbb2b578ce data/openblocks/advancement/recipes/building_blocks/scaffolding.json
 930782d897e53db76e7b954eb746d395706bf1bd data/openblocks/advancement/recipes/building_blocks/sky.json
@@ -62,10 +62,12 @@ d37f746a3111352aeb76a52096cdd347eec1d40d data/openblocks/advancement/recipes/mis
 7c05198d76167a7193cd5bf1d712d924a4ecc021 data/openblocks/advancement/recipes/redstone/fan.json
 cb17206668799abdf63be661df9bb38c4f0eb645 data/openblocks/advancement/recipes/redstone/item_dropper.json
 f15d155564efdd7b90149180048e39ebb3dc916b data/openblocks/advancement/recipes/redstone/target.json
+fa1ee07b8005fd3311410cf930879b09a396cf13 data/openblocks/advancement/recipes/tools/builder_guide.json
 ebd21a4de5ea8aedc25c0f3d0c1333cb0c038b81 data/openblocks/advancement/recipes/tools/cartographer.json
 60df6432d9b6aacaf9c081cc61c0ac54947808c0 data/openblocks/advancement/recipes/tools/cursor.json
 e37963641de2db174e53a0e2d5238530674c4dba data/openblocks/advancement/recipes/tools/dev_null.json
 10099848fe3e3ce083181d5e4ee803c686752984 data/openblocks/advancement/recipes/tools/golden_eye.json
+0b0b3b832299042602a680e46d061615a1e84ed1 data/openblocks/advancement/recipes/tools/guide.json
 da1316e1e210d2aa7fbbf2d625f48257472f7eb7 data/openblocks/advancement/recipes/tools/paintbrush.json
 e6d0b5f50673c6a9cb4cd76f8981da6261fa4807 data/openblocks/advancement/recipes/tools/paintbrush_black.json
 4115bd63049c7d64b2ed6414298e05ac1ef11941 data/openblocks/advancement/recipes/tools/paintbrush_blue.json
@@ -143,6 +145,7 @@ ae023272a12af43454915c61306e7705b99be889 data/openblocks/recipe/blue_elevator.js
 d3553e478c6392d0fdfd3ee59a3ea77ed5dc9dd7 data/openblocks/recipe/brown_elevator.json
 d8cd3743598d7a892129c6ba72cc679bda432f87 data/openblocks/recipe/brown_elevator_rotating.json
 ca031a06b231074220094d7301bb3719c799c609 data/openblocks/recipe/brown_flag.json
+5d2d6d0b5a81e5b5e67d38792067ea5d064a2847 data/openblocks/recipe/builder_guide.json
 ca7fbd8fadfacf30f4fd6aa39daa7c9aebed24bc data/openblocks/recipe/cannon.json
 d506570c1eb5afda4df0f57fe40a646176475a0e data/openblocks/recipe/canvas.json
 d49605bc03676285a0a268212cd72aeb7908a3d5 data/openblocks/recipe/cartographer.json
@@ -169,6 +172,7 @@ e7ab1b8bad826eedc88da370aa20685c5f1a9229 data/openblocks/recipe/gray_flag.json
 9be27b99486738805ded7f5d9489ca690ca5e6c3 data/openblocks/recipe/green_elevator.json
 0ee5fac31fb4480faf818814af1219e9a3375c4f data/openblocks/recipe/green_elevator_rotating.json
 15f448cd29917ba1361fa4baf749e2396adf4c91 data/openblocks/recipe/green_flag.json
+57de1319605f599190ca55221caec240e2660a08 data/openblocks/recipe/guide.json
 152878dda768fab38b745f392e35fa1c74014298 data/openblocks/recipe/hang_glider.json
 7017e6cbe6bc8ec68d5dfe6de0341af790be341b data/openblocks/recipe/item_dropper.json
 50f047aae834d5b8ed6f5117bb689a1d254de7ee data/openblocks/recipe/ladder.json

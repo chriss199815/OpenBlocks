@@ -1,4 +1,4 @@
-// 1.21.1	2026-10-15T08:32:43.732662	Loot Tables
+// 1.21.1	2026-10-15T09:23:41.355239	Loot Tables
 91d0a832c50aab793e108321331f69e01d35cf6b data/openblocks/loot_table/blocks/auto_anvil.json
 76f4eafc1ea0961e4b2199bec14732fba136b0e3 data/openblocks/loot_table/blocks/auto_enchantment_table.json
 f4440d2112f720e00c0f9a7d9381caabbeafe916 data/openblocks/loot_table/blocks/bear_trap.json
@@ -15,6 +15,7 @@ edf562b7977d1cf4838d223b334e5241e4e2be47 data/openblocks/loot_table/blocks/blue_
 c7235d916029e8bfc6cee15f5e9947b1b9d875e8 data/openblocks/loot_table/blocks/brown_elevator.json
 a104c24ecef8132da45b7ebb315d5a3515a21bb7 data/openblocks/loot_table/blocks/brown_elevator_rotating.json
 f8b426ad8f63396b45259ead377632c611ddbb9a data/openblocks/loot_table/blocks/brown_flag.json
+1845bebeefb666838f20ac5224587f6e2384d666 data/openblocks/loot_table/blocks/builder_guide.json
 34938e35027ebfc8686d764b686ba7d50811ed8d data/openblocks/loot_table/blocks/cannon.json
 20602bafd06da7640fd84ebe14e43920abc67669 data/openblocks/loot_table/blocks/canvas.json
 c314caf43dfc2a137ae96996c5ce1dcf78cf52de data/openblocks/loot_table/blocks/canvas_glass.json
@@ -32,6 +33,7 @@ fce05366add91cf075565ad57fe00363aaa6b72d data/openblocks/loot_table/blocks/gray_
 7370eea99293c079c16b6c9eec16f6e7869d7987 data/openblocks/loot_table/blocks/green_elevator.json
 51eb4c8798991b3239560d98a9750bd17d5be45a data/openblocks/loot_table/blocks/green_elevator_rotating.json
 67477fc7ef850ef9b1acb942cea26b34ba4a997b data/openblocks/loot_table/blocks/green_flag.json
+e54868f443a0305ad5f2c72e361b418e4950025a data/openblocks/loot_table/blocks/guide.json
 1c0a9146465b0403632b25c78a73fa9f939f405d data/openblocks/loot_table/blocks/heal.json
 3690b04c1229c5a4d7573e5021c7a10173699341 data/openblocks/loot_table/blocks/item_dropper.json
 391da9885b6242a81a766adf497ee57a1398ec01 data/openblocks/loot_table/blocks/ladder.json

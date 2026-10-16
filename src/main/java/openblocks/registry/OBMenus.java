@@ -13,6 +13,7 @@ import openblocks.menu.DevNullMenu;
 import openblocks.menu.DonationStationMenu;
 import openblocks.menu.DrawingTableMenu;
 import openblocks.menu.PaintMixerMenu;
+import openblocks.menu.GuideMenu;
 import openblocks.menu.ProjectorMenu;
 import openblocks.menu.BlockPlacerMenu;
 import openblocks.menu.ItemDropperMenu;
@@ -37,4 +38,6 @@ public class OBMenus {
 	public static final DeferredHolder<MenuType<?>, MenuType<PaintMixerMenu>> PAINT_MIXER = MENUS.register("paint_mixer", () -> IMenuTypeExtension.create(PaintMixerMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<BigButtonMenu>> BIG_BUTTON = MENUS.register("big_button", () -> IMenuTypeExtension.create(BigButtonMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<ProjectorMenu>> PROJECTOR = MENUS.register("projector", () -> IMenuTypeExtension.create(ProjectorMenu::new));
+
+	public static final DeferredHolder<MenuType<?>, MenuType<GuideMenu>> GUIDE = MENUS.register("guide", () -> IMenuTypeExtension.create(GuideMenu::new));
 }

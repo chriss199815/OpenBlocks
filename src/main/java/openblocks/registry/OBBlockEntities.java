@@ -22,6 +22,7 @@ import openblocks.block.entity.BlockBreakerBlockEntity;
 import openblocks.block.entity.BlockPlacerBlockEntity;
 import openblocks.block.entity.GoldenEggBlockEntity;
 import openblocks.block.entity.GraveBlockEntity;
+import openblocks.block.entity.GuideBlockEntity;
 import openblocks.block.entity.HealBlockEntity;
 import openblocks.block.entity.SkyBlockEntity;
 import openblocks.block.entity.ItemDropperBlockEntity;
@@ -124,4 +125,10 @@ public class OBBlockEntities {
 
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<ProjectorBlockEntity>> PROJECTOR = BLOCK_ENTITIES.register("projector",
 			() -> BlockEntityType.Builder.of(ProjectorBlockEntity::new, OBBlocks.PROJECTOR.get()).build(null));
+
+	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<GuideBlockEntity>> GUIDE = BLOCK_ENTITIES.register("guide",
+			() -> BlockEntityType.Builder.of(GuideBlockEntity::new, OBBlocks.GUIDE.get()).build(null));
+
+	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<GuideBlockEntity.Builder>> BUILDER_GUIDE = BLOCK_ENTITIES.register("builder_guide",
+			() -> BlockEntityType.Builder.of(GuideBlockEntity.Builder::new, OBBlocks.BUILDER_GUIDE.get()).build(null));
 }

@@ -23,6 +23,7 @@ import openblocks.client.gui.DevNullScreen;
 import openblocks.client.gui.DispenserLayoutScreen;
 import openblocks.client.gui.DonationStationScreen;
 import openblocks.client.gui.DrawingTableScreen;
+import openblocks.client.gui.GuideScreen;
 import openblocks.client.gui.PaintMixerScreen;
 import openblocks.client.gui.ProjectorScreen;
 import openblocks.client.gui.ItemDropperScreen;
@@ -92,6 +93,7 @@ public class OpenBlocksClient {
 		NeoForge.EVENT_BUS.addListener(BrickDropInputHandler::onKey);
 		NeoForge.EVENT_BUS.addListener(HeightMapCache::onItemTooltip);
 		NeoForge.EVENT_BUS.addListener(HeightMapCache::onLoggingOut);
+		NeoForge.EVENT_BUS.addListener(GuideRenderer::onRenderHighlight);
 
 		// not earlier: loading the entity class needs its registered data serializer
 		modBus.addListener((FMLClientSetupEvent event) -> Cartographer.clientHighlight = CartographerRenderer::isHighlighted);
@@ -113,6 +115,7 @@ public class OpenBlocksClient {
 		event.register(OBMenus.PAINT_MIXER.get(), PaintMixerScreen::new);
 		event.register(OBMenus.DEV_NULL.get(), DevNullScreen::new);
 		event.register(OBMenus.PROJECTOR.get(), ProjectorScreen::new);
+		event.register(OBMenus.GUIDE.get(), GuideScreen::new);
 	}
 
 	private static void registerRenderers(EntityRenderersEvent.RegisterRenderers event) {
@@ -129,6 +132,8 @@ public class OpenBlocksClient {
 		event.registerBlockEntityRenderer(OBBlockEntities.GOLDEN_EGG.get(), GoldenEggRenderer::new);
 		event.registerBlockEntityRenderer(OBBlockEntities.CANNON.get(), CannonRenderer::new);
 		event.registerBlockEntityRenderer(OBBlockEntities.PROJECTOR.get(), ProjectorRenderer::new);
+		event.registerBlockEntityRenderer(OBBlockEntities.GUIDE.get(), GuideRenderer::new);
+		event.registerBlockEntityRenderer(OBBlockEntities.BUILDER_GUIDE.get(), GuideRenderer::new);
 		event.registerEntityRenderer(OBEntities.NO_FLY_XP_ORB.get(), ExperienceOrbRenderer::new);
 		event.registerEntityRenderer(OBEntities.LUGGAGE.get(), LuggageRenderer::new);
 		event.registerEntityRenderer(OBEntities.MINI_ME.get(), MiniMeRenderer::new);

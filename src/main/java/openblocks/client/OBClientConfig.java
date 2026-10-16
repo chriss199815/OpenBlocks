@@ -12,8 +12,22 @@ public class OBClientConfig {
 	public static final SkyBlock SKY_BLOCK = new SkyBlock(BUILDER);
 	public static final Projector PROJECTOR = new Projector(BUILDER);
 	public static final Tomfoolery TOMFOOLERY = new Tomfoolery(BUILDER);
+	public static final Guide GUIDE = new Guide(BUILDER);
 
 	public static final ModConfigSpec SPEC = BUILDER.build();
+
+	public static class Guide {
+		public final ModConfigSpec.IntValue renderDistance;
+
+		private Guide(ModConfigSpec.Builder builder) {
+			builder.push("guide");
+			// legacy renderDistanceSq took the square
+			renderDistance = builder
+					.comment("Maximum distance (in blocks) at which the shapes of building guides are drawn")
+					.defineInRange("renderDistance", 256, 16, 1024);
+			builder.pop();
+		}
+	}
 
 	public static class Tomfoolery {
 		public final ModConfigSpec.BooleanValue doItWhileTyping;

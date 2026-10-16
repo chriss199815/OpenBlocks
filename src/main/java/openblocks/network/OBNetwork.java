@@ -17,5 +17,6 @@ public class OBNetwork {
 		registrar.playToServer(HeightMapRequestPayload.TYPE, HeightMapRequestPayload.STREAM_CODEC, HeightMapRequestPayload::handle);
 		registrar.playToClient(HeightMapPayload.TYPE, HeightMapPayload.STREAM_CODEC, HeightMapPayload::handle);
 		registrar.playToClient(HeightMapUpdatesPayload.TYPE, HeightMapUpdatesPayload.STREAM_CODEC, HeightMapUpdatesPayload::handle);
+		registrar.playToClient(GuideAnimationPayload.TYPE, GuideAnimationPayload.STREAM_CODEC, GuideAnimationPayload::handle);
 	}
 }

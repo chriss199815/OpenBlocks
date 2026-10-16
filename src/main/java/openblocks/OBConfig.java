@@ -30,8 +30,23 @@ public class OBConfig {
 	public static final Egg EGG = new Egg(BUILDER);
 	public static final Tomfoolery TOMFOOLERY = new Tomfoolery(BUILDER);
 	public static final Projector PROJECTOR = new Projector(BUILDER);
+	public static final Guide GUIDE = new Guide(BUILDER);
 
 	public static final ModConfigSpec SPEC = BUILDER.build();
+
+	public static class Guide {
+		public final ModConfigSpec.IntValue redstoneSensitivity;
+
+		// renderDistance is in the client config, useAdvancedRenderer is gone; legacy applied redstoneSensitivity to all
+		// guides (default 1), here each guide has its own mode, set in its GUI
+		private Guide(ModConfigSpec.Builder builder) {
+			builder.push("guide");
+			redstoneSensitivity = builder
+					.comment("How newly placed building guides react to redstone (can be changed per guide in its GUI). 0 - always shown, 1 - shown when powered, -1 - shown when not powered")
+					.defineInRange("redstoneSensitivity", 0, -1, 1);
+			builder.pop();
+		}
+	}
 
 	public static class Projector {
 		public final ModConfigSpec.BooleanValue lightUpWhenWorking;

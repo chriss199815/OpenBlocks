@@ -37,6 +37,7 @@ import openblocks.block.FanBlock;
 import openblocks.block.FlagBlock;
 import openblocks.block.GoldenEggBlock;
 import openblocks.block.GraveBlock;
+import openblocks.block.GuideBlock;
 import openblocks.block.HealBlock;
 import openblocks.block.ItemDropperBlock;
 import openblocks.block.JadedLadderBlock;
@@ -291,6 +292,19 @@ public class OBBlocks {
 			.requiresCorrectToolForDrops()
 			.noOcclusion()
 			.sound(SoundType.METAL)));
+
+	// items registered in OBItems, they keep the settings; light like legacy (0.6)
+	public static final DeferredBlock<GuideBlock> GUIDE = BLOCKS.register("guide", () -> new GuideBlock(guideProperties()));
+	public static final DeferredBlock<GuideBlock.Builder> BUILDER_GUIDE = BLOCKS.register("builder_guide", () -> new GuideBlock.Builder(guideProperties()));
+
+	private static BlockBehaviour.Properties guideProperties() {
+		return BlockBehaviour.Properties.of()
+				.mapColor(MapColor.STONE)
+				.strength(1.0f)
+				.lightLevel(state -> 9)
+				.noOcclusion()
+				.sound(SoundType.STONE);
+	}
 
 	private static BlockBehaviour.Properties skyProperties() {
 		return BlockBehaviour.Properties.of()

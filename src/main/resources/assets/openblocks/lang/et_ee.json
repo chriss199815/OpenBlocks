@@ -31,7 +31,7 @@
   "openblocks.misc.url": "URL: %s",
   "openblocks.misc.type": "Tüüp: %s",
   "openblocks.misc.uses": "Uses: %.2f",
-  "openblocks.misc.color": "Värv: %06X",
+  "openblocks.misc.color": "Värv: #%s",
   "openblocks.misc.mode": "Placement mode: %s",
   "openblocks.misc.mode.block": "Plokk",
   "openblocks.misc.mode.panel": "Paneel",

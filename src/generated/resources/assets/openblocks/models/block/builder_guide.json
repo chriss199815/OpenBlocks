@@ -1,0 +1,87 @@
+{
+  "parent": "minecraft:block/block",
+  "elements": [
+    {
+      "faces": {
+        "down": {
+          "cullface": "down",
+          "texture": "#end"
+        },
+        "east": {
+          "cullface": "east",
+          "texture": "#side"
+        },
+        "north": {
+          "cullface": "north",
+          "texture": "#side"
+        },
+        "south": {
+          "cullface": "south",
+          "texture": "#side"
+        },
+        "up": {
+          "cullface": "up",
+          "texture": "#end"
+        },
+        "west": {
+          "cullface": "west",
+          "texture": "#side"
+        }
+      },
+      "from": [
+        0,
+        0,
+        0
+      ],
+      "to": [
+        16,
+        16,
+        16
+      ]
+    },
+    {
+      "faces": {
+        "down": {
+          "rotation": 90,
+          "texture": "#center"
+        },
+        "east": {
+          "rotation": 90,
+          "texture": "#center"
+        },
+        "north": {
+          "rotation": 180,
+          "texture": "#center"
+        },
+        "south": {
+          "rotation": 270,
+          "texture": "#center"
+        },
+        "up": {
+          "rotation": 180,
+          "texture": "#center"
+        },
+        "west": {
+          "texture": "#center"
+        }
+      },
+      "from": [
+        6,
+        6,
+        6
+      ],
+      "to": [
+        10,
+        10,
+        10
+      ]
+    }
+  ],
+  "render_type": "minecraft:translucent",
+  "textures": {
+    "center": "openblocks:block/guide_center_ender",
+    "end": "openblocks:block/guide_top_new",
+    "particle": "openblocks:block/guide_side_new",
+    "side": "openblocks:block/guide_side_new"
+  }
+}

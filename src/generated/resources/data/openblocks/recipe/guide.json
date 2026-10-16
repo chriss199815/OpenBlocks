@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "openblocks:guide",
+  "key": {
+    "g": {
+      "tag": "c:glass_blocks"
+    },
+    "r": {
+      "tag": "c:dusts/redstone"
+    },
+    "t": {
+      "item": "minecraft:torch"
+    }
+  },
+  "pattern": [
+    "grg",
+    "gtg",
+    "grg"
+  ],
+  "result": {
+    "count": 1,
+    "id": "openblocks:guide"
+  }
+}

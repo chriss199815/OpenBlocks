@@ -513,6 +513,32 @@ public class OBRecipeProvider extends RecipeProvider {
 		projector(output);
 
 		genericItems(output);
+		guides(output);
+	}
+
+	private void guides(RecipeOutput output) {
+		ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, OBBlocks.GUIDE.get())
+				.group("openblocks:guide")
+				.pattern("grg")
+				.pattern("gtg")
+				.pattern("grg")
+				.define('r', Tags.Items.DUSTS_REDSTONE)
+				.define('t', Items.TORCH)
+				.define('g', Tags.Items.GLASS_BLOCKS)
+				.unlockedBy("has_redstone", has(Tags.Items.DUSTS_REDSTONE))
+				.save(output);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, OBBlocks.BUILDER_GUIDE.get())
+				.group("openblocks:builder_guide")
+				.pattern("grg")
+				.pattern("ete")
+				.pattern("grg")
+				.define('r', Tags.Items.DUSTS_REDSTONE)
+				.define('t', Items.TORCH)
+				.define('e', Tags.Items.ENDER_PEARLS)
+				.define('g', Tags.Items.GLASS_BLOCKS)
+				.unlockedBy("has_ender_pearl", has(Tags.Items.ENDER_PEARLS))
+				.save(output);
 	}
 
 	/**

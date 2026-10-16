@@ -11,6 +11,7 @@ import net.neoforged.neoforge.fluids.SimpleFluidContent;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import openblocks.OpenBlocks;
+import openblocks.common.GuideSettings;
 import openblocks.common.HeightMapData;
 import openblocks.common.TrophyType;
 import openblocks.entity.CartographerData;
@@ -94,4 +95,11 @@ public class OBComponents {
 	 */
 	public static final DeferredHolder<DataComponentType<?>, DataComponentType<CartographerData>> CARTOGRAPHER = COMPONENTS.registerComponentType("cartographer",
 			builder -> builder.persistent(CartographerData.CODEC).networkSynchronized(CartographerData.STREAM_CODEC));
+
+	/**
+	 * Size, shape and marker color of a broken building guide; replaces the legacy {@code NegX}…{@code PosZ},
+	 * {@code Mode} and {@code Color} tags.
+	 */
+	public static final DeferredHolder<DataComponentType<?>, DataComponentType<GuideSettings>> GUIDE = COMPONENTS.registerComponentType("guide",
+			builder -> builder.persistent(GuideSettings.CODEC).networkSynchronized(GuideSettings.STREAM_CODEC));
 }

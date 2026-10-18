@@ -523,6 +523,19 @@ public class OBRecipeProvider extends RecipeProvider {
 		imaginary(output);
 		crane(output);
 		sonicGlasses(output);
+		villageHighlighter(output);
+	}
+
+	private static void villageHighlighter(RecipeOutput output) {
+		ShapedRecipeBuilder.shaped(RecipeCategory.REDSTONE, OBBlocks.VILLAGE_HIGHLIGHTER.get())
+				.pattern("www")
+				.pattern("wew")
+				.pattern("ccc")
+				.define('w', ItemTags.PLANKS)
+				.define('e', Tags.Items.GEMS_EMERALD)
+				.define('c', Tags.Items.COBBLESTONES)
+				.unlockedBy("has_emerald", has(Tags.Items.GEMS_EMERALD))
+				.save(output);
 	}
 
 	private static void sonicGlasses(RecipeOutput output) {

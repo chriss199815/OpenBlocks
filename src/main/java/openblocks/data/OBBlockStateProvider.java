@@ -33,6 +33,7 @@ import openblocks.block.GuideBlock;
 import openblocks.block.ImaginaryBlock;
 import openblocks.block.SprinklerBlock;
 import openblocks.block.TargetBlock;
+import openblocks.block.VillageHighlighterBlock;
 import openblocks.block.entity.VacuumHopperBlockEntity;
 import openblocks.common.GuideOrientation;
 import openblocks.common.TankEdge;
@@ -250,6 +251,7 @@ public class OBBlockStateProvider extends BlockStateProvider {
 		bigButton(OBBlocks.BIG_BUTTON.get(), mcLoc("block/stone"));
 		bigButton(OBBlocks.BIG_BUTTON_WOOD.get(), mcLoc("block/oak_planks"));
 		target();
+		villageHighlighter();
 		path();
 
 		// all states share the inactive look, active sky blocks are drawn by SkyBlockRenderer
@@ -716,6 +718,52 @@ public class OBBlockStateProvider extends BlockStateProvider {
 					face.texture("#all").uvs(0, 0, 14, dir.getAxis().isHorizontal()? height : 14);
 					if (dir == Direction.DOWN) face.cullface(Direction.DOWN);
 				})
+				.end();
+	}
+
+	/**
+	 * Legacy village model: a house with a roof and a step in front (north); powered with the active side and back
+	 * textures. The front faces the player who placed it.
+	 */
+	private void villageHighlighter() {
+		final ModelFile inactive = villageModel("village_highlighter", modLoc("block/village_side"), modLoc("block/village_back"));
+		final ModelFile active = villageModel("village_highlighter_active", modLoc("block/village_side_active"), modLoc("block/village_back_active"));
+		horizontalBlock(OBBlocks.VILLAGE_HIGHLIGHTER.get(), state -> state.getValue(VillageHighlighterBlock.POWERED)? active : inactive, 180);
+		simpleBlockItem(OBBlocks.VILLAGE_HIGHLIGHTER.get(), inactive);
+	}
+
+	private ModelFile villageModel(String name, ResourceLocation side, ResourceLocation back) {
+		return models().withExistingParent(name, mcLoc("block/block"))
+				.texture("top", modLoc("block/village_top"))
+				.texture("particle", modLoc("block/village_top"))
+				.texture("back", back)
+				.texture("side", side)
+				.texture("front", modLoc("block/village_front"))
+				.texture("bottom", modLoc("block/village_bottom"))
+				// main
+				.element().from(0, 0, 1).to(16, 14, 15)
+				.face(Direction.NORTH).uvs(0, 2, 16, 16).texture("#front").end()
+				.face(Direction.EAST).uvs(0, 2, 14, 16).texture("#side").cullface(Direction.EAST).end()
+				.face(Direction.SOUTH).uvs(0, 2, 16, 16).texture("#back").end()
+				.face(Direction.WEST).uvs(0, 2, 14, 16).texture("#side").cullface(Direction.WEST).end()
+				.face(Direction.UP).uvs(0, 0, 16, 14).texture("#top").end()
+				.face(Direction.DOWN).uvs(0, 0, 16, 14).texture("#bottom").cullface(Direction.DOWN).end()
+				.end()
+				// roof
+				.element().from(2, 14, 3).to(14, 16, 13)
+				.face(Direction.NORTH).uvs(2, 0, 14, 2).texture("#front").end()
+				.face(Direction.EAST).uvs(2, 0, 12, 2).texture("#side").end()
+				.face(Direction.SOUTH).uvs(2, 0, 14, 2).texture("#back").end()
+				.face(Direction.WEST).uvs(2, 0, 12, 2).texture("#side").end()
+				.face(Direction.UP).uvs(2, 2, 14, 12).texture("#top").cullface(Direction.UP).end()
+				.end()
+				// step
+				.element().from(6, 0, -1).to(10, 1, 1)
+				.face(Direction.NORTH).uvs(6, 15, 10, 16).texture("#front").cullface(Direction.NORTH).end()
+				.face(Direction.EAST).uvs(14, 15, 16, 16).texture("#side").end()
+				.face(Direction.WEST).uvs(14, 15, 16, 16).texture("#side").end()
+				.face(Direction.UP).uvs(6, 14, 10, 16).texture("#top").end()
+				.face(Direction.DOWN).uvs(6, 14, 10, 16).texture("#bottom").cullface(Direction.DOWN).end()
 				.end();
 	}
 

@@ -30,6 +30,7 @@ import openblocks.block.entity.ItemDropperBlockEntity;
 import openblocks.block.entity.TankBlockEntity;
 import openblocks.block.entity.TrophyBlockEntity;
 import openblocks.block.entity.VacuumHopperBlockEntity;
+import openblocks.block.entity.VillageHighlighterBlockEntity;
 import openblocks.block.entity.XpBottlerBlockEntity;
 import openblocks.block.entity.XpDrainBlockEntity;
 import openblocks.block.entity.XpShowerBlockEntity;
@@ -133,6 +134,8 @@ public class OBBlockEntities {
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<GuideBlockEntity.Builder>> BUILDER_GUIDE = BLOCK_ENTITIES.register("builder_guide",
 			() -> BlockEntityType.Builder.of(GuideBlockEntity.Builder::new, OBBlocks.BUILDER_GUIDE.get()).build(null));
 
+	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<VillageHighlighterBlockEntity>> VILLAGE_HIGHLIGHTER = BLOCK_ENTITIES.register("village_highlighter",
+			() -> BlockEntityType.Builder.of(VillageHighlighterBlockEntity::new, OBBlocks.VILLAGE_HIGHLIGHTER.get()).build(null));
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<ImaginaryBlockEntity>> IMAGINARY = BLOCK_ENTITIES.register("imaginary",
 			() -> BlockEntityType.Builder.of(ImaginaryBlockEntity::new, OBBlocks.IMAGINARY.get()).build(null));
 }

@@ -47,6 +47,7 @@ public class OBBlockTagsProvider extends BlockTagsProvider {
 		pickaxe.add(OBBlocks.GOLDEN_EGG.get());
 		pickaxe.add(OBBlocks.CANNON.get());
 		pickaxe.add(OBBlocks.PROJECTOR.get());
+		pickaxe.add(OBBlocks.VILLAGE_HIGHLIGHTER.get());
 
 		// empty by default, for packs and other mods
 		tag(HeightMapBuilder.INVISIBLE);

@@ -1,4 +1,4 @@
-// 1.21.1	2026-10-18T18:59:57.655359	Recipes
+// 1.21.1	2026-10-18T19:09:23.209138	Recipes
 f37f622f6aa43ff8c3b05fe0ccd813d9be730420 data/openblocks/advancement/recipes/building_blocks/canvas.json
 4da75c2ec825111de4abddbd9d4caefbb2b578ce data/openblocks/advancement/recipes/building_blocks/scaffolding.json
 930782d897e53db76e7b954eb746d395706bf1bd data/openblocks/advancement/recipes/building_blocks/sky.json
@@ -64,6 +64,7 @@ d37f746a3111352aeb76a52096cdd347eec1d40d data/openblocks/advancement/recipes/mis
 7c05198d76167a7193cd5bf1d712d924a4ecc021 data/openblocks/advancement/recipes/redstone/fan.json
 cb17206668799abdf63be661df9bb38c4f0eb645 data/openblocks/advancement/recipes/redstone/item_dropper.json
 f15d155564efdd7b90149180048e39ebb3dc916b data/openblocks/advancement/recipes/redstone/target.json
+03f204229ff85250f5c0613f1b337f75be3e2ab9 data/openblocks/advancement/recipes/redstone/village_highlighter.json
 fa1ee07b8005fd3311410cf930879b09a396cf13 data/openblocks/advancement/recipes/tools/builder_guide.json
 ebd21a4de5ea8aedc25c0f3d0c1333cb0c038b81 data/openblocks/advancement/recipes/tools/cartographer.json
 ff230adc4a74543856cdd6a2848975ccb8819287 data/openblocks/advancement/recipes/tools/crane_backpack.json
@@ -291,6 +292,7 @@ c0fc811c99d3c7e05bc583bbe10615e9ec0e2d3e data/openblocks/recipe/target.json
 4d21558bdc5247563af6f8909d873059bf6fedc7 data/openblocks/recipe/tasty_clay.json
 6d6f5e9214be50cb69d5951037ea3460d384e1c8 data/openblocks/recipe/unprepared_stencil.json
 1358b25df1799e007bdcc1a585e4926e5218a84e data/openblocks/recipe/vacuum_hopper.json
+7af512ba57307f471c4f992462da61102ee4b8da data/openblocks/recipe/village_highlighter.json
 f0ad4f5779decdf242bb4891f50addde723743f5 data/openblocks/recipe/white_elevator.json
 ec6ac9697bd441d0e0c412cb708479c4fc43d098 data/openblocks/recipe/white_elevator_rotating.json
 697024afb8093170af049576b03f720e413cba4a data/openblocks/recipe/white_flag.json

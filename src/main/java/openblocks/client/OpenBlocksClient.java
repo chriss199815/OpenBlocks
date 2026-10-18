@@ -150,6 +150,7 @@ public class OpenBlocksClient {
 		event.registerBlockEntityRenderer(OBBlockEntities.GUIDE.get(), GuideRenderer::new);
 		event.registerBlockEntityRenderer(OBBlockEntities.BUILDER_GUIDE.get(), GuideRenderer::new);
 		event.registerBlockEntityRenderer(OBBlockEntities.IMAGINARY.get(), ImaginaryRenderer::new);
+		event.registerBlockEntityRenderer(OBBlockEntities.VILLAGE_HIGHLIGHTER.get(), VillageHighlighterRenderer::new);
 		event.registerEntityRenderer(OBEntities.NO_FLY_XP_ORB.get(), ExperienceOrbRenderer::new);
 		event.registerEntityRenderer(OBEntities.LUGGAGE.get(), LuggageRenderer::new);
 		event.registerEntityRenderer(OBEntities.MINI_ME.get(), MiniMeRenderer::new);

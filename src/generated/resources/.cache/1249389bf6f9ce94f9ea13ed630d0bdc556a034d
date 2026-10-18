@@ -1,4 +1,4 @@
-// 1.21.1	2026-10-18T18:59:57.653078	Block States: openblocks
+// 1.21.1	2026-10-18T19:09:23.19686	Block States: openblocks
 909bae1340933de5e494ee6692d1d88aeabf4f33 assets/openblocks/blockstates/auto_anvil.json
 aca132b5918ec066ede0f817145d0ac0649c84a9 assets/openblocks/blockstates/auto_enchantment_table.json
 9be1c7ce94b3232fe19c46a8965abe89ae2d898a assets/openblocks/blockstates/bear_trap.json
@@ -76,6 +76,7 @@ a5fd6018d2eca7b2ba34f08d9babe797f726dcfc assets/openblocks/blockstates/sprinkler
 ad1688bc736cad303db2ca214f49d691f2342d43 assets/openblocks/blockstates/target.json
 251172a855bac381056cd1213faba3f6282c61bd assets/openblocks/blockstates/trophy.json
 9927a88f12911f158a561f0291cb946f9573dd32 assets/openblocks/blockstates/vacuum_hopper.json
+907f1d35b1dadd303aedc6d36cda2828cff89971 assets/openblocks/blockstates/village_highlighter.json
 c45d5d2e71c34dc43588a6063c8f1025e64a8816 assets/openblocks/blockstates/white_elevator.json
 d13702d1e489422f027636fd4f3a4f64b33332e9 assets/openblocks/blockstates/white_elevator_rotating.json
 6a60ac85a83f62e9071a3664237075d98888182e assets/openblocks/blockstates/white_flag.json
@@ -246,6 +247,8 @@ c099439cd22895a94342f31131873167fa435542 assets/openblocks/models/block/vacuum_h
 45263366b978a7358ba813384f4e9938079a1862 assets/openblocks/models/block/vacuum_hopper_west_both.json
 319fb6af2b59784682db9727875f3412ed9eabc8 assets/openblocks/models/block/vacuum_hopper_west_fluids.json
 f536767e84b68041c0ddd41796f6835d8c809159 assets/openblocks/models/block/vacuum_hopper_west_items.json
+36e3d85107424ccc732b7890277e043b20f68f5d assets/openblocks/models/block/village_highlighter.json
+4a10fa6031fdf2d36c4965d6f5c8f95d92a8ccaa assets/openblocks/models/block/village_highlighter_active.json
 3e364002b680c431cc200969edd6c7869832364c assets/openblocks/models/block/xp_bottler.json
 ef720a5c055c15af9c5a978d521be9b1bec3e19e assets/openblocks/models/block/xp_drain.json
 eedf4d0bee41aa34e8093f792bf9e2551c8fc4ef assets/openblocks/models/block/xp_juice.json
@@ -404,6 +407,7 @@ b16dfa9f94ec0ef044ed26a920f97dd33110fcfc assets/openblocks/models/item/technicol
 9af92ea750823b84a390af9244f517d5e0e9ba78 assets/openblocks/models/item/trophy.json
 4f3d6dcdf12373059c042eb03b24e635845881fa assets/openblocks/models/item/unprepared_stencil.json
 5ab88dd463af6d511a8370edc60ca1a38bd99471 assets/openblocks/models/item/vacuum_hopper.json
+e47c666e200233729a67c760c365c3f0004da682 assets/openblocks/models/item/village_highlighter.json
 d2b8f805473f5db4bc4402f5b4f1864704363649 assets/openblocks/models/item/white_elevator.json
 dd180aef5747a9afe34022df0f8fd345d081cd6c assets/openblocks/models/item/white_elevator_rotating.json
 fcc439f163500f4a2657f61a09c9762b2151a0ed assets/openblocks/models/item/white_flag.json

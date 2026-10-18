@@ -250,7 +250,7 @@
   "block.openblocks.vacuum_hopper": "Vakuumtrichter",
   "block.openblocks.vacuum_hopper.description": "Der Vakuumtrichter saugt Gegenstände und Erfahrungs-Kugeln um sich herum auf. Du kannst die Tabs auf der rechten Seite der Oberfläche verwenden, um auszuwählen, zu welchen Seiten etwas ausgegeben werden soll.",
   "block.openblocks.village_highlighter": "Dorf-Textmarker",
-  "block.openblocks.village_highlighter.description": "Platziere den Dorf-Textmarker in einem Dorf und gib ihm ein Redstone-Signal. Er wird den Umriss des Dorfes darstellen und eine Box im Eisengolem-Spawnbereich zeichnen. Nützlich, wenn du sichergehen willst, dass Dörfer nicht verschmelzen, oder wenn du eine Eisengolem-Farm baust!",
+  "block.openblocks.village_highlighter.description": "Platziere den Dorf-Textmarker in einem Dorf und gib ihm ein Redstone-Signal. Er umrandet die Betten (blau), Arbeitsplätze (gelb) und Glocken (magenta) in der Umgebung, hell wenn frei und dunkel wenn belegt, und zeichnet um jeden Dorfbewohner den Bereich, in dem er einen Eisengolem rufen kann, in einer eigenen Farbe (kräftig, wenn er es gerade könnte). Nützlich, wenn du eine Eisengolem-Farm baust!\nSeine Rückseite gibt ein Redstone-Signal ab, solange es ein freies Bett gibt, in dem sich Dorfbewohner vermehren können.",
   "block.openblocks.donation_station": "Spendenstation",
   "block.openblocks.donation_station.description": "Du magst einen Block oder ein Gegenstand und willst dem Mod-Entwickler ein wenig Anerkennung zeigen? Schmeiß es in die Spendenstation und, wenn wir die Spendenseite der Entwickler kennen, geben wir dir einen Link.",
   "block.openblocks.block_placer": "Blockplatzierer",

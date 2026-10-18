@@ -51,6 +51,7 @@ import openblocks.block.SpongeBlock;
 import openblocks.block.SprinklerBlock;
 import openblocks.block.TankBlock;
 import openblocks.block.TrophyBlock;
+import openblocks.block.VillageHighlighterBlock;
 import openblocks.block.TargetBlock;
 import openblocks.block.VacuumHopperBlock;
 import openblocks.block.XpBottlerBlock;
@@ -294,6 +295,9 @@ public class OBBlocks {
 			.requiresCorrectToolForDrops()
 			.noOcclusion()
 			.sound(SoundType.METAL)));
+
+	public static final DeferredBlock<VillageHighlighterBlock> VILLAGE_HIGHLIGHTER = registerWithItem("village_highlighter",
+			() -> new VillageHighlighterBlock(machineProperties().noOcclusion().isRedstoneConductor((state, level, pos) -> false)));
 
 	// items registered in OBItems, they keep the settings; light like legacy (0.6)
 	public static final DeferredBlock<GuideBlock> GUIDE = BLOCKS.register("guide", () -> new GuideBlock(guideProperties()));

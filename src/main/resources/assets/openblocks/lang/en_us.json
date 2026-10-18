@@ -250,7 +250,7 @@
   "block.openblocks.vacuum_hopper": "Vacuum Hopper",
   "block.openblocks.vacuum_hopper.description": "The vacuum hopper will suck up items and XP orbs around it. You can use the tabs on the right of the interface to select which sides to output to.",
   "block.openblocks.village_highlighter": "Village Highlighter",
-  "block.openblocks.village_highlighter.description": "Drop the village highlighter down in a village and give it a redstone signal. It will outline the perimeter of the village and draw a box in the iron golem spawning area. Useful if you want to make sure villages don't merge into each other or you're making an iron farm!",
+  "block.openblocks.village_highlighter.description": "Drop the village highlighter down in a village and give it a redstone signal. It will outline the beds (blue), job sites (yellow) and bells (magenta) around it, bright while free and dark while claimed, and draw around every villager the area where it can summon an iron golem, in its own color (solid while it could do so right now). Useful if you're making an iron farm!\nIts back emits a redstone signal while there is a free bed for villagers to breed.",
   "block.openblocks.donation_station": "Donation Station",
   "block.openblocks.donation_station.description": "Love a block or item and want to show the mod developer some appreciation? Drop it into the donation station and if we know the authors donation page we'll give you a link.",
   "block.openblocks.block_placer": "Block Placer",

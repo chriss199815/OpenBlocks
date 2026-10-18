@@ -12,6 +12,8 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 import openblocks.OpenBlocks;
 import openblocks.common.StencilPattern;
 import openblocks.item.CartographerItem;
+import openblocks.item.CraneBackpackItem;
+import openblocks.item.CraneControlItem;
 import openblocks.item.CursorItem;
 import openblocks.item.DevNullItem;
 import openblocks.item.EmptyMapItem;
@@ -105,7 +107,9 @@ public class OBItems {
 
 	public static final DeferredItem<Item> UNPREPARED_STENCIL = ITEMS.registerSimpleItem("unprepared_stencil");
 	public static final DeferredItem<Item> SKETCHING_PENCIL = ITEMS.registerSimpleItem("sketching_pencil");
-	// crafting parts of features that are not ported yet (crane backpack)
+	public static final DeferredItem<CraneBackpackItem> CRANE_BACKPACK = ITEMS.register("crane_backpack",
+			() -> new CraneBackpackItem(OBArmorMaterials.CRANE_BACKPACK, new Item.Properties()));
+	public static final DeferredItem<CraneControlItem> CRANE_CONTROL = ITEMS.register("crane_control", () -> new CraneControlItem(new Item.Properties()));
 	public static final DeferredItem<Item> BEAM = ITEMS.registerSimpleItem("beam");
 	public static final DeferredItem<Item> CRANE_ENGINE = ITEMS.registerSimpleItem("crane_engine");
 	public static final DeferredItem<Item> CRANE_MAGNET = ITEMS.registerSimpleItem("crane_magnet");

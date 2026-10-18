@@ -267,7 +267,7 @@
   "itemGroup.tabOpenBlocks": "OpenBlocks",
   "entity.openblocks.luggage": "Equipaje",
   "entity.openblocks.cartographer": "Cartógrafo",
-  "entity.openblocks.block.name": "Bloque Flotante",
+  "entity.openblocks.mounted_block": "Bloque Flotante",
   "entity.openblocks.mini_me": "Mini Yo",
   "fluid.openblocks.xp_juice": "XP Líquida"
 }

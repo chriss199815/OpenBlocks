@@ -5,6 +5,7 @@ import net.minecraft.client.renderer.item.ItemProperties;
 import net.minecraft.world.item.Item;
 import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
 import openblocks.OpenBlocks;
+import openblocks.item.CraneControlItem;
 import openblocks.item.ImaginaryItem;
 import openblocks.item.SlimalyzerItem;
 import openblocks.registry.OBItems;
@@ -24,6 +25,11 @@ public class OBItemProperties {
 			// legacy "mode": the overlay shows the placement mode
 			for (Item item : List.of(OBItems.PENCIL.get(), OBItems.CRAYON.get()))
 				ItemProperties.register(item, OpenBlocks.location("mode"), (stack, level, entity, seed) -> ImaginaryItem.getMode(stack).ordinal());
+			// legacy item states "lift" and "magnet", as ordinals
+			ItemProperties.register(OBItems.CRANE_CONTROL.get(), OpenBlocks.location("lift"),
+					(stack, level, entity, seed) -> CraneControlItem.getLiftState(stack, entity).ordinal());
+			ItemProperties.register(OBItems.CRANE_CONTROL.get(), OpenBlocks.location("magnet"),
+					(stack, level, entity, seed) -> CraneControlItem.getMagnetState(entity).ordinal());
 		});
 	}
 }

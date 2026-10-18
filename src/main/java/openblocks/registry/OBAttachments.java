@@ -9,6 +9,7 @@ import net.neoforged.neoforge.network.codec.NeoForgeStreamCodecs;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.neoforged.neoforge.registries.NeoForgeRegistries;
 import openblocks.OpenBlocks;
+import openblocks.common.CraneState;
 import openblocks.common.PedometerState;
 
 public class OBAttachments {
@@ -38,6 +39,12 @@ public class OBAttachments {
 	 */
 	public static final Supplier<AttachmentType<PedometerState>> PEDOMETER = ATTACHMENT_TYPES.register("pedometer",
 			() -> AttachmentType.builder(PedometerState::new).build());
+
+	/**
+	 * Crane of a player wearing the crane backpack (legacy {@code CraneRegistry}); on both sides, never saved or synced.
+	 */
+	public static final Supplier<AttachmentType<CraneState>> CRANE = ATTACHMENT_TYPES.register("crane",
+			() -> AttachmentType.builder(CraneState::new).build());
 
 	/**
 	 * Bricks the player can drop, filled by eating tasty clay; replaces the legacy {@code bowels} capability. Saved, but

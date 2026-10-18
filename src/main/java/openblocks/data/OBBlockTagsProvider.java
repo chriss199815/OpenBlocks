@@ -4,10 +4,13 @@ import java.util.concurrent.CompletableFuture;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;
+import net.minecraft.world.level.block.Blocks;
+import net.neoforged.neoforge.common.Tags;
 import net.neoforged.neoforge.common.data.BlockTagsProvider;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import openblocks.OpenBlocks;
 import openblocks.common.HeightMapBuilder;
+import openblocks.entity.MountedBlock;
 import openblocks.registry.OBBlocks;
 
 public class OBBlockTagsProvider extends BlockTagsProvider {
@@ -47,6 +50,13 @@ public class OBBlockTagsProvider extends BlockTagsProvider {
 
 		// empty by default, for packs and other mods
 		tag(HeightMapBuilder.INVISIBLE);
+
+		// legacy magnet tile entity whitelist
+		tag(MountedBlock.PICKABLE)
+				.addTag(Tags.Blocks.CHESTS)
+				.add(Blocks.BEACON, Blocks.BREWING_STAND, Blocks.COMMAND_BLOCK, Blocks.CHAIN_COMMAND_BLOCK, Blocks.REPEATING_COMMAND_BLOCK,
+						Blocks.DISPENSER, Blocks.DROPPER, Blocks.ENCHANTING_TABLE, Blocks.FURNACE, Blocks.BLAST_FURNACE, Blocks.SMOKER,
+						Blocks.HOPPER, Blocks.JUKEBOX);
 
 		tag(BlockTags.MINEABLE_WITH_AXE).add(OBBlocks.DRAWING_TABLE.get(), OBBlocks.LADDER.get(), OBBlocks.SPONGE.get());
 		tag(BlockTags.TRAPDOORS).add(OBBlocks.LADDER.get());

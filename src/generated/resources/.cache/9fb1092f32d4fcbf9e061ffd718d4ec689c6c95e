@@ -1,4 +1,4 @@
-// 1.21.1	2026-10-16T19:39:24.712398	Recipes
+// 1.21.1	2026-10-18T17:48:05.254517	Recipes
 f37f622f6aa43ff8c3b05fe0ccd813d9be730420 data/openblocks/advancement/recipes/building_blocks/canvas.json
 4da75c2ec825111de4abddbd9d4caefbb2b578ce data/openblocks/advancement/recipes/building_blocks/scaffolding.json
 930782d897e53db76e7b954eb746d395706bf1bd data/openblocks/advancement/recipes/building_blocks/sky.json
@@ -65,6 +65,8 @@ cb17206668799abdf63be661df9bb38c4f0eb645 data/openblocks/advancement/recipes/red
 f15d155564efdd7b90149180048e39ebb3dc916b data/openblocks/advancement/recipes/redstone/target.json
 fa1ee07b8005fd3311410cf930879b09a396cf13 data/openblocks/advancement/recipes/tools/builder_guide.json
 ebd21a4de5ea8aedc25c0f3d0c1333cb0c038b81 data/openblocks/advancement/recipes/tools/cartographer.json
+ff230adc4a74543856cdd6a2848975ccb8819287 data/openblocks/advancement/recipes/tools/crane_backpack.json
+c2e5d43d64f0711adefaa8ae4e04e1928137ebe1 data/openblocks/advancement/recipes/tools/crane_control.json
 3bd702f309f263274649ea7d086b856ac97d8d0a data/openblocks/advancement/recipes/tools/crayon_black.json
 bf00bb50eb324e5fc0308ea7154fc36910ed315d data/openblocks/advancement/recipes/tools/crayon_blue.json
 a48228e8487d6a01ea51d606eeba409071766b44 data/openblocks/advancement/recipes/tools/crayon_brown.json
@@ -167,6 +169,8 @@ ca031a06b231074220094d7301bb3719c799c609 data/openblocks/recipe/brown_flag.json
 ca7fbd8fadfacf30f4fd6aa39daa7c9aebed24bc data/openblocks/recipe/cannon.json
 d506570c1eb5afda4df0f57fe40a646176475a0e data/openblocks/recipe/canvas.json
 d49605bc03676285a0a268212cd72aeb7908a3d5 data/openblocks/recipe/cartographer.json
+e9bee226b222c2a6a0c55bca2b214a2f2578561b data/openblocks/recipe/crane_backpack.json
+da6ae473850d558b743578f0bccb944d027d88b3 data/openblocks/recipe/crane_control.json
 f81fd75b617176acb0eb2d9801d095f32d7a23ff data/openblocks/recipe/crane_engine.json
 4e9bd0f3ba280b53eb076b864dbc3461d4a50b42 data/openblocks/recipe/crane_magnet.json
 8b149b2e4ae8e33b8b3aa03ca5b6b7720b141044 data/openblocks/recipe/crane_magnet_mirrored.json

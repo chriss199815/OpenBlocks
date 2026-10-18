@@ -301,7 +301,7 @@
   "itemGroup.tabOpenBlocks": "OpenBlocks",
   "entity.openblocks.luggage": "Bagagem",
   "entity.openblocks.cartographer": "Cartógrafo",
-  "entity.openblocks.block.name": "Bloco Flutuante",
+  "entity.openblocks.mounted_block": "Bloco Flutuante",
   "entity.openblocks.mini_me": "Mini Me",
   "fluid.openblocks.xp_juice": "Mini-Eu",
   "entity.Villager.audiophile": "Audiófilo"

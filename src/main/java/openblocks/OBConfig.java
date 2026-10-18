@@ -32,8 +32,33 @@ public class OBConfig {
 	public static final Projector PROJECTOR = new Projector(BUILDER);
 	public static final Guide GUIDE = new Guide(BUILDER);
 	public static final Imaginary IMAGINARY = new Imaginary(BUILDER);
+	public static final Crane CRANE = new Crane(BUILDER);
 
 	public static final ModConfigSpec SPEC = BUILDER.build();
+
+	public static class Crane {
+		public final ModConfigSpec.BooleanValue shiftControl;
+		public final ModConfigSpec.BooleanValue canPickEntities;
+		public final ModConfigSpec.BooleanValue canPickBlocks;
+
+		// doCraneCollisionCheck and the turtle settings are gone; the magnet whitelists are the tags
+		// openblocks:magnet_pickable (entity types and blocks with block entities)
+		private Crane(ModConfigSpec.Builder builder) {
+			builder.push("crane");
+			shiftControl = builder
+					.comment("Use shift to control crane direction (otherwise, toggle every time)")
+					.define("boringMode", true);
+			builder.pop();
+			builder.push("magnet");
+			canPickEntities = builder
+					.comment("Can crane magnet pick entities?")
+					.define("pickEntities", true);
+			canPickBlocks = builder
+					.comment("Can crane magnet pick block?")
+					.define("pickBlocks", true);
+			builder.pop();
+		}
+	}
 
 	public static class Imaginary {
 		public final ModConfigSpec.DoubleValue numberOfUses;

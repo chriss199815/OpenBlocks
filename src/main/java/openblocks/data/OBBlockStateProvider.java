@@ -2,6 +2,7 @@ package openblocks.data;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
 import java.util.Random;
 import net.minecraft.client.renderer.block.model.BlockModel;
 import net.minecraft.core.Direction;
@@ -35,6 +36,7 @@ import openblocks.block.TargetBlock;
 import openblocks.block.entity.VacuumHopperBlockEntity;
 import openblocks.common.GuideOrientation;
 import openblocks.common.TankEdge;
+import openblocks.item.CraneControlItem;
 import openblocks.item.ImaginaryPlacementMode;
 import openblocks.registry.OBBlocks;
 import openblocks.registry.OBItems;
@@ -94,6 +96,8 @@ public class OBBlockStateProvider extends BlockStateProvider {
 				.override().predicate(modLoc("active"), 1).model(slimalyzerActive).end();
 		List.of(OBItems.BEAM, OBItems.CRANE_ENGINE, OBItems.CRANE_MAGNET, OBItems.LINE, OBItems.MAP_CONTROLLER, OBItems.MAP_MEMORY, OBItems.ASSISTANT_BASE)
 				.forEach(item -> itemModels().basicItem(item.get()));
+		itemModels().basicItem(OBItems.CRANE_BACKPACK.get());
+		craneControl();
 		// legacy paintbrush model: handle, plus the paint tinted by OBColorHandlers
 		itemModels().withExistingParent("paintbrush", mcLoc("item/handheld_rod"))
 				.texture("layer0", modLoc("item/paintbrush_handle"))
@@ -503,6 +507,31 @@ public class OBBlockStateProvider extends BlockStateProvider {
 		itemModels().withExistingParent("crayon_glasses", mcLoc("item/generated")).texture("layer0", modLoc("item/glasses_crayon"));
 		itemModels().withExistingParent("technicolor_glasses", mcLoc("item/generated")).texture("layer0", modLoc("item/glasses_technicolor"));
 		itemModels().withExistingParent("serious_glasses", mcLoc("item/generated")).texture("layer0", modLoc("item/glasses_admin"));
+	}
+
+	/**
+	 * Legacy item states of the crane control: base, lift light and magnet light as layers. The base model is idle,
+	 * overrides on {@code openblocks:lift} and {@code openblocks:magnet} cover the other combinations (the last match wins).
+	 */
+	private void craneControl() {
+		final ItemModelBuilder base = craneControlModel("crane_control", CraneControlItem.LiftState.IDLE, CraneControlItem.MagnetState.IDLE);
+		for (CraneControlItem.LiftState lift : CraneControlItem.LiftState.values())
+			for (CraneControlItem.MagnetState magnet : CraneControlItem.MagnetState.values()) {
+				if (lift == CraneControlItem.LiftState.IDLE && magnet == CraneControlItem.MagnetState.IDLE) continue;
+				final String name = "crane_control_" + lift.name().toLowerCase(Locale.ROOT) + "_" + magnet.name().toLowerCase(Locale.ROOT);
+				base.override()
+						.predicate(modLoc("lift"), lift.ordinal())
+						.predicate(modLoc("magnet"), magnet.ordinal())
+						.model(craneControlModel(name, lift, magnet)).end();
+			}
+	}
+
+	private ItemModelBuilder craneControlModel(String name, CraneControlItem.LiftState lift, CraneControlItem.MagnetState magnet) {
+		final String magnetTexture = magnet == CraneControlItem.MagnetState.DETECTING? "detected" : magnet.name().toLowerCase(Locale.ROOT);
+		return itemModels().withExistingParent(name, mcLoc("item/generated"))
+				.texture("layer0", modLoc("item/manipulator_base"))
+				.texture("layer1", modLoc("item/manipulator_lift_" + lift.name().toLowerCase(Locale.ROOT)))
+				.texture("layer2", modLoc("item/manipulator_magnet_" + magnetTexture));
 	}
 
 	private static String imaginaryModelName(ImaginaryBlock.Shape shape, ImaginaryBlock.Type type) {

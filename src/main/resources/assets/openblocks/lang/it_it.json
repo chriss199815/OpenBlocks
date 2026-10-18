@@ -280,7 +280,7 @@
   "itemGroup.tabOpenBlocks": "OpenBlocks",
   "entity.openblocks.luggage": "Valigia",
   "entity.openblocks.cartographer": "Cartografo",
-  "entity.openblocks.block.name": "Blocco Ondeggiante",
+  "entity.openblocks.mounted_block": "Blocco Ondeggiante",
   "entity.openblocks.mini_me": "Piccolo Me",
   "fluid.openblocks.xp_juice": "Esperienza Liquida"
 }

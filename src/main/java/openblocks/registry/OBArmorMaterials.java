@@ -12,7 +12,8 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 import openblocks.OpenBlocks;
 
 /**
- * Armor materials of the imagination glasses. The textures come from {@code ImaginationGlassesItem.getArmorTexture}.
+ * Armor materials of the imagination glasses and the crane backpack. The textures come from the items'
+ * {@code getArmorTexture}.
  */
 public class OBArmorMaterials {
 
@@ -24,6 +25,11 @@ public class OBArmorMaterials {
 	// the overlay is tinted with the crayon color, see ImaginaryRenderer.registerClientExtensions
 	public static final DeferredHolder<ArmorMaterial, ArmorMaterial> CRAYON_GLASSES = register("crayon_glasses",
 			List.of(new ArmorMaterial.Layer(OpenBlocks.location("crayon_glasses")), new ArmorMaterial.Layer(OpenBlocks.location("crayon_glasses"), "_overlay", true)));
+
+	// like legacy, the stats of iron armor
+	public static final DeferredHolder<ArmorMaterial, ArmorMaterial> CRANE_BACKPACK = ARMOR_MATERIALS.register("crane_backpack",
+			() -> new ArmorMaterial(ArmorMaterials.IRON.value().defense(), ArmorMaterials.IRON.value().enchantmentValue(),
+					SoundEvents.ARMOR_EQUIP_IRON, () -> Ingredient.of(Tags.Items.INGOTS_IRON), List.of(new ArmorMaterial.Layer(OpenBlocks.location("crane_backpack"))), 0, 0));
 
 	// like legacy, the stats of golden armor
 	private static DeferredHolder<ArmorMaterial, ArmorMaterial> register(String name, List<ArmorMaterial.Layer> layers) {

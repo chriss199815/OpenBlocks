@@ -15,7 +15,9 @@ import openblocks.OpenBlocks;
 import openblocks.entity.Cartographer;
 import openblocks.entity.GoldenEye;
 import openblocks.entity.Luggage;
+import openblocks.entity.Magnet;
 import openblocks.entity.MiniMe;
+import openblocks.entity.MountedBlock;
 import openblocks.entity.NoFlyXpOrb;
 
 public class OBEntities {
@@ -53,6 +55,22 @@ public class OBEntities {
 					.clientTrackingRange(4)
 					.updateInterval(5)
 					.build("cartographer"));
+
+	// synced every tick, like legacy
+	public static final DeferredHolder<EntityType<?>, EntityType<Magnet>> MAGNET = ENTITIES.register("magnet",
+			() -> EntityType.Builder.<Magnet>of(Magnet::new, MobCategory.MISC)
+					.sized(Magnet.SIZE, Magnet.SIZE)
+					.fireImmune()
+					.clientTrackingRange(4)
+					.updateInterval(1)
+					.build("magnet"));
+
+	public static final DeferredHolder<EntityType<?>, EntityType<MountedBlock>> MOUNTED_BLOCK = ENTITIES.register("mounted_block",
+			() -> EntityType.Builder.<MountedBlock>of(MountedBlock::new, MobCategory.MISC)
+					.sized(0.98f, 0.98f)
+					.clientTrackingRange(4)
+					.updateInterval(1)
+					.build("mounted_block"));
 
 	public static final DeferredRegister<EntityDataSerializer<?>> DATA_SERIALIZERS = DeferredRegister.create(NeoForgeRegistries.Keys.ENTITY_DATA_SERIALIZERS, OpenBlocks.MODID);
 

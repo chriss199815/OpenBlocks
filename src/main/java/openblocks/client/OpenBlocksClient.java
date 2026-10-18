@@ -81,6 +81,10 @@ public class OpenBlocksClient {
 		modBus.addListener(ProjectorRenderer::registerAdditional);
 		modBus.addListener(CartographerRenderer::registerLayerDefinitions);
 		modBus.addListener(ImaginaryRenderer::registerClientExtensions);
+		modBus.addListener(CraneRenderer::registerLayerDefinitions);
+		modBus.addListener(CraneRenderer::onAddLayers);
+		modBus.addListener(CraneRenderer::registerClientExtensions);
+		modBus.addListener(MagnetRenderer::registerLayerDefinitions);
 
 		NeoForge.EVENT_BUS.addListener(ElevatorInputHandler::onMovementInput);
 		NeoForge.EVENT_BUS.addListener(HangGliderRenderer::onRenderPlayerPre);
@@ -95,6 +99,7 @@ public class OpenBlocksClient {
 		NeoForge.EVENT_BUS.addListener(HeightMapCache::onItemTooltip);
 		NeoForge.EVENT_BUS.addListener(HeightMapCache::onLoggingOut);
 		NeoForge.EVENT_BUS.addListener(GuideRenderer::onRenderHighlight);
+		NeoForge.EVENT_BUS.addListener(CraneRenderer::onRenderLevelStage);
 
 		// not earlier: loading the entity class needs its registered data serializer
 		modBus.addListener((FMLClientSetupEvent event) -> Cartographer.clientHighlight = CartographerRenderer::isHighlighted);
@@ -140,6 +145,8 @@ public class OpenBlocksClient {
 		event.registerEntityRenderer(OBEntities.LUGGAGE.get(), LuggageRenderer::new);
 		event.registerEntityRenderer(OBEntities.MINI_ME.get(), MiniMeRenderer::new);
 		event.registerEntityRenderer(OBEntities.CARTOGRAPHER.get(), CartographerRenderer::new);
+		event.registerEntityRenderer(OBEntities.MAGNET.get(), MagnetRenderer::new);
+		event.registerEntityRenderer(OBEntities.MOUNTED_BLOCK.get(), MountedBlockRenderer::new);
 		// like legacy, drawn like a snowball
 		event.registerEntityRenderer(OBEntities.GOLDEN_EYE.get(), ThrownItemRenderer::new);
 	}

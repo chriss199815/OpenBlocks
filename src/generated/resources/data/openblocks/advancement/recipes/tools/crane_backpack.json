@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_crane_engine": {
+      "conditions": {
+        "items": [
+          {
+            "items": "openblocks:crane_engine"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "openblocks:crane_backpack"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_crane_engine"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "openblocks:crane_backpack"
+    ]
+  }
+}

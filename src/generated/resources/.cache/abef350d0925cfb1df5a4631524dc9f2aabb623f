@@ -1,4 +1,4 @@
-// 1.21.1	2026-10-15T08:32:43.734094	Tags for minecraft:block mod id openblocks
+// 1.21.1	2026-10-18T17:48:05.255516	Tags for minecraft:block mod id openblocks
 ea3b8e52ebb7659619873decbce6099bbd4626a0 data/minecraft/tags/block/climbable.json
 9696dcd7778b16ec87ea56cb519dd003d7008343 data/minecraft/tags/block/dragon_immune.json
 f74a6900bab81e3aca4509f88a398a9ffccac8b3 data/minecraft/tags/block/mineable/axe.json
@@ -9,3 +9,4 @@ eb1a1505d3c085660f9c97ba8c123886d5da802f data/minecraft/tags/block/trapdoors.jso
 9696dcd7778b16ec87ea56cb519dd003d7008343 data/minecraft/tags/block/wither_immune.json
 02242be3b1b17e3ddf31a52492ecdaa6d992fcbb data/minecraft/tags/block/wooden_buttons.json
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/openblocks/tags/block/invisible_to_cartographer.json
+d9930643e0a85a0d19921762023d6a7d816abf2b data/openblocks/tags/block/magnet_pickable.json

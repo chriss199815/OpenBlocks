@@ -182,7 +182,7 @@
   "itemGroup.tabOpenBlocks": "오픈블럭[OpenBlocks]",
   "entity.openblocks.luggage": "여행용 가방",
   "entity.openblocks.cartographer": "제작자",
-  "entity.openblocks.block.name": "떨어지는 블럭",
+  "entity.openblocks.mounted_block": "떨어지는 블럭",
   "entity.openblocks.mini_me": "미니미",
   "fluid.openblocks.xp_juice": "액체 경험치"
 }

@@ -1,4 +1,4 @@
-// 1.21.1	2026-10-16T19:39:24.709374	Block States: openblocks
+// 1.21.1	2026-10-18T17:48:05.252112	Block States: openblocks
 909bae1340933de5e494ee6692d1d88aeabf4f33 assets/openblocks/blockstates/auto_anvil.json
 aca132b5918ec066ede0f817145d0ac0649c84a9 assets/openblocks/blockstates/auto_enchantment_table.json
 9be1c7ce94b3232fe19c46a8965abe89ae2d898a assets/openblocks/blockstates/bear_trap.json
@@ -277,6 +277,16 @@ a02b9702555fb557c398b3a2d83dac35065759b9 assets/openblocks/models/item/cartograp
 b4642da05af0fca1ea4993cfdfeb191793d44092 assets/openblocks/models/item/corner2_stencil.json
 ebd3f8520073b4dfac0c85da7cad62fdf50914e4 assets/openblocks/models/item/corner3_stencil.json
 d60848a3f9109b979e6a9edf5ab1f30196127e62 assets/openblocks/models/item/corner_stencil.json
+7a3d78d292555da80122095eaa6c458ec41d176e assets/openblocks/models/item/crane_backpack.json
+3a99ff1c6237103bba7dc97a2bb7b4372ef8f466 assets/openblocks/models/item/crane_control.json
+ecddffc6ee376edbb25e1fdbb4a661b87a387962 assets/openblocks/models/item/crane_control_down_detecting.json
+368cf67d8e5fcfda89d5b9a7c9e42d7e8d30290f assets/openblocks/models/item/crane_control_down_idle.json
+6279e33537f92b4671b6aeaf5ac8bf697ff63bbb assets/openblocks/models/item/crane_control_down_locked.json
+297280406d6ce6daaccfc3a9501bf203efa45c18 assets/openblocks/models/item/crane_control_idle_detecting.json
+5af25ac81f03fb9606447053e9f6d54d3ad54e91 assets/openblocks/models/item/crane_control_idle_locked.json
+fe631e53a63932b1a81fa06188a1e8c7a5724f3f assets/openblocks/models/item/crane_control_up_detecting.json
+b4f0be88525012de3ba5fee43bdbaaebe74a18dc assets/openblocks/models/item/crane_control_up_idle.json
+523a623d54a2039bc114ad3da641f8bb4e7bc2cd assets/openblocks/models/item/crane_control_up_locked.json
 33821c7ec3911830c6955c7472b15d222e49ba58 assets/openblocks/models/item/crane_engine.json
 4b939bc187ef99cc0c08f46c875804db65d7c0f8 assets/openblocks/models/item/crane_magnet.json
 75929d331f7e16b74cee735cd86032255253b82e assets/openblocks/models/item/crayon.json

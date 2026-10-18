@@ -292,7 +292,7 @@
   "itemGroup.tabOpenBlocks": "OpenBlocks",
   "entity.openblocks.luggage": "行李箱",
   "entity.openblocks.cartographer": "制图机器人",
-  "entity.openblocks.block.name": "悬浮方块",
+  "entity.openblocks.mounted_block": "悬浮方块",
   "entity.openblocks.mini_me": "迷你替身",
   "fluid.openblocks.xp_juice": "液态经验",
   "entity.Villager.audiophile": "唱片售卖员"

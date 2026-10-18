@@ -521,6 +521,29 @@ public class OBRecipeProvider extends RecipeProvider {
 		genericItems(output);
 		guides(output);
 		imaginary(output);
+		crane(output);
+	}
+
+	private static void crane(RecipeOutput output) {
+		ShapelessRecipeBuilder.shapeless(RecipeCategory.TOOLS, OBItems.CRANE_BACKPACK.get())
+				.requires(OBItems.CRANE_ENGINE.get())
+				.requires(OBItems.CRANE_MAGNET.get())
+				.requires(OBItems.BEAM.get(), 2)
+				.requires(OBItems.LINE.get(), 3)
+				.requires(Tags.Items.LEATHERS)
+				.unlockedBy("has_crane_engine", has(OBItems.CRANE_ENGINE.get()))
+				.save(output);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, OBItems.CRANE_CONTROL.get())
+				.pattern("ili")
+				.pattern("grg")
+				.pattern("iri")
+				.define('i', Tags.Items.INGOTS_IRON)
+				.define('l', Tags.Items.DUSTS_GLOWSTONE)
+				.define('g', Tags.Items.NUGGETS_GOLD)
+				.define('r', Tags.Items.DUSTS_REDSTONE)
+				.unlockedBy("has_crane_backpack", has(OBItems.CRANE_BACKPACK.get()))
+				.save(output);
 	}
 
 	/**

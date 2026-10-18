@@ -122,4 +122,10 @@ public class OBComponents {
 	 */
 	public static final DeferredHolder<DataComponentType<?>, DataComponentType<Integer>> CRAYON_COLOR = COMPONENTS.registerComponentType("crayon_color",
 			builder -> builder.persistent(Codec.INT).networkSynchronized(ByteBufCodecs.INT));
+
+	/**
+	 * Character of a glyph, as a code point; replaces the legacy item damage (an index into the font sheet).
+	 */
+	public static final DeferredHolder<DataComponentType<?>, DataComponentType<Integer>> GLYPH = COMPONENTS.registerComponentType("glyph",
+			builder -> builder.persistent(Codec.INT).networkSynchronized(ByteBufCodecs.VAR_INT));
 }

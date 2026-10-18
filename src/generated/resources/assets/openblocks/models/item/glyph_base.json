@@ -1,0 +1,64 @@
+{
+  "elements": [
+    {
+      "faces": {
+        "down": {
+          "texture": "#material",
+          "uv": [
+            0.0,
+            15.0,
+            16.0,
+            16.0
+          ]
+        },
+        "east": {
+          "texture": "#material",
+          "uv": [
+            14.0,
+            0.0,
+            15.0,
+            16.0
+          ]
+        },
+        "north": {
+          "texture": "#material"
+        },
+        "south": {
+          "texture": "#material"
+        },
+        "up": {
+          "texture": "#material",
+          "uv": [
+            0.0,
+            0.0,
+            16.0,
+            1.0
+          ]
+        },
+        "west": {
+          "texture": "#material",
+          "uv": [
+            0.0,
+            0.0,
+            1.0,
+            16.0
+          ]
+        }
+      },
+      "from": [
+        0,
+        0,
+        7.5
+      ],
+      "to": [
+        16,
+        16,
+        8.5
+      ]
+    }
+  ],
+  "textures": {
+    "material": "openblocks:item/stencil",
+    "particle": "openblocks:item/stencil"
+  }
+}

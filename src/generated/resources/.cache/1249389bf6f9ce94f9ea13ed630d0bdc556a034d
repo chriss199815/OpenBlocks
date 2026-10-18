@@ -1,4 +1,4 @@
-// 1.21.1	2026-10-18T17:48:05.252112	Block States: openblocks
+// 1.21.1	2026-10-18T18:28:47.827109	Block States: openblocks
 909bae1340933de5e494ee6692d1d88aeabf4f33 assets/openblocks/blockstates/auto_anvil.json
 aca132b5918ec066ede0f817145d0ac0649c84a9 assets/openblocks/blockstates/auto_enchantment_table.json
 9be1c7ce94b3232fe19c46a8965abe89ae2d898a assets/openblocks/blockstates/bear_trap.json
@@ -311,6 +311,8 @@ ab8c50816283874de69dd2bd6568d691b35414b4 assets/openblocks/models/item/drawing_t
 b804dd7c8d2d52483b8039ae6ffba2ee4f9468c3 assets/openblocks/models/item/empty_map.json
 b3a5d2f6748f8537e15bb3d900bce4b0e3e427a7 assets/openblocks/models/item/fan.json
 3e04276af1bc9e7fb3ca4d2dea117e5aaec179ce assets/openblocks/models/item/glider_wing.json
+942958bfb5a4fd301bca884fef9ab508793604e4 assets/openblocks/models/item/glyph.json
+3bd0c9129100386a323ecbf07736086ea78dcbf9 assets/openblocks/models/item/glyph_base.json
 36c3e3241d33bef912f0e89c42f1aafc9dce1e64 assets/openblocks/models/item/golden_egg.json
 239f9ecfe34fe0121aae8ad6a24a3716aaa927de assets/openblocks/models/item/golden_eye.json
 53cca251fbe8ed16083255b0ed115f4b96256440 assets/openblocks/models/item/grave.json

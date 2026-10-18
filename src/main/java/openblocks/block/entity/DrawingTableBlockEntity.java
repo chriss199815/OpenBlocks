@@ -10,6 +10,7 @@ import net.minecraft.network.protocol.Packet;
 import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.game.ClientboundBlockEntityDataPacket;
 import net.minecraft.world.MenuProvider;
+import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.AbstractContainerMenu;
@@ -20,26 +21,39 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.neoforged.neoforge.items.IItemHandlerModifiable;
 import net.neoforged.neoforge.items.ItemStackHandler;
 import openblocks.common.StencilPattern;
+import openblocks.item.GlyphItem;
 import openblocks.item.StencilItem;
 import openblocks.menu.DrawingTableMenu;
 import openblocks.registry.OBBlockEntities;
 import openblocks.registry.OBItems;
 
 /**
- * Port of legacy {@code TileEntityDrawingTable}: turns unprepared stencils into stencils of the selected pattern.
+ * Port of legacy {@code TileEntityDrawingTable}: turns unprepared stencils into stencils of the selected pattern or,
+ * in glyph mode, into glyphs of the selected character; text can be printed as glyphs, dropped on top of the table.
  * The output slot only mirrors the input: like the vanilla stonecutter, it shows one stencil, and each one taken uses up one input item.
- * Unlike legacy, finished stencils are accepted as input too, so they can be redrawn with another pattern.
- * The glyph mode comes with the glyphs.
+ * Unlike legacy, finished stencils and glyphs are accepted as input too, so they can be redrawn.
  */
 public class DrawingTableBlockEntity extends BlockEntity implements MenuProvider {
 
 	public static final int SLOT_INPUT = 0;
 	public static final int SLOT_OUTPUT = 1;
+	public static final int MAX_PRINT_SIZE = 32;
+
+	public enum Mode {
+		STENCILS("openblocks.gui.drawingtable.stencils"),
+		GLYPHS("openblocks.gui.drawingtable.glyphs");
+
+		public final String translationKey;
+
+		Mode(String translationKey) {
+			this.translationKey = translationKey;
+		}
+	}
 
 	private final ItemStackHandler input = new ItemStackHandler(1) {
 		@Override
 		public boolean isItemValid(int slot, ItemStack stack) {
-			return stack.is(OBItems.UNPREPARED_STENCIL.get()) || stack.getItem() instanceof StencilItem;
+			return stack.is(OBItems.UNPREPARED_STENCIL.get()) || stack.getItem() instanceof StencilItem || stack.is(OBItems.GLYPH.get());
 		}
 
 		@Override
@@ -51,6 +65,8 @@ public class DrawingTableBlockEntity extends BlockEntity implements MenuProvider
 	private final IItemHandlerModifiable inventory = new TableInventory();
 
 	private StencilPattern pattern = StencilPattern.CREEPER_FACE;
+	private Mode mode = Mode.STENCILS;
+	private char glyph = 'A';
 
 	public DrawingTableBlockEntity(BlockPos pos, BlockState state) {
 		super(OBBlockEntities.DRAWING_TABLE.get(), pos, state);
@@ -71,16 +87,67 @@ public class DrawingTableBlockEntity extends BlockEntity implements MenuProvider
 		return pattern;
 	}
 
-	public void cyclePattern(int delta) {
-		final StencilPattern[] patterns = StencilPattern.values();
-		pattern = patterns[Math.floorMod(pattern.ordinal() + delta, patterns.length)];
+	public Mode getMode() {
+		return mode;
+	}
+
+	public char getGlyph() {
+		return glyph;
+	}
+
+	public void toggleMode() {
+		mode = mode == Mode.STENCILS? Mode.GLYPHS : Mode.STENCILS;
+		sync();
+	}
+
+	/**
+	 * Selects the next or previous pattern or character, depending on the mode.
+	 */
+	public void cycleSelection(int delta) {
+		if (mode == Mode.GLYPHS) {
+			glyph = GlyphItem.cycle(glyph, delta);
+		} else {
+			final StencilPattern[] patterns = StencilPattern.values();
+			pattern = patterns[Math.floorMod(pattern.ordinal() + delta, patterns.length)];
+		}
+		sync();
+	}
+
+	/**
+	 * How many characters from the start of the text {@link #print} turns into glyphs: up to the first one without a
+	 * glyph, at most {@link #MAX_PRINT_SIZE} and one per input item.
+	 */
+	public static int printableCount(String text, int inputCount) {
+		final int max = Math.min(MAX_PRINT_SIZE, Math.min(inputCount, text.length()));
+		int count = 0;
+		while (count < max && GlyphItem.isValid(text.charAt(count))) count++;
+		return count;
+	}
+
+	/**
+	 * Drops a glyph for each printable character on top of the table, using up one input item each; only in glyph mode.
+	 */
+	public int print(String text) {
+		if (mode != Mode.GLYPHS || level == null) return 0;
+		final int count = printableCount(text, getInput().getCount());
+		for (int i = 0; i < count; i++) {
+			final ItemEntity drop = new ItemEntity(level, worldPosition.getX() + 0.5, worldPosition.getY() + 1, worldPosition.getZ() + 0.5, GlyphItem.create(text.charAt(i), 1));
+			drop.setDefaultPickUpDelay();
+			level.addFreshEntity(drop);
+		}
+		input.extractItem(0, count, false);
+		return count;
+	}
+
+	private void sync() {
 		setChanged();
-		// the client needs the pattern to show the output slot
+		// the client needs the selection to show the output slot
 		if (level != null) level.sendBlockUpdated(worldPosition, getBlockState(), getBlockState(), Block.UPDATE_CLIENTS);
 	}
 
 	private ItemStack createOutput(int count) {
-		return count > 0? new ItemStack(OBItems.STENCILS.get(pattern).get(), count) : ItemStack.EMPTY;
+		if (count <= 0) return ItemStack.EMPTY;
+		return mode == Mode.GLYPHS? GlyphItem.create(glyph, count) : new ItemStack(OBItems.STENCILS.get(pattern).get(), count);
 	}
 
 	private ItemStack takeOutput(boolean simulate) {
@@ -102,26 +169,37 @@ public class DrawingTableBlockEntity extends BlockEntity implements MenuProvider
 	protected void loadAdditional(CompoundTag tag, HolderLookup.Provider registries) {
 		super.loadAdditional(tag, registries);
 		input.deserializeNBT(registries, tag.getCompound("inventory"));
+		readSelection(tag);
+	}
+
+	private void readSelection(CompoundTag tag) {
 		pattern = StencilPattern.CODEC.byName(tag.getString("pattern"), StencilPattern.CREEPER_FACE);
+		mode = tag.getBoolean("glyphs")? Mode.GLYPHS : Mode.STENCILS;
+		glyph = tag.contains("glyph") && GlyphItem.isValid(tag.getInt("glyph"))? (char)tag.getInt("glyph") : 'A';
+	}
+
+	private CompoundTag writeSelection(CompoundTag tag) {
+		tag.putString("pattern", pattern.getSerializedName());
+		tag.putBoolean("glyphs", mode == Mode.GLYPHS);
+		tag.putInt("glyph", glyph);
+		return tag;
 	}
 
 	@Override
 	protected void saveAdditional(CompoundTag tag, HolderLookup.Provider registries) {
 		super.saveAdditional(tag, registries);
 		tag.put("inventory", input.serializeNBT(registries));
-		tag.putString("pattern", pattern.getSerializedName());
+		writeSelection(tag);
 	}
 
 	@Override
 	public CompoundTag getUpdateTag(HolderLookup.Provider registries) {
-		final CompoundTag tag = new CompoundTag();
-		tag.putString("pattern", pattern.getSerializedName());
-		return tag;
+		return writeSelection(new CompoundTag());
 	}
 
 	@Override
 	public void handleUpdateTag(CompoundTag tag, HolderLookup.Provider registries) {
-		pattern = StencilPattern.CODEC.byName(tag.getString("pattern"), StencilPattern.CREEPER_FACE);
+		readSelection(tag);
 	}
 
 	@Override

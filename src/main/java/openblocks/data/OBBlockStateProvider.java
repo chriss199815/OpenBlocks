@@ -98,6 +98,7 @@ public class OBBlockStateProvider extends BlockStateProvider {
 				.forEach(item -> itemModels().basicItem(item.get()));
 		itemModels().basicItem(OBItems.CRANE_BACKPACK.get());
 		craneControl();
+		glyph();
 		// legacy paintbrush model: handle, plus the paint tinted by OBColorHandlers
 		itemModels().withExistingParent("paintbrush", mcLoc("item/handheld_rod"))
 				.texture("layer0", modLoc("item/paintbrush_handle"))
@@ -532,6 +533,38 @@ public class OBBlockStateProvider extends BlockStateProvider {
 				.texture("layer0", modLoc("item/manipulator_base"))
 				.texture("layer1", modLoc("item/manipulator_lift_" + lift.name().toLowerCase(Locale.ROOT)))
 				.texture("layer2", modLoc("item/manipulator_magnet_" + magnetTexture));
+	}
+
+	/**
+	 * Legacy glyph_base: the plate, drawn with the character by {@code GlyphRenderer}; the item model only carries the
+	 * legacy display transforms.
+	 */
+	private void glyph() {
+		itemModels().getBuilder("glyph_base")
+				.texture("material", modLoc("item/stencil"))
+				.texture("particle", modLoc("item/stencil"))
+				.element().from(0, 0, 7.5f).to(16, 16, 8.5f)
+				.face(Direction.NORTH).uvs(0, 0, 16, 16).texture("#material").end()
+				.face(Direction.EAST).uvs(14, 0, 15, 16).texture("#material").end()
+				.face(Direction.SOUTH).uvs(0, 0, 16, 16).texture("#material").end()
+				.face(Direction.WEST).uvs(0, 0, 1, 16).texture("#material").end()
+				.face(Direction.UP).uvs(0, 0, 16, 1).texture("#material").end()
+				.face(Direction.DOWN).uvs(0, 15, 16, 16).texture("#material").end()
+				.end();
+		itemModels().getBuilder("glyph")
+				.parent(new ModelFile.UncheckedModelFile("builtin/entity"))
+				.guiLight(BlockModel.GuiLight.FRONT)
+				.texture("particle", modLoc("item/stencil"))
+				.transforms()
+				.transform(ItemDisplayContext.THIRD_PERSON_RIGHT_HAND).rotation(75, 0, 0).translation(0, 0.5f, 1).scale(0.55f).end()
+				.transform(ItemDisplayContext.THIRD_PERSON_LEFT_HAND).rotation(75, 0, 0).translation(0, 0.5f, 1).scale(0.55f).end()
+				.transform(ItemDisplayContext.FIRST_PERSON_RIGHT_HAND).scale(0.55f).end()
+				.transform(ItemDisplayContext.FIRST_PERSON_LEFT_HAND).scale(0.55f).end()
+				.transform(ItemDisplayContext.GUI).rotation(0, 180, 0).end()
+				.transform(ItemDisplayContext.FIXED).end()
+				.transform(ItemDisplayContext.HEAD).translation(0, 16, 0).end()
+				.transform(ItemDisplayContext.GROUND).translation(0, 2, 0).scale(0.5f).end()
+				.end();
 	}
 
 	private static String imaginaryModelName(ImaginaryBlock.Shape shape, ImaginaryBlock.Type type) {

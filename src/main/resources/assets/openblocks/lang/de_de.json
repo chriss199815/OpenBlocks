@@ -312,7 +312,7 @@
   "item.openblocks.wrench": "Großer Metallbalken",
   "item.openblocks.wrench.description": "Dies ist ein hochmodernes Werkzeug für die zu den Weltachsen orthogonale Transformation kubischer Objekte.\n\n\nOder nur ein großer, blöder Metallklotz, mit dem du Dinge rotieren kannst.\n\nJa, es ist halt noch ein Schraubenschlüssel, wie jeder andere auch. Du musst es mir nicht unter die Nase reiben.",
   "item.openblocks.glyph": "Glyphe",
-  "item.openblocks.glyph.with_char": "Glyphe: '%c'",
+  "item.openblocks.glyph.with_char": "Glyphe: '%s'",
   "item.openblocks.stencil": "Schablone",
   "openblocks.stencil.creeper_face": "Creeper-Gesicht",
   "openblocks.stencil.border": "Rand",

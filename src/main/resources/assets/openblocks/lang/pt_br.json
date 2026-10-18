@@ -270,7 +270,7 @@
   "item.openblocks.wrench": "Barra de Metal Grande",
   "item.openblocks.wrench.description": "Essa é uma ferramenta extremamente sofisticada usada to para realizar transformações de objetos com simetria octaédrica.\n\n\nOu apenas um grande, pedaço de metal que você pode usar para girar cubos e outras coisas.\n\nEntão, sim, é mais uma chave inglesa. Eu só estou tentando ser original aqui, ok?",
   "item.openblocks.glyph": "Glifo",
-  "item.openblocks.glyph.with_char": "Glifo '%c'",
+  "item.openblocks.glyph.with_char": "Glifo '%s'",
   "item.openblocks.stencil": "Estêncil",
   "item.openblocks.crayon": "Giz de Cera Mágico",
   "item.openblocks.pencil": "Lápis Mágico",

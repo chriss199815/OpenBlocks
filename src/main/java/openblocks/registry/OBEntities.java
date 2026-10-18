@@ -13,6 +13,7 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 import net.neoforged.neoforge.registries.NeoForgeRegistries;
 import openblocks.OpenBlocks;
 import openblocks.entity.Cartographer;
+import openblocks.entity.Glyph;
 import openblocks.entity.GoldenEye;
 import openblocks.entity.Luggage;
 import openblocks.entity.Magnet;
@@ -71,6 +72,14 @@ public class OBEntities {
 					.clientTrackingRange(4)
 					.updateInterval(1)
 					.build("mounted_block"));
+
+	// like paintings
+	public static final DeferredHolder<EntityType<?>, EntityType<Glyph>> GLYPH = ENTITIES.register("glyph",
+			() -> EntityType.Builder.<Glyph>of(Glyph::new, MobCategory.MISC)
+					.sized(0.5f, 0.5f)
+					.clientTrackingRange(10)
+					.updateInterval(Integer.MAX_VALUE)
+					.build("glyph"));
 
 	public static final DeferredRegister<EntityDataSerializer<?>> DATA_SERIALIZERS = DeferredRegister.create(NeoForgeRegistries.Keys.ENTITY_DATA_SERIALIZERS, OpenBlocks.MODID);
 

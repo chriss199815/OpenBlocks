@@ -14,6 +14,7 @@ public class OBNetwork {
 		PayloadRegistrar registrar = event.registrar(PROTOCOL_VERSION);
 		registrar.playToServer(ElevatorActionPayload.TYPE, ElevatorActionPayload.STREAM_CODEC, ElevatorActionPayload::handle);
 		registrar.playToServer(BrickDropPayload.TYPE, BrickDropPayload.STREAM_CODEC, BrickDropPayload::handle);
+		registrar.playToServer(DrawingTablePrintPayload.TYPE, DrawingTablePrintPayload.STREAM_CODEC, DrawingTablePrintPayload::handle);
 		registrar.playToServer(HeightMapRequestPayload.TYPE, HeightMapRequestPayload.STREAM_CODEC, HeightMapRequestPayload::handle);
 		registrar.playToClient(HeightMapPayload.TYPE, HeightMapPayload.STREAM_CODEC, HeightMapPayload::handle);
 		registrar.playToClient(HeightMapUpdatesPayload.TYPE, HeightMapUpdatesPayload.STREAM_CODEC, HeightMapUpdatesPayload::handle);

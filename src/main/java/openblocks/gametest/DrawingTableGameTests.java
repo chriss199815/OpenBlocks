@@ -43,12 +43,12 @@ public class DrawingTableGameTests {
 		final ItemStack preview = handler.getStackInSlot(DrawingTableBlockEntity.SLOT_OUTPUT);
 		helper.assertTrue(preview.is(OBItems.STENCILS.get(StencilPattern.CREEPER_FACE).get()) && preview.getCount() == 1, "Expected 1 creeper face stencil, got " + preview);
 
-		table.cyclePattern(1);
+		table.cycleSelection(1);
 		final ItemStack taken = handler.extractItem(DrawingTableBlockEntity.SLOT_OUTPUT, 64, false);
 		helper.assertTrue(taken.is(OBItems.STENCILS.get(StencilPattern.BORDER).get()) && taken.getCount() == 1, "Expected 1 border stencil, got " + taken);
 		helper.assertTrue(table.getInput().getCount() == 2, "Expected 2 unprepared stencils left, got " + table.getInput());
 
-		table.cyclePattern(-2);
+		table.cycleSelection(-2);
 		helper.assertTrue(table.getPattern() == StencilPattern.BALLOON, "Expected the selection to wrap around to the last pattern");
 		helper.succeed();
 	}
@@ -59,7 +59,7 @@ public class DrawingTableGameTests {
 		final DrawingTableBlockEntity table = helper.getBlockEntity(TABLE);
 
 		helper.assertTrue(handler.insertItem(DrawingTableBlockEntity.SLOT_INPUT, new ItemStack(OBItems.STENCILS.get(StencilPattern.HEART).get(), 2), false).isEmpty(), "Expected heart stencils to be accepted");
-		table.cyclePattern(1);
+		table.cycleSelection(1);
 		final ItemStack taken = handler.extractItem(DrawingTableBlockEntity.SLOT_OUTPUT, 1, false);
 		helper.assertTrue(taken.is(OBItems.STENCILS.get(StencilPattern.BORDER).get()), "Expected a border stencil, got " + taken);
 		helper.assertTrue(table.getInput().is(OBItems.STENCILS.get(StencilPattern.HEART).get()) && table.getInput().getCount() == 1, "Expected 1 heart stencil left, got " + table.getInput());

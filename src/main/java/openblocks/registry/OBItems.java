@@ -17,6 +17,7 @@ import openblocks.item.CraneControlItem;
 import openblocks.item.CursorItem;
 import openblocks.item.DevNullItem;
 import openblocks.item.EmptyMapItem;
+import openblocks.item.GlyphItem;
 import openblocks.item.GoldenEyeItem;
 import openblocks.item.GuideItem;
 import openblocks.item.HangGliderItem;
@@ -110,6 +111,7 @@ public class OBItems {
 	public static final DeferredItem<CraneBackpackItem> CRANE_BACKPACK = ITEMS.register("crane_backpack",
 			() -> new CraneBackpackItem(OBArmorMaterials.CRANE_BACKPACK, new Item.Properties()));
 	public static final DeferredItem<CraneControlItem> CRANE_CONTROL = ITEMS.register("crane_control", () -> new CraneControlItem(new Item.Properties()));
+	public static final DeferredItem<GlyphItem> GLYPH = ITEMS.register("glyph", () -> new GlyphItem(new Item.Properties()));
 	public static final DeferredItem<Item> BEAM = ITEMS.registerSimpleItem("beam");
 	public static final DeferredItem<Item> CRANE_ENGINE = ITEMS.registerSimpleItem("crane_engine");
 	public static final DeferredItem<Item> CRANE_MAGNET = ITEMS.registerSimpleItem("crane_magnet");

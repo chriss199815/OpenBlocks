@@ -13,13 +13,15 @@ import openblocks.registry.OBBlocks;
 import openblocks.registry.OBMenus;
 
 /**
- * Port of legacy {@code ContainerDrawingTable}: input and output slot, buttons to pick the pattern.
+ * Port of legacy {@code ContainerDrawingTable}: input and output slot, buttons to switch the mode and pick the pattern
+ * or character; printing text comes as a {@code DrawingTablePrintPayload}.
  * Laid out in the vanilla size instead of the legacy 204 pixel high window.
  */
 public class DrawingTableMenu extends MachineMenu {
 
 	public static final int BUTTON_PREVIOUS = 0;
 	public static final int BUTTON_NEXT = 1;
+	public static final int BUTTON_MODE = 2;
 
 	public static final int INPUT_X = 34;
 	public static final int OUTPUT_X = 105;
@@ -47,11 +49,29 @@ public class DrawingTableMenu extends MachineMenu {
 		return table.getPattern();
 	}
 
+	public DrawingTableBlockEntity.Mode getMode() {
+		return table.getMode();
+	}
+
+	public char getGlyph() {
+		return table.getGlyph();
+	}
+
+	public int getInputCount() {
+		return table.getInput().getCount();
+	}
+
+	public void print(String text) {
+		table.print(text);
+		broadcastChanges();
+	}
+
 	@Override
 	public boolean clickMenuButton(Player player, int id) {
 		switch (id) {
-			case BUTTON_PREVIOUS -> table.cyclePattern(-1);
-			case BUTTON_NEXT -> table.cyclePattern(1);
+			case BUTTON_PREVIOUS -> table.cycleSelection(-1);
+			case BUTTON_NEXT -> table.cycleSelection(1);
+			case BUTTON_MODE -> table.toggleMode();
 			default -> {
 				return false;
 			}

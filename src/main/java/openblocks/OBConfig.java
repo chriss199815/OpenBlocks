@@ -33,8 +33,21 @@ public class OBConfig {
 	public static final Guide GUIDE = new Guide(BUILDER);
 	public static final Imaginary IMAGINARY = new Imaginary(BUILDER);
 	public static final Crane CRANE = new Crane(BUILDER);
+	public static final Glyphs GLYPHS = new Glyphs(BUILDER);
 
 	public static final ModConfigSpec SPEC = BUILDER.build();
+
+	public static class Glyphs {
+		public final ModConfigSpec.BooleanValue showInCreativeSearch;
+
+		private Glyphs(ModConfigSpec.Builder builder) {
+			builder.push("glyphs");
+			showInCreativeSearch = builder
+					.comment("Should glyphs be added to creative search GUI")
+					.define("showInCreativeSearch", false);
+			builder.pop();
+		}
+	}
 
 	public static class Crane {
 		public final ModConfigSpec.BooleanValue shiftControl;

@@ -29,6 +29,9 @@ public class OBSounds {
 	public static final DeferredHolder<SoundEvent, SoundEvent> CANNON_ACTIVATE = register("cannon.activate");
 	public static final DeferredHolder<SoundEvent, SoundEvent> PLAYER_WHOOPS = register("best.feature.ever.fart");
 	public static final DeferredHolder<SoundEvent, SoundEvent> CRAYON_PLACE = register("crayon.place");
+	public static final DeferredHolder<SoundEvent, SoundEvent> MOSQUITO = register("annoying.mosquito");
+	public static final DeferredHolder<SoundEvent, SoundEvent> ALARM_CLOCK = register("annoying.alarmclock");
+	public static final DeferredHolder<SoundEvent, SoundEvent> VIBRATE = register("annoying.vibrate");
 
 	private static DeferredHolder<SoundEvent, SoundEvent> register(String id) {
 		return SOUNDS.register(id, () -> SoundEvent.createVariableRangeEvent(OpenBlocks.location(id)));

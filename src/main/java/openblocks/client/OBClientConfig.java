@@ -62,12 +62,16 @@ public class OBClientConfig {
 
 	public static class Tomfoolery {
 		public final ModConfigSpec.BooleanValue doItWhileTyping;
+		public final ModConfigSpec.IntValue sillyLoreDisplay;
 
 		private Tomfoolery(ModConfigSpec.Builder builder) {
 			builder.push("tomfoolery");
 			doItWhileTyping = builder
 					.comment("You know, THAT thing! That you shouldn't do in public!")
 					.define("doItWhileTyping", false);
+			sillyLoreDisplay = builder
+					.comment("0 - lore hidden, 1 - visible only with pressed ALT, 2 - always visible")
+					.defineInRange("sillyLoreDisplay", 1, 0, 2);
 			builder.pop();
 		}
 	}

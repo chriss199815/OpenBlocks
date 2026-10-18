@@ -109,6 +109,7 @@ public class OpenBlocksClient {
 		NeoForge.EVENT_BUS.addListener(GlyphRenderer::onRenderHighlight);
 		NeoForge.EVENT_BUS.addListener(SonicGlassesRenderer::onClientTick);
 		NeoForge.EVENT_BUS.addListener(SonicGlassesRenderer::onRenderLevelStage);
+		NeoForge.EVENT_BUS.addListener(SillyLoreTooltip::onItemTooltip);
 
 		// not earlier: loading the entity class needs its registered data serializer
 		modBus.addListener((FMLClientSetupEvent event) -> Cartographer.clientHighlight = CartographerRenderer::isHighlighted);

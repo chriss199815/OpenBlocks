@@ -12,11 +12,16 @@ import openblocks.block.entity.BlockBreakerBlockEntity;
 import openblocks.data.OBDataGenerators;
 import openblocks.common.BrickDrops;
 import openblocks.common.DonationInfo;
+import openblocks.common.ExplosiveEnchantmentHandler;
 import openblocks.common.HangGliderHandler;
 import openblocks.common.HeightMaps;
+import openblocks.common.LastStandEnchantmentHandler;
+import openblocks.common.OBCommands;
 import openblocks.common.PlayerDeathHandler;
 import openblocks.common.SleepingBagHandler;
 import openblocks.common.TrophyDropHandler;
+import openblocks.common.flimflam.DefaultFlimFlams;
+import openblocks.common.flimflam.FlimFlamHandler;
 import openblocks.entity.NoFlyXpOrb;
 import openblocks.item.DevNullItem;
 import openblocks.item.LuggageItem;
@@ -89,6 +94,14 @@ public class OpenBlocks {
 		NeoForge.EVENT_BUS.addListener(TrophyDropHandler::onLivingDrops);
 		NeoForge.EVENT_BUS.addListener(BrickDrops::onLivingDrops);
 		NeoForge.EVENT_BUS.addListener(HeightMaps::onServerTick);
+		NeoForge.EVENT_BUS.addListener(FlimFlamHandler::onIncomingDamage);
+		NeoForge.EVENT_BUS.addListener(FlimFlamHandler::onPlayerTick);
+		NeoForge.EVENT_BUS.addListener(ExplosiveEnchantmentHandler::onFall);
+		NeoForge.EVENT_BUS.addListener(ExplosiveEnchantmentHandler::onIncomingDamage);
+		NeoForge.EVENT_BUS.addListener(LastStandEnchantmentHandler::onDamage);
+		NeoForge.EVENT_BUS.addListener(OBCommands::register);
+
+		DefaultFlimFlams.register();
 
 		container.registerConfig(ModConfig.Type.COMMON, OBConfig.SPEC);
 	}

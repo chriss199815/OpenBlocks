@@ -17,6 +17,7 @@ import openblocks.item.CraneControlItem;
 import openblocks.item.CursorItem;
 import openblocks.item.DevNullItem;
 import openblocks.item.EmptyMapItem;
+import openblocks.item.EpicEraserItem;
 import openblocks.item.GlyphItem;
 import openblocks.item.GoldenEyeItem;
 import openblocks.item.GuideItem;
@@ -114,6 +115,7 @@ public class OBItems {
 	public static final DeferredItem<CraneControlItem> CRANE_CONTROL = ITEMS.register("crane_control", () -> new CraneControlItem(new Item.Properties()));
 	public static final DeferredItem<SonicGlassesItem> SONIC_GLASSES = ITEMS.register("sonic_glasses",
 			() -> new SonicGlassesItem(OBArmorMaterials.SONIC_GLASSES, new Item.Properties()));
+	public static final DeferredItem<EpicEraserItem> EPIC_ERASER = ITEMS.register("epic_eraser", () -> new EpicEraserItem(new Item.Properties()));
 	public static final DeferredItem<GlyphItem> GLYPH = ITEMS.register("glyph", () -> new GlyphItem(new Item.Properties()));
 	public static final DeferredItem<Item> BEAM = ITEMS.registerSimpleItem("beam");
 	public static final DeferredItem<Item> CRANE_ENGINE = ITEMS.registerSimpleItem("crane_engine");

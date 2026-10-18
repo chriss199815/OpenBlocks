@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "equipment",
+  "ingredients": [
+    {
+      "tag": "c:gems/lapis"
+    },
+    {
+      "tag": "c:slime_balls"
+    },
+    {
+      "item": "minecraft:pink_wool"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "openblocks:epic_eraser"
+  }
+}

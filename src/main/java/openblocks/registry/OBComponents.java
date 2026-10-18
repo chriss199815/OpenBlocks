@@ -1,6 +1,7 @@
 package openblocks.registry;
 
 import com.mojang.serialization.Codec;
+import java.util.List;
 import net.minecraft.core.GlobalPos;
 import net.minecraft.core.component.DataComponentType;
 import net.minecraft.core.registries.Registries;
@@ -120,6 +121,12 @@ public class OBComponents {
 	/**
 	 * Color of a crayon or crayon glasses; replaces the legacy {@code Color} tag (and the crayon item damage).
 	 */
+	/**
+	 * Silly item history from the lore flim flam (legacy {@code display.SillyLore} tag); removed by the epic eraser.
+	 */
+	public static final DeferredHolder<DataComponentType<?>, DataComponentType<List<String>>> SILLY_LORE = COMPONENTS.registerComponentType("silly_lore",
+			builder -> builder.persistent(Codec.STRING.listOf()).networkSynchronized(ByteBufCodecs.STRING_UTF8.apply(ByteBufCodecs.list())));
+
 	public static final DeferredHolder<DataComponentType<?>, DataComponentType<Integer>> CRAYON_COLOR = COMPONENTS.registerComponentType("crayon_color",
 			builder -> builder.persistent(Codec.INT).networkSynchronized(ByteBufCodecs.INT));
 

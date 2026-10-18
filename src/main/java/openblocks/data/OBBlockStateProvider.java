@@ -99,6 +99,7 @@ public class OBBlockStateProvider extends BlockStateProvider {
 				.forEach(item -> itemModels().basicItem(item.get()));
 		itemModels().basicItem(OBItems.CRANE_BACKPACK.get());
 		itemModels().basicItem(OBItems.SONIC_GLASSES.get());
+		itemModels().basicItem(OBItems.EPIC_ERASER.get());
 		craneControl();
 		glyph();
 		// legacy paintbrush model: handle, plus the paint tinted by OBColorHandlers

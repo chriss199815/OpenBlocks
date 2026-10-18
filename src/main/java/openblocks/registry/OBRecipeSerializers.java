@@ -9,6 +9,7 @@ import openblocks.OpenBlocks;
 import openblocks.recipe.CrayonGlassesRecipe;
 import openblocks.recipe.CrayonMergeRecipe;
 import openblocks.recipe.CrayonMixingRecipe;
+import openblocks.recipe.EpicEraserRecipe;
 import openblocks.recipe.GoldenEyeRechargeRecipe;
 import openblocks.recipe.MapCloneRecipe;
 import openblocks.recipe.MapResizeRecipe;
@@ -37,4 +38,7 @@ public class OBRecipeSerializers {
 
 	public static final DeferredHolder<RecipeSerializer<?>, SimpleCraftingRecipeSerializer<CrayonGlassesRecipe>> CRAYON_GLASSES = RECIPE_SERIALIZERS.register("crayon_glasses",
 			() -> new SimpleCraftingRecipeSerializer<>(CrayonGlassesRecipe::new));
+
+	public static final DeferredHolder<RecipeSerializer<?>, SimpleCraftingRecipeSerializer<EpicEraserRecipe>> EPIC_ERASER = RECIPE_SERIALIZERS.register("epic_eraser",
+			() -> new SimpleCraftingRecipeSerializer<>(EpicEraserRecipe::new));
 }

@@ -1,0 +1,22 @@
+{
+  "anvil_cost": 4,
+  "description": {
+    "translate": "enchantment.openblocks.flim_flam"
+  },
+  "max_cost": {
+    "base": 51,
+    "per_level_above_first": 10
+  },
+  "max_level": 4,
+  "min_cost": {
+    "base": 41,
+    "per_level_above_first": 10
+  },
+  "primary_items": "#openblocks:enchantable/flim_flam",
+  "slots": [
+    "armor",
+    "mainhand"
+  ],
+  "supported_items": "#minecraft:enchantable/durability",
+  "weight": 2
+}

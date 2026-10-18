@@ -1,4 +1,4 @@
-// 1.21.1	2026-10-18T19:09:23.209138	Recipes
+// 1.21.1	2026-10-18T19:29:31.048531	Recipes
 f37f622f6aa43ff8c3b05fe0ccd813d9be730420 data/openblocks/advancement/recipes/building_blocks/canvas.json
 4da75c2ec825111de4abddbd9d4caefbb2b578ce data/openblocks/advancement/recipes/building_blocks/scaffolding.json
 930782d897e53db76e7b954eb746d395706bf1bd data/openblocks/advancement/recipes/building_blocks/sky.json
@@ -87,6 +87,7 @@ fb3bc8277eb06469e9e9867e3f87e7ab43d42bb3 data/openblocks/advancement/recipes/too
 992dcf8f06ad3a410d65cebe67387dd42d8f80e1 data/openblocks/advancement/recipes/tools/crayon_yellow.json
 60df6432d9b6aacaf9c081cc61c0ac54947808c0 data/openblocks/advancement/recipes/tools/cursor.json
 e37963641de2db174e53a0e2d5238530674c4dba data/openblocks/advancement/recipes/tools/dev_null.json
+3f2fc823f00f74f7c2ba885728329bb4491a376a data/openblocks/advancement/recipes/tools/epic_eraser.json
 10099848fe3e3ce083181d5e4ee803c686752984 data/openblocks/advancement/recipes/tools/golden_eye.json
 0b0b3b832299042602a680e46d061615a1e84ed1 data/openblocks/advancement/recipes/tools/guide.json
 da1316e1e210d2aa7fbbf2d625f48257472f7eb7 data/openblocks/advancement/recipes/tools/paintbrush.json
@@ -203,6 +204,8 @@ c1d8a11c32ccb73e1a528eb24695125fdc27c226 data/openblocks/recipe/dev_null.json
 cd8f111bebd14ea9b7c31f57a91defba81737180 data/openblocks/recipe/donation_station.json
 8ebd8a120754b085193018bc6531a9211bd0614d data/openblocks/recipe/drawing_table.json
 fa2694761b1dba722177ae6f7751ba0db102d921 data/openblocks/recipe/empty_map.json
+e082d504b99a41d0455c5138bcdc4ef00fad51e7 data/openblocks/recipe/epic_eraser.json
+240bab7ee6c92dd66d87f8c24e813b50653a37db data/openblocks/recipe/epic_eraser_use.json
 00efa163f0c387abf8f7d141681b0ef539b2c07b data/openblocks/recipe/fan.json
 d137edeb8d0e951a2c9d325fcda583959f10fd1f data/openblocks/recipe/glider_wing_left.json
 c7a651711c5f2f893019881628eea763d68db28e data/openblocks/recipe/glider_wing_right.json

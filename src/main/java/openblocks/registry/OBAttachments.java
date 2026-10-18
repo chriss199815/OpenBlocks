@@ -11,6 +11,7 @@ import net.neoforged.neoforge.registries.NeoForgeRegistries;
 import openblocks.OpenBlocks;
 import openblocks.common.CraneState;
 import openblocks.common.PedometerState;
+import openblocks.common.flimflam.LuckState;
 
 public class OBAttachments {
 
@@ -45,6 +46,14 @@ public class OBAttachments {
 	 */
 	public static final Supplier<AttachmentType<CraneState>> CRANE = ATTACHMENT_TYPES.register("crane",
 			() -> AttachmentType.builder(CraneState::new).build());
+
+	/**
+	 * Luck of the player for flim flams; replaces the legacy {@code Luck} capability.
+	 */
+	public static final Supplier<AttachmentType<LuckState>> LUCK = ATTACHMENT_TYPES.register("luck",
+			() -> AttachmentType.builder(LuckState::new)
+					.serialize(LuckState.CODEC)
+					.build());
 
 	/**
 	 * Bricks the player can drop, filled by eating tasty clay; replaces the legacy {@code bowels} capability. Saved, but

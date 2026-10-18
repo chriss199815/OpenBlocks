@@ -21,6 +21,7 @@ import openblocks.OpenBlocks;
 import openblocks.util.PaintColors;
 import openblocks.registry.OBComponents;
 import openblocks.recipe.CrayonMixingRecipe;
+import openblocks.recipe.EpicEraserRecipe;
 import openblocks.recipe.CrayonMergeRecipe;
 import openblocks.recipe.CrayonGlassesRecipe;
 import openblocks.item.GoldenEyeItem;
@@ -524,6 +525,17 @@ public class OBRecipeProvider extends RecipeProvider {
 		crane(output);
 		sonicGlasses(output);
 		villageHighlighter(output);
+		epicEraser(output);
+	}
+
+	private static void epicEraser(RecipeOutput output) {
+		ShapelessRecipeBuilder.shapeless(RecipeCategory.TOOLS, OBItems.EPIC_ERASER.get())
+				.requires(Tags.Items.GEMS_LAPIS)
+				.requires(Tags.Items.SLIME_BALLS)
+				.requires(Items.PINK_WOOL)
+				.unlockedBy("has_slime_ball", has(Tags.Items.SLIME_BALLS))
+				.save(output);
+		SpecialRecipeBuilder.special(EpicEraserRecipe::new).save(output, OpenBlocks.location("epic_eraser_use"));
 	}
 
 	private static void villageHighlighter(RecipeOutput output) {

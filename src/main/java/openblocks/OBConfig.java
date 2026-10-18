@@ -34,6 +34,7 @@ public class OBConfig {
 	public static final Imaginary IMAGINARY = new Imaginary(BUILDER);
 	public static final Crane CRANE = new Crane(BUILDER);
 	public static final Glyphs GLYPHS = new Glyphs(BUILDER);
+	public static final Enchantments ENCHANTMENTS = new Enchantments(BUILDER);
 
 	public static final ModConfigSpec SPEC = BUILDER.build();
 
@@ -120,6 +121,9 @@ public class OBConfig {
 
 	public static class Tomfoolery {
 		public final ModConfigSpec.BooleanValue weAreSeriousPeople;
+		public final ModConfigSpec.ConfigValue<List<? extends String>> flimFlamList;
+		public final ModConfigSpec.BooleanValue flimFlamWhitelist;
+		public final ModConfigSpec.BooleanValue safeFlimFlams;
 
 		private Tomfoolery(ModConfigSpec.Builder builder) {
 			builder.push("tomfoolery");
@@ -127,6 +131,29 @@ public class OBConfig {
 			weAreSeriousPeople = builder
 					.comment("Are you serious too?")
 					.define("weAreSeriousPeople", true);
+			flimFlamList = builder
+					.comment("Blacklist/Whitelist effects used flim-flam enchantment")
+					.defineListAllowEmpty("flimFlamBlacklist", List.of(), () -> "", value -> value instanceof String);
+			flimFlamWhitelist = builder
+					.comment("If true, flim-flam blacklist will become whitelist")
+					.define("reverseBlacklist", false);
+			safeFlimFlams = builder
+					.comment("Allow only flimflams that don't cause death (or at least very rarely)")
+					.define("safeOnly", false);
+			builder.pop();
+		}
+	}
+
+	public static class Enchantments {
+		public final ModConfigSpec.BooleanValue explosiveEnchantGrief;
+
+		// legacy explosiveEnchantment/lastStandEnchantment/flimFlamEnchantment are gone, enchantments are data driven;
+		// legacy lastStandFormula is gone, its default formula is built in
+		private Enchantments(ModConfigSpec.Builder builder) {
+			builder.push("features");
+			explosiveEnchantGrief = builder
+					.comment("Explosive enchant can break blocks at level 3")
+					.define("explosiveEnchantGrief", true);
 			builder.pop();
 		}
 	}

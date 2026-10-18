@@ -28,7 +28,11 @@ public class OBDataGenerators {
 		generator.addProvider(event.includeServer(), new OBLootModifierProvider(output, lookupProvider));
 		generator.addProvider(event.includeServer(), new OBRecipeProvider(output, lookupProvider));
 		generator.addProvider(event.includeServer(), new OBAdvancementProvider(output, lookupProvider));
-		generator.addProvider(event.includeServer(), new OBBlockTagsProvider(output, lookupProvider, existingFileHelper));
+		final OBDatapackProvider datapack = generator.addProvider(event.includeServer(), new OBDatapackProvider(output, lookupProvider));
+		final CompletableFuture<HolderLookup.Provider> datapackLookup = datapack.getRegistryProvider();
+		final OBBlockTagsProvider blockTags = generator.addProvider(event.includeServer(), new OBBlockTagsProvider(output, lookupProvider, existingFileHelper));
+		generator.addProvider(event.includeServer(), new OBItemTagsProvider(output, lookupProvider, blockTags.contentsGetter(), existingFileHelper));
+		generator.addProvider(event.includeServer(), new OBEnchantmentTagsProvider(output, datapackLookup, existingFileHelper));
 		generator.addProvider(event.includeServer(), new OBFluidTagsProvider(output, lookupProvider, existingFileHelper));
 		generator.addProvider(event.includeServer(), new OBEntityTypeTagsProvider(output, lookupProvider, existingFileHelper));
 		generator.addProvider(event.includeServer(), new OBStructureTagsProvider(output, lookupProvider, existingFileHelper));

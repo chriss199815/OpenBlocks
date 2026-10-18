@@ -12,7 +12,7 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 import openblocks.OpenBlocks;
 
 /**
- * Armor materials of the imagination glasses and the crane backpack. The textures come from the items'
+ * Armor materials of the imagination glasses, the sonic glasses and the crane backpack. The textures come from the items'
  * {@code getArmorTexture}.
  */
 public class OBArmorMaterials {
@@ -30,6 +30,11 @@ public class OBArmorMaterials {
 	public static final DeferredHolder<ArmorMaterial, ArmorMaterial> CRANE_BACKPACK = ARMOR_MATERIALS.register("crane_backpack",
 			() -> new ArmorMaterial(ArmorMaterials.IRON.value().defense(), ArmorMaterials.IRON.value().enchantmentValue(),
 					SoundEvents.ARMOR_EQUIP_IRON, () -> Ingredient.of(Tags.Items.INGOTS_IRON), List.of(new ArmorMaterial.Layer(OpenBlocks.location("crane_backpack"))), 0, 0));
+
+	// like legacy, the stats of iron armor
+	public static final DeferredHolder<ArmorMaterial, ArmorMaterial> SONIC_GLASSES = ARMOR_MATERIALS.register("sonic_glasses",
+			() -> new ArmorMaterial(ArmorMaterials.IRON.value().defense(), ArmorMaterials.IRON.value().enchantmentValue(),
+					SoundEvents.ARMOR_EQUIP_IRON, () -> Ingredient.of(Tags.Items.INGOTS_IRON), List.of(new ArmorMaterial.Layer(OpenBlocks.location("sonic_glasses"))), 0, 0));
 
 	// like legacy, the stats of golden armor
 	private static DeferredHolder<ArmorMaterial, ArmorMaterial> register(String name, List<ArmorMaterial.Layer> layers) {

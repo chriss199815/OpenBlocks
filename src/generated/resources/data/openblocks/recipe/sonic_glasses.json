@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "h": {
+      "item": "minecraft:iron_helmet"
+    },
+    "i": {
+      "tag": "c:ingots/iron"
+    },
+    "o": {
+      "tag": "c:obsidians"
+    },
+    "s": {
+      "tag": "c:rods/wooden"
+    }
+  },
+  "pattern": [
+    "ihi",
+    "oso"
+  ],
+  "result": {
+    "count": 1,
+    "id": "openblocks:sonic_glasses"
+  }
+}

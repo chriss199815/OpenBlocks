@@ -30,6 +30,7 @@ import openblocks.item.PaintCanItem;
 import openblocks.item.PedometerItem;
 import openblocks.item.PointerItem;
 import openblocks.item.SleepingBagItem;
+import openblocks.item.SonicGlassesItem;
 import openblocks.item.SlimalyzerItem;
 import openblocks.item.SpongeOnAStickItem;
 import openblocks.item.SqueegeeItem;
@@ -111,6 +112,8 @@ public class OBItems {
 	public static final DeferredItem<CraneBackpackItem> CRANE_BACKPACK = ITEMS.register("crane_backpack",
 			() -> new CraneBackpackItem(OBArmorMaterials.CRANE_BACKPACK, new Item.Properties()));
 	public static final DeferredItem<CraneControlItem> CRANE_CONTROL = ITEMS.register("crane_control", () -> new CraneControlItem(new Item.Properties()));
+	public static final DeferredItem<SonicGlassesItem> SONIC_GLASSES = ITEMS.register("sonic_glasses",
+			() -> new SonicGlassesItem(OBArmorMaterials.SONIC_GLASSES, new Item.Properties()));
 	public static final DeferredItem<GlyphItem> GLYPH = ITEMS.register("glyph", () -> new GlyphItem(new Item.Properties()));
 	public static final DeferredItem<Item> BEAM = ITEMS.registerSimpleItem("beam");
 	public static final DeferredItem<Item> CRANE_ENGINE = ITEMS.registerSimpleItem("crane_engine");

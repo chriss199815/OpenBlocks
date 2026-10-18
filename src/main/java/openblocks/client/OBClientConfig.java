@@ -14,8 +14,25 @@ public class OBClientConfig {
 	public static final Tomfoolery TOMFOOLERY = new Tomfoolery(BUILDER);
 	public static final Guide GUIDE = new Guide(BUILDER);
 	public static final Imaginary IMAGINARY = new Imaginary(BUILDER);
+	public static final Glasses GLASSES = new Glasses(BUILDER);
 
 	public static final ModConfigSpec SPEC = BUILDER.build();
+
+	public static class Glasses {
+		public final ModConfigSpec.DoubleValue opacity;
+		public final ModConfigSpec.BooleanValue useTexture;
+
+		private Glasses(ModConfigSpec.Builder builder) {
+			builder.push("glasses");
+			opacity = builder
+					.comment("How much sonic glasses obscure the world: 0.0 - no visible change to world, 1.0 - world fully obscured")
+					.defineInRange("opacity", 0.7, 0, 1);
+			useTexture = builder
+					.comment("Use texture for obscuring world")
+					.define("useTexture", true);
+			builder.pop();
+		}
+	}
 
 	public static class Imaginary {
 		public final ModConfigSpec.DoubleValue fadingSpeed;

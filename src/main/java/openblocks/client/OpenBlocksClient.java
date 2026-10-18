@@ -87,6 +87,10 @@ public class OpenBlocksClient {
 		modBus.addListener(MagnetRenderer::registerLayerDefinitions);
 		modBus.addListener(GlyphRenderer::registerAdditional);
 		modBus.addListener(GlyphRenderer::registerClientExtensions);
+		modBus.addListener(SonicGlassesRenderer::registerLayerDefinitions);
+		modBus.addListener(SonicGlassesRenderer::onAddLayers);
+		modBus.addListener(SonicGlassesRenderer::registerClientExtensions);
+		modBus.addListener(SonicGlassesRenderer::onClientSetup);
 
 		NeoForge.EVENT_BUS.addListener(ElevatorInputHandler::onMovementInput);
 		NeoForge.EVENT_BUS.addListener(HangGliderRenderer::onRenderPlayerPre);
@@ -103,6 +107,8 @@ public class OpenBlocksClient {
 		NeoForge.EVENT_BUS.addListener(GuideRenderer::onRenderHighlight);
 		NeoForge.EVENT_BUS.addListener(CraneRenderer::onRenderLevelStage);
 		NeoForge.EVENT_BUS.addListener(GlyphRenderer::onRenderHighlight);
+		NeoForge.EVENT_BUS.addListener(SonicGlassesRenderer::onClientTick);
+		NeoForge.EVENT_BUS.addListener(SonicGlassesRenderer::onRenderLevelStage);
 
 		// not earlier: loading the entity class needs its registered data serializer
 		modBus.addListener((FMLClientSetupEvent event) -> Cartographer.clientHighlight = CartographerRenderer::isHighlighted);

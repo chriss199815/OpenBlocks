@@ -97,6 +97,7 @@ public class OBBlockStateProvider extends BlockStateProvider {
 		List.of(OBItems.BEAM, OBItems.CRANE_ENGINE, OBItems.CRANE_MAGNET, OBItems.LINE, OBItems.MAP_CONTROLLER, OBItems.MAP_MEMORY, OBItems.ASSISTANT_BASE)
 				.forEach(item -> itemModels().basicItem(item.get()));
 		itemModels().basicItem(OBItems.CRANE_BACKPACK.get());
+		itemModels().basicItem(OBItems.SONIC_GLASSES.get());
 		craneControl();
 		glyph();
 		// legacy paintbrush model: handle, plus the paint tinted by OBColorHandlers

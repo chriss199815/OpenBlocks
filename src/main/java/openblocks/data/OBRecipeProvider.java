@@ -522,6 +522,19 @@ public class OBRecipeProvider extends RecipeProvider {
 		guides(output);
 		imaginary(output);
 		crane(output);
+		sonicGlasses(output);
+	}
+
+	private static void sonicGlasses(RecipeOutput output) {
+		ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, OBItems.SONIC_GLASSES.get())
+				.pattern("ihi")
+				.pattern("oso")
+				.define('i', Tags.Items.INGOTS_IRON)
+				.define('h', Items.IRON_HELMET)
+				.define('o', Tags.Items.OBSIDIANS)
+				.define('s', Tags.Items.RODS_WOODEN)
+				.unlockedBy("has_iron_helmet", has(Items.IRON_HELMET))
+				.save(output);
 	}
 
 	private static void crane(RecipeOutput output) {

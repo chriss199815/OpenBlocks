@@ -31,8 +31,23 @@ public class OBConfig {
 	public static final Tomfoolery TOMFOOLERY = new Tomfoolery(BUILDER);
 	public static final Projector PROJECTOR = new Projector(BUILDER);
 	public static final Guide GUIDE = new Guide(BUILDER);
+	public static final Imaginary IMAGINARY = new Imaginary(BUILDER);
 
 	public static final ModConfigSpec SPEC = BUILDER.build();
+
+	public static class Imaginary {
+		public final ModConfigSpec.DoubleValue numberOfUses;
+
+		// fadingSpeed is in the client config; like legacy, crafted pencils and crayons always have 10 uses, this is for
+		// the creative tab and pick block
+		private Imaginary(ModConfigSpec.Builder builder) {
+			builder.push("imaginary");
+			numberOfUses = builder
+					.comment("Number of uses of crayons/pencils from the creative tab or pick block")
+					.defineInRange("numberOfUses", 10.0, 0.5, 1000);
+			builder.pop();
+		}
+	}
 
 	public static class Guide {
 		public final ModConfigSpec.IntValue redstoneSensitivity;

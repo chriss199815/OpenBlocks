@@ -30,7 +30,7 @@
   "openblocks.changelog.title": "Mida uut on OpenBlocks %s",
   "openblocks.misc.url": "URL: %s",
   "openblocks.misc.type": "Tüüp: %s",
-  "openblocks.misc.uses": "Uses: %.2f",
+  "openblocks.misc.uses": "Uses: %s",
   "openblocks.misc.color": "Värv: #%s",
   "openblocks.misc.mode": "Placement mode: %s",
   "openblocks.misc.mode.block": "Plokk",

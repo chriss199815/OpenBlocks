@@ -6,6 +6,9 @@ import net.minecraft.world.item.crafting.SimpleCraftingRecipeSerializer;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import openblocks.OpenBlocks;
+import openblocks.recipe.CrayonGlassesRecipe;
+import openblocks.recipe.CrayonMergeRecipe;
+import openblocks.recipe.CrayonMixingRecipe;
 import openblocks.recipe.GoldenEyeRechargeRecipe;
 import openblocks.recipe.MapCloneRecipe;
 import openblocks.recipe.MapResizeRecipe;
@@ -25,4 +28,13 @@ public class OBRecipeSerializers {
 
 	public static final DeferredHolder<RecipeSerializer<?>, SimpleCraftingRecipeSerializer<MapResizeRecipe>> MAP_RESIZE = RECIPE_SERIALIZERS.register("map_resize",
 			() -> new SimpleCraftingRecipeSerializer<>(MapResizeRecipe::new));
+
+	public static final DeferredHolder<RecipeSerializer<?>, SimpleCraftingRecipeSerializer<CrayonMergeRecipe>> CRAYON_MERGE = RECIPE_SERIALIZERS.register("crayon_merge",
+			() -> new SimpleCraftingRecipeSerializer<>(CrayonMergeRecipe::new));
+
+	public static final DeferredHolder<RecipeSerializer<?>, SimpleCraftingRecipeSerializer<CrayonMixingRecipe>> CRAYON_MIXING = RECIPE_SERIALIZERS.register("crayon_mix",
+			() -> new SimpleCraftingRecipeSerializer<>(CrayonMixingRecipe::new));
+
+	public static final DeferredHolder<RecipeSerializer<?>, SimpleCraftingRecipeSerializer<CrayonGlassesRecipe>> CRAYON_GLASSES = RECIPE_SERIALIZERS.register("crayon_glasses",
+			() -> new SimpleCraftingRecipeSerializer<>(CrayonGlassesRecipe::new));
 }

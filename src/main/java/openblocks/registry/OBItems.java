@@ -6,6 +6,7 @@ import java.util.Map;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.item.Rarity;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import openblocks.OpenBlocks;
@@ -18,6 +19,8 @@ import openblocks.item.GoldenEyeItem;
 import openblocks.item.GuideItem;
 import openblocks.item.HangGliderItem;
 import openblocks.item.HeightMapItem;
+import openblocks.item.ImaginaryItem;
+import openblocks.item.ImaginationGlassesItem;
 import openblocks.item.LuggageItem;
 import openblocks.item.PaintBrushItem;
 import openblocks.item.PaintCanItem;
@@ -89,6 +92,17 @@ public class OBItems {
 			.food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).alwaysEdible().build())));
 
 	// legacy MetasGeneric
+	public static final DeferredItem<ImaginaryItem> PENCIL = ITEMS.register("pencil", () -> new ImaginaryItem(false, new Item.Properties().stacksTo(1)));
+	public static final DeferredItem<ImaginaryItem> CRAYON = ITEMS.register("crayon", () -> new ImaginaryItem(true, new Item.Properties().stacksTo(1)));
+	public static final DeferredItem<ImaginationGlassesItem> PENCIL_GLASSES = ITEMS.register("pencil_glasses",
+			() -> new ImaginationGlassesItem(ImaginationGlassesItem.Type.PENCIL, OBArmorMaterials.IMAGINATION_GLASSES, new Item.Properties()));
+	public static final DeferredItem<ImaginationGlassesItem> CRAYON_GLASSES = ITEMS.register("crayon_glasses",
+			() -> new ImaginationGlassesItem(ImaginationGlassesItem.Type.CRAYON, OBArmorMaterials.CRAYON_GLASSES, new Item.Properties()));
+	public static final DeferredItem<ImaginationGlassesItem> TECHNICOLOR_GLASSES = ITEMS.register("technicolor_glasses",
+			() -> new ImaginationGlassesItem(ImaginationGlassesItem.Type.TECHNICOLOR, OBArmorMaterials.IMAGINATION_GLASSES, new Item.Properties().rarity(Rarity.UNCOMMON)));
+	public static final DeferredItem<ImaginationGlassesItem> SERIOUS_GLASSES = ITEMS.register("serious_glasses",
+			() -> new ImaginationGlassesItem(ImaginationGlassesItem.Type.SERIOUS, OBArmorMaterials.IMAGINATION_GLASSES, new Item.Properties().rarity(Rarity.EPIC)));
+
 	public static final DeferredItem<Item> UNPREPARED_STENCIL = ITEMS.registerSimpleItem("unprepared_stencil");
 	public static final DeferredItem<Item> SKETCHING_PENCIL = ITEMS.registerSimpleItem("sketching_pencil");
 	// crafting parts of features that are not ported yet (crane backpack)

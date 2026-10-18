@@ -29,11 +29,13 @@ import openblocks.block.BlockManipulatorBlock;
 import openblocks.block.FlagBlock;
 import openblocks.block.GraveBlock;
 import openblocks.block.GuideBlock;
+import openblocks.block.ImaginaryBlock;
 import openblocks.block.SprinklerBlock;
 import openblocks.block.TargetBlock;
 import openblocks.block.entity.VacuumHopperBlockEntity;
 import openblocks.common.GuideOrientation;
 import openblocks.common.TankEdge;
+import openblocks.item.ImaginaryPlacementMode;
 import openblocks.registry.OBBlocks;
 import openblocks.registry.OBItems;
 import org.joml.Matrix3f;
@@ -100,6 +102,7 @@ public class OBBlockStateProvider extends BlockStateProvider {
 		OBItems.STENCILS.values().forEach(stencil -> itemModels().basicItem(stencil.get()));
 
 		tank();
+		imaginary();
 
 		final ModelFile xpDrain = models().getBuilder("xp_drain")
 				.renderType("cutout")
@@ -455,6 +458,77 @@ public class OBBlockStateProvider extends BlockStateProvider {
 				.face(Direction.EAST).uvs(0, 2, 16, 8).texture("#all").end()
 				.face(Direction.WEST).uvs(0, 2, 16, 8).texture("#all").end()
 				.end();
+	}
+
+	/**
+	 * Legacy imaginary models per shape and pencil/crayon; drawn by {@code ImaginaryRenderer}, rotated by the facing
+	 * (the stairs model has its upper step on the south side). Item models show the placement mode as an overlay, the
+	 * crayon tip is tinted by {@code OBColorHandlers}.
+	 */
+	private void imaginary() {
+		for (ImaginaryBlock.Type type : ImaginaryBlock.Type.values()) {
+			final String name = type.getSerializedName();
+			final ResourceLocation block = modLoc("block/" + name + "_block");
+			final ResourceLocation panel = modLoc("block/" + name + "_panel");
+			final ResourceLocation halfPanel = modLoc("block/" + name + "_half_panel");
+
+			final BlockModelBuilder cube = imaginaryModel(ImaginaryBlock.Shape.BLOCK, type, block);
+			final var cubeElement = cube.element().from(0.01f, 0.01f, 0.01f).to(15.99f, 15.99f, 15.99f);
+			for (Direction side : Direction.values()) {
+				final var face = cubeElement.face(side).uvs(0, 0, 16, 16).texture("#texture");
+				if (side == Direction.NORTH || side == Direction.WEST) face.rotation(ModelBuilder.FaceRotation.CLOCKWISE_90);
+				else if (side == Direction.UP) face.rotation(ModelBuilder.FaceRotation.COUNTERCLOCKWISE_90);
+				face.end();
+			}
+			cubeElement.end();
+
+			imaginaryModel(ImaginaryBlock.Shape.PANEL, type, panel)
+					.element().from(0, 0, 0).to(16, 16, 16).face(Direction.UP).uvs(0, 0, 16, 16).texture("#texture").end().end();
+			imaginaryModel(ImaginaryBlock.Shape.HALF_PANEL, type, panel)
+					.element().from(0, 0, 0).to(16, 8, 16).face(Direction.UP).uvs(0, 0, 16, 16).texture("#texture").rotation(ModelBuilder.FaceRotation.COUNTERCLOCKWISE_90).end().end();
+			imaginaryModel(ImaginaryBlock.Shape.STAIRS, type, halfPanel)
+					.element().from(0, 0, 0).to(16, 8, 8).face(Direction.UP).uvs(0, 0, 16, 8).texture("#texture").end().end()
+					.element().from(0, 0, 8).to(16, 16, 16).face(Direction.UP).uvs(0, 0, 16, 8).texture("#texture").end().end();
+		}
+
+		getVariantBuilder(OBBlocks.IMAGINARY.get()).forAllStates(state -> ConfiguredModel.builder()
+				.modelFile(new ModelFile.UncheckedModelFile(modLoc("block/" + imaginaryModelName(state.getValue(ImaginaryBlock.SHAPE), state.getValue(ImaginaryBlock.TYPE)))))
+				.rotationY((int)state.getValue(ImaginaryBlock.FACING).toYRot())
+				.build());
+
+		imaginaryItem("pencil", modLoc("item/pencil"));
+		imaginaryItem("crayon", modLoc("item/crayon_1"), modLoc("item/crayon_2"));
+
+		itemModels().withExistingParent("pencil_glasses", mcLoc("item/generated")).texture("layer0", modLoc("item/glasses_pencil"));
+		itemModels().withExistingParent("crayon_glasses", mcLoc("item/generated")).texture("layer0", modLoc("item/glasses_crayon"));
+		itemModels().withExistingParent("technicolor_glasses", mcLoc("item/generated")).texture("layer0", modLoc("item/glasses_technicolor"));
+		itemModels().withExistingParent("serious_glasses", mcLoc("item/generated")).texture("layer0", modLoc("item/glasses_admin"));
+	}
+
+	private static String imaginaryModelName(ImaginaryBlock.Shape shape, ImaginaryBlock.Type type) {
+		return "imaginary_" + shape.getSerializedName() + "_" + type.getSerializedName();
+	}
+
+	private BlockModelBuilder imaginaryModel(ImaginaryBlock.Shape shape, ImaginaryBlock.Type type, ResourceLocation texture) {
+		return models().getBuilder(imaginaryModelName(shape, type)).texture("texture", texture).texture("particle", texture);
+	}
+
+	/**
+	 * The item model shows block mode; overrides on {@code openblocks:mode} switch to the other modes.
+	 */
+	private void imaginaryItem(String name, ResourceLocation... layers) {
+		final ItemModelBuilder base = imaginaryItemModel(name, layers, ImaginaryPlacementMode.BLOCK);
+		for (ImaginaryPlacementMode mode : ImaginaryPlacementMode.values()) {
+			if (mode == ImaginaryPlacementMode.BLOCK) continue;
+			base.override().predicate(modLoc("mode"), mode.ordinal()).model(imaginaryItemModel(name + "_" + mode.overlay, layers, mode)).end();
+		}
+	}
+
+	private ItemModelBuilder imaginaryItemModel(String name, ResourceLocation[] layers, ImaginaryPlacementMode mode) {
+		final ItemModelBuilder builder = itemModels().withExistingParent(name, mcLoc("item/generated"));
+		for (int i = 0; i < layers.length; i++)
+			builder.texture("layer" + i, layers[i]);
+		return builder.texture("layer" + layers.length, modLoc("item/overlay_" + mode.overlay));
 	}
 
 	/**

@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "equipment",
+  "ingredients": [
+    {
+      "tag": "minecraft:coals"
+    },
+    {
+      "tag": "c:rods/wooden"
+    },
+    {
+      "item": "minecraft:ender_eye"
+    },
+    {
+      "tag": "c:slime_balls"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "openblocks:pencil"
+  }
+}

@@ -52,7 +52,7 @@
   "openblocks.changelog.title": "What's new in OpenBlocks %s",
   "openblocks.misc.url": "URL: %s",
   "openblocks.misc.type": "Type: %s",
-  "openblocks.misc.uses": "Uses: %.2f",
+  "openblocks.misc.uses": "Uses: %s",
   "openblocks.misc.color": "Color: #%s",
   "openblocks.misc.mode": "Placement mode: %s",
   "openblocks.misc.mode.block": "Block",

@@ -1,0 +1,26 @@
+{
+  "elements": [
+    {
+      "faces": {
+        "up": {
+          "rotation": 270,
+          "texture": "#texture"
+        }
+      },
+      "from": [
+        0,
+        0,
+        0
+      ],
+      "to": [
+        16,
+        8,
+        16
+      ]
+    }
+  ],
+  "textures": {
+    "particle": "openblocks:block/crayon_panel",
+    "texture": "openblocks:block/crayon_panel"
+  }
+}

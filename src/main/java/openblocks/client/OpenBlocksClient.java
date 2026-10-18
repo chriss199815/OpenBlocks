@@ -80,6 +80,7 @@ public class OpenBlocksClient {
 		modBus.addListener(CannonRenderer::registerClientExtensions);
 		modBus.addListener(ProjectorRenderer::registerAdditional);
 		modBus.addListener(CartographerRenderer::registerLayerDefinitions);
+		modBus.addListener(ImaginaryRenderer::registerClientExtensions);
 
 		NeoForge.EVENT_BUS.addListener(ElevatorInputHandler::onMovementInput);
 		NeoForge.EVENT_BUS.addListener(HangGliderRenderer::onRenderPlayerPre);
@@ -134,6 +135,7 @@ public class OpenBlocksClient {
 		event.registerBlockEntityRenderer(OBBlockEntities.PROJECTOR.get(), ProjectorRenderer::new);
 		event.registerBlockEntityRenderer(OBBlockEntities.GUIDE.get(), GuideRenderer::new);
 		event.registerBlockEntityRenderer(OBBlockEntities.BUILDER_GUIDE.get(), GuideRenderer::new);
+		event.registerBlockEntityRenderer(OBBlockEntities.IMAGINARY.get(), ImaginaryRenderer::new);
 		event.registerEntityRenderer(OBEntities.NO_FLY_XP_ORB.get(), ExperienceOrbRenderer::new);
 		event.registerEntityRenderer(OBEntities.LUGGAGE.get(), LuggageRenderer::new);
 		event.registerEntityRenderer(OBEntities.MINI_ME.get(), MiniMeRenderer::new);

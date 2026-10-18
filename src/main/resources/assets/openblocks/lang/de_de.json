@@ -69,7 +69,7 @@
   "openblocks.changelog.title": "Was neu ist in OpenBlocks %s",
   "openblocks.misc.url": "URL: %s",
   "openblocks.misc.type": "Typ: %s",
-  "openblocks.misc.uses": "Nutzt: %.2f",
+  "openblocks.misc.uses": "Nutzt: %s",
   "openblocks.misc.color": "Farbe: #%s",
   "openblocks.misc.mode": "Platzierungs-Modus: %s",
   "openblocks.misc.mode.block": "Block",
@@ -331,10 +331,10 @@
   "openblocks.stencil.balloon": "Ballon",
   "item.openblocks.crayon": "Magischer Buntstift",
   "item.openblocks.pencil": "Magischer Bleistift",
-  "item.openblocks.glasses.pencil": "Bleistiftbrille",
-  "item.openblocks.glasses.crayon": "Buntstiftbrille",
-  "item.openblocks.glasses.technicolor": "Erstaunliche Technicolor-Brille",
-  "item.openblocks.glasses.admin": "Badass-Brille",
+  "item.openblocks.pencil_glasses": "Bleistiftbrille",
+  "item.openblocks.crayon_glasses": "Buntstiftbrille",
+  "item.openblocks.technicolor_glasses": "Erstaunliche Technicolor-Brille",
+  "item.openblocks.serious_glasses": "Badass-Brille",
   "item.openblocks.crane_engine": "Kranmotor",
   "item.openblocks.crane_magnet": "Kranmagnet",
   "item.openblocks.beam": "Balken",
@@ -366,5 +366,6 @@
   "openblocks.misc.tank.contents": "%s: %s / %s mB (%s%%)",
   "entity.openblocks.xp_orb_no_fly": "Erfahrungskugel",
   "gamerule.openblocks:spawn_graves": "Gräber beim Tod eines Spielers erzeugen",
-  "openblocks.misc.tank.empty": "Leer (0 / %s mB)"
+  "openblocks.misc.tank.empty": "Leer (0 / %s mB)",
+  "block.openblocks.imaginary": "Imaginärer Block"
 }

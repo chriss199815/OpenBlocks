@@ -6,6 +6,8 @@ import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.client.event.RegisterColorHandlersEvent;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import openblocks.block.entity.PaintCanBlockEntity;
+import openblocks.item.ImaginaryItem;
+import openblocks.item.ImaginationGlassesItem;
 import openblocks.item.Paint;
 import openblocks.item.PaintCanItem;
 import openblocks.registry.OBBlocks;
@@ -33,6 +35,9 @@ public class OBColorHandlers {
 			final Paint paint = stack.get(OBComponents.PAINT);
 			return tintIndex == 1 && paint != null? 0xFF000000 | paint.color() : WHITE;
 		}, OBItems.PAINT_BRUSH.get());
+		// legacy: only the tip of the crayon (layer 1) and the whole crayon glasses icon are colored
+		event.register((stack, tintIndex) -> tintIndex == 1? 0xFF000000 | ImaginaryItem.getColor(stack) : WHITE, OBItems.CRAYON.get());
+		event.register((stack, tintIndex) -> tintIndex == 0? 0xFF000000 | ImaginationGlassesItem.getColor(stack) : WHITE, OBItems.CRAYON_GLASSES.get());
 	}
 
 	private static void registerDyedBlockColors(RegisterColorHandlersEvent.Block event, Map<DyeColor, ? extends DeferredBlock<? extends Block>> blocks) {

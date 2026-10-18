@@ -17,7 +17,11 @@ import openblocks.common.HeightMapData;
 import openblocks.common.TrophyType;
 import openblocks.item.EmptyMapItem;
 import openblocks.item.PaintBrushItem;
+import openblocks.item.ImaginaryItem;
+import openblocks.item.ImaginaryPlacementMode;
+import openblocks.item.ImaginationGlassesItem;
 import openblocks.item.PaintCanItem;
+import openblocks.util.PaintColors;
 import openblocks.item.TrophyItem;
 
 public class OBCreativeTabs {
@@ -29,7 +33,8 @@ public class OBCreativeTabs {
 			.icon(() -> new ItemStack(OBItems.HANG_GLIDER.get()))
 			.displayItems((params, output) -> {
 				OBItems.ITEMS.getEntries().forEach(item -> {
-					if (item != OBItems.TROPHY && item != OBItems.HEIGHT_MAP && item != OBItems.EMPTY_MAP) output.accept(item.get());
+					if (item != OBItems.TROPHY && item != OBItems.HEIGHT_MAP && item != OBItems.EMPTY_MAP && item != OBItems.PENCIL && item != OBItems.CRAYON && item != OBItems.CRAYON_GLASSES)
+						output.accept(item.get());
 				});
 				// like legacy, without the largest scale
 				for (int scale = 0; scale < HeightMapData.MAX_SCALE; scale++)
@@ -40,6 +45,12 @@ public class OBCreativeTabs {
 					output.accept(PaintBrushItem.create(color));
 					output.accept(PaintCanItem.create(color));
 				}
+				final float uses = OBConfig.IMAGINARY.numberOfUses.get().floatValue();
+				output.accept(ImaginaryItem.create(null, ImaginaryPlacementMode.BLOCK, uses));
+				for (DyeColor color : DyeColor.values())
+					output.accept(ImaginaryItem.create(PaintColors.rgb(color), ImaginaryPlacementMode.BLOCK, uses));
+				for (DyeColor color : DyeColor.values())
+					output.accept(ImaginationGlassesItem.createCrayonGlasses(PaintColors.rgb(color)));
 
 				if (OBConfig.TANKS.displayAllFilledTanks.getAsBoolean()) {
 					for (Fluid fluid : BuiltInRegistries.FLUID)

@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "equipment",
+  "group": "openblocks:crayon",
+  "ingredients": [
+    {
+      "tag": "c:dyes/white"
+    },
+    {
+      "item": "minecraft:paper"
+    },
+    {
+      "item": "minecraft:ender_eye"
+    },
+    {
+      "tag": "c:slime_balls"
+    }
+  ],
+  "result": {
+    "components": {
+      "openblocks:crayon_color": 15790320
+    },
+    "count": 1,
+    "id": "openblocks:crayon"
+  }
+}

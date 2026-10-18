@@ -15,6 +15,7 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.material.PushReaction;
+import net.neoforged.neoforge.common.util.DeferredSoundType;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import openblocks.OpenBlocks;
@@ -39,6 +40,7 @@ import openblocks.block.GoldenEggBlock;
 import openblocks.block.GraveBlock;
 import openblocks.block.GuideBlock;
 import openblocks.block.HealBlock;
+import openblocks.block.ImaginaryBlock;
 import openblocks.block.ItemDropperBlock;
 import openblocks.block.JadedLadderBlock;
 import openblocks.block.RopeLadderBlock;
@@ -296,6 +298,17 @@ public class OBBlocks {
 	// items registered in OBItems, they keep the settings; light like legacy (0.6)
 	public static final DeferredBlock<GuideBlock> GUIDE = BLOCKS.register("guide", () -> new GuideBlock(guideProperties()));
 	public static final DeferredBlock<GuideBlock.Builder> BUILDER_GUIDE = BLOCKS.register("builder_guide", () -> new GuideBlock.Builder(guideProperties()));
+
+	// item-less, drawn with OBItems.PENCIL/CRAYON; like legacy no drops, strength 1 and the crayon sound for everything
+	public static final DeferredBlock<ImaginaryBlock> IMAGINARY = BLOCKS.register("imaginary", () -> new ImaginaryBlock(BlockBehaviour.Properties.of()
+			.mapColor(MapColor.NONE)
+			.strength(1.0f)
+			.noOcclusion()
+			.dynamicShape()
+			.isViewBlocking((state, level, pos) -> false)
+			.isSuffocating((state, level, pos) -> false)
+			.pushReaction(PushReaction.BLOCK)
+			.sound(new DeferredSoundType(0.5f, 1.0f, OBSounds.CRAYON_PLACE, OBSounds.CRAYON_PLACE, OBSounds.CRAYON_PLACE, OBSounds.CRAYON_PLACE, OBSounds.CRAYON_PLACE))));
 
 	private static BlockBehaviour.Properties guideProperties() {
 		return BlockBehaviour.Properties.of()

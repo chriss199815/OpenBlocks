@@ -1,0 +1,79 @@
+{
+  "elements": [
+    {
+      "faces": {
+        "down": {
+          "texture": "#texture",
+          "uv": [
+            0.0,
+            0.0,
+            16.0,
+            16.0
+          ]
+        },
+        "east": {
+          "texture": "#texture",
+          "uv": [
+            0.0,
+            0.0,
+            16.0,
+            16.0
+          ]
+        },
+        "north": {
+          "rotation": 90,
+          "texture": "#texture",
+          "uv": [
+            0.0,
+            0.0,
+            16.0,
+            16.0
+          ]
+        },
+        "south": {
+          "texture": "#texture",
+          "uv": [
+            0.0,
+            0.0,
+            16.0,
+            16.0
+          ]
+        },
+        "up": {
+          "rotation": 270,
+          "texture": "#texture",
+          "uv": [
+            0.0,
+            0.0,
+            16.0,
+            16.0
+          ]
+        },
+        "west": {
+          "rotation": 90,
+          "texture": "#texture",
+          "uv": [
+            0.0,
+            0.0,
+            16.0,
+            16.0
+          ]
+        }
+      },
+      "from": [
+        0.01,
+        0.01,
+        0.01
+      ],
+      "to": [
+        15.99,
+        15.99,
+        15.99
+      ]
+    }
+  ],
+  "textures": {
+    "particle": "openblocks:block/pencil_block",
+    "texture": "openblocks:block/pencil_block"
+  }
+}

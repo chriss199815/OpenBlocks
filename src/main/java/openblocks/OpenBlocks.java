@@ -22,6 +22,7 @@ import openblocks.item.DevNullItem;
 import openblocks.item.LuggageItem;
 import openblocks.item.SpongeOnAStickItem;
 import openblocks.network.OBNetwork;
+import openblocks.registry.OBArmorMaterials;
 import openblocks.registry.OBAttachments;
 import openblocks.registry.OBBlockEntities;
 import openblocks.registry.OBBlocks;
@@ -50,6 +51,7 @@ public class OpenBlocks {
 		OBFluids.FLUID_TYPES.register(modBus);
 		OBFluids.FLUIDS.register(modBus);
 		OBBlocks.BLOCKS.register(modBus);
+		OBArmorMaterials.ARMOR_MATERIALS.register(modBus);
 		OBItems.ITEMS.register(modBus);
 		OBComponents.COMPONENTS.register(modBus);
 		OBBlockEntities.BLOCK_ENTITIES.register(modBus);

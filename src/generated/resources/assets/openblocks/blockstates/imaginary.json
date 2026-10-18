@@ -1,0 +1,124 @@
+{
+  "variants": {
+    "facing=east,shape=block,type=crayon": {
+      "model": "openblocks:block/imaginary_block_crayon",
+      "y": 270
+    },
+    "facing=east,shape=block,type=pencil": {
+      "model": "openblocks:block/imaginary_block_pencil",
+      "y": 270
+    },
+    "facing=east,shape=half_panel,type=crayon": {
+      "model": "openblocks:block/imaginary_half_panel_crayon",
+      "y": 270
+    },
+    "facing=east,shape=half_panel,type=pencil": {
+      "model": "openblocks:block/imaginary_half_panel_pencil",
+      "y": 270
+    },
+    "facing=east,shape=panel,type=crayon": {
+      "model": "openblocks:block/imaginary_panel_crayon",
+      "y": 270
+    },
+    "facing=east,shape=panel,type=pencil": {
+      "model": "openblocks:block/imaginary_panel_pencil",
+      "y": 270
+    },
+    "facing=east,shape=stairs,type=crayon": {
+      "model": "openblocks:block/imaginary_stairs_crayon",
+      "y": 270
+    },
+    "facing=east,shape=stairs,type=pencil": {
+      "model": "openblocks:block/imaginary_stairs_pencil",
+      "y": 270
+    },
+    "facing=north,shape=block,type=crayon": {
+      "model": "openblocks:block/imaginary_block_crayon",
+      "y": 180
+    },
+    "facing=north,shape=block,type=pencil": {
+      "model": "openblocks:block/imaginary_block_pencil",
+      "y": 180
+    },
+    "facing=north,shape=half_panel,type=crayon": {
+      "model": "openblocks:block/imaginary_half_panel_crayon",
+      "y": 180
+    },
+    "facing=north,shape=half_panel,type=pencil": {
+      "model": "openblocks:block/imaginary_half_panel_pencil",
+      "y": 180
+    },
+    "facing=north,shape=panel,type=crayon": {
+      "model": "openblocks:block/imaginary_panel_crayon",
+      "y": 180
+    },
+    "facing=north,shape=panel,type=pencil": {
+      "model": "openblocks:block/imaginary_panel_pencil",
+      "y": 180
+    },
+    "facing=north,shape=stairs,type=crayon": {
+      "model": "openblocks:block/imaginary_stairs_crayon",
+      "y": 180
+    },
+    "facing=north,shape=stairs,type=pencil": {
+      "model": "openblocks:block/imaginary_stairs_pencil",
+      "y": 180
+    },
+    "facing=south,shape=block,type=crayon": {
+      "model": "openblocks:block/imaginary_block_crayon"
+    },
+    "facing=south,shape=block,type=pencil": {
+      "model": "openblocks:block/imaginary_block_pencil"
+    },
+    "facing=south,shape=half_panel,type=crayon": {
+      "model": "openblocks:block/imaginary_half_panel_crayon"
+    },
+    "facing=south,shape=half_panel,type=pencil": {
+      "model": "openblocks:block/imaginary_half_panel_pencil"
+    },
+    "facing=south,shape=panel,type=crayon": {
+      "model": "openblocks:block/imaginary_panel_crayon"
+    },
+    "facing=south,shape=panel,type=pencil": {
+      "model": "openblocks:block/imaginary_panel_pencil"
+    },
+    "facing=south,shape=stairs,type=crayon": {
+      "model": "openblocks:block/imaginary_stairs_crayon"
+    },
+    "facing=south,shape=stairs,type=pencil": {
+      "model": "openblocks:block/imaginary_stairs_pencil"
+    },
+    "facing=west,shape=block,type=crayon": {
+      "model": "openblocks:block/imaginary_block_crayon",
+      "y": 90
+    },
+    "facing=west,shape=block,type=pencil": {
+      "model": "openblocks:block/imaginary_block_pencil",
+      "y": 90
+    },
+    "facing=west,shape=half_panel,type=crayon": {
+      "model": "openblocks:block/imaginary_half_panel_crayon",
+      "y": 90
+    },
+    "facing=west,shape=half_panel,type=pencil": {
+      "model": "openblocks:block/imaginary_half_panel_pencil",
+      "y": 90
+    },
+    "facing=west,shape=panel,type=crayon": {
+      "model": "openblocks:block/imaginary_panel_crayon",
+      "y": 90
+    },
+    "facing=west,shape=panel,type=pencil": {
+      "model": "openblocks:block/imaginary_panel_pencil",
+      "y": 90
+    },
+    "facing=west,shape=stairs,type=crayon": {
+      "model": "openblocks:block/imaginary_stairs_crayon",
+      "y": 90
+    },
+    "facing=west,shape=stairs,type=pencil": {
+      "model": "openblocks:block/imaginary_stairs_pencil",
+      "y": 90
+    }
+  }
+}

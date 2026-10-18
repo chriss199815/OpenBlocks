@@ -28,6 +28,7 @@ public class OBSounds {
 	public static final DeferredHolder<SoundEvent, SoundEvent> SLIMALYZER_SIGNAL = register("slimalyzer.signal");
 	public static final DeferredHolder<SoundEvent, SoundEvent> CANNON_ACTIVATE = register("cannon.activate");
 	public static final DeferredHolder<SoundEvent, SoundEvent> PLAYER_WHOOPS = register("best.feature.ever.fart");
+	public static final DeferredHolder<SoundEvent, SoundEvent> CRAYON_PLACE = register("crayon.place");
 
 	private static DeferredHolder<SoundEvent, SoundEvent> register(String id) {
 		return SOUNDS.register(id, () -> SoundEvent.createVariableRangeEvent(OpenBlocks.location(id)));

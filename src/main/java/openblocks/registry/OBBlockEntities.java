@@ -25,6 +25,7 @@ import openblocks.block.entity.GraveBlockEntity;
 import openblocks.block.entity.GuideBlockEntity;
 import openblocks.block.entity.HealBlockEntity;
 import openblocks.block.entity.SkyBlockEntity;
+import openblocks.block.entity.ImaginaryBlockEntity;
 import openblocks.block.entity.ItemDropperBlockEntity;
 import openblocks.block.entity.TankBlockEntity;
 import openblocks.block.entity.TrophyBlockEntity;
@@ -131,4 +132,7 @@ public class OBBlockEntities {
 
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<GuideBlockEntity.Builder>> BUILDER_GUIDE = BLOCK_ENTITIES.register("builder_guide",
 			() -> BlockEntityType.Builder.of(GuideBlockEntity.Builder::new, OBBlocks.BUILDER_GUIDE.get()).build(null));
+
+	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<ImaginaryBlockEntity>> IMAGINARY = BLOCK_ENTITIES.register("imaginary",
+			() -> BlockEntityType.Builder.of(ImaginaryBlockEntity::new, OBBlocks.IMAGINARY.get()).build(null));
 }

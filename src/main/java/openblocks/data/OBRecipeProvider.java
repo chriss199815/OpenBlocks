@@ -15,8 +15,14 @@ import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.item.ItemStack;
 import net.neoforged.neoforge.common.Tags;
 import openblocks.OpenBlocks;
+import openblocks.util.PaintColors;
+import openblocks.registry.OBComponents;
+import openblocks.recipe.CrayonMixingRecipe;
+import openblocks.recipe.CrayonMergeRecipe;
+import openblocks.recipe.CrayonGlassesRecipe;
 import openblocks.item.GoldenEyeItem;
 import openblocks.item.PaintBrushItem;
 import openblocks.recipe.GoldenEyeRechargeRecipe;
@@ -514,6 +520,45 @@ public class OBRecipeProvider extends RecipeProvider {
 
 		genericItems(output);
 		guides(output);
+		imaginary(output);
+	}
+
+	/**
+	 * Legacy recipes, with tags; the two pencil recipes (coal and charcoal) became one. Like legacy, crafted pencils and
+	 * crayons have 10 uses (their default).
+	 */
+	private void imaginary(RecipeOutput output) {
+		ShapelessRecipeBuilder.shapeless(RecipeCategory.TOOLS, OBItems.PENCIL.get())
+				.requires(ItemTags.COALS)
+				.requires(Tags.Items.RODS_WOODEN)
+				.requires(Items.ENDER_EYE)
+				.requires(Tags.Items.SLIME_BALLS)
+				.unlockedBy("has_ender_eye", has(Items.ENDER_EYE))
+				.save(output);
+
+		for (DyeColor color : DyeColor.values()) {
+			final ItemStack crayon = new ItemStack(OBItems.CRAYON.get());
+			crayon.set(OBComponents.CRAYON_COLOR, PaintColors.rgb(color));
+			ShapelessRecipeBuilder.shapeless(RecipeCategory.TOOLS, crayon)
+					.group("openblocks:crayon")
+					.requires(color.getTag())
+					.requires(Items.PAPER)
+					.requires(Items.ENDER_EYE)
+					.requires(Tags.Items.SLIME_BALLS)
+					.unlockedBy("has_ender_eye", has(Items.ENDER_EYE))
+					.save(output, OpenBlocks.location("crayon_" + color.getSerializedName()));
+		}
+
+		// the pencil stays in the grid with one use less
+		ShapelessRecipeBuilder.shapeless(RecipeCategory.COMBAT, OBItems.PENCIL_GLASSES.get())
+				.requires(OBItems.PENCIL.get())
+				.requires(Items.PAPER)
+				.unlockedBy("has_pencil", has(OBItems.PENCIL.get()))
+				.save(output);
+
+		SpecialRecipeBuilder.special(CrayonGlassesRecipe::new).save(output, OpenBlocks.location("crayon_glasses"));
+		SpecialRecipeBuilder.special(CrayonMergeRecipe::new).save(output, OpenBlocks.location("crayon_merge"));
+		SpecialRecipeBuilder.special(CrayonMixingRecipe::new).save(output, OpenBlocks.location("crayon_mix"));
 	}
 
 	private void guides(RecipeOutput output) {

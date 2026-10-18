@@ -1,5 +1,6 @@
 package openblocks.registry;
 
+import com.mojang.serialization.Codec;
 import net.minecraft.core.GlobalPos;
 import net.minecraft.core.component.DataComponentType;
 import net.minecraft.core.registries.Registries;
@@ -17,6 +18,7 @@ import openblocks.common.TrophyType;
 import openblocks.entity.CartographerData;
 import openblocks.item.CursorTarget;
 import openblocks.item.GoldenEyeTarget;
+import openblocks.item.ImaginaryPlacementMode;
 import openblocks.item.Paint;
 
 public class OBComponents {
@@ -102,4 +104,22 @@ public class OBComponents {
 	 */
 	public static final DeferredHolder<DataComponentType<?>, DataComponentType<GuideSettings>> GUIDE = COMPONENTS.registerComponentType("guide",
 			builder -> builder.persistent(GuideSettings.CODEC).networkSynchronized(GuideSettings.STREAM_CODEC));
+
+	/**
+	 * Uses left on a pencil or crayon; replaces the legacy {@code Uses} tag.
+	 */
+	public static final DeferredHolder<DataComponentType<?>, DataComponentType<Float>> IMAGINARY_USES = COMPONENTS.registerComponentType("imaginary_uses",
+			builder -> builder.persistent(Codec.floatRange(0, Float.MAX_VALUE)).networkSynchronized(ByteBufCodecs.FLOAT));
+
+	/**
+	 * Shape a pencil or crayon draws; replaces the legacy {@code Mode} tag.
+	 */
+	public static final DeferredHolder<DataComponentType<?>, DataComponentType<ImaginaryPlacementMode>> IMAGINARY_MODE = COMPONENTS.registerComponentType("imaginary_mode",
+			builder -> builder.persistent(ImaginaryPlacementMode.CODEC).networkSynchronized(ImaginaryPlacementMode.STREAM_CODEC));
+
+	/**
+	 * Color of a crayon or crayon glasses; replaces the legacy {@code Color} tag (and the crayon item damage).
+	 */
+	public static final DeferredHolder<DataComponentType<?>, DataComponentType<Integer>> CRAYON_COLOR = COMPONENTS.registerComponentType("crayon_color",
+			builder -> builder.persistent(Codec.INT).networkSynchronized(ByteBufCodecs.INT));
 }

@@ -69,7 +69,7 @@
   "openblocks.changelog.title": "What's new in OpenBlocks %s",
   "openblocks.misc.url": "URL: %s",
   "openblocks.misc.type": "Type: %s",
-  "openblocks.misc.uses": "Uses: %.2f",
+  "openblocks.misc.uses": "Uses: %s",
   "openblocks.misc.color": "Color: #%s",
   "openblocks.misc.mode": "Placement mode: %s",
   "openblocks.misc.mode.block": "Block",
@@ -331,10 +331,10 @@
   "openblocks.stencil.balloon": "Balloon",
   "item.openblocks.crayon": "Magic Crayon",
   "item.openblocks.pencil": "Magic Pencil",
-  "item.openblocks.glasses.pencil": "Pencil Glasses",
-  "item.openblocks.glasses.crayon": "Crayon Glasses",
-  "item.openblocks.glasses.technicolor": "Amazing Technicolor Glasses",
-  "item.openblocks.glasses.admin": "Badass Glasses",
+  "item.openblocks.pencil_glasses": "Pencil Glasses",
+  "item.openblocks.crayon_glasses": "Crayon Glasses",
+  "item.openblocks.technicolor_glasses": "Amazing Technicolor Glasses",
+  "item.openblocks.serious_glasses": "Badass Glasses",
   "item.openblocks.crane_engine": "Crane Engine",
   "item.openblocks.crane_magnet": "Crane Magnet",
   "item.openblocks.beam": "Beam",
@@ -367,5 +367,6 @@
   "openblocks.misc.tank.contents": "%s: %s / %s mB (%s%%)",
   "entity.openblocks.xp_orb_no_fly": "Experience Orb",
   "gamerule.openblocks:spawn_graves": "Spawn graves on player death",
-  "openblocks.misc.tank.empty": "Empty (0 / %s mB)"
+  "openblocks.misc.tank.empty": "Empty (0 / %s mB)",
+  "block.openblocks.imaginary": "Imaginary Block"
 }

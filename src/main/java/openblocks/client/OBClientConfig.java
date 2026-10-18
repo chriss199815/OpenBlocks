@@ -13,8 +13,22 @@ public class OBClientConfig {
 	public static final Projector PROJECTOR = new Projector(BUILDER);
 	public static final Tomfoolery TOMFOOLERY = new Tomfoolery(BUILDER);
 	public static final Guide GUIDE = new Guide(BUILDER);
+	public static final Imaginary IMAGINARY = new Imaginary(BUILDER);
 
 	public static final ModConfigSpec SPEC = BUILDER.build();
+
+	public static class Imaginary {
+		public final ModConfigSpec.DoubleValue fadingSpeed;
+
+		private Imaginary(ModConfigSpec.Builder builder) {
+			builder.push("imaginary");
+			// legacy changed the visibility by 0.0075 per frame, so the fading depended on the frame rate; this is the same at 60 fps
+			fadingSpeed = builder
+					.comment("Share of their full visibility imaginary blocks gain or lose per second when they appear or fade away")
+					.defineInRange("fadingSpeed", 0.45, 0.01, 100);
+			builder.pop();
+		}
+	}
 
 	public static class Guide {
 		public final ModConfigSpec.IntValue renderDistance;

@@ -1,0 +1,25 @@
+{
+  "elements": [
+    {
+      "faces": {
+        "up": {
+          "texture": "#texture"
+        }
+      },
+      "from": [
+        0,
+        0,
+        0
+      ],
+      "to": [
+        16,
+        16,
+        16
+      ]
+    }
+  ],
+  "textures": {
+    "particle": "openblocks:block/pencil_panel",
+    "texture": "openblocks:block/pencil_panel"
+  }
+}

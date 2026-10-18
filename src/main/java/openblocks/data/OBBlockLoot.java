@@ -58,6 +58,8 @@ public class OBBlockLoot extends BlockLootSubProvider {
 				.apply(CopyComponentsFunction.copyComponents(CopyComponentsFunction.Source.BLOCK_ENTITY).include(OBComponents.PAINT.get())));
 		// graves release their items when broken, but never drop themselves
 		add(OBBlocks.GRAVE.get(), noDrop());
+		// like legacy, imaginary blocks leave nothing behind
+		add(OBBlocks.IMAGINARY.get(), noDrop());
 		add(OBBlocks.TROPHY.get(), createSingleItemTable(OBBlocks.TROPHY.get())
 				.apply(CopyComponentsFunction.copyComponents(CopyComponentsFunction.Source.BLOCK_ENTITY).include(OBComponents.TROPHY.get()).include(OBComponents.TROPHY_COOLDOWN.get())));
 		add(OBBlocks.GUIDE.get(), createSingleItemTable(OBBlocks.GUIDE.get())

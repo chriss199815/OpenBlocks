@@ -23,7 +23,9 @@ public class OBDataGenerators {
 		generator.addProvider(event.includeClient(), new OBBlockStateProvider(output, existingFileHelper));
 
 		generator.addProvider(event.includeServer(), new LootTableProvider(output, Set.of(),
-				List.of(new LootTableProvider.SubProviderEntry(OBBlockLoot::new, LootContextParamSets.BLOCK)), lookupProvider));
+				List.of(new LootTableProvider.SubProviderEntry(OBBlockLoot::new, LootContextParamSets.BLOCK),
+						new LootTableProvider.SubProviderEntry(OBChestLoot::new, LootContextParamSets.CHEST)), lookupProvider));
+		generator.addProvider(event.includeServer(), new OBLootModifierProvider(output, lookupProvider));
 		generator.addProvider(event.includeServer(), new OBRecipeProvider(output, lookupProvider));
 		generator.addProvider(event.includeServer(), new OBAdvancementProvider(output, lookupProvider));
 		generator.addProvider(event.includeServer(), new OBBlockTagsProvider(output, lookupProvider, existingFileHelper));

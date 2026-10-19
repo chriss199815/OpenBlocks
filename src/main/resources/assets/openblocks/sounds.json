@@ -1,4 +1,12 @@
 {
+    "hangglider.vario": {
+        "sounds": [
+            {
+                "name": "openblocks:beep",
+                "stream": true
+            }
+        ]
+    },
     "elevator.activate": {
         "sounds": [
             "openblocks:teleport"

@@ -32,6 +32,7 @@ public class OBSounds {
 	public static final DeferredHolder<SoundEvent, SoundEvent> MOSQUITO = register("annoying.mosquito");
 	public static final DeferredHolder<SoundEvent, SoundEvent> ALARM_CLOCK = register("annoying.alarmclock");
 	public static final DeferredHolder<SoundEvent, SoundEvent> VIBRATE = register("annoying.vibrate");
+	public static final DeferredHolder<SoundEvent, SoundEvent> VARIO = register("hangglider.vario");
 
 	private static DeferredHolder<SoundEvent, SoundEvent> register(String id) {
 		return SOUNDS.register(id, () -> SoundEvent.createVariableRangeEvent(OpenBlocks.location(id)));

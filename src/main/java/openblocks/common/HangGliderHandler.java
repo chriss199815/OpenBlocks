@@ -32,8 +32,8 @@ public class HangGliderHandler {
 
 	private static final double VSPEED_NORMAL = -0.052;
 	private static final double VSPEED_FAST = -0.176;
-	private static final double VSPEED_MIN = -0.32;
-	private static final double VSPEED_MAX = 0.4;
+	public static final double VSPEED_MIN = -0.32;
+	public static final double VSPEED_MAX = 0.4;
 
 	private static final double HSPEED_NORMAL = 0.03;
 	private static final double HSPEED_FAST = 0.1;

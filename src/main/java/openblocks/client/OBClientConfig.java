@@ -15,8 +15,26 @@ public class OBClientConfig {
 	public static final Guide GUIDE = new Guide(BUILDER);
 	public static final Imaginary IMAGINARY = new Imaginary(BUILDER);
 	public static final Glasses GLASSES = new Glasses(BUILDER);
+	public static final HangGlider HANG_GLIDER = new HangGlider(BUILDER);
 
 	public static final ModConfigSpec SPEC = BUILDER.build();
+
+	public static class HangGlider {
+		public final ModConfigSpec.BooleanValue varioEnabled;
+		public final ModConfigSpec.IntValue varioVolume;
+
+		// legacy kept both only in memory; now the keys store them here
+		private HangGlider(ModConfigSpec.Builder builder) {
+			builder.push("hangglider");
+			varioEnabled = builder
+					.comment("Acoustic variometer while hang gliding (toggled with its key)")
+					.define("varioEnabled", false);
+			varioVolume = builder
+					.comment("Volume of the variometer (changed with its keys)")
+					.defineInRange("varioVolume", Vario.VOLUME_DEFAULT, Vario.VOLUME_MIN, Vario.VOLUME_MAX);
+			builder.pop();
+		}
+	}
 
 	public static class Glasses {
 		public final ModConfigSpec.DoubleValue opacity;

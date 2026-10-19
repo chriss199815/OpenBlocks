@@ -155,6 +155,9 @@ Fortschritt:
 ## Welle 5 (optional)
 Handbuch über Patchouli, akustisches Variometer für den Hang Glider, eventuell Integrationen (CC: Tweaked Peripherals), Übersetzungen nachpflegen.
 
+Fortschritt:
+- [x] Akustisches Variometer: Statt eigener `SourceDataLine` und Watchdog-Thread ist der Ton ein gestreamter Sound der Minecraft-Sound-Engine (`VarioSound`, Sound-Event `hangglider.vario`, Kategorie Spieler; die Datei in `sounds.json` wird nie gelesen), folgt damit der Lautstärke-Einstellung und pausiert mit dem Spiel. Tonhöhe und Pieptakt wie im Original (300–600 Hz beim Sinken, 600–2000 Hz mit Piepen beim Steigen, Mittel über 4 Ticks), gemessen wird die tatsächliche Höhenänderung des Spielers. Tasten V (an/aus) sowie lauter/leiser (ohne Belegung) sind immer registriert (im Original nur mit Thermik), Zustand und Lautstärke in der Client-Config (`hangglider.varioEnabled`, `hangglider.varioVolume`) statt nur im Speicher, Rückmeldung in der Aktionsleiste.
+
 ## Vorgehen je Feature (wiederholbares Muster)
 1. Alte Klassen in `legacy/` lesen (Block, BE, Renderer, GUI, Config-Werte, Rezept).
 2. Neu schreiben mit 1.21-APIs gemäß Ersatz-Tabelle.

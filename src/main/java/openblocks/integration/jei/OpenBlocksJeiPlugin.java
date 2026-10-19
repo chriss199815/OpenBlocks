@@ -1,12 +1,16 @@
 package openblocks.integration.jei;
 
 import java.util.List;
+import java.util.Objects;
 import mezz.jei.api.IModPlugin;
 import mezz.jei.api.JeiPlugin;
+import mezz.jei.api.constants.RecipeTypes;
 import mezz.jei.api.constants.VanillaTypes;
 import mezz.jei.api.gui.handlers.IGuiContainerHandler;
 import mezz.jei.api.registration.IGuiHandlerRegistration;
+import mezz.jei.api.registration.IRecipeRegistration;
 import mezz.jei.api.runtime.IJeiRuntime;
+import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.Rect2i;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.ItemStack;
@@ -15,9 +19,11 @@ import openblocks.client.gui.AutoAnvilScreen;
 import openblocks.client.gui.AutoEnchantmentTableScreen;
 import openblocks.client.gui.VacuumHopperScreen;
 import openblocks.client.gui.XpBottlerScreen;
+import openblocks.registry.OBItems;
 
 /**
- * Replaces the legacy NEI plugin ({@code NEIOpenBlocksConfig}), which hid internal items from the item list.
+ * Replaces the legacy NEI plugin ({@code NEIOpenBlocksConfig}), which hid internal items from the item list. Also shows
+ * examples of the special crafting recipes, see {@link SpecialRecipeExamples}.
  */
 @JeiPlugin
 public class OpenBlocksJeiPlugin implements IModPlugin {
@@ -27,6 +33,13 @@ public class OpenBlocksJeiPlugin implements IModPlugin {
 	@Override
 	public ResourceLocation getPluginUid() {
 		return UID;
+	}
+
+	@Override
+	public void registerRecipes(IRecipeRegistration registration) {
+		// JEI only starts in a world
+		final var registries = Objects.requireNonNull(Minecraft.getInstance().level).registryAccess();
+		registration.addRecipes(RecipeTypes.CRAFTING, SpecialRecipeExamples.create(registries));
 	}
 
 	@Override
@@ -64,8 +77,10 @@ public class OpenBlocksJeiPlugin implements IModPlugin {
 		if (!hidden.isEmpty()) runtime.getIngredientManager().removeIngredientsAtRuntime(VanillaTypes.ITEM_STACK, hidden);
 	}
 
+	/**
+	 * A height map without data is useless; canvas glass, also hidden by legacy, no longer has an item.
+	 */
 	private static List<ItemStack> hiddenItems() {
-		// TODO: add canvas glass (wave 3) and height map (wave 4), as in the legacy NEI plugin
-		return List.of();
+		return List.of(new ItemStack(OBItems.HEIGHT_MAP.get()));
 	}
 }

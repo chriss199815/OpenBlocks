@@ -12,6 +12,7 @@
   "openblocks.misc.vario.enabled": "Variometer on",
   "openblocks.misc.vario.disabled": "Variometer off",
   "openblocks.misc.vario.volume": "Variometer volume: %s/%s",
+  "openblocks.jei.example_lore": "Lore that has to go",
   "enchantment.openblocks.explosive": "Unstable",
   "enchantment.openblocks.last_stand": "Last Stand",
   "enchantment.openblocks.flim_flam": "Flim Flam",

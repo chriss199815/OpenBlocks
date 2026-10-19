@@ -37,7 +37,7 @@ Praktisch ist das ein Neuaufbau, der den alten Code als Referenz nutzt. Ein auto
 | Enchantments (Explosive, FlimFlam, LastStand) | Datapack-Enchantments (1.21 data-driven) + Event-Handler, die per `EnchantmentHelper` den Level abfragen |
 | `infobook`, `fixers`, Legacy-IDs | **entfallen** (Handbuch evtl. später über Patchouli) |
 | ComputerCraft/OpenPeripheral (`integration/`) | **entfällt vorerst** |
-| NEI-Plugin (`NEIOpenBlocksConfig`, versteckt Canvas Glass + Height Map) | **JEI**-Plugin `openblocks.integration.jei.OpenBlocksJeiPlugin` (optional, nur API zur Compile-Zeit). Später: JEI-Kategorien/Beschreibungen für Custom-Rezepte (Crayon-Mix, Map-Clone, Golden-Eye-Recharge …), da `CustomRecipe` in JEI sonst nicht sichtbar ist |
+| NEI-Plugin (`NEIOpenBlocksConfig`, versteckt Canvas Glass + Height Map) | **JEI**-Plugin `openblocks.integration.jei.OpenBlocksJeiPlugin` (optional, nur API zur Compile-Zeit). Beispiele für die Spezialrezepte in der Crafting-Kategorie (Welle 5) |
 
 Kleine Helfer aus `openmods.utils`/`geometry`/`colors` (z. B. Farb-Enums, Rotations-Helfer) werden bei Bedarf in ein internes Paket `openblocks.util` kopiert, nicht vorab.
 
@@ -157,6 +157,7 @@ Handbuch über Patchouli, akustisches Variometer für den Hang Glider, eventuell
 
 Fortschritt:
 - [x] Akustisches Variometer: Statt eigener `SourceDataLine` und Watchdog-Thread ist der Ton ein gestreamter Sound der Minecraft-Sound-Engine (`VarioSound`, Sound-Event `hangglider.vario`, Kategorie Spieler; die Datei in `sounds.json` wird nie gelesen), folgt damit der Lautstärke-Einstellung und pausiert mit dem Spiel. Tonhöhe und Pieptakt wie im Original (300–600 Hz beim Sinken, 600–2000 Hz mit Piepen beim Steigen, Mittel über 4 Ticks), gemessen wird die tatsächliche Höhenänderung des Spielers. Tasten V (an/aus) sowie lauter/leiser (ohne Belegung) sind immer registriert (im Original nur mit Thermik), Zustand und Lautstärke in der Client-Config (`hangglider.varioEnabled`, `hangglider.varioVolume`) statt nur im Speicher, Rückmeldung in der Aktionsleiste.
+- [x] JEI-Beispiele für die Spezialrezepte: JEI überspringt `CustomRecipe`, deshalb bekommt die Crafting-Kategorie feste Beispiele (`SpecialRecipeExamples`, wie JEI es selbst für Vanilla-Spezialrezepte macht) statt eigener Kategorien: Golden Eye aufladen (1 und 8 Enderperlen), Höhenkarte klonen und Karte vergrößern (je Maßstab), Bleistifte/Wachsmalstifte zusammenlegen, Farben mischen (Rot+Blau, Rot+Gelb, Blau+Gelb), Wachsmalbrille, Epic Eraser. Die Ergebnisse berechnen die echten Rezepte, nur das Klonen ist nachgebaut (es bräuchte eine Höhenkarte mit Daten). Die Höhenkarte ohne Daten wird wie im NEI-Plugin ausgeblendet; Canvas Glass hat kein Item mehr.
 
 ## Vorgehen je Feature (wiederholbares Muster)
 1. Alte Klassen in `legacy/` lesen (Block, BE, Renderer, GUI, Config-Werte, Rezept).

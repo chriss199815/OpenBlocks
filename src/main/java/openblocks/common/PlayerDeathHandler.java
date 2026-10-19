@@ -4,10 +4,13 @@ import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.Iterator;
 import java.util.List;
+import java.util.function.Consumer;
 import javax.annotation.Nullable;
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
+import net.minecraft.nbt.CompoundTag;
+import net.minecraft.nbt.NbtUtils;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.server.TickTask;
@@ -32,7 +35,7 @@ import openblocks.registry.OBGameRules;
 
 /**
  * Port of legacy {@code PlayerDeathHandler}: moves a dead player's drops into a grave placed near the death position.
- * Inventory backups ({@code storeContents} / {@code ob_inventory}) come with the commands in wave 4.
+ * With {@code graves.storeContents} the grave contents are also backed up by {@link PlayerInventoryStore}.
  */
 public class PlayerDeathHandler {
 
@@ -161,6 +164,7 @@ public class PlayerDeathHandler {
 		public void run() {
 			if (!trySpawnGrave()) {
 				OpenBlocks.LOG.warn("Failed to spawn grave for player '{}', dropping items", player.getGameProfile().getName());
+				backupGrave(meta -> setCommonStoreInfo(meta, false));
 				for (ItemEntity drop : loot)
 					level.addFreshEntity(drop);
 			}
@@ -190,8 +194,32 @@ public class PlayerDeathHandler {
 			grave.setDeathMessage(event.clickText);
 			grave.setLoot(loot.stream().map(ItemEntity::getItem).toList());
 
+			backupGrave(meta -> {
+				setCommonStoreInfo(meta, true);
+				meta.put("GraveLocation", NbtUtils.writeBlockPos(location));
+			});
+
 			OpenBlocks.LOG.info("Grave for ({},{}) was spawned at ({}) (player died at ({}))", player.getUUID(), player.getGameProfile().getName(), location, playerPos);
 			return true;
+		}
+
+		private void setCommonStoreInfo(CompoundTag meta, boolean placed) {
+			PlayerInventoryStore.setPlayerInfo(meta, player);
+			meta.put("PlayerLocation", NbtUtils.writeBlockPos(playerPos));
+			meta.putBoolean("Placed", placed);
+		}
+
+		private void backupGrave(Consumer<CompoundTag> extras) {
+			if (!OBConfig.GRAVES.storeContents.getAsBoolean()) return;
+
+			final String playerName = player.getGameProfile().getName();
+			try {
+				final var contents = loot.stream().map(drop -> drop.getItem().copy()).toList();
+				final var backup = PlayerInventoryStore.storeInventory(level.getServer(), contents, playerName, "grave", extras);
+				OpenBlocks.LOG.debug("Grave backup for player {} saved to {}", playerName, backup);
+			} catch (Exception e) {
+				OpenBlocks.LOG.warn("Failed to store grave backup for player {}", playerName, e);
+			}
 		}
 
 		@Nullable

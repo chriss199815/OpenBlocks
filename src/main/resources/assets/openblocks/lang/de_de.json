@@ -127,7 +127,7 @@
   "openblocks.misc.invalid_sub_inventory": "Kann Unterinventar %s nicht widerherstellen",
   "openblocks.misc.stored_inventory": "Spielerinventar gespeichert in %s",
   "openblocks.misc.restored_inventory": "Inventar von Spieler %s wiederhergestellt",
-  "openblocks.misc.invalid_index": "Fehlerhaftes Verzeichnis",
+  "openblocks.misc.invalid_index": "Ungültiger Index",
   "openblocks.misc.empty_slot": "Kein Item im Slot",
   "openblocks.misc.pedometer.tracking_reset": "Zähler zurückgesetzt",
   "openblocks.misc.pedometer.tracking_started": "Zähler gestartet",

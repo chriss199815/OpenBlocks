@@ -18,6 +18,7 @@ import openblocks.common.HeightMaps;
 import openblocks.common.LastStandEnchantmentHandler;
 import openblocks.common.OBCommands;
 import openblocks.common.PlayerDeathHandler;
+import openblocks.common.PlayerInventoryStore;
 import openblocks.common.SleepingBagHandler;
 import openblocks.common.TrophyDropHandler;
 import openblocks.common.flimflam.DefaultFlimFlams;
@@ -85,6 +86,7 @@ public class OpenBlocks {
 		NeoForge.EVENT_BUS.addListener(EventPriority.LOWEST, true, BlockBreakerBlockEntity::onBlockDrops);
 		// low priority and receiving cancelled events, like legacy, so other mods can claim drops first
 		NeoForge.EVENT_BUS.addListener(EventPriority.LOW, true, PlayerDeathHandler::onLivingDrops);
+		NeoForge.EVENT_BUS.addListener(EventPriority.HIGH, PlayerInventoryStore::onPlayerDeath);
 		NeoForge.EVENT_BUS.addListener(HangGliderHandler::onPlayerTick);
 		NeoForge.EVENT_BUS.addListener(HangGliderHandler::onChangedDimension);
 		NeoForge.EVENT_BUS.addListener(SleepingBagHandler::onCanContinueSleeping);

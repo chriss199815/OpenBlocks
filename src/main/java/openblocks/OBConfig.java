@@ -35,6 +35,7 @@ public class OBConfig {
 	public static final Crane CRANE = new Crane(BUILDER);
 	public static final Glyphs GLYPHS = new Glyphs(BUILDER);
 	public static final Enchantments ENCHANTMENTS = new Enchantments(BUILDER);
+	public static final Additional ADDITIONAL = new Additional(BUILDER);
 
 	public static final ModConfigSpec SPEC = BUILDER.build();
 
@@ -115,6 +116,18 @@ public class OBConfig {
 			lightLevel = builder
 					.comment("Level of light emitted by the active projector")
 					.defineInRange("lightLevel", 10, 0, 15);
+			builder.pop();
+		}
+	}
+
+	public static class Additional {
+		public final ModConfigSpec.BooleanValue dumpDeadPlayersInventories;
+
+		private Additional(ModConfigSpec.Builder builder) {
+			builder.push("additional");
+			dumpDeadPlayersInventories = builder
+					.comment("Should player inventories be stored after death (can be later restored with ob_inventory command)")
+					.define("dumpDeadPlayersInventories", true);
 			builder.pop();
 		}
 	}
@@ -377,6 +390,7 @@ public class OBConfig {
 		public final ModConfigSpec.BooleanValue requiresGraveInInv;
 		public final ModConfigSpec.DoubleValue specialActionFrequency;
 		public final ModConfigSpec.BooleanValue canSpawnBase;
+		public final ModConfigSpec.BooleanValue storeContents;
 
 		private Graves(ModConfigSpec.Builder builder) {
 			builder.push("graves");
@@ -401,6 +415,9 @@ public class OBConfig {
 			canSpawnBase = builder
 					.comment("Can grave spawn single block of dirt when it has no block under?")
 					.define("canSpawnBase", true);
+			storeContents = builder
+					.comment("Store contents of spawned graves into separate NBT files (can later be restored with ob_inventory command)")
+					.define("storeContents", true);
 			builder.pop();
 		}
 	}

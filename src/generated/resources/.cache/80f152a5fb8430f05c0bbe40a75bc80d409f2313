@@ -1,4 +1,4 @@
-// 1.21.1	2026-10-20T16:39:38.423623	OpenBlocks manual
+// 1.21.1	2026-10-20T16:44:56.205323	OpenBlocks manual
 a01ea7bb247f752ff4c2acfd56c97f4308f7e68a assets/openblocks/patchouli_books/manual/de_de/entries/blocks/auto_anvil.json
 61abd52f550f258b23c4b5e4e58705c2d5f33514 assets/openblocks/patchouli_books/manual/de_de/entries/blocks/auto_enchantment_table.json
 e72365fa9a234a568cebf8fce8fe0e5f15c6ca89 assets/openblocks/patchouli_books/manual/de_de/entries/blocks/bear_trap.json
@@ -11,6 +11,7 @@ ae936c3c6a042deffe660f785b1e3aed3704dd10 assets/openblocks/patchouli_books/manua
 875af9e4af97982ef11640c84374960deaac9993 assets/openblocks/patchouli_books/manual/de_de/entries/blocks/donation_station.json
 bd0fa2e81d702a92190629629d330e719435cd96 assets/openblocks/patchouli_books/manual/de_de/entries/blocks/drawing_table.json
 e7b8107eddfbd359e92c36c45de227086605fba4 assets/openblocks/patchouli_books/manual/de_de/entries/blocks/elevator.json
+4da2e4036794b1fd108dcad86a9594289474c5c6 assets/openblocks/patchouli_books/manual/de_de/entries/blocks/elevator_rotating.json
 0d4d00e5d37ffc76e1b9cb16613fe643948080b7 assets/openblocks/patchouli_books/manual/de_de/entries/blocks/fan.json
 0bc792bf39e0612ca1fbc776bb449b8c141892c3 assets/openblocks/patchouli_books/manual/de_de/entries/blocks/flag.json
 cdc22898f8d0bb0e9e4ed6d8089a17d52fa2c77d assets/openblocks/patchouli_books/manual/de_de/entries/blocks/guide.json
@@ -68,6 +69,7 @@ a99152b10c0c99c79edd268d6e94883e054e794a assets/openblocks/patchouli_books/manua
 7733843a16ddbc5e7ff2b881ba096f264e4ec835 assets/openblocks/patchouli_books/manual/en_us/entries/blocks/donation_station.json
 6fe0feb67eed36a542da70526f26060a0dbaa5a5 assets/openblocks/patchouli_books/manual/en_us/entries/blocks/drawing_table.json
 8b6a852ae0e80c2f6c3d46e56e7a8c38fbf2c279 assets/openblocks/patchouli_books/manual/en_us/entries/blocks/elevator.json
+a874add63c097855be4d7f26579bf45981722707 assets/openblocks/patchouli_books/manual/en_us/entries/blocks/elevator_rotating.json
 fa3ecea6d0e09fcd90734cc1d8ddf08f090d480e assets/openblocks/patchouli_books/manual/en_us/entries/blocks/fan.json
 2e79bf7f4b7c681a203fb1166447612e7bdd89de assets/openblocks/patchouli_books/manual/en_us/entries/blocks/flag.json
 62510cabda0493104b99bb46bd6630fd3c09ea90 assets/openblocks/patchouli_books/manual/en_us/entries/blocks/guide.json

@@ -209,6 +209,7 @@
   "block.openblocks.elevator": "Fahrstuhl",
   "block.openblocks.elevator.description": "Platziere einen Fahrstuhl drei oder mehr Blöcke oberhalb eines anderen ohne Blöcke dazwischen und du wirst fähig sein, entweder zu 'springen', um dich aufwärts zu bewegen oder zu 'kriechen', um dich abwärts zu bewegen. Fahrstühle können gefärbt werden, indem man mit einem Farbstoff in der Hand rechtsklickt. Du kannst dich jedoch nur zwischen Fahrstühlen in der selben Farbe teleportieren.",
   "block.openblocks.elevator_rotating": "Rotierender Fahrstuhl",
+  "block.openblocks.elevator_rotating.description": "Funktioniert wie ein normaler Fahrstuhl, dreht dich aber zusätzlich: Nach dem Teleportieren schaust du in dieselbe Richtung wie die Vorderseite des Fahrstuhls, an dem du ankommst. Beim Platzieren zeigt die Vorderseite zu dir.\n\nRotierende Fahrstühle verbinden sich mit normalen Fahrstühlen derselben Farbe, du brauchst sie also nur dort, wo die Richtung wichtig ist.",
   "block.openblocks.heal": "Heiler",
   "block.openblocks.heal.description": "Der Heil-Block ist ein Block für den Kreativ-Modus, der nach und nach einen kleinen Heilungs-Effekt bringt.",
   "block.openblocks.guide": "Bau-Hilfe",

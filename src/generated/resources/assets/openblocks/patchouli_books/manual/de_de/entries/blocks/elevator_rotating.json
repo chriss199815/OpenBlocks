@@ -1,0 +1,22 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:white_elevator_rotating",
+  "name": "block.openblocks.elevator_rotating",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:white_elevator_rotating,openblocks:orange_elevator_rotating,openblocks:magenta_elevator_rotating,openblocks:light_blue_elevator_rotating,openblocks:yellow_elevator_rotating,openblocks:lime_elevator_rotating,openblocks:pink_elevator_rotating,openblocks:gray_elevator_rotating,openblocks:light_gray_elevator_rotating,openblocks:cyan_elevator_rotating,openblocks:purple_elevator_rotating,openblocks:blue_elevator_rotating,openblocks:brown_elevator_rotating,openblocks:green_elevator_rotating,openblocks:red_elevator_rotating,openblocks:black_elevator_rotating",
+      "text": "Funktioniert wie ein normaler Fahrstuhl, dreht dich aber zusätzlich: Nach dem Teleportieren schaust du in dieselbe Richtung wie die Vorderseite des Fahrstuhls, an dem du ankommst. Beim Platzieren zeigt die Vorderseite zu dir.$(br)",
+      "title": "block.openblocks.elevator_rotating"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Rotierende Fahrstühle verbinden sich mit normalen Fahrstühlen derselben Farbe, du brauchst sie also nur dort, wo die Richtung wichtig ist."
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:white_elevator_rotating,openblocks:orange_elevator_rotating,openblocks:magenta_elevator_rotating,openblocks:light_blue_elevator_rotating,openblocks:yellow_elevator_rotating,openblocks:lime_elevator_rotating,openblocks:pink_elevator_rotating,openblocks:gray_elevator_rotating,openblocks:light_gray_elevator_rotating,openblocks:cyan_elevator_rotating,openblocks:purple_elevator_rotating,openblocks:blue_elevator_rotating,openblocks:brown_elevator_rotating,openblocks:green_elevator_rotating,openblocks:red_elevator_rotating,openblocks:black_elevator_rotating",
+      "recipe2": ""
+    }
+  ]
+}

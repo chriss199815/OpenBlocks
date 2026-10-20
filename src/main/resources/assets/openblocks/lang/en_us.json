@@ -209,6 +209,7 @@
   "block.openblocks.elevator": "Elevator",
   "block.openblocks.elevator.description": "Place one elevator directly three or more blocks above another with no blocks inbetween and you'll be able to either 'jump' to move up, or 'crouch' to move down. Elevators can be dyed by clicking on them with dye, however, you can only teleport between elevators of the same color.",
   "block.openblocks.elevator_rotating": "Rotating Elevator",
+  "block.openblocks.elevator_rotating.description": "Works like a normal elevator, but also turns you around: after teleporting you face the same way as the front of the elevator you arrive at. The front points towards you when you place it.\n\nRotating elevators connect to normal elevators of the same color, so you only need them where the direction matters.",
   "block.openblocks.heal": "Healer",
   "block.openblocks.heal.description": "The healing block is a creative-mode only block that gives off a slight healing effect over time.",
   "block.openblocks.guide": "Building Guide",

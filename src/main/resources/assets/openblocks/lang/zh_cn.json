@@ -329,5 +329,6 @@
   "entity.openblocks.xp_orb_no_fly": "经验球",
   "gamerule.openblocks:spawn_graves": "玩家死亡时生成墓碑",
   "openblocks.misc.tank.empty": "空（0 / %s mB）",
-  "block.openblocks.imaginary": "幻象方块"
+  "block.openblocks.imaginary": "幻象方块",
+  "upgrade.openblocks.magnet.adjective": "磁力"
 }

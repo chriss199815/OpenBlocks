@@ -55,14 +55,22 @@ public class OBConfig {
 		public final ModConfigSpec.BooleanValue shiftControl;
 		public final ModConfigSpec.BooleanValue canPickEntities;
 		public final ModConfigSpec.BooleanValue canPickBlocks;
+		public final ModConfigSpec.DoubleValue turtleMagnetRange;
+		public final ModConfigSpec.DoubleValue turtleMagnetDeactivateRange;
 
-		// doCraneCollisionCheck and the turtle settings are gone; the magnet whitelists are the tags
+		// doCraneCollisionCheck and addTurtles are gone (the magnet turtle upgrade is data driven); the magnet whitelists are the tags
 		// openblocks:magnet_pickable (entity types and blocks with block entities)
 		private Crane(ModConfigSpec.Builder builder) {
 			builder.push("crane");
 			shiftControl = builder
 					.comment("Use shift to control crane direction (otherwise, toggle every time)")
 					.define("boringMode", true);
+			turtleMagnetRange = builder
+					.comment("Range of magnet CC peripheral")
+					.defineInRange("turtleMagnetRange", 32.0, 1, 128);
+			turtleMagnetDeactivateRange = builder
+					.comment("Maximal distance from turtle to magnet when deactivating")
+					.defineInRange("turtleMagnetDeactivateRange", 3.0, 1, 128);
 			builder.pop();
 			builder.push("magnet");
 			canPickEntities = builder

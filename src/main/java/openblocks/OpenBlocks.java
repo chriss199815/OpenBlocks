@@ -77,7 +77,7 @@ public class OpenBlocks {
 
 		modBus.addListener(OBNetwork::register);
 		modBus.addListener(OBCapabilities::register);
-		if (OBComputerCraft.isLoaded()) modBus.addListener(OBComputerCraft::registerCapabilities);
+		if (OBComputerCraft.isLoaded()) OBComputerCraft.register(modBus);
 		modBus.addListener(OBEntities::registerAttributes);
 		modBus.addListener(OBDataGenerators::gatherData);
 		modBus.addListener(DonationInfo::onInterModProcess);

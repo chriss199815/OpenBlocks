@@ -3,6 +3,7 @@ package openblocks.gametest;
 import net.minecraft.core.BlockPos;
 import net.minecraft.gametest.framework.GameTest;
 import net.minecraft.gametest.framework.GameTestHelper;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.animal.Pig;
 import net.minecraft.world.entity.player.Player;
@@ -12,6 +13,7 @@ import net.minecraft.world.level.GameType;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.entity.ChestBlockEntity;
 import net.minecraft.world.phys.Vec3;
+import net.neoforged.neoforge.common.util.FakePlayerFactory;
 import net.neoforged.neoforge.gametest.GameTestHolder;
 import net.neoforged.neoforge.gametest.PrefixGameTestTemplate;
 import openblocks.OpenBlocks;
@@ -114,6 +116,59 @@ public class CraneGameTests {
 		helper.assertTrue(magnet.toggle(player), "The magnet should release the pig");
 		helper.assertFalse(pig.isPassenger(), "The pig should be released");
 		helper.succeed();
+	}
+
+	/**
+	 * Anchor like the turtle magnet: a movable target, invalidated by the test.
+	 */
+	private static class TestAnchor implements Magnet.Anchor {
+		Vec3 target;
+		boolean valid = true;
+
+		TestAnchor(Vec3 target) {
+			this.target = target;
+		}
+
+		@Override
+		public boolean isValid() {
+			return valid;
+		}
+
+		@Override
+		public Vec3 getTarget() {
+			return target;
+		}
+
+		@Override
+		public Player getActor(ServerLevel level) {
+			return FakePlayerFactory.getMinecraft(level);
+		}
+	}
+
+	@GameTest(template = OBGameTestStructureProvider.EMPTY_3X8X3, timeoutTicks = 100)
+	public static void anchoredMagnetFollowsCarriesAndDrops(GameTestHelper helper) {
+		helper.setBlock(TARGET, Blocks.STONE);
+		final TestAnchor anchor = new TestAnchor(Vec3.atCenterOf(helper.absolutePos(TARGET.above())));
+		final Magnet magnet = new Magnet(helper.getLevel(), anchor);
+		helper.getLevel().addFreshEntity(magnet);
+
+		helper.assertTrue(magnet.toggle(), "The magnet should pick up the stone");
+		helper.assertBlockPresent(Blocks.AIR, TARGET);
+		anchor.target = anchor.target.add(0, 3, 0);
+
+		helper.runAfterDelay(20, () -> {
+			helper.assertTrue(Math.abs(magnet.getBoundingBox().getCenter().y - anchor.target.y) < 0.6, "The magnet should follow its anchor, at " + magnet.position());
+			anchor.valid = false;
+		});
+		helper.runAfterDelay(25, () -> helper.assertFalse(magnet.isAlive(), "The magnet should be gone without its anchor"));
+		// like the crane, the released stone is placed where it hung
+		helper.succeedWhen(() -> {
+			helper.assertEntityNotPresent(OBEntities.MOUNTED_BLOCK.get());
+			boolean placed = false;
+			for (int dy = 2; dy <= 4; dy++)
+				placed |= helper.getBlockState(TARGET.above(dy)).is(Blocks.STONE);
+			helper.assertTrue(placed, "The stone should be placed where the magnet held it");
+		});
 	}
 
 	@GameTest(template = OBGameTestStructureProvider.EMPTY_3X8X3)

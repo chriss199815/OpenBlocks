@@ -329,5 +329,6 @@
   "entity.openblocks.xp_orb_no_fly": "Sfera di esperienza",
   "gamerule.openblocks:spawn_graves": "Crea tombe alla morte dei giocatori",
   "openblocks.misc.tank.empty": "Vuoto (0 / %s mB)",
-  "block.openblocks.imaginary": "Blocco immaginario"
+  "block.openblocks.imaginary": "Blocco immaginario",
+  "upgrade.openblocks.magnet.adjective": "Magnetica"
 }

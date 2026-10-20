@@ -1,11 +1,12 @@
 package openblocks.integration.computercraft;
 
+import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.ModList;
-import net.neoforged.neoforge.capabilities.RegisterCapabilitiesEvent;
 
 /**
- * CC: Tweaked peripherals, replacing the legacy OpenPeripheral adapters ({@code ModuleAdapters}). CC: Tweaked is optional,
- * so its classes are only touched through here after {@link #isLoaded()}.
+ * CC: Tweaked peripherals and the magnet turtle upgrade, replacing the legacy OpenPeripheral adapters ({@code ModuleAdapters},
+ * {@code ModuleTurtles}). CC: Tweaked is optional, so this class doesn't touch its classes; the others are only used after
+ * {@link #isLoaded()}.
  */
 public class OBComputerCraft {
 
@@ -15,7 +16,8 @@ public class OBComputerCraft {
 		return ModList.get().isLoaded(MODID);
 	}
 
-	public static void registerCapabilities(RegisterCapabilitiesEvent event) {
-		OBPeripherals.register(event);
+	public static void register(IEventBus modBus) {
+		OBTurtleUpgrades.UPGRADE_TYPES.register(modBus);
+		modBus.addListener(OBPeripherals::register);
 	}
 }

@@ -329,5 +329,6 @@
   "entity.openblocks.xp_orb_no_fly": "Сфера опыта",
   "gamerule.openblocks:spawn_graves": "Создавать могилы при смерти игрока",
   "openblocks.misc.tank.empty": "Пусто (0 / %s mB)",
-  "block.openblocks.imaginary": "Воображаемый блок"
+  "block.openblocks.imaginary": "Воображаемый блок",
+  "upgrade.openblocks.magnet.adjective": "Магнитная"
 }

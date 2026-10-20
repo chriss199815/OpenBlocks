@@ -329,5 +329,6 @@
   "entity.openblocks.xp_orb_no_fly": "Kula doświadczenia",
   "gamerule.openblocks:spawn_graves": "Twórz groby po śmierci gracza",
   "openblocks.misc.tank.empty": "Pusty (0 / %s mB)",
-  "block.openblocks.imaginary": "Wyimaginowany blok"
+  "block.openblocks.imaginary": "Wyimaginowany blok",
+  "upgrade.openblocks.magnet.adjective": "Magnetyczny"
 }

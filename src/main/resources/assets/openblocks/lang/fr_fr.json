@@ -329,5 +329,6 @@
   "entity.openblocks.xp_orb_no_fly": "Orbe d'expérience",
   "gamerule.openblocks:spawn_graves": "Créer des tombes à la mort des joueurs",
   "openblocks.misc.tank.empty": "Vide (0 / %s mB)",
-  "block.openblocks.imaginary": "Bloc imaginaire"
+  "block.openblocks.imaginary": "Bloc imaginaire",
+  "upgrade.openblocks.magnet.adjective": "Magnétique"
 }

@@ -34,6 +34,7 @@ import openblocks.client.tank.TankBlockEntityRenderer;
 import openblocks.client.tank.TankItemRenderer;
 import openblocks.client.tank.TankModel;
 import openblocks.entity.Cartographer;
+import openblocks.integration.computercraft.OBComputerCraft;
 import openblocks.registry.OBBlockEntities;
 import openblocks.registry.OBEntities;
 import openblocks.menu.BlockPlacerMenu;
@@ -47,6 +48,7 @@ import openblocks.registry.OBMenus;
 public class OpenBlocksClient {
 
 	public OpenBlocksClient(IEventBus modBus, ModContainer container) {
+		if (OBComputerCraft.isLoaded()) modBus.addListener(TurtleUpgradeModels::register);
 		modBus.addListener(OBColorHandlers::registerBlockColors);
 		modBus.addListener(OBColorHandlers::registerItemColors);
 		modBus.addListener(OBFluidRendering::registerClientExtensions);

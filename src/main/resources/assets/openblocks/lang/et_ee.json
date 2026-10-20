@@ -329,5 +329,6 @@
   "entity.openblocks.xp_orb_no_fly": "Kogemuskera",
   "gamerule.openblocks:spawn_graves": "Loo mängija surma korral haud",
   "openblocks.misc.tank.empty": "Tühi (0 / %s mB)",
-  "block.openblocks.imaginary": "Kujuteldav plokk"
+  "block.openblocks.imaginary": "Kujuteldav plokk",
+  "upgrade.openblocks.magnet.adjective": "Magnetiline"
 }

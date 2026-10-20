@@ -329,5 +329,6 @@
   "entity.openblocks.xp_orb_no_fly": "Erfahrungskugel",
   "gamerule.openblocks:spawn_graves": "Gräber beim Tod eines Spielers erzeugen",
   "openblocks.misc.tank.empty": "Leer (0 / %s mB)",
-  "block.openblocks.imaginary": "Imaginärer Block"
+  "block.openblocks.imaginary": "Imaginärer Block",
+  "upgrade.openblocks.magnet.adjective": "Magnetisch"
 }

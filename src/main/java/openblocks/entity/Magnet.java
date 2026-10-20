@@ -34,7 +34,8 @@ import openblocks.registry.OBEntities;
  * Port of legacy {@code EntityMagnet.PlayerBound}: hangs from the arm of the crane backpack, two blocks in front of its
  * owner and as far down as the crane control lowered it. Picks up the entity below it or, if there is none, the block
  * below it; the carried entity hangs inside its (growing) bounding box, so it does not move into walls. The server
- * moves it (legacy {@code EntitySmoothMove}), clients only follow.
+ * moves it (legacy {@code EntitySmoothMove}), clients only follow. Turtles hold magnets through an {@link Anchor} instead
+ * (legacy {@code EntityMagnet} with {@code IOwner}).
  */
 public class Magnet extends Entity {
 
@@ -53,8 +54,29 @@ public class Magnet extends Entity {
 
 	private static final String TAG_OWNER = "Owner";
 
+	/**
+	 * Holder of a magnet that is not a player; server only and not saved, so a loaded magnet without owner drops what it
+	 * carries and disappears.
+	 */
+	public interface Anchor {
+
+		boolean isValid();
+
+		/**
+		 * Where the centre of the magnet should be.
+		 */
+		Vec3 getTarget();
+
+		/**
+		 * Player the magnet acts as when picking up blocks (protection, break events).
+		 */
+		Player getActor(ServerLevel level);
+	}
+
 	@Nullable
 	private UUID ownerId;
+	@Nullable
+	private Anchor anchor;
 	private boolean aboveTarget;
 
 	public Magnet(EntityType<? extends Magnet> type, Level level) {
@@ -66,6 +88,16 @@ public class Magnet extends Entity {
 		ownerId = owner.getUUID();
 		entityData.set(DATA_OWNER, owner.getId());
 		setPos(getTarget(owner));
+	}
+
+	public Magnet(Level level, Anchor anchor) {
+		this(OBEntities.MAGNET.get(), level);
+		this.anchor = anchor;
+		setPos(anchorPosition(anchor));
+	}
+
+	private Vec3 anchorPosition(Anchor anchor) {
+		return anchor.getTarget().subtract(0, getBbHeight() / 2, 0);
 	}
 
 	/**
@@ -111,6 +143,17 @@ public class Magnet extends Entity {
 		super.tick();
 		final Player owner = findOwner();
 
+		if (!level().isClientSide && anchor != null) {
+			if (!anchor.isValid()) {
+				ejectPassengers();
+				discard();
+				return;
+			}
+			moveTowards(anchorPosition(anchor));
+			aboveTarget = !findTargets(null).isEmpty();
+			return;
+		}
+
 		if (!level().isClientSide) {
 			if (owner == null || !isValidFor(owner)) {
 				ejectPassengers();
@@ -150,6 +193,22 @@ public class Magnet extends Entity {
 	 * Releases the carried entity or picks up a new one: the first entity below, otherwise the block below.
 	 */
 	public boolean toggle(Player owner) {
+		return toggle(owner, owner);
+	}
+
+	/**
+	 * Toggle for an {@link Anchor}.
+	 */
+	public boolean toggle() {
+		if (anchor == null || !(level() instanceof ServerLevel level)) return false;
+		return toggle(null, anchor.getActor(level));
+	}
+
+	/**
+	 * @param owner excluded from the entities to pick up
+	 * @param actor picks up blocks
+	 */
+	private boolean toggle(@Nullable Player owner, Player actor) {
 		final Entity passenger = getFirstPassenger();
 		if (passenger != null) {
 			if (passenger instanceof IMagnetAware aware && !aware.canRelease()) return false;
@@ -162,7 +221,7 @@ public class Magnet extends Entity {
 		Entity target = null;
 		if (OBConfig.CRANE.canPickEntities.getAsBoolean()) target = findTargets(owner).stream().findFirst().orElse(null);
 		if (target == null && OBConfig.CRANE.canPickBlocks.getAsBoolean())
-			target = MountedBlock.pickUp(level, BlockPos.containing(getX(), getY() - 0.5, getZ()), owner);
+			target = MountedBlock.pickUp(level, BlockPos.containing(getX(), getY() - 0.5, getZ()), actor);
 
 		return target != null && target.startRiding(this, true);
 	}

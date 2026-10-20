@@ -10,6 +10,8 @@ import net.minecraft.data.loot.LootTableProvider;
 import net.minecraft.world.level.storage.loot.parameters.LootContextParamSets;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.neoforged.neoforge.data.event.GatherDataEvent;
+import openblocks.integration.computercraft.OBComputerCraft;
+import openblocks.integration.computercraft.OBTurtleUpgradeProvider;
 
 public class OBDataGenerators {
 
@@ -39,5 +41,7 @@ public class OBDataGenerators {
 		generator.addProvider(event.includeServer(), new OBStructureTagsProvider(output, lookupProvider, existingFileHelper));
 		generator.addProvider(event.includeServer(), new OBDataMapProvider(output, lookupProvider));
 		generator.addProvider(event.includeServer(), new OBGameTestStructureProvider(output));
+		// only with CC: Tweaked, which the dev runtime always has
+		if (OBComputerCraft.isLoaded()) generator.addProvider(event.includeServer(), new OBTurtleUpgradeProvider(output, lookupProvider));
 	}
 }

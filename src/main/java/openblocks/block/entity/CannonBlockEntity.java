@@ -71,6 +71,30 @@ public class CannonBlockEntity extends BlockEntity {
 		if (level != null) level.sendBlockUpdated(worldPosition, getBlockState(), getBlockState(), Block.UPDATE_CLIENTS);
 	}
 
+	/**
+	 * Aims by angles, like legacy {@code setYaw}/{@code setPitch}/{@code setSpeed} (computers): yaw 0 shoots south, 90 west;
+	 * pitch is the angle above the horizon.
+	 */
+	public void setAim(double yaw, double pitch, double speed) {
+		final double yawRad = Math.toRadians(yaw + 90);
+		final double pitchRad = Math.toRadians(pitch);
+		velocity = new Vec3(Math.cos(pitchRad) * Math.cos(yawRad), Math.sin(pitchRad), Math.cos(pitchRad) * Math.sin(yawRad)).scale(speed);
+		setChanged();
+		if (level != null) level.sendBlockUpdated(worldPosition, getBlockState(), getBlockState(), Block.UPDATE_CLIENTS);
+	}
+
+	public double getAimYaw() {
+		return Mth.wrapDegrees(targetYaw());
+	}
+
+	public double getAimPitch() {
+		return targetPitch();
+	}
+
+	public double getSpeed() {
+		return velocity.length();
+	}
+
 	public double getYaw() {
 		return currentYaw;
 	}

@@ -18,6 +18,13 @@ repositories {
         name = 'Jared (JEI)'
         url = 'https://maven.blamejared.com'
     }
+    maven {
+        name = 'SquidDev (CC: Tweaked)'
+        url = 'https://maven.squiddev.cc'
+        content {
+            includeGroup 'cc.tweaked'
+        }
+    }
 }
 
 neoForge {
@@ -73,6 +80,9 @@ dependencies {
     runtimeOnly "mezz.jei:jei-${minecraft_version}-neoforge:${jei_version}"
     compileOnly "vazkii.patchouli:Patchouli:${minecraft_version}-${patchouli_version}-NEOFORGE:api"
     runtimeOnly "vazkii.patchouli:Patchouli:${minecraft_version}-${patchouli_version}-NEOFORGE"
+    compileOnly "cc.tweaked:cc-tweaked-${minecraft_version}-core-api:${cctweaked_version}"
+    compileOnly "cc.tweaked:cc-tweaked-${minecraft_version}-forge-api:${cctweaked_version}"
+    runtimeOnly "cc.tweaked:cc-tweaked-${minecraft_version}-forge:${cctweaked_version}"
 }
 
 var generateModMetadata = tasks.register('generateModMetadata', ProcessResources) {

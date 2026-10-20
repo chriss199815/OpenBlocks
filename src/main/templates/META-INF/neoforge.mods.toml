@@ -39,3 +39,10 @@ file="META-INF/accesstransformer.cfg"
     versionRange="[1.21.1-93,)"
     ordering="NONE"
     side="BOTH"
+
+[[dependencies.${mod_id}]]
+    modId="computercraft"
+    type="optional"
+    versionRange="[1.120,)"
+    ordering="NONE"
+    side="BOTH"

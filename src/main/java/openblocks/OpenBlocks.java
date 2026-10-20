@@ -25,6 +25,7 @@ import openblocks.common.TrophyDropHandler;
 import openblocks.common.flimflam.DefaultFlimFlams;
 import openblocks.common.flimflam.FlimFlamHandler;
 import openblocks.entity.NoFlyXpOrb;
+import openblocks.integration.computercraft.OBComputerCraft;
 import openblocks.item.DevNullItem;
 import openblocks.item.LuggageItem;
 import openblocks.item.SpongeOnAStickItem;
@@ -76,6 +77,7 @@ public class OpenBlocks {
 
 		modBus.addListener(OBNetwork::register);
 		modBus.addListener(OBCapabilities::register);
+		if (OBComputerCraft.isLoaded()) modBus.addListener(OBComputerCraft::registerCapabilities);
 		modBus.addListener(OBEntities::registerAttributes);
 		modBus.addListener(OBDataGenerators::gatherData);
 		modBus.addListener(DonationInfo::onInterModProcess);

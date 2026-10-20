@@ -71,16 +71,28 @@ public class VillageHighlighterBlockEntity extends BlockEntity {
 		if (level.getGameTime() % UPDATE_INTERVAL == 0) highlighter.update((ServerLevel)level, state);
 	}
 
-	private void update(ServerLevel level, BlockState state) {
+	/**
+	 * Beds, job sites and bells in range, also while unpowered (for computers).
+	 */
+	public List<Poi> findPois(ServerLevel level) {
 		final List<Poi> pois = new ArrayList<>();
 		level.getPoiManager().getInRange(type -> true, worldPosition, RANGE, PoiManager.Occupancy.ANY).forEach(record -> {
 			final PoiKind kind = kindOf(record);
 			if (kind != null) pois.add(new Poi(record.getPos(), kind, record.hasSpace()));
 		});
+		return pois;
+	}
+
+	public List<Villager> findVillagers(ServerLevel level) {
+		return level.getEntitiesOfClass(Villager.class, new AABB(worldPosition).inflate(RANGE));
+	}
+
+	private void update(ServerLevel level, BlockState state) {
+		final List<Poi> pois = findPois(level);
 
 		final List<VillagerInfo> villagers = new ArrayList<>();
 		int adults = 0;
-		for (Villager villager : level.getEntitiesOfClass(Villager.class, new AABB(worldPosition).inflate(RANGE))) {
+		for (Villager villager : findVillagers(level)) {
 			villagers.add(new VillagerInfo(villager.getId(), villager.wantsToSpawnGolem(level.getGameTime())));
 			if (!villager.isBaby()) adults++;
 		}

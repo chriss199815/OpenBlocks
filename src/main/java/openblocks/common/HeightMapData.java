@@ -91,6 +91,21 @@ public class HeightMapData extends SavedData {
 		return layers;
 	}
 
+	// for computers (legacy AdapterProjector), which may edit maps freely; callers mark the map updated
+
+	public void setCenter(int centerX, int centerZ) {
+		this.centerX = centerX;
+		this.centerZ = centerZ;
+	}
+
+	public void setDimension(@Nullable ResourceKey<Level> dimension) {
+		this.dimension = dimension;
+	}
+
+	public void setLayers(List<Layer> layers) {
+		this.layers = List.copyOf(layers);
+	}
+
 	/**
 	 * Legacy {@code MapDataBuilder.resetMap}: moves the map, keeping old pixels until they are mapped again.
 	 */

@@ -36,6 +36,23 @@ public class CannonGameTests {
 		helper.succeed();
 	}
 
+	@GameTest(template = OBGameTestStructureProvider.EMPTY_3X8X3)
+	public static void aimByAnglesRoundTrips(GameTestHelper helper) {
+		final BlockPos cannonPos = new BlockPos(1, 1, 1);
+		helper.setBlock(cannonPos, OBBlocks.CANNON.get());
+		final CannonBlockEntity cannon = (CannonBlockEntity)helper.getBlockEntity(cannonPos);
+
+		cannon.setAim(0, 0, 2);
+		final Vec3 south = cannon.getVelocity();
+		helper.assertTrue(south.distanceTo(new Vec3(0, 0, 2)) < 1e-6, "Expected yaw 0 to shoot south, got " + south);
+
+		cannon.setAim(-120, 35, 1.5);
+		helper.assertTrue(Math.abs(cannon.getAimYaw() + 120) < 1e-6, "yaw " + cannon.getAimYaw());
+		helper.assertTrue(Math.abs(cannon.getAimPitch() - 35) < 1e-6, "pitch " + cannon.getAimPitch());
+		helper.assertTrue(Math.abs(cannon.getSpeed() - 1.5) < 1e-6, "speed " + cannon.getSpeed());
+		helper.succeed();
+	}
+
 	@GameTest(template = OBGameTestStructureProvider.EMPTY_16X8X16, timeoutTicks = 200)
 	public static void poweredCannonShootsItemsAtTarget(GameTestHelper helper) {
 		final BlockPos cannonPos = new BlockPos(2, 2, 2);

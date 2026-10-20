@@ -3,119 +3,106 @@ OpenBlocks
 
 An open source random collection of blocks and miscellaneous cool stuff.
 
+This is an unofficial port of [OpenBlocks](https://github.com/OpenMods/OpenBlocks) from Minecraft 1.12.2 (Forge) to **Minecraft 1.21.1 (NeoForge)**. The original mod was created by the OpenMods team; this port is maintained by chriss199815 and is not affiliated with or endorsed by the original authors. Please report bugs of this port [here](https://github.com/chriss199815/OpenBlocks/issues), not to the OpenMods team.
 
-For stable release downloads, click [here](https://www.openmods.info).
+> **Status: alpha.** All features of the original are ported, but the port is new and may still contain bugs. Back up your worlds. Worlds from 1.12.2 cannot be converted.
 
-For snapshot versions, check the [Jenkins](https://builds.openmods.info).
 
-**[FAQ](https://openmods.info/faq.html)**
+About this port: made with AI
+-----------
+This port was written almost entirely by an AI, guided, reviewed and tested by me. The AI read the original 1.12.2 code and rewrote each feature for the NeoForge 1.21.1 APIs; I decided what to port and how, tested every feature in game and approved each change before it was committed.
+
+What this means for you:
+
+* The code was not written line by line by a human. It has been tested in game and with automated GameTests, but bugs the original never had are possible.
+* Textures, models and sounds are the original assets from OpenBlocks. Most translations were carried over from the original; missing and new strings were translated by the AI.
+* If you run into a problem, please open an issue. Reports help a lot.
+
+
+Requirements
+-----------
+* Minecraft 1.21.1
+* NeoForge 21.1 or newer
+
+Optional integrations:
+
+* [JEI](https://modrinth.com/mod/jei): recipes, including examples for the special crafting recipes
+* [Patchouli](https://modrinth.com/mod/patchouli): the in-game manual (Info Book)
+* [CC: Tweaked](https://modrinth.com/mod/cc-tweaked): peripherals for several blocks and a magnet turtle upgrade
 
 
 What does it contain?
 -----------
-**In (mostly) chronological order:**
-
 * A combination ladder and trapdoor, also known as the **Jaded Ladder**
-* A creative-only **healer** block that slowly replenishes your health and food when you stand on it.
-* A **guide block** to assist in various constructions
-* Colorable **elevator blocks** to quickly travel between floors. Requires XP by default.
-* **Light boxes** to display your maps on the wall, ceiling or floor
+* A creative-only **healer** block that slowly replenishes your health and food when you stand on it
+* A **guide block** and **builder's guide** to assist in various constructions
+* Colorable **elevator blocks** (also in a rotating variant) to quickly travel between floors. Requires XP by default
 * Archery **targets** for a shooting range
-* ~~**Torch arrows!**~~ *No longer implemented*
-* **Player graves**, safekeeping for your last death (assuming you’re capable of regeneration)
+* **Player graves**, safekeeping for your last death
 * Colored **flags** for various purposes
-* Liquid **tanks**-- portable, practical, and pliable any-size liquid containment
-* Hang **gliders**!
+* Liquid **tanks**: portable, practical, and pliable any-size liquid containment
+* Hang **gliders**, with an optional acoustic variometer
 * Random **trophies** that may or may not do odd things when right-clicked
-* **Bear traps**-- like venus fly traps, but snappier
+* **Bear traps**: like venus fly traps, but snappier
 * **Luggage**, the traveling sentient chest
-* **Sprinklers**, to accelerate the growth of crops and other growables // m1.5.2, v1.0.3
+* **Sprinklers**, to accelerate the growth of crops and other growables
 * **Item cannons** to shoot items around for transport
-* **Vaccum hoppers**-- like regular hoppers, but not limited to the top and sucks up XP. Compatible with BuildCraft!
-* **Sonic goggles**-- echolocation for Steves
-* **Sponges** for getting rid of liquids fast and effectively
+* **Vacuum hoppers**: like regular hoppers, but not limited to the top, and they suck up XP
+* **Sonic glasses**: echolocation for Steves
+* **Sponges** (and the sponge on a stick) for getting rid of liquids fast
 * The Redstone Configurable Pulse Lightweight Mega Touch Sensor, also known as the **BIG BUTTON**
 * Blocks drawn by **pencils** and **crayons** that are only seen by the imaginative eye
-* **Fans**-- the power of an industrial fan in the size of a desk fan
+* **Fans**: the power of an industrial fan in the size of a desk fan
 * A wearable **crane** for picking up blocks and entities
-* **XP Bottler**-- should be self-explanatory
-* **Magnet turtles**-- turtles don't have CRT screens, so we should be fine
-* **Village highlighter**-- shows the village borders and where their golem guardians spawn
-* The **Slimalizer**, which detects slime chunks
-* **Paths**, an alternative to gravel roads // m1.6.x, v1.2.0
-* The **Block Breaker** and **Block Placer** are back! A perfect replacement for the now-dormant RedPower mod
-* **XP Drain**-- stand on one attached to a tank, and your XP will be drained and turned into a liquid state
-* The **Auto Anvil** and **Auto Enchantment Table**, imported fresh from OpenXP. Uses liquid XP to perform their function automatically.
-* The **Sleeping Bag**. Finally, a way to sleep on the go without resetting your spawn point!
-* The **Rope Ladder**-- a magic ladder that doesn’t need support to hold itself up and adjusts its own size to match the ground. Single use.
-* The **Donation Station**-- tells you which mod a block or item comes from, and lets you support the modder that created it
-* A painting/staining system for blocks, including: // m1.6.x, v.1.2.2
-  * A **Paint Mixer**-- makes paint using dyes and milk. Millions of colors possible. 
-  * A paint **brush** to paint white **canvases** and other blocks.
+* **XP Bottler**, **XP Drain** and **XP Shower** for liquid XP
+* **Magnet turtles** (with CC: Tweaked)
+* **Village highlighter**: shows beds, workstations, bells and villager ranges of nearby villages (reworked, since villages work differently since 1.14)
+* The **Slimalyzer**, which detects slime chunks
+* **Paths**, an alternative to gravel roads
+* The **Block Breaker**, **Block Placer** and **Item Dropper**
+* The **Auto Anvil** and **Auto Enchantment Table**, using liquid XP to work automatically
+* The **Sleeping Bag**: sleep on the go without resetting your spawn point
+* The **Rope Ladder**: a magic ladder that doesn't need support and rolls itself down to the ground
+* The **Donation Station**: tells you which mod a block or item comes from
+* The **Projector**, **Cartographer** and height maps
+* The **Sky Block**, **Golden Egg**, **Golden Eye**, **Glyphs**, **Scaffolding**, **Pedometer**, **Cursor**, **Dev Null** and more
+* Three enchantments (Explosive, Last Stand, Flim Flam) with their random flim flam pranks
+* A painting/staining system for blocks, including:
+  * A **Paint Mixer**: makes paint using dyes and milk. Millions of colors possible
+  * A paint **brush** to paint white **canvases** and other blocks
   * **Stencils** that are made using the **Drawing Table** to paint specific areas of blocks
-  * A **Squeegee** that liquefies paint to clean it off of blocks
-* ~~Listen to music among other things with the **radio**!~~ *Killed!*
-* Exciting graphics and much more to come.
+  * A **Squeegee** that cleans paint off of blocks
+
 
 Compiling
 --------------
-We will try keep the building instructions as up-to-date as possible, but things may change without notice.
-
-### Windows
-You will require [msysgit](http://code.google.com/p/msysgit/downloads/list) or git installed with cygwin. Alternatively I would suggest installing [GitHub for Windows](http://windows.github.com/) and checking out the repo with that.
-
-#### Check out the repo
-Use Github for Windows or use a command prompt/powershell with git binaries in the Environment path.
-```git clone https://github.com/OpenMods/OpenBlocks.git```
-#### Change directory
-```cd OpenBlocks```
-#### Fetch dependencies (OpenModsLib etc.)
-```
-git submodule init
-git submodule update
-```
-#### Run gradle build
-OpenBlocks uses Forge Gradle build system, as almost any other mod this days. There are few good tutorials, so we will include just basic command for building:
+You need Java 21 and git.
 
 ```
-gradle.bat build
-```
-
-The resulting files should be in the `build/lib` folder. File ending with `-deobf` is unobfuscated version for development use.
-
-### Linux or OSX
-Much the same as Windows, open a terminal window where you wish to checkout the repo and type
-```
-git clone https://github.com/OpenMods/OpenBlocks.git
+git clone https://github.com/chriss199815/OpenBlocks.git
 cd OpenBlocks
-git submodule init
-git submodule update
+git checkout port/1.21.1
+./gradlew build
 ```
 
-In **OSX**, git is typically supplied. Otherwise it can be installed through the apps thingy that OSX has (Obviously I know very little about OSX but you want the dev tools stuff).
+On Windows use `gradlew.bat build`. The finished jar is in `build/libs`.
 
-**(To install git and other command line tools on OS X, tun `xcode-select --install` in the terminal (/Applications/Utilities/Terminal.app))**
+Other useful tasks:
 
-The linux git can be fetched from any package manager. If you're on a Debian based machine (This includes **Ubuntu**) you likely have aptitude, so the command would be ```sudo apt-get install git```. 
+* `./gradlew runClient` / `./gradlew runServer`: start the game in the dev environment
+* `./gradlew runData`: run the data generators (output in `src/generated/resources`)
+* `./gradlew runGameTestServer`: run the GameTests
 
-If you're running a RedHat based system, such as **CentOS** or **Fedora** (or some other Distro I've never heard of), then you might have the yum package manager ```sudo yum install git-core```. In the case that this does not work through yum, you might not have the packages added to yum to be able to find git. I wont go in to these here, but if you have issues feel free to contact NeverCast in #OpenMods on irc.esper.net.
-#### Then run gradle
+The old 1.12.2 code is kept in `legacy/` as a reference only; it is not compiled. The original OpenModsLib library is not needed anymore.
 
-OpenBlocks uses Forge Gradle build system, as almost any other mod this days. There are few good tutorials, so we will include just basic command for building:
 
-```
-./gradle build
-```
-
-The resulting files should be in the `build/lib` folder. File ending with `-deobf` is unobfuscated version for development use.
-
-Contact
+Credits
 -
-Feel free to chat with us in #OpenMods on *irc.esper.net*
+* The OpenMods team (Mikee, NeverCast, boq, Lyqyd and all contributors) for the original OpenBlocks and all its assets
+* Port to NeoForge 1.21.1: chriss199815
+
 
 License
 -
 
-OpenBlocks is open source, please check the Licence.txt for more information and the licences of individual components of this mod.
-
-    
+OpenBlocks is open source under the MIT license, see [LICENSE](LICENSE). The original copyright notice of the OpenMods team is kept.

@@ -81,7 +81,6 @@ You need Java 21 and git.
 ```
 git clone https://github.com/chriss199815/OpenBlocks.git
 cd OpenBlocks
-git checkout port/1.21.1
 ./gradlew build
 ```
 

@@ -4,7 +4,7 @@ Vollständiger Plan: [PORTING_PLAN.md](PORTING_PLAN.md)
 
 ## Projektstatus
 - Laufender Port von MC 1.12.2 (Forge) auf **NeoForge 1.21.1** (21.1.x), Java 21, ModDevGradle 2, Parchment-Mappings, Gradle 8.14.
-- Arbeitsbranch: `port/1.21.1`. `master` = unveränderter 1.12.2-Stand.
+- Arbeitsbranch: `main` (Port). `original-1.12` = unveränderter 1.12.2-Stand (früher `master`).
 - Alter Code liegt in `legacy/` (wird NICHT kompiliert), nur als Referenz. Nie aus `legacy/` importieren.
 - `legacy/OpenModsLib` (Submodul) wird **nicht** portiert – Ersatz siehe unten.
 - Port in Wellen: 0 Fundament · 1 einfache Blöcke/Items · 2 XP-Fluid/Tank/Grave/Glider · 3 Maschinen/GUIs · 4 komplexe Features · 5 optional (Handbuch, Integrationen).

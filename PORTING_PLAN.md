@@ -152,7 +152,7 @@ Fortschritt:
 
 - [x] Befehl `ob_inventory` + Inventar-Backups: Brigadier-Befehl (Op-Level 4) mit `store <spieler>`, `restore <spieler> <id>` und `spawn <id> [main|<unterinventar> [<index>]]`, Tab-Vervollständigung für Backup-IDs und Unterinventare. `PlayerInventoryStore` schreibt komprimierte NBT-Dateien `inventory-<spieler>-<datum>-<typ>-<n>.dat` nach `<welt>/data` (Items im 1.21-Format, Backups aus 1.12 sind nicht kompatibel); IDs werden geprüft, damit sie den Ordner nicht verlassen. Backups beim Tod (`additional.dumpDeadPlayersInventories`) und für Gräber, platziert oder nicht (`graves.storeContents`). API `InventoryEvent.Store`/`Load` (NeoForge-`PlayerEvent`), damit Mods mit Zusatzinventaren diese mitsichern können. GameTests.
 
-## Welle 5 (optional)
+## Welle 5 (optional) — ✅ erledigt (2026-10-20)
 Handbuch über Patchouli, akustisches Variometer für den Hang Glider, eventuell Integrationen (CC: Tweaked Peripherals), Übersetzungen nachpflegen.
 
 Fortschritt:
@@ -164,6 +164,7 @@ Fortschritt:
 - [x] Übersetzungen: 48 veraltete Keys entfernt (Radio, Digital Fuse, Changelog, `om_config`, Turtle u. a.), alle 16 Sprachen vollständig (331 Keys); Französisch, Koreanisch, Estnisch und Niederländisch neu übersetzt, die übrigen ergänzt und korrigiert. `Component.translatable` kennt nur `%s`, deshalb wurden alle `%d`/`%.2f` zu `%s` (Big Button formatiert die Sekunden selbst).
 - [x] CC: Tweaked-Peripherals (optionale Abhängigkeit, `openblocks.integration.computercraft`, ersetzt die OpenPeripheral-Adapter): Item-Kanone (`setYaw`/`setPitch`/`setSpeed`, neu `getAim`; Geschwindigkeit 0 < v ≤ 3,9), Bauhilfe (`getSize`/`setSize`, `getShape`/`setShape`, `getColor`/`setColor`, `getCount`, neu Redstone-Modus und `rotate`), Projektor (Methoden wie `AdapterProjector`, Dimension als ID), Spendenstation (`getItemAuthor`, zusätzlich Link), Dorf-Hervorheber (`getVillages` beschreibt Betten/Arbeitsplätze/Glocken und Dorfbewohner, da es Dörfer mit Türen nicht mehr gibt).
 - [x] Turtle-Upgrade Magnet (legacy `MagnetTurtleUpgrade`/`MagnetControlAdapter`): datengetriebenes Upgrade `openblocks:magnet` aus dem Kranmagneten (statt Miracle Magnet), Modell = flaches Item. Peripheral `openblocks_magnet` mit den alten Methoden plus `getTarget`; Koordinaten relativ zur Turtle (x rechts, y oben, z vorne, legacy hatte vertauschte Achsen). Treibstoff wie legacy (5 + 1/s, 2/s beladen), `crane.turtleMagnetRange`/`turtleMagnetDeactivateRange` in der Config. Der Kran-`Magnet` kann dafür statt an einem Spieler an einem `Anchor` hängen.
+- [x] JEI-Subtypes für Glyphen, leere Karten, Trophäen, Wachsmalstift, Wachsmalbrille, Pinsel und Farbeimer (nach Farbe, nicht nach Restmenge): JEI zeigte sonst nur eine Variante je Item und warnte über doppelte Einträge im Creative-Tab.
 
 ## Vorgehen je Feature (wiederholbares Muster)
 1. Alte Klassen in `legacy/` lesen (Block, BE, Renderer, GUI, Config-Werte, Rezept).

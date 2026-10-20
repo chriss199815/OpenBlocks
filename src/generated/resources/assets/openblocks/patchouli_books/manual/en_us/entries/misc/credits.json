@@ -1,0 +1,19 @@
+{
+  "category": "openblocks:misc",
+  "icon": "openblocks:info_book",
+  "name": "openblocks.gui.credits.title",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Boq, Mikee and NeverCast$() - Leading developers of OpenBlocks (are we allowed to credit ourselves?)$(br)$(br)$(l)SinZ and Yoshi2$() - members of the OpenMods team from the start.$(br)$(br)$(l)Vexatos and crafteverywhere$() -"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Regularly translating the mods.$(br)$(br)Everyone else who has contributed to the code over the past two years.$(br)$(br)$(l)Direwolf20 and the rest of ForgeCraft$() - for putting up with the bugs and crashes before we release.$(br)$(br)Everyone who's done spotlights, lets plays and generally"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "supported the mod since we started!"
+    }
+  ]
+}

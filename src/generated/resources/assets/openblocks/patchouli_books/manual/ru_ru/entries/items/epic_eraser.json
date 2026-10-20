@@ -1,0 +1,22 @@
+{
+  "category": "openblocks:items",
+  "icon": "openblocks:epic_eraser",
+  "name": "item.openblocks.epic_eraser",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "openblocks:epic_eraser",
+      "link_recipe": true,
+      "text": "Каждая вещь имеет свою историю...$(br)$(br)Вы ненавидите это, не так ли?$(br)С этим вы сможете очистить все следы полученные вашими вещами на протяжении многих лет, а затем не задумываясь продать",
+      "title": "item.openblocks.epic_eraser"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "их на чёрном рынке."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "openblocks:epic_eraser"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "category": "openblocks:misc",
+  "icon": "openblocks:tasty_clay",
+  "name": "openblocks.gui.bkey.title",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Il tasto 'B' è un tasto molto speciale in OpenBlocks.$(br)$(br)L'abilitazione dell'opzione di configurazione 'weAreSeriousPeople' nella categoria 'tomfoolery' sia nel file di configurazione del client sia in quello del server ti darà il tuo personale sistema"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "digestivo.$(br)$(br)Prova a mangiare un po' di quella gustosa argilla e poi premi 'B' per digerire!"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:vacuum_hopper",
+  "name": "block.openblocks.vacuum_hopper",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "openblocks:vacuum_hopper",
+      "link_recipe": true,
+      "text": "虚空漏斗会吸收附近的掉落物或经验球并存储.你可以通过操作界面右边的设定栏来调整虚空漏斗输出物品或经验的面.",
+      "title": "block.openblocks.vacuum_hopper"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "openblocks:vacuum_hopper"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:white_elevator",
+  "name": "block.openblocks.elevator",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "openblocks:white_elevator,openblocks:orange_elevator,openblocks:magenta_elevator,openblocks:light_blue_elevator,openblocks:yellow_elevator,openblocks:lime_elevator,openblocks:pink_elevator,openblocks:gray_elevator,openblocks:light_gray_elevator,openblocks:cyan_elevator,openblocks:purple_elevator,openblocks:blue_elevator,openblocks:brown_elevator,openblocks:green_elevator,openblocks:red_elevator,openblocks:black_elevator",
+      "link_recipe": true,
+      "text": "엘레베이터를 놓은 자리에서 위에 1블럭 아래1블럭이 없고 2블럭 이상(이하)에 엘레베이터 블럭이 있는경우 그곳으로 이동 할 수 있습니다. 올라가기위해선 '점프' 내려가기 위해선 '웅크리기'를 하시면 됩니다.",
+      "title": "block.openblocks.elevator"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "openblocks:white_elevator",
+      "recipe2": "openblocks:orange_elevator"
+    }
+  ]
+}

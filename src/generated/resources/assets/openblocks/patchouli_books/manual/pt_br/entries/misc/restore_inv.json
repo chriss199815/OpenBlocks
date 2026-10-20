@@ -1,0 +1,19 @@
+{
+  "category": "openblocks:misc",
+  "icon": "minecraft:chest",
+  "name": "openblocks.gui.restore_inv.title",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Todos podem cometer erros. Mas com o comando $(l)/ob_inventory$(), você pode corrigir alguns deles. Este comando pode ser usado para restaurar o inventário. Backup é criado quando:$(br) - o jogador morre$(br) - túmulo é spawnado $(br) - o jogador ativa o comando"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l)/ob_inventory store$()$(br)$(br)Para restaurar o inventário você precisa do nome do backup. Vá para a pasta abaixo ou para a pasta de salvos no servidor e procure por arquivos nomeados como $(l)inventário-*.dat$(). Então restaure o inventário com $(l)/ob_inventory restore <player> $()"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l)<id>$() - onde id é ou nome completo ou apenas parte do nome, sem $(l)inventário-$() e $(l).dat$(). Você também pode usar tab para completar. Backups são arquivos .NBT normais e podem ser abertos com qualquer editor."
+    }
+  ]
+}

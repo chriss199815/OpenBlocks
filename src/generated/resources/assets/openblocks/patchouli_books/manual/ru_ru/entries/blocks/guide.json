@@ -1,0 +1,22 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:guide",
+  "name": "block.openblocks.guide",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "openblocks:guide",
+      "link_recipe": true,
+      "text": "Руководитель по строительству, как только получит сигнал красного камня, покажет Вам схему из призрачных блоков различных форм и размеров, что поможет Вам распланировать комнаты.$(br)Используйте кнопки",
+      "title": "block.openblocks.guide"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "для смены размеров и форм.$(br)Цвет маркеров может быть изменён путём применения красителя на центральный блок."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "openblocks:guide"
+    }
+  ]
+}

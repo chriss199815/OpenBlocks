@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:tank",
+  "name": "block.openblocks.tank",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "openblocks:tank",
+      "link_recipe": true,
+      "text": "蓄水槽可以存储液体.它能将存储的液体自动输出或导入到相邻的其它水槽中.$(br)你可以用桶灌入或取出液体,液态经验则可以直接被右键取出.蓄水槽在拆下后,仍然会保留其中存储的液体",
+      "title": "block.openblocks.tank"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "openblocks:tank"
+    }
+  ]
+}

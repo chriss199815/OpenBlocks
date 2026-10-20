@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:items",
+  "icon": "openblocks:sleeping_bag",
+  "name": "item.openblocks.sleeping_bag",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "openblocks:sleeping_bag",
+      "link_recipe": true,
+      "text": "O saco de dormir te deixa dormir no deserto, sem ter que redefinir o seu local de spawn. Para dormir, simplesmente use-o em sua volta.",
+      "title": "item.openblocks.sleeping_bag"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "openblocks:sleeping_bag"
+    }
+  ]
+}

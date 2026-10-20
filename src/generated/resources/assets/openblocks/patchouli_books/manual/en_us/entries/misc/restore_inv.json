@@ -1,0 +1,19 @@
+{
+  "category": "openblocks:misc",
+  "icon": "minecraft:chest",
+  "name": "openblocks.gui.restore_inv.title",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Everyone can make mistake. But with $(l)/ob_inventory$() command you can fix some of them. This command can be used to restore inventory. Backup is created when:$(br) - player dies$(br) - grave is spawned $(br) - player issued command $(l)/ob_inventory $()"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l)store$()$(br)$(br)To restore inventory you need backup name. Look in the $(l)data$() folder of the world for files named $(l)inventory-*.dat$(). Then restore inventory with $(l)/ob_inventory restore <player> <id>$() - where id is either full filename or just middle part, without $(l)inventory-$() and $(l).dat$(). You can also"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "use tab completion. Backups are normal NBT files and can be opened with any editor."
+    }
+  ]
+}

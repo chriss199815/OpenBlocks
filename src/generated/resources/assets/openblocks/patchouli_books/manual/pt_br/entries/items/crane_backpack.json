@@ -1,0 +1,22 @@
+{
+  "category": "openblocks:items",
+  "icon": "openblocks:crane_backpack",
+  "name": "item.openblocks.crane_backpack",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "openblocks:crane_backpack",
+      "link_recipe": true,
+      "text": "No mundo de Minecraft, \"magnético\" é uma palavra antiga para \"Como isso funciona?\".$(br)$(br)Esta peça particular do equipamento, permite que você pegue e transporte mobs, jogadores, itens e blocos. Pode ser controlado com o",
+      "title": "item.openblocks.crane_backpack"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "controle de guindaste."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "openblocks:crane_backpack"
+    }
+  ]
+}

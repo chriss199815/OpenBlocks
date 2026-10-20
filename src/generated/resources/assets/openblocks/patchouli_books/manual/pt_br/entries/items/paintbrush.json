@@ -1,0 +1,23 @@
+{
+  "category": "openblocks:items",
+  "icon": "openblocks:paintbrush",
+  "name": "item.openblocks.paintbrush",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "openblocks:paintbrush",
+      "link_recipe": true,
+      "text": "Pincéis de pintura permite que você pinte blocos na cor você gosta!$(br)$(br)Mergulhe o seu pincel numa Lata de Tinta feito no Misturador de Tintas, e então, clique no bloco para pintá-lo.$(br)$(br)Lonas são blocos",
+      "title": "item.openblocks.paintbrush"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "perfeitos para pintura, mas você também pode pintar vários blocos do Minecraft e até mesmo alguns blocos de outros mods. Você também pode colocar estêncis nos blocos e então, pintar o estêncil!"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "openblocks:paintbrush",
+      "recipe2": "openblocks:paintbrush_white"
+    }
+  ]
+}

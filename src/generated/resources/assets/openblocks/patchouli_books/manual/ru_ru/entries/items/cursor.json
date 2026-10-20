@@ -1,0 +1,22 @@
+{
+  "category": "openblocks:items",
+  "icon": "openblocks:cursor",
+  "name": "item.openblocks.cursor",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "openblocks:cursor",
+      "link_recipe": true,
+      "text": "Курсор позволит Вам нажимать на блоки удалённо.$(br)Просто нажмите shift-ПКМ по блоку, чтобы соединить курсор, затем примените курсор туда, куда Вы хотите нажать. Будьте осторожны, по умолчанию курсор использует Ваш опыт,",
+      "title": "item.openblocks.cursor"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "количество потребляемого опыта зависит от дальности блока, на который Вы нажимаете."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "openblocks:cursor"
+    }
+  ]
+}

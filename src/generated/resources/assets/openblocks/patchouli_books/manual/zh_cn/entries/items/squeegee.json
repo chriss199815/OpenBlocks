@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:items",
+  "icon": "openblocks:squeegee",
+  "name": "item.openblocks.squeegee",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "openblocks:squeegee",
+      "link_recipe": true,
+      "text": "刮刀可以从画布上刮除颜料.用它右键画布的任何一面即可刮除该面上的颜料颜料,或用它Shift右键画布来刮除所有面上的颜料颜料!",
+      "title": "item.openblocks.squeegee"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "openblocks:squeegee"
+    }
+  ]
+}

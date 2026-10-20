@@ -1,0 +1,22 @@
+{
+  "category": "openblocks:items",
+  "icon": "openblocks:dev_null",
+  "name": "item.openblocks.dev_null",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "openblocks:dev_null",
+      "link_recipe": true,
+      "text": "Klicke mit /dev/null, um das Inventar zu öffnen. Es gibt einen einzigen Inventar-Slot - dort legst du ein Gegenstand hinein, Erde zum Beispiel. Wenn du nun Erde abbaust, wird sich dieser Slot auffüllen. Sobald er voll ist, wird jegliche weitere Erde,",
+      "title": "item.openblocks.dev_null"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "die du einsammelst, automatisch weggeworfen. Du kannst das Item in deiner Hand Shift-klicken, als wenn du den Block platzieren würdest!"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "openblocks:dev_null"
+    }
+  ]
+}

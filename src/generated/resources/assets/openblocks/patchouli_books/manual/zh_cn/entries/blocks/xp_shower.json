@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:xp_shower",
+  "name": "block.openblocks.xp_shower",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "openblocks:xp_shower",
+      "link_recipe": true,
+      "text": "将经验莲蓬头放置在存储液态经验的水槽上,它就能从中抽出经验并喷出经验球.这些喷出的经验球可以被经验地漏或MFR的排污机吸取.",
+      "title": "block.openblocks.xp_shower"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "openblocks:xp_shower"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "category": "openblocks:items",
+  "icon": "openblocks:epic_eraser",
+  "name": "item.openblocks.epic_eraser",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "openblocks:epic_eraser",
+      "link_recipe": true,
+      "text": "Jeder Gegenstand erzählt eine Geschichte...$(br)$(br)Ist das nicht eigentlich saublöd?$(br) Mit diesem Gegenstand kannst du jegliche Spuren epischer Abenteuer, die dein Kram im Laufe der Jahrtausende erlebt",
+      "title": "item.openblocks.epic_eraser"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "hat, vollständig vernichten. Dann wird auch keiner Fragen stellen, wenn du ihn auf dem Schwarzmarkt vertickst."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "openblocks:epic_eraser"
+    }
+  ]
+}

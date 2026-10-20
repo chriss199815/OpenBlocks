@@ -1,0 +1,23 @@
+{
+  "category": "openblocks:items",
+  "icon": "openblocks:paintbrush",
+  "name": "item.openblocks.paintbrush",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "openblocks:paintbrush",
+      "link_recipe": true,
+      "text": "Las brochas de permiten pintar los bloques en cualquier color que quieras!$(br)$(br)Unta tu brocha en una lata de pintura hecha en el mezclador de pinturas y luego haz clic en un bloque para pintarlo.$(br)",
+      "title": "item.openblocks.paintbrush"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Los bloques de lienzo son perfectos para pintar, pero también puedes pintar unos cuantos bloques corrientes e incluso algunos de otros mods. También puedes colocar plantillas en los bloques y pintar sobre ellas."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "openblocks:paintbrush",
+      "recipe2": "openblocks:paintbrush_white"
+    }
+  ]
+}

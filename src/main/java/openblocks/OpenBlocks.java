@@ -14,6 +14,7 @@ import openblocks.common.BrickDrops;
 import openblocks.common.DonationInfo;
 import openblocks.common.ExplosiveEnchantmentHandler;
 import openblocks.common.HangGliderHandler;
+import openblocks.common.InfoBookHandler;
 import openblocks.common.HeightMaps;
 import openblocks.common.LastStandEnchantmentHandler;
 import openblocks.common.OBCommands;
@@ -91,6 +92,7 @@ public class OpenBlocks {
 		NeoForge.EVENT_BUS.addListener(HangGliderHandler::onChangedDimension);
 		NeoForge.EVENT_BUS.addListener(SleepingBagHandler::onCanContinueSleeping);
 		NeoForge.EVENT_BUS.addListener(SleepingBagHandler::onWakeUp);
+		NeoForge.EVENT_BUS.addListener(InfoBookHandler::onPlayerLoggedIn);
 		NeoForge.EVENT_BUS.addListener(LuggageItem::onEntityJoinLevel);
 		NeoForge.EVENT_BUS.addListener(DevNullItem::onItemPickup);
 		NeoForge.EVENT_BUS.addListener(TrophyDropHandler::onLivingDrops);

@@ -122,12 +122,17 @@ public class OBConfig {
 
 	public static class Additional {
 		public final ModConfigSpec.BooleanValue dumpDeadPlayersInventories;
+		public final ModConfigSpec.BooleanValue infoBook;
 
 		private Additional(ModConfigSpec.Builder builder) {
 			builder.push("additional");
 			dumpDeadPlayersInventories = builder
 					.comment("Should player inventories be stored after death (can be later restored with ob_inventory command)")
 					.define("dumpDeadPlayersInventories", true);
+			// legacy features.infoBook
+			infoBook = builder
+					.comment("Should every player get info book on first login (only with Patchouli installed)")
+					.define("infoBook", true);
 			builder.pop();
 		}
 	}

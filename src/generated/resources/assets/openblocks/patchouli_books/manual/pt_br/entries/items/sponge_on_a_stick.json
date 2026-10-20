@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:items",
+  "icon": "openblocks:sponge_on_a_stick",
+  "name": "item.openblocks.sponge_on_a_stick",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "openblocks:sponge_on_a_stick",
+      "link_recipe": true,
+      "text": "A vara com esponja é uma ferramenta para limpar líquidos. Funciona exatamente como a esponja, mais é portátil e mais cansativo.",
+      "title": "item.openblocks.sponge_on_a_stick"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "openblocks:sponge_on_a_stick"
+    }
+  ]
+}

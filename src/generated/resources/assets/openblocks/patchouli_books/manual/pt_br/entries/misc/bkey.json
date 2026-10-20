@@ -1,0 +1,15 @@
+{
+  "category": "openblocks:misc",
+  "icon": "openblocks:tasty_clay",
+  "name": "openblocks.gui.bkey.title",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "A tecla 'B' é uma tecla muito especial no OpenBlocks.$(br)$(br)Ativando a opção 'weAreSeriousPeople' na categoria 'tomfoolery' dos arquivos de configuração de ambos cliente e servidor vai lhe dar o seu próprio sistema digestivo."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Experimente comer um pouco de argila saborosa e pressione 'B' para digerir!"
+    }
+  ]
+}

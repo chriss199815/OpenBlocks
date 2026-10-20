@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:xp_shower",
+  "name": "block.openblocks.xp_shower",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "openblocks:xp_shower",
+      "link_recipe": true,
+      "text": "Bringe eine EP-Dusche an einen Tank voller EP-Saft an und sie wird EP-Kugeln ausschütten. Diese Kugeln können von einem EP-Gitter oder einer MFR-Kloake aufgesammelt werden.",
+      "title": "block.openblocks.xp_shower"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "openblocks:xp_shower"
+    }
+  ]
+}

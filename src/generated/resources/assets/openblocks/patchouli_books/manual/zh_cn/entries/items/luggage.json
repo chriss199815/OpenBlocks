@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:items",
+  "icon": "openblocks:luggage",
+  "name": "item.openblocks.luggage",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "openblocks:luggage",
+      "link_recipe": true,
+      "text": "行李箱是你的新伙伴.无论你去哪它都会跟着你,并收集地面上的掉落物.嗷!嗷!嗷!$(br)只需要Shift右键它就可以让它变为物品形式,这样你就可以更方便的携带它.如果行李箱被闪电劈中,那么它将可以存储更多物品!",
+      "title": "item.openblocks.luggage"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "openblocks:luggage"
+    }
+  ]
+}

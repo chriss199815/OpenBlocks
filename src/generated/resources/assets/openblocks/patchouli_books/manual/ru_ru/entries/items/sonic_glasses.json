@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:items",
+  "icon": "openblocks:sonic_glasses",
+  "name": "item.openblocks.sonic_glasses",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "openblocks:sonic_glasses",
+      "link_recipe": true,
+      "text": "Представляем Вам новые, фантастические звуковые очки!$(br)Это новая и очень интересная технология от OpenMods Inc, которая позволяет увидеть то, что Вы слышите!",
+      "title": "item.openblocks.sonic_glasses"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "openblocks:sonic_glasses"
+    }
+  ]
+}

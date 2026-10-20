@@ -1,5 +1,6 @@
 package openblocks.registry;
 
+import com.mojang.serialization.Codec;
 import java.util.function.Supplier;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.network.codec.ByteBufCodecs;
@@ -59,6 +60,15 @@ public class OBAttachments {
 	 * Bricks the player can drop, filled by eating tasty clay; replaces the legacy {@code bowels} capability. Saved, but
 	 * emptied on death (the bricks drop).
 	 */
+	/**
+	 * Set once the player got the info book on first login; replaces the legacy flag in the player's persistent NBT.
+	 */
+	public static final Supplier<AttachmentType<Boolean>> INFO_BOOK_GIVEN = ATTACHMENT_TYPES.register("info_book_given",
+			() -> AttachmentType.builder(() -> false)
+					.serialize(Codec.BOOL)
+					.copyOnDeath()
+					.build());
+
 	public static final Supplier<AttachmentType<Integer>> BOWELS = ATTACHMENT_TYPES.register("bowels",
 			() -> AttachmentType.builder(() -> 0)
 					.serialize(ExtraCodecs.NON_NEGATIVE_INT)

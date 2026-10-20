@@ -1,0 +1,22 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:big_button",
+  "name": "block.openblocks.big_button",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "openblocks:big_button",
+      "link_recipe": true,
+      "text": "O botão grande é um botão maior que pode ser colocado em paredes. Se você segurar SHIFT e clicar no botão com a mão vazia, vai abrir um inventário com um único slot. Você pode colocar itens dentro deste slot para aumentar o período de",
+      "title": "block.openblocks.big_button"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "tempo que o botão é pressionado - um item aumenta o tempo em um tique."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "openblocks:big_button"
+    }
+  ]
+}

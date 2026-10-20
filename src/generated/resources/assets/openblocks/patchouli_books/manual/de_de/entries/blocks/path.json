@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:path",
+  "name": "block.openblocks.path",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "openblocks:path",
+      "link_recipe": true,
+      "text": "Der Pfad macht überhaupt nichts. Er sieht einfach nur gut aus!",
+      "title": "block.openblocks.path"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "openblocks:path"
+    }
+  ]
+}

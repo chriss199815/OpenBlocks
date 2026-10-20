@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:fan",
+  "name": "block.openblocks.fan",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "openblocks:fan",
+      "link_recipe": true,
+      "text": "La ventola spingerà giocatori, mob o entità nella direzione in cui è rivolta.",
+      "title": "block.openblocks.fan"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "openblocks:fan"
+    }
+  ]
+}

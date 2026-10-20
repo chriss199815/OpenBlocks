@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:items",
+  "icon": "openblocks:sonic_glasses",
+  "name": "item.openblocks.sonic_glasses",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "openblocks:sonic_glasses",
+      "link_recipe": true,
+      "text": "Wir stellen vor: Die fabelhafte neue Schallbrille!$(br)Diese neue und spannende Technologie der OpenMods GmbH erlaubt dir zu sehen, was du hörst!",
+      "title": "item.openblocks.sonic_glasses"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "openblocks:sonic_glasses"
+    }
+  ]
+}

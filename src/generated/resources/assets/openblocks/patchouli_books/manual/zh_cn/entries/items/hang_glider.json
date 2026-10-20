@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:items",
+  "icon": "openblocks:hang_glider",
+  "name": "item.openblocks.hang_glider",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "openblocks:hang_glider",
+      "link_recipe": true,
+      "text": "滑翔翼的用途不言而喻.手持滑翔翼右键就可以穿上.现在,大胆跳吧!$(br)你可以在滑翔时通过按Shift来提升速度,但是小心点,因为这会加快你下坠速度!$(br)你的滑翔翼现在还带一个能够显示垂直空气运动情况的声控可变仪表。按下V键就可以激活。",
+      "title": "item.openblocks.hang_glider"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "openblocks:hang_glider"
+    }
+  ]
+}

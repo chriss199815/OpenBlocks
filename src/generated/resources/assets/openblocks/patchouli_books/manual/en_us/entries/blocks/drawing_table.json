@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:drawing_table",
+  "name": "block.openblocks.drawing_table",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "openblocks:drawing_table",
+      "link_recipe": true,
+      "text": "The drawing table is for creating stencils which can be used while painting. Insert an Unprepared Stencil into the drawing table then use the arrows to select which stencil you want!",
+      "title": "block.openblocks.drawing_table"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "openblocks:drawing_table"
+    }
+  ]
+}

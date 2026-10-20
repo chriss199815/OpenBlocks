@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:fan",
+  "name": "block.openblocks.fan",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "openblocks:fan",
+      "link_recipe": true,
+      "text": "风扇会把正对方向的玩家,生物以及实体全都吹走.",
+      "title": "block.openblocks.fan"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "openblocks:fan"
+    }
+  ]
+}

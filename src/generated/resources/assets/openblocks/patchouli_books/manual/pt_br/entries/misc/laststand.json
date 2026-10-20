@@ -1,0 +1,15 @@
+{
+  "category": "openblocks:misc",
+  "icon": "minecraft:enchanted_book",
+  "name": "openblocks.gui.laststand.title",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "O encantamento último combate usa a sua barra de XP como uma proteção final contra a morte.$(br)$(br)Quando você atinge 0.5 (meio) coração, o jogar vai tomar XP de você sempre que você receber danos em vez de te matar. Quanto maior o seu nível de XP, mais barato será o"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "custo."
+    }
+  ]
+}

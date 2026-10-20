@@ -1,0 +1,22 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:scaffolding",
+  "name": "block.openblocks.scaffolding",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "openblocks:scaffolding",
+      "link_recipe": true,
+      "text": "Вы когда-нибудь хотели подниматься вверх, не оставляя некрасивые башни после себя? Ну, теперь Вы можете! Просто постройте башню из строительных лесов и она исчезнет автоматически, когда Вы закончите",
+      "title": "block.openblocks.scaffolding"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "постройку."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "openblocks:scaffolding"
+    }
+  ]
+}

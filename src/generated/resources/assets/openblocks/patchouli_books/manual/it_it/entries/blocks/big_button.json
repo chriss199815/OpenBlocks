@@ -1,0 +1,22 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:big_button",
+  "name": "block.openblocks.big_button",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "openblocks:big_button",
+      "link_recipe": true,
+      "text": "Il grande pulsante è un pulsante largo che può essere piazzato sui muri. Se si fa shift-click sul bottone con una mano vuota, si aprirà un inventario con uno spazio singolo. Si possono inserire degli oggetti in questo spazio per aumentare la durata",
+      "title": "block.openblocks.big_button"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "per la quale il bottone rimane premuto - un oggetto aumenta la durata di un tick."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "openblocks:big_button"
+    }
+  ]
+}

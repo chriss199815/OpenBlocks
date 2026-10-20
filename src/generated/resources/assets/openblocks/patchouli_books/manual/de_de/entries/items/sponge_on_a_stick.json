@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:items",
+  "icon": "openblocks:sponge_on_a_stick",
+  "name": "item.openblocks.sponge_on_a_stick",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "openblocks:sponge_on_a_stick",
+      "link_recipe": true,
+      "text": "Der Schwamm am Stiel ist ein Werkzeug zum Enfernen von Flüssigkeiten. Funktioniert wie der Schwamm, ist aber mobil und wird mit der Zeit aufgebraucht.",
+      "title": "item.openblocks.sponge_on_a_stick"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "openblocks:sponge_on_a_stick"
+    }
+  ]
+}

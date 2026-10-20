@@ -1,0 +1,22 @@
+{
+  "category": "openblocks:items",
+  "icon": "openblocks:wrench",
+  "name": "item.openblocks.wrench",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "openblocks:wrench",
+      "link_recipe": true,
+      "text": "This is extremely sophisticated tool used to perform transformations of objects with octahedral symmetry.$(br)$(br)$(br)Or just big, dumb piece of metal you can use to rotate cubes and stuff.",
+      "title": "item.openblocks.wrench"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "So yeah, it's yet another wrench. I'm just trying to be original here, ok?"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "openblocks:wrench"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:white_elevator",
+  "name": "block.openblocks.elevator",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "openblocks:white_elevator,openblocks:orange_elevator,openblocks:magenta_elevator,openblocks:light_blue_elevator,openblocks:yellow_elevator,openblocks:lime_elevator,openblocks:pink_elevator,openblocks:gray_elevator,openblocks:light_gray_elevator,openblocks:cyan_elevator,openblocks:purple_elevator,openblocks:blue_elevator,openblocks:brown_elevator,openblocks:green_elevator,openblocks:red_elevator,openblocks:black_elevator",
+      "link_recipe": true,
+      "text": "Place one elevator directly three or more blocks above another with no blocks inbetween and you'll be able to either 'jump' to move up, or 'crouch' to move down. Elevators can be dyed by clicking on them with dye, however, you can only teleport between",
+      "title": "block.openblocks.elevator"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "elevators of the same color."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "openblocks:white_elevator",
+      "recipe2": "openblocks:orange_elevator"
+    }
+  ]
+}

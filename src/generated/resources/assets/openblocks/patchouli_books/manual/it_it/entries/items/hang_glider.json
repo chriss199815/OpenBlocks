@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:items",
+  "icon": "openblocks:hang_glider",
+  "name": "item.openblocks.hang_glider",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "openblocks:hang_glider",
+      "link_recipe": true,
+      "text": "Il deltaplano si spiega da solo. Tienilo in mano e clicca per piazzarlo sulla tua schiena. Ora salta!$(br)Per aumentare la tua velocità puoi premere Shift mentre stai planando, ma attento, perderai altitudine più velocemente!",
+      "title": "item.openblocks.hang_glider"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "openblocks:hang_glider"
+    }
+  ]
+}

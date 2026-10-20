@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:rope_ladder",
+  "name": "block.openblocks.rope_ladder",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "openblocks:rope_ladder",
+      "link_recipe": true,
+      "text": "Когда Вы размещаете верёвочную лестницу, она разворачивается на всё расстояние до земли. Каждый созданный лестничный блок будет использовать один предмет из стака.",
+      "title": "block.openblocks.rope_ladder"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "openblocks:rope_ladder"
+    }
+  ]
+}

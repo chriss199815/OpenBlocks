@@ -1,0 +1,22 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:drawing_table",
+  "name": "block.openblocks.drawing_table",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "openblocks:drawing_table",
+      "link_recipe": true,
+      "text": "Der Zeichentisch wird gebraucht, um Schablonen herzustellen, die zum Zeichnen gebraucht werden. Gib eine unbearbeitete Schablone in den Zeichentisch und benutze die Pfeile, um die gewünschte Schablone",
+      "title": "block.openblocks.drawing_table"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "auszuwählen!"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "openblocks:drawing_table"
+    }
+  ]
+}

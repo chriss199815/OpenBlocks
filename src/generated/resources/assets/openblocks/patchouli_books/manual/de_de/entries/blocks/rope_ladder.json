@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:rope_ladder",
+  "name": "block.openblocks.rope_ladder",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "openblocks:rope_ladder",
+      "link_recipe": true,
+      "text": "Wenn du eine Strickleiter platzierst, wird sie sich bis zum Boden ausrollen.",
+      "title": "block.openblocks.rope_ladder"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "openblocks:rope_ladder"
+    }
+  ]
+}

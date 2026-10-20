@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:sprinkler",
+  "name": "block.openblocks.sprinkler",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "openblocks:sprinkler",
+      "link_recipe": true,
+      "text": "洒水器可以催生4x4格范围内的作物.只需要将它放置在装有水的容器上方即可开始洒水.你可以放入骨粉来加快它对作物的催生速度.$(br)洒水器也可以作为水源供给方块使用.",
+      "title": "block.openblocks.sprinkler"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "openblocks:sprinkler"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:donation_station",
+  "name": "block.openblocks.donation_station",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "openblocks:donation_station",
+      "link_recipe": true,
+      "text": "Ami un blocco o un oggetto e vuoi mostrare allo sviluppatore della mod un po' di apprezzamento? Mettilo nella postazione donazioni e, se noi conosciamo la pagina donazioni dell'autore, ti mostreremo un link.",
+      "title": "block.openblocks.donation_station"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "openblocks:donation_station"
+    }
+  ]
+}

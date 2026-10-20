@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:xp_drain",
+  "name": "block.openblocks.xp_drain",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "openblocks:xp_drain",
+      "link_recipe": true,
+      "text": "将经验地漏放置在蓄水槽上方,接着站上去.你的经验就会被抽入蓄水槽中,蓄水槽中存储的液态经验可以被用于自动附魔台或自动铁砧等设备.",
+      "title": "block.openblocks.xp_drain"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "openblocks:xp_drain"
+    }
+  ]
+}

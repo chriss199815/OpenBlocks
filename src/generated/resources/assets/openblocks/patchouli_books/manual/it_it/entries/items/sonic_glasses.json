@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:items",
+  "icon": "openblocks:sonic_glasses",
+  "name": "item.openblocks.sonic_glasses",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "openblocks:sonic_glasses",
+      "link_recipe": true,
+      "text": "Ecco a voi i nuovi e fantastici Occhiali Sonici!$(br) Questa nuova ed eccitante tecnologia dalla OpenMods Inc ti permetterà di vedere quello che senti!",
+      "title": "item.openblocks.sonic_glasses"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "openblocks:sonic_glasses"
+    }
+  ]
+}

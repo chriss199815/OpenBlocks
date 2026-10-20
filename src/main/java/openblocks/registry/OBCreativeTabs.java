@@ -18,6 +18,7 @@ import openblocks.common.TrophyType;
 import openblocks.item.EmptyMapItem;
 import openblocks.item.GlyphItem;
 import openblocks.item.PaintBrushItem;
+import openblocks.integration.patchouli.OBPatchouli;
 import openblocks.item.ImaginaryItem;
 import openblocks.item.ImaginaryPlacementMode;
 import openblocks.item.ImaginationGlassesItem;
@@ -34,7 +35,8 @@ public class OBCreativeTabs {
 			.icon(() -> new ItemStack(OBItems.HANG_GLIDER.get()))
 			.displayItems((params, output) -> {
 				OBItems.ITEMS.getEntries().forEach(item -> {
-					if (item != OBItems.TROPHY && item != OBItems.HEIGHT_MAP && item != OBItems.EMPTY_MAP && item != OBItems.PENCIL && item != OBItems.CRAYON && item != OBItems.CRAYON_GLASSES && item != OBItems.GLYPH)
+					if (item != OBItems.TROPHY && item != OBItems.HEIGHT_MAP && item != OBItems.EMPTY_MAP && item != OBItems.PENCIL && item != OBItems.CRAYON && item != OBItems.CRAYON_GLASSES && item != OBItems.GLYPH
+							&& (item != OBItems.INFO_BOOK || OBPatchouli.isLoaded()))
 						output.accept(item.get());
 				});
 				// like legacy, without the largest scale

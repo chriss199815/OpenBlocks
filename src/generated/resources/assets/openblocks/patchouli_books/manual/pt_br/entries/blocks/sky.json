@@ -1,0 +1,19 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:sky",
+  "name": "block.openblocks.sky",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "openblocks:sky",
+      "link_recipe": true,
+      "text": "Traga o lado de fora para dentro com o novo Bloco de Céu! Apenas dê um sinal de redstone. Também oferecemos uma versão invertida.",
+      "title": "block.openblocks.sky"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "openblocks:sky",
+      "recipe2": "openblocks:sky_from_inverted"
+    }
+  ]
+}

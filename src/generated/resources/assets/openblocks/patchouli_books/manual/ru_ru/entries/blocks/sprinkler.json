@@ -1,0 +1,22 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:sprinkler",
+  "name": "block.openblocks.sprinkler",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "openblocks:sprinkler",
+      "link_recipe": true,
+      "text": "Разбрызгиватель поможет удобрять культуры вблизи четырёх блоков, со всех сторон. Просто поместите его над резервуаром OpenBlocks, заполненным водой! Вы также можете добавить костную муку для ещё",
+      "title": "block.openblocks.sprinkler"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "большего ускорения роста культур.$(br)Он также считается источником воды!"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "openblocks:sprinkler"
+    }
+  ]
+}

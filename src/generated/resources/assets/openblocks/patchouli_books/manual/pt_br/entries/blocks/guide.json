@@ -1,0 +1,22 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:guide",
+  "name": "block.openblocks.guide",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "openblocks:guide",
+      "link_recipe": true,
+      "text": "O guia de construção, uma vez energizada com redstone, vai te dar uma esboço de blocos fantasmas em diferentes formas e tamanhos que vai te ajudar a construir.$(br)Use os botões do bloco para alterar o tamanho e as formas do esboço.",
+      "title": "block.openblocks.guide"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "A cor dos marcadores podem ser alteradas usando corante no centro do bloco."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "openblocks:guide"
+    }
+  ]
+}

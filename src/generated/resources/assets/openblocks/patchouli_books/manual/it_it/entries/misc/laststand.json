@@ -1,0 +1,15 @@
+{
+  "category": "openblocks:misc",
+  "icon": "minecraft:enchanted_book",
+  "name": "openblocks.gui.laststand.title",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "L'incantamento \"Ultimo in Piedi\" usa la tua barra dell'esperienza come protezione finale contro la morte.$(br)$(br)Quando raggiungi il mezzo cuore, il gioco prenderà punti esperienza ogni volta che riceverai danno invece di ucciderti. Maggiore il numero di incantamenti posseduti,"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "minore sarà il numero dei punti esperienza sottratti."
+    }
+  ]
+}

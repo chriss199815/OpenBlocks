@@ -1,0 +1,14 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:heal",
+  "name": "block.openblocks.heal",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "openblocks:heal",
+      "link_recipe": true,
+      "text": "O bloco curador é um bloco disponível apenas no modo criativo que dá um leve efeito de cura ao longo do tempo.",
+      "title": "block.openblocks.heal"
+    }
+  ]
+}

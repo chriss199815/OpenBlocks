@@ -1,0 +1,22 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:sprinkler",
+  "name": "block.openblocks.sprinkler",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "openblocks:sprinkler",
+      "link_recipe": true,
+      "text": "Der Rasensprenger hilft dir, Pflanzen zu düngen, und hat einen Radius von bis zu 4 Blöcken. Platziere ihn einfach über einem OpenBlocks-Tank, der mit Wasser gefüllt ist! Du kannst auch Knochenmehl für noch schnelleres Wachstum hinzufügen.",
+      "title": "block.openblocks.sprinkler"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Er zählt auch als Wasser-Quellblock!"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "openblocks:sprinkler"
+    }
+  ]
+}

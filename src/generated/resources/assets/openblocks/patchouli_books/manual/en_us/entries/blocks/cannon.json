@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:cannon",
+  "name": "block.openblocks.cannon",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "openblocks:cannon",
+      "link_recipe": true,
+      "text": "When given a redstone signal, the item cannon will shoot items that it finds in an adjacent inventory. Use the 'pointer' item to aim the cannon.",
+      "title": "block.openblocks.cannon"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "openblocks:cannon"
+    }
+  ]
+}

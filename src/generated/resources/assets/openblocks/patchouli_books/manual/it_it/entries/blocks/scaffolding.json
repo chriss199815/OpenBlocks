@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:scaffolding",
+  "name": "block.openblocks.scaffolding",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "openblocks:scaffolding",
+      "link_recipe": true,
+      "text": "Hai mai desiderato di creare un pilastro per salire da qualche parte senza lasciare una bruttissima torre dietro? Beh, ora puoi! Semplicemente usa le impalcature per costruire ed esse scompariranno automaticamente quando avrai finito.",
+      "title": "block.openblocks.scaffolding"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "openblocks:scaffolding"
+    }
+  ]
+}

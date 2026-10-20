@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:items",
+  "icon": "openblocks:sonic_glasses",
+  "name": "item.openblocks.sonic_glasses",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "openblocks:sonic_glasses",
+      "link_recipe": true,
+      "text": "请允许我向你们介绍炫酷的音波眼镜!$(br)由开放式方块公司研发出的高科技产品,戴上它后你能看见你所听到的一切东西!",
+      "title": "item.openblocks.sonic_glasses"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "openblocks:sonic_glasses"
+    }
+  ]
+}

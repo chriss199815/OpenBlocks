@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:items",
+  "icon": "openblocks:slimalyzer",
+  "name": "item.openblocks.slimalyzer",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "openblocks:slimalyzer",
+      "link_recipe": true,
+      "text": "带着史莱姆区块探测器到处跑,当你走进史莱姆区块时探测器上的灯会变为绿色.",
+      "title": "item.openblocks.slimalyzer"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "openblocks:slimalyzer"
+    }
+  ]
+}

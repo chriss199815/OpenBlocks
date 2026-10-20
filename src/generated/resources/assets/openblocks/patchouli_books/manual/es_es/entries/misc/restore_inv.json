@@ -1,0 +1,19 @@
+{
+  "category": "openblocks:misc",
+  "icon": "minecraft:chest",
+  "name": "openblocks.gui.restore_inv.title",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Todo el mundo puede cometer un fallo, pero con el comando $(l)/ob_inventory$() puedes arreglar alguno de ellos. Este comando se puede usar para restaurar el inventario. La copia de seguridad se crea cuando:$(br) - el jugador muere$(br) - se genera la tumba $(br) - el jugador emite el"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "comando $(l)/ob_inventory store$()$(br)$(br)Para restaurar el inventario necesitas el nombre de la copia de seguridad. Ve a la carpeta de abajo o a la carpeta saves del server y busca archivos llamados $(l)inventory-*.dat$(). Después, restaura el inventario con $(l)/ob_inventory restore <jugador> $()"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l)<id>$() - donde id es el nombre completo del archivo o solo la parte del medio, sin $(l)inventory-$() y $(l).dat$(). También puedes usar el autocompletado con el tabulador. Las copias de seguridad son archivos NBT normales y se pueden abrir con cualquier editor."
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "custom_book_item": "openblocks:info_book",
+  "dont_generate_book": true,
+  "i18n": true,
+  "landing_text": "openblocks.gui.welcome.content",
+  "name": "item.openblocks.info_book",
+  "show_progress": false,
+  "text_overflow_mode": "resize",
+  "use_blocky_font": true,
+  "use_resource_pack": true
+}

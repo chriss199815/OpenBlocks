@@ -1,0 +1,22 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:builder_guide",
+  "name": "block.openblocks.builder_guide",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "openblocks:builder_guide",
+      "link_recipe": true,
+      "text": "This enhanced version of building guide not only displays ghost blocks to make building easier, but also allows you to place actual blocks. Just click central block with any block stack!$(br)When in creative mode you can place an obsidian block above,",
+      "title": "block.openblocks.builder_guide"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "then hit the building guide with any block you like to automatically create the shape."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "openblocks:builder_guide"
+    }
+  ]
+}

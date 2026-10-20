@@ -1,0 +1,22 @@
+{
+  "category": "openblocks:items",
+  "icon": "openblocks:cursor",
+  "name": "item.openblocks.cursor",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "openblocks:cursor",
+      "link_recipe": true,
+      "text": "O cursor vai deixar você clicar em blocos remotamente.$(br)Basta segurar SHIFT e clicar em um bloco para ligar o cursor, em seguida, usar o cursor onde quiser que clicar sobre o bloco de destino. Esteja avisado, por padrão, o cursor usa",
+      "title": "item.openblocks.cursor"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "o seu XP em relação ao quão longe você está do bloco que você está clicando."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "openblocks:cursor"
+    }
+  ]
+}

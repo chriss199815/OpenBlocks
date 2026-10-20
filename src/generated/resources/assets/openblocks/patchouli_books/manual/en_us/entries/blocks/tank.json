@@ -1,0 +1,22 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:tank",
+  "name": "block.openblocks.tank",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "openblocks:tank",
+      "link_recipe": true,
+      "text": "Tanks can hold liquids. If you place tanks next to each other and they'll distribute their liquid between the tanks. You can place liquid into the tanks using buckets. If the tank contains XP Juice you can click on them with an empty hand to give yourself",
+      "title": "block.openblocks.tank"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "some of the XP. When broken tanks will retain their liquid."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "openblocks:tank"
+    }
+  ]
+}

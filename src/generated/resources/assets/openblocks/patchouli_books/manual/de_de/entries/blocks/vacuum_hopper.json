@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:vacuum_hopper",
+  "name": "block.openblocks.vacuum_hopper",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "openblocks:vacuum_hopper",
+      "link_recipe": true,
+      "text": "Der Vakuumtrichter saugt Gegenstände und Erfahrungs-Kugeln um sich herum auf. Du kannst die Tabs auf der rechten Seite der Oberfläche verwenden, um auszuwählen, zu welchen Seiten etwas ausgegeben werden soll.",
+      "title": "block.openblocks.vacuum_hopper"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "openblocks:vacuum_hopper"
+    }
+  ]
+}

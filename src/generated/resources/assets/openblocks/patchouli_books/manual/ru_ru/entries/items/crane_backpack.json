@@ -1,0 +1,22 @@
+{
+  "category": "openblocks:items",
+  "icon": "openblocks:crane_backpack",
+  "name": "item.openblocks.crane_backpack",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "openblocks:crane_backpack",
+      "link_recipe": true,
+      "text": "В мире Minecraft \"магнит\" - это древнее слово из категории \"как это работает?\".$(br)$(br)Эта определённая часть экипировки позволяет Вам подбирать и переносить мобов, игроков, предметы и",
+      "title": "item.openblocks.crane_backpack"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "блоки. Может управляться с помощью кранового управления."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "openblocks:crane_backpack"
+    }
+  ]
+}

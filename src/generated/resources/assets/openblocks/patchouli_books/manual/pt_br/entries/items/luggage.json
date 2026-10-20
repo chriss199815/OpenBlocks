@@ -1,0 +1,22 @@
+{
+  "category": "openblocks:items",
+  "icon": "openblocks:luggage",
+  "name": "item.openblocks.luggage",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "openblocks:luggage",
+      "link_recipe": true,
+      "text": "Bagagem é o seu novo amigo. Ele vai te segui onde quer que você vá recolhendo todos os itens que ele encontra no chão. Nom nom nom!$(br)Para desmontá-lo apenas segure SHIFT e clique nele e ele vai se transformar em um item que você pode",
+      "title": "item.openblocks.luggage"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "carregá-lo.$(br)Se ele for atingido por um raio, ele vai ser capaz de transportar ainda mais itens!"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "openblocks:luggage"
+    }
+  ]
+}

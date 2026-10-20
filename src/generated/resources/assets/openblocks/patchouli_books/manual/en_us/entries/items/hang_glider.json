@@ -1,0 +1,22 @@
+{
+  "category": "openblocks:items",
+  "icon": "openblocks:hang_glider",
+  "name": "item.openblocks.hang_glider",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "openblocks:hang_glider",
+      "link_recipe": true,
+      "text": "The hang glider is self explanatory. Hold it in your hand and click to place it on your back. Now jump!$(br)To increase your speed you can press shift while gliding, but watch out, you'll lose altitude faster!$(br)$(br)Your hang glider now",
+      "title": "item.openblocks.hang_glider"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "also includes an acoustic variometer indicating vertical air movement. Press V to activate it and stay up forever (or until the sun goes down)!"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "openblocks:hang_glider"
+    }
+  ]
+}

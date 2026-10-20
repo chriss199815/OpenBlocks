@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:xp_shower",
+  "name": "block.openblocks.xp_shower",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "openblocks:xp_shower",
+      "link_recipe": true,
+      "text": "Attach an XP shower to a tank of XP juice and it'll pour out XP orbs. These orbs can be collected by an XP Drain or an MFR Sewer.",
+      "title": "block.openblocks.xp_shower"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "openblocks:xp_shower"
+    }
+  ]
+}

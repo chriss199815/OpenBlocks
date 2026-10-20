@@ -1,4 +1,4 @@
-// 1.21.1	2026-10-18T19:29:31.046624	Block States: openblocks
+// 1.21.1	2026-10-19T22:43:35.456442	Block States: openblocks
 909bae1340933de5e494ee6692d1d88aeabf4f33 assets/openblocks/blockstates/auto_anvil.json
 aca132b5918ec066ede0f817145d0ac0649c84a9 assets/openblocks/blockstates/auto_enchantment_table.json
 9be1c7ce94b3232fe19c46a8965abe89ae2d898a assets/openblocks/blockstates/bear_trap.json
@@ -333,6 +333,7 @@ c798f0ebf2a7cf12178d2614c8aba9015959d1ce assets/openblocks/models/item/hang_glid
 3d29866516f5e2300e2b6d017dc9828eb22c503d assets/openblocks/models/item/heart_stencil.json
 eb90c2402adf6596c82d9db291dafecc40ea6b6b assets/openblocks/models/item/height_map.json
 d690d0347ab26ea495737e45df1362e2e594451b assets/openblocks/models/item/hole_stencil.json
+84ed0b77f365ccb56e48257c293c95dc573b36f1 assets/openblocks/models/item/info_book.json
 d9b1441095c027bac43ac47b3b19b25871b87b16 assets/openblocks/models/item/item_dropper.json
 4120bc28b0104ebe237b0f65052bfdd394db4af0 assets/openblocks/models/item/ladder.json
 d2b8f805473f5db4bc4402f5b4f1864704363649 assets/openblocks/models/item/light_blue_elevator.json

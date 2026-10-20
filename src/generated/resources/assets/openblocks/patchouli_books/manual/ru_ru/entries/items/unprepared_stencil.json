@@ -1,0 +1,22 @@
+{
+  "category": "openblocks:items",
+  "icon": "openblocks:unprepared_stencil",
+  "name": "item.openblocks.unprepared_stencil",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "openblocks:unprepared_stencil",
+      "link_recipe": true,
+      "text": "Трафареты могут быть размещены на блоки, а затем раскрашены с помощью кисти!$(br)$(br)Вы можете покрасить блок с использованием нескольких трафаретов и Вы можете нажать на них",
+      "title": "item.openblocks.unprepared_stencil"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "пустой рукой, чтобы повернуть их.$(br)$(br)Поместите неподготовленный трафарет на стол для рисования, для создания различных шаблонов."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "openblocks:unprepared_stencil"
+    }
+  ]
+}

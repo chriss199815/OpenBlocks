@@ -1,0 +1,22 @@
+{
+  "category": "openblocks:items",
+  "icon": "openblocks:dev_null",
+  "name": "item.openblocks.dev_null",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "openblocks:dev_null",
+      "link_recipe": true,
+      "text": "Haz clic con el /dev/null para abrir el inventario. Solo hay un ranura de inventario. Pon un objeto ahí; tierra, por ejemplo. Mientras que recoges tierra del suelo esta ranura se irá llenando. Unaz vez esté lleno, cualquier bloque de tierra que",
+      "title": "item.openblocks.dev_null"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "recoges se descartará automáticamente. ¡Puedes hacer shift+clic con el objeto en la mano y actuará como si estuvieses colocando el bloque!"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "openblocks:dev_null"
+    }
+  ]
+}

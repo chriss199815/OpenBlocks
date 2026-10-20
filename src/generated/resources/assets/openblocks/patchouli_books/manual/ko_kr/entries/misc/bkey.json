@@ -1,0 +1,11 @@
+{
+  "category": "openblocks:misc",
+  "icon": "openblocks:tasty_clay",
+  "name": "openblocks.gui.bkey.title",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "오픈블럭에서 'B(ㅠ)'키는 정말 특별한 키입니다.$(br)$(br)모든 서버/클라이언트 설정파일의 'weAreSeriousPeople' 부분의 옵션을 'tomfoolery' 로 설정하실경우 자신에게 소화시스템을 제공합니다.$(br)$(br)점토를 먹은후 'B(ㅠ)'키를 눌러보세요!"
+    }
+  ]
+}

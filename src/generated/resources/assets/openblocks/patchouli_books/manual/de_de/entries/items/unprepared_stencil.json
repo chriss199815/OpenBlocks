@@ -1,0 +1,22 @@
+{
+  "category": "openblocks:items",
+  "icon": "openblocks:unprepared_stencil",
+  "name": "item.openblocks.unprepared_stencil",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "openblocks:unprepared_stencil",
+      "link_recipe": true,
+      "text": "\"Was sind diese nervigen Schablonen, die ich dauernd in Truhen finde?\"$(br)$(br)Schablonen können auf Blöcken platziert werden und dann mit einem Pinsel übermalt werden!$(br)$(br)Du kannst einen Block",
+      "title": "item.openblocks.unprepared_stencil"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "mit mehreren Schablonen bemalen und du kannst mit einer leeren Hand auf sie klicken, um sie zu drehen.$(br)$(br)Platziere eine unbearbeitete Schablone in einen Zeichentisch, um verschiedene Formen zu erstellen."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "openblocks:unprepared_stencil"
+    }
+  ]
+}

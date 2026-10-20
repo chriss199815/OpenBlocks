@@ -1,0 +1,15 @@
+{
+  "category": "openblocks:misc",
+  "icon": "minecraft:enchanted_book",
+  "name": "openblocks.gui.unstable.title",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "У нас есть неподтверждённые сообщения, что это зачарование заставляет любой порох, который Вы несёте, становиться нестабильным, когда Вы атакованы или когда Вы перепрыгиваете что-то.$(br)$(br)Используйте на свой"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "страх и риск!"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:items",
+  "icon": "openblocks:sonic_glasses",
+  "name": "item.openblocks.sonic_glasses",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "openblocks:sonic_glasses",
+      "link_recipe": true,
+      "text": "Presentamos las nuevas y superguays gafas sónicas!$(br)¡Esta nueva y emocionante tecnología de OpenMods Inc. te permite ver lo que oyes!",
+      "title": "item.openblocks.sonic_glasses"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "openblocks:sonic_glasses"
+    }
+  ]
+}

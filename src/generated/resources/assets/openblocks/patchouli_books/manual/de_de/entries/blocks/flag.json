@@ -1,0 +1,23 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:white_flag",
+  "name": "block.openblocks.flag",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "openblocks:white_flag,openblocks:orange_flag,openblocks:magenta_flag,openblocks:light_blue_flag,openblocks:yellow_flag,openblocks:lime_flag,openblocks:pink_flag,openblocks:gray_flag,openblocks:light_gray_flag,openblocks:cyan_flag,openblocks:purple_flag,openblocks:blue_flag,openblocks:brown_flag,openblocks:green_flag,openblocks:red_flag,openblocks:black_flag",
+      "link_recipe": true,
+      "text": "Flaggen können als Dekoration verwendet werden oder, um den Weg aus einer Höhle zu markieren, die du gerade erforscht hast. Die Flagge zeigt in die Richtung, in der du sie platzierst, du kannst sie aber auch an die Wand hängen. Wenn du mit der Flagge",
+      "title": "block.openblocks.flag"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "in der Hand Shift-klickst, ändert sie ihre Farbe."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "openblocks:white_flag",
+      "recipe2": "openblocks:orange_flag"
+    }
+  ]
+}

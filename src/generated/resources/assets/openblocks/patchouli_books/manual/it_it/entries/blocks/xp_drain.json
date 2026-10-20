@@ -1,0 +1,22 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:xp_drain",
+  "name": "block.openblocks.xp_drain",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "openblocks:xp_drain",
+      "link_recipe": true,
+      "text": "Piazza il drenatore di punti esperienza su una tanica degli OpenBlocks e salici sopra. I tuoi punti esperienza saranno drenati nella tanica, che poi potrà essere usata per blocchi tipo il tavolo da incantamento automatica o l'incudine",
+      "title": "block.openblocks.xp_drain"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "automatica."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "openblocks:xp_drain"
+    }
+  ]
+}

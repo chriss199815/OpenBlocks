@@ -1,0 +1,22 @@
+{
+  "category": "openblocks:items",
+  "icon": "openblocks:dev_null",
+  "name": "item.openblocks.dev_null",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "openblocks:dev_null",
+      "link_recipe": true,
+      "text": "Click using /dev/null to open the inventory. There's a single inventory slot - put an item in there - dirt, for example. As you gather dirt from the ground this slot will fill up. Once it's full, any more dirt you pick up will be automatically discarded. You can",
+      "title": "item.openblocks.dev_null"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "shift-click with the item in your hand as though you were placing the block!"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "openblocks:dev_null"
+    }
+  ]
+}

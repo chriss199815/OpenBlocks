@@ -1,0 +1,22 @@
+{
+  "category": "openblocks:items",
+  "icon": "openblocks:hang_glider",
+  "name": "item.openblocks.hang_glider",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "openblocks:hang_glider",
+      "link_recipe": true,
+      "text": "O planador é auto-explicativo. Segure-o em sua mão e clique para colocá-lo nas suas costas. Agora pule!$(br)Para aumentar sua velocidade você pode pressionar SHIFT enquanto plana, mas cuidado, você vai perder altitude mais",
+      "title": "item.openblocks.hang_glider"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "rápido!"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "openblocks:hang_glider"
+    }
+  ]
+}

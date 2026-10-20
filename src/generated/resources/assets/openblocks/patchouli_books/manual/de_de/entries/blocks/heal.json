@@ -1,0 +1,14 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:heal",
+  "name": "block.openblocks.heal",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "openblocks:heal",
+      "link_recipe": true,
+      "text": "Der Heil-Block ist ein Block für den Kreativ-Modus, der nach und nach einen kleinen Heilungs-Effekt bringt.",
+      "title": "block.openblocks.heal"
+    }
+  ]
+}

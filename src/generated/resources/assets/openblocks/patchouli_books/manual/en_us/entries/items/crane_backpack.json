@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:items",
+  "icon": "openblocks:crane_backpack",
+  "name": "item.openblocks.crane_backpack",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "openblocks:crane_backpack",
+      "link_recipe": true,
+      "text": "In Minecraft world \"magnet\" is ancient word for \"how do this works?\".$(br)$(br)This particular piece of very equipment allows you to pick and carry mobs, players, items and blocks. Can be controlled with magnet control.",
+      "title": "item.openblocks.crane_backpack"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "openblocks:crane_backpack"
+    }
+  ]
+}

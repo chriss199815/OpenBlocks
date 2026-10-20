@@ -1,0 +1,22 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:big_button",
+  "name": "block.openblocks.big_button",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "openblocks:big_button",
+      "link_recipe": true,
+      "text": "Der große Knopf ist ein Knopf, der an der Wand platziert werden kann. Wenn du auf den Knopf mit einer leeren Hand Shift-klickst, wird ein Inventar mit einem einzelnen Slot erscheinen. Du kannst Gegenstände in diesen Slot geben, um die Zeit, die der Knopf",
+      "title": "block.openblocks.big_button"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "gedrückt ist, zu verlängern - ein Gegenstand erhöht die Dauer um einen Tick."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "openblocks:big_button"
+    }
+  ]
+}

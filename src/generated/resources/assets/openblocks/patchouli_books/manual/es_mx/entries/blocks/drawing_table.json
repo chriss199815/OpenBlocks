@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:drawing_table",
+  "name": "block.openblocks.drawing_table",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "openblocks:drawing_table",
+      "link_recipe": true,
+      "text": "La mesa de dibujo se usa para crear plantillas que se pueden utilizar mientras se pinta. Introduce una plantilla en blanco y después usa las flechas para seleccionar que plantilla quieres.",
+      "title": "block.openblocks.drawing_table"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "openblocks:drawing_table"
+    }
+  ]
+}

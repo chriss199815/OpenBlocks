@@ -1,4 +1,4 @@
-// 1.21.1	2026-10-18T19:29:31.048531	Recipes
+// 1.21.1	2026-10-19T22:43:35.457883	Recipes
 f37f622f6aa43ff8c3b05fe0ccd813d9be730420 data/openblocks/advancement/recipes/building_blocks/canvas.json
 4da75c2ec825111de4abddbd9d4caefbb2b578ce data/openblocks/advancement/recipes/building_blocks/scaffolding.json
 930782d897e53db76e7b954eb746d395706bf1bd data/openblocks/advancement/recipes/building_blocks/sky.json
@@ -39,6 +39,7 @@ c20c97a1a5801d47e957154e19b1b782516e04f4 data/openblocks/advancement/recipes/mis
 4703126fbd22d6defaf693cfd1899aa9725e2cbe data/openblocks/advancement/recipes/misc/glider_wing_left.json
 c40b99032ad81579611396658ce2ae35f1814bb9 data/openblocks/advancement/recipes/misc/glider_wing_right.json
 b82bcd3595c5a097f9937db5ce3c4e3f217920b6 data/openblocks/advancement/recipes/misc/golden_egg.json
+2dd09e95ba334bd1d46afcc20caff5b602535839 data/openblocks/advancement/recipes/misc/info_book.json
 845595450c6d8b7026b0ac5836239ea756af51c0 data/openblocks/advancement/recipes/misc/line.json
 87c84c014f732df448d4b9582a7df333d7183f49 data/openblocks/advancement/recipes/misc/luggage.json
 b90a5a2d132740434e87271addb977de2d41a05d data/openblocks/advancement/recipes/misc/map_controller.json
@@ -220,6 +221,7 @@ e7ab1b8bad826eedc88da370aa20685c5f1a9229 data/openblocks/recipe/gray_flag.json
 15f448cd29917ba1361fa4baf749e2396adf4c91 data/openblocks/recipe/green_flag.json
 57de1319605f599190ca55221caec240e2660a08 data/openblocks/recipe/guide.json
 152878dda768fab38b745f392e35fa1c74014298 data/openblocks/recipe/hang_glider.json
+89f0877033c054a22089520b8edc6fdab1176d30 data/openblocks/recipe/info_book.json
 7017e6cbe6bc8ec68d5dfe6de0341af790be341b data/openblocks/recipe/item_dropper.json
 50f047aae834d5b8ed6f5117bb689a1d254de7ee data/openblocks/recipe/ladder.json
 55dd70283c4992ef9aa2933c872d757aa6fa2081 data/openblocks/recipe/light_blue_elevator.json

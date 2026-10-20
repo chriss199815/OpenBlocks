@@ -32,3 +32,10 @@ file="META-INF/accesstransformer.cfg"
     versionRange="[19,)"
     ordering="NONE"
     side="CLIENT"
+
+[[dependencies.${mod_id}]]
+    modId="patchouli"
+    type="optional"
+    versionRange="[1.21.1-93,)"
+    ordering="NONE"
+    side="BOTH"

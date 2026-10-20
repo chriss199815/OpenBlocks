@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:items",
+  "icon": "openblocks:crane_control",
+  "name": "item.openblocks.crane_control",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "openblocks:crane_control",
+      "link_recipe": true,
+      "text": "This hi-tech wireless remote is used for controlling magnet backpacks.$(br)$(br)Right click to raise, Sneak + right click to lower, left click to pick/release.$(br)Blinking light signals something is under magnet.",
+      "title": "item.openblocks.crane_control"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "openblocks:crane_control"
+    }
+  ]
+}

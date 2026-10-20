@@ -1,0 +1,22 @@
+{
+  "category": "openblocks:items",
+  "icon": "openblocks:crane_backpack",
+  "name": "item.openblocks.crane_backpack",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "openblocks:crane_backpack",
+      "link_recipe": true,
+      "text": "En el mundo Minecraft \"imán\" es una palabra antigua para \"¿Cómo funciona esto?\".$(br)$(br)Esta particular pieza de gran equipamiento te permite coger y arrastrar monstruos, jugadores, objetos y bloques. Se puede controlar con control",
+      "title": "item.openblocks.crane_backpack"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "magnético."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "openblocks:crane_backpack"
+    }
+  ]
+}

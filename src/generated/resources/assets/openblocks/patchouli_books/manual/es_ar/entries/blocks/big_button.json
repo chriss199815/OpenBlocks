@@ -1,0 +1,22 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:big_button",
+  "name": "block.openblocks.big_button",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "openblocks:big_button",
+      "link_recipe": true,
+      "text": "El botón grande es un botón más grande que se puede colocar en las paredes. Si haces shift+clic con la mano vacía, abrirá un inventario con una sola ranura. Puedes colocar objetos en esta ranura para aumentar la duración del tiempo en que el",
+      "title": "block.openblocks.big_button"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "botón permanece presionado. Un objeto aumenta el tiempo un tic."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "openblocks:big_button"
+    }
+  ]
+}

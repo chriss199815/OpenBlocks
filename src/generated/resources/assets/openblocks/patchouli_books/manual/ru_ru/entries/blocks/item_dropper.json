@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:item_dropper",
+  "name": "block.openblocks.item_dropper",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "openblocks:item_dropper",
+      "link_recipe": true,
+      "text": "Выбрасыватель предметов аналогичен оригинальному выбрасывателю, за исключением того, что он выбрасывает предметы вниз по прямой линии.",
+      "title": "block.openblocks.item_dropper"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "openblocks:item_dropper"
+    }
+  ]
+}

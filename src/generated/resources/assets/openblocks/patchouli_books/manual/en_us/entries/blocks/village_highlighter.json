@@ -1,0 +1,22 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:village_highlighter",
+  "name": "block.openblocks.village_highlighter",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "openblocks:village_highlighter",
+      "link_recipe": true,
+      "text": "Drop the village highlighter down in a village and give it a redstone signal. It will outline the beds (blue), job sites (yellow) and bells (magenta) around it, bright while free and dark while claimed, and draw around every villager the area where it can",
+      "title": "block.openblocks.village_highlighter"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "summon an iron golem, in its own color (solid while it could do so right now). Useful if you're making an iron farm!$(br)Its back emits a redstone signal while there is a free bed for villagers to breed."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "openblocks:village_highlighter"
+    }
+  ]
+}

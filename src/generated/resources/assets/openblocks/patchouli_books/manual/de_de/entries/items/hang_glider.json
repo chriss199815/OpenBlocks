@@ -1,0 +1,22 @@
+{
+  "category": "openblocks:items",
+  "icon": "openblocks:hang_glider",
+  "name": "item.openblocks.hang_glider",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "openblocks:hang_glider",
+      "link_recipe": true,
+      "text": "Der Hängegleiter ist selbsterklärend. Halte ihn in deiner Hand und klicke, um ihn auf deinem Rücken zu platzieren. Jetzt spring!$(br)Drücke Shift um während des Gleitens deine Geschwindigkeit zu erhöhen, doch pass auf, du wirst schneller",
+      "title": "item.openblocks.hang_glider"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "sinken!$(br)$(br)Dein Hängegleiter ist außerdem mit einem Variometer zur akustischen Indikation vertikaler Luftbewegungen ausgerüstet. Drücke V und bleibe für immer oben (oder bis die Sonne untergeht)!"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "openblocks:hang_glider"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "category": "openblocks:misc",
+  "icon": "openblocks:tasty_clay",
+  "name": "openblocks.gui.bkey.title",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Кнопка 'B' очень особенная в OpenBlocks.$(br)$(br)Включение опции конфигурации 'weAreSeriousPeople' в категории 'tomfoolery' клиента И сервера, даст Вам Вашу собственную пищеварительную систему.$(br)"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Попробуйте съесть немного этой вкусной глины и нажмите 'B', чтобы переварить её!"
+    }
+  ]
+}

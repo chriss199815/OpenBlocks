@@ -1,0 +1,22 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:xp_drain",
+  "name": "block.openblocks.xp_drain",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "openblocks:xp_drain",
+      "link_recipe": true,
+      "text": "Поместите всасыватель опыта над резервуаром OpenBlocks и встаньте на него. Ваш опыт будет накапливаться в резервуаре, который в дальнейшем может быть использован в автоматическом столе зачаровывания,",
+      "title": "block.openblocks.xp_drain"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "или в автоматической наковальне."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "openblocks:xp_drain"
+    }
+  ]
+}

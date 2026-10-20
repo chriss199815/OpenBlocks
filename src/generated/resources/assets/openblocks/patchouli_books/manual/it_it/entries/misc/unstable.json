@@ -1,0 +1,11 @@
+{
+  "category": "openblocks:misc",
+  "icon": "minecraft:enchanted_book",
+  "name": "openblocks.gui.unstable.title",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Abbiamo ricevuto una serie di rapporti non confermati che dicono che questo incantamento rende instabile ogni polvere da sparo che stai trasportando quando vieni attaccato o quando salti da qualcosa.$(br)$(br)Usalo a tuo rischio!"
+    }
+  ]
+}

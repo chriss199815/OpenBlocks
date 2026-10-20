@@ -1,0 +1,19 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:projector",
+  "name": "block.openblocks.projector",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "openblocks:projector",
+      "link_recipe": true,
+      "text": "¡Te dejo escribir esta, boq!",
+      "title": "block.openblocks.projector"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "openblocks:projector",
+      "recipe2": "openblocks:projector_mirrored"
+    }
+  ]
+}

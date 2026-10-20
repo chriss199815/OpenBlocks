@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:auto_enchantment_table",
+  "name": "block.openblocks.auto_enchantment_table",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "openblocks:auto_enchantment_table",
+      "link_recipe": true,
+      "text": "自动附魔台的使用方法类似于普通附魔台,但它可以通过消耗经验来自动工作.$(br)在操作界面右边的设定栏可以调整输入经验或工具的面.自动附魔台也需要书架来提升自己的附魔等级上限.",
+      "title": "block.openblocks.auto_enchantment_table"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "openblocks:auto_enchantment_table"
+    }
+  ]
+}

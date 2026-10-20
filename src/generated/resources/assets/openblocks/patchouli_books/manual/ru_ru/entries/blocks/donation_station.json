@@ -1,0 +1,22 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:donation_station",
+  "name": "block.openblocks.donation_station",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "openblocks:donation_station",
+      "link_recipe": true,
+      "text": "Любите блок или предмет и хотите показать своё уважение разработчику модификации? Бросьте его в станцию пожертвований и если мы знаем страницу пожертвований этого автора, мы дадим Вам",
+      "title": "block.openblocks.donation_station"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "ссылку."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "openblocks:donation_station"
+    }
+  ]
+}

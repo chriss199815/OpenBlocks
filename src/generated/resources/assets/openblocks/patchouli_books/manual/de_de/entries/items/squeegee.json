@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:items",
+  "icon": "openblocks:squeegee",
+  "name": "item.openblocks.squeegee",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "openblocks:squeegee",
+      "link_recipe": true,
+      "text": "Der Scheibenwischer entfernt jegliche Farbe von gefärbten Blöcken. Klicke einfach auf die Seite eines Blockes, von der du die Farbe entfernen möchtest, oder Shift-klicke, um die Farbe von allen Seiten zu entfernen!",
+      "title": "item.openblocks.squeegee"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "openblocks:squeegee"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:builder_guide",
+  "name": "block.openblocks.builder_guide",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "openblocks:builder_guide",
+      "link_recipe": true,
+      "text": "Questa versione potenziata della Guida di Costruzione non mostra solo dei blocchi fantasma per rendere la costruzione più facile, ma ti permette anche di piazzare veri e propri blocchi. Clicca semplicemente il blocco centrale con ogni gruppo di blocchi",
+      "title": "block.openblocks.builder_guide"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "necessario!$(br)Quando sei nella modalità creative, puoi posizionare un blocco di ossidiana su di essa, poi colpire la guida di costruzione con ogni blocco che tu voglia per creare automaticamente la forma desiderata."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "openblocks:builder_guide"
+    }
+  ]
+}

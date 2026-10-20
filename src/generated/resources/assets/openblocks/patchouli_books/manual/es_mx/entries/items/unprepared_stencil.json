@@ -1,0 +1,22 @@
+{
+  "category": "openblocks:items",
+  "icon": "openblocks:unprepared_stencil",
+  "name": "item.openblocks.unprepared_stencil",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "openblocks:unprepared_stencil",
+      "link_recipe": true,
+      "text": "Las plantillas pueden colocarse sobre los bloques para luego pintarlas con una brocha!$(br)$(br)Se puede pintar un bloque usando múltiples plantillas y también puedes girarlas haciendo clic con la mano vacía.",
+      "title": "item.openblocks.unprepared_stencil"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Coloca una plantilla en blanco en una mesa de dibujo para crear diferentes estampados."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "openblocks:unprepared_stencil"
+    }
+  ]
+}

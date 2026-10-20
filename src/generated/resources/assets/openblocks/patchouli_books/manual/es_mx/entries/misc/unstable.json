@@ -1,0 +1,11 @@
+{
+  "category": "openblocks:misc",
+  "icon": "minecraft:enchanted_book",
+  "name": "openblocks.gui.unstable.title",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Nos han llegado informes sin confirmar que afirman que este encantamiento hace que la pólvora que llevas encima se convierta en inestable cuando eres atacado o cuando saltas algo.$(br)$(br)Úsalo por tu cuenta y riesgo!"
+    }
+  ]
+}

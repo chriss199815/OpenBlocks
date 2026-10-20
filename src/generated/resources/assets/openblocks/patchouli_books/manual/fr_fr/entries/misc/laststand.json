@@ -1,0 +1,15 @@
+{
+  "category": "openblocks:misc",
+  "icon": "minecraft:enchanted_book",
+  "name": "openblocks.gui.laststand.title",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "The last stand enchantment uses your XP bar as a final protection against dying.$(br)$(br)When you reach 0.5 hearts, the game will take XP from you whenever you're damaged instead of killing you. The higher number of enchantments you"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "have the cheaper the XP cost will be."
+    }
+  ]
+}

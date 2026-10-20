@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:items",
+  "icon": "openblocks:slimalyzer",
+  "name": "item.openblocks.slimalyzer",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "openblocks:slimalyzer",
+      "link_recipe": true,
+      "text": "Renne mit einem Schleimalysierer in deiner Hand herum, und er wird jedes Mal aufleuchten, wenn du dich in einem Schleime spawnenden Chunk befindest.",
+      "title": "item.openblocks.slimalyzer"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "openblocks:slimalyzer"
+    }
+  ]
+}

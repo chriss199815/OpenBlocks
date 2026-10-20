@@ -1,0 +1,23 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:white_elevator",
+  "name": "block.openblocks.elevator",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "openblocks:white_elevator,openblocks:orange_elevator,openblocks:magenta_elevator,openblocks:light_blue_elevator,openblocks:yellow_elevator,openblocks:lime_elevator,openblocks:pink_elevator,openblocks:gray_elevator,openblocks:light_gray_elevator,openblocks:cyan_elevator,openblocks:purple_elevator,openblocks:blue_elevator,openblocks:brown_elevator,openblocks:green_elevator,openblocks:red_elevator,openblocks:black_elevator",
+      "link_recipe": true,
+      "text": "Поставьте первый лифт, а через три или более блоков в высоту другой, между ними должно быть пустое пространство, и Вы сможете либо 'прыгнуть', чтобы подняться, либо 'присесть', чтобы спуститься. Лифты могут быть покрашены",
+      "title": "block.openblocks.elevator"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "нажатием по ним красителем, однако, Вы можете телепортироваться только между лифтами одинакового цвета."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "openblocks:white_elevator",
+      "recipe2": "openblocks:orange_elevator"
+    }
+  ]
+}

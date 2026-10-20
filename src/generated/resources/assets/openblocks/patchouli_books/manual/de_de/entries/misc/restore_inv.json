@@ -1,0 +1,19 @@
+{
+  "category": "openblocks:misc",
+  "icon": "minecraft:chest",
+  "name": "openblocks.gui.restore_inv.title",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Jeder kann einen Fehler machen, aber mit dem $(l)/ob_inventory$()-Befehl kannst du einige von ihnen wieder beheben. Dieser Befehl kann zum Wiederherstellen des Inventars genutzt werden. Ein Backup wird erstellt wenn:$(br) - der Spieler stirbt$(br) - ein Grabstein"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "gespawnt wird $(br) - der Spieler den Befehl $(l)/ob_inventory store$() eingibt$(br)$(br)Um den Inventar wiederherzustellen benötigst du einen Sicherungs-Namen. Such im $(l)data$()-Ordner der Welt nach Dateien mit dem Namen $(l)inventory-*.dat$(). Dann stelle das Inventar wieder her mit $(l)/ob_inventory $()"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l)restore <player> <id>$() - wobei die ID der volle Dateiname ist, oder nur der mittlere Teil ohne $(l)inventory-$() and $(l).dat$(). Du kannst Tabvervollständigung benutzen. Sicherungen sind normale NBT-Dateien und können mit einem entsprechenden Bearbeitungsprogramm geöffnet werden."
+    }
+  ]
+}

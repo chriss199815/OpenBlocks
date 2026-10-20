@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:block_breaker",
+  "name": "block.openblocks.block_breaker",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "openblocks:block_breaker",
+      "link_recipe": true,
+      "text": "Wenn er ein Redstone-Signal bekommt, bricht der Blockbrecher den Block, den er ansieht.",
+      "title": "block.openblocks.block_breaker"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "openblocks:block_breaker"
+    }
+  ]
+}

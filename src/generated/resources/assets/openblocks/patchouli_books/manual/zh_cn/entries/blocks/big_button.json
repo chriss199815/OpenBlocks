@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:big_button",
+  "name": "block.openblocks.big_button",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "openblocks:big_button",
+      "link_recipe": true,
+      "text": "大型按钮可以放置在墙上.如果你空手Shift右键它就可以打开一个格子.你可以在格子中放入不同数量的物品来控制按钮被按下后发出的红石信号持续时间的长短-每放入一个物品能使红石信号持续时间增加1个tick.",
+      "title": "block.openblocks.big_button"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "openblocks:big_button"
+    }
+  ]
+}

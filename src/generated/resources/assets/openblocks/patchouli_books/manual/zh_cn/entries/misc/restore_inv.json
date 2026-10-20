@@ -1,0 +1,15 @@
+{
+  "category": "openblocks:misc",
+  "icon": "minecraft:chest",
+  "name": "openblocks.gui.restore_inv.title",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "要恢复玩家的物品栏状态,你需要相应的备份(会在玩家死亡,墓碑生成或是运行 $(l)/ob_inventory store$() 命令时创建).$(br)$(br)这些备份位于服务器存档文件夹里,名为  $(l)inventory-*.dat$(),用 $(l)/ob_inventory restore <player> <id>$() 命令即可恢复.$(br)$(br)$(l)id$() 既可以用文件的全名,也可"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "以只是 $(l)*$() 的部分,输入时支持TAB自动补全."
+    }
+  ]
+}

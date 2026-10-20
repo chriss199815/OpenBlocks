@@ -1,0 +1,22 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:sponge",
+  "name": "block.openblocks.sponge",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "openblocks:sponge",
+      "link_recipe": true,
+      "text": "Губка является заменой оригинальной губки. Идеально подходит для удаления небольших впадин с водой или лавой. Будьте осторожны используя её для очистки большой площади от жидкости, так как она может",
+      "title": "block.openblocks.sponge"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "начать работать неправильно."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "openblocks:sponge"
+    }
+  ]
+}

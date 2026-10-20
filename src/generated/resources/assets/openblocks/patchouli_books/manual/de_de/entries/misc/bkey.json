@@ -1,0 +1,15 @@
+{
+  "category": "openblocks:misc",
+  "icon": "openblocks:tasty_clay",
+  "name": "openblocks.gui.bkey.title",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Die 'B'-Taste ist eine sehr spezielle Taste in OpenBlocks.$(br)$(br)Wenn du die Option 'weAreSeriousPeople' im Abschnitt 'tomfoolery' der Common-Konfiguration auf false setzt, bekommst du dein eigenes Verdauungssystem.$(br)"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Versuche etwas von diesem Leckeren Lehm zu essen und drücke 'B', um ihn zu verdauen!"
+    }
+  ]
+}

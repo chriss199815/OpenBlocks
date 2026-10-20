@@ -1,0 +1,15 @@
+{
+  "category": "openblocks:misc",
+  "icon": "minecraft:enchanted_book",
+  "name": "openblocks.gui.laststand.title",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "El encantamiento Última Oportunidad usa tu barra de XP como protección final contra la muerte.$(br)$(br)Cuando llegas a 0.5 corazones, el juego consumirá tu propia XP siempre que te dañen en lugar de morir. Cuanto más alto sea el número de encantamientos que"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "tengas, el coste de XP será menor."
+    }
+  ]
+}

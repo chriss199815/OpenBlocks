@@ -1,0 +1,22 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:auto_enchantment_table",
+  "name": "block.openblocks.auto_enchantment_table",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "openblocks:auto_enchantment_table",
+      "link_recipe": true,
+      "text": "The auto enchantment table works in a similar way to the vanilla enchantment table except it runs off XP juice. Use the tabs on the right side of the interface to select where items or xp can be pulled from. Just like with the vanilla table bookshelves are",
+      "title": "block.openblocks.auto_enchantment_table"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "required for higher levels."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "openblocks:auto_enchantment_table"
+    }
+  ]
+}

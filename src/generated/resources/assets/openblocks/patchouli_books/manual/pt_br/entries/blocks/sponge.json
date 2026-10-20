@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:sponge",
+  "name": "block.openblocks.sponge",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "openblocks:sponge",
+      "link_recipe": true,
+      "text": "A esponja é um substituto da esponja do Minecraft. Perfeita para remover pequenas porções de lava ou água. Tenha cuidado ao usá-lo em áreas grandes de líquido através de como ele vai começar a ficar muito bagunçado.",
+      "title": "block.openblocks.sponge"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "openblocks:sponge"
+    }
+  ]
+}

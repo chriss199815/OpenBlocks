@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:canvas",
+  "name": "block.openblocks.canvas",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "openblocks:canvas",
+      "link_recipe": true,
+      "text": "La tela è un blocco perfettamente bianco che è perfetto per pitturare. Controlla anche il Miscelatore di Pittura per ottenere alcune informazioni sul creare tempere.",
+      "title": "block.openblocks.canvas"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "openblocks:canvas"
+    }
+  ]
+}

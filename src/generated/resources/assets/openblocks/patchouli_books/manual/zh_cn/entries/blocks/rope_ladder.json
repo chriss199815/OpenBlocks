@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:rope_ladder",
+  "name": "block.openblocks.rope_ladder",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "openblocks:rope_ladder",
+      "link_recipe": true,
+      "text": "当你放置绳梯后,它会垂直落到地面.创建一处绳梯只从堆叠中消耗一个物品.",
+      "title": "block.openblocks.rope_ladder"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "openblocks:rope_ladder"
+    }
+  ]
+}

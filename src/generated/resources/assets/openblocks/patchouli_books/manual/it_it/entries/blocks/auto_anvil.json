@@ -1,0 +1,22 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:auto_anvil",
+  "name": "block.openblocks.auto_anvil",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "openblocks:auto_anvil",
+      "link_recipe": true,
+      "text": "L'incudine automatica funziona esattamente come l'incudine Vanilla, ad eccezione del fatto che funziona con l'Esperienza Liquida e che può essere completamente automatizzata.$(br)$(br)Usa le schede sulla destra dell'interfaccia",
+      "title": "block.openblocks.auto_anvil"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "per selezionare su quali lati dell'incudine gli oggetti o i liquidi possono essere inseriti o estratti. Fai clic col tasto destro del mouse sull'incudine e trascinala per girarla e selezionare altri lati!"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "openblocks:auto_anvil"
+    }
+  ]
+}

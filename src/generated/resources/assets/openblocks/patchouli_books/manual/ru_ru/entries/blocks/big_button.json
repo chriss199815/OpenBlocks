@@ -1,0 +1,22 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:big_button",
+  "name": "block.openblocks.big_button",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "openblocks:big_button",
+      "link_recipe": true,
+      "text": "Большая кнопка - это большая кнопка, которая может быть поставлена на стену. Если Вы нажмёте shift-ПКМ по кнопке пустой рукой, Вам будет показан инвентарь с одним слотом. Вы можете положить предметы в этот слот, чтобы",
+      "title": "block.openblocks.big_button"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "увеличить количество времени, во время которого кнопка остаётся нажатой - один предмет увеличивает время нажатия кнопки на один тик."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "openblocks:big_button"
+    }
+  ]
+}

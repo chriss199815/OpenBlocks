@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:item_dropper",
+  "name": "block.openblocks.item_dropper",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "openblocks:item_dropper",
+      "link_recipe": true,
+      "text": "The item dropper is similar to the vanilla dropper, except it drops items without any random bias. User can also control speed of dropped item from GUI and with redstone power.",
+      "title": "block.openblocks.item_dropper"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "openblocks:item_dropper"
+    }
+  ]
+}

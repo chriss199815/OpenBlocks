@@ -1,0 +1,11 @@
+{
+  "category": "openblocks:misc",
+  "icon": "minecraft:enchanted_book",
+  "name": "openblocks.gui.unstable.title",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "We've had unconfirmed reports that this enchantment causes any gunpowder you're carrying to become unstable when you're attacked or when you jump off something.$(br)$(br)Use at your own risk!"
+    }
+  ]
+}

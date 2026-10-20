@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:scaffolding",
+  "name": "block.openblocks.scaffolding",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "openblocks:scaffolding",
+      "link_recipe": true,
+      "text": "Alguma vez você já quis pilar em algum lugar sem deixar uma torre feia por trás? Bem, agora você pode! Basta construir com blocos de andaimes e eles vão desaparecer automaticamente quando terminar.",
+      "title": "block.openblocks.scaffolding"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "openblocks:scaffolding"
+    }
+  ]
+}

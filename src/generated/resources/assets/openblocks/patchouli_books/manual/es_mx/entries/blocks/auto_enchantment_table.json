@@ -1,0 +1,22 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:auto_enchantment_table",
+  "name": "block.openblocks.auto_enchantment_table",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "openblocks:auto_enchantment_table",
+      "link_recipe": true,
+      "text": "La mesa de encantamiento automática funciona de forma similar a la mesa de encantamiento corriente excepto por que funciona con XP líquida. Usa las pestañas en la parte derecha de la interfaz para seleccionar de donde se cogen los",
+      "title": "block.openblocks.auto_enchantment_table"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "objetos o la XP. Se necesitan librerías para conseguir mejores encantamientos, justo como con la mesa corriente."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "openblocks:auto_enchantment_table"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:tank",
+  "name": "block.openblocks.tank",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "openblocks:tank",
+      "link_recipe": true,
+      "text": "Tanques podem armazenar líquidos. Se você colocar tanques próximos, cada um deles vai distribuir seus líquidos entre eles. Você pode colocar líquidos dentro dos tanques usando baldes. Se o tanque contém XP Líquido, você pode",
+      "title": "block.openblocks.tank"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "clicar nele com a mão vazia para dar a si mesmo um pouco do XP. Quando os tanques são quebrados, ele vai manter o seu líquido."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "openblocks:tank"
+    }
+  ]
+}

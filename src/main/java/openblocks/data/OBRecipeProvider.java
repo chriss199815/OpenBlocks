@@ -17,7 +17,9 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
 import net.neoforged.neoforge.common.Tags;
+import net.neoforged.neoforge.common.conditions.ModLoadedCondition;
 import openblocks.OpenBlocks;
+import openblocks.integration.patchouli.OBPatchouli;
 import openblocks.util.PaintColors;
 import openblocks.registry.OBComponents;
 import openblocks.recipe.CrayonMixingRecipe;
@@ -526,6 +528,15 @@ public class OBRecipeProvider extends RecipeProvider {
 		sonicGlasses(output);
 		villageHighlighter(output);
 		epicEraser(output);
+		infoBook(output);
+	}
+
+	private static void infoBook(RecipeOutput output) {
+		ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, OBItems.INFO_BOOK.get())
+				.requires(Items.CLAY_BALL)
+				.requires(Items.BOOK)
+				.unlockedBy("has_book", has(Items.BOOK))
+				.save(output.withConditions(new ModLoadedCondition(OBPatchouli.MODID)));
 	}
 
 	private static void epicEraser(RecipeOutput output) {

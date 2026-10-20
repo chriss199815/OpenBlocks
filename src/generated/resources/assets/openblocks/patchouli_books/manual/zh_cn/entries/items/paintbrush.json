@@ -1,0 +1,19 @@
+{
+  "category": "openblocks:items",
+  "icon": "openblocks:paintbrush",
+  "name": "item.openblocks.paintbrush",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "openblocks:paintbrush",
+      "link_recipe": true,
+      "text": "颜料刷可以让你在方块上涂刷任何你想要的颜色.将颜料刷在颜料桶内沾上一些颜料,就可以对方块右键来刷上颜料.$(br)画布是最理想的涂刷方块,你也可以向原版,甚至是其它模组中的一些方块涂刷颜料.",
+      "title": "item.openblocks.paintbrush"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "openblocks:paintbrush",
+      "recipe2": "openblocks:paintbrush_white"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "category": "openblocks:items",
+  "icon": "openblocks:unprepared_stencil",
+  "name": "item.openblocks.unprepared_stencil",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "openblocks:unprepared_stencil",
+      "link_recipe": true,
+      "text": "Stencils can be placed onto blocks and then painted over using paint brushes!$(br)$(br)You can paint a block using multiple stencils and you can click on them with an empty hand to rotate them.$(br)$(br)Place an Unprepared",
+      "title": "item.openblocks.unprepared_stencil"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Stencil in a Drawing table to create different patterns."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "openblocks:unprepared_stencil"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "category": "openblocks:misc",
+  "icon": "minecraft:enchanted_book",
+  "name": "openblocks.gui.flimflam.title",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Os cientistas ainda não descobriram as propriedades desse encantamento."
+    }
+  ]
+}

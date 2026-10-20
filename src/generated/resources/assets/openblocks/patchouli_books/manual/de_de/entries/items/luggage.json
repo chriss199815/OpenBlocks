@@ -1,0 +1,22 @@
+{
+  "category": "openblocks:items",
+  "icon": "openblocks:luggage",
+  "name": "item.openblocks.luggage",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "openblocks:luggage",
+      "link_recipe": true,
+      "text": "Das Reisegepäck ist dein neuer Freund. Es folgt dir überall hin und sammelt alle Gegenstände, die es am Boden findet, ein. Nom nom nom!$(br)Um es aufzuheben, Shift-klicke einfach auf es und es verwandelt sich zurück in ein",
+      "title": "item.openblocks.luggage"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Gegenstand, das du umhertragen kannst.$(br)Wenn es jemals von einem Blitz getroffen werden sollte, wird es noch mehr Gegenstände tragen können!"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "openblocks:luggage"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:cannon",
+  "name": "block.openblocks.cannon",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "openblocks:cannon",
+      "link_recipe": true,
+      "text": "Wenn ein Redstone-Signal anliegt, wird die Item-Kannone Gegenstände, die es in einem benachbarten Inventar findet, schießen. Benutze den 'Zeiger', um die Kannone auszurichten.",
+      "title": "block.openblocks.cannon"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "openblocks:cannon"
+    }
+  ]
+}

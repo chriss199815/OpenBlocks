@@ -77,6 +77,7 @@ public class OBBlockStateProvider extends BlockStateProvider {
 		itemModels().basicItem(OBItems.HANG_GLIDER.get());
 		itemModels().basicItem(OBItems.SLEEPING_BAG.get());
 		itemModels().basicItem(OBItems.CURSOR.get());
+		itemModels().basicItem(OBItems.INFO_BOOK.get());
 		itemModels().basicItem(OBItems.GOLDEN_EYE.get());
 		itemModels().basicItem(OBItems.POINTER.get());
 		itemModels().basicItem(OBItems.EMPTY_MAP.get());

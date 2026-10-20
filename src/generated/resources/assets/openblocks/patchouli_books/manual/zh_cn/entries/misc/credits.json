@@ -1,0 +1,15 @@
+{
+  "category": "openblocks:misc",
+  "icon": "openblocks:info_book",
+  "name": "openblocks.gui.credits.title",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Boq, Mikee 和 NeverCast$()$(br)  - 开放式方块的主要开发者$(br)$(l)SinZ 和 Yoshi2$()$(br)  - 开放式方块团队的元老成员.$(br)$(l)Vexatos 和 crafteverywhere$()$(br)  - 日常翻译人员.$(br)$(l)Direwolf20 和 ForgeCraft 的成员$()$(br)  - 感谢帮助寻找Bug和测试稳定性."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "以及所有那些过去两年来对模组代码有所贡献的人们,和那些制作模组解说,实况视频和最初起就一直支持我们的朋友!"
+    }
+  ]
+}

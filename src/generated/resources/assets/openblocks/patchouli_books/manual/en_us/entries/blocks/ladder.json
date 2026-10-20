@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:ladder",
+  "name": "block.openblocks.ladder",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "openblocks:ladder",
+      "link_recipe": true,
+      "text": "The jaded ladder solves that annoying problem of jumping out of a trapdoor at the top of a ladder. The jaded ladder acts as both a trap door and a ladder at the same time.",
+      "title": "block.openblocks.ladder"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "openblocks:ladder"
+    }
+  ]
+}

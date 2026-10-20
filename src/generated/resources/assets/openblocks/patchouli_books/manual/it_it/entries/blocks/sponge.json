@@ -1,0 +1,22 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:sponge",
+  "name": "block.openblocks.sponge",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "openblocks:sponge",
+      "link_recipe": true,
+      "text": "La spugna è un rimpiazzo per la spugna Vanilla. È perfetta per rimuovere piccole sacche di lava o acqua. Stai attento quando la usi su larghe aree di un liquido, però, perché inizierà ad essere abbastanza",
+      "title": "block.openblocks.sponge"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "confusionario."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "openblocks:sponge"
+    }
+  ]
+}

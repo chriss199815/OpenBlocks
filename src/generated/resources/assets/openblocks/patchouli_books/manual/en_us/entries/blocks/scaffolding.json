@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:scaffolding",
+  "name": "block.openblocks.scaffolding",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "openblocks:scaffolding",
+      "link_recipe": true,
+      "text": "Have you ever wanted to pillar up somewhere without leaving an ugly tower behind? Well, now you can! Simply build with scaffolding blocks and they will automatically despawn when you are done.",
+      "title": "block.openblocks.scaffolding"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "openblocks:scaffolding"
+    }
+  ]
+}

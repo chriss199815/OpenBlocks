@@ -1,0 +1,22 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:paint_mixer",
+  "name": "block.openblocks.paint_mixer",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "openblocks:paint_mixer",
+      "link_recipe": true,
+      "text": "¡El mezclador de pintura puede mezclar cualquier colo de pintura que quieras! ¡Coloca un cubo de pintura ya existente o un cubo de leche en la ranura superior, después tinte cian, magenta, amarillo y negro en las otras cuatro ranuras y haz",
+      "title": "block.openblocks.paint_mixer"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "clic para mezclar!"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "openblocks:paint_mixer"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "category": "openblocks:misc",
+  "icon": "minecraft:enchanted_book",
+  "name": "openblocks.gui.unstable.title",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "我们收到一份未经证实的报告,当越过某个方块或受到攻击时,你身上携带的火药将会变得极其不稳定.$(br)$(br)对此可能造成的任何损失我们恕不负责!"
+    }
+  ]
+}

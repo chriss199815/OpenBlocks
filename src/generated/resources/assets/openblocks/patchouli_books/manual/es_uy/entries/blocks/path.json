@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:path",
+  "name": "block.openblocks.path",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "openblocks:path",
+      "link_recipe": true,
+      "text": "El camino rústico no hace nada, pero es muy mono.",
+      "title": "block.openblocks.path"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "openblocks:path"
+    }
+  ]
+}

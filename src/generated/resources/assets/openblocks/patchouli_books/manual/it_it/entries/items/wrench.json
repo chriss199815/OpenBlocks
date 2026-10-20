@@ -1,0 +1,22 @@
+{
+  "category": "openblocks:items",
+  "icon": "openblocks:wrench",
+  "name": "item.openblocks.wrench",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "openblocks:wrench",
+      "link_recipe": true,
+      "text": "Questo strumento estremamente sofisticato è usato per trasformare oggetti con simmetria ottaedra.$(br)$(br)$(br)O semplicemente un grande e stupido pezzo di metallo che puoi usare per",
+      "title": "item.openblocks.wrench"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "ruotare cubi e altre cose.$(br)$(br)Quinfi sì, è semplicemente un'altra chiave inglese. Sto solo cercando di essere originale, ok?"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "openblocks:wrench"
+    }
+  ]
+}

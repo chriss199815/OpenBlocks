@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:items",
+  "icon": "openblocks:sleeping_bag",
+  "name": "item.openblocks.sleeping_bag",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "openblocks:sleeping_bag",
+      "link_recipe": true,
+      "text": "El saco de dormir te permite dormir fuera en la espesura. Para dormir, simplemente póntela en la espalda.",
+      "title": "item.openblocks.sleeping_bag"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "openblocks:sleeping_bag"
+    }
+  ]
+}

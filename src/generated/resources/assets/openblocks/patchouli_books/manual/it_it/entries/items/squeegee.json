@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:items",
+  "icon": "openblocks:squeegee",
+  "name": "item.openblocks.squeegee",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "openblocks:squeegee",
+      "link_recipe": true,
+      "text": "Il lavavetri rimuove la pittura da ogni blocco dipinto. Clicca semplicemente sul lato del blocco da cui vuoi rimuovere la pittura, o alternativamente fai shift-click sul blocco per rimuovere la pittura da tutti i lati!",
+      "title": "item.openblocks.squeegee"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "openblocks:squeegee"
+    }
+  ]
+}

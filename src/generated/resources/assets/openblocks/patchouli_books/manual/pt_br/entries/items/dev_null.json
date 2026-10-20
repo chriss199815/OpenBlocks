@@ -1,0 +1,22 @@
+{
+  "category": "openblocks:items",
+  "icon": "openblocks:dev_null",
+  "name": "item.openblocks.dev_null",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "openblocks:dev_null",
+      "link_recipe": true,
+      "text": "Clique usando /dev/null para abrir o inventário. Há um único slot Inventário - coloque um item lá - terra, por exemplo. A medida que você pega terra, este slot vai se encher. Depois que estiver cheio, qualquer terra você pegar serão",
+      "title": "item.openblocks.dev_null"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "descartados automaticamente. Você pode segurar SHIFT e clicar com o item na sua mão como se estivesse colocando o bloco!"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "openblocks:dev_null"
+    }
+  ]
+}

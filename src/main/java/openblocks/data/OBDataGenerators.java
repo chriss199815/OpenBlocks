@@ -21,6 +21,7 @@ public class OBDataGenerators {
 
 		generator.addProvider(event.includeClient(), new OBStencilTextureProvider(output, existingFileHelper));
 		generator.addProvider(event.includeClient(), new OBBlockStateProvider(output, existingFileHelper));
+		generator.addProvider(event.includeClient(), new OBManualProvider(output, lookupProvider, existingFileHelper));
 
 		generator.addProvider(event.includeServer(), new LootTableProvider(output, Set.of(),
 				List.of(new LootTableProvider.SubProviderEntry(OBBlockLoot::new, LootContextParamSets.BLOCK),

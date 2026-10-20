@@ -1,0 +1,22 @@
+{
+  "category": "openblocks:items",
+  "icon": "openblocks:luggage",
+  "name": "item.openblocks.luggage",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "openblocks:luggage",
+      "link_recipe": true,
+      "text": "El equipaje es tu nuevo amigo. Te seguirá allá donde vayas recogiendo cualquier objeto que encuentre en el suelo. ¡Nom nom nom!$(br)Para desmantelarlo, haz shift+clic en él y se convertirá en un objeto que podrás llevarte por ahí.",
+      "title": "item.openblocks.luggage"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Si por lo que sea le cae un rayo, podrá recoger aun más objetos."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "openblocks:luggage"
+    }
+  ]
+}

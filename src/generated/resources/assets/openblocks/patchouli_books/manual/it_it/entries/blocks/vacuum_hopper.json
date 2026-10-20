@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:vacuum_hopper",
+  "name": "block.openblocks.vacuum_hopper",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "openblocks:vacuum_hopper",
+      "link_recipe": true,
+      "text": "La tramoggia a vuoto risucchia tutti gli oggetti e le sfere d'esperienza attorno a lui. Si possono usare le schede sulla destra dell'interfaccia per selezionare su quali lati si devono emettere gli oggetti risucchiati.",
+      "title": "block.openblocks.vacuum_hopper"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "openblocks:vacuum_hopper"
+    }
+  ]
+}

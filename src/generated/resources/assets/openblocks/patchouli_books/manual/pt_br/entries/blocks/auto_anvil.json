@@ -1,0 +1,22 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:auto_anvil",
+  "name": "block.openblocks.auto_anvil",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "openblocks:auto_anvil",
+      "link_recipe": true,
+      "text": "A bigorna automática funciona que nem a bigorna do Minecraft,exceto que esta usa XP líquido e pode ser se encher automaticamente.$(br)$(br)Use as guias do lado direito da interface para selecionar quais lados da bigorna, itens",
+      "title": "block.openblocks.auto_anvil"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "ou líquido podem ser inseridos ou extraídos. Segure o botão direito do mouse e arraste a bigorna na guia para girá-la ao redor e selecionar os outros lados!"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "openblocks:auto_anvil"
+    }
+  ]
+}

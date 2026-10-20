@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:items",
+  "icon": "openblocks:slimalyzer",
+  "name": "item.openblocks.slimalyzer",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "openblocks:slimalyzer",
+      "link_recipe": true,
+      "text": "Anda por ahí con el slimalizador en la mano y se encendera cuando te encuentres en un chunk donde aparecen slimes.",
+      "title": "item.openblocks.slimalyzer"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "openblocks:slimalyzer"
+    }
+  ]
+}

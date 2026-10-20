@@ -1,0 +1,11 @@
+{
+  "category": "openblocks:misc",
+  "icon": "minecraft:enchanted_book",
+  "name": "openblocks.gui.laststand.title",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "최후의안정 마법부여는 당신의 죽지 않도록 도와줍니다. 체력이 0.5하트이하 일때 당신의 XP를 사용하여 채력을 회복합니다."
+    }
+  ]
+}

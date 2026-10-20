@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:ladder",
+  "name": "block.openblocks.ladder",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "openblocks:ladder",
+      "link_recipe": true,
+      "text": "Die Strickleiter löst das nervige Problem, über eine Falltür an der Spitze einer Leiter springen zu müssen. Die Strickleiter funktioniert zeitgleich wie eine Falltür und wie eine Leiter.",
+      "title": "block.openblocks.ladder"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "openblocks:ladder"
+    }
+  ]
+}

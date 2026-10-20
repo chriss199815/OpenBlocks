@@ -1,0 +1,22 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:auto_anvil",
+  "name": "block.openblocks.auto_anvil",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "openblocks:auto_anvil",
+      "link_recipe": true,
+      "text": "Автоматическая наковальня работает так же, как и обычная наковальня, но она требует жидкий опыт, и может быть полностью автоматизирована.n$(br)В правой части интерфейса Вы можете выбрать, какие стороны",
+      "title": "block.openblocks.auto_anvil"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "наковальни будут использованы для извлечения/помещения жидкостей/предметов."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "openblocks:auto_anvil"
+    }
+  ]
+}

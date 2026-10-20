@@ -1,0 +1,22 @@
+{
+  "category": "openblocks:items",
+  "icon": "openblocks:unprepared_stencil",
+  "name": "item.openblocks.unprepared_stencil",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "openblocks:unprepared_stencil",
+      "link_recipe": true,
+      "text": "Estêncis podem ser colocados em blocos e então,  serem pintados usando pincéis!$(br)$(br)Você pode pintar um bloco usando vários estêncis e você pode clicar neles com a mão vazia para girá-los.$(br)$(br)Coloque um Estêncil em",
+      "title": "item.openblocks.unprepared_stencil"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Branco numa Mesa de Desenho para criar modelos diferentes."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "openblocks:unprepared_stencil"
+    }
+  ]
+}

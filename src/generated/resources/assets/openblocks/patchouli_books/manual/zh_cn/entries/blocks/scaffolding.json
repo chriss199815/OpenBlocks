@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:scaffolding",
+  "name": "block.openblocks.scaffolding",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "openblocks:scaffolding",
+      "link_recipe": true,
+      "text": "你是否想过通过向脚下垫方块到达高处,但是不想遗留下难看的竹子?现在你可以做到了!用这些脚手架来搭柱子,它们会在一定时间后自动散架.",
+      "title": "block.openblocks.scaffolding"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "openblocks:scaffolding"
+    }
+  ]
+}

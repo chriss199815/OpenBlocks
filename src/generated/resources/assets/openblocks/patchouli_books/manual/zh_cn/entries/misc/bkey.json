@@ -1,0 +1,11 @@
+{
+  "category": "openblocks:misc",
+  "icon": "openblocks:tasty_clay",
+  "name": "openblocks.gui.bkey.title",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "'B' 键是一个特殊的快捷键.$(br)$(br)启用配置文件中'tomfoolery'分类下的'weAreSeriousPeople'选项后,你会获得独有的消化系统,这项配置对客户端和服务端都有效.$(br)$(br)试着吃一些美味粘土,接着按'B'键消化!"
+    }
+  ]
+}

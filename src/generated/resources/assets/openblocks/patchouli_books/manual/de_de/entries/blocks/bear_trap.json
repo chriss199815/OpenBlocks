@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:bear_trap",
+  "name": "block.openblocks.bear_trap",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "openblocks:bear_trap",
+      "link_recipe": true,
+      "text": "Platziere eine Bärenfalle und klicke auf sie, um sie zu öffnen. Wenn ein NPC über sie läuft, wird er sich nicht mehr bewegen können!",
+      "title": "block.openblocks.bear_trap"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "openblocks:bear_trap"
+    }
+  ]
+}

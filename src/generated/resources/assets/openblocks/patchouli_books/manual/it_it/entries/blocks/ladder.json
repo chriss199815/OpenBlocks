@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:ladder",
+  "name": "block.openblocks.ladder",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "openblocks:ladder",
+      "link_recipe": true,
+      "text": "La scala a pioli impassibile risolve quello scocciante problema di dover saltare fuori da una botola in cima ad una scala a pioli. La scala a pioli impassibile funge sia da botola sia da scala a pioli allo stesso momento.",
+      "title": "block.openblocks.ladder"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "openblocks:ladder"
+    }
+  ]
+}

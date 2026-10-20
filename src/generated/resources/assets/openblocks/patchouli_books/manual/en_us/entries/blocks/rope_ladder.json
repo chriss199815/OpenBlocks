@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:rope_ladder",
+  "name": "block.openblocks.rope_ladder",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "openblocks:rope_ladder",
+      "link_recipe": true,
+      "text": "When you place a rope ladder it'll roll out all the way to the ground. For every created ladder block it will use one item from stack.",
+      "title": "block.openblocks.rope_ladder"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "openblocks:rope_ladder"
+    }
+  ]
+}

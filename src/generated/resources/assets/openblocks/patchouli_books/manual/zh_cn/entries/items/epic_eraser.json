@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:items",
+  "icon": "openblocks:epic_eraser",
+  "name": "item.openblocks.epic_eraser",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "openblocks:epic_eraser",
+      "link_recipe": true,
+      "text": "每个物品都有它的历史记录……$(br)$(br)你讨厌这个么？$(br)有了这东西，你能够把你那些收集的史诗级战利品的痕迹清除的干干净净，这样在黑市上售卖不会留下一点证据。",
+      "title": "item.openblocks.epic_eraser"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "openblocks:epic_eraser"
+    }
+  ]
+}

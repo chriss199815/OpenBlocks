@@ -1,0 +1,11 @@
+{
+  "category": "openblocks:misc",
+  "icon": "minecraft:enchanted_book",
+  "name": "openblocks.gui.flimflam.title",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "과학자들은 마법부여의 속성을 발견하지 못하고있어요"
+    }
+  ]
+}

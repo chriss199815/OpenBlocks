@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:items",
+  "icon": "openblocks:slimalyzer",
+  "name": "item.openblocks.slimalyzer",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "openblocks:slimalyzer",
+      "link_recipe": true,
+      "text": "Andar por aí com o gosmalizador em sua mão, ele vai acender quando você estiver em um chunk de spawn de slime.",
+      "title": "item.openblocks.slimalyzer"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "openblocks:slimalyzer"
+    }
+  ]
+}

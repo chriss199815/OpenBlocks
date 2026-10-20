@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:donation_station",
+  "name": "block.openblocks.donation_station",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "openblocks:donation_station",
+      "link_recipe": true,
+      "text": "你是否很喜欢某个物品或是方块,并且想对它的作者表达感谢呢?$(br)你可以将那些物品放进捐助站,如果检测到了作者的捐助网页,我们会为你提供它的链接.",
+      "title": "block.openblocks.donation_station"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "openblocks:donation_station"
+    }
+  ]
+}

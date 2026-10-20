@@ -1,0 +1,15 @@
+{
+  "category": "openblocks:misc",
+  "icon": "openblocks:info_book",
+  "name": "openblocks.gui.credits.title",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Boq, Mikee and NeverCast$() - 오픈블럭 매인개발자 (우리는 우리 마음대로 우리의 스스로 저작권을 인정해 줄 수 있습니까?)$(br)$(br)$(l)SinZ and Yoshi2$() - 오픈블럭 초창기멤버.$(br)$(br)$(l)Vexatos and crafteverywhere$() - 정기적으로 모드를 번역.$(br)"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "지난 한해동안 도움을 준 사람들. $(br)$(br)$(l)Direwolf20과 ForgeCraft$() - 출시전 크래쉬와 버그 발견$(br)$(br)누구던지 우리의 모드를 소개할 수 있습니다.$(br)$(br)$(l)TeamMMKP$() - 오픈블럭 한국어 번역자"
+    }
+  ]
+}

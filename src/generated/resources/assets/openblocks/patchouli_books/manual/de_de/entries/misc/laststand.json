@@ -1,0 +1,15 @@
+{
+  "category": "openblocks:misc",
+  "icon": "minecraft:enchanted_book",
+  "name": "openblocks.gui.laststand.title",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Die 'Letzte Rettung'-Verzauberung verwendet deine Erfahrungspunkten-Leiste als letzten Schutz vor dem Tod.$(br)$(br)Wenn du 0.5 Herzen erreichst, wird das Spiel dir die Erfahrungspunkte entziehen, wenn du Schaden bekommst, statt dich zu töten. Je"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "höher das Verzauberungs-Stufe ist, desto weniger Erfahrungspunkte wird dies kosten."
+    }
+  ]
+}

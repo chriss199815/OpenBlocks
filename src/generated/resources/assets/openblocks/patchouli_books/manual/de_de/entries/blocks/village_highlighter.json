@@ -1,0 +1,22 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:village_highlighter",
+  "name": "block.openblocks.village_highlighter",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "openblocks:village_highlighter",
+      "link_recipe": true,
+      "text": "Platziere den Dorf-Textmarker in einem Dorf und gib ihm ein Redstone-Signal. Er umrandet die Betten (blau), Arbeitsplätze (gelb) und Glocken (magenta) in der Umgebung, hell wenn frei und dunkel wenn belegt, und zeichnet um jeden",
+      "title": "block.openblocks.village_highlighter"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Dorfbewohner den Bereich, in dem er einen Eisengolem rufen kann, in einer eigenen Farbe (kräftig, wenn er es gerade könnte). Nützlich, wenn du eine Eisengolem-Farm baust!$(br)Seine Rückseite gibt ein Redstone-Signal ab, solange es ein freies Bett gibt, in dem sich Dorfbewohner vermehren können."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "openblocks:village_highlighter"
+    }
+  ]
+}

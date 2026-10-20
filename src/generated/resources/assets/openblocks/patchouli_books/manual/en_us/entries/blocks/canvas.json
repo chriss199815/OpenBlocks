@@ -4,15 +4,15 @@
   "name": "block.openblocks.canvas",
   "pages": [
     {
-      "type": "patchouli:spotlight",
+      "type": "openblocks:spotlight",
       "item": "openblocks:canvas",
-      "link_recipe": true,
       "text": "The canvas is a perfectly white block that's perfect for painting. See the Paint Mixer for information about making paints.",
       "title": "block.openblocks.canvas"
     },
     {
-      "type": "patchouli:crafting",
-      "recipe": "openblocks:canvas"
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:canvas",
+      "recipe2": ""
     }
   ]
 }

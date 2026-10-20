@@ -4,15 +4,15 @@
   "name": "block.openblocks.scaffolding",
   "pages": [
     {
-      "type": "patchouli:spotlight",
+      "type": "openblocks:spotlight",
       "item": "openblocks:scaffolding",
-      "link_recipe": true,
       "text": "Wolltest du jemals irgendwo hochbauen, ohne einen häslichen Turm zu hinterlassen? Jetzt kannst du! Baue mit Gerüstblöcken und sie verschwinden wenn du fertig bist mit bauen.",
       "title": "block.openblocks.scaffolding"
     },
     {
-      "type": "patchouli:crafting",
-      "recipe": "openblocks:scaffolding"
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:scaffolding",
+      "recipe2": ""
     }
   ]
 }

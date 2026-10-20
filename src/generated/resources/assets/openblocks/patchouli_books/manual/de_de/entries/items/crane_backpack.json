@@ -4,9 +4,8 @@
   "name": "item.openblocks.crane_backpack",
   "pages": [
     {
-      "type": "patchouli:spotlight",
+      "type": "openblocks:spotlight",
       "item": "openblocks:crane_backpack",
-      "link_recipe": true,
       "text": "\"Magnet\" in der Minecraftwelt ist ein antikes Wort für \"Wie funktioniert das?\".$(br)$(br)Dieser spezielle Ausrüstungsgegenstand erlaubt es Mobs, Spieler, Gegenstände und Blöcke aufzuheben. Kann durch Krankontrolle",
       "title": "item.openblocks.crane_backpack"
     },
@@ -15,8 +14,9 @@
       "text": "beeinflusst werden."
     },
     {
-      "type": "patchouli:crafting",
-      "recipe": "openblocks:crane_backpack"
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:crane_backpack",
+      "recipe2": ""
     }
   ]
 }

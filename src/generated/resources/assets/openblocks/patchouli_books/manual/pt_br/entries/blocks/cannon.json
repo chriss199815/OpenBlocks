@@ -4,15 +4,15 @@
   "name": "block.openblocks.cannon",
   "pages": [
     {
-      "type": "patchouli:spotlight",
+      "type": "openblocks:spotlight",
       "item": "openblocks:cannon",
-      "link_recipe": true,
       "text": "Quando tem um sinal de redstone, o canhão de itens vai atirar os itens que ele encontrar dentro do baú ao lado dele. Use o 'Ponteiro' para mirar o canhão.",
       "title": "block.openblocks.cannon"
     },
     {
-      "type": "patchouli:crafting",
-      "recipe": "openblocks:cannon"
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:cannon",
+      "recipe2": ""
     }
   ]
 }

@@ -4,15 +4,15 @@
   "name": "block.openblocks.ladder",
   "pages": [
     {
-      "type": "patchouli:spotlight",
+      "type": "openblocks:spotlight",
       "item": "openblocks:ladder",
-      "link_recipe": true,
       "text": "爬梯子遇上活板门时必须跳出去是件麻烦事,但梯子活板门解决了这个问题.梯子活板门可以在打开时起到梯子的作用,让玩家顺着活板门爬上去.",
       "title": "block.openblocks.ladder"
     },
     {
-      "type": "patchouli:crafting",
-      "recipe": "openblocks:ladder"
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:ladder",
+      "recipe2": ""
     }
   ]
 }

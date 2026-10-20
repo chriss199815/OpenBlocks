@@ -4,15 +4,15 @@
   "name": "block.openblocks.cannon",
   "pages": [
     {
-      "type": "patchouli:spotlight",
+      "type": "openblocks:spotlight",
       "item": "openblocks:cannon",
-      "link_recipe": true,
       "text": "当投掷加农炮接收到红石信号时,投掷加农炮会向指定目标投掷出相邻容器内的物品.你可以使用'指针'工具来给加农炮定位投掷的目标.",
       "title": "block.openblocks.cannon"
     },
     {
-      "type": "patchouli:crafting",
-      "recipe": "openblocks:cannon"
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:cannon",
+      "recipe2": ""
     }
   ]
 }

@@ -4,15 +4,15 @@
   "name": "block.openblocks.paint_mixer",
   "pages": [
     {
-      "type": "patchouli:spotlight",
+      "type": "openblocks:spotlight",
       "item": "openblocks:paint_mixer",
-      "link_recipe": true,
       "text": "Смеситель краски может смешать краски любого цвета! Положите ведро краски или ведро молока в верхний слот, затем бирюзовый, сиреневый, жёлтый и чёрные красители в четыре других слота и нажмите смешать!",
       "title": "block.openblocks.paint_mixer"
     },
     {
-      "type": "patchouli:crafting",
-      "recipe": "openblocks:paint_mixer"
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:paint_mixer",
+      "recipe2": ""
     }
   ]
 }

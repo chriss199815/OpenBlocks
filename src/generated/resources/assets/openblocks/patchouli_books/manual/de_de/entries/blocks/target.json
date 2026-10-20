@@ -4,15 +4,15 @@
   "name": "block.openblocks.target",
   "pages": [
     {
-      "type": "patchouli:spotlight",
+      "type": "openblocks:spotlight",
       "item": "openblocks:target",
-      "link_recipe": true,
       "text": "Die Zielscheibe gibt ein Redstone-Signal mit einer Stärke abhängig von der Genauigkeit des Schützen aus. Gib einer Zielscheibe ein Redstone-Signal, um sie ausklappen zu lassen!",
       "title": "block.openblocks.target"
     },
     {
-      "type": "patchouli:crafting",
-      "recipe": "openblocks:target"
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:target",
+      "recipe2": ""
     }
   ]
 }

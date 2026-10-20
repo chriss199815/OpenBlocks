@@ -4,15 +4,15 @@
   "name": "block.openblocks.target",
   "pages": [
     {
-      "type": "patchouli:spotlight",
+      "type": "openblocks:spotlight",
       "item": "openblocks:target",
-      "link_recipe": true,
       "text": "靶子会根据玩家命中的环数多寡来发出强度不同的红石信号.为靶子通入红石信号可以使它竖立起来.",
       "title": "block.openblocks.target"
     },
     {
-      "type": "patchouli:crafting",
-      "recipe": "openblocks:target"
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:target",
+      "recipe2": ""
     }
   ]
 }

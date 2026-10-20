@@ -4,15 +4,15 @@
   "name": "item.openblocks.sponge_on_a_stick",
   "pages": [
     {
-      "type": "patchouli:spotlight",
+      "type": "openblocks:spotlight",
       "item": "openblocks:sponge_on_a_stick",
-      "link_recipe": true,
       "text": "类似海绵,海绵棒可用于清理一片范围内的液体.但它比海绵更方便,也很容易坏掉.",
       "title": "item.openblocks.sponge_on_a_stick"
     },
     {
-      "type": "patchouli:crafting",
-      "recipe": "openblocks:sponge_on_a_stick"
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:sponge_on_a_stick",
+      "recipe2": ""
     }
   ]
 }

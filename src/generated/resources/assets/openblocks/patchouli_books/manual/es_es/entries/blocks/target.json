@@ -4,15 +4,15 @@
   "name": "block.openblocks.target",
   "pages": [
     {
-      "type": "patchouli:spotlight",
+      "type": "openblocks:spotlight",
       "item": "openblocks:target",
-      "link_recipe": true,
       "text": "El objetivo emitirá una seña de redstone de fuerza relativa a la precisión de apunte de los jugadores. ¡Dale al objetivo una señal de redstone para que salte!",
       "title": "block.openblocks.target"
     },
     {
-      "type": "patchouli:crafting",
-      "recipe": "openblocks:target"
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:target",
+      "recipe2": ""
     }
   ]
 }

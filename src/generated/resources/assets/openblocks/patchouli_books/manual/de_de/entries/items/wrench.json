@@ -4,9 +4,8 @@
   "name": "item.openblocks.wrench",
   "pages": [
     {
-      "type": "patchouli:spotlight",
+      "type": "openblocks:spotlight",
       "item": "openblocks:wrench",
-      "link_recipe": true,
       "text": "Dies ist ein hochmodernes Werkzeug für die zu den Weltachsen orthogonale Transformation kubischer Objekte.$(br)$(br)$(br)Oder nur ein großer, blöder Metallklotz, mit dem du Dinge rotieren",
       "title": "item.openblocks.wrench"
     },
@@ -15,8 +14,9 @@
       "text": "kannst.$(br)$(br)Ja, es ist halt noch ein Schraubenschlüssel, wie jeder andere auch. Du musst es mir nicht unter die Nase reiben."
     },
     {
-      "type": "patchouli:crafting",
-      "recipe": "openblocks:wrench"
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:wrench",
+      "recipe2": ""
     }
   ]
 }

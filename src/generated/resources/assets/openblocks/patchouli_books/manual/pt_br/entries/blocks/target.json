@@ -4,15 +4,15 @@
   "name": "block.openblocks.target",
   "pages": [
     {
-      "type": "patchouli:spotlight",
+      "type": "openblocks:spotlight",
       "item": "openblocks:target",
-      "link_recipe": true,
       "text": "O alvo dará um sinal redstone de uma força relativa à precisão da pontaria do jogador. Dê ao alvo um sinal de redstone para levantá-lo!",
       "title": "block.openblocks.target"
     },
     {
-      "type": "patchouli:crafting",
-      "recipe": "openblocks:target"
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:target",
+      "recipe2": ""
     }
   ]
 }

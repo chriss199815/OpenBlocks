@@ -4,15 +4,15 @@
   "name": "block.openblocks.item_dropper",
   "pages": [
     {
-      "type": "patchouli:spotlight",
+      "type": "openblocks:spotlight",
       "item": "openblocks:item_dropper",
-      "link_recipe": true,
       "text": "O liberador de itens é similar ao liberador do Minecraft, exceto que ela dropa os itens diretamente para baixo e em linha reta.",
       "title": "block.openblocks.item_dropper"
     },
     {
-      "type": "patchouli:crafting",
-      "recipe": "openblocks:item_dropper"
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:item_dropper",
+      "recipe2": ""
     }
   ]
 }

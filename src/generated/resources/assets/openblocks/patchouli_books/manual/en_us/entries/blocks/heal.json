@@ -4,9 +4,8 @@
   "name": "block.openblocks.heal",
   "pages": [
     {
-      "type": "patchouli:spotlight",
+      "type": "openblocks:spotlight",
       "item": "openblocks:heal",
-      "link_recipe": true,
       "text": "The healing block is a creative-mode only block that gives off a slight healing effect over time.",
       "title": "block.openblocks.heal"
     }

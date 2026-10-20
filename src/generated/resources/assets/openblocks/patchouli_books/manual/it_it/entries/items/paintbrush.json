@@ -4,9 +4,8 @@
   "name": "item.openblocks.paintbrush",
   "pages": [
     {
-      "type": "patchouli:spotlight",
+      "type": "openblocks:spotlight",
       "item": "openblocks:paintbrush",
-      "link_recipe": true,
       "text": "I pennelli ti permettono di dipingere i blocchi con ogni colore che vuoi!$(br)$(br)Picchietta il tuo pennello su una Lattina di Pittura fatta nel Miscelatore di Pittura, poi clicca su un blocco per dipingerlo.",
       "title": "item.openblocks.paintbrush"
     },
@@ -15,7 +14,7 @@
       "text": "I blocchi di Tela sono perfetti per dipingere, ma puoi anche dipingere un bel po' di blocchi Vanilla e anche alcuni blocchi di altre mod. Puoi anche piazzare degli stampi sui blocchi e poi dipingere sullo stampo!"
     },
     {
-      "type": "patchouli:crafting",
+      "type": "openblocks:crafting",
       "recipe": "openblocks:paintbrush",
       "recipe2": "openblocks:paintbrush_white"
     }

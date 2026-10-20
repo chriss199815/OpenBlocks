@@ -4,9 +4,8 @@
   "name": "block.openblocks.builder_guide",
   "pages": [
     {
-      "type": "patchouli:spotlight",
+      "type": "openblocks:spotlight",
       "item": "openblocks:builder_guide",
-      "link_recipe": true,
       "text": "Esta versão encantada do guia de construção não só exibe blocos fantasmas para fazer a construção mais fácil, mas também permite que você coloque blocos reais. Apenas clique no centro do bloco com qualquer pilha de",
       "title": "block.openblocks.builder_guide"
     },
@@ -15,8 +14,9 @@
       "text": "bloco!$(br)Quando em modo criativo, você pode colocar um bloco obsidiana em cima, então, bata no guia de construção com qualquer bloco que você gostaria para criar a forma automaticamente."
     },
     {
-      "type": "patchouli:crafting",
-      "recipe": "openblocks:builder_guide"
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:builder_guide",
+      "recipe2": ""
     }
   ]
 }

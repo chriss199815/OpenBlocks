@@ -4,15 +4,15 @@
   "name": "item.openblocks.dev_null",
   "pages": [
     {
-      "type": "patchouli:spotlight",
+      "type": "openblocks:spotlight",
       "item": "openblocks:dev_null",
-      "link_recipe": true,
       "text": "手持/dev/null可以打开它的操作界面.你可以向里面放入一种物品,比如泥土.这样一来,当你从地面上捡到到泥土后就会被传送到这个格子,溢出的泥土则会自动销毁.你可以直接手持/dev/null来放置其存储的方块.",
       "title": "item.openblocks.dev_null"
     },
     {
-      "type": "patchouli:crafting",
-      "recipe": "openblocks:dev_null"
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:dev_null",
+      "recipe2": ""
     }
   ]
 }

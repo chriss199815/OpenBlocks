@@ -4,14 +4,13 @@
   "name": "block.openblocks.sky",
   "pages": [
     {
-      "type": "patchouli:spotlight",
+      "type": "openblocks:spotlight",
       "item": "openblocks:sky",
-      "link_recipe": true,
       "text": "Bringe das Außen nach innen mit dem neuen Himmelsblock! Du musst lediglich ein Redstone-Signal geben. Wir bieten auch die invertierte Version an.",
       "title": "block.openblocks.sky"
     },
     {
-      "type": "patchouli:crafting",
+      "type": "openblocks:crafting",
       "recipe": "openblocks:sky",
       "recipe2": "openblocks:sky_from_inverted"
     }

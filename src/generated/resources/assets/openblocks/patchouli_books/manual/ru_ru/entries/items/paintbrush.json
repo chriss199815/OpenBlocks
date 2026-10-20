@@ -4,9 +4,8 @@
   "name": "item.openblocks.paintbrush",
   "pages": [
     {
-      "type": "patchouli:spotlight",
+      "type": "openblocks:spotlight",
       "item": "openblocks:paintbrush",
-      "link_recipe": true,
       "text": "Кисточки позволяют покрасить блоки в любой понравившийся Вам цвет!$(br)$(br)Мокните Вашу кисточку в краску, сделанную в смесителе краски, и нажмите по блоку чтобы покрасить его.$(br)",
       "title": "item.openblocks.paintbrush"
     },
@@ -15,7 +14,7 @@
       "text": "Холст идеально подходит для рисования, но Вы также можете покрасить довольно много блоков из обычной игры, и даже некоторые блоки из других модификаций. Также, Вы можете разместить трафарет на блок, а затем закрасить трафарет!"
     },
     {
-      "type": "patchouli:crafting",
+      "type": "openblocks:crafting",
       "recipe": "openblocks:paintbrush",
       "recipe2": "openblocks:paintbrush_white"
     }

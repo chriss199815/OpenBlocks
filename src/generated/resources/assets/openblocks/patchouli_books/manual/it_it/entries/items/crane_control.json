@@ -4,9 +4,8 @@
   "name": "item.openblocks.crane_control",
   "pages": [
     {
-      "type": "patchouli:spotlight",
+      "type": "openblocks:spotlight",
       "item": "openblocks:crane_control",
-      "link_recipe": true,
       "text": "Questo telecomando wireless ad alta tecnologia è usato per controllare gli zaini magnetici.$(br)$(br)Fai clic destro per alzare la gru, accovacciati poi fai clic destro per abbassarla, tasto sinistro per prendere",
       "title": "item.openblocks.crane_control"
     },
@@ -15,8 +14,9 @@
       "text": "e rilasciare.$(br)Un segnale lampeggiante indica che qualcosa è sotto al magnete."
     },
     {
-      "type": "patchouli:crafting",
-      "recipe": "openblocks:crane_control"
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:crane_control",
+      "recipe2": ""
     }
   ]
 }

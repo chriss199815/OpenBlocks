@@ -4,15 +4,15 @@
   "name": "item.openblocks.sponge_on_a_stick",
   "pages": [
     {
-      "type": "patchouli:spotlight",
+      "type": "openblocks:spotlight",
       "item": "openblocks:sponge_on_a_stick",
-      "link_recipe": true,
       "text": "La spugna su un bastone è uno strumento per pulire liquidi. Funziona esattamente come la spugna, ma è molto più mobile alle spese di esaurirsi.",
       "title": "item.openblocks.sponge_on_a_stick"
     },
     {
-      "type": "patchouli:crafting",
-      "recipe": "openblocks:sponge_on_a_stick"
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:sponge_on_a_stick",
+      "recipe2": ""
     }
   ]
 }

@@ -4,15 +4,15 @@
   "name": "block.openblocks.rope_ladder",
   "pages": [
     {
-      "type": "patchouli:spotlight",
+      "type": "openblocks:spotlight",
       "item": "openblocks:rope_ladder",
-      "link_recipe": true,
       "text": "Cuando coloques una escalera de cuerda, se desenrollará hasta llegar al suelo. Por cada bloque de escalera creado usará una unidad de escalera del inventario.",
       "title": "block.openblocks.rope_ladder"
     },
     {
-      "type": "patchouli:crafting",
-      "recipe": "openblocks:rope_ladder"
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:rope_ladder",
+      "recipe2": ""
     }
   ]
 }

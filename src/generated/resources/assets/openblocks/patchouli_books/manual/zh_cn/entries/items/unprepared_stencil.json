@@ -4,15 +4,15 @@
   "name": "item.openblocks.unprepared_stencil",
   "pages": [
     {
-      "type": "patchouli:spotlight",
+      "type": "openblocks:spotlight",
       "item": "openblocks:unprepared_stencil",
-      "link_recipe": true,
       "text": "\"我在地牢箱子中找到了这些无聊的模板,它们能干什么?\"这些模板能放上方块,配合颜料刷来对其进行涂色,空手右键模板可以旋转.$(br)通过将一块空白模板放入绘图桌内,能制作出不同图案的模板.",
       "title": "item.openblocks.unprepared_stencil"
     },
     {
-      "type": "patchouli:crafting",
-      "recipe": "openblocks:unprepared_stencil"
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:unprepared_stencil",
+      "recipe2": ""
     }
   ]
 }

@@ -4,15 +4,15 @@
   "name": "block.openblocks.block_breaker",
   "pages": [
     {
-      "type": "patchouli:spotlight",
+      "type": "openblocks:spotlight",
       "item": "openblocks:block_breaker",
-      "link_recipe": true,
       "text": "When given a redstone pulse the block breaker will break the block it's facing.",
       "title": "block.openblocks.block_breaker"
     },
     {
-      "type": "patchouli:crafting",
-      "recipe": "openblocks:block_breaker"
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:block_breaker",
+      "recipe2": ""
     }
   ]
 }

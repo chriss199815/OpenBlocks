@@ -4,15 +4,15 @@
   "name": "item.openblocks.sonic_glasses",
   "pages": [
     {
-      "type": "patchouli:spotlight",
+      "type": "openblocks:spotlight",
       "item": "openblocks:sonic_glasses",
-      "link_recipe": true,
       "text": "Apresentando o fabuloso novo Óculos Sônico!$(br)Esta nova e excitante tecnologia do OpenMods Inc permitir que você veja o que você ouve!",
       "title": "item.openblocks.sonic_glasses"
     },
     {
-      "type": "patchouli:crafting",
-      "recipe": "openblocks:sonic_glasses"
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:sonic_glasses",
+      "recipe2": ""
     }
   ]
 }

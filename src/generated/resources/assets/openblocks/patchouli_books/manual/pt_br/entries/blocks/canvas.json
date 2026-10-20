@@ -4,15 +4,15 @@
   "name": "block.openblocks.canvas",
   "pages": [
     {
-      "type": "patchouli:spotlight",
+      "type": "openblocks:spotlight",
       "item": "openblocks:canvas",
-      "link_recipe": true,
       "text": "A lona é um bloco perfeitamente branco que é perfeito para pintura. Veja mais informações sobre como fazer pinturas no Misturador de Tintas.",
       "title": "block.openblocks.canvas"
     },
     {
-      "type": "patchouli:crafting",
-      "recipe": "openblocks:canvas"
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:canvas",
+      "recipe2": ""
     }
   ]
 }

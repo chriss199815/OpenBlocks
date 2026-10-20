@@ -4,9 +4,8 @@
   "name": "item.openblocks.epic_eraser",
   "pages": [
     {
-      "type": "patchouli:spotlight",
+      "type": "openblocks:spotlight",
       "item": "openblocks:epic_eraser",
-      "link_recipe": true,
       "text": "Ogni oggetto ha la sua storia...$(br)$(br)Non ti dà fastidio?$(br)Con questo oggetto puoi eliminare tutte le tracce delle epiche frasi che il tuo bottino ha collezionato negli anni e poi rivenderlo al mercato nero senza preoccuparti di aver",
       "title": "item.openblocks.epic_eraser"
     },
@@ -15,8 +14,9 @@
       "text": "lasciato prove."
     },
     {
-      "type": "patchouli:crafting",
-      "recipe": "openblocks:epic_eraser"
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:epic_eraser",
+      "recipe2": ""
     }
   ]
 }

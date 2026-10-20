@@ -4,15 +4,15 @@
   "name": "block.openblocks.canvas",
   "pages": [
     {
-      "type": "patchouli:spotlight",
+      "type": "openblocks:spotlight",
       "item": "openblocks:canvas",
-      "link_recipe": true,
       "text": "Холст - это совершенно белый блок, который идеально подходит для рисования. Смотрите информацию о смесители краски, чтобы узнать больше о рисовании.",
       "title": "block.openblocks.canvas"
     },
     {
-      "type": "patchouli:crafting",
-      "recipe": "openblocks:canvas"
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:canvas",
+      "recipe2": ""
     }
   ]
 }

@@ -4,9 +4,8 @@
   "name": "block.openblocks.heal",
   "pages": [
     {
-      "type": "patchouli:spotlight",
+      "type": "openblocks:spotlight",
       "item": "openblocks:heal",
-      "link_recipe": true,
       "text": "Исцеляющий блок - это блок только для творческого режима, который даёт небольшой лечебный эффект с течением времени.",
       "title": "block.openblocks.heal"
     }

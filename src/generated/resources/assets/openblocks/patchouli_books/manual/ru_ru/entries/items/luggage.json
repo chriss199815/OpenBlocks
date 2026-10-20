@@ -4,9 +4,8 @@
   "name": "item.openblocks.luggage",
   "pages": [
     {
-      "type": "patchouli:spotlight",
+      "type": "openblocks:spotlight",
       "item": "openblocks:luggage",
-      "link_recipe": true,
       "text": "Багаж - Ваш новый друг. Он будет везде следовать за Вами и собирать предметы, которые находятся около него. Ням Ням Ням!$(br)Для его разбора, просто зажмите Shift и кликните по нему ПКМ, и он превратится в предмет, который",
       "title": "item.openblocks.luggage"
     },
@@ -15,8 +14,9 @@
       "text": "Вы можете носить с собой.$(br)Если в него попадёт молния, он будет подбирать даже ещё больше предметов!"
     },
     {
-      "type": "patchouli:crafting",
-      "recipe": "openblocks:luggage"
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:luggage",
+      "recipe2": ""
     }
   ]
 }

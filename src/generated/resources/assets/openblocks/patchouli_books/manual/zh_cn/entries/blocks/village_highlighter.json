@@ -4,15 +4,15 @@
   "name": "block.openblocks.village_highlighter",
   "pages": [
     {
-      "type": "patchouli:spotlight",
+      "type": "openblocks:spotlight",
       "item": "openblocks:village_highlighter",
-      "link_recipe": true,
       "text": "将村庄高亮仪放置在村庄内,接着给予它一个红石信号.它就能显示出村庄边界的轮廓以及铁傀儡的刷新区域.它可以用于确认临近村庄的边界或帮助你建造铁傀儡农场.",
       "title": "block.openblocks.village_highlighter"
     },
     {
-      "type": "patchouli:crafting",
-      "recipe": "openblocks:village_highlighter"
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:village_highlighter",
+      "recipe2": ""
     }
   ]
 }

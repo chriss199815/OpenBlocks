@@ -4,15 +4,15 @@
   "name": "block.openblocks.vacuum_hopper",
   "pages": [
     {
-      "type": "patchouli:spotlight",
+      "type": "openblocks:spotlight",
       "item": "openblocks:vacuum_hopper",
-      "link_recipe": true,
       "text": "The vacuum hopper will suck up items and XP orbs around it. You can use the tabs on the right of the interface to select which sides to output to.",
       "title": "block.openblocks.vacuum_hopper"
     },
     {
-      "type": "patchouli:crafting",
-      "recipe": "openblocks:vacuum_hopper"
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:vacuum_hopper",
+      "recipe2": ""
     }
   ]
 }

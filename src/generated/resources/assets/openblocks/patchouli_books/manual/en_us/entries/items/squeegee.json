@@ -4,15 +4,15 @@
   "name": "item.openblocks.squeegee",
   "pages": [
     {
-      "type": "patchouli:spotlight",
+      "type": "openblocks:spotlight",
       "item": "openblocks:squeegee",
-      "link_recipe": true,
       "text": "The squeegee removes paint from any painted blocks. Just click on the side of the block you want to remove the paint from, or alternative shift-click the block to remove paint from all sides!",
       "title": "item.openblocks.squeegee"
     },
     {
-      "type": "patchouli:crafting",
-      "recipe": "openblocks:squeegee"
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:squeegee",
+      "recipe2": ""
     }
   ]
 }

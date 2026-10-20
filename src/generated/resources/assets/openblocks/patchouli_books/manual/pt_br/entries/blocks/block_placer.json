@@ -4,15 +4,15 @@
   "name": "block.openblocks.block_placer",
   "pages": [
     {
-      "type": "patchouli:spotlight",
+      "type": "openblocks:spotlight",
       "item": "openblocks:block_placer",
-      "link_recipe": true,
       "text": "Quando é dado um pulso de redstone, o colocador de blocos vai colocar um item na frente dele.",
       "title": "block.openblocks.block_placer"
     },
     {
-      "type": "patchouli:crafting",
-      "recipe": "openblocks:block_placer"
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:block_placer",
+      "recipe2": ""
     }
   ]
 }

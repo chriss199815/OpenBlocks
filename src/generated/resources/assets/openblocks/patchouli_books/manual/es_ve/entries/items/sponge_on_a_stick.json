@@ -4,15 +4,15 @@
   "name": "item.openblocks.sponge_on_a_stick",
   "pages": [
     {
-      "type": "patchouli:spotlight",
+      "type": "openblocks:spotlight",
       "item": "openblocks:sponge_on_a_stick",
-      "link_recipe": true,
       "text": "El palo con esponja es una herramienta para limpiar líquidos. Funciona como la Esponja, pero es más móvil a expensas de cansar más.",
       "title": "item.openblocks.sponge_on_a_stick"
     },
     {
-      "type": "patchouli:crafting",
-      "recipe": "openblocks:sponge_on_a_stick"
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:sponge_on_a_stick",
+      "recipe2": ""
     }
   ]
 }

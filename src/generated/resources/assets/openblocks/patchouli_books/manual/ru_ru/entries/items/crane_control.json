@@ -4,9 +4,8 @@
   "name": "item.openblocks.crane_control",
   "pages": [
     {
-      "type": "patchouli:spotlight",
+      "type": "openblocks:spotlight",
       "item": "openblocks:crane_control",
-      "link_recipe": true,
       "text": "Этот высокотехнологичный беспроводной пульт используется для управления хранилищами.$(br)$(br)ПКМ, чтобы поднять, ПКМ, присев, чтобы опустить, ЛКМ, чтобы поднять/отпустить.$(br)Мигающие световые",
       "title": "item.openblocks.crane_control"
     },
@@ -15,8 +14,9 @@
       "text": "сигналы относятся к магниту."
     },
     {
-      "type": "patchouli:crafting",
-      "recipe": "openblocks:crane_control"
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:crane_control",
+      "recipe2": ""
     }
   ]
 }

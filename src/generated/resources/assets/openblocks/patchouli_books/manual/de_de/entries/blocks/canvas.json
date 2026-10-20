@@ -4,15 +4,15 @@
   "name": "block.openblocks.canvas",
   "pages": [
     {
-      "type": "patchouli:spotlight",
+      "type": "openblocks:spotlight",
       "item": "openblocks:canvas",
-      "link_recipe": true,
       "text": "Die Leinwand ist ein perfekt weißer Block, der perfekt zum Streichen ist. Siehe die Farbmischer-Information für die Herstellung von Farbe.",
       "title": "block.openblocks.canvas"
     },
     {
-      "type": "patchouli:crafting",
-      "recipe": "openblocks:canvas"
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:canvas",
+      "recipe2": ""
     }
   ]
 }

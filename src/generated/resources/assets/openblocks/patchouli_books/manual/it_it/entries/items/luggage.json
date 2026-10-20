@@ -4,9 +4,8 @@
   "name": "item.openblocks.luggage",
   "pages": [
     {
-      "type": "patchouli:spotlight",
+      "type": "openblocks:spotlight",
       "item": "openblocks:luggage",
-      "link_recipe": true,
       "text": "Valigia è il tuo nuovo amico. Lei ti seguirà dovunque andrai, raccogliendo ogni oggetto che trova sul pavimento. Gnam gnam gnam!$(br)Per smontarla, fai semplicemente shift-click su di lei e immediatamente lei tornerà ad essere un",
       "title": "item.openblocks.luggage"
     },
@@ -15,8 +14,9 @@
       "text": "oggetto che puoi trasportare.$(br)Semmai lei dovesse essere colpita da una saetta, sarà in grado di trasportare ancora più oggetti!"
     },
     {
-      "type": "patchouli:crafting",
-      "recipe": "openblocks:luggage"
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:luggage",
+      "recipe2": ""
     }
   ]
 }

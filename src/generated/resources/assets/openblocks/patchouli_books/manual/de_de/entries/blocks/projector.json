@@ -4,9 +4,8 @@
   "name": "block.openblocks.projector",
   "pages": [
     {
-      "type": "patchouli:spotlight",
+      "type": "openblocks:spotlight",
       "item": "openblocks:projector",
-      "link_recipe": true,
       "text": "Der Projektor macht aus Höhenkarten Hologramme. Leg eine leere Karte hinein (oder gib sie einem Kartographen), um die Gegend zu kartieren, und der Projektor zeigt das Gelände schwebend über sich. Mit den Pfeilen in seiner Oberfläche",
       "title": "block.openblocks.projector"
     },
@@ -15,7 +14,7 @@
       "text": "drehst du die Ansicht."
     },
     {
-      "type": "patchouli:crafting",
+      "type": "openblocks:crafting",
       "recipe": "openblocks:projector",
       "recipe2": "openblocks:projector_mirrored"
     }

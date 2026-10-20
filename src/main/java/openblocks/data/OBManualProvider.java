@@ -34,6 +34,8 @@ import net.minecraft.world.item.crafting.ShapelessRecipe;
 import net.neoforged.neoforge.common.conditions.ICondition;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import openblocks.OpenBlocks;
+import openblocks.integration.patchouli.CraftingComponent;
+import openblocks.integration.patchouli.ItemBookmarkComponent;
 import openblocks.integration.patchouli.OBPatchouli;
 import openblocks.registry.OBItems;
 
@@ -73,6 +75,11 @@ public class OBManualProvider implements DataProvider {
 
 	private static final int MAX_RECIPES = 2;
 
+	// templates instead of patchouli:spotlight and patchouli:crafting, for the JEI bookmark buttons
+	private static final String SPOTLIGHT = "spotlight";
+	private static final String CRAFTING = "crafting";
+	private static final String CRAFTING_TEXTURE = "patchouli:textures/gui/crafting.png";
+
 	private final PackOutput.PathProvider bookPath;
 	private final PackOutput.PathProvider contentPath;
 	private final CompletableFuture<HolderLookup.Provider> registries;
@@ -99,6 +106,8 @@ public class OBManualProvider implements DataProvider {
 			writes.add(saveContent(cache, "en_us", "categories/" + BLOCKS, category("openblocks.gui.blocks", "openblocks:white_elevator", 0)));
 			writes.add(saveContent(cache, "en_us", "categories/" + ITEMS, category("openblocks.gui.items", "openblocks:hang_glider", 1)));
 			writes.add(saveContent(cache, "en_us", "categories/" + MISC, category("openblocks.gui.misc", "openblocks:info_book", 2)));
+			writes.add(saveContent(cache, "en_us", "templates/" + SPOTLIGHT, spotlightTemplate()));
+			writes.add(saveContent(cache, "en_us", "templates/" + CRAFTING, craftingTemplate()));
 
 			for (String language : LANGUAGES) {
 				final Map<String, String> lang = language.equals("en_us")? english : readLang(language);
@@ -166,35 +175,94 @@ public class OBManualProvider implements DataProvider {
 
 	/**
 	 * Spotlight on the item (cycling through its colors) with the start of the description, the rest on text pages, then
-	 * crafting recipes.
+	 * crafting recipes; with colors, each recipe slot cycles through the recipes of all colors along with the spotlight.
 	 */
 	private static JsonObject itemEntry(String nameKey, String category, List<Item> items, List<String> texts, Map<Item, List<ResourceLocation>> recipes) {
 		final JsonObject entry = entry(nameKey, category, itemId(items.getFirst()));
 		final JsonArray pages = new JsonArray();
 
-		final JsonObject spotlight = page("patchouli:spotlight", texts.getFirst());
+		final JsonObject spotlight = page(OpenBlocks.location(SPOTLIGHT).toString(), texts.getFirst());
 		spotlight.addProperty("item", items.stream().map(OBManualProvider::itemId).collect(Collectors.joining(",")));
 		spotlight.addProperty("title", nameKey);
-		spotlight.addProperty("link_recipe", true);
 		pages.add(spotlight);
 
 		for (String text : texts.subList(1, texts.size()))
 			pages.add(page("patchouli:text", text));
 
-		final List<ResourceLocation> itemRecipes = items.stream()
-				.flatMap(item -> recipes.getOrDefault(item, List.of()).stream())
-				.limit(MAX_RECIPES)
-				.toList();
-		if (!itemRecipes.isEmpty()) {
+		final List<String> slots = new ArrayList<>();
+		for (int slot = 0; slot < MAX_RECIPES; slot++) {
+			final int index = slot;
+			final String cycle = items.stream()
+					.map(item -> recipes.getOrDefault(item, List.of()))
+					.filter(itemRecipes -> itemRecipes.size() > index)
+					.map(itemRecipes -> itemRecipes.get(index).toString())
+					.collect(Collectors.joining(","));
+			if (!cycle.isEmpty()) slots.add(cycle);
+		}
+		if (!slots.isEmpty()) {
 			final JsonObject crafting = new JsonObject();
-			crafting.addProperty("type", "patchouli:crafting");
-			crafting.addProperty("recipe", itemRecipes.get(0).toString());
-			if (itemRecipes.size() > 1) crafting.addProperty("recipe2", itemRecipes.get(1).toString());
+			crafting.addProperty("type", OpenBlocks.location(CRAFTING).toString());
+			crafting.addProperty("recipe", slots.get(0));
+			crafting.addProperty("recipe2", slots.size() > 1? slots.get(1) : "");
 			pages.add(crafting);
 		}
 
 		entry.add("pages", pages);
 		return entry;
+	}
+
+	/**
+	 * Layout of {@code patchouli:spotlight} (title, framed item, text below) plus the bookmark button right of the frame.
+	 */
+	private static JsonObject spotlightTemplate() {
+		final JsonObject frame = component("patchouli:image", 25, 10);
+		frame.addProperty("image", CRAFTING_TEXTURE);
+		frame.addProperty("v", 102);
+		frame.addProperty("width", 66);
+		frame.addProperty("height", 26);
+		frame.addProperty("texture_width", 128);
+		frame.addProperty("texture_height", 256);
+
+		final JsonObject title = component("patchouli:header", 58, 0);
+		title.addProperty("text", "#title#");
+
+		final JsonObject item = component("patchouli:item", 50, 15);
+		item.addProperty("item", "#item#");
+		item.addProperty("link_recipe", true);
+
+		final JsonObject text = component("patchouli:text", 0, 40);
+		text.addProperty("text", "#text#");
+
+		final JsonObject bookmark = component("patchouli:custom", 96, 18);
+		bookmark.addProperty("class", ItemBookmarkComponent.class.getName());
+		bookmark.addProperty("item", "#item#");
+
+		return template(frame, title, item, text, bookmark);
+	}
+
+	private static JsonObject craftingTemplate() {
+		final JsonObject crafting = component("patchouli:custom", 9, 4);
+		crafting.addProperty("class", CraftingComponent.class.getName());
+		crafting.addProperty("recipe", "#recipe#");
+		crafting.addProperty("recipe2", "#recipe2#");
+		return template(crafting);
+	}
+
+	private static JsonObject component(String type, int x, int y) {
+		final JsonObject component = new JsonObject();
+		component.addProperty("type", type);
+		component.addProperty("x", x);
+		component.addProperty("y", y);
+		return component;
+	}
+
+	private static JsonObject template(JsonObject... components) {
+		final JsonArray array = new JsonArray();
+		for (JsonObject component : components)
+			array.add(component);
+		final JsonObject template = new JsonObject();
+		template.add("components", array);
+		return template;
 	}
 
 	private static JsonObject page(String type, String text) {

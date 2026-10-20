@@ -4,15 +4,15 @@
   "name": "block.openblocks.path",
   "pages": [
     {
-      "type": "patchouli:spotlight",
+      "type": "openblocks:spotlight",
       "item": "openblocks:path",
-      "link_recipe": true,
       "text": "Der Pfad macht überhaupt nichts. Er sieht einfach nur gut aus!",
       "title": "block.openblocks.path"
     },
     {
-      "type": "patchouli:crafting",
-      "recipe": "openblocks:path"
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:path",
+      "recipe2": ""
     }
   ]
 }

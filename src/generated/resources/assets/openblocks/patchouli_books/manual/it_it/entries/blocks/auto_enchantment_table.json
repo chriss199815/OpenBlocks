@@ -4,9 +4,8 @@
   "name": "block.openblocks.auto_enchantment_table",
   "pages": [
     {
-      "type": "patchouli:spotlight",
+      "type": "openblocks:spotlight",
       "item": "openblocks:auto_enchantment_table",
-      "link_recipe": true,
       "text": "Il tavolo da incantamento automatico funziona in una maniera simile al tavolo da incantamento Vanilla, eccetto che funziona con l'Esperienza Liquida. Usa le schede sul lato destro dell'interfaccia per selezionare dove gli oggetti o i punti",
       "title": "block.openblocks.auto_enchantment_table"
     },
@@ -15,8 +14,9 @@
       "text": "esperienza verranno presi. Esattamente come il tavolo da incantamento Vanilla, sono richieste le librerie per avere livelli di incantamento maggiori."
     },
     {
-      "type": "patchouli:crafting",
-      "recipe": "openblocks:auto_enchantment_table"
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:auto_enchantment_table",
+      "recipe2": ""
     }
   ]
 }

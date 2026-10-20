@@ -4,15 +4,15 @@
   "name": "block.openblocks.xp_shower",
   "pages": [
     {
-      "type": "patchouli:spotlight",
+      "type": "openblocks:spotlight",
       "item": "openblocks:xp_shower",
-      "link_recipe": true,
       "text": "Anexe um chuveiro de XP em um tanque de XP líquido e ele vai derramar orbs de XP. Estes orbs podem ser recolhidos por um dreno de XP ou um Esgoto do MineFactory Reloaded.",
       "title": "block.openblocks.xp_shower"
     },
     {
-      "type": "patchouli:crafting",
-      "recipe": "openblocks:xp_shower"
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:xp_shower",
+      "recipe2": ""
     }
   ]
 }

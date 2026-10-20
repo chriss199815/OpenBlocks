@@ -4,15 +4,15 @@
   "name": "block.openblocks.builder_guide",
   "pages": [
     {
-      "type": "patchouli:spotlight",
+      "type": "openblocks:spotlight",
       "item": "openblocks:builder_guide",
-      "link_recipe": true,
       "text": "这个强化建筑指导仪不单单能够投影出方块轮廓，还能够允许你直接放置方块。用任意方块右击中间的建筑指导仪即可！$(br)在创造模式情况下，指导仪顶部放黑曜石，用任意方块右击能够瞬间搭建出对应的结构。",
       "title": "block.openblocks.builder_guide"
     },
     {
-      "type": "patchouli:crafting",
-      "recipe": "openblocks:builder_guide"
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:builder_guide",
+      "recipe2": ""
     }
   ]
 }

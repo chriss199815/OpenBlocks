@@ -4,15 +4,15 @@
   "name": "block.openblocks.fan",
   "pages": [
     {
-      "type": "patchouli:spotlight",
+      "type": "openblocks:spotlight",
       "item": "openblocks:fan",
-      "link_recipe": true,
       "text": "Вентилятор будет сдувать игроков, мобов и других сущностей туда, куда он повёрнут.",
       "title": "block.openblocks.fan"
     },
     {
-      "type": "patchouli:crafting",
-      "recipe": "openblocks:fan"
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:fan",
+      "recipe2": ""
     }
   ]
 }

@@ -4,15 +4,15 @@
   "name": "block.openblocks.target",
   "pages": [
     {
-      "type": "patchouli:spotlight",
+      "type": "openblocks:spotlight",
       "item": "openblocks:target",
-      "link_recipe": true,
       "text": "Мишень будет выдавать сигнал красного камня с силой, зависимой от точности игрока. Дайте мишени сигнал красного камня, чтобы она поднялась!",
       "title": "block.openblocks.target"
     },
     {
-      "type": "patchouli:crafting",
-      "recipe": "openblocks:target"
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:target",
+      "recipe2": ""
     }
   ]
 }

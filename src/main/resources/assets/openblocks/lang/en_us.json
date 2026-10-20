@@ -20,6 +20,8 @@
   "openblocks.gui.blocks": "Blocks",
   "openblocks.gui.items": "Items",
   "openblocks.gui.misc": "Miscellanea",
+  "openblocks.gui.jei_bookmark.add": "Add to JEI bookmarks",
+  "openblocks.gui.jei_bookmark.remove": "Remove from JEI bookmarks",
   "openblocks.gui.changelogs": "Changelogs",
   "openblocks.gui.features": "Features",
   "openblocks.gui.bugfixes": "Bugfixes",

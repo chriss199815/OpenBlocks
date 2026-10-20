@@ -4,15 +4,15 @@
   "name": "block.openblocks.xp_bottler",
   "pages": [
     {
-      "type": "patchouli:spotlight",
+      "type": "openblocks:spotlight",
       "item": "openblocks:xp_bottler",
-      "link_recipe": true,
       "text": "向经验装瓶器中输入液态经验,接着放入空瓶就能让它制作经验瓶.",
       "title": "block.openblocks.xp_bottler"
     },
     {
-      "type": "patchouli:crafting",
-      "recipe": "openblocks:xp_bottler"
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:xp_bottler",
+      "recipe2": ""
     }
   ]
 }

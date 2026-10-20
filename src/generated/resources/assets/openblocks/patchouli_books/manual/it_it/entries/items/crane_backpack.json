@@ -4,9 +4,8 @@
   "name": "item.openblocks.crane_backpack",
   "pages": [
     {
-      "type": "patchouli:spotlight",
+      "type": "openblocks:spotlight",
       "item": "openblocks:crane_backpack",
-      "link_recipe": true,
       "text": "Nel mondo di Minecraft, \"magnete\" è un'antica parola per \"questo come funzionano?\".$(br)$(br)Questo particolare pezzo di vero equipaggiamento ti permette di prendere e trasportare mob, giocatori, oggetti e blocchi. Può essere",
       "title": "item.openblocks.crane_backpack"
     },
@@ -15,8 +14,9 @@
       "text": "controllato con il controllore del magnete."
     },
     {
-      "type": "patchouli:crafting",
-      "recipe": "openblocks:crane_backpack"
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:crane_backpack",
+      "recipe2": ""
     }
   ]
 }

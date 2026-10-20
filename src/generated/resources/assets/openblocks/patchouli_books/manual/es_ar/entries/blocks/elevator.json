@@ -4,9 +4,8 @@
   "name": "block.openblocks.elevator",
   "pages": [
     {
-      "type": "patchouli:spotlight",
+      "type": "openblocks:spotlight",
       "item": "openblocks:white_elevator,openblocks:orange_elevator,openblocks:magenta_elevator,openblocks:light_blue_elevator,openblocks:yellow_elevator,openblocks:lime_elevator,openblocks:pink_elevator,openblocks:gray_elevator,openblocks:light_gray_elevator,openblocks:cyan_elevator,openblocks:purple_elevator,openblocks:blue_elevator,openblocks:brown_elevator,openblocks:green_elevator,openblocks:red_elevator,openblocks:black_elevator",
-      "link_recipe": true,
       "text": "Coloca un ascensor justo arriba de 3 o más bloques arriba de otro sin ningún bloque entremedias y podrás saltar hacia arriba o agacharte para ir hacia abajo. Los ascensores pueden tintarse haciendo clic con un tinte, sin embargo, solo puedes",
       "title": "block.openblocks.elevator"
     },
@@ -15,9 +14,9 @@
       "text": "teletransportarte entre ascensores del mismo color."
     },
     {
-      "type": "patchouli:crafting",
-      "recipe": "openblocks:white_elevator",
-      "recipe2": "openblocks:orange_elevator"
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:white_elevator,openblocks:orange_elevator,openblocks:magenta_elevator,openblocks:light_blue_elevator,openblocks:yellow_elevator,openblocks:lime_elevator,openblocks:pink_elevator,openblocks:gray_elevator,openblocks:light_gray_elevator,openblocks:cyan_elevator,openblocks:purple_elevator,openblocks:blue_elevator,openblocks:brown_elevator,openblocks:green_elevator,openblocks:red_elevator,openblocks:black_elevator",
+      "recipe2": ""
     }
   ]
 }

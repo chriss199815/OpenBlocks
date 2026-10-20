@@ -4,9 +4,8 @@
   "name": "block.openblocks.auto_enchantment_table",
   "pages": [
     {
-      "type": "patchouli:spotlight",
+      "type": "openblocks:spotlight",
       "item": "openblocks:auto_enchantment_table",
-      "link_recipe": true,
       "text": "A mesa de encantamentos automática funciona que nem a mesa de encantamentos do Minecraft, exceto que esta usa XP líquido. Use as guias no lado direito da interface para selecionar onde os itens ou o XP pode ser retirados. Assim",
       "title": "block.openblocks.auto_enchantment_table"
     },
@@ -15,8 +14,9 @@
       "text": "como com as estantes da mesa de encantamentos do Minecraft, são necessários níveis mais elevados."
     },
     {
-      "type": "patchouli:crafting",
-      "recipe": "openblocks:auto_enchantment_table"
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:auto_enchantment_table",
+      "recipe2": ""
     }
   ]
 }

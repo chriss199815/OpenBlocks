@@ -4,9 +4,8 @@
   "name": "block.openblocks.auto_anvil",
   "pages": [
     {
-      "type": "patchouli:spotlight",
+      "type": "openblocks:spotlight",
       "item": "openblocks:auto_anvil",
-      "link_recipe": true,
       "text": "Der Automatischer Amboss funktioniert ähnlich wie ein Vanilla-Amboss, außer dass er mit flüssigen Erfahrungspunkten arbeitet und komplett automatisierbar ist.$(br)$(br)Benutze die Tabs auf der rechten Seite der Oberfläche, um",
       "title": "block.openblocks.auto_anvil"
     },
@@ -15,8 +14,9 @@
       "text": "auszuwählen, welche Seiten des Ambosses für Ein-/Ausgabe von Gegenstände oder Flüssigkeiten vorgesehen sind. Rechts-klicke und ziehe den Amboss im Tab, um ihn zu drehen und andere Seiten auszuwählen!"
     },
     {
-      "type": "patchouli:crafting",
-      "recipe": "openblocks:auto_anvil"
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:auto_anvil",
+      "recipe2": ""
     }
   ]
 }

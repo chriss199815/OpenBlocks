@@ -4,15 +4,15 @@
   "name": "item.openblocks.squeegee",
   "pages": [
     {
-      "type": "patchouli:spotlight",
+      "type": "openblocks:spotlight",
       "item": "openblocks:squeegee",
-      "link_recipe": true,
       "text": "Швабра удаляет краску с любых окрашенных блоков. Просто нажмите на нужную сторону блока, с которого Вы хотите удалить краску, или нажмите Shift-ПКМ по блоку, чтобы удалить краску со всех сторон!",
       "title": "item.openblocks.squeegee"
     },
     {
-      "type": "patchouli:crafting",
-      "recipe": "openblocks:squeegee"
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:squeegee",
+      "recipe2": ""
     }
   ]
 }

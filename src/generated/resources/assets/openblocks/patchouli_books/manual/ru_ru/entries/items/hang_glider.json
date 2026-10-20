@@ -4,9 +4,8 @@
   "name": "item.openblocks.hang_glider",
   "pages": [
     {
-      "type": "patchouli:spotlight",
+      "type": "openblocks:spotlight",
       "item": "openblocks:hang_glider",
-      "link_recipe": true,
       "text": "Думаю не надо разъяснять, что такое дельтаплан. Держа его в руке, кликните, чтобы поместить его на спину. Теперь прыгайте!$(br)Для увеличения скорости можно зажать Shift, но Вы будете будете",
       "title": "item.openblocks.hang_glider"
     },
@@ -15,8 +14,9 @@
       "text": "терять высоту. Будьте аккуратней!"
     },
     {
-      "type": "patchouli:crafting",
-      "recipe": "openblocks:hang_glider"
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:hang_glider",
+      "recipe2": ""
     }
   ]
 }

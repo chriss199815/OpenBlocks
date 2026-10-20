@@ -4,15 +4,15 @@
   "name": "item.openblocks.sponge_on_a_stick",
   "pages": [
     {
-      "type": "patchouli:spotlight",
+      "type": "openblocks:spotlight",
       "item": "openblocks:sponge_on_a_stick",
-      "link_recipe": true,
       "text": "The sponge on a stick is a tool for cleaning up liquids. Works just like the sponge, but is more mobile at the expense of wearing out.",
       "title": "item.openblocks.sponge_on_a_stick"
     },
     {
-      "type": "patchouli:crafting",
-      "recipe": "openblocks:sponge_on_a_stick"
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:sponge_on_a_stick",
+      "recipe2": ""
     }
   ]
 }

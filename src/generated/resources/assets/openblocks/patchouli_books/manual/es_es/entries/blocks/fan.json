@@ -4,15 +4,15 @@
   "name": "block.openblocks.fan",
   "pages": [
     {
-      "type": "patchouli:spotlight",
+      "type": "openblocks:spotlight",
       "item": "openblocks:fan",
-      "link_recipe": true,
       "text": "El ventilador moverá jugadores, criaturas o entidades hacia la dirección en la que esté mirando.",
       "title": "block.openblocks.fan"
     },
     {
-      "type": "patchouli:crafting",
-      "recipe": "openblocks:fan"
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:fan",
+      "recipe2": ""
     }
   ]
 }

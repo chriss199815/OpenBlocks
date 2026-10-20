@@ -4,14 +4,13 @@
   "name": "block.openblocks.sky",
   "pages": [
     {
-      "type": "patchouli:spotlight",
+      "type": "openblocks:spotlight",
       "item": "openblocks:sky",
-      "link_recipe": true,
       "text": "Bring the outside inside with the new Sky block! Just apply a redstone signal. We also offer an inverted version.",
       "title": "block.openblocks.sky"
     },
     {
-      "type": "patchouli:crafting",
+      "type": "openblocks:crafting",
       "recipe": "openblocks:sky",
       "recipe2": "openblocks:sky_from_inverted"
     }

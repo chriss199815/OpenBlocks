@@ -4,9 +4,8 @@
   "name": "block.openblocks.paint_mixer",
   "pages": [
     {
-      "type": "patchouli:spotlight",
+      "type": "openblocks:spotlight",
       "item": "openblocks:paint_mixer",
-      "link_recipe": true,
       "text": "Il miscelatore di pittura può mescere fra loro tutti i colori di tempera che vuoi! Getta o un secchio di tempera esistente o un secchio di latte nello spazio superiore, poi della tintura ciano, magenta, gialla o nera negli altri quattro spazi e clicca su",
       "title": "block.openblocks.paint_mixer"
     },
@@ -15,8 +14,9 @@
       "text": "mescola!"
     },
     {
-      "type": "patchouli:crafting",
-      "recipe": "openblocks:paint_mixer"
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:paint_mixer",
+      "recipe2": ""
     }
   ]
 }

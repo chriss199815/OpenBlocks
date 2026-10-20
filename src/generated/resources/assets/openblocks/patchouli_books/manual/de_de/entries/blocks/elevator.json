@@ -4,9 +4,8 @@
   "name": "block.openblocks.elevator",
   "pages": [
     {
-      "type": "patchouli:spotlight",
+      "type": "openblocks:spotlight",
       "item": "openblocks:white_elevator,openblocks:orange_elevator,openblocks:magenta_elevator,openblocks:light_blue_elevator,openblocks:yellow_elevator,openblocks:lime_elevator,openblocks:pink_elevator,openblocks:gray_elevator,openblocks:light_gray_elevator,openblocks:cyan_elevator,openblocks:purple_elevator,openblocks:blue_elevator,openblocks:brown_elevator,openblocks:green_elevator,openblocks:red_elevator,openblocks:black_elevator",
-      "link_recipe": true,
       "text": "Platziere einen Fahrstuhl drei oder mehr Blöcke oberhalb eines anderen ohne Blöcke dazwischen und du wirst fähig sein, entweder zu 'springen', um dich aufwärts zu bewegen oder zu 'kriechen', um dich abwärts zu bewegen. Fahrstühle können",
       "title": "block.openblocks.elevator"
     },
@@ -15,9 +14,9 @@
       "text": "gefärbt werden, indem man mit einem Farbstoff in der Hand rechtsklickt. Du kannst dich jedoch nur zwischen Fahrstühlen in der selben Farbe teleportieren."
     },
     {
-      "type": "patchouli:crafting",
-      "recipe": "openblocks:white_elevator",
-      "recipe2": "openblocks:orange_elevator"
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:white_elevator,openblocks:orange_elevator,openblocks:magenta_elevator,openblocks:light_blue_elevator,openblocks:yellow_elevator,openblocks:lime_elevator,openblocks:pink_elevator,openblocks:gray_elevator,openblocks:light_gray_elevator,openblocks:cyan_elevator,openblocks:purple_elevator,openblocks:blue_elevator,openblocks:brown_elevator,openblocks:green_elevator,openblocks:red_elevator,openblocks:black_elevator",
+      "recipe2": ""
     }
   ]
 }

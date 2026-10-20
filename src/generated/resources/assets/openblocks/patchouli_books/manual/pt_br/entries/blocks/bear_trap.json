@@ -4,15 +4,15 @@
   "name": "block.openblocks.bear_trap",
   "pages": [
     {
-      "type": "patchouli:spotlight",
+      "type": "openblocks:spotlight",
       "item": "openblocks:bear_trap",
-      "link_recipe": true,
       "text": "Coloque uma armadilha de ursos e clique nela para abrí-la. Quando mobs passarem em cima da armadilha, eles vão ficar presos!",
       "title": "block.openblocks.bear_trap"
     },
     {
-      "type": "patchouli:crafting",
-      "recipe": "openblocks:bear_trap"
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:bear_trap",
+      "recipe2": ""
     }
   ]
 }

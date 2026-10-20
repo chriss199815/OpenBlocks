@@ -4,15 +4,15 @@
   "name": "item.openblocks.hang_glider",
   "pages": [
     {
-      "type": "patchouli:spotlight",
+      "type": "openblocks:spotlight",
       "item": "openblocks:hang_glider",
-      "link_recipe": true,
       "text": "El ala delta no necesita explicación. Ponla en la mano y haz clic para colocártela en la espalda. ¡Ahora salta!$(br)Para aumentar tu velocidad, puedes pulsar shift mientras planeas, pero ten cuidado, perderás altitud más rápido.",
       "title": "item.openblocks.hang_glider"
     },
     {
-      "type": "patchouli:crafting",
-      "recipe": "openblocks:hang_glider"
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:hang_glider",
+      "recipe2": ""
     }
   ]
 }

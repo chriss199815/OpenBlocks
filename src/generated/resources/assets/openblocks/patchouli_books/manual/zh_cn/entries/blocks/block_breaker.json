@@ -4,15 +4,15 @@
   "name": "block.openblocks.block_breaker",
   "pages": [
     {
-      "type": "patchouli:spotlight",
+      "type": "openblocks:spotlight",
       "item": "openblocks:block_breaker",
-      "link_recipe": true,
       "text": "为方块采掘器通入红石信号,它就会挖掉面向的方块.",
       "title": "block.openblocks.block_breaker"
     },
     {
-      "type": "patchouli:crafting",
-      "recipe": "openblocks:block_breaker"
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:block_breaker",
+      "recipe2": ""
     }
   ]
 }

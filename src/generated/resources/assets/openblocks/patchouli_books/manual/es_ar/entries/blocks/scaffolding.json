@@ -4,15 +4,15 @@
   "name": "block.openblocks.scaffolding",
   "pages": [
     {
-      "type": "patchouli:spotlight",
+      "type": "openblocks:spotlight",
       "item": "openblocks:scaffolding",
-      "link_recipe": true,
       "text": "¿Has querido alguna vez subir hacia el cielo sin dejar un feo pilar detrás? ¡Bien, pues ahora puedes! Simplemente construye con andamios y desaparecerán cuando hayas acabado.",
       "title": "block.openblocks.scaffolding"
     },
     {
-      "type": "patchouli:crafting",
-      "recipe": "openblocks:scaffolding"
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:scaffolding",
+      "recipe2": ""
     }
   ]
 }

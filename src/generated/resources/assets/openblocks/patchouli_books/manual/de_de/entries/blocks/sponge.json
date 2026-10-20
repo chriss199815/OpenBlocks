@@ -4,15 +4,15 @@
   "name": "block.openblocks.sponge",
   "pages": [
     {
-      "type": "patchouli:spotlight",
+      "type": "openblocks:spotlight",
       "item": "openblocks:sponge",
-      "link_recipe": true,
       "text": "Der Schwamm ist ein Ersatz für den Vanilla-Schwamm. Perfekt, um kleine Mengen an Lava oder Wasser zu entfernen. Sei jedoch vorsichtig, wenn du mit größeren Mengen an Flüssigkeit arbeitest, denn es könnte ziemlich unordentlich werden.",
       "title": "block.openblocks.sponge"
     },
     {
-      "type": "patchouli:crafting",
-      "recipe": "openblocks:sponge"
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:sponge",
+      "recipe2": ""
     }
   ]
 }

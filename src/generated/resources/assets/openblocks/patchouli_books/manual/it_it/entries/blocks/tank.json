@@ -4,9 +4,8 @@
   "name": "block.openblocks.tank",
   "pages": [
     {
-      "type": "patchouli:spotlight",
+      "type": "openblocks:spotlight",
       "item": "openblocks:tank",
-      "link_recipe": true,
       "text": "Le taniche possono contenere liquidi. Se si piazzano delle taniche una vicino all'altra, esse distribuiranno i loro liquidi tra le taniche. Si possono piazzare liquidi nelle taniche usando dei secchi. Se la tanica contiene Esperienza Liquida, puoi fare clic",
       "title": "block.openblocks.tank"
     },
@@ -15,8 +14,9 @@
       "text": "su di essa con una mano vuota per ottenere parte dei punti esperienza. Quando vengono rotte, le taniche mantengono i loro liquidi."
     },
     {
-      "type": "patchouli:crafting",
-      "recipe": "openblocks:tank"
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:tank",
+      "recipe2": ""
     }
   ]
 }

@@ -4,15 +4,15 @@
   "name": "item.openblocks.epic_eraser",
   "pages": [
     {
-      "type": "patchouli:spotlight",
+      "type": "openblocks:spotlight",
       "item": "openblocks:epic_eraser",
-      "link_recipe": true,
       "text": "Every item has its own history...$(br)$(br)Don't you hate it?$(br)With this item you can scrub all traces of epic lore your loot has collected over the years and then sell it on black market without worrying about evidence.",
       "title": "item.openblocks.epic_eraser"
     },
     {
-      "type": "patchouli:crafting",
-      "recipe": "openblocks:epic_eraser"
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:epic_eraser",
+      "recipe2": ""
     }
   ]
 }

@@ -4,16 +4,15 @@
   "name": "block.openblocks.flag",
   "pages": [
     {
-      "type": "patchouli:spotlight",
+      "type": "openblocks:spotlight",
       "item": "openblocks:white_flag,openblocks:orange_flag,openblocks:magenta_flag,openblocks:light_blue_flag,openblocks:yellow_flag,openblocks:lime_flag,openblocks:pink_flag,openblocks:gray_flag,openblocks:light_gray_flag,openblocks:cyan_flag,openblocks:purple_flag,openblocks:blue_flag,openblocks:brown_flag,openblocks:green_flag,openblocks:red_flag,openblocks:black_flag",
-      "link_recipe": true,
       "text": "Flags can be used for decoration or for marking the way back out of a cave you've ventured in to. The flag will point in the direction that you placed it, or you can put it on walls. If you shift-click with a flag in your hand it will change color.",
       "title": "block.openblocks.flag"
     },
     {
-      "type": "patchouli:crafting",
-      "recipe": "openblocks:white_flag",
-      "recipe2": "openblocks:orange_flag"
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:white_flag,openblocks:orange_flag,openblocks:magenta_flag,openblocks:light_blue_flag,openblocks:yellow_flag,openblocks:lime_flag,openblocks:pink_flag,openblocks:gray_flag,openblocks:light_gray_flag,openblocks:cyan_flag,openblocks:purple_flag,openblocks:blue_flag,openblocks:brown_flag,openblocks:green_flag,openblocks:red_flag,openblocks:black_flag",
+      "recipe2": ""
     }
   ]
 }

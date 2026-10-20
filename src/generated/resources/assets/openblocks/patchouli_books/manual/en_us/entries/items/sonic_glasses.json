@@ -4,15 +4,15 @@
   "name": "item.openblocks.sonic_glasses",
   "pages": [
     {
-      "type": "patchouli:spotlight",
+      "type": "openblocks:spotlight",
       "item": "openblocks:sonic_glasses",
-      "link_recipe": true,
       "text": "Introducing the fantabulous new Sonic Glasses!$(br)This new and exciting technology from OpenMods Inc allow you see what you hear!",
       "title": "item.openblocks.sonic_glasses"
     },
     {
-      "type": "patchouli:crafting",
-      "recipe": "openblocks:sonic_glasses"
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:sonic_glasses",
+      "recipe2": ""
     }
   ]
 }

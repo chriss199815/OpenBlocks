@@ -4,15 +4,15 @@
   "name": "block.openblocks.xp_shower",
   "pages": [
     {
-      "type": "patchouli:spotlight",
+      "type": "openblocks:spotlight",
       "item": "openblocks:xp_shower",
-      "link_recipe": true,
       "text": "Прикрепите её к резервуару с жидким опытом и она зальёт Вас опытом. Этот опыт может быть собран всасывателем опыта или коллектором MFR.",
       "title": "block.openblocks.xp_shower"
     },
     {
-      "type": "patchouli:crafting",
-      "recipe": "openblocks:xp_shower"
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:xp_shower",
+      "recipe2": ""
     }
   ]
 }

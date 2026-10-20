@@ -4,9 +4,8 @@
   "name": "block.openblocks.auto_anvil",
   "pages": [
     {
-      "type": "patchouli:spotlight",
+      "type": "openblocks:spotlight",
       "item": "openblocks:auto_anvil",
-      "link_recipe": true,
       "text": "The auto anvil works just like the vanilla anvil, except it runs from XP juice and can be fully automated.$(br)$(br)Use the tabs on the right of the GUI to select which sides of the anvil items or liquid can be inserted or extracted. Right click",
       "title": "block.openblocks.auto_anvil"
     },
@@ -15,8 +14,9 @@
       "text": "and drag the anvil in the tab to spin it around and select other sides!"
     },
     {
-      "type": "patchouli:crafting",
-      "recipe": "openblocks:auto_anvil"
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:auto_anvil",
+      "recipe2": ""
     }
   ]
 }

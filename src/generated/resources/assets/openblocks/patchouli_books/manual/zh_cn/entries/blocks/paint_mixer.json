@@ -4,15 +4,15 @@
   "name": "block.openblocks.paint_mixer",
   "pages": [
     {
-      "type": "patchouli:spotlight",
+      "type": "openblocks:spotlight",
       "item": "openblocks:paint_mixer",
-      "link_recipe": true,
       "text": "调色器可以调出任何你想要的颜色.$(br)在调色器最上方的格子中放入牛奶桶或任意颜料桶,在下方的四格中分别放入青色,品红色,黄色和黑色染料,然后点击按钮调色吧!",
       "title": "block.openblocks.paint_mixer"
     },
     {
-      "type": "patchouli:crafting",
-      "recipe": "openblocks:paint_mixer"
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:paint_mixer",
+      "recipe2": ""
     }
   ]
 }

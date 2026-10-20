@@ -4,15 +4,15 @@
   "name": "block.openblocks.sponge",
   "pages": [
     {
-      "type": "patchouli:spotlight",
+      "type": "openblocks:spotlight",
       "item": "openblocks:sponge",
-      "link_recipe": true,
       "text": "这种海绵是原版海绵的重置版.它十分利于清理一片范围内的水或岩浆.但在清理一大片液体的时候要注意了,因为它会让液体的流动变的相当混乱.",
       "title": "block.openblocks.sponge"
     },
     {
-      "type": "patchouli:crafting",
-      "recipe": "openblocks:sponge"
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:sponge",
+      "recipe2": ""
     }
   ]
 }

@@ -4,14 +4,13 @@
   "name": "block.openblocks.projector",
   "pages": [
     {
-      "type": "patchouli:spotlight",
+      "type": "openblocks:spotlight",
       "item": "openblocks:projector",
-      "link_recipe": true,
       "text": "用于显示由制图机器人制作的高度图.将高度图放入投影仪内,将在其上方显示3D的全息地图.",
       "title": "block.openblocks.projector"
     },
     {
-      "type": "patchouli:crafting",
+      "type": "openblocks:crafting",
       "recipe": "openblocks:projector",
       "recipe2": "openblocks:projector_mirrored"
     }

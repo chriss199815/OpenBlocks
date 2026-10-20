@@ -4,9 +4,8 @@
   "name": "block.openblocks.heal",
   "pages": [
     {
-      "type": "patchouli:spotlight",
+      "type": "openblocks:spotlight",
       "item": "openblocks:heal",
-      "link_recipe": true,
       "text": "El bloque curativo es un bloque creativo que proporciona un leve efecto de curación a través del tiempo.",
       "title": "block.openblocks.heal"
     }

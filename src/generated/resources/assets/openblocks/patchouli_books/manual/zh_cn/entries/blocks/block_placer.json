@@ -4,15 +4,15 @@
   "name": "block.openblocks.block_placer",
   "pages": [
     {
-      "type": "patchouli:spotlight",
+      "type": "openblocks:spotlight",
       "item": "openblocks:block_placer",
-      "link_recipe": true,
       "text": "为方块放置器通入红石信号,它就会在所朝的一格内放置它存储的方块.",
       "title": "block.openblocks.block_placer"
     },
     {
-      "type": "patchouli:crafting",
-      "recipe": "openblocks:block_placer"
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:block_placer",
+      "recipe2": ""
     }
   ]
 }

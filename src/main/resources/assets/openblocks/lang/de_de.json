@@ -20,6 +20,8 @@
   "openblocks.gui.blocks": "Blöcke",
   "openblocks.gui.items": "Items",
   "openblocks.gui.misc": "Verschiedenes",
+  "openblocks.gui.jei_bookmark.add": "Als JEI-Lesezeichen setzen",
+  "openblocks.gui.jei_bookmark.remove": "JEI-Lesezeichen entfernen",
   "openblocks.gui.changelogs": "Änderungsprotokoll",
   "openblocks.gui.features": "Eigenschaften",
   "openblocks.gui.bugfixes": "Fehlerbehebungen",

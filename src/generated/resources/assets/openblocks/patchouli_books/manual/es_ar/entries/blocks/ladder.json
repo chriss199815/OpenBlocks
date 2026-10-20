@@ -4,15 +4,15 @@
   "name": "block.openblocks.ladder",
   "pages": [
     {
-      "type": "patchouli:spotlight",
+      "type": "openblocks:spotlight",
       "item": "openblocks:ladder",
-      "link_recipe": true,
       "text": "La escalera cansina soluciona ese irritante problema de saltar a través de una trampilla al final de la escalera. La escalera cansina actúa como una trampilla y una escalera al mismo tiempo.",
       "title": "block.openblocks.ladder"
     },
     {
-      "type": "patchouli:crafting",
-      "recipe": "openblocks:ladder"
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:ladder",
+      "recipe2": ""
     }
   ]
 }

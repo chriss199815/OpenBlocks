@@ -4,15 +4,15 @@
   "name": "item.openblocks.squeegee",
   "pages": [
     {
-      "type": "patchouli:spotlight",
+      "type": "openblocks:spotlight",
       "item": "openblocks:squeegee",
-      "link_recipe": true,
       "text": "O rodo remove a tinta de algum bloco pintado. Apenas clique no lado do bloco que desejar para remover a tinta, ou segure SHIFT e clique no bloco para remover a tinta de todos os lados!",
       "title": "item.openblocks.squeegee"
     },
     {
-      "type": "patchouli:crafting",
-      "recipe": "openblocks:squeegee"
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:squeegee",
+      "recipe2": ""
     }
   ]
 }

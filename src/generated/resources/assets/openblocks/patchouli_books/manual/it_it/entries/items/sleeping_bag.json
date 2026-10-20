@@ -4,15 +4,15 @@
   "name": "item.openblocks.sleeping_bag",
   "pages": [
     {
-      "type": "patchouli:spotlight",
+      "type": "openblocks:spotlight",
       "item": "openblocks:sleeping_bag",
-      "link_recipe": true,
       "text": "Il sacco a pelo permette di dormire nella natura senza dover ripristinare il proprio punto di apparizione. Per dormire, si indossa semplicemente sulla propria schiena.",
       "title": "item.openblocks.sleeping_bag"
     },
     {
-      "type": "patchouli:crafting",
-      "recipe": "openblocks:sleeping_bag"
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:sleeping_bag",
+      "recipe2": ""
     }
   ]
 }

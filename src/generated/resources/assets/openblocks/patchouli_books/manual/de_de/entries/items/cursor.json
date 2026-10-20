@@ -4,9 +4,8 @@
   "name": "item.openblocks.cursor",
   "pages": [
     {
-      "type": "patchouli:spotlight",
+      "type": "openblocks:spotlight",
       "item": "openblocks:cursor",
-      "link_recipe": true,
       "text": "Der Mauszeiger lässt dich aus der Ferne klicken.$(br)Shift-klicke einfach auf einen Block um den Mauszeiger zu verknüpfen, dann benutze ihn, wo immer du willst, um einen Klick auf das ausgewählte Ziel zu simulieren. Sei gewarnt,",
       "title": "item.openblocks.cursor"
     },
@@ -15,8 +14,9 @@
       "text": "standardmäßig benutzt der Mauszeiger Erfahrungspunkte, abhängig davon wie weit du vom Ziel entfernt bist."
     },
     {
-      "type": "patchouli:crafting",
-      "recipe": "openblocks:cursor"
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:cursor",
+      "recipe2": ""
     }
   ]
 }

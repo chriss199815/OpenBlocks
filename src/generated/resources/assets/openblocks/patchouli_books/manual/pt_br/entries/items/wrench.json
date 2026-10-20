@@ -4,9 +4,8 @@
   "name": "item.openblocks.wrench",
   "pages": [
     {
-      "type": "patchouli:spotlight",
+      "type": "openblocks:spotlight",
       "item": "openblocks:wrench",
-      "link_recipe": true,
       "text": "Essa é uma ferramenta extremamente sofisticada usada to para realizar transformações de objetos com simetria octaédrica.$(br)$(br)$(br)Ou apenas um grande, pedaço de metal que",
       "title": "item.openblocks.wrench"
     },
@@ -15,8 +14,9 @@
       "text": "você pode usar para girar cubos e outras coisas.$(br)$(br)Então, sim, é mais uma chave inglesa. Eu só estou tentando ser original aqui, ok?"
     },
     {
-      "type": "patchouli:crafting",
-      "recipe": "openblocks:wrench"
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:wrench",
+      "recipe2": ""
     }
   ]
 }

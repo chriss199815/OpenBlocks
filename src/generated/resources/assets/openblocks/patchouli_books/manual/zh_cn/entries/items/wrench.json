@@ -4,15 +4,15 @@
   "name": "item.openblocks.wrench",
   "pages": [
     {
-      "type": "patchouli:spotlight",
+      "type": "openblocks:spotlight",
       "item": "openblocks:wrench",
-      "link_recipe": true,
       "text": "这是用于对具有八面体对称性对象进行转换的，非常复杂的工具。$(br)$(br)$(br)或者只是个粗大且笨重的金属棒，能够用来旋转一些方块。$(br)$(br)好吧，这就是个扳手。我只是想搞些原创的东西，OK？",
       "title": "item.openblocks.wrench"
     },
     {
-      "type": "patchouli:crafting",
-      "recipe": "openblocks:wrench"
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:wrench",
+      "recipe2": ""
     }
   ]
 }

@@ -4,15 +4,15 @@
   "name": "block.openblocks.block_placer",
   "pages": [
     {
-      "type": "patchouli:spotlight",
+      "type": "openblocks:spotlight",
       "item": "openblocks:block_placer",
-      "link_recipe": true,
       "text": "Когда будет подан сигнал красного камня, разместитель блоков поставит блок туда, куда он направлен.",
       "title": "block.openblocks.block_placer"
     },
     {
-      "type": "patchouli:crafting",
-      "recipe": "openblocks:block_placer"
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:block_placer",
+      "recipe2": ""
     }
   ]
 }

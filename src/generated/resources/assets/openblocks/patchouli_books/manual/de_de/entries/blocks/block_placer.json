@@ -4,15 +4,15 @@
   "name": "block.openblocks.block_placer",
   "pages": [
     {
-      "type": "patchouli:spotlight",
+      "type": "openblocks:spotlight",
       "item": "openblocks:block_placer",
-      "link_recipe": true,
       "text": "Wenn er ein Redstone-Signal bekommt, platziert der Blockplatzierer ein Gegenstand in die Richtung, in die er schaut.",
       "title": "block.openblocks.block_placer"
     },
     {
-      "type": "patchouli:crafting",
-      "recipe": "openblocks:block_placer"
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:block_placer",
+      "recipe2": ""
     }
   ]
 }

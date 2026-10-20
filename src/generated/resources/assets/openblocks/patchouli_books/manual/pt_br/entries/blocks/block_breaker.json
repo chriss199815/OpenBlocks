@@ -4,15 +4,15 @@
   "name": "block.openblocks.block_breaker",
   "pages": [
     {
-      "type": "patchouli:spotlight",
+      "type": "openblocks:spotlight",
       "item": "openblocks:block_breaker",
-      "link_recipe": true,
       "text": "Quando é dado um pulso de redstone, o quebra-blocos vai quebrar o bloco que estiver na frente dele.",
       "title": "block.openblocks.block_breaker"
     },
     {
-      "type": "patchouli:crafting",
-      "recipe": "openblocks:block_breaker"
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:block_breaker",
+      "recipe2": ""
     }
   ]
 }

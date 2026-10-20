@@ -4,15 +4,15 @@
   "name": "item.openblocks.squeegee",
   "pages": [
     {
-      "type": "patchouli:spotlight",
+      "type": "openblocks:spotlight",
       "item": "openblocks:squeegee",
-      "link_recipe": true,
       "text": "La escobilla de goma elimina cualquier pintura de un bloque pintado. Haz clic en la cara del bloque que quieres limpiar la pintura, o haz shift+clic para eliminar la pintura de todas las caras del bloque.",
       "title": "item.openblocks.squeegee"
     },
     {
-      "type": "patchouli:crafting",
-      "recipe": "openblocks:squeegee"
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:squeegee",
+      "recipe2": ""
     }
   ]
 }

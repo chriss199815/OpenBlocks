@@ -4,15 +4,15 @@
   "name": "block.openblocks.xp_bottler",
   "pages": [
     {
-      "type": "patchouli:spotlight",
+      "type": "openblocks:spotlight",
       "item": "openblocks:xp_bottler",
-      "link_recipe": true,
       "text": "L'imbottigliatore di punti esperienza aspira esperienza liquida e poi la imbottiglia nelle bottiglie di vetro per ottenere delle bottiglie de' incantagione.",
       "title": "block.openblocks.xp_bottler"
     },
     {
-      "type": "patchouli:crafting",
-      "recipe": "openblocks:xp_bottler"
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:xp_bottler",
+      "recipe2": ""
     }
   ]
 }

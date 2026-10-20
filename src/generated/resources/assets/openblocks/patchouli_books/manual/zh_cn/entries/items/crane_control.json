@@ -4,15 +4,15 @@
   "name": "item.openblocks.crane_control",
   "pages": [
     {
-      "type": "patchouli:spotlight",
+      "type": "openblocks:spotlight",
       "item": "openblocks:crane_control",
-      "link_recipe": true,
       "text": "这个高科技的无线遥控工具,能用来控制起重机背包.$(br)右键升起,Shift+右键降低,左键拾取/释放.$(br)当有光在闪烁时,表示物体正受到磁力影响.",
       "title": "item.openblocks.crane_control"
     },
     {
-      "type": "patchouli:crafting",
-      "recipe": "openblocks:crane_control"
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:crane_control",
+      "recipe2": ""
     }
   ]
 }

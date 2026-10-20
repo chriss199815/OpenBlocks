@@ -4,15 +4,15 @@
   "name": "block.openblocks.bear_trap",
   "pages": [
     {
-      "type": "patchouli:spotlight",
+      "type": "openblocks:spotlight",
       "item": "openblocks:bear_trap",
-      "link_recipe": true,
       "text": "Поставьте медвежий капкан и нажмите на него, чтобы открыть его. Когда моб наступит на ловушку, он не сможет двигаться!",
       "title": "block.openblocks.bear_trap"
     },
     {
-      "type": "patchouli:crafting",
-      "recipe": "openblocks:bear_trap"
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:bear_trap",
+      "recipe2": ""
     }
   ]
 }

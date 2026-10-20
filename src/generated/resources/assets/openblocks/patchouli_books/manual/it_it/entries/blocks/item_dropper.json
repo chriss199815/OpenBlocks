@@ -4,15 +4,15 @@
   "name": "block.openblocks.item_dropper",
   "pages": [
     {
-      "type": "patchouli:spotlight",
+      "type": "openblocks:spotlight",
       "item": "openblocks:item_dropper",
-      "link_recipe": true,
       "text": "Il gettatore di oggetti è similare al gettatore Vanilla, eccetto che getta gli oggetti direttamente verso il basso in linea retta.",
       "title": "block.openblocks.item_dropper"
     },
     {
-      "type": "patchouli:crafting",
-      "recipe": "openblocks:item_dropper"
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:item_dropper",
+      "recipe2": ""
     }
   ]
 }

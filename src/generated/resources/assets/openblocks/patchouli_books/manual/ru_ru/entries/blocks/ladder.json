@@ -4,15 +4,15 @@
   "name": "block.openblocks.ladder",
   "pages": [
     {
-      "type": "patchouli:spotlight",
+      "type": "openblocks:spotlight",
       "item": "openblocks:ladder",
-      "link_recipe": true,
       "text": "Люк-лестница исправляет эту досадную ошибку, когда Вы не можете до конца подняться по лестнице, если сверху люк. Люк-лестница действует, как люк и лестница, одновременно.",
       "title": "block.openblocks.ladder"
     },
     {
-      "type": "patchouli:crafting",
-      "recipe": "openblocks:ladder"
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:ladder",
+      "recipe2": ""
     }
   ]
 }

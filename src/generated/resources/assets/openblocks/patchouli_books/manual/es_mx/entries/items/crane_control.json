@@ -4,9 +4,8 @@
   "name": "item.openblocks.crane_control",
   "pages": [
     {
-      "type": "patchouli:spotlight",
+      "type": "openblocks:spotlight",
       "item": "openblocks:crane_control",
-      "link_recipe": true,
       "text": "Este mando inalámbrico de alta tecnología se usa para controlar las grúas portatiles.$(br)$(br)Clic derecho para subir, shift+clic-derecho para bajar y clic izquierdo para coger o soltar.$(br)Luces intermitentes señalan que algo está",
       "title": "item.openblocks.crane_control"
     },
@@ -15,8 +14,9 @@
       "text": "en el imán."
     },
     {
-      "type": "patchouli:crafting",
-      "recipe": "openblocks:crane_control"
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:crane_control",
+      "recipe2": ""
     }
   ]
 }

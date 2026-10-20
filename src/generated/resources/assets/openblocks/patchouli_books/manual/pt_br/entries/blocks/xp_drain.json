@@ -4,15 +4,15 @@
   "name": "block.openblocks.xp_drain",
   "pages": [
     {
-      "type": "patchouli:spotlight",
+      "type": "openblocks:spotlight",
       "item": "openblocks:xp_drain",
-      "link_recipe": true,
       "text": "Coloque o dreno de xp em cima de um tanque do OpenBlocks e fique em cima. Seu XP vai ser drenado para dentro do tanque, que pode então ser usado em blocos, tais como a mesa de encantamento automática ou a bigorna automática.",
       "title": "block.openblocks.xp_drain"
     },
     {
-      "type": "patchouli:crafting",
-      "recipe": "openblocks:xp_drain"
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:xp_drain",
+      "recipe2": ""
     }
   ]
 }

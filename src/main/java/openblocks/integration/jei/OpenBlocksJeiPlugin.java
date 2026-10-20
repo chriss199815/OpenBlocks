@@ -75,6 +75,12 @@ public class OpenBlocksJeiPlugin implements IModPlugin {
 	public void onRuntimeAvailable(IJeiRuntime runtime) {
 		List<ItemStack> hidden = hiddenItems();
 		if (!hidden.isEmpty()) runtime.getIngredientManager().removeIngredientsAtRuntime(VanillaTypes.ITEM_STACK, hidden);
+		JeiBookmarks.setRuntime(runtime);
+	}
+
+	@Override
+	public void onRuntimeUnavailable() {
+		JeiBookmarks.setRuntime(null);
 	}
 
 	/**

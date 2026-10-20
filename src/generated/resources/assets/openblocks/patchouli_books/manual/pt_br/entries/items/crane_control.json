@@ -4,9 +4,8 @@
   "name": "item.openblocks.crane_control",
   "pages": [
     {
-      "type": "patchouli:spotlight",
+      "type": "openblocks:spotlight",
       "item": "openblocks:crane_control",
-      "link_recipe": true,
       "text": "Este controle remoto sem fio de alta tecnologia é usado para controlar mochilas magnéticas.$(br)$(br)Clique com o botão direito para levantar, SHIFT + botão direito para descer, botão esquerdo para pegar/soltar.",
       "title": "item.openblocks.crane_control"
     },
@@ -15,8 +14,9 @@
       "text": "Luzes piscando indica que algo está debaixo do ímã."
     },
     {
-      "type": "patchouli:crafting",
-      "recipe": "openblocks:crane_control"
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:crane_control",
+      "recipe2": ""
     }
   ]
 }

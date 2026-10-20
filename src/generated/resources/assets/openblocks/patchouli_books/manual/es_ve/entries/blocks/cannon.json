@@ -4,15 +4,15 @@
   "name": "block.openblocks.cannon",
   "pages": [
     {
-      "type": "patchouli:spotlight",
+      "type": "openblocks:spotlight",
       "item": "openblocks:cannon",
-      "link_recipe": true,
       "text": "Cuando se le aplique una señal de redstone, el cañon de objetos disparará los objetos que encuentre en un inventario adyacente. Usa el objeto 'apuntador' para apuntar el cañón.",
       "title": "block.openblocks.cannon"
     },
     {
-      "type": "patchouli:crafting",
-      "recipe": "openblocks:cannon"
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:cannon",
+      "recipe2": ""
     }
   ]
 }

@@ -4,9 +4,8 @@
   "name": "block.openblocks.heal",
   "pages": [
     {
-      "type": "patchouli:spotlight",
+      "type": "openblocks:spotlight",
       "item": "openblocks:heal",
-      "link_recipe": true,
       "text": "Il blocco curatore è un blocco solo per la modalità creativa che rilascia un leggero effetto curatore man mano che passa il tempo.",
       "title": "block.openblocks.heal"
     }

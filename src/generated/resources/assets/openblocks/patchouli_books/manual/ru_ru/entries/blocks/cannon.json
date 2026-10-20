@@ -4,15 +4,15 @@
   "name": "block.openblocks.cannon",
   "pages": [
     {
-      "type": "patchouli:spotlight",
+      "type": "openblocks:spotlight",
       "item": "openblocks:cannon",
-      "link_recipe": true,
       "text": "Когда подан сигнал красного камня, предметная пушка будет выстреливать предметы, которые она найдёт в соседнем инвентаре. Используйте 'указатель', чтобы направить пушку.",
       "title": "block.openblocks.cannon"
     },
     {
-      "type": "patchouli:crafting",
-      "recipe": "openblocks:cannon"
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:cannon",
+      "recipe2": ""
     }
   ]
 }

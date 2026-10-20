@@ -4,9 +4,8 @@
   "name": "block.openblocks.guide",
   "pages": [
     {
-      "type": "patchouli:spotlight",
+      "type": "openblocks:spotlight",
       "item": "openblocks:guide",
-      "link_recipe": true,
       "text": "La Guida di Costruzione, una volta attivata con della pietrarossa, mosterà una \"linea-guida\" di blocchi fantasma di differenti forme e dimensioni che ti aiuteranno a pianificare il design delle stanze.$(br)Usa i pulsanti sensibili",
       "title": "block.openblocks.guide"
     },
@@ -15,8 +14,9 @@
       "text": "al tocco presenti sul blocco per modificare le dimensioni e le forme della \"linea-guida\".$(br)I colori degli indicatori possono essere modificati utilizzando della tintura sul blocco centrale."
     },
     {
-      "type": "patchouli:crafting",
-      "recipe": "openblocks:guide"
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:guide",
+      "recipe2": ""
     }
   ]
 }

@@ -4,9 +4,8 @@
   "name": "block.openblocks.builder_guide",
   "pages": [
     {
-      "type": "patchouli:spotlight",
+      "type": "openblocks:spotlight",
       "item": "openblocks:builder_guide",
-      "link_recipe": true,
       "text": "Die verbesserte Form der Bau-Hilfe zeigt nicht nur Phantomblöcken zum einfacheren Bauen, sondern erlaubt auch das Setzen der eigentlichen Blöcke. Klicke dazu einfach auf den zentralen Block mit einem beliebigen Stapel!",
       "title": "block.openblocks.builder_guide"
     },
@@ -15,8 +14,9 @@
       "text": "Im Kreativmodus kannst du einen Obisidanblock darüber platzieren und dann die Bau-Hilfe mit einem beliebigen Block hauen um das Gebäude zu bauen."
     },
     {
-      "type": "patchouli:crafting",
-      "recipe": "openblocks:builder_guide"
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:builder_guide",
+      "recipe2": ""
     }
   ]
 }

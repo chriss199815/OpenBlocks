@@ -4,15 +4,15 @@
   "name": "item.openblocks.slimalyzer",
   "pages": [
     {
-      "type": "patchouli:spotlight",
+      "type": "openblocks:spotlight",
       "item": "openblocks:slimalyzer",
-      "link_recipe": true,
       "text": "Walk around with the slimalyzer in your hand and it'll light up whenever you're in a slime spawning chunk.",
       "title": "item.openblocks.slimalyzer"
     },
     {
-      "type": "patchouli:crafting",
-      "recipe": "openblocks:slimalyzer"
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:slimalyzer",
+      "recipe2": ""
     }
   ]
 }

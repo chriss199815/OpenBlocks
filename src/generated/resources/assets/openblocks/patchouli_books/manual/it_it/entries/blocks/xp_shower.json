@@ -4,15 +4,15 @@
   "name": "block.openblocks.xp_shower",
   "pages": [
     {
-      "type": "patchouli:spotlight",
+      "type": "openblocks:spotlight",
       "item": "openblocks:xp_shower",
-      "link_recipe": true,
       "text": "Attacca una doccia di punti esperienza ad una tanica di esperienza liquida ed essa emetterà sfere di esperienza. Queste sfere possono essere raccolte da un drenatore di punti esperienza o da un Collettore della MFR.",
       "title": "block.openblocks.xp_shower"
     },
     {
-      "type": "patchouli:crafting",
-      "recipe": "openblocks:xp_shower"
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:xp_shower",
+      "recipe2": ""
     }
   ]
 }

@@ -4,15 +4,15 @@
   "name": "block.openblocks.ladder",
   "pages": [
     {
-      "type": "patchouli:spotlight",
+      "type": "openblocks:spotlight",
       "item": "openblocks:ladder",
-      "link_recipe": true,
       "text": "O alçapão-escada resolve esse problema irritante de pular de um alçapão para o topo de uma escada. O alçapão-escada age como um alçapão e uma escada ao mesmo tempo.",
       "title": "block.openblocks.ladder"
     },
     {
-      "type": "patchouli:crafting",
-      "recipe": "openblocks:ladder"
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:ladder",
+      "recipe2": ""
     }
   ]
 }

@@ -4,9 +4,8 @@
   "name": "item.openblocks.unprepared_stencil",
   "pages": [
     {
-      "type": "patchouli:spotlight",
+      "type": "openblocks:spotlight",
       "item": "openblocks:unprepared_stencil",
-      "link_recipe": true,
       "text": "Gli stampi possono essere piazzati sui blocchi e poi dipinti sui blocchi usando i pennello!$(br)$(br)Puoi dipingere un blocco usando stampi multipli e puoi cliccare su di essi con una mano vuota per ruotarli. Piazza uno",
       "title": "item.openblocks.unprepared_stencil"
     },
@@ -15,8 +14,9 @@
       "text": "Stampo non Preparato in un Tavolo da Disegno per creare diversi motivi."
     },
     {
-      "type": "patchouli:crafting",
-      "recipe": "openblocks:unprepared_stencil"
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:unprepared_stencil",
+      "recipe2": ""
     }
   ]
 }

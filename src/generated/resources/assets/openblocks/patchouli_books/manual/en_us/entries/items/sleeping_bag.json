@@ -4,15 +4,15 @@
   "name": "item.openblocks.sleeping_bag",
   "pages": [
     {
-      "type": "patchouli:spotlight",
+      "type": "openblocks:spotlight",
       "item": "openblocks:sleeping_bag",
-      "link_recipe": true,
       "text": "The sleeping bag lets you sleep out in the wilderness without having to reset your spawn location. To sleep, simply right-click with it at night.",
       "title": "item.openblocks.sleeping_bag"
     },
     {
-      "type": "patchouli:crafting",
-      "recipe": "openblocks:sleeping_bag"
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:sleeping_bag",
+      "recipe2": ""
     }
   ]
 }

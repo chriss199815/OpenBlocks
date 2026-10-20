@@ -4,15 +4,15 @@
   "name": "block.openblocks.item_dropper",
   "pages": [
     {
-      "type": "patchouli:spotlight",
+      "type": "openblocks:spotlight",
       "item": "openblocks:item_dropper",
-      "link_recipe": true,
       "text": "物品投掷器类似于原版的投掷器,但它会把物品铅直地向下投掷.",
       "title": "block.openblocks.item_dropper"
     },
     {
-      "type": "patchouli:crafting",
-      "recipe": "openblocks:item_dropper"
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:item_dropper",
+      "recipe2": ""
     }
   ]
 }

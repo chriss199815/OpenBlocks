@@ -4,14 +4,13 @@
   "name": "block.openblocks.projector",
   "pages": [
     {
-      "type": "patchouli:spotlight",
+      "type": "openblocks:spotlight",
       "item": "openblocks:projector",
-      "link_recipe": true,
       "text": "Vou deixar você escrever isso, boq!",
       "title": "block.openblocks.projector"
     },
     {
-      "type": "patchouli:crafting",
+      "type": "openblocks:crafting",
       "recipe": "openblocks:projector",
       "recipe2": "openblocks:projector_mirrored"
     }

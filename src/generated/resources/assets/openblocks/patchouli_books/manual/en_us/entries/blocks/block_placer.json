@@ -4,15 +4,15 @@
   "name": "block.openblocks.block_placer",
   "pages": [
     {
-      "type": "patchouli:spotlight",
+      "type": "openblocks:spotlight",
       "item": "openblocks:block_placer",
-      "link_recipe": true,
       "text": "When given a redstone pulse the block placer will place an item in the direction it's facing.",
       "title": "block.openblocks.block_placer"
     },
     {
-      "type": "patchouli:crafting",
-      "recipe": "openblocks:block_placer"
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:block_placer",
+      "recipe2": ""
     }
   ]
 }

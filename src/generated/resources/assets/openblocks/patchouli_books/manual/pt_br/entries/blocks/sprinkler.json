@@ -4,9 +4,8 @@
   "name": "block.openblocks.sprinkler",
   "pages": [
     {
-      "type": "patchouli:spotlight",
+      "type": "openblocks:spotlight",
       "item": "openblocks:sprinkler",
-      "link_recipe": true,
       "text": "O borrifador irá ajudar a fertilizar as plantações até 4 blocos de distância. Basta colocá-lo em cima de um tanque do OpenBlocks cheio de água! Você também pode adicionar farinha de osso para aumentar a velocidade do crescimento.",
       "title": "block.openblocks.sprinkler"
     },
@@ -15,8 +14,9 @@
       "text": "Ele também age como um bloco de fonte de água!"
     },
     {
-      "type": "patchouli:crafting",
-      "recipe": "openblocks:sprinkler"
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:sprinkler",
+      "recipe2": ""
     }
   ]
 }

@@ -4,9 +4,8 @@
   "name": "block.openblocks.village_highlighter",
   "pages": [
     {
-      "type": "patchouli:spotlight",
+      "type": "openblocks:spotlight",
       "item": "openblocks:village_highlighter",
-      "link_recipe": true,
       "text": "Piazza il visualizzatore di villaggi in un villaggio e forniscigli un segnale di pietrarossa. Verranno mostrati i confini del villaggio e verrà disegnata una scatola nella zona di apparizione dei golem di ferro. Utile se vuoi fare in modo che i vari",
       "title": "block.openblocks.village_highlighter"
     },
@@ -15,8 +14,9 @@
       "text": "villaggi si intersechino fra di loro o se stai costruendo un generatore di ferro!"
     },
     {
-      "type": "patchouli:crafting",
-      "recipe": "openblocks:village_highlighter"
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:village_highlighter",
+      "recipe2": ""
     }
   ]
 }

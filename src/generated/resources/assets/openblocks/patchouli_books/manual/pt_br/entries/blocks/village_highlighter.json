@@ -4,9 +4,8 @@
   "name": "block.openblocks.village_highlighter",
   "pages": [
     {
-      "type": "patchouli:spotlight",
+      "type": "openblocks:spotlight",
       "item": "openblocks:village_highlighter",
-      "link_recipe": true,
       "text": "Coloque o realçador de aldeões no chão em uma vila e dê-lhe um sinal de redstone. Ele vai marcar o perímetro da aldeia e desenhar uma caixa na área de spawn de Golem de Ferro. Útil se você não quer que as aldeias se misturem umas com as outras ou",
       "title": "block.openblocks.village_highlighter"
     },
@@ -15,8 +14,9 @@
       "text": "você está fazendo uma farm de ferro!"
     },
     {
-      "type": "patchouli:crafting",
-      "recipe": "openblocks:village_highlighter"
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:village_highlighter",
+      "recipe2": ""
     }
   ]
 }

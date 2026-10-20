@@ -4,9 +4,8 @@
   "name": "block.openblocks.paint_mixer",
   "pages": [
     {
-      "type": "patchouli:spotlight",
+      "type": "openblocks:spotlight",
       "item": "openblocks:paint_mixer",
-      "link_recipe": true,
       "text": "Der Farbmischer kann jede Farbe, die du willst, zusammenmixen! Gib entweder einen Farbeimer oder einen Eimer Milch in den oberen Slot, dann Türkisen, Magentafarbenen, Gelben und Schwarzen Farbstoff in die anderen vier Slots",
       "title": "block.openblocks.paint_mixer"
     },
@@ -15,8 +14,9 @@
       "text": "und klicke auf Mixen!"
     },
     {
-      "type": "patchouli:crafting",
-      "recipe": "openblocks:paint_mixer"
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:paint_mixer",
+      "recipe2": ""
     }
   ]
 }

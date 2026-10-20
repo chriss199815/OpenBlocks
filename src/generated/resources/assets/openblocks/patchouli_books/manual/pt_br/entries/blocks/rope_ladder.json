@@ -4,15 +4,15 @@
   "name": "block.openblocks.rope_ladder",
   "pages": [
     {
-      "type": "patchouli:spotlight",
+      "type": "openblocks:spotlight",
       "item": "openblocks:rope_ladder",
-      "link_recipe": true,
       "text": "Quando você coloca uma escada de corda que vai rolar todo o caminho até o chão. Para cada escada de corda criada, ela vai usar um item da pilha.",
       "title": "block.openblocks.rope_ladder"
     },
     {
-      "type": "patchouli:crafting",
-      "recipe": "openblocks:rope_ladder"
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:rope_ladder",
+      "recipe2": ""
     }
   ]
 }

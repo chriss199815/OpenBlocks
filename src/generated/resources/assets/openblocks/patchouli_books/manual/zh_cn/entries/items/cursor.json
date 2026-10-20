@@ -4,15 +4,15 @@
   "name": "item.openblocks.cursor",
   "pages": [
     {
-      "type": "patchouli:spotlight",
+      "type": "openblocks:spotlight",
       "item": "openblocks:cursor",
-      "link_recipe": true,
       "text": "游标可以让你远程控制方块.手持游标Shift右键一个方块就可以建立连接,之后用游标右键空气就控制连接的方块.$(br)默认设置下,使用游标与方块远程互动会消耗你的经验,距离越远,消耗越多.",
       "title": "item.openblocks.cursor"
     },
     {
-      "type": "patchouli:crafting",
-      "recipe": "openblocks:cursor"
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:cursor",
+      "recipe2": ""
     }
   ]
 }

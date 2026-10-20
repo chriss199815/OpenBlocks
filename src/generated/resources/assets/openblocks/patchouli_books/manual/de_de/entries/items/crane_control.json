@@ -4,9 +4,8 @@
   "name": "item.openblocks.crane_control",
   "pages": [
     {
-      "type": "patchouli:spotlight",
+      "type": "openblocks:spotlight",
       "item": "openblocks:crane_control",
-      "link_recipe": true,
       "text": "Dise drahtlose Hi-Tech-Fernbedienung wird für die Steuerung des Kranrucksacks verwendet.$(br)$(br)Rechtsklick zum Anheben, Shift-Rechtsklick zum Absenken, Linksklick zum Aufheben/Fallenlassen",
       "title": "item.openblocks.crane_control"
     },
@@ -15,8 +14,9 @@
       "text": ".$(br)Eine blinkende Leuchte signalisiert, das etwas unter dem Magneten ist."
     },
     {
-      "type": "patchouli:crafting",
-      "recipe": "openblocks:crane_control"
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:crane_control",
+      "recipe2": ""
     }
   ]
 }

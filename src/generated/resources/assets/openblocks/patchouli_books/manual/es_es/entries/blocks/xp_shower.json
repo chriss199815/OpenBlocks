@@ -4,15 +4,15 @@
   "name": "block.openblocks.xp_shower",
   "pages": [
     {
-      "type": "patchouli:spotlight",
+      "type": "openblocks:spotlight",
       "item": "openblocks:xp_shower",
-      "link_recipe": true,
       "text": "Adjunta una ducha de XP a un tanque de XP líquida y verterá orbes de experiencia. Estos orbes se pueden recolectar con un drenador de XP o un alcantarillado MFR.",
       "title": "block.openblocks.xp_shower"
     },
     {
-      "type": "patchouli:crafting",
-      "recipe": "openblocks:xp_shower"
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:xp_shower",
+      "recipe2": ""
     }
   ]
 }

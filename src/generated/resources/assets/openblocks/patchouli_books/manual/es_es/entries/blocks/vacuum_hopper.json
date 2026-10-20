@@ -4,15 +4,15 @@
   "name": "block.openblocks.vacuum_hopper",
   "pages": [
     {
-      "type": "patchouli:spotlight",
+      "type": "openblocks:spotlight",
       "item": "openblocks:vacuum_hopper",
-      "link_recipe": true,
       "text": "La tolva aspiradora succionará objetos y orbes de experiencia cercanos a ella.Puedes usar las pestañas a la derecha de la interfaz para elegir que caras funcionarán como salidas.",
       "title": "block.openblocks.vacuum_hopper"
     },
     {
-      "type": "patchouli:crafting",
-      "recipe": "openblocks:vacuum_hopper"
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:vacuum_hopper",
+      "recipe2": ""
     }
   ]
 }

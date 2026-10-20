@@ -4,9 +4,8 @@
   "name": "block.openblocks.builder_guide",
   "pages": [
     {
-      "type": "patchouli:spotlight",
+      "type": "openblocks:spotlight",
       "item": "openblocks:builder_guide",
-      "link_recipe": true,
       "text": "Эта улучшенная версия руководителя по строительству не только отображает призрачные блоки, что делает строительство проще, но также позволяет разместить эти блоки. Просто нажмите по центральному блоку",
       "title": "block.openblocks.builder_guide"
     },
@@ -15,8 +14,9 @@
       "text": "любым блоком!$(br)В творческом режиме Вы можете поставить сверху блок обсидиана, затем ударьте по руководителю любым блоком, чтобы автоматически создать структуру по форме."
     },
     {
-      "type": "patchouli:crafting",
-      "recipe": "openblocks:builder_guide"
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:builder_guide",
+      "recipe2": ""
     }
   ]
 }

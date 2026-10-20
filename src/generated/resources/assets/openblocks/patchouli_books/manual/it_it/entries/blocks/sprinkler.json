@@ -4,9 +4,8 @@
   "name": "block.openblocks.sprinkler",
   "pages": [
     {
-      "type": "patchouli:spotlight",
+      "type": "openblocks:spotlight",
       "item": "openblocks:sprinkler",
-      "link_recipe": true,
       "text": "L'irrigatore aiuterà a fertilizzare le colture fino a 4 blocchi di distanza. Semplicemente piazzalo sopra ad una tanica degli OpenBlocks riempita d'acqua! Puoi anche aggiungere della farina d'ossa per un velocità di crescita ancora più",
       "title": "block.openblocks.sprinkler"
     },
@@ -15,8 +14,9 @@
       "text": "elevata.$(br)Funge anche come un blocco di acqua sorgente!"
     },
     {
-      "type": "patchouli:crafting",
-      "recipe": "openblocks:sprinkler"
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:sprinkler",
+      "recipe2": ""
     }
   ]
 }

@@ -4,15 +4,15 @@
   "name": "block.openblocks.cannon",
   "pages": [
     {
-      "type": "patchouli:spotlight",
+      "type": "openblocks:spotlight",
       "item": "openblocks:cannon",
-      "link_recipe": true,
       "text": "Quando gli viene applicato un segnale di pietrarossa, il cannone di oggetti sparerà tutti gli oggetti che trova in un inventario adiacente. Usa l'oggetto 'Puntatore' per mirare con il cannone.",
       "title": "block.openblocks.cannon"
     },
     {
-      "type": "patchouli:crafting",
-      "recipe": "openblocks:cannon"
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:cannon",
+      "recipe2": ""
     }
   ]
 }

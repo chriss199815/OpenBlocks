@@ -4,15 +4,15 @@
   "name": "block.openblocks.auto_anvil",
   "pages": [
     {
-      "type": "patchouli:spotlight",
+      "type": "openblocks:spotlight",
       "item": "openblocks:auto_anvil",
-      "link_recipe": true,
       "text": "自动铁砧的使用方法类似于普通铁砧,但它可以通过消耗经验来自动工作.$(br)在操作界面右边的设定栏可以调整输入经验或工具的面.在设定栏上可以右键拖拽铁砧或左键设定输入/输出面.",
       "title": "block.openblocks.auto_anvil"
     },
     {
-      "type": "patchouli:crafting",
-      "recipe": "openblocks:auto_anvil"
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:auto_anvil",
+      "recipe2": ""
     }
   ]
 }

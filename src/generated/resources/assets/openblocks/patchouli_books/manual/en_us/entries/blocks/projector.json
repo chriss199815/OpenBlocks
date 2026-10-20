@@ -4,9 +4,8 @@
   "name": "block.openblocks.projector",
   "pages": [
     {
-      "type": "patchouli:spotlight",
+      "type": "openblocks:spotlight",
       "item": "openblocks:projector",
-      "link_recipe": true,
       "text": "The projector turns height maps into holograms. Put an empty map into it (or give it to a cartographer) to map the land around, and the projector will show the terrain floating above it. Use the arrows in its interface to rotate",
       "title": "block.openblocks.projector"
     },
@@ -15,7 +14,7 @@
       "text": "the view."
     },
     {
-      "type": "patchouli:crafting",
+      "type": "openblocks:crafting",
       "recipe": "openblocks:projector",
       "recipe2": "openblocks:projector_mirrored"
     }

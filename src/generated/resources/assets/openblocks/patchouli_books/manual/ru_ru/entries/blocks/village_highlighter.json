@@ -4,9 +4,8 @@
   "name": "block.openblocks.village_highlighter",
   "pages": [
     {
-      "type": "patchouli:spotlight",
+      "type": "openblocks:spotlight",
       "item": "openblocks:village_highlighter",
-      "link_recipe": true,
       "text": "Поставьте подсвечиватель деревни в деревне и подайте ему сигнал красного камня. Он будет определять периметр деревни и рисовать коробку на территории появления железных големов. Полезно, если Вы хотите",
       "title": "block.openblocks.village_highlighter"
     },
@@ -15,8 +14,9 @@
       "text": "убедиться, не сливаются ли друг с другом деревни или когда Вы делаете ферму железных големов!"
     },
     {
-      "type": "patchouli:crafting",
-      "recipe": "openblocks:village_highlighter"
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:village_highlighter",
+      "recipe2": ""
     }
   ]
 }

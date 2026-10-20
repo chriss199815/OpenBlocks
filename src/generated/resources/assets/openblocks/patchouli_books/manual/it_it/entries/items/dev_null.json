@@ -4,9 +4,8 @@
   "name": "item.openblocks.dev_null",
   "pages": [
     {
-      "type": "patchouli:spotlight",
+      "type": "openblocks:spotlight",
       "item": "openblocks:dev_null",
-      "link_recipe": true,
       "text": "Clicca usando /dev/null per aprire il suo inventario. C'è un unico spazio nell'inventario - metti un oggetto lì dentro - terra, per esempio. Mentre raccogli terra dal terreno, quello spazio si riempirà. Una volta pieno, ogni altro blocco di terra che",
       "title": "item.openblocks.dev_null"
     },
@@ -15,8 +14,9 @@
       "text": "raccoglierai sarà automaticamente eliminato. Puoi fare shift-click con l'oggetto in mano per piazzare il blocco contenuto!"
     },
     {
-      "type": "patchouli:crafting",
-      "recipe": "openblocks:dev_null"
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:dev_null",
+      "recipe2": ""
     }
   ]
 }

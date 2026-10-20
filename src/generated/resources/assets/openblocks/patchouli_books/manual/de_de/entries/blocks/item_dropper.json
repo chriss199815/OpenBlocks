@@ -4,15 +4,15 @@
   "name": "block.openblocks.item_dropper",
   "pages": [
     {
-      "type": "patchouli:spotlight",
+      "type": "openblocks:spotlight",
       "item": "openblocks:item_dropper",
-      "link_recipe": true,
       "text": "Der Itemspender ist dem Vanilla-Spender ähnlich, außer dass er Gegenstände direkt in einer geraden Linie nach unten wirft.",
       "title": "block.openblocks.item_dropper"
     },
     {
-      "type": "patchouli:crafting",
-      "recipe": "openblocks:item_dropper"
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:item_dropper",
+      "recipe2": ""
     }
   ]
 }

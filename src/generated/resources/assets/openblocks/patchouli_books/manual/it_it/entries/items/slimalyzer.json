@@ -4,15 +4,15 @@
   "name": "item.openblocks.slimalyzer",
   "pages": [
     {
-      "type": "patchouli:spotlight",
+      "type": "openblocks:spotlight",
       "item": "openblocks:slimalyzer",
-      "link_recipe": true,
       "text": "Cammina attorno con lo slime-alizzatore nella tua mano ed esso si illuminerà ogni volta che ti troverai in un chunk dove appaiono Slime.",
       "title": "item.openblocks.slimalyzer"
     },
     {
-      "type": "patchouli:crafting",
-      "recipe": "openblocks:slimalyzer"
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:slimalyzer",
+      "recipe2": ""
     }
   ]
 }

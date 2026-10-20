@@ -4,14 +4,13 @@
   "name": "block.openblocks.sky",
   "pages": [
     {
-      "type": "patchouli:spotlight",
+      "type": "openblocks:spotlight",
       "item": "openblocks:sky",
-      "link_recipe": true,
       "text": "只需要给它一个红石信号,天空方块可以让你在室内看到户外的天空.此外,我们还拥有反相天空方块.",
       "title": "block.openblocks.sky"
     },
     {
-      "type": "patchouli:crafting",
+      "type": "openblocks:crafting",
       "recipe": "openblocks:sky",
       "recipe2": "openblocks:sky_from_inverted"
     }

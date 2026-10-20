@@ -4,15 +4,15 @@
   "name": "block.openblocks.sprinkler",
   "pages": [
     {
-      "type": "patchouli:spotlight",
+      "type": "openblocks:spotlight",
       "item": "openblocks:sprinkler",
-      "link_recipe": true,
       "text": "The sprinkler will help fertilize crops up to 4 blocks away. Simply place it above an OpenBlocks tank filled with water! You can also add bonemeal for an even faster rate of growth.$(br)It also acts as a water source block!",
       "title": "block.openblocks.sprinkler"
     },
     {
-      "type": "patchouli:crafting",
-      "recipe": "openblocks:sprinkler"
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:sprinkler",
+      "recipe2": ""
     }
   ]
 }

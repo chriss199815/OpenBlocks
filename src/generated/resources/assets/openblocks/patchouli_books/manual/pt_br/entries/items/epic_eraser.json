@@ -4,9 +4,8 @@
   "name": "item.openblocks.epic_eraser",
   "pages": [
     {
-      "type": "patchouli:spotlight",
+      "type": "openblocks:spotlight",
       "item": "openblocks:epic_eraser",
-      "link_recipe": true,
       "text": "Cada item tem sua própria história...$(br)$(br)Você não odeia isso?$(br)Com este item você pode limpar todos os vestígios de frases épicas de seus espólios que foram recolhidos ao longo dos anos e, em seguida, vendê-los no",
       "title": "item.openblocks.epic_eraser"
     },
@@ -15,8 +14,9 @@
       "text": "mercado negro sem se preocupar com provas."
     },
     {
-      "type": "patchouli:crafting",
-      "recipe": "openblocks:epic_eraser"
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:epic_eraser",
+      "recipe2": ""
     }
   ]
 }

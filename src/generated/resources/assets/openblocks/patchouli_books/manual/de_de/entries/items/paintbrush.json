@@ -4,9 +4,8 @@
   "name": "item.openblocks.paintbrush",
   "pages": [
     {
-      "type": "patchouli:spotlight",
+      "type": "openblocks:spotlight",
       "item": "openblocks:paintbrush",
-      "link_recipe": true,
       "text": "Pinsel lassen dich Blöcke in der Farbe deiner Wahl färben!$(br)$(br)Tauche deinen Pinsel in einen Farbeimer, den du im Farbenmischer erstellt hast, und dann auf einen Block, um diesen zu färben.$(br)$(br)Leinwand-Blöcke sind",
       "title": "item.openblocks.paintbrush"
     },
@@ -15,7 +14,7 @@
       "text": "perfekt zum anmalen, du kannst aber auch einige Vanilla- und sogar manche Mod-Blöcke färben. Du kannst auch Schablonen auf Blöcken platzieren und dann über die Schablone zeichnen!"
     },
     {
-      "type": "patchouli:crafting",
+      "type": "openblocks:crafting",
       "recipe": "openblocks:paintbrush",
       "recipe2": "openblocks:paintbrush_white"
     }

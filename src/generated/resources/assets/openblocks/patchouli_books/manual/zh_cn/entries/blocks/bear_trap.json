@@ -4,15 +4,15 @@
   "name": "block.openblocks.bear_trap",
   "pages": [
     {
-      "type": "patchouli:spotlight",
+      "type": "openblocks:spotlight",
       "item": "openblocks:bear_trap",
-      "link_recipe": true,
       "text": "将捕兽夹放置在地上,再右键打开它,这样一来当有生物路过上方时就会被夹住动弹不得.",
       "title": "block.openblocks.bear_trap"
     },
     {
-      "type": "patchouli:crafting",
-      "recipe": "openblocks:bear_trap"
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:bear_trap",
+      "recipe2": ""
     }
   ]
 }

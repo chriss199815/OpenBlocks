@@ -4,9 +4,8 @@
   "name": "block.openblocks.heal",
   "pages": [
     {
-      "type": "patchouli:spotlight",
+      "type": "openblocks:spotlight",
       "item": "openblocks:heal",
-      "link_recipe": true,
       "text": "只有在创造模式下才能得到治愈方块,它会为站在上方的玩家提供轻微的治疗效果.",
       "title": "block.openblocks.heal"
     }

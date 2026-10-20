@@ -4,15 +4,15 @@
   "name": "block.openblocks.sponge",
   "pages": [
     {
-      "type": "patchouli:spotlight",
+      "type": "openblocks:spotlight",
       "item": "openblocks:sponge",
-      "link_recipe": true,
       "text": "Esta esponja es un recambio de la esponja corriente. Perfecta para mover pequeños pozos de lava o agua. Ve con cuidado cuando lo uses en zonas de líquido amplias, se va a liar un poco gorda.",
       "title": "block.openblocks.sponge"
     },
     {
-      "type": "patchouli:crafting",
-      "recipe": "openblocks:sponge"
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:sponge",
+      "recipe2": ""
     }
   ]
 }

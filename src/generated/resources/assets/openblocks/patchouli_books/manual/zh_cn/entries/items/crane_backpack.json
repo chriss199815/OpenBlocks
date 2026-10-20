@@ -4,15 +4,15 @@
   "name": "item.openblocks.crane_backpack",
   "pages": [
     {
-      "type": "patchouli:spotlight",
+      "type": "openblocks:spotlight",
       "item": "openblocks:crane_backpack",
-      "link_recipe": true,
       "text": "在Minecraft的世界里,磁铁是一个只在远古时代才存在的词汇.$(br)这件十分有用的装备能让你拾取并搬运生物,玩家,物品或是方块.$(br)背包由起重机控制器的控制.",
       "title": "item.openblocks.crane_backpack"
     },
     {
-      "type": "patchouli:crafting",
-      "recipe": "openblocks:crane_backpack"
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:crane_backpack",
+      "recipe2": ""
     }
   ]
 }

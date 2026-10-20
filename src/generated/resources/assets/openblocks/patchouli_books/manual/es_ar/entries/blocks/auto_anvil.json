@@ -4,9 +4,8 @@
   "name": "block.openblocks.auto_anvil",
   "pages": [
     {
-      "type": "patchouli:spotlight",
+      "type": "openblocks:spotlight",
       "item": "openblocks:auto_anvil",
-      "link_recipe": true,
       "text": "El yunque automático funciona como el yunque corriente, excepto por que usa XP líquida y se puede automatizar completamente.$(br)$(br)Usa las pestañas en la parte derecha de la interfaz para seleccionar que caras",
       "title": "block.openblocks.auto_anvil"
     },
@@ -15,8 +14,9 @@
       "text": "del yunque se pueden insertar o extraer objetos y líquidos. Haz clic derecho y arrastra el yunque en la pestaña para hacerlo rodar y seleccionar otras caras."
     },
     {
-      "type": "patchouli:crafting",
-      "recipe": "openblocks:auto_anvil"
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:auto_anvil",
+      "recipe2": ""
     }
   ]
 }

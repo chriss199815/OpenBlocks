@@ -4,9 +4,8 @@
   "name": "block.openblocks.paint_mixer",
   "pages": [
     {
-      "type": "patchouli:spotlight",
+      "type": "openblocks:spotlight",
       "item": "openblocks:paint_mixer",
-      "link_recipe": true,
       "text": "O misturador de tinta pode misturar qualquer cor de tinta que você quiser! Coloque um balde de tinta ou um balde de leite no slot superior, depois, coloque os corantes ciano, magenta, amarelo e preto nos outros quatro slots e clicque",
       "title": "block.openblocks.paint_mixer"
     },
@@ -15,8 +14,9 @@
       "text": "em misturar!"
     },
     {
-      "type": "patchouli:crafting",
-      "recipe": "openblocks:paint_mixer"
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:paint_mixer",
+      "recipe2": ""
     }
   ]
 }

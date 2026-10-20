@@ -4,9 +4,8 @@
   "name": "item.openblocks.cursor",
   "pages": [
     {
-      "type": "patchouli:spotlight",
+      "type": "openblocks:spotlight",
       "item": "openblocks:cursor",
-      "link_recipe": true,
       "text": "El cursor te permitirá hacer clic en bloques de forma remota.$(br)Haz shift+clic en un bloque para enlazarlo al cursor y luego usa el cursor donde quieras para acceder al bloque. Ve con cuidado, por defecto el cursor usa tu XP en relación a cuan",
       "title": "item.openblocks.cursor"
     },
@@ -15,8 +14,9 @@
       "text": "lejos estás del bloque enlazado."
     },
     {
-      "type": "patchouli:crafting",
-      "recipe": "openblocks:cursor"
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:cursor",
+      "recipe2": ""
     }
   ]
 }

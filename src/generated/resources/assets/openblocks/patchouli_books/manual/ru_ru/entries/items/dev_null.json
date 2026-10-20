@@ -4,9 +4,8 @@
   "name": "item.openblocks.dev_null",
   "pages": [
     {
-      "type": "patchouli:spotlight",
+      "type": "openblocks:spotlight",
       "item": "openblocks:dev_null",
-      "link_recipe": true,
       "text": "Нажмите ПКМ с /dev/null в руке, чтобы открыть его инвентарь. Всего один слот - положите предмет сюда - землю, например. Когда Вы собираете землю, этот слот заполняется. Когда он заполнится, последующая земля,",
       "title": "item.openblocks.dev_null"
     },
@@ -15,8 +14,9 @@
       "text": "которую вы поднимаете, будет автоматически удаляться. Вы можете нажать shift-ПКМ с предметом в руке, как будто Вы размещаете блок!"
     },
     {
-      "type": "patchouli:crafting",
-      "recipe": "openblocks:dev_null"
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:dev_null",
+      "recipe2": ""
     }
   ]
 }

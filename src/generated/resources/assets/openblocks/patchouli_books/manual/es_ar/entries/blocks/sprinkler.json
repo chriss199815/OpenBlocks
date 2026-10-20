@@ -4,9 +4,8 @@
   "name": "block.openblocks.sprinkler",
   "pages": [
     {
-      "type": "patchouli:spotlight",
+      "type": "openblocks:spotlight",
       "item": "openblocks:sprinkler",
-      "link_recipe": true,
       "text": "El aspersor ayudará a fertilizar todas las cosechas a 4 bloques de distancia. Simplemente colócalo encima de un tanque de OpenBlocks lleno de agua. También puedes añadir polvo de hueso para un crecimiento aún más rápido.$(br)¡También actúa como",
       "title": "block.openblocks.sprinkler"
     },
@@ -15,8 +14,9 @@
       "text": "una fuente de agua!"
     },
     {
-      "type": "patchouli:crafting",
-      "recipe": "openblocks:sprinkler"
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:sprinkler",
+      "recipe2": ""
     }
   ]
 }

@@ -1,0 +1,12 @@
+{
+  "components": [
+    {
+      "type": "patchouli:custom",
+      "class": "openblocks.integration.patchouli.CraftingComponent",
+      "recipe": "#recipe#",
+      "recipe2": "#recipe2#",
+      "x": 9,
+      "y": 4
+    }
+  ]
+}

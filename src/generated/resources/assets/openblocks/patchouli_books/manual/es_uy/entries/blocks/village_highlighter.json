@@ -4,9 +4,8 @@
   "name": "block.openblocks.village_highlighter",
   "pages": [
     {
-      "type": "patchouli:spotlight",
+      "type": "openblocks:spotlight",
       "item": "openblocks:village_highlighter",
-      "link_recipe": true,
       "text": "Suelta el subrayador de aldeas en una aldea y aplicale una señal de redstone. Marcará el perimetro de la aldea y dibujará una caja en el área de invocación de golems. Útil si quieres asegurarte de que las aldeas no se mezclan unas con las otras o",
       "title": "block.openblocks.village_highlighter"
     },
@@ -15,8 +14,9 @@
       "text": "estás construyendo una granja de hierro."
     },
     {
-      "type": "patchouli:crafting",
-      "recipe": "openblocks:village_highlighter"
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:village_highlighter",
+      "recipe2": ""
     }
   ]
 }

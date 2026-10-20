@@ -4,15 +4,15 @@
   "name": "block.openblocks.xp_drain",
   "pages": [
     {
-      "type": "patchouli:spotlight",
+      "type": "openblocks:spotlight",
       "item": "openblocks:xp_drain",
-      "link_recipe": true,
       "text": "Coloca el drenador de XP encima de un tanque de Openblocks y permanece encima. Tu XP se drenará al tanque, que puede usarse con bloques como la mesa de encantamientos automática o al yunque automático.",
       "title": "block.openblocks.xp_drain"
     },
     {
-      "type": "patchouli:crafting",
-      "recipe": "openblocks:xp_drain"
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:xp_drain",
+      "recipe2": ""
     }
   ]
 }

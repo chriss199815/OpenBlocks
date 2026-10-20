@@ -1,0 +1,22 @@
+{
+  "category": "openblocks:items",
+  "icon": "openblocks:unprepared_stencil",
+  "name": "item.openblocks.unprepared_stencil",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:unprepared_stencil",
+      "text": "Sjablonen leg je op blokken en daarna verf je eroverheen met een kwast!$(br)$(br)Je kunt een blok met meerdere sjablonen verven en ze draaien door er met een lege hand op te klikken.$(br)$(br)Leg een onbewerkt",
+      "title": "item.openblocks.unprepared_stencil"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "sjabloon op een tekentafel om verschillende patronen te maken."
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:unprepared_stencil",
+      "recipe2": ""
+    }
+  ]
+}

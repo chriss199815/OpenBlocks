@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:projector",
+  "name": "block.openblocks.projector",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:projector",
+      "text": "영사기는 높이 지도를 홀로그램으로 바꿔 줍니다. 빈 지도를 넣으면(또는 지도 제작자에게 주면) 주변 지형을 그리고, 영사기 위에 지형이 떠 있는 모습으로 보여 줍니다. 화면의 화살표로 시점을 돌릴 수 있습니다.",
+      "title": "block.openblocks.projector"
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:projector",
+      "recipe2": "openblocks:projector_mirrored"
+    }
+  ]
+}

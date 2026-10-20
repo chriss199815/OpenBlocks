@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:sky",
+  "name": "block.openblocks.sky",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:sky",
+      "text": "새로운 하늘 블록으로 바깥 풍경을 실내로 들여오세요! 레드스톤 신호만 주면 됩니다. 반전된 버전도 있습니다.",
+      "title": "block.openblocks.sky"
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:sky",
+      "recipe2": "openblocks:sky_from_inverted"
+    }
+  ]
+}

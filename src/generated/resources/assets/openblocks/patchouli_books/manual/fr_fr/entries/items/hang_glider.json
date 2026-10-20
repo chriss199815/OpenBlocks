@@ -1,0 +1,22 @@
+{
+  "category": "openblocks:items",
+  "icon": "openblocks:hang_glider",
+  "name": "item.openblocks.hang_glider",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:hang_glider",
+      "text": "Le deltaplane se passe d'explications. Tenez-le en main et cliquez pour le mettre sur votre dos. Maintenant, sautez !$(br)Pour aller plus vite, appuyez sur Maj pendant le vol, mais attention, vous perdrez de l'altitude plus vite !",
+      "title": "item.openblocks.hang_glider"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Votre deltaplane comprend désormais un variomètre acoustique qui indique les mouvements verticaux de l'air. Appuyez sur V pour l'activer et restez en l'air pour toujours (ou jusqu'au coucher du soleil) !"
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:hang_glider",
+      "recipe2": ""
+    }
+  ]
+}

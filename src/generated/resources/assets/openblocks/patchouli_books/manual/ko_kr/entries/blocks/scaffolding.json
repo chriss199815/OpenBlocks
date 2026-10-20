@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:scaffolding",
+  "name": "block.openblocks.scaffolding",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:scaffolding",
+      "text": "흉한 기둥을 남기지 않고 높이 올라가고 싶었던 적 있나요? 이제 가능합니다! 비계 블록으로 쌓으면 다 쓴 뒤 저절로 사라집니다.",
+      "title": "block.openblocks.scaffolding"
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:scaffolding",
+      "recipe2": ""
+    }
+  ]
+}

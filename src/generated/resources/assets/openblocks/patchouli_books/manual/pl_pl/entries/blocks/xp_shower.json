@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:xp_shower",
+  "name": "block.openblocks.xp_shower",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:xp_shower",
+      "text": "Podłącz prysznic XP do zbiornika z płynnym XP, a zacznie wypuszczać kule XP. Zbierzesz je odpływem XP albo kanałem MFR.",
+      "title": "block.openblocks.xp_shower"
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:xp_shower",
+      "recipe2": ""
+    }
+  ]
+}

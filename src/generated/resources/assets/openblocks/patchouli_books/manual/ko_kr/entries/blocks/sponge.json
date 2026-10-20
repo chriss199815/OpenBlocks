@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:sponge",
+  "name": "block.openblocks.sponge",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:sponge",
+      "text": "바닐라 스펀지를 대신하는 스펀지입니다. 작은 용암이나 물웅덩이를 없애는 데 딱 좋습니다. 넓은 액체에 쓰면 꽤 지저분해질 수 있으니 조심하세요.",
+      "title": "block.openblocks.sponge"
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:sponge",
+      "recipe2": ""
+    }
+  ]
+}

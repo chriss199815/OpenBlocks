@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:block_placer",
+  "name": "block.openblocks.block_placer",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:block_placer",
+      "text": "Avec une impulsion de redstone, le poseur de blocs pose un objet dans la direction vers laquelle il est tourné.",
+      "title": "block.openblocks.block_placer"
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:block_placer",
+      "recipe2": ""
+    }
+  ]
+}

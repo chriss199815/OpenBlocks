@@ -1,0 +1,13 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:heal",
+  "name": "block.openblocks.heal",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:heal",
+      "text": "치유 블록은 크리에이티브 모드 전용 블록으로, 시간이 지나면서 조금씩 체력을 회복시켜 줍니다.",
+      "title": "block.openblocks.heal"
+    }
+  ]
+}

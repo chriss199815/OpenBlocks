@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:items",
+  "icon": "openblocks:crane_control",
+  "name": "item.openblocks.crane_control",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:crane_control",
+      "text": "See kõrgtehnoloogiline juhtmevaba pult juhib magnetseljakotte.$(br)$(br)Paremklõps tõstab, kükitamine + paremklõps langetab, vasakklõps haarab/vabastab.$(br)Vilkuv tuli näitab, et magneti all on midagi.",
+      "title": "item.openblocks.crane_control"
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:crane_control",
+      "recipe2": ""
+    }
+  ]
+}

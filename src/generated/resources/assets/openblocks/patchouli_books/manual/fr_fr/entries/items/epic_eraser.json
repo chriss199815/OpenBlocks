@@ -1,0 +1,22 @@
+{
+  "category": "openblocks:items",
+  "icon": "openblocks:epic_eraser",
+  "name": "item.openblocks.epic_eraser",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:epic_eraser",
+      "text": "Chaque objet a sa propre histoire...$(br)$(br)Vous détestez ça, non ?$(br)Avec cet objet, vous pouvez effacer toute trace de l'histoire épique que votre butin a accumulée au fil des ans, puis le vendre au marché noir sans",
+      "title": "item.openblocks.epic_eraser"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "craindre les preuves."
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:epic_eraser",
+      "recipe2": ""
+    }
+  ]
+}

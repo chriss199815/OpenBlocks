@@ -1,0 +1,15 @@
+{
+  "category": "openblocks:misc",
+  "icon": "minecraft:enchanted_book",
+  "name": "openblocks.gui.laststand.title",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "De betovering Laatste verzet gebruikt je XP-balk als laatste bescherming tegen de dood.$(br)$(br)Als je nog een half hartje over hebt, neemt het spel bij elke schade XP van je af in plaats van je te doden. Hoe hoger het niveau van de betovering, hoe minder"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "XP het kost."
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:sponge",
+  "name": "block.openblocks.sponge",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:sponge",
+      "text": "Deze spons vervangt de vanilla spons. Perfect om kleine plassen lava of water weg te halen. Pas wel op bij grote hoeveelheden vloeistof, want dan wordt het een flinke rommel.",
+      "title": "block.openblocks.sponge"
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:sponge",
+      "recipe2": ""
+    }
+  ]
+}

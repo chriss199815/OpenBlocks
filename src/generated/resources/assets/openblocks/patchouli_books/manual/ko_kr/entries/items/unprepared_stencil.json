@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:items",
+  "icon": "openblocks:unprepared_stencil",
+  "name": "item.openblocks.unprepared_stencil",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:unprepared_stencil",
+      "text": "스텐실을 블록에 붙인 뒤 붓으로 그 위에 칠할 수 있습니다!$(br)$(br)여러 스텐실로 한 블록을 칠할 수 있고, 빈손으로 클릭하면 스텐실이 회전합니다.$(br)$(br)준비되지 않은 스텐실을 제도대에 넣어 여러 무늬를 만드세요.",
+      "title": "item.openblocks.unprepared_stencil"
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:unprepared_stencil",
+      "recipe2": ""
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:items",
+  "icon": "openblocks:dev_null",
+  "name": "item.openblocks.dev_null",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:dev_null",
+      "text": "/dev/null로 클릭하면 인벤토리가 열립니다. 슬롯은 하나뿐이며, 여기에 아이템(예: 흙)을 넣으세요. 흙을 주우면 이 슬롯이 채워집니다. 가득 차면 그 뒤로 줍는 흙은 자동으로 버려집니다. 블록을 설치하듯 아이템을 손에 들고 웅크린 채 클릭할 수도 있습니다!",
+      "title": "item.openblocks.dev_null"
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:dev_null",
+      "recipe2": ""
+    }
+  ]
+}

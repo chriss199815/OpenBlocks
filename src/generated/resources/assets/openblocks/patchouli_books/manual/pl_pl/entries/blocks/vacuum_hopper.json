@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:vacuum_hopper",
+  "name": "block.openblocks.vacuum_hopper",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:vacuum_hopper",
+      "text": "Lej próżniowy wsysa przedmioty i kule XP dookoła. Zakładkami po prawej stronie interfejsu wybierzesz strony wyjścia.",
+      "title": "block.openblocks.vacuum_hopper"
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:vacuum_hopper",
+      "recipe2": ""
+    }
+  ]
+}

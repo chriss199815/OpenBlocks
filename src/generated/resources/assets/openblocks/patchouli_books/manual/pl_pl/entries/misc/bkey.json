@@ -1,0 +1,15 @@
+{
+  "category": "openblocks:misc",
+  "icon": "openblocks:tasty_clay",
+  "name": "openblocks.gui.bkey.title",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Klawisz 'B' to bardzo wyjątkowy klawisz w OpenBlocks.$(br)$(br)Ustaw opcję 'weAreSeriousPeople' w kategorii 'tomfoolery' wspólnego pliku konfiguracyjnego na false, a dostaniesz własny układ trawienny.$(br)$(br)Zjedz trochę tej"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "smacznej gliny i naciśnij 'B', żeby ją strawić!"
+    }
+  ]
+}

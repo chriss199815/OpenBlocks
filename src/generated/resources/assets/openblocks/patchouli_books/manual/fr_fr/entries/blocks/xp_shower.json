@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:xp_shower",
+  "name": "block.openblocks.xp_shower",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:xp_shower",
+      "text": "Fixez une douche d'XP à un réservoir de jus d'XP et elle déversera des orbes d'XP. Ces orbes peuvent être récupérés par un drain d'XP ou un égout MFR.",
+      "title": "block.openblocks.xp_shower"
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:xp_shower",
+      "recipe2": ""
+    }
+  ]
+}

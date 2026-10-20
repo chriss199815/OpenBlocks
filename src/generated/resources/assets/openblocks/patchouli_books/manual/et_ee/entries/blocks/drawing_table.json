@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:drawing_table",
+  "name": "block.openblocks.drawing_table",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:drawing_table",
+      "text": "Joonestuslaual tehakse šabloone, mida saab maalimisel kasutada. Pane joonestuslauale ettevalmistamata šabloon ja vali nooltega soovitud šabloon!",
+      "title": "block.openblocks.drawing_table"
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:drawing_table",
+      "recipe2": ""
+    }
+  ]
+}

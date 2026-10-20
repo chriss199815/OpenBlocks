@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:white_elevator_rotating",
+  "name": "block.openblocks.elevator_rotating",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:white_elevator_rotating,openblocks:orange_elevator_rotating,openblocks:magenta_elevator_rotating,openblocks:light_blue_elevator_rotating,openblocks:yellow_elevator_rotating,openblocks:lime_elevator_rotating,openblocks:pink_elevator_rotating,openblocks:gray_elevator_rotating,openblocks:light_gray_elevator_rotating,openblocks:cyan_elevator_rotating,openblocks:purple_elevator_rotating,openblocks:blue_elevator_rotating,openblocks:brown_elevator_rotating,openblocks:green_elevator_rotating,openblocks:red_elevator_rotating,openblocks:black_elevator_rotating",
+      "text": "일반 엘리베이터처럼 작동하지만 방향도 돌려 줍니다. 순간이동한 뒤에는 도착한 엘리베이터의 앞면과 같은 방향을 보게 됩니다. 설치할 때 앞면은 당신 쪽을 향합니다.$(br)$(br)회전 엘리베이터는 같은 색의 일반 엘리베이터와 연결되므로, 방향이 중요한 곳에만 쓰면 됩니다.",
+      "title": "block.openblocks.elevator_rotating"
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:white_elevator_rotating,openblocks:orange_elevator_rotating,openblocks:magenta_elevator_rotating,openblocks:light_blue_elevator_rotating,openblocks:yellow_elevator_rotating,openblocks:lime_elevator_rotating,openblocks:pink_elevator_rotating,openblocks:gray_elevator_rotating,openblocks:light_gray_elevator_rotating,openblocks:cyan_elevator_rotating,openblocks:purple_elevator_rotating,openblocks:blue_elevator_rotating,openblocks:brown_elevator_rotating,openblocks:green_elevator_rotating,openblocks:red_elevator_rotating,openblocks:black_elevator_rotating",
+      "recipe2": ""
+    }
+  ]
+}

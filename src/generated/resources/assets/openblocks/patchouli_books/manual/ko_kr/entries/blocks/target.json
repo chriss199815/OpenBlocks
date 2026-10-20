@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:target",
+  "name": "block.openblocks.target",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:target",
+      "text": "과녁은 플레이어가 얼마나 정확하게 맞혔는지에 따라 레드스톤 신호를 내보냅니다. 과녁에 레드스톤 신호를 주면 세워집니다!",
+      "title": "block.openblocks.target"
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:target",
+      "recipe2": ""
+    }
+  ]
+}

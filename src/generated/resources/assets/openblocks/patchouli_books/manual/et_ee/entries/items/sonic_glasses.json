@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:items",
+  "icon": "openblocks:sonic_glasses",
+  "name": "item.openblocks.sonic_glasses",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:sonic_glasses",
+      "text": "Esitleme fantastilisi uusi heliprille!$(br)See uus ja põnev tehnoloogia ettevõttelt OpenMods Inc laseb sul näha seda, mida kuuled!",
+      "title": "item.openblocks.sonic_glasses"
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:sonic_glasses",
+      "recipe2": ""
+    }
+  ]
+}

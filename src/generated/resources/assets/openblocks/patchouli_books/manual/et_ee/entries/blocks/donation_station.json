@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:donation_station",
+  "name": "block.openblocks.donation_station",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:donation_station",
+      "text": "Armastad mõnda plokki või eset ja tahad modi arendajat tänada? Pane see annetusjaama ja kui me teame autori annetuslehte, anname sulle lingi.",
+      "title": "block.openblocks.donation_station"
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:donation_station",
+      "recipe2": ""
+    }
+  ]
+}

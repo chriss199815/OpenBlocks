@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:item_dropper",
+  "name": "block.openblocks.item_dropper",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:item_dropper",
+      "text": "Esemeheitja sarnaneb vanilla väljastajaga, aga heidab esemeid ilma juhusliku kõrvalekaldeta. Heidetud esemete kiirust saab juhtida liidesest ja punakivisignaaliga.",
+      "title": "block.openblocks.item_dropper"
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:item_dropper",
+      "recipe2": ""
+    }
+  ]
+}

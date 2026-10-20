@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:big_button",
+  "name": "block.openblocks.big_button",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:big_button",
+      "text": "De grote knop is een grote knop die je op muren kunt plaatsen. Klik je sluipend met een lege hand op de knop, dan opent een inventaris. Voorwerpen die je daarin legt, verlengen hoe lang de knop ingedrukt blijft: één voorwerp is één tick langer.",
+      "title": "block.openblocks.big_button"
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:big_button",
+      "recipe2": ""
+    }
+  ]
+}

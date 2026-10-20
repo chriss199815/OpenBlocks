@@ -5,11 +5,11 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "Il tasto 'B' è un tasto molto speciale in OpenBlocks.$(br)$(br)L'abilitazione dell'opzione di configurazione 'weAreSeriousPeople' nella categoria 'tomfoolery' sia nel file di configurazione del client sia in quello del server ti darà il tuo personale sistema"
+      "text": "Il tasto 'B' è un tasto molto speciale in OpenBlocks.$(br)$(br)Impostando su false l'opzione 'weAreSeriousPeople' nella categoria 'tomfoolery' del file di configurazione comune otterrai un tuo apparato digerente personale.$(br)"
     },
     {
       "type": "patchouli:text",
-      "text": "digestivo.$(br)$(br)Prova a mangiare un po' di quella gustosa argilla e poi premi 'B' per digerire!"
+      "text": "Prova a mangiare un po' di quella gustosa argilla e premi 'B' per digerirla!"
     }
   ]
 }

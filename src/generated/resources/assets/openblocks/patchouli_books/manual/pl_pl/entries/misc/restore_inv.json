@@ -1,0 +1,19 @@
+{
+  "category": "openblocks:misc",
+  "icon": "minecraft:chest",
+  "name": "openblocks.gui.restore_inv.title",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Każdy popełnia błędy, ale komendą $(l)/ob_inventory$() niektóre z nich da się naprawić. Służy ona do przywracania ekwipunku. Kopia zapasowa powstaje, gdy:$(br) - gracz zginie$(br) - pojawi się grób$(br) - gracz wpisze komendę $(l)/ob_inventory $()"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l)store$()$(br)$(br)Do przywrócenia ekwipunku potrzebna jest nazwa kopii. Poszukaj w folderze $(l)data$() świata plików o nazwie $(l)inventory-*.dat$(). Potem przywróć ekwipunek komendą $(l)/ob_inventory restore <gracz> <id>$(), gdzie id to pełna nazwa pliku albo tylko jej środkowa część, bez $(l)inventory-$() i $(l).dat$(). Działa też"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "uzupełnianie klawiszem Tab. Kopie to zwykłe pliki NBT i można je otworzyć dowolnym edytorem."
+    }
+  ]
+}

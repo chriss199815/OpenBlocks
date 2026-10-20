@@ -1,0 +1,22 @@
+{
+  "category": "openblocks:items",
+  "icon": "openblocks:paintbrush",
+  "name": "item.openblocks.paintbrush",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:paintbrush",
+      "text": "붓으로 블록을 원하는 색으로 칠할 수 있습니다!$(br)$(br)페인트 혼합기로 만든 페인트 통에 붓을 찍은 뒤 블록을 클릭해 칠하세요.$(br)$(br)캔버스 블록이 칠하기에 가장 좋지만, 꽤 많은 바닐라 블록과 다른 모드의 일부 블록도 칠할 수 있습니다. 블록에 스텐실을 붙이고 그 위",
+      "title": "item.openblocks.paintbrush"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "에 칠할 수도 있습니다!"
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:paintbrush",
+      "recipe2": "openblocks:paintbrush_white"
+    }
+  ]
+}

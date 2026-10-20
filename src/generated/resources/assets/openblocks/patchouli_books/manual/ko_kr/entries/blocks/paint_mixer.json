@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:paint_mixer",
+  "name": "block.openblocks.paint_mixer",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:paint_mixer",
+      "text": "페인트 혼합기로 원하는 색의 페인트를 만들 수 있습니다! 맨 위 슬롯에 기존 페인트 통이나 우유 양동이를 넣고, 나머지 네 슬롯에 청록색, 자홍색, 노란색, 검은색 염료를 넣은 뒤 섞기를 누르세요!",
+      "title": "block.openblocks.paint_mixer"
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:paint_mixer",
+      "recipe2": ""
+    }
+  ]
+}

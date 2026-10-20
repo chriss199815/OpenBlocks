@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:fan",
+  "name": "block.openblocks.fan",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:fan",
+      "text": "선풍기는 바라보는 방향으로 플레이어, 몹, 엔티티를 날려 보냅니다.",
+      "title": "block.openblocks.fan"
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:fan",
+      "recipe2": ""
+    }
+  ]
+}

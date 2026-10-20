@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:xp_drain",
+  "name": "block.openblocks.xp_drain",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:xp_drain",
+      "text": "경험치 배수구를 OpenBlocks 탱크 위에 설치하고 그 위에 서세요. 경험치가 탱크로 빠져나가며, 이 경험치는 자동 마법 부여대나 자동 모루 같은 블록에 쓸 수 있습니다.",
+      "title": "block.openblocks.xp_drain"
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:xp_drain",
+      "recipe2": ""
+    }
+  ]
+}

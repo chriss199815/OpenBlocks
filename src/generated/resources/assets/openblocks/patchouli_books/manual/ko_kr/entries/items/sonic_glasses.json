@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:items",
+  "icon": "openblocks:sonic_glasses",
+  "name": "item.openblocks.sonic_glasses",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:sonic_glasses",
+      "text": "환상적인 새 음파 안경을 소개합니다!$(br)OpenMods 주식회사의 새롭고 흥미진진한 기술로 듣는 것을 볼 수 있습니다!",
+      "title": "item.openblocks.sonic_glasses"
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:sonic_glasses",
+      "recipe2": ""
+    }
+  ]
+}

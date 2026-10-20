@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:canvas",
+  "name": "block.openblocks.canvas",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:canvas",
+      "text": "Lõuend on täiesti valge plokk, mis sobib ideaalselt maalimiseks. Värvide tegemise kohta vaata värvisegajat.",
+      "title": "block.openblocks.canvas"
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:canvas",
+      "recipe2": ""
+    }
+  ]
+}

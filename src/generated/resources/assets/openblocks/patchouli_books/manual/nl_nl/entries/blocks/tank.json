@@ -1,0 +1,22 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:tank",
+  "name": "block.openblocks.tank",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:tank",
+      "text": "Tanks kunnen vloeistoffen bevatten. Zet je tanks naast elkaar, dan verdelen ze hun vloeistof onderling. Je kunt vloeistof in tanks doen met emmers. Bevat de tank XP-sap, klik er dan met een lege hand op om wat XP te krijgen. Als je tanks",
+      "title": "block.openblocks.tank"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "kapotmaakt, houden ze hun vloeistof."
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:tank",
+      "recipe2": ""
+    }
+  ]
+}

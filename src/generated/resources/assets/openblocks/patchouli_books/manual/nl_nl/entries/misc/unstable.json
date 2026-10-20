@@ -1,0 +1,11 @@
+{
+  "category": "openblocks:misc",
+  "icon": "minecraft:enchanted_book",
+  "name": "openblocks.gui.unstable.title",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "We hebben onbevestigde berichten gekregen dat deze betovering al het buskruit dat je bij je hebt instabiel maakt als je wordt aangevallen of ergens vanaf springt.$(br)$(br)Gebruik op eigen risico!"
+    }
+  ]
+}

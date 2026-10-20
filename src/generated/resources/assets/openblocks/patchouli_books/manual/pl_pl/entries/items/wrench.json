@@ -1,0 +1,22 @@
+{
+  "category": "openblocks:items",
+  "icon": "openblocks:wrench",
+  "name": "item.openblocks.wrench",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:wrench",
+      "text": "To niezwykle wyrafinowane narzędzie do przekształcania obiektów o symetrii oktaedrycznej.$(br)$(br)$(br)Albo po prostu wielki, głupi kawał metalu do obracania sześcianów i innych rzeczy.",
+      "title": "item.openblocks.wrench"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "No tak, to kolejny klucz. Próbuję tylko być oryginalny, dobra?"
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:wrench",
+      "recipe2": ""
+    }
+  ]
+}

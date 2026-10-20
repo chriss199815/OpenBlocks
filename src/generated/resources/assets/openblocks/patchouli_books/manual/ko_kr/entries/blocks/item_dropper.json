@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:item_dropper",
+  "name": "block.openblocks.item_dropper",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:item_dropper",
+      "text": "아이템 드로퍼는 바닐라 공급기와 비슷하지만 아이템을 무작위로 흩뿌리지 않고 떨어뜨립니다. 떨어지는 속도는 화면과 레드스톤 신호로 조절할 수 있습니다.",
+      "title": "block.openblocks.item_dropper"
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:item_dropper",
+      "recipe2": ""
+    }
+  ]
+}

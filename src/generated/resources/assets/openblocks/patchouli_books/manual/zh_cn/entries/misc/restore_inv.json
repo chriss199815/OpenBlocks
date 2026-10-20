@@ -5,11 +5,11 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "要恢复玩家的物品栏状态,你需要相应的备份(会在玩家死亡,墓碑生成或是运行 $(l)/ob_inventory store$() 命令时创建).$(br)$(br)这些备份位于服务器存档文件夹里,名为  $(l)inventory-*.dat$(),用 $(l)/ob_inventory restore <player> <id>$() 命令即可恢复.$(br)$(br)$(l)id$() 既可以用文件的全名,也可"
+      "text": "每个人都会犯错，但用 $(l)/ob_inventory$() 命令可以弥补其中一些。这个命令可以恢复物品栏。以下情况会创建备份：$(br) - 玩家死亡$(br) - 生成墓碑$(br) - 玩家执行 $(l)/ob_inventory store$() 命令$(br)$(br)恢复物品栏需要备份的名称。在世界的 $(l)data$() 文件夹中查找名为 $(l)inventory-$()"
     },
     {
       "type": "patchouli:text",
-      "text": "以只是 $(l)*$() 的部分,输入时支持TAB自动补全."
+      "text": "$(l)*.dat$() 的文件。然后用 $(l)/ob_inventory restore <玩家> <id>$() 恢复物品栏，id 可以是完整的文件名，也可以只是去掉 $(l)inventory-$() 和 $(l).dat$() 的中间部分。也可以用 Tab 键自动补全。备份是普通的 NBT 文件，可以用任何编辑器打开。"
     }
   ]
 }

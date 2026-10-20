@@ -1,0 +1,22 @@
+{
+  "category": "openblocks:items",
+  "icon": "openblocks:epic_eraser",
+  "name": "item.openblocks.epic_eraser",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:epic_eraser",
+      "text": "Elk voorwerp heeft zijn eigen geschiedenis...$(br)$(br)Haat je dat niet?$(br)Met dit voorwerp wis je elk spoor van de epische geschiedenis die je buit door de jaren heen heeft verzameld, en verkoop je hem daarna op de",
+      "title": "item.openblocks.epic_eraser"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "zwarte markt zonder je zorgen te maken over bewijs."
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:epic_eraser",
+      "recipe2": ""
+    }
+  ]
+}

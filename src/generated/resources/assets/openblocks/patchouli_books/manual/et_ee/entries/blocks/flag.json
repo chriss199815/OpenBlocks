@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:white_flag",
+  "name": "block.openblocks.flag",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:white_flag,openblocks:orange_flag,openblocks:magenta_flag,openblocks:light_blue_flag,openblocks:yellow_flag,openblocks:lime_flag,openblocks:pink_flag,openblocks:gray_flag,openblocks:light_gray_flag,openblocks:cyan_flag,openblocks:purple_flag,openblocks:blue_flag,openblocks:brown_flag,openblocks:green_flag,openblocks:red_flag,openblocks:black_flag",
+      "text": "Lippe saab kasutada kaunistuseks või koopast tagasitee märkimiseks. Lipp osutab suunas, kuhu sa selle asetasid, ja selle saab panna ka seinale. Kui klõpsad lipuga käes kükitades, muutub selle värv.",
+      "title": "block.openblocks.flag"
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:white_flag,openblocks:orange_flag,openblocks:magenta_flag,openblocks:light_blue_flag,openblocks:yellow_flag,openblocks:lime_flag,openblocks:pink_flag,openblocks:gray_flag,openblocks:light_gray_flag,openblocks:cyan_flag,openblocks:purple_flag,openblocks:blue_flag,openblocks:brown_flag,openblocks:green_flag,openblocks:red_flag,openblocks:black_flag",
+      "recipe2": ""
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:projector",
+  "name": "block.openblocks.projector",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:projector",
+      "text": "Projektor muudab kõrguskaardid hologrammideks. Pane sinna tühi kaart (või anna see kartograafile), et ümbrus kaardistada, ja projektor näitab maastikku enda kohal hõljumas. Liidese nooltega saad vaadet pöörata.",
+      "title": "block.openblocks.projector"
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:projector",
+      "recipe2": "openblocks:projector_mirrored"
+    }
+  ]
+}

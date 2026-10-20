@@ -1,0 +1,15 @@
+{
+  "category": "openblocks:misc",
+  "icon": "openblocks:tasty_clay",
+  "name": "openblocks.gui.bkey.title",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "De 'B'-toets is een heel bijzondere toets in OpenBlocks.$(br)$(br)Zet de optie 'weAreSeriousPeople' in de categorie 'tomfoolery' van het gemeenschappelijke configuratiebestand op false en je krijgt je eigen spijsverteringsstelsel.$(br)"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Eet wat van die lekkere klei en druk op 'B' om te verteren!"
+    }
+  ]
+}

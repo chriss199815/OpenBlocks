@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:ladder",
+  "name": "block.openblocks.ladder",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:ladder",
+      "text": "L'échelle de jade résout le problème agaçant de devoir sauter d'une trappe en haut d'une échelle. Elle fait à la fois office de trappe et d'échelle.",
+      "title": "block.openblocks.ladder"
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:ladder",
+      "recipe2": ""
+    }
+  ]
+}

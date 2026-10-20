@@ -5,7 +5,7 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "오픈블럭에서 'B(ㅠ)'키는 정말 특별한 키입니다.$(br)$(br)모든 서버/클라이언트 설정파일의 'weAreSeriousPeople' 부분의 옵션을 'tomfoolery' 로 설정하실경우 자신에게 소화시스템을 제공합니다.$(br)$(br)점토를 먹은후 'B(ㅠ)'키를 눌러보세요!"
+      "text": "'B' 키는 OpenBlocks에서 아주 특별한 키입니다.$(br)$(br)공통 설정 파일의 'tomfoolery' 항목에서 'weAreSeriousPeople' 옵션을 false로 바꾸면 나만의 소화 기관이 생깁니다.$(br)$(br)맛있는 점토를 먹고 'B'를 눌러 소화해 보세요!"
     }
   ]
 }

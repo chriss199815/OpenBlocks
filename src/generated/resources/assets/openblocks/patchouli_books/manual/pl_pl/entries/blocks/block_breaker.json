@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:block_breaker",
+  "name": "block.openblocks.block_breaker",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:block_breaker",
+      "text": "Po impulsie redstone niszczarka bloków niszczy blok przed sobą.",
+      "title": "block.openblocks.block_breaker"
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:block_breaker",
+      "recipe2": ""
+    }
+  ]
+}

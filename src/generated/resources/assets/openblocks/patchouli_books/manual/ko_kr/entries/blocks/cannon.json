@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:cannon",
+  "name": "block.openblocks.cannon",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:cannon",
+      "text": "레드스톤 신호를 받으면 아이템 대포가 옆에 있는 인벤토리의 아이템을 발사합니다. '포인터' 아이템으로 대포를 조준하세요.",
+      "title": "block.openblocks.cannon"
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:cannon",
+      "recipe2": ""
+    }
+  ]
+}

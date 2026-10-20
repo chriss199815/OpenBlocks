@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:item_dropper",
+  "name": "block.openblocks.item_dropper",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:item_dropper",
+      "text": "De voorwerpdropper lijkt op de vanilla dropper, maar laat voorwerpen vallen zonder willekeurige afwijking. De snelheid van de voorwerpen stel je in via het scherm en met redstonestroom.",
+      "title": "block.openblocks.item_dropper"
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:item_dropper",
+      "recipe2": ""
+    }
+  ]
+}

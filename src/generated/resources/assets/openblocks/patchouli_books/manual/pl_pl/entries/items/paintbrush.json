@@ -1,0 +1,22 @@
+{
+  "category": "openblocks:items",
+  "icon": "openblocks:paintbrush",
+  "name": "item.openblocks.paintbrush",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:paintbrush",
+      "text": "Pędzle pozwalają malować bloki na dowolny kolor!$(br)$(br)Zanurz pędzel w puszce farby zrobionej w mikserze farby, a potem kliknij blok, żeby go pomalować.$(br)$(br)Bloki płótna są idealne",
+      "title": "item.openblocks.paintbrush"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "do malowania, ale da się też malować sporo bloków z vanilli, a nawet niektóre bloki z innych modów. Możesz też położyć na bloku szablon i malować po nim!"
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:paintbrush",
+      "recipe2": "openblocks:paintbrush_white"
+    }
+  ]
+}

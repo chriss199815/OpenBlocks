@@ -5,11 +5,11 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "La tecla 'B' es una tecla muy especial en OpenBlocks.$(br)$(br)Habilitar la opción de configuración 'weAreSeriousPeople' en la categoría 'tomfoolery' de los archivos de configuración de tanto el cliente como el server, te proporcionará tu"
+      "text": "La tecla 'B' es una tecla muy especial en OpenBlocks.$(br)$(br)Si pones la opción 'weAreSeriousPeople' de la categoría 'tomfoolery' del archivo de configuración común en false, tendrás tu propio sistema digestivo.$(br)"
     },
     {
       "type": "patchouli:text",
-      "text": "propio aparato digestivo.$(br)$(br)¡Prueba a comer algo de esa deliciosa arcilla y pulsa 'B' para digerirla!"
+      "text": "¡Prueba a comer un poco de esa arcilla sabrosa y pulsa 'B' para digerirla!"
     }
   ]
 }

@@ -1,0 +1,22 @@
+{
+  "category": "openblocks:items",
+  "icon": "openblocks:dev_null",
+  "name": "item.openblocks.dev_null",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:dev_null",
+      "text": "Klik met /dev/null om de inventaris te openen. Er is één vak: leg er een voorwerp in, bijvoorbeeld aarde. Als je aarde verzamelt, vult dit vak zich. Is het vol, dan wordt alle verdere aarde die je oppakt automatisch weggegooid. Je kunt",
+      "title": "item.openblocks.dev_null"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "ook sluipend klikken met het voorwerp in je hand alsof je het blok plaatst!"
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:dev_null",
+      "recipe2": ""
+    }
+  ]
+}

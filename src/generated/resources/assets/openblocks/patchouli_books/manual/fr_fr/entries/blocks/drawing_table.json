@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:drawing_table",
+  "name": "block.openblocks.drawing_table",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:drawing_table",
+      "text": "La table à dessin sert à créer des pochoirs utilisables en peinture. Placez un pochoir vierge dans la table, puis choisissez le motif avec les flèches !",
+      "title": "block.openblocks.drawing_table"
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:drawing_table",
+      "recipe2": ""
+    }
+  ]
+}

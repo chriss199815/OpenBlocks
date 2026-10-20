@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:vacuum_hopper",
+  "name": "block.openblocks.vacuum_hopper",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:vacuum_hopper",
+      "text": "L'entonnoir aspirant aspire les objets et les orbes d'XP autour de lui. Les onglets à droite de l'interface permettent de choisir les côtés de sortie.",
+      "title": "block.openblocks.vacuum_hopper"
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:vacuum_hopper",
+      "recipe2": ""
+    }
+  ]
+}

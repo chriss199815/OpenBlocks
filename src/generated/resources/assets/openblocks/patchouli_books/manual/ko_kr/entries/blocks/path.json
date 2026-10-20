@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:path",
+  "name": "block.openblocks.path",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:path",
+      "text": "길은 아무 기능도 없습니다. 그냥 보기 좋을 뿐!",
+      "title": "block.openblocks.path"
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:path",
+      "recipe2": ""
+    }
+  ]
+}

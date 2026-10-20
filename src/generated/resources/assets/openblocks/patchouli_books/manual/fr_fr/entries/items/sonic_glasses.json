@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:items",
+  "icon": "openblocks:sonic_glasses",
+  "name": "item.openblocks.sonic_glasses",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:sonic_glasses",
+      "text": "Découvrez les fantabuleuses nouvelles lunettes soniques !$(br)Cette nouvelle technologie passionnante d'OpenMods Inc. vous permet de voir ce que vous entendez !",
+      "title": "item.openblocks.sonic_glasses"
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:sonic_glasses",
+      "recipe2": ""
+    }
+  ]
+}

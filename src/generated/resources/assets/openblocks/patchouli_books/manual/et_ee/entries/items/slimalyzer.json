@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:items",
+  "icon": "openblocks:slimalyzer",
+  "name": "item.openblocks.slimalyzer",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:slimalyzer",
+      "text": "Kõnni ringi, limaanalüsaator käes, ja see süttib, kui oled chunkis, kus tekivad limukad.",
+      "title": "item.openblocks.slimalyzer"
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:slimalyzer",
+      "recipe2": ""
+    }
+  ]
+}

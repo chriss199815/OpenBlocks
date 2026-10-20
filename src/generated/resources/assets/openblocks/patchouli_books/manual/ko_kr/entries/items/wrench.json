@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:items",
+  "icon": "openblocks:wrench",
+  "name": "item.openblocks.wrench",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:wrench",
+      "text": "팔면체 대칭을 가진 물체를 변환하는 매우 정교한 도구입니다.$(br)$(br)$(br)아니면 그냥 큐브 같은 걸 돌리는 크고 멍청한 쇳덩이죠.$(br)$(br)네, 또 하나의 렌치입니다. 독창적이려고 애쓰는 중이라고요, 알겠죠?",
+      "title": "item.openblocks.wrench"
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:wrench",
+      "recipe2": ""
+    }
+  ]
+}

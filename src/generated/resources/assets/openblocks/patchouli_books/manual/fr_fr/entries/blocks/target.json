@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:target",
+  "name": "block.openblocks.target",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:target",
+      "text": "La cible émet un signal de redstone dont la puissance dépend de la précision du tir du joueur. Donnez-lui un signal de redstone pour la faire se lever !",
+      "title": "block.openblocks.target"
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:target",
+      "recipe2": ""
+    }
+  ]
+}

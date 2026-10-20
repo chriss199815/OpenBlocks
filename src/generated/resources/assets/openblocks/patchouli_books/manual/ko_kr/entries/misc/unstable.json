@@ -5,7 +5,7 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "We've had unconfirmed reports that this enchantment causes any gunpowder you're carrying to become unstable when you're attacked or when you jump off something.$(br)$(br)위급할때 사용하세요!"
+      "text": "확인되지 않은 소문에 따르면, 이 마법이 걸려 있으면 공격받거나 높은 곳에서 뛰어내릴 때 갖고 있던 화약이 불안정해진다고 합니다.$(br)$(br)사용에 따른 책임은 본인에게 있습니다!"
     }
   ]
 }

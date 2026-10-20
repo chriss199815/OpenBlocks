@@ -1,0 +1,15 @@
+{
+  "category": "openblocks:misc",
+  "icon": "minecraft:chest",
+  "name": "openblocks.gui.restore_inv.title",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "누구나 실수를 합니다. 하지만 $(l)/ob_inventory$() 명령어로 일부는 되돌릴 수 있습니다. 이 명령어는 인벤토리를 복원하는 데 쓰입니다. 백업은 다음과 같을 때 만들어집니다:$(br) - 플레이어가 죽었을 때$(br) - 무덤이 생겼을 때$(br) - 플레이어가 $(l)/ob_inventory store$() 명령어를 실행했을 때$(br)"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "인벤토리를 복원하려면 백업 이름이 필요합니다. 월드의 $(l)data$() 폴더에서 $(l)inventory-*.dat$() 이름의 파일을 찾으세요. 그다음 $(l)/ob_inventory restore <플레이어> <id>$() 로 복원합니다. id는 전체 파일 이름이거나, $(l)inventory-$() 와 $(l).dat$() 를 뺀 가운데 부분입니다. Tab 자동 완성도 쓸 수 있습니다. 백업은 일반 NBT 파일이라 아무 편집기로나 열 수 있습니다."
+    }
+  ]
+}

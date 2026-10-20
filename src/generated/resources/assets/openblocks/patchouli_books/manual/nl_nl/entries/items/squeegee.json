@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:items",
+  "icon": "openblocks:squeegee",
+  "name": "item.openblocks.squeegee",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:squeegee",
+      "text": "De trekker haalt verf van geverfde blokken. Klik op de kant van het blok waarvan je de verf wilt halen, of klik sluipend om de verf van alle kanten te halen!",
+      "title": "item.openblocks.squeegee"
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:squeegee",
+      "recipe2": ""
+    }
+  ]
+}

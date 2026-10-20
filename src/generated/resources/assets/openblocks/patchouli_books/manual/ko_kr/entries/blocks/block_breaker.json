@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:block_breaker",
+  "name": "block.openblocks.block_breaker",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:block_breaker",
+      "text": "레드스톤 펄스를 받으면 블록 파괴기가 앞에 있는 블록을 부숩니다.",
+      "title": "block.openblocks.block_breaker"
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:block_breaker",
+      "recipe2": ""
+    }
+  ]
+}

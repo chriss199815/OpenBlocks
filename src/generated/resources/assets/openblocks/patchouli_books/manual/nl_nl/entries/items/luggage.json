@@ -1,0 +1,22 @@
+{
+  "category": "openblocks:items",
+  "icon": "openblocks:luggage",
+  "name": "item.openblocks.luggage",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:luggage",
+      "text": "Bagage is je nieuwe vriend. Hij volgt je overal en raapt alle voorwerpen op die hij op de grond vindt. Nom nom nom!$(br)Om hem uit elkaar te halen klik je sluipend op hem en wordt hij een voorwerp dat je kunt meenemen.$(br)Als hij door de bliksem",
+      "title": "item.openblocks.luggage"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "wordt geraakt, kan hij nog meer voorwerpen dragen!"
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:luggage",
+      "recipe2": ""
+    }
+  ]
+}

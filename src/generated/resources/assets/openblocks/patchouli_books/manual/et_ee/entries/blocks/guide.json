@@ -1,0 +1,22 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:guide",
+  "name": "block.openblocks.guide",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:guide",
+      "text": "Punakiviga toidetud ehitusjuhend näitab erineva kuju ja suurusega kummitusplokkide piirjoont, mis aitab ruume planeerida.$(br)Plokil olevate puutenuppudega saab piirjoone mõõtmeid ja kuju muuta.$(br)Märgiste värvi saab",
+      "title": "block.openblocks.guide"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "muuta, kasutades keskmisel plokil värvainet."
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:guide",
+      "recipe2": ""
+    }
+  ]
+}

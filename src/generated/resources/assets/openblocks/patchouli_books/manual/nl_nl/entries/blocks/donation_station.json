@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:donation_station",
+  "name": "block.openblocks.donation_station",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:donation_station",
+      "text": "Ben je dol op een blok of voorwerp en wil je de modmaker bedanken? Leg het in het donatiestation en als we de donatiepagina van de maker kennen, geven we je een link.",
+      "title": "block.openblocks.donation_station"
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:donation_station",
+      "recipe2": ""
+    }
+  ]
+}

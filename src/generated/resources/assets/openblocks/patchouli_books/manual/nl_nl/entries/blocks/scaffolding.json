@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:scaffolding",
+  "name": "block.openblocks.scaffolding",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:scaffolding",
+      "text": "Wilde je ooit ergens omhoog bouwen zonder een lelijke toren achter te laten? Nu kan het! Bouw gewoon met steigerblokken en ze verdwijnen vanzelf als je klaar bent.",
+      "title": "block.openblocks.scaffolding"
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:scaffolding",
+      "recipe2": ""
+    }
+  ]
+}

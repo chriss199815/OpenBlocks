@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:cannon",
+  "name": "block.openblocks.cannon",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:cannon",
+      "text": "Bij een redstonesignaal schiet het voorwerpkanon voorwerpen uit een aangrenzende inventaris. Gebruik de 'aanwijzer' om het kanon te richten.",
+      "title": "block.openblocks.cannon"
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:cannon",
+      "recipe2": ""
+    }
+  ]
+}

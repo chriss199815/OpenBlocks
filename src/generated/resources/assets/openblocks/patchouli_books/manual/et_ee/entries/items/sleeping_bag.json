@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:items",
+  "icon": "openblocks:sleeping_bag",
+  "name": "item.openblocks.sleeping_bag",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:sleeping_bag",
+      "text": "Magamiskotiga saad looduses magada ilma oma tekkepunkti muutmata. Magamiseks tee sellega öösel paremklõps.",
+      "title": "item.openblocks.sleeping_bag"
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:sleeping_bag",
+      "recipe2": ""
+    }
+  ]
+}

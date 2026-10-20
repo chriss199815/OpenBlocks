@@ -1,0 +1,22 @@
+{
+  "category": "openblocks:items",
+  "icon": "openblocks:cursor",
+  "name": "item.openblocks.cursor",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:cursor",
+      "text": "Le curseur permet de cliquer sur des blocs à distance.$(br)Faites un clic accroupi sur un bloc pour y lier le curseur, puis utilisez-le où vous voulez pour cliquer sur ce bloc. Attention, par défaut le curseur consomme de l'XP selon votre distance au bloc",
+      "title": "item.openblocks.cursor"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "cliqué."
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:cursor",
+      "recipe2": ""
+    }
+  ]
+}

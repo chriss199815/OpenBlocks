@@ -1,0 +1,22 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:builder_guide",
+  "name": "block.openblocks.builder_guide",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:builder_guide",
+      "text": "See ehitusjuhendi täiustatud versioon mitte ainult ei näita ehitamise hõlbustamiseks kummitusplokke, vaid laseb ka päris plokke asetada. Lihtsalt klõpsa keskmist plokki mis tahes plokivirnaga!$(br)Loomingurežiimis võid asetada peale",
+      "title": "block.openblocks.builder_guide"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "obsidiaaniploki ja siis lüüa ehitusjuhendit soovitud plokiga, et kuju automaatselt luua."
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:builder_guide",
+      "recipe2": ""
+    }
+  ]
+}

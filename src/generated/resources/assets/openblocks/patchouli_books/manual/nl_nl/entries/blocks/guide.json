@@ -1,0 +1,22 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:guide",
+  "name": "block.openblocks.guide",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:guide",
+      "text": "De bouwgids toont, zodra hij redstonestroom krijgt, een omtrek van spookblokken in verschillende vormen en maten die je helpt kamers te plannen.$(br)Met de aanraakknoppen op het blok verander je de afmetingen en vorm",
+      "title": "block.openblocks.guide"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "van de omtrek.$(br)De kleur van de markeringen verander je door kleurstof op het middelste blok te gebruiken."
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:guide",
+      "recipe2": ""
+    }
+  ]
+}

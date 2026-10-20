@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:white_flag",
+  "name": "block.openblocks.flag",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:white_flag,openblocks:orange_flag,openblocks:magenta_flag,openblocks:light_blue_flag,openblocks:yellow_flag,openblocks:lime_flag,openblocks:pink_flag,openblocks:gray_flag,openblocks:light_gray_flag,openblocks:cyan_flag,openblocks:purple_flag,openblocks:blue_flag,openblocks:brown_flag,openblocks:green_flag,openblocks:red_flag,openblocks:black_flag",
+      "text": "깃발은 장식용이나, 탐험한 동굴에서 돌아오는 길을 표시하는 데 쓸 수 있습니다. 깃발은 설치한 방향을 가리키며, 벽에도 붙일 수 있습니다. 깃발을 들고 웅크린 채 클릭하면 색이 바뀝니다.",
+      "title": "block.openblocks.flag"
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:white_flag,openblocks:orange_flag,openblocks:magenta_flag,openblocks:light_blue_flag,openblocks:yellow_flag,openblocks:lime_flag,openblocks:pink_flag,openblocks:gray_flag,openblocks:light_gray_flag,openblocks:cyan_flag,openblocks:purple_flag,openblocks:blue_flag,openblocks:brown_flag,openblocks:green_flag,openblocks:red_flag,openblocks:black_flag",
+      "recipe2": ""
+    }
+  ]
+}

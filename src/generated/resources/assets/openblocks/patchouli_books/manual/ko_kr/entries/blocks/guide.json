@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:guide",
+  "name": "block.openblocks.guide",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:guide",
+      "text": "건축 가이드에 레드스톤 신호를 주면 여러 모양과 크기의 유령 블록 윤곽이 나타나 방을 설계하는 데 도움이 됩니다.$(br)블록에 있는 터치 버튼으로 윤곽의 크기와 모양을 바꿀 수 있습니다.$(br)가운데 블록에 염료를 사용하면 표시 색상이 바뀝니다.",
+      "title": "block.openblocks.guide"
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:guide",
+      "recipe2": ""
+    }
+  ]
+}

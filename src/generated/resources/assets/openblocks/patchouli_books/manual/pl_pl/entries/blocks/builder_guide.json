@@ -1,0 +1,22 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:builder_guide",
+  "name": "block.openblocks.builder_guide",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:builder_guide",
+      "text": "Ta ulepszona wersja pomocnika budowania nie tylko pokazuje widmowe bloki, ale pozwala też stawiać prawdziwe. Wystarczy kliknąć środkowy blok dowolnym stosem bloków!$(br)W trybie kreatywnym możesz postawić na nim blok obsydianu, a",
+      "title": "block.openblocks.builder_guide"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "potem uderzyć pomocnika wybranym blokiem, żeby automatycznie zbudować kształt."
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:builder_guide",
+      "recipe2": ""
+    }
+  ]
+}

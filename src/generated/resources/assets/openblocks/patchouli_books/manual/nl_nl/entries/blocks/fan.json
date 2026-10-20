@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:fan",
+  "name": "block.openblocks.fan",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:fan",
+      "text": "De ventilator blaast spelers, wezens en entiteiten in de richting waarin hij wijst.",
+      "title": "block.openblocks.fan"
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:fan",
+      "recipe2": ""
+    }
+  ]
+}

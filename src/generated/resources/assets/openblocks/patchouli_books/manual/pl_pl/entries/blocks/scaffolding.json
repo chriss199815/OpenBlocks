@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:scaffolding",
+  "name": "block.openblocks.scaffolding",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:scaffolding",
+      "text": "Chcesz wejść wysoko bez zostawiania brzydkiej wieży? Teraz możesz! Buduj z bloków rusztowania, a znikną same, gdy skończysz.",
+      "title": "block.openblocks.scaffolding"
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:scaffolding",
+      "recipe2": ""
+    }
+  ]
+}

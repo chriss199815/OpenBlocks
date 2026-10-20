@@ -1,0 +1,22 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:village_highlighter",
+  "name": "block.openblocks.village_highlighter",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:village_highlighter",
+      "text": "Pane küla esiletõstja külla ja anna sellele punakivisignaal. See joonistab enda ümber voodite (sinine), töökohtade (kollane) ja kellade (magenta) piirjooned, vabana heledalt ja hõivatuna tumedalt, ning iga külaelaniku ümber tema enda värviga ala, kus",
+      "title": "block.openblocks.village_highlighter"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "ta saab raudgolemi välja kutsuda (pidevjoonega, kui ta saaks seda kohe teha). Kasulik raudfarmi ehitamisel!$(br)Selle tagakülg annab punakivisignaali, kuni külaelanike paljunemiseks on vaba voodi."
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:village_highlighter",
+      "recipe2": ""
+    }
+  ]
+}

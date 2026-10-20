@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:cannon",
+  "name": "block.openblocks.cannon",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:cannon",
+      "text": "Po otrzymaniu sygnału redstone armatka wystrzeliwuje przedmioty z sąsiedniego ekwipunku. Do celowania użyj 'wskaźnika'.",
+      "title": "block.openblocks.cannon"
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:cannon",
+      "recipe2": ""
+    }
+  ]
+}

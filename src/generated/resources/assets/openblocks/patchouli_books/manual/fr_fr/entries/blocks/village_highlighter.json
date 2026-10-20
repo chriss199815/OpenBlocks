@@ -1,0 +1,22 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:village_highlighter",
+  "name": "block.openblocks.village_highlighter",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:village_highlighter",
+      "text": "Posez le surligneur de village dans un village et donnez-lui un signal de redstone. Il entoure les lits (bleu), les postes de travail (jaune) et les cloches (magenta) autour de lui, en clair quand ils sont libres et en foncé quand ils sont pris, et dessine autour",
+      "title": "block.openblocks.village_highlighter"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "de chaque villageois, dans sa propre couleur, la zone où il peut invoquer un golem de fer (en plein quand il pourrait le faire maintenant). Pratique pour construire une ferme à fer !$(br)Son dos émet un signal de redstone tant qu'un lit est libre pour que les villageois se reproduisent."
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:village_highlighter",
+      "recipe2": ""
+    }
+  ]
+}

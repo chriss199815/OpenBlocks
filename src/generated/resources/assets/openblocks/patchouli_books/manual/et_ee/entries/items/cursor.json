@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:items",
+  "icon": "openblocks:cursor",
+  "name": "item.openblocks.cursor",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:cursor",
+      "text": "Kursoriga saab plokke eemalt klõpsata.$(br)Klõpsa plokki kükitades, et kursor sellega siduda, ja kasuta siis kursorit kus tahes, et seda plokki klõpsata. Hoiatus: vaikimisi kulutab kursor XP-d vastavalt sellele, kui kaugel sa klõpsatavast plokist oled.",
+      "title": "item.openblocks.cursor"
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:cursor",
+      "recipe2": ""
+    }
+  ]
+}

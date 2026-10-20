@@ -1,0 +1,22 @@
+{
+  "category": "openblocks:items",
+  "icon": "openblocks:paintbrush",
+  "name": "item.openblocks.paintbrush",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:paintbrush",
+      "text": "Met kwasten verf je blokken in elke kleur die je wilt!$(br)$(br)Doop je kwast in een verfblik uit de verfmenger en klik dan op een blok om het te verven.$(br)$(br)Canvasblokken zijn perfect om te verven,",
+      "title": "item.openblocks.paintbrush"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "maar je kunt ook flink wat vanilla blokken en zelfs sommige blokken van andere mods verven. Je kunt ook sjablonen op blokken leggen en eroverheen verven!"
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:paintbrush",
+      "recipe2": "openblocks:paintbrush_white"
+    }
+  ]
+}

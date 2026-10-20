@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:items",
+  "icon": "openblocks:cursor",
+  "name": "item.openblocks.cursor",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:cursor",
+      "text": "커서를 쓰면 멀리 있는 블록을 클릭할 수 있습니다.$(br)블록에 웅크린 채 클릭해 커서를 연결한 다음, 어디서든 커서를 사용하면 그 블록을 클릭합니다. 기본적으로 클릭하는 블록과의 거리에 따라 경험치가 소모되니 주의하세요.",
+      "title": "item.openblocks.cursor"
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:cursor",
+      "recipe2": ""
+    }
+  ]
+}

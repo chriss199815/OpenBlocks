@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:items",
+  "icon": "openblocks:crane_backpack",
+  "name": "item.openblocks.crane_backpack",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:crane_backpack",
+      "text": "W świecie Minecrafta „magnes” to dawne słowo oznaczające „jak to w ogóle działa?”.$(br)$(br)Ten wyjątkowy sprzęt pozwala chwytać i przenosić stworzenia, graczy, przedmioty i bloki. Steruje się nim sterownikiem dźwigu.",
+      "title": "item.openblocks.crane_backpack"
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:crane_backpack",
+      "recipe2": ""
+    }
+  ]
+}

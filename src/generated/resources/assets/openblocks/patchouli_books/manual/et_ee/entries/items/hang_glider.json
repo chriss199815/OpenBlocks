@@ -1,0 +1,22 @@
+{
+  "category": "openblocks:items",
+  "icon": "openblocks:hang_glider",
+  "name": "item.openblocks.hang_glider",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:hang_glider",
+      "text": "Deltaplaan on iseenesestmõistetav. Hoia seda käes ja klõpsa, et see selga panna. Nüüd hüppa!$(br)Kiiruse suurendamiseks vajuta liugledes Shift, aga ettevaatust, kaotad kõrgust kiiremini!$(br)",
+      "title": "item.openblocks.hang_glider"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Su deltaplaanil on nüüd ka akustiline variomeeter, mis näitab õhu vertikaalset liikumist. Vajuta selle sisselülitamiseks V ja püsi õhus igavesti (või kuni päike loojub)!"
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:hang_glider",
+      "recipe2": ""
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:village_highlighter",
+  "name": "block.openblocks.village_highlighter",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:village_highlighter",
+      "text": "Postaw podświetlacz wioski w wiosce i daj mu sygnał redstone. Obrysuje łóżka (niebieski), miejsca pracy (żółty) i dzwony (karmazynowy) wokół siebie, jasno gdy są wolne, ciemno gdy zajęte, a wokół każdego osadnika narysuje w jego",
+      "title": "block.openblocks.village_highlighter"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "własnym kolorze obszar, w którym może przywołać żelaznego golema (linią ciągłą, gdy mógłby to zrobić teraz). Przydatne przy budowie farmy żelaza!$(br)Jego tył wysyła sygnał redstone, dopóki jest wolne łóżko do rozmnażania osadników."
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:village_highlighter",
+      "recipe2": ""
+    }
+  ]
+}

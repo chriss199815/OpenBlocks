@@ -43,7 +43,7 @@ public class BigButtonScreen extends AbstractContainerScreen<BigButtonMenu> {
 	protected void renderLabels(GuiGraphics graphics, int mouseX, int mouseY) {
 		super.renderLabels(graphics, mouseX, mouseY);
 		final int ticks = menu.getTickTime();
-		final Component total = Component.translatable("openblocks.misc.total_ticks", ticks, ticks / 20.0);
+		final Component total = Component.translatable("openblocks.misc.total_ticks", ticks, String.format("%.2f", ticks / 20.0));
 		graphics.drawString(font, total, (imageWidth - font.width(total)) / 2, 72, 0x404040, false);
 	}
 }

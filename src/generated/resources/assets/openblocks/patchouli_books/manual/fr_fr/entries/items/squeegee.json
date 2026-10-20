@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:items",
+  "icon": "openblocks:squeegee",
+  "name": "item.openblocks.squeegee",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:squeegee",
+      "text": "La raclette retire la peinture des blocs peints. Cliquez sur la face du bloc à nettoyer, ou faites un clic accroupi pour retirer la peinture de toutes les faces !",
+      "title": "item.openblocks.squeegee"
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:squeegee",
+      "recipe2": ""
+    }
+  ]
+}

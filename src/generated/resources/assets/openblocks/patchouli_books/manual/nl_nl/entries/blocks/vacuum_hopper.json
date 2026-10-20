@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:vacuum_hopper",
+  "name": "block.openblocks.vacuum_hopper",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:vacuum_hopper",
+      "text": "De vacuümtrechter zuigt voorwerpen en XP-bollen in de buurt op. Met de tabbladen rechts in het scherm kies je naar welke kanten hij uitvoert.",
+      "title": "block.openblocks.vacuum_hopper"
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:vacuum_hopper",
+      "recipe2": ""
+    }
+  ]
+}

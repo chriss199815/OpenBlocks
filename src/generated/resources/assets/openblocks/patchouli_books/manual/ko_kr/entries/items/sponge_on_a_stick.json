@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:items",
+  "icon": "openblocks:sponge_on_a_stick",
+  "name": "item.openblocks.sponge_on_a_stick",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:sponge_on_a_stick",
+      "text": "막대기에 꽂은 스펀지는 액체를 치우는 도구입니다. 스펀지와 똑같이 작동하지만 들고 다닐 수 있는 대신 닳습니다.",
+      "title": "item.openblocks.sponge_on_a_stick"
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:sponge_on_a_stick",
+      "recipe2": ""
+    }
+  ]
+}

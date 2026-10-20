@@ -1,0 +1,22 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:builder_guide",
+  "name": "block.openblocks.builder_guide",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:builder_guide",
+      "text": "Cette version améliorée du guide de construction n'affiche pas seulement des blocs fantômes pour faciliter la construction, elle permet aussi de poser de vrais blocs. Cliquez simplement sur le bloc central avec une pile de blocs !",
+      "title": "block.openblocks.builder_guide"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "En mode créatif, vous pouvez poser un bloc d'obsidienne dessus, puis frapper le guide avec le bloc de votre choix pour créer automatiquement la forme."
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:builder_guide",
+      "recipe2": ""
+    }
+  ]
+}

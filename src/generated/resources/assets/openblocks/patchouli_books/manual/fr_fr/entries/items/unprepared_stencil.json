@@ -1,0 +1,22 @@
+{
+  "category": "openblocks:items",
+  "icon": "openblocks:unprepared_stencil",
+  "name": "item.openblocks.unprepared_stencil",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:unprepared_stencil",
+      "text": "Les pochoirs se posent sur les blocs, puis on peint par-dessus avec un pinceau !$(br)$(br)Un bloc peut être peint avec plusieurs pochoirs, et un clic à main vide les fait pivoter.$(br)",
+      "title": "item.openblocks.unprepared_stencil"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Placez un pochoir vierge dans une table à dessin pour créer différents motifs."
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:unprepared_stencil",
+      "recipe2": ""
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:guide",
+  "name": "block.openblocks.guide",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:guide",
+      "text": "Pomocnik budowania zasilony redstone pokazuje zarys z widmowych bloków o różnych kształtach i rozmiarach, który pomaga zaplanować pomieszczenia.$(br)Dotykowe przyciski na bloku zmieniają wymiary i kształt zarysu.",
+      "title": "block.openblocks.guide"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Kolor znaczników zmienisz, używając barwnika na środkowym bloku."
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:guide",
+      "recipe2": ""
+    }
+  ]
+}

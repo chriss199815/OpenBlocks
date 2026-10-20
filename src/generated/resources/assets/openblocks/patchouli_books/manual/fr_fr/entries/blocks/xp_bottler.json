@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:xp_bottler",
+  "name": "block.openblocks.xp_bottler",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:xp_bottler",
+      "text": "L'embouteilleur d'XP met le jus d'XP dans des fioles en verre pour créer des fioles d'expérience.",
+      "title": "block.openblocks.xp_bottler"
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:xp_bottler",
+      "recipe2": ""
+    }
+  ]
+}

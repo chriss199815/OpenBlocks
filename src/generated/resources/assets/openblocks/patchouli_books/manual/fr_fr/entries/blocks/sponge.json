@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:sponge",
+  "name": "block.openblocks.sponge",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:sponge",
+      "text": "Cette éponge remplace l'éponge vanilla. Idéale pour éliminer de petites poches de lave ou d'eau. Attention sur de grandes étendues de liquide, cela peut vite devenir salissant.",
+      "title": "block.openblocks.sponge"
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:sponge",
+      "recipe2": ""
+    }
+  ]
+}

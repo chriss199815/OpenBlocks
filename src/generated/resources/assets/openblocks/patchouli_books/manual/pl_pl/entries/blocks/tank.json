@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:tank",
+  "name": "block.openblocks.tank",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:tank",
+      "text": "Zbiorniki przechowują płyny. Postawione obok siebie rozdzielają płyn między sobą. Płyn wlewa się do nich wiadrami. Jeśli zbiornik zawiera płynne XP, kliknij go pustą ręką, żeby dostać trochę XP. Po zniszczeniu zbiorniki zachowują swój płyn.",
+      "title": "block.openblocks.tank"
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:tank",
+      "recipe2": ""
+    }
+  ]
+}

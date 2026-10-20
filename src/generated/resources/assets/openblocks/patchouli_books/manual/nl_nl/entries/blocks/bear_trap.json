@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:bear_trap",
+  "name": "block.openblocks.bear_trap",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:bear_trap",
+      "text": "Plaats een berenval en klik erop om hem te openen. Loopt een wezen over de val, dan kan het niet meer bewegen!",
+      "title": "block.openblocks.bear_trap"
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:bear_trap",
+      "recipe2": ""
+    }
+  ]
+}

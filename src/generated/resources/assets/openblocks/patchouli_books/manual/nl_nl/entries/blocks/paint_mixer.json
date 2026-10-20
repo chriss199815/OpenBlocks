@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:paint_mixer",
+  "name": "block.openblocks.paint_mixer",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:paint_mixer",
+      "text": "De verfmenger mengt elke kleur verf die je wilt! Doe een bestaand verfblik of een emmer melk in het bovenste vak, dan cyaan, magenta, gele en zwarte kleurstof in de andere vier vakken, en klik op Mengen!",
+      "title": "block.openblocks.paint_mixer"
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:paint_mixer",
+      "recipe2": ""
+    }
+  ]
+}

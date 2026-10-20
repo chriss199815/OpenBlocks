@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:paint_mixer",
+  "name": "block.openblocks.paint_mixer",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:paint_mixer",
+      "text": "Värvisegajaga saab segada mis tahes värvi! Pane ülemisse pessa olemasolev värvipurk või piimaämber, teistesse nelja pessa tsüaan-, magenta-, kollane ja must värvaine ning klõpsa Sega!",
+      "title": "block.openblocks.paint_mixer"
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:paint_mixer",
+      "recipe2": ""
+    }
+  ]
+}

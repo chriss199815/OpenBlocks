@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:bear_trap",
+  "name": "block.openblocks.bear_trap",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:bear_trap",
+      "text": "Postaw pułapkę i kliknij ją, żeby ją otworzyć. Stworzenie, które na nią wejdzie, nie będzie mogło się ruszyć!",
+      "title": "block.openblocks.bear_trap"
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:bear_trap",
+      "recipe2": ""
+    }
+  ]
+}

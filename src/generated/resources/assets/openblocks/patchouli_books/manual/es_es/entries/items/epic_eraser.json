@@ -1,0 +1,22 @@
+{
+  "category": "openblocks:items",
+  "icon": "openblocks:epic_eraser",
+  "name": "item.openblocks.epic_eraser",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:epic_eraser",
+      "text": "Cada objeto tiene su propia historia...$(br)$(br)¿No lo odias?$(br)Con este objeto puedes borrar todo rastro de la historia épica que tu botín ha acumulado con los años y luego venderlo en el mercado negro sin preocuparte por",
+      "title": "item.openblocks.epic_eraser"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "las pruebas."
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:epic_eraser",
+      "recipe2": ""
+    }
+  ]
+}

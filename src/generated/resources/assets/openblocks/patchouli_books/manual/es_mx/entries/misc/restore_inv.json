@@ -5,15 +5,15 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "Todo el mundo puede cometer un fallo, pero con el comando $(l)/ob_inventory$() puedes arreglar alguno de ellos. Este comando se puede usar para restaurar el inventario. La copia de seguridad se crea cuando:$(br) - el jugador muere$(br) - se genera la tumba $(br) - el jugador emite el"
+      "text": "Todo el mundo puede cometer errores, pero con el comando $(l)/ob_inventory$() puedes arreglar algunos de ellos. Este comando sirve para restaurar el inventario. Se crea una copia de seguridad cuando:$(br) - el jugador muere$(br) - aparece una tumba$(br) - el jugador ejecuta"
     },
     {
       "type": "patchouli:text",
-      "text": "comando $(l)/ob_inventory store$()$(br)$(br)Para restaurar el inventario necesitas el nombre de la copia de seguridad. Ve a la carpeta de abajo o a la carpeta saves del server y busca archivos llamados $(l)inventory-*.dat$(). Después, restaura el inventario con $(l)/ob_inventory restore <jugador> $()"
+      "text": "el comando $(l)/ob_inventory store$()$(br)$(br)Para restaurar el inventario necesitas el nombre de la copia. Busca en la carpeta $(l)data$() del mundo archivos llamados $(l)inventory-*.dat$(). Después restaura el inventario con $(l)/ob_inventory restore <jugador> <id>$(), donde id es el nombre completo del"
     },
     {
       "type": "patchouli:text",
-      "text": "$(l)<id>$() - donde id es el nombre completo del archivo o solo la parte del medio, sin $(l)inventory-$() y $(l).dat$(). También puedes usar el autocompletado con el tabulador. Las copias de seguridad son archivos NBT normales y se pueden abrir con cualquier editor."
+      "text": "archivo o solo la parte central, sin $(l)inventory-$() ni $(l).dat$(). También puedes usar el autocompletado con el tabulador. Las copias son archivos NBT normales y se pueden abrir con cualquier editor."
     }
   ]
 }

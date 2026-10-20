@@ -1,0 +1,22 @@
+{
+  "category": "openblocks:items",
+  "icon": "openblocks:wrench",
+  "name": "item.openblocks.wrench",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:wrench",
+      "text": "Dit is een uiterst geavanceerd gereedschap om objecten met octaëdrische symmetrie te transformeren.$(br)$(br)$(br)Of gewoon een groot, dom stuk metaal waarmee je kubussen",
+      "title": "item.openblocks.wrench"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "en zo kunt draaien.$(br)$(br)Dus ja, het is weer een sleutel. Ik probeer hier gewoon origineel te zijn, oké?"
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:wrench",
+      "recipe2": ""
+    }
+  ]
+}

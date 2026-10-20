@@ -1,0 +1,11 @@
+{
+  "category": "openblocks:misc",
+  "icon": "minecraft:enchanted_book",
+  "name": "openblocks.gui.laststand.title",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Loits Viimane vastupanu kasutab sinu XP-riba viimase kaitsena surma vastu.$(br)$(br)Kui sul on alles pool südant, võtab mäng iga kahju korral sinult XP-d, selle asemel et sind tappa. Mida kõrgem on loitsu tase, seda vähem XP-d see maksab."
+    }
+  ]
+}

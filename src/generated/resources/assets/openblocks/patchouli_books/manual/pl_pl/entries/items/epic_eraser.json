@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:items",
+  "icon": "openblocks:epic_eraser",
+  "name": "item.openblocks.epic_eraser",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:epic_eraser",
+      "text": "Każdy przedmiot ma swoją historię...$(br)$(br)Nie znosisz tego?$(br)Tym przedmiotem zetrzesz wszelkie ślady epickiej historii, którą twoje łupy zebrały przez lata, a potem sprzedasz je na czarnym rynku bez obaw o dowody.",
+      "title": "item.openblocks.epic_eraser"
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:epic_eraser",
+      "recipe2": ""
+    }
+  ]
+}

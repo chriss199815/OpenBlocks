@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:canvas",
+  "name": "block.openblocks.canvas",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:canvas",
+      "text": "캔버스는 칠하기에 딱 좋은 새하얀 블록입니다. 페인트 만드는 법은 페인트 혼합기를 참고하세요.",
+      "title": "block.openblocks.canvas"
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:canvas",
+      "recipe2": ""
+    }
+  ]
+}

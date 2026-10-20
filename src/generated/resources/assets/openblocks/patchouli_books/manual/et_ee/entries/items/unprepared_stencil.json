@@ -1,0 +1,22 @@
+{
+  "category": "openblocks:items",
+  "icon": "openblocks:unprepared_stencil",
+  "name": "item.openblocks.unprepared_stencil",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:unprepared_stencil",
+      "text": "Šabloone saab panna plokkidele ja nende peale pintsliga värvida!$(br)$(br)Plokki saab värvida mitme šablooniga ja tühja käega klõpsates saab neid pöörata.$(br)$(br)Pane ettevalmistamata šabloon joonestuslauale, et",
+      "title": "item.openblocks.unprepared_stencil"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "luua erinevaid mustreid."
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:unprepared_stencil",
+      "recipe2": ""
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "category": "openblocks:items",
+  "icon": "openblocks:dev_null",
+  "name": "item.openblocks.dev_null",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:dev_null",
+      "text": "Klõpsa /dev/nulliga, et avada selle inventar. Seal on üks pesa: pane sinna ese, näiteks muld. Kui korjad maast mulda, see pesa täitub. Kui see on täis, visatakse iga järgmine korjatud muld automaatselt ära. Võid ka klõpsata kükitades, ese käes, nagu",
+      "title": "item.openblocks.dev_null"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "asetaksid plokki!"
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:dev_null",
+      "recipe2": ""
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:auto_anvil",
+  "name": "block.openblocks.auto_anvil",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:auto_anvil",
+      "text": "L'enclume automatique fonctionne comme l'enclume vanilla, mais avec du jus d'XP, et peut être entièrement automatisée.$(br)$(br)Les onglets à droite de l'interface permettent de choisir par quels côtés les objets ou le liquide",
+      "title": "block.openblocks.auto_anvil"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "entrent et sortent. Faites glisser l'enclume dans l'onglet avec un clic droit pour la tourner et choisir d'autres côtés !"
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:auto_anvil",
+      "recipe2": ""
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "category": "openblocks:items",
+  "icon": "openblocks:luggage",
+  "name": "item.openblocks.luggage",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:luggage",
+      "text": "Kohver on su uus sõber. Ta järgneb sulle kõikjale ja korjab üles kõik esemed, mis ta maast leiab. Namm-namm-namm!$(br)Tema lahtivõtmiseks klõpsa teda kükitades ja ta muutub esemeks, mida saad kaasas kanda.$(br)Kui teda tabab välk,",
+      "title": "item.openblocks.luggage"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "mahub temasse veelgi rohkem esemeid!"
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:luggage",
+      "recipe2": ""
+    }
+  ]
+}

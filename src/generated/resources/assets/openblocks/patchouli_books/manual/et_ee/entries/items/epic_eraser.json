@@ -1,0 +1,22 @@
+{
+  "category": "openblocks:items",
+  "icon": "openblocks:epic_eraser",
+  "name": "item.openblocks.epic_eraser",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:epic_eraser",
+      "text": "Igal esemel on oma ajalugu...$(br)$(br)Kas see sind ei ärrita?$(br)Selle esemega saad kustutada kõik jäljed eepilisest ajaloost, mille su saak on aastate jooksul kogunud, ja seejärel selle mustal turul maha müüa, ilma tõendite",
+      "title": "item.openblocks.epic_eraser"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "pärast muretsemata."
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:epic_eraser",
+      "recipe2": ""
+    }
+  ]
+}

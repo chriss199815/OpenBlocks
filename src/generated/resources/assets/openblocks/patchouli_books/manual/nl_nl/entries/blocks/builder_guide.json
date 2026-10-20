@@ -1,0 +1,22 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:builder_guide",
+  "name": "block.openblocks.builder_guide",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:builder_guide",
+      "text": "Deze verbeterde versie van de bouwgids toont niet alleen spookblokken om bouwen makkelijker te maken, maar laat je ook echte blokken plaatsen. Klik gewoon met een stapel blokken op het middelste blok!$(br)In de creatieve modus kun je er een",
+      "title": "block.openblocks.builder_guide"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "obsidiaanblok bovenop zetten en dan de bouwgids slaan met het blok van je keuze om de vorm automatisch te bouwen."
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:builder_guide",
+      "recipe2": ""
+    }
+  ]
+}

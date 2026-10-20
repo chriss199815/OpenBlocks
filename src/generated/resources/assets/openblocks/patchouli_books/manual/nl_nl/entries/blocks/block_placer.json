@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:block_placer",
+  "name": "block.openblocks.block_placer",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:block_placer",
+      "text": "Bij een redstonepuls plaatst de blokplaatser een voorwerp in de richting waarin hij wijst.",
+      "title": "block.openblocks.block_placer"
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:block_placer",
+      "recipe2": ""
+    }
+  ]
+}

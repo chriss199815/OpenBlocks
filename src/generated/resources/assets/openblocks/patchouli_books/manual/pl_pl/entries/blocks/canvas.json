@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:canvas",
+  "name": "block.openblocks.canvas",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:canvas",
+      "text": "Płótno to idealnie biały blok, świetny do malowania. Jak zrobić farby, dowiesz się przy mikserze farby.",
+      "title": "block.openblocks.canvas"
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:canvas",
+      "recipe2": ""
+    }
+  ]
+}

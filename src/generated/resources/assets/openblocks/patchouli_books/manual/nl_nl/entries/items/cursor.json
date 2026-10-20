@@ -1,0 +1,22 @@
+{
+  "category": "openblocks:items",
+  "icon": "openblocks:cursor",
+  "name": "item.openblocks.cursor",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:cursor",
+      "text": "Met de cursor klik je op afstand op blokken.$(br)Klik sluipend op een blok om de cursor te koppelen en gebruik de cursor daarna waar je maar wilt om op dat blok te klikken. Let op: standaard kost de cursor XP, afhankelijk van hoe ver je van het blok",
+      "title": "item.openblocks.cursor"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "bent."
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:cursor",
+      "recipe2": ""
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "category": "openblocks:misc",
+  "icon": "minecraft:chest",
+  "name": "openblocks.gui.restore_inv.title",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Iedereen maakt fouten, maar met het commando $(l)/ob_inventory$() kun je er een paar herstellen. Met dit commando zet je een inventaris terug. Er wordt een back-up gemaakt als:$(br) - de speler doodgaat$(br) - er een graf verschijnt$(br) - de speler het commando"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l)/ob_inventory store$() uitvoert$(br)$(br)Om een inventaris terug te zetten heb je de naam van de back-up nodig. Zoek in de map $(l)data$() van de wereld naar bestanden met de naam $(l)inventory-*.dat$(). Zet de inventaris daarna terug met $(l)/ob_inventory restore <speler> <id>$(), waarbij id de volledige"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "bestandsnaam is of alleen het middelste deel, zonder $(l)inventory-$() en $(l).dat$(). Aanvullen met Tab werkt ook. Back-ups zijn gewone NBT-bestanden en kunnen met elke editor worden geopend."
+    }
+  ]
+}

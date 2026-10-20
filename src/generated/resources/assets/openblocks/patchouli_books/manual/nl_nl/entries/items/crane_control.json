@@ -1,0 +1,22 @@
+{
+  "category": "openblocks:items",
+  "icon": "openblocks:crane_control",
+  "name": "item.openblocks.crane_control",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:crane_control",
+      "text": "Deze hightech draadloze afstandsbediening bestuurt magneetrugzakken.$(br)$(br)Rechtsklik om te hijsen, sluipen + rechtsklik om te laten zakken, linksklik om op te pakken of los te laten.",
+      "title": "item.openblocks.crane_control"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Een knipperend lampje betekent dat er iets onder de magneet is."
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:crane_control",
+      "recipe2": ""
+    }
+  ]
+}

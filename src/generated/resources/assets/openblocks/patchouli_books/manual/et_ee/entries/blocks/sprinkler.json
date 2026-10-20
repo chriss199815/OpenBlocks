@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:sprinkler",
+  "name": "block.openblocks.sprinkler",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:sprinkler",
+      "text": "Vihmuti aitab väetada kuni 4 ploki kaugusel olevaid taimi. Aseta see lihtsalt veega täidetud OpenBlocksi paagi peale! Veelgi kiiremaks kasvuks lisa luujahu.$(br)See toimib ka veeallikaplokina!",
+      "title": "block.openblocks.sprinkler"
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:sprinkler",
+      "recipe2": ""
+    }
+  ]
+}

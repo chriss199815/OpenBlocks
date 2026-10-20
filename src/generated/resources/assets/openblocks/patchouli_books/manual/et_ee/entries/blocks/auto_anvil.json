@@ -1,0 +1,22 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:auto_anvil",
+  "name": "block.openblocks.auto_anvil",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:auto_anvil",
+      "text": "Automaatne alasi töötab nagu vanilla alasi, aga kasutab vedelat XP-d ja seda saab täielikult automatiseerida.$(br)$(br)Liidese paremal pool olevate sakkidega vali, millistest külgedest esemeid või vedelikku sisse panna ja välja",
+      "title": "block.openblocks.auto_anvil"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "võtta. Lohista alasit sakis parema hiireklahviga, et seda pöörata ja teisi külgi valida!"
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:auto_anvil",
+      "recipe2": ""
+    }
+  ]
+}

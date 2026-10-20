@@ -5,7 +5,7 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "We've had unconfirmed reports that this enchantment causes any gunpowder you're carrying to become unstable when you're attacked or when you jump off something.$(br)$(br)Use at your own risk!"
+      "text": "Selon des rumeurs non confirmées, cet enchantement rend instable toute la poudre à canon que vous transportez lorsque vous êtes attaqué ou que vous sautez de quelque part.$(br)$(br)À utiliser à vos risques et périls !"
     }
   ]
 }

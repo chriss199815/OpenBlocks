@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:bear_trap",
+  "name": "block.openblocks.bear_trap",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:bear_trap",
+      "text": "곰 덫을 설치하고 클릭해서 여세요. 몹이 덫을 밟으면 움직일 수 없게 됩니다!",
+      "title": "block.openblocks.bear_trap"
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:bear_trap",
+      "recipe2": ""
+    }
+  ]
+}

@@ -5,15 +5,15 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "Ognuno può fare degli errori. Ma con il comando $(l)/ob_inventory$() si può rimediare ad alcuni. Questo comando può essere usato per ripristinare l'inventario. Il backup viene creato quando:$(br) - un giocatore muore$(br) - una tomba appare $(br) - un giocatore esegue il comando"
+      "text": "Tutti possono sbagliare, ma con il comando $(l)/ob_inventory$() puoi rimediare ad alcuni errori. Questo comando serve a ripristinare l'inventario. Un backup viene creato quando:$(br) - il giocatore muore$(br) - compare una tomba$(br) - il giocatore esegue il comando"
     },
     {
       "type": "patchouli:text",
-      "text": "$(l)/ob_inventory store$()$(br)$(br)Per ripristinare l'inventario si ha bisogno del nome del backup. Vai nella cartella sotto o nella cartella dei salvataggi sul server e cerca dei file chiamati $(l)inventory-*.dat$(). Poi ripristina l'inventario con $(l)/ob_inventory restore <player> <id>$() - dove id è o il nome del file completo"
+      "text": "$(l)/ob_inventory store$()$(br)$(br)Per ripristinare l'inventario ti serve il nome del backup. Cerca nella cartella $(l)data$() del mondo i file chiamati $(l)inventory-*.dat$(). Poi ripristina l'inventario con $(l)/ob_inventory restore <giocatore> <id>$(), dove id è il nome completo del file oppure solo la parte"
     },
     {
       "type": "patchouli:text",
-      "text": "o solo la parte centrale, senza $(l)inventory-$() e $(l).dat$(). Si può anche usare il completamento automatico (TAB). I backup sono dei normali file NBT e possono essere aperti con ogni editor."
+      "text": "centrale, senza $(l)inventory-$() e $(l).dat$(). Puoi anche usare il completamento con Tab. I backup sono normali file NBT e si possono aprire con qualsiasi editor."
     }
   ]
 }

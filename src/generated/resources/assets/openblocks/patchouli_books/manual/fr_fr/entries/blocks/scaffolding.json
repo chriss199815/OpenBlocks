@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:scaffolding",
+  "name": "block.openblocks.scaffolding",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:scaffolding",
+      "text": "Vous avez toujours voulu monter en pilier sans laisser une vilaine tour derrière vous ? C'est désormais possible ! Construisez avec des blocs d'échafaudage, ils disparaîtront tout seuls quand vous aurez fini.",
+      "title": "block.openblocks.scaffolding"
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:scaffolding",
+      "recipe2": ""
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "category": "openblocks:misc",
+  "icon": "minecraft:enchanted_book",
+  "name": "openblocks.gui.unstable.title",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Meieni on jõudnud kinnitamata teated, et see loits muudab kaasas oleva püssirohu ebastabiilseks, kui sind rünnatakse või kui sa kuskilt alla hüppad.$(br)$(br)Kasuta omal vastutusel!"
+    }
+  ]
+}

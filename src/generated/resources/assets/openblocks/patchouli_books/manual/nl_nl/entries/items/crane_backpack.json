@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:items",
+  "icon": "openblocks:crane_backpack",
+  "name": "item.openblocks.crane_backpack",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:crane_backpack",
+      "text": "In de Minecraft-wereld is \"magneet\" een oud woord voor \"hoe werkt dit eigenlijk?\".$(br)$(br)Met dit bijzondere stuk uitrusting pak en draag je wezens, spelers, voorwerpen en blokken. Bestuur het met de kraanbediening.",
+      "title": "item.openblocks.crane_backpack"
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:crane_backpack",
+      "recipe2": ""
+    }
+  ]
+}

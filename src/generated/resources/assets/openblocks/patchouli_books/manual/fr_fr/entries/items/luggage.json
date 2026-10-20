@@ -1,0 +1,22 @@
+{
+  "category": "openblocks:items",
+  "icon": "openblocks:luggage",
+  "name": "item.openblocks.luggage",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:luggage",
+      "text": "Le bagage est votre nouvel ami. Il vous suit partout et ramasse tous les objets qu'il trouve par terre. Miam miam miam !$(br)Pour le démonter, faites un clic accroupi dessus : il redevient un objet que vous pouvez transporter.$(br)S'il est frappé par la",
+      "title": "item.openblocks.luggage"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "foudre, il pourra transporter encore plus d'objets !"
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:luggage",
+      "recipe2": ""
+    }
+  ]
+}

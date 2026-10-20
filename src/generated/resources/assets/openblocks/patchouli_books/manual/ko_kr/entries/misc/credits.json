@@ -5,11 +5,11 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "$(l)Boq, Mikee and NeverCast$() - 오픈블럭 매인개발자 (우리는 우리 마음대로 우리의 스스로 저작권을 인정해 줄 수 있습니까?)$(br)$(br)$(l)SinZ and Yoshi2$() - 오픈블럭 초창기멤버.$(br)$(br)$(l)Vexatos and crafteverywhere$() - 정기적으로 모드를 번역.$(br)"
+      "text": "$(l)Boq, Mikee, NeverCast$() - OpenBlocks 주요 개발자 (우리 이름을 넣어도 되나?)$(br)$(br)$(l)SinZ, Yoshi2$() - 처음부터 함께한 OpenMods 팀원.$(br)$(br)$(l)Vexatos, crafteverywhere$() - 꾸준히 모드를 번역해 준 분들.$(br)$(br)지난 2년 동안 코드에 기여"
     },
     {
       "type": "patchouli:text",
-      "text": "지난 한해동안 도움을 준 사람들. $(br)$(br)$(l)Direwolf20과 ForgeCraft$() - 출시전 크래쉬와 버그 발견$(br)$(br)누구던지 우리의 모드를 소개할 수 있습니다.$(br)$(br)$(l)TeamMMKP$() - 오픈블럭 한국어 번역자"
+      "text": "한 모든 분.$(br)$(br)$(l)Direwolf20과 ForgeCraft 여러분$() - 출시 전의 버그와 충돌을 참아 준 분들.$(br)$(br)처음부터 소개 영상, 플레이 영상을 만들고 모드를 응원해 준 모든 분!"
     }
   ]
 }

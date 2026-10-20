@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:items",
+  "icon": "openblocks:sonic_glasses",
+  "name": "item.openblocks.sonic_glasses",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:sonic_glasses",
+      "text": "Maak kennis met de fantabuleuze nieuwe sonische bril!$(br)Met deze nieuwe, spannende technologie van OpenMods Inc zie je wat je hoort!",
+      "title": "item.openblocks.sonic_glasses"
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:sonic_glasses",
+      "recipe2": ""
+    }
+  ]
+}

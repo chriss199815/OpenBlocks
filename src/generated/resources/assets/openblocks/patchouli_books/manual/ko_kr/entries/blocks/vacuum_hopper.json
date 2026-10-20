@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:vacuum_hopper",
+  "name": "block.openblocks.vacuum_hopper",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:vacuum_hopper",
+      "text": "진공 호퍼는 주변의 아이템과 경험치 구슬을 빨아들입니다. 화면 오른쪽의 탭에서 어느 면으로 내보낼지 고를 수 있습니다.",
+      "title": "block.openblocks.vacuum_hopper"
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:vacuum_hopper",
+      "recipe2": ""
+    }
+  ]
+}

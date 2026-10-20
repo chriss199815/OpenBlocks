@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:ladder",
+  "name": "block.openblocks.ladder",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:ladder",
+      "text": "옥 사다리는 사다리 꼭대기의 다락문으로 빠져나갈 때의 귀찮은 문제를 해결합니다. 다락문과 사다리 역할을 동시에 합니다.",
+      "title": "block.openblocks.ladder"
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:ladder",
+      "recipe2": ""
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:xp_shower",
+  "name": "block.openblocks.xp_shower",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:xp_shower",
+      "text": "Sluit een XP-douche aan op een tank met XP-sap en er stromen XP-bollen uit. Die bollen kun je opvangen met een XP-afvoer of een MFR-riool.",
+      "title": "block.openblocks.xp_shower"
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:xp_shower",
+      "recipe2": ""
+    }
+  ]
+}

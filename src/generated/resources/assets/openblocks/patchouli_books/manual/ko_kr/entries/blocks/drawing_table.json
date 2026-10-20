@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:drawing_table",
+  "name": "block.openblocks.drawing_table",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:drawing_table",
+      "text": "제도대는 칠할 때 쓰는 스텐실을 만드는 곳입니다. 준비되지 않은 스텐실을 넣고 화살표로 원하는 스텐실을 고르세요!",
+      "title": "block.openblocks.drawing_table"
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:drawing_table",
+      "recipe2": ""
+    }
+  ]
+}

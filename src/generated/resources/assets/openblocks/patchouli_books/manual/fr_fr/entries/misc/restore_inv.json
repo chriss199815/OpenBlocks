@@ -1,0 +1,19 @@
+{
+  "category": "openblocks:misc",
+  "icon": "minecraft:chest",
+  "name": "openblocks.gui.restore_inv.title",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Tout le monde peut se tromper, mais la commande $(l)/ob_inventory$() permet de réparer certaines erreurs. Elle sert à restaurer un inventaire. Une sauvegarde est créée quand :$(br) - le joueur meurt$(br) - une tombe apparaît$(br) - le joueur exécute la commande"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l)/ob_inventory store$()$(br)$(br)Pour restaurer un inventaire, il faut le nom de la sauvegarde. Cherchez dans le dossier $(l)data$() du monde les fichiers nommés $(l)inventory-*.dat$(). Restaurez ensuite l'inventaire avec $(l)/ob_inventory restore <joueur> <id>$(), où id est soit le nom complet du fichier, soit seulement sa"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "partie centrale, sans $(l)inventory-$() ni $(l).dat$(). La complétion avec Tab fonctionne aussi. Les sauvegardes sont de simples fichiers NBT et s'ouvrent avec n'importe quel éditeur."
+    }
+  ]
+}

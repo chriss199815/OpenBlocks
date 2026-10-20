@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:items",
+  "icon": "openblocks:sonic_glasses",
+  "name": "item.openblocks.sonic_glasses",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:sonic_glasses",
+      "text": "Przedstawiamy fantastyczne nowe okulary dźwiękowe!$(br)Ta nowa, ekscytująca technologia od OpenMods Inc pozwala zobaczyć to, co słyszysz!",
+      "title": "item.openblocks.sonic_glasses"
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:sonic_glasses",
+      "recipe2": ""
+    }
+  ]
+}

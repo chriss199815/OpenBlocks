@@ -1,0 +1,22 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:tank",
+  "name": "block.openblocks.tank",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:tank",
+      "text": "Les réservoirs contiennent des liquides. Placés côte à côte, ils répartissent leur liquide entre eux. Vous pouvez les remplir avec des seaux. S'ils contiennent du jus d'XP, cliquez dessus à main vide pour récupérer un peu",
+      "title": "block.openblocks.tank"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "d'XP. Cassés, les réservoirs conservent leur liquide."
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:tank",
+      "recipe2": ""
+    }
+  ]
+}

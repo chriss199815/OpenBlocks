@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:big_button",
+  "name": "block.openblocks.big_button",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:big_button",
+      "text": "큰 버튼은 벽에 붙일 수 있는 커다란 버튼입니다. 빈손으로 웅크린 채 클릭하면 인벤토리가 열립니다. 아이템을 넣으면 버튼이 눌려 있는 시간이 늘어나며, 아이템 하나당 1틱씩 늘어납니다.",
+      "title": "block.openblocks.big_button"
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:big_button",
+      "recipe2": ""
+    }
+  ]
+}

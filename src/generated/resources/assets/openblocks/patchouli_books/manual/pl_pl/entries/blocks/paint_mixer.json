@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:paint_mixer",
+  "name": "block.openblocks.paint_mixer",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:paint_mixer",
+      "text": "Mikser farby zmiesza każdy kolor farby! Włóż do górnego slotu puszkę farby albo wiadro mleka, a do pozostałych czterech barwniki: błękitny, karmazynowy, żółty i czarny, i kliknij Mieszaj!",
+      "title": "block.openblocks.paint_mixer"
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:paint_mixer",
+      "recipe2": ""
+    }
+  ]
+}

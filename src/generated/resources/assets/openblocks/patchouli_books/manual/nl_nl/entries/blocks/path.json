@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:path",
+  "name": "block.openblocks.path",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:path",
+      "text": "Het pad doet niks. Het ziet er gewoon mooi uit!",
+      "title": "block.openblocks.path"
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:path",
+      "recipe2": ""
+    }
+  ]
+}

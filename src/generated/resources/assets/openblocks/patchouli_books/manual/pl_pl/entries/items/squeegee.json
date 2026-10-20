@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:items",
+  "icon": "openblocks:squeegee",
+  "name": "item.openblocks.squeegee",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:squeegee",
+      "text": "Ściągaczka usuwa farbę z pomalowanych bloków. Kliknij ścianę bloku, z której chcesz zmyć farbę, albo kliknij z Shiftem, żeby zmyć ją ze wszystkich stron!",
+      "title": "item.openblocks.squeegee"
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:squeegee",
+      "recipe2": ""
+    }
+  ]
+}

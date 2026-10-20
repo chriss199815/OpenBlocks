@@ -1,0 +1,22 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:projector",
+  "name": "block.openblocks.projector",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:projector",
+      "text": "De projector maakt van hoogtekaarten hologrammen. Doe er een lege kaart in (of geef die aan een cartograaf) om de omgeving in kaart te brengen, en de projector toont het terrein zwevend boven zich. Met de pijlen in het scherm draai je",
+      "title": "block.openblocks.projector"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "het beeld."
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:projector",
+      "recipe2": "openblocks:projector_mirrored"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:village_highlighter",
+  "name": "block.openblocks.village_highlighter",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:village_highlighter",
+      "text": "마을에 마을 표시기를 놓고 레드스톤 신호를 주세요. 주변의 침대(파란색), 일터(노란색), 종(자홍색)에 테두리를 그리는데, 비어 있으면 밝게, 차지되어 있으면 어둡게 표시합니다. 또 주민마다 철 골렘을 소환할 수 있는 범위를 그 주민의 색으로 그려 줍니다(지금 바로 소환할 수 있으면 꽉 찬 선). 철 농장을 만들 때 유용합니다!",
+      "title": "block.openblocks.village_highlighter"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "주민이 번식할 수 있는 빈 침대가 있는 동안 뒷면에서 레드스톤 신호가 나옵니다."
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:village_highlighter",
+      "recipe2": ""
+    }
+  ]
+}

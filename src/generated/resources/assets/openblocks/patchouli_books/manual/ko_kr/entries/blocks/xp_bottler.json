@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:xp_bottler",
+  "name": "block.openblocks.xp_bottler",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:xp_bottler",
+      "text": "경험치 병입기는 액체 경험치를 유리병에 담아 경험치 병을 만듭니다.",
+      "title": "block.openblocks.xp_bottler"
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:xp_bottler",
+      "recipe2": ""
+    }
+  ]
+}

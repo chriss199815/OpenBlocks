@@ -1,0 +1,22 @@
+{
+  "category": "openblocks:items",
+  "icon": "openblocks:dev_null",
+  "name": "item.openblocks.dev_null",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:dev_null",
+      "text": "Cliquez avec /dev/null pour ouvrir son inventaire. Il n'a qu'un seul emplacement : mettez-y un objet, de la terre par exemple. En ramassant de la terre, cet emplacement se remplit. Une fois plein, toute terre supplémentaire est automatiquement",
+      "title": "item.openblocks.dev_null"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "détruite. Vous pouvez faire un clic accroupi avec l'objet en main comme si vous posiez le bloc !"
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:dev_null",
+      "recipe2": ""
+    }
+  ]
+}

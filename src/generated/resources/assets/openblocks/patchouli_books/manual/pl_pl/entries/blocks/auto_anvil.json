@@ -1,0 +1,22 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:auto_anvil",
+  "name": "block.openblocks.auto_anvil",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:auto_anvil",
+      "text": "Automatyczne kowadło działa jak kowadło z vanilli, ale zasila je płynne XP i można je w pełni zautomatyzować.$(br)$(br)Zakładkami po prawej stronie interfejsu wybierzesz, którymi stronami wkładać i wyjmować przedmioty",
+      "title": "block.openblocks.auto_anvil"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "lub płyn. Przeciągnij kowadło w zakładce prawym przyciskiem, żeby je obrócić i wybrać inne strony!"
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:auto_anvil",
+      "recipe2": ""
+    }
+  ]
+}

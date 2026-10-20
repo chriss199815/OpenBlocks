@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:builder_guide",
+  "name": "block.openblocks.builder_guide",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:builder_guide",
+      "text": "향상된 건축 가이드는 유령 블록을 보여 줄 뿐만 아니라 실제 블록을 설치할 수도 있습니다. 블록 묶음을 들고 가운데 블록을 클릭하기만 하면 됩니다!$(br)크리에이티브 모드에서는 위에 흑요석 블록을 놓은 뒤 원하는 블록으로 건축 가이드를 치면 모양이 자동으로 만들어집니다.",
+      "title": "block.openblocks.builder_guide"
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:builder_guide",
+      "recipe2": ""
+    }
+  ]
+}

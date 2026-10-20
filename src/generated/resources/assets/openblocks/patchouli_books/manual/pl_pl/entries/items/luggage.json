@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:items",
+  "icon": "openblocks:luggage",
+  "name": "item.openblocks.luggage",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:luggage",
+      "text": "Bagaż to twój nowy przyjaciel. Chodzi za tobą wszędzie i zbiera przedmioty leżące na ziemi. Mniam mniam mniam!$(br)Żeby go rozebrać, kliknij go z Shiftem, a zamieni się w przedmiot do noszenia.$(br)Jeśli trafi go piorun, zmieści jeszcze więcej przedmiotów!",
+      "title": "item.openblocks.luggage"
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:luggage",
+      "recipe2": ""
+    }
+  ]
+}

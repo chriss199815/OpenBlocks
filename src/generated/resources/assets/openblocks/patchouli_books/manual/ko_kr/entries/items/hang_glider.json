@@ -1,0 +1,22 @@
+{
+  "category": "openblocks:items",
+  "icon": "openblocks:hang_glider",
+  "name": "item.openblocks.hang_glider",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:hang_glider",
+      "text": "행글라이더는 설명이 필요 없습니다. 손에 들고 클릭하면 등에 멥니다. 이제 뛰어내리세요!$(br)활공 중에 Shift를 누르면 빨라지지만, 고도가 더 빨리 떨어지니 조심하세요!$(br)$(br)이제 행글라이더에는 수직 공기 흐름을 알려 주는 음향 승강계도 달려 있습니다. V를 눌러 켜고 영원히(또는",
+      "title": "item.openblocks.hang_glider"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "해가 질 때까지) 하늘에 머무르세요!"
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:hang_glider",
+      "recipe2": ""
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:block_placer",
+  "name": "block.openblocks.block_placer",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:block_placer",
+      "text": "레드스톤 펄스를 받으면 블록 설치기가 바라보는 방향에 아이템을 설치합니다.",
+      "title": "block.openblocks.block_placer"
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:block_placer",
+      "recipe2": ""
+    }
+  ]
+}

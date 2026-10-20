@@ -1,0 +1,19 @@
+{
+  "category": "openblocks:misc",
+  "icon": "minecraft:chest",
+  "name": "openblocks.gui.restore_inv.title",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Igaüks võib eksida, aga käsuga $(l)/ob_inventory$() saab mõned vead parandada. Selle käsuga saab inventari taastada. Varukoopia luuakse, kui:$(br) - mängija sureb$(br) - tekib haud$(br) - mängija sisestab käsu $(l)/ob_inventory store$()$(br)"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Inventari taastamiseks on vaja varukoopia nime. Otsi maailma kaustast $(l)data$() faile nimega $(l)inventory-*.dat$(). Seejärel taasta inventar käsuga $(l)/ob_inventory restore <mängija> <id>$(), kus id on kas faili täisnimi või ainult selle keskmine osa ilma $(l)inventory-$() ja $(l).dat$() osata. Kasutada saab ka Tab-klahviga automaatset täitmist. Varukoopiad on"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "tavalised NBT-failid ja neid saab avada mis tahes redaktoriga."
+    }
+  ]
+}

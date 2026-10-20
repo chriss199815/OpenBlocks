@@ -1,0 +1,22 @@
+{
+  "category": "openblocks:items",
+  "icon": "openblocks:hang_glider",
+  "name": "item.openblocks.hang_glider",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:hang_glider",
+      "text": "Lotnia nie wymaga wyjaśnień. Trzymaj ją w ręce i kliknij, żeby założyć ją na plecy. A teraz skacz!$(br)Żeby przyspieszyć, wciśnij Shift podczas lotu, ale uważaj, szybciej stracisz wysokość!$(br)$(br)Twoja lotnia ma teraz",
+      "title": "item.openblocks.hang_glider"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "akustyczny wariometr, który sygnalizuje pionowy ruch powietrza. Naciśnij V, żeby go włączyć, i lataj w nieskończoność (albo do zachodu słońca)!"
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:hang_glider",
+      "recipe2": ""
+    }
+  ]
+}

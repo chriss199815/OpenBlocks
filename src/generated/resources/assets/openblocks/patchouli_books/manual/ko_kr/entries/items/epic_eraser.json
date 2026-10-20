@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:items",
+  "icon": "openblocks:epic_eraser",
+  "name": "item.openblocks.epic_eraser",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:epic_eraser",
+      "text": "모든 아이템에는 저마다의 내력이 있죠...$(br)$(br)정말 싫지 않나요?$(br)이 아이템으로 전리품에 수년간 쌓인 전설적인 내력을 깨끗이 지운 다음, 증거 걱정 없이 암시장에 팔 수 있습니다.",
+      "title": "item.openblocks.epic_eraser"
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:epic_eraser",
+      "recipe2": ""
+    }
+  ]
+}

@@ -6,8 +6,12 @@
     {
       "type": "openblocks:spotlight",
       "item": "openblocks:projector",
-      "text": "Ti lascio scrivere questa, boq!",
+      "text": "Il proiettore trasforma le mappe altimetriche in ologrammi. Mettici dentro una mappa vuota (o dalla a un cartografo) per mappare il terreno circostante, e il proiettore mostrerà il paesaggio sospeso sopra di sé. Usa le",
       "title": "block.openblocks.projector"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "frecce della sua interfaccia per ruotare la vista."
     },
     {
       "type": "openblocks:crafting",

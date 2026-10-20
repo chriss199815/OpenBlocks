@@ -1,0 +1,22 @@
+{
+  "category": "openblocks:items",
+  "icon": "openblocks:dev_null",
+  "name": "item.openblocks.dev_null",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:dev_null",
+      "text": "Kliknij /dev/null, żeby otworzyć jego ekwipunek. Ma jeden slot: włóż tam przedmiot, na przykład ziemię. Gdy zbierasz ziemię, slot się zapełnia. Gdy jest pełny, każda kolejna ziemia jest automatycznie niszczona. Możesz też",
+      "title": "item.openblocks.dev_null"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "kliknąć z Shiftem z przedmiotem w ręce, jakbyś stawiał blok!"
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:dev_null",
+      "recipe2": ""
+    }
+  ]
+}

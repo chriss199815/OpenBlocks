@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:rope_ladder",
+  "name": "block.openblocks.rope_ladder",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:rope_ladder",
+      "text": "Een geplaatste touwladder rolt helemaal uit tot de grond. Elk gemaakt ladderblok gebruikt één voorwerp van de stapel.",
+      "title": "block.openblocks.rope_ladder"
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:rope_ladder",
+      "recipe2": ""
+    }
+  ]
+}

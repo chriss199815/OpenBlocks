@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:rope_ladder",
+  "name": "block.openblocks.rope_ladder",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:rope_ladder",
+      "text": "Asetatud köisredel rullub lahti kuni maapinnani. Iga loodud redeliplokk kasutab virnast ühe eseme.",
+      "title": "block.openblocks.rope_ladder"
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:rope_ladder",
+      "recipe2": ""
+    }
+  ]
+}

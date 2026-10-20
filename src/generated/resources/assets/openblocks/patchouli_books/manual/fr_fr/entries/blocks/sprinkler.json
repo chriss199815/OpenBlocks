@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:sprinkler",
+  "name": "block.openblocks.sprinkler",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:sprinkler",
+      "text": "L'arroseur fertilise les cultures jusqu'à 4 blocs de distance. Posez-le simplement au-dessus d'un réservoir OpenBlocks rempli d'eau ! Ajoutez de la poudre d'os pour une croissance encore plus rapide.$(br)Il sert aussi de bloc source d'eau !",
+      "title": "block.openblocks.sprinkler"
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:sprinkler",
+      "recipe2": ""
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:white_elevator",
+  "name": "block.openblocks.elevator",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:white_elevator,openblocks:orange_elevator,openblocks:magenta_elevator,openblocks:light_blue_elevator,openblocks:yellow_elevator,openblocks:lime_elevator,openblocks:pink_elevator,openblocks:gray_elevator,openblocks:light_gray_elevator,openblocks:cyan_elevator,openblocks:purple_elevator,openblocks:blue_elevator,openblocks:brown_elevator,openblocks:green_elevator,openblocks:red_elevator,openblocks:black_elevator",
+      "text": "Plaats een lift recht boven een andere, drie of meer blokken hoger en zonder blokken ertussen, en je kunt 'springen' om omhoog te gaan of 'sluipen' om omlaag te gaan. Liften kun je verven door erop te klikken met kleurstof, maar je kunt alleen",
+      "title": "block.openblocks.elevator"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "teleporteren tussen liften van dezelfde kleur."
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:white_elevator,openblocks:orange_elevator,openblocks:magenta_elevator,openblocks:light_blue_elevator,openblocks:yellow_elevator,openblocks:lime_elevator,openblocks:pink_elevator,openblocks:gray_elevator,openblocks:light_gray_elevator,openblocks:cyan_elevator,openblocks:purple_elevator,openblocks:blue_elevator,openblocks:brown_elevator,openblocks:green_elevator,openblocks:red_elevator,openblocks:black_elevator",
+      "recipe2": ""
+    }
+  ]
+}

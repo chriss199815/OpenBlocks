@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:item_dropper",
+  "name": "block.openblocks.item_dropper",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:item_dropper",
+      "text": "Podajnik przedmiotów przypomina podajnik z vanilli, ale wyrzuca przedmioty bez losowego rozrzutu. Prędkość wyrzucanych przedmiotów ustawia się w interfejsie i sygnałem redstone.",
+      "title": "block.openblocks.item_dropper"
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:item_dropper",
+      "recipe2": ""
+    }
+  ]
+}

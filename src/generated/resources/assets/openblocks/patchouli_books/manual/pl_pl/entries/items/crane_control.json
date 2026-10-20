@@ -1,0 +1,22 @@
+{
+  "category": "openblocks:items",
+  "icon": "openblocks:crane_control",
+  "name": "item.openblocks.crane_control",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:crane_control",
+      "text": "Ten nowoczesny bezprzewodowy pilot steruje plecakami z magnesem.$(br)$(br)Prawy przycisk podnosi, kucnięcie + prawy przycisk opuszcza, lewy przycisk chwyta/puszcza.$(br)Migające światło",
+      "title": "item.openblocks.crane_control"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "oznacza, że coś jest pod magnesem."
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:crane_control",
+      "recipe2": ""
+    }
+  ]
+}

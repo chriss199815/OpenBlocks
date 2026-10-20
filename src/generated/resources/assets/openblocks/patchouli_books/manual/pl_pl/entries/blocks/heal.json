@@ -1,0 +1,13 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:heal",
+  "name": "block.openblocks.heal",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:heal",
+      "text": "Blok uzdrawiający jest dostępny tylko w trybie kreatywnym i powoli lekko leczy.",
+      "title": "block.openblocks.heal"
+    }
+  ]
+}

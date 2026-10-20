@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:items",
+  "icon": "openblocks:crane_backpack",
+  "name": "item.openblocks.crane_backpack",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:crane_backpack",
+      "text": "Minecrafti maailmas on „magnet” iidne sõna, mis tähendab „kuidas see üldse töötab?”.$(br)$(br)See eriline varustus laseb tõsta ja kanda elukaid, mängijaid, esemeid ja plokke. Juhitakse kraanapuldiga.",
+      "title": "item.openblocks.crane_backpack"
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:crane_backpack",
+      "recipe2": ""
+    }
+  ]
+}

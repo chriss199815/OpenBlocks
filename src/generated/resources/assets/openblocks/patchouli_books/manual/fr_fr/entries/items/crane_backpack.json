@@ -1,0 +1,22 @@
+{
+  "category": "openblocks:items",
+  "icon": "openblocks:crane_backpack",
+  "name": "item.openblocks.crane_backpack",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:crane_backpack",
+      "text": "Dans le monde de Minecraft, « aimant » est un mot ancien qui signifie « comment ça marche ? ».$(br)$(br)Cet équipement très particulier permet de saisir et transporter des créatures, des joueurs, des objets et des blocs. Il se",
+      "title": "item.openblocks.crane_backpack"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "pilote avec la commande de grue."
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:crane_backpack",
+      "recipe2": ""
+    }
+  ]
+}

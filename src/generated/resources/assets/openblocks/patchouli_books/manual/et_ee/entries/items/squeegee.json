@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:items",
+  "icon": "openblocks:squeegee",
+  "name": "item.openblocks.squeegee",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:squeegee",
+      "text": "Kaabits eemaldab värvitud plokkidelt värvi. Klõpsa ploki küljel, millelt tahad värvi eemaldada, või klõpsa kükitades, et eemaldada värv kõikidelt külgedelt!",
+      "title": "item.openblocks.squeegee"
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:squeegee",
+      "recipe2": ""
+    }
+  ]
+}

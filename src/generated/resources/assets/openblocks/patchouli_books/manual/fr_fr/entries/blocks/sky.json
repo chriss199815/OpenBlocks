@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:sky",
+  "name": "block.openblocks.sky",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:sky",
+      "text": "Faites entrer le dehors à l'intérieur avec le nouveau bloc de ciel ! Il suffit d'un signal de redstone. Il existe aussi une version inversée.",
+      "title": "block.openblocks.sky"
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:sky",
+      "recipe2": "openblocks:sky_from_inverted"
+    }
+  ]
+}

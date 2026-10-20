@@ -1,0 +1,22 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:white_elevator_rotating",
+  "name": "block.openblocks.elevator_rotating",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:white_elevator_rotating,openblocks:orange_elevator_rotating,openblocks:magenta_elevator_rotating,openblocks:light_blue_elevator_rotating,openblocks:yellow_elevator_rotating,openblocks:lime_elevator_rotating,openblocks:pink_elevator_rotating,openblocks:gray_elevator_rotating,openblocks:light_gray_elevator_rotating,openblocks:cyan_elevator_rotating,openblocks:purple_elevator_rotating,openblocks:blue_elevator_rotating,openblocks:brown_elevator_rotating,openblocks:green_elevator_rotating,openblocks:red_elevator_rotating,openblocks:black_elevator_rotating",
+      "text": "Funziona come un ascensore normale, ma in più ti gira: dopo il teletrasporto guardi nella stessa direzione del lato frontale dell'ascensore in cui arrivi. Quando lo piazzi, il lato frontale è rivolto verso di te.$(br)$(br)Gli ascensori rotanti si",
+      "title": "block.openblocks.elevator_rotating"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "collegano agli ascensori normali dello stesso colore, quindi ti servono solo dove la direzione conta."
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:white_elevator_rotating,openblocks:orange_elevator_rotating,openblocks:magenta_elevator_rotating,openblocks:light_blue_elevator_rotating,openblocks:yellow_elevator_rotating,openblocks:lime_elevator_rotating,openblocks:pink_elevator_rotating,openblocks:gray_elevator_rotating,openblocks:light_gray_elevator_rotating,openblocks:cyan_elevator_rotating,openblocks:purple_elevator_rotating,openblocks:blue_elevator_rotating,openblocks:brown_elevator_rotating,openblocks:green_elevator_rotating,openblocks:red_elevator_rotating,openblocks:black_elevator_rotating",
+      "recipe2": ""
+    }
+  ]
+}

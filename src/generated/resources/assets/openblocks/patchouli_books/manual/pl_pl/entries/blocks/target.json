@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:target",
+  "name": "block.openblocks.target",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:target",
+      "text": "Tarcza wysyła sygnał redstone o sile zależnej od celności gracza. Daj jej sygnał redstone, żeby się podniosła!",
+      "title": "block.openblocks.target"
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:target",
+      "recipe2": ""
+    }
+  ]
+}

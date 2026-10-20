@@ -5,11 +5,11 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "The last stand enchantment uses your XP bar as a final protection against dying.$(br)$(br)When you reach 0.5 hearts, the game will take XP from you whenever you're damaged instead of killing you. The higher number of enchantments you"
+      "text": "L'enchantement Dernier rempart utilise votre barre d'XP comme ultime protection contre la mort.$(br)$(br)Quand il ne vous reste qu'un demi-cœur, le jeu prend de l'XP à chaque dégât au lieu de vous tuer. Plus vous avez de niveaux de cet enchantement,"
     },
     {
       "type": "patchouli:text",
-      "text": "have the cheaper the XP cost will be."
+      "text": "moins cela coûte d'XP."
     }
   ]
 }

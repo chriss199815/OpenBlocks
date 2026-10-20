@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:cannon",
+  "name": "block.openblocks.cannon",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:cannon",
+      "text": "Punakivisignaali saades tulistab esemekahur esemeid, mille ta leiab kõrvalasuvast inventarist. Kahuri sihtimiseks kasuta 'osutit'.",
+      "title": "block.openblocks.cannon"
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:cannon",
+      "recipe2": ""
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:auto_enchantment_table",
+  "name": "block.openblocks.auto_enchantment_table",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:auto_enchantment_table",
+      "text": "Automaatne loitsimislaud töötab sarnaselt vanilla loitsimislauaga, aga kasutab vedelat XP-d. Liidese paremal pool olevate sakkidega saad valida, kust esemeid või XP-d võtta. Nagu vanilla laua puhul, on kõrgemate tasemete jaoks vaja",
+      "title": "block.openblocks.auto_enchantment_table"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "raamaturiiuleid."
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:auto_enchantment_table",
+      "recipe2": ""
+    }
+  ]
+}

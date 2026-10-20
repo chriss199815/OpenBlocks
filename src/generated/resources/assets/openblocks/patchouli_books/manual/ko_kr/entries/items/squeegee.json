@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:items",
+  "icon": "openblocks:squeegee",
+  "name": "item.openblocks.squeegee",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:squeegee",
+      "text": "스퀴지는 칠해진 블록에서 페인트를 지웁니다. 지우고 싶은 면을 클릭하거나, 웅크린 채 클릭해 모든 면의 페인트를 지우세요!",
+      "title": "item.openblocks.squeegee"
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:squeegee",
+      "recipe2": ""
+    }
+  ]
+}

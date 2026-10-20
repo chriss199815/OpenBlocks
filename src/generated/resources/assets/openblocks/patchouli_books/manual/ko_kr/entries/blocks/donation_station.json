@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:donation_station",
+  "name": "block.openblocks.donation_station",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:donation_station",
+      "text": "마음에 드는 블록이나 아이템이 있어서 모드 개발자에게 고마움을 전하고 싶나요? 기부소에 넣어 보세요. 제작자의 기부 페이지를 알고 있다면 링크를 알려 드립니다.",
+      "title": "block.openblocks.donation_station"
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:donation_station",
+      "recipe2": ""
+    }
+  ]
+}

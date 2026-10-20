@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:xp_drain",
+  "name": "block.openblocks.xp_drain",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:xp_drain",
+      "text": "Posez le drain d'XP au-dessus d'un réservoir OpenBlocks et tenez-vous dessus. Votre XP s'écoule dans le réservoir et peut ensuite servir à des blocs comme la table d'enchantement automatique ou l'enclume automatique.",
+      "title": "block.openblocks.xp_drain"
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:xp_drain",
+      "recipe2": ""
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "category": "openblocks:misc",
+  "icon": "openblocks:info_book",
+  "name": "openblocks.gui.credits.title",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Boq, Mikee i NeverCast$() - główni twórcy OpenBlocks (czy wolno nam wymienić samych siebie?)$(br)$(br)$(l)SinZ i Yoshi2$() - członkowie zespołu OpenMods od samego początku.$(br)$(br)$(l)Vexatos i crafteverywhere$() -"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "regularnie tłumaczą mody.$(br)$(br)Wszyscy, którzy przez ostatnie dwa lata dołożyli coś do kodu.$(br)$(br)$(l)Direwolf20 i reszta ForgeCraft$() - za cierpliwość wobec błędów i awarii przed wydaniem.$(br)$(br)Wszyscy, którzy nagrywali prezentacje i let's playe i wspierali moda od początku!"
+    }
+  ]
+}

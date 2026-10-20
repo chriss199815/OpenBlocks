@@ -1,0 +1,11 @@
+{
+  "category": "openblocks:misc",
+  "icon": "minecraft:enchanted_book",
+  "name": "openblocks.gui.unstable.title",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Docierają do nas niepotwierdzone doniesienia, że to zaklęcie sprawia, że noszony proch staje się niestabilny, gdy ktoś cię zaatakuje albo gdy z czegoś skoczysz.$(br)$(br)Używasz na własne ryzyko!"
+    }
+  ]
+}

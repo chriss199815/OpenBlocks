@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:xp_drain",
+  "name": "block.openblocks.xp_drain",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:xp_drain",
+      "text": "Postaw odpływ XP nad zbiornikiem OpenBlocks i stań na nim. Twoje XP spłynie do zbiornika i przyda się potem np. w automatycznym stole do zaklęć albo automatycznym kowadle.",
+      "title": "block.openblocks.xp_drain"
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:xp_drain",
+      "recipe2": ""
+    }
+  ]
+}

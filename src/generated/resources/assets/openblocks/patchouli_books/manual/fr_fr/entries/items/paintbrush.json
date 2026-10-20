@@ -1,0 +1,22 @@
+{
+  "category": "openblocks:items",
+  "icon": "openblocks:paintbrush",
+  "name": "item.openblocks.paintbrush",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:paintbrush",
+      "text": "Les pinceaux permettent de peindre des blocs de la couleur de votre choix !$(br)$(br)Trempez votre pinceau dans un pot de peinture fait au mélangeur de peinture, puis cliquez sur un bloc pour le peindre.",
+      "title": "item.openblocks.paintbrush"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Les blocs de toile sont parfaits pour peindre, mais vous pouvez aussi peindre pas mal de blocs vanilla et même certains blocs d'autres mods. Vous pouvez aussi poser des pochoirs sur les blocs et peindre par-dessus !"
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:paintbrush",
+      "recipe2": "openblocks:paintbrush_white"
+    }
+  ]
+}

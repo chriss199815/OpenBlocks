@@ -1,0 +1,22 @@
+{
+  "category": "openblocks:items",
+  "icon": "openblocks:wrench",
+  "name": "item.openblocks.wrench",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:wrench",
+      "text": "See on äärmiselt keerukas tööriist oktaeedrilise sümmeetriaga objektide teisendamiseks.$(br)$(br)$(br)Või lihtsalt suur ja rumal metallitükk, millega kuubikuid ja muud keerata.",
+      "title": "item.openblocks.wrench"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Jah, see on järjekordne mutrivõti. Ma lihtsalt üritan siin originaalne olla, eks?"
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:wrench",
+      "recipe2": ""
+    }
+  ]
+}

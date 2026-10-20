@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:items",
+  "icon": "openblocks:slimalyzer",
+  "name": "item.openblocks.slimalyzer",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:slimalyzer",
+      "text": "슬라임 탐지기를 손에 들고 돌아다니면 슬라임이 생성되는 청크에 있을 때 불이 켜집니다.",
+      "title": "item.openblocks.slimalyzer"
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:slimalyzer",
+      "recipe2": ""
+    }
+  ]
+}

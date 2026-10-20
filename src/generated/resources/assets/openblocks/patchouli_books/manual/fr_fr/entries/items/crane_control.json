@@ -1,0 +1,22 @@
+{
+  "category": "openblocks:items",
+  "icon": "openblocks:crane_control",
+  "name": "item.openblocks.crane_control",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:crane_control",
+      "text": "Cette télécommande sans fil high-tech sert à piloter les sacs à dos grue.$(br)$(br)Clic droit pour monter, accroupi + clic droit pour descendre, clic gauche pour saisir/lâcher.$(br)Un voyant clignotant signale que quelque",
+      "title": "item.openblocks.crane_control"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "chose se trouve sous l'aimant."
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:crane_control",
+      "recipe2": ""
+    }
+  ]
+}

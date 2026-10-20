@@ -1,0 +1,22 @@
+{
+  "category": "openblocks:items",
+  "icon": "openblocks:unprepared_stencil",
+  "name": "item.openblocks.unprepared_stencil",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:unprepared_stencil",
+      "text": "Szablony kładzie się na blokach i maluje po nich pędzlem!$(br)$(br)Blok można pomalować kilkoma szablonami, a kliknięcie pustą ręką je obraca.$(br)$(br)Włóż nieprzygotowany szablon do stołu do rysowania, żeby",
+      "title": "item.openblocks.unprepared_stencil"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "tworzyć różne wzory."
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:unprepared_stencil",
+      "recipe2": ""
+    }
+  ]
+}

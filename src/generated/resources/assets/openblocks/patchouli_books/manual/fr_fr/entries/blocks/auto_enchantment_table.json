@@ -1,0 +1,22 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:auto_enchantment_table",
+  "name": "block.openblocks.auto_enchantment_table",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:auto_enchantment_table",
+      "text": "La table d'enchantement automatique fonctionne comme la table vanilla, mais avec du jus d'XP. Les onglets à droite de l'interface permettent de choisir d'où viennent les objets ou l'XP. Comme pour la table vanilla, il faut des bibliothèques",
+      "title": "block.openblocks.auto_enchantment_table"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "pour les niveaux élevés."
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:auto_enchantment_table",
+      "recipe2": ""
+    }
+  ]
+}

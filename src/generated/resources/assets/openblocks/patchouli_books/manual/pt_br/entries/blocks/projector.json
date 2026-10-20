@@ -6,8 +6,12 @@
     {
       "type": "openblocks:spotlight",
       "item": "openblocks:projector",
-      "text": "Vou deixar você escrever isso, boq!",
+      "text": "O projetor transforma mapas de altura em hologramas. Coloque um mapa vazio nele (ou entregue a um cartógrafo) para mapear a região ao redor, e o projetor vai mostrar o terreno flutuando acima dele. Use as setas da interface para girar a",
       "title": "block.openblocks.projector"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "visão."
     },
     {
       "type": "openblocks:crafting",

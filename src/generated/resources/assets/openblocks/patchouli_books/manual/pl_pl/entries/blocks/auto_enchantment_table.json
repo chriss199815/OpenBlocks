@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:auto_enchantment_table",
+  "name": "block.openblocks.auto_enchantment_table",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:auto_enchantment_table",
+      "text": "Automatyczny stół do zaklęć działa podobnie do stołu z vanilli, ale zasila go płynne XP. Zakładkami po prawej stronie interfejsu wybierzesz, skąd pobierać przedmioty lub XP. Jak w vanilli, do wyższych poziomów potrzebne są biblioteczki.",
+      "title": "block.openblocks.auto_enchantment_table"
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:auto_enchantment_table",
+      "recipe2": ""
+    }
+  ]
+}

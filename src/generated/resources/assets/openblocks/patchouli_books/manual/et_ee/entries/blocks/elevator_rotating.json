@@ -1,0 +1,22 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:white_elevator_rotating",
+  "name": "block.openblocks.elevator_rotating",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:white_elevator_rotating,openblocks:orange_elevator_rotating,openblocks:magenta_elevator_rotating,openblocks:light_blue_elevator_rotating,openblocks:yellow_elevator_rotating,openblocks:lime_elevator_rotating,openblocks:pink_elevator_rotating,openblocks:gray_elevator_rotating,openblocks:light_gray_elevator_rotating,openblocks:cyan_elevator_rotating,openblocks:purple_elevator_rotating,openblocks:blue_elevator_rotating,openblocks:brown_elevator_rotating,openblocks:green_elevator_rotating,openblocks:red_elevator_rotating,openblocks:black_elevator_rotating",
+      "text": "Töötab nagu tavaline lift, aga pöörab sind ka ümber: pärast teleporteerumist vaatad samas suunas kui sihtlifti esikülg. Asetamisel on esikülg sinu poole.$(br)$(br)Pöörlevad liftid ühenduvad sama värvi tavaliste liftidega, nii",
+      "title": "block.openblocks.elevator_rotating"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "et neid on vaja ainult seal, kus suund on oluline."
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:white_elevator_rotating,openblocks:orange_elevator_rotating,openblocks:magenta_elevator_rotating,openblocks:light_blue_elevator_rotating,openblocks:yellow_elevator_rotating,openblocks:lime_elevator_rotating,openblocks:pink_elevator_rotating,openblocks:gray_elevator_rotating,openblocks:light_gray_elevator_rotating,openblocks:cyan_elevator_rotating,openblocks:purple_elevator_rotating,openblocks:blue_elevator_rotating,openblocks:brown_elevator_rotating,openblocks:green_elevator_rotating,openblocks:red_elevator_rotating,openblocks:black_elevator_rotating",
+      "recipe2": ""
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:items",
+  "icon": "openblocks:crane_control",
+  "name": "item.openblocks.crane_control",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:crane_control",
+      "text": "자석 배낭을 조종하는 최첨단 무선 리모컨입니다.$(br)$(br)우클릭으로 올리고, 웅크리고 우클릭으로 내리고, 좌클릭으로 집거나 놓습니다.$(br)불빛이 깜빡이면 자석 아래에 무언가 있다는 뜻입니다.",
+      "title": "item.openblocks.crane_control"
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:crane_control",
+      "recipe2": ""
+    }
+  ]
+}

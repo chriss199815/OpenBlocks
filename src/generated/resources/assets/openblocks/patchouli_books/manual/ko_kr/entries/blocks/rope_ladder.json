@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:rope_ladder",
+  "name": "block.openblocks.rope_ladder",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:rope_ladder",
+      "text": "밧줄 사다리를 설치하면 땅까지 쭉 펼쳐집니다. 사다리 블록 하나마다 아이템을 하나씩 사용합니다.",
+      "title": "block.openblocks.rope_ladder"
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:rope_ladder",
+      "recipe2": ""
+    }
+  ]
+}

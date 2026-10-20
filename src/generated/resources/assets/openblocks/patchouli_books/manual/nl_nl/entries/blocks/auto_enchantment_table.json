@@ -1,0 +1,22 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:auto_enchantment_table",
+  "name": "block.openblocks.auto_enchantment_table",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:auto_enchantment_table",
+      "text": "De automatische betoveringstafel werkt ongeveer zoals de vanilla betoveringstafel, maar draait op XP-sap. Met de tabbladen rechts in het scherm kies je waar voorwerpen of XP vandaan komen. Net als bij de vanilla tafel heb je boekenkasten",
+      "title": "block.openblocks.auto_enchantment_table"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "nodig voor hogere niveaus."
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:auto_enchantment_table",
+      "recipe2": ""
+    }
+  ]
+}

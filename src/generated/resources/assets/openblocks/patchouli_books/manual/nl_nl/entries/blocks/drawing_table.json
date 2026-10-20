@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:drawing_table",
+  "name": "block.openblocks.drawing_table",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:drawing_table",
+      "text": "Op de tekentafel maak je sjablonen om mee te schilderen. Leg een onbewerkt sjabloon op de tekentafel en kies met de pijlen welk sjabloon je wilt!",
+      "title": "block.openblocks.drawing_table"
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:drawing_table",
+      "recipe2": ""
+    }
+  ]
+}

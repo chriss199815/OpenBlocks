@@ -1,0 +1,22 @@
+{
+  "category": "openblocks:items",
+  "icon": "openblocks:hang_glider",
+  "name": "item.openblocks.hang_glider",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:hang_glider",
+      "text": "De hangglijder spreekt voor zich. Houd hem in je hand en klik om hem op je rug te doen. Spring nu!$(br)Om sneller te gaan, druk je tijdens het glijden op Shift, maar pas op: je verliest sneller hoogte!$(br)$(br)Je hangglijder heeft",
+      "title": "item.openblocks.hang_glider"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "nu ook een akoestische variometer die verticale luchtbewegingen aangeeft. Druk op V om hem aan te zetten en blijf voor altijd in de lucht (of tot de zon ondergaat)!"
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:hang_glider",
+      "recipe2": ""
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "category": "openblocks:misc",
+  "icon": "openblocks:tasty_clay",
+  "name": "openblocks.gui.bkey.title",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "'B' klahv on OpenBlocksis väga eriline klahv.$(br)$(br)Kui sead ühise seadistusfaili kategoorias 'tomfoolery' valiku 'weAreSeriousPeople' väärtuseks false, saad oma isikliku seedesüsteemi.$(br)$(br)Söö natuke seda"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "maitsvat savi ja vajuta seedimiseks 'B'!"
+    }
+  ]
+}

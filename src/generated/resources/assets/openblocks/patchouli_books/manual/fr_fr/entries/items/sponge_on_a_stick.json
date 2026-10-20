@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:items",
+  "icon": "openblocks:sponge_on_a_stick",
+  "name": "item.openblocks.sponge_on_a_stick",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:sponge_on_a_stick",
+      "text": "L'éponge sur un bâton sert à nettoyer les liquides. Elle fonctionne comme l'éponge, en plus mobile, mais elle s'use.",
+      "title": "item.openblocks.sponge_on_a_stick"
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:sponge_on_a_stick",
+      "recipe2": ""
+    }
+  ]
+}

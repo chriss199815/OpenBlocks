@@ -1,0 +1,22 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:tank",
+  "name": "block.openblocks.tank",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:tank",
+      "text": "Paakides saab hoida vedelikke. Kõrvuti asetatud paagid jagavad vedeliku omavahel. Vedelikku saab paakidesse panna ämbritega. Kui paagis on vedelat XP-d, klõpsa seda tühja käega, et endale veidi XP-d saada. Lõhkumisel säilitavad paagid oma",
+      "title": "block.openblocks.tank"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "vedeliku."
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:tank",
+      "recipe2": ""
+    }
+  ]
+}

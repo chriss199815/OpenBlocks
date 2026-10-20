@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:sprinkler",
+  "name": "block.openblocks.sprinkler",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:sprinkler",
+      "text": "스프링클러는 4칸 거리 안의 작물이 잘 자라도록 돕습니다. 물이 든 OpenBlocks 탱크 위에 설치하기만 하면 됩니다! 뼛가루를 넣으면 더 빨리 자랍니다.$(br)물 근원 블록 역할도 합니다!",
+      "title": "block.openblocks.sprinkler"
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:sprinkler",
+      "recipe2": ""
+    }
+  ]
+}

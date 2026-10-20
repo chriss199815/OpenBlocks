@@ -1,0 +1,22 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:white_elevator",
+  "name": "block.openblocks.elevator",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:white_elevator,openblocks:orange_elevator,openblocks:magenta_elevator,openblocks:light_blue_elevator,openblocks:yellow_elevator,openblocks:lime_elevator,openblocks:pink_elevator,openblocks:gray_elevator,openblocks:light_gray_elevator,openblocks:cyan_elevator,openblocks:purple_elevator,openblocks:blue_elevator,openblocks:brown_elevator,openblocks:green_elevator,openblocks:red_elevator,openblocks:black_elevator",
+      "text": "Aseta üks lift otse teise kohale vähemalt kolme ploki kõrgusele nii, et vahel pole plokke, ja saad 'hüpates' üles või 'kükitades' alla liikuda. Lifte saab värvida, klõpsates neid värvainega, aga teleporteeruda saab ainult sama värvi",
+      "title": "block.openblocks.elevator"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "liftide vahel."
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:white_elevator,openblocks:orange_elevator,openblocks:magenta_elevator,openblocks:light_blue_elevator,openblocks:yellow_elevator,openblocks:lime_elevator,openblocks:pink_elevator,openblocks:gray_elevator,openblocks:light_gray_elevator,openblocks:cyan_elevator,openblocks:purple_elevator,openblocks:blue_elevator,openblocks:brown_elevator,openblocks:green_elevator,openblocks:red_elevator,openblocks:black_elevator",
+      "recipe2": ""
+    }
+  ]
+}

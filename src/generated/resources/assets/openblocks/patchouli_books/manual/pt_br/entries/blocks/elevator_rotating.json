@@ -1,0 +1,22 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:white_elevator_rotating",
+  "name": "block.openblocks.elevator_rotating",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:white_elevator_rotating,openblocks:orange_elevator_rotating,openblocks:magenta_elevator_rotating,openblocks:light_blue_elevator_rotating,openblocks:yellow_elevator_rotating,openblocks:lime_elevator_rotating,openblocks:pink_elevator_rotating,openblocks:gray_elevator_rotating,openblocks:light_gray_elevator_rotating,openblocks:cyan_elevator_rotating,openblocks:purple_elevator_rotating,openblocks:blue_elevator_rotating,openblocks:brown_elevator_rotating,openblocks:green_elevator_rotating,openblocks:red_elevator_rotating,openblocks:black_elevator_rotating",
+      "text": "Funciona como um elevador normal, mas também te gira: depois do teletransporte você fica virado para o mesmo lado que a frente do elevador onde chega. Ao colocá-lo, a frente aponta para você.$(br)$(br)Elevadores giratórios",
+      "title": "block.openblocks.elevator_rotating"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "se conectam a elevadores normais da mesma cor, então você só precisa deles onde a direção importa."
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:white_elevator_rotating,openblocks:orange_elevator_rotating,openblocks:magenta_elevator_rotating,openblocks:light_blue_elevator_rotating,openblocks:yellow_elevator_rotating,openblocks:lime_elevator_rotating,openblocks:pink_elevator_rotating,openblocks:gray_elevator_rotating,openblocks:light_gray_elevator_rotating,openblocks:cyan_elevator_rotating,openblocks:purple_elevator_rotating,openblocks:blue_elevator_rotating,openblocks:brown_elevator_rotating,openblocks:green_elevator_rotating,openblocks:red_elevator_rotating,openblocks:black_elevator_rotating",
+      "recipe2": ""
+    }
+  ]
+}

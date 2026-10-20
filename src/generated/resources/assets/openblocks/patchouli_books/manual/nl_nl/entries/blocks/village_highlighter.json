@@ -1,0 +1,22 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:village_highlighter",
+  "name": "block.openblocks.village_highlighter",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:village_highlighter",
+      "text": "Zet de dorpsmarkeerder neer in een dorp en geef hem een redstonesignaal. Hij omlijnt de bedden (blauw), werkplekken (geel) en klokken (magenta) om zich heen, licht als ze vrij zijn en donker als ze bezet zijn, en tekent",
+      "title": "block.openblocks.village_highlighter"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "rond elke dorpeling in diens eigen kleur het gebied waarin die een ijzergolem kan oproepen (doorgetrokken als dat nu meteen kan). Handig als je een ijzerboerderij bouwt!$(br)De achterkant geeft een redstonesignaal zolang er een vrij bed is om dorpelingen te laten voortplanten."
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:village_highlighter",
+      "recipe2": ""
+    }
+  ]
+}

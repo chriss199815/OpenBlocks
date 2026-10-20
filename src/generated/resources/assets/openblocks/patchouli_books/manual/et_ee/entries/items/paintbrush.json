@@ -1,0 +1,22 @@
+{
+  "category": "openblocks:items",
+  "icon": "openblocks:paintbrush",
+  "name": "item.openblocks.paintbrush",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:paintbrush",
+      "text": "Pintsliga saad plokke värvida mis tahes värviga!$(br)$(br)Kasta pintsel värvisegajas tehtud värvipurki ja klõpsa siis plokki, et seda värvida.$(br)$(br)Lõuendiplokid sobivad maalimiseks ideaalselt,",
+      "title": "item.openblocks.paintbrush"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "aga värvida saab ka üsna paljusid vanilla plokke ja isegi mõnda teiste modide plokki. Plokkidele saab panna ka šabloone ja nende peale värvida!"
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:paintbrush",
+      "recipe2": "openblocks:paintbrush_white"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:paint_mixer",
+  "name": "block.openblocks.paint_mixer",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:paint_mixer",
+      "text": "Le mélangeur de peinture produit toutes les couleurs de peinture que vous voulez ! Mettez un pot de peinture existant ou un seau de lait dans l'emplacement du haut, puis des teintures cyan, magenta, jaune et noire dans les quatre",
+      "title": "block.openblocks.paint_mixer"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "autres, et cliquez sur Mélanger !"
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:paint_mixer",
+      "recipe2": ""
+    }
+  ]
+}

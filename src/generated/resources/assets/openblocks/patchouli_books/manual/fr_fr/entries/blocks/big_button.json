@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:blocks",
+  "icon": "openblocks:big_button",
+  "name": "block.openblocks.big_button",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:big_button",
+      "text": "Le gros bouton est un grand bouton qui se pose sur les murs. Un clic accroupi à main vide ouvre un inventaire. Les objets placés dedans allongent la durée d'appui : un objet ajoute un tick.",
+      "title": "block.openblocks.big_button"
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:big_button",
+      "recipe2": ""
+    }
+  ]
+}

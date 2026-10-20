@@ -5,7 +5,7 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "'B' 键是一个特殊的快捷键.$(br)$(br)启用配置文件中'tomfoolery'分类下的'weAreSeriousPeople'选项后,你会获得独有的消化系统,这项配置对客户端和服务端都有效.$(br)$(br)试着吃一些美味粘土,接着按'B'键消化!"
+      "text": "“B”键是 OpenBlocks 中一个非常特别的按键。$(br)$(br)在通用配置文件的“tomfoolery”类别中把“weAreSeriousPeople”选项设为 false，你就会拥有自己的消化系统。$(br)$(br)试着吃点美味的粘土，然后按“B”来消化吧！"
     }
   ]
 }

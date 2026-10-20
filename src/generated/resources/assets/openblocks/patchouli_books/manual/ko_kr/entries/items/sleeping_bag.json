@@ -1,0 +1,18 @@
+{
+  "category": "openblocks:items",
+  "icon": "openblocks:sleeping_bag",
+  "name": "item.openblocks.sleeping_bag",
+  "pages": [
+    {
+      "type": "openblocks:spotlight",
+      "item": "openblocks:sleeping_bag",
+      "text": "침낭을 쓰면 스폰 지점을 바꾸지 않고 야외에서 잘 수 있습니다. 밤에 들고 우클릭하기만 하면 됩니다.",
+      "title": "item.openblocks.sleeping_bag"
+    },
+    {
+      "type": "openblocks:crafting",
+      "recipe": "openblocks:sleeping_bag",
+      "recipe2": ""
+    }
+  ]
+}

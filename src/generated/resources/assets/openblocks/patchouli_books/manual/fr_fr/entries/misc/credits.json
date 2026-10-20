@@ -5,15 +5,15 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "$(l)Boq, Mikee et NeverCast$() - Développeur principaux d'OpenBlocks (Nous nous permet-on ?)$(br)$(br)$(l)SinZ et Yoshi2$() - membres de OpenMods team depuis le début.$(br)$(br)$(l)Vexatos et crafteverywhere$() - Traducteur réguliers"
+      "text": "$(l)Boq, Mikee et NeverCast$() - Développeurs principaux d'OpenBlocks (a-t-on le droit de se citer nous-mêmes ?)$(br)$(br)$(l)SinZ et Yoshi2$() - membres de l'équipe OpenMods depuis le début.$(br)$(br)$(l)Vexatos et $()"
     },
     {
       "type": "patchouli:text",
-      "text": "du mod.$(br)$(br)Tous les autres qui ont contribué au code au cours de l'année passée.$(br)$(br)$(l)Direwolf20 et le reste de ForgeCraft$() - Pour supporter les bogues et les accidents avant que nous ne sortions.$(br)Tout le monde qui met en lumière, fait des présentation et, généralement,"
+      "text": "$(l)crafteverywhere$() - traduisent régulièrement les mods.$(br)$(br)Tous ceux qui ont contribué au code ces deux dernières années.$(br)$(br)$(l)Direwolf20 et le reste de ForgeCraft$() - pour avoir supporté les bugs et les plantages avant nos sorties.$(br)"
     },
     {
       "type": "patchouli:text",
-      "text": "supporte le mod depuis que nous avons commencé !"
+      "text": "Tous ceux qui ont fait des présentations, des let's plays et qui ont soutenu le mod depuis le début !"
     }
   ]
 }
